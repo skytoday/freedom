@@ -5,557 +5,501 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 🇨🇳 github.com/freefq - 中国阿里云 1, server: 8.219.146.138, port: 23205, type: vmess, uuid: 442094b1-a2c2-422f-f3cf-7fc0bb134666, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: github.com/freefq - 广东省移动 2, server: yum-y.update.mipglxi.cn, port: 6018, type: ss, cipher: aes-128-gcm, password: 269f71b9-c45b-43f3-8c48-eb5f986aa707, udp: true}
+  - {name: 🇯🇵 github.com/freefq - 日本  1, server: 821sg.tfzhc.top, port: 443, type: trojan, password: 9f14e025-a479-4de0-9f00-c9eb2f69217c, skip-cert-verify: false, udp: true}
+  - {name: 🇯🇵 github.com/freefq - 日本东京Oracle数据中心 2, server: 168.138.207.66, port: 21365, type: vmess, uuid: 905f99b1-e7ba-45e0-ae4d-b0ffdf0ad245, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
   - {name: 🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶IT7网络 3, server: 206.190.237.176, port: 20908, type: vmess, uuid: 9d56fb2f-cdc7-4adc-a9dd-abbee73a699c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 🇳🇱 github.com/freefq - 荷兰  4, server: jgwamddj.356930.xyz, port: 443, type: vmess, uuid: 826b8d0a-e0d3-407a-927d-19953c170779, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /cctv13/hd.m3u8, headers: {Host: jgwamddj.356930.xyz}}, udp: true}
-  - {name: 🇨🇳 github.com/freefq - 广东省广州市移动 5, server: hk-hkg-it2-svm-v2.node.inforun.work, port: 13888, type: vmess, uuid: 763b2303-0e16-455e-926d-66d909c3e37b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: hk-hkg-it2-svm-v2.node.inforun.work}}, udp: true}
-  - {name: 🇨🇳 github.com/freefq - 台湾省台中市中华电信 6, server: ff5c0fb.rd.cloudflare.systems, port: 80, type: vmess, uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /s/ff5c0fb.fm.icloud.com:30513, headers: {Host: YouTube-aweikeji}}, udp: true}
-  - {name: 🇺🇸 github.com/freefq - 美国Microsoft数据中心 7, server: 20.214.234.216, port: 80, type: vmess, uuid: 7e7bd534-7542-414e-a08e-965c2bd46d63, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: tms.dingtalk.com}}, udp: true}
-  - {name: 🇺🇸 github.com/freefq - 美国  8, server: do.cloudorg.uk, port: 10365, type: ss, cipher: chacha20-ietf-poly1305, password: 9682edd6-89e6-4e6a-b31d-271089771d87, udp: true}
-  - {name: github.com/freefq - 广东省移动 9, server: yum-y.update.mipglxi.cn, port: 6023, type: ss, cipher: aes-128-gcm, password: 269f71b9-c45b-43f3-8c48-eb5f986aa707, udp: true}
-  - {name: 🇯🇵 github.com/freefq - 日本  10, server: 823jp.tfzhc.top, port: 443, type: trojan, password: 9f14e025-a479-4de0-9f00-c9eb2f69217c, skip-cert-verify: false, udp: true}
-  - {name: 🇨🇳 github.com/freefq - 北京市移动 11, server: cs.daxun.cyou, port: 20631, type: vmess, uuid: eb0dd79b-582f-48ae-a4d1-648e8957101f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /scloudhinet02, headers: {Host: "%7B%22Host%22:%22cs.daxun.cyou%22%7D"}}, udp: true}
-  - {name: github.com/freefq - 广东省移动 12, server: 120.233.151.122, port: 9203, type: ss, cipher: aes-256-gcm, password: 269f71b9-c45b-43f3-8c48-eb5f986aa707, udp: true}
-  - {name: 🇺🇸 github.com/freefq - 美国  13, server: do2.hgdbk.ga, port: 443, type: vmess, uuid: 826b8d0a-e0d3-407a-927d-19953c170779, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /cctv13/hd.m3u8, headers: {Host: do2.hgdbk.ga}}, udp: true}
-  - {name: 🇺🇸 github.com/freefq - 美国华盛顿Cogent通信公司 14, server: 38.68.135.18, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: 🇸🇦 github.com/freefq - 沙特阿拉伯Arabic Computer System Co. 15, server: 85.208.108.93, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
-  - {name: 🇭🇺 github.com/freefq - 匈牙利  16, server: 185.225.69.134, port: 45081, type: vmess, uuid: 3c3bfd75-dc30-4e76-8940-47e1137e21f9, alterId: 64, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 🇺🇸 github.com/freefq - 美国华盛顿Cogent通信公司 17, server: 38.75.136.34, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: github.com/freefq - 广东省移动 18, server: yum-y.update.mipglxi.cn, port: 6031, type: ss, cipher: aes-128-gcm, password: 269f71b9-c45b-43f3-8c48-eb5f986aa707, udp: true}
-  - {name: 🇷🇺 github.com/freefq - 俄罗斯莫斯科Melbicom数据中心 19, server: 213.183.53.198, port: 9014, type: ss, cipher: aes-256-cfb, password: KnJGad3FqTvjqbaX, udp: true}
-  - {name: 🇺🇸 github.com/freefq - 美国  20, server: do.cloudorg.uk, port: 443, type: trojan, password: 9682edd6-89e6-4e6a-b31d-271089771d87, skip-cert-verify: false, udp: true}
-  - {name: github.com/freefq - 欧盟  21, server: 45.66.157.174, port: 49192, type: vmess, uuid: 9451e6e0-c125-11ec-8012-00163c76ea30, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: YouTube-aweikeji}}, udp: true}
-  - {name: 🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶MULTACOM数据中心 22, server: 198.211.4.60, port: 80, type: vmess, uuid: 1c65cfed-0b0c-4e21-92aa-90c9663a654f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: 🇺🇸 github.com/freefq - 美国Nokia 23, server: jgwus.jgwaad.tk, port: 443, type: vmess, uuid: d019484c-2181-4d4a-a0fb-302a55351156, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /cctv13/hd.m3u8, headers: {Host: jgwus.jgwaad.tk}}, udp: true}
-  - {name: 🇸🇦 github.com/freefq - 沙特阿拉伯Arabic Computer System Co. 24, server: 85.208.108.93, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: 🇸🇬 github.com/freefq - 新加坡DigitalOcean数据中心 25, server: 139.59.244.143, port: 38941, type: vmess, uuid: 3dc5c1c9-7d8c-432e-daff-4422103a7918, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 🇺🇸 github.com/freefq - 北美地区  26, server: us.tcpbbr.net, port: 443, type: trojan, password: 80bcf4f2-12f7-11ed-bb74-f23c9164ca5d, skip-cert-verify: false, udp: true}
-  - {name: 🇺🇸 github.com/freefq - 美国Nokia 27, server: jgwus.jgwaad.tk, port: 443, type: vmess, uuid: 157ab24c-2f02-44d2-b211-6d70612c9f64, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /cctv13/hd.m3u8, headers: {Host: YouTube-aweikeji}}, udp: true}
-  - {name: 🇯🇵 github.com/freefq - 日本东京都东京Choopa数据中心 28, server: vultr1.755657.xyz, port: 443, type: trojan, password: 47bae806-9eb9-46b2-b17e-c15f63a10f86, skip-cert-verify: false, udp: true}
-  - {name: 🇺🇸 github.com/freefq - 美国内华达州拉斯维加斯BuyVM数据中心 29, server: qcjs.cc.freedl.heinu.cc, port: 443, type: trojan, password: vZ2Oh0BipB, skip-cert-verify: false, udp: true}
-  - {name: 🇷🇴 github.com/freefq - 罗马尼亚  30, server: 185.126.116.123, port: 9060, type: ss, cipher: aes-256-cfb, password: ueLXVkvh4hckhErQ, udp: true}
-  - {name: 🇺🇸 github.com/freefq - 美国华盛顿Cogent通信公司 31, server: 38.68.135.18, port: 4444, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: 🇳🇱 github.com/freefq - 荷兰北荷兰省阿姆斯特丹Melbicom数据中心 32, server: 213.183.59.218, port: 9043, type: ss, cipher: aes-256-cfb, password: HSZuyJQcWe8dxNdF, udp: true}
-  - {name: 🇺🇸 github.com/freefq - 美国Amazon数据中心 33, server: v83.xn--6nq44r2uh9rhj7f.com, port: 80, type: vmess, uuid: 7e7bd534-7542-414e-a08e-965c2bd46d63, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: YouTube-aweikeji}}, udp: true}
-  - {name: 🇺🇸 github.com/freefq - 美国华盛顿Cogent通信公司 34, server: 38.91.107.37, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: 🇭🇰 github.com/freefq - 香港特别行政区 35, server: hk004.369boy.com, port: 33304, type: trojan, password: 8c4b04fd-245a-44c3-87db-5ca76a850e1b, skip-cert-verify: false, udp: true}
-  - {name: 🇯🇵 github.com/freefq - 日本  36, server: 825hk01.fx6688.top, port: 443, type: vmess, uuid: 2cc10f9c-fb02-3e45-b619-c3b98cde912a, alterId: 2, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: 825hk01.fx6688.top}}, udp: true}
-  - {name: 🇺🇸 github.com/freefq - 美国  37, server: 143.198.0.211, port: 26923, type: vmess, uuid: e8e1b9a5-2ba6-4847-9dd8-92f1d8019ebf, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 🇸🇬 github.com/freefq - 新加坡DigitalOcean数据中心 38, server: do4.hgdbk.ga, port: 443, type: vmess, uuid: 826b8d0a-e0d3-407a-927d-19953c170779, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /cctv13/hd.m3u8, headers: {Host: do4.hgdbk.ga}}, udp: true}
-  - {name: 🇺🇸 github.com/freefq - 美国惠普公司 39, server: v85.xn--6nq44r2uh9rhj7f.com, port: 80, type: vmess, uuid: 7e7bd534-7542-414e-a08e-965c2bd46d63, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: YouTube-aweikeji}}, udp: true}
-  - {name: 🇺🇸 github.com/freefq - 美国  40, server: 137.184.93.209, port: 10365, type: ss, cipher: chacha20-ietf-poly1305, password: 9682edd6-89e6-4e6a-b31d-271089771d87, udp: true}
-  - {name: 🇬🇧 github.com/freefq - 英国社会保险安全部 41, server: 51.195.136.209, port: 50004, type: ss, cipher: aes-256-cfb, password: !<str> 4415934295, udp: true}
-  - {name: 🇺🇸 github.com/freefq - 美国CloudFlare节点 42, server: jixu2.qiqis.ml, port: 443, type: vmess, uuid: 8ff3321a-63c5-48a5-a469-f334789102ff, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: jixu2.qiqis.ml}}, udp: true}
-  - {name: github.com/freefq - 亚太地区  43, server: 103.159.132.102, port: 31372, type: vmess, uuid: c11236af-56a6-49b3-c1b9-7b54ac3acb42, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 🇨🇦 github.com/freefq - 加拿大  44, server: 823tw.tfzhc.top, port: 443, type: trojan, password: 9f14e025-a479-4de0-9f00-c9eb2f69217c, skip-cert-verify: false, udp: true}
-  - {name: 🇺🇸 github.com/freefq - 美国  45, server: do1.hgdbk.ga, port: 443, type: vmess, uuid: d019484c-2181-4d4a-a0fb-302a55351156, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /cctv13/hd.m3u8, headers: {Host: do1.hgdbk.ga}}, udp: true}
-  - {name: 🇺🇸 github.com/freefq - 美国  46, server: 192.96.204.250, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /ws, headers: {Host: usa-washington.lvuft.com}}, udp: true}
-  - {name: 🇯🇵 github.com/freefq - 日本  47, server: 821sg.tfzhc.top, port: 443, type: trojan, password: 9f14e025-a479-4de0-9f00-c9eb2f69217c, skip-cert-verify: false, udp: true}
-  - {name: 🇺🇸 github.com/freefq - 美国  48, server: 129.159.41.233, port: 32586, type: vmess, uuid: 341a9182-c423-499c-c46e-d17838b29037, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 🇺🇸 github.com/freefq - 美国俄勒冈州波特兰Amazon数据中心 49, server: fd1eb4612cdd493b93556e0067e806.run-us-west2.goorm.io, port: 443, type: vmess, uuid: 5a0e8b3d-96cb-47f5-abd4-a652a37144e2, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: fd1eb4612cdd493b93556e0067e806.run-us-west2.goorm.io}}, udp: true}
+  - {name: 🇨🇳 github.com/freefq - 广东省深圳市移动 4, server: 183.232.158.67, port: 9205, type: ss, cipher: aes-256-gcm, password: 269f71b9-c45b-43f3-8c48-eb5f986aa707, udp: true}
+  - {name: 🇺🇸 github.com/freefq - 美国  5, server: 138.2.8.227, port: 59442, type: vmess, uuid: 6fd042fa-e864-4a95-85bc-6f590a03d34a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 🇨🇳 github.com/freefq - 广东省深圳市移动 6, server: 183.232.158.66, port: 9205, type: ss, cipher: aes-256-gcm, password: 269f71b9-c45b-43f3-8c48-eb5f986aa707, udp: true}
+  - {name: 🇨🇳 github.com/freefq - 广东省深圳市移动 7, server: 183.232.158.67, port: 9206, type: ss, cipher: aes-256-gcm, password: 269f71b9-c45b-43f3-8c48-eb5f986aa707, udp: true}
+  - {name: 🇨🇳 github.com/freefq - 广东省广州市移动 8, server: hk-hkg-it2-svm-v2.node.inforun.work, port: 13888, type: vmess, uuid: 763b2303-0e16-455e-926d-66d909c3e37b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: hk-hkg-it2-svm-v2.node.inforun.work}}, udp: true}
+  - {name: 🇨🇳 github.com/freefq - 台湾省台中市中华电信 9, server: ff5c0fb.rd.cloudflare.systems, port: 80, type: vmess, uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /s/ff5c0fb.fm.icloud.com:30513, headers: {Host: YouTube-aweikeji}}, udp: true}
+  - {name: 🇺🇸 github.com/freefq - 美国  10, server: 137.184.93.209, port: 10365, type: ss, cipher: chacha20-ietf-poly1305, password: 9682edd6-89e6-4e6a-b31d-271089771d87, udp: true}
+  - {name: github.com/freefq - 广东省移动 11, server: yum-y.update.mipglxi.cn, port: 6018, type: ss, cipher: aes-128-gcm, password: 269f71b9-c45b-43f3-8c48-eb5f986aa707, udp: true}
+  - {name: 🇺🇸 github.com/freefq - 美国  12, server: do.cloudorg.uk, port: 10365, type: ss, cipher: chacha20-ietf-poly1305, password: 9682edd6-89e6-4e6a-b31d-271089771d87, udp: true}
+  - {name: 🇨🇳 github.com/freefq - 北京市移动 13, server: cs.daxun.cyou, port: 20631, type: vmess, uuid: eb0dd79b-582f-48ae-a4d1-648e8957101f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /scloudhinet02, headers: {Host: "%7B%22Host%22:%22cs.daxun.cyou%22%7D"}}, udp: true}
+  - {name: github.com/freefq - 欧盟  14, server: 45.66.157.174, port: 49192, type: vmess, uuid: 9451e6e0-c125-11ec-8012-00163c76ea30, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: YouTube-aweikeji}}, udp: true}
+  - {name: 🇺🇸 github.com/freefq - 美国华盛顿Cogent通信公司 15, server: 38.68.135.18, port: 4444, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: 🇺🇸 github.com/freefq - 美国  16, server: do2.hgdbk.ga, port: 443, type: vmess, uuid: 826b8d0a-e0d3-407a-927d-19953c170779, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /cctv13/hd.m3u8, headers: {Host: do2.hgdbk.ga}}, udp: true}
+  - {name: 🇺🇸 github.com/freefq - 美国华盛顿Cogent通信公司 17, server: 38.68.135.18, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: 🇯🇵 github.com/freefq - 日本  18, server: 825hk01.fx6688.top, port: 443, type: vmess, uuid: 2cc10f9c-fb02-3e45-b619-c3b98cde912a, alterId: 2, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: 825hk01.fx6688.top}}, udp: true}
+  - {name: 🇺🇸 github.com/freefq - 北美地区  19, server: 23.227.194.145, port: 36195, type: vmess, uuid: fae6eae5-a5b5-41ba-b660-dc067340048f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 🇺🇸 github.com/freefq - 美国华盛顿Cogent通信公司 20, server: 38.75.136.34, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: 🇺🇸 github.com/freefq - 美国Nokia 21, server: jgwus.jgwaad.tk, port: 443, type: vmess, uuid: 157ab24c-2f02-44d2-b211-6d70612c9f64, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /cctv13/hd.m3u8, headers: {Host: YouTube-aweikeji}}, udp: true}
+  - {name: 🇺🇸 github.com/freefq - 美国  22, server: do.cloudorg.uk, port: 443, type: trojan, password: 9682edd6-89e6-4e6a-b31d-271089771d87, skip-cert-verify: false, udp: true}
+  - {name: 🇸🇬 github.com/freefq - 新加坡DigitalOcean数据中心 23, server: 139.59.244.143, port: 38941, type: vmess, uuid: 3dc5c1c9-7d8c-432e-daff-4422103a7918, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 🇺🇸 github.com/freefq - 美国  24, server: 143.198.0.211, port: 26923, type: vmess, uuid: e8e1b9a5-2ba6-4847-9dd8-92f1d8019ebf, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 🇺🇸 github.com/freefq - 美国华盛顿Cogent通信公司 25, server: 38.121.43.204, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: 🇬🇧 github.com/freefq - 英国  26, server: 185.167.77.195, port: 29650, type: vmess, uuid: 660dbb02-2297-466b-c7b2-1bb8a6e680e5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 🇷🇺 github.com/freefq - 俄罗斯莫斯科Melbicom数据中心 27, server: 213.183.53.198, port: 9014, type: ss, cipher: aes-256-cfb, password: KnJGad3FqTvjqbaX, udp: true}
+  - {name: 🇺🇸 github.com/freefq - 美国Nokia 28, server: jgwus.jgwaad.tk, port: 443, type: vmess, uuid: d019484c-2181-4d4a-a0fb-302a55351156, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /cctv13/hd.m3u8, headers: {Host: jgwus.jgwaad.tk}}, udp: true}
+  - {name: 🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶Dedipath 29, server: 45.10.153.188, port: 37558, type: vmess, uuid: 9d0f86ad-eec3-424f-f69a-fcb37e783d06, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 🇺🇸 github.com/freefq - 美国  30, server: do1.hgdbk.ga, port: 443, type: vmess, uuid: d019484c-2181-4d4a-a0fb-302a55351156, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /cctv13/hd.m3u8, headers: {Host: do1.hgdbk.ga}}, udp: true}
+  - {name: github.com/freefq - 广东省移动 31, server: yum-y.update.mipglxi.cn, port: 6031, type: ss, cipher: aes-128-gcm, password: 269f71b9-c45b-43f3-8c48-eb5f986aa707, udp: true}
+  - {name: 🇬🇧 github.com/freefq - 英国  32, server: 185.167.78.193, port: 47634, type: vmess, uuid: 5cf637c0-04f2-4af4-c25b-6e467c14d496, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 🇺🇸 github.com/freefq - 美国华盛顿Cogent通信公司 33, server: 38.91.107.37, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: 🇺🇸 github.com/freefq - 美国亚利桑那州凤凰城Oracle云计算数据中心 34, server: 129.146.84.253, port: 26875, type: vmess, uuid: bb240cb0-a6d2-4b8e-ee85-a976e48ac241, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: github.com/freefq - 广东省移动 35, server: yum-y.update.mipglxi.cn, port: 6023, type: ss, cipher: aes-128-gcm, password: 269f71b9-c45b-43f3-8c48-eb5f986aa707, udp: true}
+  - {name: 🇬🇧 github.com/freefq - 英国社会保险安全部 36, server: 51.195.136.209, port: 50004, type: ss, cipher: aes-256-cfb, password: !<str> 4415934295, udp: true}
+  - {name: 🇺🇸 github.com/freefq - 美国俄勒冈州波特兰Amazon数据中心 37, server: fd1eb4612cdd493b93556e0067e806.run-us-west2.goorm.io, port: 443, type: vmess, uuid: 5a0e8b3d-96cb-47f5-abd4-a652a37144e2, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: fd1eb4612cdd493b93556e0067e806.run-us-west2.goorm.io}}, udp: true}
+  - {name: 🇨🇦 github.com/freefq - 加拿大  38, server: 823tw.tfzhc.top, port: 443, type: trojan, password: 9f14e025-a479-4de0-9f00-c9eb2f69217c, skip-cert-verify: false, udp: true}
+  - {name: github.com/freefq - 亚太地区  39, server: 103.159.132.102, port: 31372, type: vmess, uuid: c11236af-56a6-49b3-c1b9-7b54ac3acb42, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 🇺🇸 github.com/freefq - 美国RF Engineering 40, server: 141.193.213.21, port: 80, type: vmess, uuid: a55b7d77-d251-4e31-a76e-22d09ac69eb0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: sanggoro6.nextvpn.cc}}, udp: true}
+  - {name: 🇺🇸 github.com/freefq - 美国  41, server: 129.159.41.233, port: 32586, type: vmess, uuid: 341a9182-c423-499c-c46e-d17838b29037, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 🇧🇬 github.com/freefq - 保加利亚索非亚Friendhosting有限责任公司 42, server: fdhg.755657.xyz, port: 8443, type: vmess, uuid: 5f056baf-8322-4113-8a55-4d456a02ce93, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: fdhg.755657.xyz}}, udp: true}
+  - {name: 🇳🇱 github.com/freefq - 荷兰  43, server: jgwamddj.356930.xyz, port: 443, type: vmess, uuid: 826b8d0a-e0d3-407a-927d-19953c170779, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /cctv13/hd.m3u8, headers: {Host: jgwamddj.356930.xyz}}, udp: true}
+  - {name: 🇧🇬 github.com/freefq - 保加利亚索非亚Friendhosting有限责任公司 44, server: fdhg.755657.xyz, port: 8443, type: vmess, uuid: 47bae806-9eb9-46b2-b17e-c15f63a10f86, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: YouTube-aweikeji}}, udp: true}
+  - {name: 🇺🇸 github.com/freefq - 北美地区  45, server: us.tcpbbr.net, port: 443, type: trojan, password: 80bcf4f2-12f7-11ed-bb74-f23c9164ca5d, skip-cert-verify: false, udp: true}
+  - {name: 🇮🇳 github.com/freefq - 印度孟买阿里云 46, server: 147.139.7.71, port: 888, type: vmess, uuid: 08d6729d-830e-4341-df76-62d3d12e75e8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: 147.139.7.71}}, udp: true}
+  - {name: 🇺🇸 github.com/freefq - 美国RF Engineering 47, server: blogs.microsoft.com, port: 443, type: vmess, uuid: a55b7d77-d251-4e31-a76e-22d09ac69eb0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: sanggoro6.nextvpn.cc, network: ws, ws-opts: {path: /, headers: {Host: sanggoro6.nextvpn.cc}}, udp: true}
+  - {name: 🇭🇰 github.com/freefq - 香港特别行政区 48, server: hk004.369boy.com, port: 33304, type: trojan, password: 8c4b04fd-245a-44c3-87db-5ca76a850e1b, skip-cert-verify: false, udp: true}
+  - {name: 🇸🇬 github.com/freefq - 新加坡DigitalOcean数据中心 49, server: do4.hgdbk.ga, port: 443, type: vmess, uuid: 826b8d0a-e0d3-407a-927d-19953c170779, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /cctv13/hd.m3u8, headers: {Host: do4.hgdbk.ga}}, udp: true}
   - {name: github.com/freefq - 广东省移动 50, server: aliyun.install01.vnupgcn.cn, port: 11927, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 🇧🇬 github.com/freefq - 保加利亚索非亚Friendhosting有限责任公司 51, server: fdhg.755657.xyz, port: 8443, type: vmess, uuid: 47bae806-9eb9-46b2-b17e-c15f63a10f86, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: YouTube-aweikeji}}, udp: true}
-  - {name: 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 52, server: 104.20.75.141, port: 80, type: vmess, uuid: a55b7d77-d251-4e31-a76e-22d09ac69eb0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, servername: sanggoro6.nextvpn.cc, network: ws, ws-opts: {path: /, headers: {Host: sanggoro6.nextvpn.cc}}, udp: true}
-  - {name: 🇮🇳 github.com/freefq - 印度孟买阿里云 53, server: 147.139.7.71, port: 888, type: vmess, uuid: 08d6729d-830e-4341-df76-62d3d12e75e8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: 147.139.7.71}}, udp: true}
-  - {name: 🇭🇰 github.com/freefq - 香港  54, server: hk001.369boy.com, port: 33156, type: trojan, password: 8c4b04fd-245a-44c3-87db-5ca76a850e1b, skip-cert-verify: false, udp: true}
-  - {name: 🇨🇳 github.com/freefq - 广东省深圳市移动 55, server: 183.232.158.67, port: 9206, type: ss, cipher: aes-256-gcm, password: 269f71b9-c45b-43f3-8c48-eb5f986aa707, udp: true}
-  - {name: github.com/freefq - 广东省移动 56, server: aliyun.moble.vnupgcn.cn, port: 9043, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 🇨🇳 github.com/freefq - 广东省深圳市移动 57, server: 183.232.158.66, port: 9205, type: ss, cipher: aes-256-gcm, password: 269f71b9-c45b-43f3-8c48-eb5f986aa707, udp: true}
-  - {name: 🇺🇸 github.com/freefq - 美国华盛顿Cogent通信公司 58, server: 38.121.43.204, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: 🇸🇬 github.com/freefq - 北京市新国信通信有限公司 59, server: aliyun.unicom.vnupgcn.cn, port: 9026, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 🇨🇳 github.com/freefq - 广东省深圳市移动 60, server: 183.232.158.67, port: 9205, type: ss, cipher: aes-256-gcm, password: 269f71b9-c45b-43f3-8c48-eb5f986aa707, udp: true}
-  - {name: 🇧🇬 github.com/freefq - 保加利亚索非亚Friendhosting有限责任公司 61, server: fdhg.755657.xyz, port: 8443, type: vmess, uuid: 5f056baf-8322-4113-8a55-4d456a02ce93, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: fdhg.755657.xyz}}, udp: true}
-  - {name: 🇺🇸 github.com/freefq - 美国RF Engineering 62, server: 141.193.213.21, port: 80, type: vmess, uuid: a55b7d77-d251-4e31-a76e-22d09ac69eb0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: sanggoro6.nextvpn.cc}}, udp: true}
-  - {name: 🇺🇸 github.com/freefq - 北美地区  63, server: 23.227.194.145, port: 36195, type: vmess, uuid: fae6eae5-a5b5-41ba-b660-dc067340048f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 🇺🇸 github.com/freefq - 美国RF Engineering 64, server: blogs.microsoft.com, port: 443, type: vmess, uuid: a55b7d77-d251-4e31-a76e-22d09ac69eb0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: sanggoro6.nextvpn.cc, network: ws, ws-opts: {path: /, headers: {Host: sanggoro6.nextvpn.cc}}, udp: true}
+  - {name: 🇨🇳 github.com/freefq - 广东省广州市电信IDC机房 51, server: aliyun.moble.vnupgcn.cn, port: 9043, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 🇺🇸 github.com/freefq - 美国华盛顿Cogent通信公司 52, server: 38.75.136.34, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: 🇯🇵 github.com/freefq - 日本  53, server: 823jp.tfzhc.top, port: 443, type: trojan, password: 9f14e025-a479-4de0-9f00-c9eb2f69217c, skip-cert-verify: false, udp: true}
+  - {name: 🇨🇳 github.com/freefq - 中国阿里云 54, server: 8.219.146.138, port: 23205, type: vmess, uuid: 442094b1-a2c2-422f-f3cf-7fc0bb134666, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 🇸🇬 github.com/freefq - 北京市新国信通信有限公司 55, server: aliyun.unicom.vnupgcn.cn, port: 9026, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 56, server: 104.20.75.141, port: 80, type: vmess, uuid: a55b7d77-d251-4e31-a76e-22d09ac69eb0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, servername: sanggoro6.nextvpn.cc, network: ws, ws-opts: {path: /, headers: {Host: sanggoro6.nextvpn.cc}}, udp: true}
+  - {name: 🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶MULTACOM数据中心 57, server: 198.211.4.60, port: 80, type: vmess, uuid: 1c65cfed-0b0c-4e21-92aa-90c9663a654f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /}, udp: true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 🇨🇳 github.com/freefq - 中国阿里云 1
-      - github.com/freefq - 广东省移动 2
+      - 🇯🇵 github.com/freefq - 日本  1
+      - 🇯🇵 github.com/freefq - 日本东京Oracle数据中心 2
       - 🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶IT7网络 3
-      - 🇳🇱 github.com/freefq - 荷兰  4
-      - 🇨🇳 github.com/freefq - 广东省广州市移动 5
-      - 🇨🇳 github.com/freefq - 台湾省台中市中华电信 6
-      - 🇺🇸 github.com/freefq - 美国Microsoft数据中心 7
-      - 🇺🇸 github.com/freefq - 美国  8
-      - github.com/freefq - 广东省移动 9
-      - 🇯🇵 github.com/freefq - 日本  10
-      - 🇨🇳 github.com/freefq - 北京市移动 11
-      - github.com/freefq - 广东省移动 12
-      - 🇺🇸 github.com/freefq - 美国  13
-      - 🇺🇸 github.com/freefq - 美国华盛顿Cogent通信公司 14
-      - 🇸🇦 github.com/freefq - 沙特阿拉伯Arabic Computer System Co. 15
-      - 🇭🇺 github.com/freefq - 匈牙利  16
+      - 🇨🇳 github.com/freefq - 广东省深圳市移动 4
+      - 🇺🇸 github.com/freefq - 美国  5
+      - 🇨🇳 github.com/freefq - 广东省深圳市移动 6
+      - 🇨🇳 github.com/freefq - 广东省深圳市移动 7
+      - 🇨🇳 github.com/freefq - 广东省广州市移动 8
+      - 🇨🇳 github.com/freefq - 台湾省台中市中华电信 9
+      - 🇺🇸 github.com/freefq - 美国  10
+      - github.com/freefq - 广东省移动 11
+      - 🇺🇸 github.com/freefq - 美国  12
+      - 🇨🇳 github.com/freefq - 北京市移动 13
+      - github.com/freefq - 欧盟  14
+      - 🇺🇸 github.com/freefq - 美国华盛顿Cogent通信公司 15
+      - 🇺🇸 github.com/freefq - 美国  16
       - 🇺🇸 github.com/freefq - 美国华盛顿Cogent通信公司 17
-      - github.com/freefq - 广东省移动 18
-      - 🇷🇺 github.com/freefq - 俄罗斯莫斯科Melbicom数据中心 19
-      - 🇺🇸 github.com/freefq - 美国  20
-      - github.com/freefq - 欧盟  21
-      - 🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶MULTACOM数据中心 22
-      - 🇺🇸 github.com/freefq - 美国Nokia 23
-      - 🇸🇦 github.com/freefq - 沙特阿拉伯Arabic Computer System Co. 24
-      - 🇸🇬 github.com/freefq - 新加坡DigitalOcean数据中心 25
-      - 🇺🇸 github.com/freefq - 北美地区  26
-      - 🇺🇸 github.com/freefq - 美国Nokia 27
-      - 🇯🇵 github.com/freefq - 日本东京都东京Choopa数据中心 28
-      - 🇺🇸 github.com/freefq - 美国内华达州拉斯维加斯BuyVM数据中心 29
-      - 🇷🇴 github.com/freefq - 罗马尼亚  30
-      - 🇺🇸 github.com/freefq - 美国华盛顿Cogent通信公司 31
-      - 🇳🇱 github.com/freefq - 荷兰北荷兰省阿姆斯特丹Melbicom数据中心 32
-      - 🇺🇸 github.com/freefq - 美国Amazon数据中心 33
-      - 🇺🇸 github.com/freefq - 美国华盛顿Cogent通信公司 34
-      - 🇭🇰 github.com/freefq - 香港特别行政区 35
-      - 🇯🇵 github.com/freefq - 日本  36
-      - 🇺🇸 github.com/freefq - 美国  37
-      - 🇸🇬 github.com/freefq - 新加坡DigitalOcean数据中心 38
-      - 🇺🇸 github.com/freefq - 美国惠普公司 39
-      - 🇺🇸 github.com/freefq - 美国  40
-      - 🇬🇧 github.com/freefq - 英国社会保险安全部 41
-      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 42
-      - github.com/freefq - 亚太地区  43
-      - 🇨🇦 github.com/freefq - 加拿大  44
-      - 🇺🇸 github.com/freefq - 美国  45
-      - 🇺🇸 github.com/freefq - 美国  46
-      - 🇯🇵 github.com/freefq - 日本  47
-      - 🇺🇸 github.com/freefq - 美国  48
-      - 🇺🇸 github.com/freefq - 美国俄勒冈州波特兰Amazon数据中心 49
+      - 🇯🇵 github.com/freefq - 日本  18
+      - 🇺🇸 github.com/freefq - 北美地区  19
+      - 🇺🇸 github.com/freefq - 美国华盛顿Cogent通信公司 20
+      - 🇺🇸 github.com/freefq - 美国Nokia 21
+      - 🇺🇸 github.com/freefq - 美国  22
+      - 🇸🇬 github.com/freefq - 新加坡DigitalOcean数据中心 23
+      - 🇺🇸 github.com/freefq - 美国  24
+      - 🇺🇸 github.com/freefq - 美国华盛顿Cogent通信公司 25
+      - 🇬🇧 github.com/freefq - 英国  26
+      - 🇷🇺 github.com/freefq - 俄罗斯莫斯科Melbicom数据中心 27
+      - 🇺🇸 github.com/freefq - 美国Nokia 28
+      - 🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶Dedipath 29
+      - 🇺🇸 github.com/freefq - 美国  30
+      - github.com/freefq - 广东省移动 31
+      - 🇬🇧 github.com/freefq - 英国  32
+      - 🇺🇸 github.com/freefq - 美国华盛顿Cogent通信公司 33
+      - 🇺🇸 github.com/freefq - 美国亚利桑那州凤凰城Oracle云计算数据中心 34
+      - github.com/freefq - 广东省移动 35
+      - 🇬🇧 github.com/freefq - 英国社会保险安全部 36
+      - 🇺🇸 github.com/freefq - 美国俄勒冈州波特兰Amazon数据中心 37
+      - 🇨🇦 github.com/freefq - 加拿大  38
+      - github.com/freefq - 亚太地区  39
+      - 🇺🇸 github.com/freefq - 美国RF Engineering 40
+      - 🇺🇸 github.com/freefq - 美国  41
+      - 🇧🇬 github.com/freefq - 保加利亚索非亚Friendhosting有限责任公司 42
+      - 🇳🇱 github.com/freefq - 荷兰  43
+      - 🇧🇬 github.com/freefq - 保加利亚索非亚Friendhosting有限责任公司 44
+      - 🇺🇸 github.com/freefq - 北美地区  45
+      - 🇮🇳 github.com/freefq - 印度孟买阿里云 46
+      - 🇺🇸 github.com/freefq - 美国RF Engineering 47
+      - 🇭🇰 github.com/freefq - 香港特别行政区 48
+      - 🇸🇬 github.com/freefq - 新加坡DigitalOcean数据中心 49
       - github.com/freefq - 广东省移动 50
-      - 🇧🇬 github.com/freefq - 保加利亚索非亚Friendhosting有限责任公司 51
-      - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 52
-      - 🇮🇳 github.com/freefq - 印度孟买阿里云 53
-      - 🇭🇰 github.com/freefq - 香港  54
-      - 🇨🇳 github.com/freefq - 广东省深圳市移动 55
-      - github.com/freefq - 广东省移动 56
-      - 🇨🇳 github.com/freefq - 广东省深圳市移动 57
-      - 🇺🇸 github.com/freefq - 美国华盛顿Cogent通信公司 58
-      - 🇸🇬 github.com/freefq - 北京市新国信通信有限公司 59
-      - 🇨🇳 github.com/freefq - 广东省深圳市移动 60
-      - 🇧🇬 github.com/freefq - 保加利亚索非亚Friendhosting有限责任公司 61
-      - 🇺🇸 github.com/freefq - 美国RF Engineering 62
-      - 🇺🇸 github.com/freefq - 北美地区  63
-      - 🇺🇸 github.com/freefq - 美国RF Engineering 64
+      - 🇨🇳 github.com/freefq - 广东省广州市电信IDC机房 51
+      - 🇺🇸 github.com/freefq - 美国华盛顿Cogent通信公司 52
+      - 🇯🇵 github.com/freefq - 日本  53
+      - 🇨🇳 github.com/freefq - 中国阿里云 54
+      - 🇸🇬 github.com/freefq - 北京市新国信通信有限公司 55
+      - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 56
+      - 🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶MULTACOM数据中心 57
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇨🇳 github.com/freefq - 中国阿里云 1
-      - github.com/freefq - 广东省移动 2
+      - 🇯🇵 github.com/freefq - 日本  1
+      - 🇯🇵 github.com/freefq - 日本东京Oracle数据中心 2
       - 🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶IT7网络 3
-      - 🇳🇱 github.com/freefq - 荷兰  4
-      - 🇨🇳 github.com/freefq - 广东省广州市移动 5
-      - 🇨🇳 github.com/freefq - 台湾省台中市中华电信 6
-      - 🇺🇸 github.com/freefq - 美国Microsoft数据中心 7
-      - 🇺🇸 github.com/freefq - 美国  8
-      - github.com/freefq - 广东省移动 9
-      - 🇯🇵 github.com/freefq - 日本  10
-      - 🇨🇳 github.com/freefq - 北京市移动 11
-      - github.com/freefq - 广东省移动 12
-      - 🇺🇸 github.com/freefq - 美国  13
-      - 🇺🇸 github.com/freefq - 美国华盛顿Cogent通信公司 14
-      - 🇸🇦 github.com/freefq - 沙特阿拉伯Arabic Computer System Co. 15
-      - 🇭🇺 github.com/freefq - 匈牙利  16
+      - 🇨🇳 github.com/freefq - 广东省深圳市移动 4
+      - 🇺🇸 github.com/freefq - 美国  5
+      - 🇨🇳 github.com/freefq - 广东省深圳市移动 6
+      - 🇨🇳 github.com/freefq - 广东省深圳市移动 7
+      - 🇨🇳 github.com/freefq - 广东省广州市移动 8
+      - 🇨🇳 github.com/freefq - 台湾省台中市中华电信 9
+      - 🇺🇸 github.com/freefq - 美国  10
+      - github.com/freefq - 广东省移动 11
+      - 🇺🇸 github.com/freefq - 美国  12
+      - 🇨🇳 github.com/freefq - 北京市移动 13
+      - github.com/freefq - 欧盟  14
+      - 🇺🇸 github.com/freefq - 美国华盛顿Cogent通信公司 15
+      - 🇺🇸 github.com/freefq - 美国  16
       - 🇺🇸 github.com/freefq - 美国华盛顿Cogent通信公司 17
-      - github.com/freefq - 广东省移动 18
-      - 🇷🇺 github.com/freefq - 俄罗斯莫斯科Melbicom数据中心 19
-      - 🇺🇸 github.com/freefq - 美国  20
-      - github.com/freefq - 欧盟  21
-      - 🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶MULTACOM数据中心 22
-      - 🇺🇸 github.com/freefq - 美国Nokia 23
-      - 🇸🇦 github.com/freefq - 沙特阿拉伯Arabic Computer System Co. 24
-      - 🇸🇬 github.com/freefq - 新加坡DigitalOcean数据中心 25
-      - 🇺🇸 github.com/freefq - 北美地区  26
-      - 🇺🇸 github.com/freefq - 美国Nokia 27
-      - 🇯🇵 github.com/freefq - 日本东京都东京Choopa数据中心 28
-      - 🇺🇸 github.com/freefq - 美国内华达州拉斯维加斯BuyVM数据中心 29
-      - 🇷🇴 github.com/freefq - 罗马尼亚  30
-      - 🇺🇸 github.com/freefq - 美国华盛顿Cogent通信公司 31
-      - 🇳🇱 github.com/freefq - 荷兰北荷兰省阿姆斯特丹Melbicom数据中心 32
-      - 🇺🇸 github.com/freefq - 美国Amazon数据中心 33
-      - 🇺🇸 github.com/freefq - 美国华盛顿Cogent通信公司 34
-      - 🇭🇰 github.com/freefq - 香港特别行政区 35
-      - 🇯🇵 github.com/freefq - 日本  36
-      - 🇺🇸 github.com/freefq - 美国  37
-      - 🇸🇬 github.com/freefq - 新加坡DigitalOcean数据中心 38
-      - 🇺🇸 github.com/freefq - 美国惠普公司 39
-      - 🇺🇸 github.com/freefq - 美国  40
-      - 🇬🇧 github.com/freefq - 英国社会保险安全部 41
-      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 42
-      - github.com/freefq - 亚太地区  43
-      - 🇨🇦 github.com/freefq - 加拿大  44
-      - 🇺🇸 github.com/freefq - 美国  45
-      - 🇺🇸 github.com/freefq - 美国  46
-      - 🇯🇵 github.com/freefq - 日本  47
-      - 🇺🇸 github.com/freefq - 美国  48
-      - 🇺🇸 github.com/freefq - 美国俄勒冈州波特兰Amazon数据中心 49
+      - 🇯🇵 github.com/freefq - 日本  18
+      - 🇺🇸 github.com/freefq - 北美地区  19
+      - 🇺🇸 github.com/freefq - 美国华盛顿Cogent通信公司 20
+      - 🇺🇸 github.com/freefq - 美国Nokia 21
+      - 🇺🇸 github.com/freefq - 美国  22
+      - 🇸🇬 github.com/freefq - 新加坡DigitalOcean数据中心 23
+      - 🇺🇸 github.com/freefq - 美国  24
+      - 🇺🇸 github.com/freefq - 美国华盛顿Cogent通信公司 25
+      - 🇬🇧 github.com/freefq - 英国  26
+      - 🇷🇺 github.com/freefq - 俄罗斯莫斯科Melbicom数据中心 27
+      - 🇺🇸 github.com/freefq - 美国Nokia 28
+      - 🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶Dedipath 29
+      - 🇺🇸 github.com/freefq - 美国  30
+      - github.com/freefq - 广东省移动 31
+      - 🇬🇧 github.com/freefq - 英国  32
+      - 🇺🇸 github.com/freefq - 美国华盛顿Cogent通信公司 33
+      - 🇺🇸 github.com/freefq - 美国亚利桑那州凤凰城Oracle云计算数据中心 34
+      - github.com/freefq - 广东省移动 35
+      - 🇬🇧 github.com/freefq - 英国社会保险安全部 36
+      - 🇺🇸 github.com/freefq - 美国俄勒冈州波特兰Amazon数据中心 37
+      - 🇨🇦 github.com/freefq - 加拿大  38
+      - github.com/freefq - 亚太地区  39
+      - 🇺🇸 github.com/freefq - 美国RF Engineering 40
+      - 🇺🇸 github.com/freefq - 美国  41
+      - 🇧🇬 github.com/freefq - 保加利亚索非亚Friendhosting有限责任公司 42
+      - 🇳🇱 github.com/freefq - 荷兰  43
+      - 🇧🇬 github.com/freefq - 保加利亚索非亚Friendhosting有限责任公司 44
+      - 🇺🇸 github.com/freefq - 北美地区  45
+      - 🇮🇳 github.com/freefq - 印度孟买阿里云 46
+      - 🇺🇸 github.com/freefq - 美国RF Engineering 47
+      - 🇭🇰 github.com/freefq - 香港特别行政区 48
+      - 🇸🇬 github.com/freefq - 新加坡DigitalOcean数据中心 49
       - github.com/freefq - 广东省移动 50
-      - 🇧🇬 github.com/freefq - 保加利亚索非亚Friendhosting有限责任公司 51
-      - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 52
-      - 🇮🇳 github.com/freefq - 印度孟买阿里云 53
-      - 🇭🇰 github.com/freefq - 香港  54
-      - 🇨🇳 github.com/freefq - 广东省深圳市移动 55
-      - github.com/freefq - 广东省移动 56
-      - 🇨🇳 github.com/freefq - 广东省深圳市移动 57
-      - 🇺🇸 github.com/freefq - 美国华盛顿Cogent通信公司 58
-      - 🇸🇬 github.com/freefq - 北京市新国信通信有限公司 59
-      - 🇨🇳 github.com/freefq - 广东省深圳市移动 60
-      - 🇧🇬 github.com/freefq - 保加利亚索非亚Friendhosting有限责任公司 61
-      - 🇺🇸 github.com/freefq - 美国RF Engineering 62
-      - 🇺🇸 github.com/freefq - 北美地区  63
-      - 🇺🇸 github.com/freefq - 美国RF Engineering 64
+      - 🇨🇳 github.com/freefq - 广东省广州市电信IDC机房 51
+      - 🇺🇸 github.com/freefq - 美国华盛顿Cogent通信公司 52
+      - 🇯🇵 github.com/freefq - 日本  53
+      - 🇨🇳 github.com/freefq - 中国阿里云 54
+      - 🇸🇬 github.com/freefq - 北京市新国信通信有限公司 55
+      - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 56
+      - 🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶MULTACOM数据中心 57
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇨🇳 github.com/freefq - 中国阿里云 1
-      - github.com/freefq - 广东省移动 2
+      - 🇯🇵 github.com/freefq - 日本  1
+      - 🇯🇵 github.com/freefq - 日本东京Oracle数据中心 2
       - 🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶IT7网络 3
-      - 🇳🇱 github.com/freefq - 荷兰  4
-      - 🇨🇳 github.com/freefq - 广东省广州市移动 5
-      - 🇨🇳 github.com/freefq - 台湾省台中市中华电信 6
-      - 🇺🇸 github.com/freefq - 美国Microsoft数据中心 7
-      - 🇺🇸 github.com/freefq - 美国  8
-      - github.com/freefq - 广东省移动 9
-      - 🇯🇵 github.com/freefq - 日本  10
-      - 🇨🇳 github.com/freefq - 北京市移动 11
-      - github.com/freefq - 广东省移动 12
-      - 🇺🇸 github.com/freefq - 美国  13
-      - 🇺🇸 github.com/freefq - 美国华盛顿Cogent通信公司 14
-      - 🇸🇦 github.com/freefq - 沙特阿拉伯Arabic Computer System Co. 15
-      - 🇭🇺 github.com/freefq - 匈牙利  16
+      - 🇨🇳 github.com/freefq - 广东省深圳市移动 4
+      - 🇺🇸 github.com/freefq - 美国  5
+      - 🇨🇳 github.com/freefq - 广东省深圳市移动 6
+      - 🇨🇳 github.com/freefq - 广东省深圳市移动 7
+      - 🇨🇳 github.com/freefq - 广东省广州市移动 8
+      - 🇨🇳 github.com/freefq - 台湾省台中市中华电信 9
+      - 🇺🇸 github.com/freefq - 美国  10
+      - github.com/freefq - 广东省移动 11
+      - 🇺🇸 github.com/freefq - 美国  12
+      - 🇨🇳 github.com/freefq - 北京市移动 13
+      - github.com/freefq - 欧盟  14
+      - 🇺🇸 github.com/freefq - 美国华盛顿Cogent通信公司 15
+      - 🇺🇸 github.com/freefq - 美国  16
       - 🇺🇸 github.com/freefq - 美国华盛顿Cogent通信公司 17
-      - github.com/freefq - 广东省移动 18
-      - 🇷🇺 github.com/freefq - 俄罗斯莫斯科Melbicom数据中心 19
-      - 🇺🇸 github.com/freefq - 美国  20
-      - github.com/freefq - 欧盟  21
-      - 🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶MULTACOM数据中心 22
-      - 🇺🇸 github.com/freefq - 美国Nokia 23
-      - 🇸🇦 github.com/freefq - 沙特阿拉伯Arabic Computer System Co. 24
-      - 🇸🇬 github.com/freefq - 新加坡DigitalOcean数据中心 25
-      - 🇺🇸 github.com/freefq - 北美地区  26
-      - 🇺🇸 github.com/freefq - 美国Nokia 27
-      - 🇯🇵 github.com/freefq - 日本东京都东京Choopa数据中心 28
-      - 🇺🇸 github.com/freefq - 美国内华达州拉斯维加斯BuyVM数据中心 29
-      - 🇷🇴 github.com/freefq - 罗马尼亚  30
-      - 🇺🇸 github.com/freefq - 美国华盛顿Cogent通信公司 31
-      - 🇳🇱 github.com/freefq - 荷兰北荷兰省阿姆斯特丹Melbicom数据中心 32
-      - 🇺🇸 github.com/freefq - 美国Amazon数据中心 33
-      - 🇺🇸 github.com/freefq - 美国华盛顿Cogent通信公司 34
-      - 🇭🇰 github.com/freefq - 香港特别行政区 35
-      - 🇯🇵 github.com/freefq - 日本  36
-      - 🇺🇸 github.com/freefq - 美国  37
-      - 🇸🇬 github.com/freefq - 新加坡DigitalOcean数据中心 38
-      - 🇺🇸 github.com/freefq - 美国惠普公司 39
-      - 🇺🇸 github.com/freefq - 美国  40
-      - 🇬🇧 github.com/freefq - 英国社会保险安全部 41
-      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 42
-      - github.com/freefq - 亚太地区  43
-      - 🇨🇦 github.com/freefq - 加拿大  44
-      - 🇺🇸 github.com/freefq - 美国  45
-      - 🇺🇸 github.com/freefq - 美国  46
-      - 🇯🇵 github.com/freefq - 日本  47
-      - 🇺🇸 github.com/freefq - 美国  48
-      - 🇺🇸 github.com/freefq - 美国俄勒冈州波特兰Amazon数据中心 49
+      - 🇯🇵 github.com/freefq - 日本  18
+      - 🇺🇸 github.com/freefq - 北美地区  19
+      - 🇺🇸 github.com/freefq - 美国华盛顿Cogent通信公司 20
+      - 🇺🇸 github.com/freefq - 美国Nokia 21
+      - 🇺🇸 github.com/freefq - 美国  22
+      - 🇸🇬 github.com/freefq - 新加坡DigitalOcean数据中心 23
+      - 🇺🇸 github.com/freefq - 美国  24
+      - 🇺🇸 github.com/freefq - 美国华盛顿Cogent通信公司 25
+      - 🇬🇧 github.com/freefq - 英国  26
+      - 🇷🇺 github.com/freefq - 俄罗斯莫斯科Melbicom数据中心 27
+      - 🇺🇸 github.com/freefq - 美国Nokia 28
+      - 🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶Dedipath 29
+      - 🇺🇸 github.com/freefq - 美国  30
+      - github.com/freefq - 广东省移动 31
+      - 🇬🇧 github.com/freefq - 英国  32
+      - 🇺🇸 github.com/freefq - 美国华盛顿Cogent通信公司 33
+      - 🇺🇸 github.com/freefq - 美国亚利桑那州凤凰城Oracle云计算数据中心 34
+      - github.com/freefq - 广东省移动 35
+      - 🇬🇧 github.com/freefq - 英国社会保险安全部 36
+      - 🇺🇸 github.com/freefq - 美国俄勒冈州波特兰Amazon数据中心 37
+      - 🇨🇦 github.com/freefq - 加拿大  38
+      - github.com/freefq - 亚太地区  39
+      - 🇺🇸 github.com/freefq - 美国RF Engineering 40
+      - 🇺🇸 github.com/freefq - 美国  41
+      - 🇧🇬 github.com/freefq - 保加利亚索非亚Friendhosting有限责任公司 42
+      - 🇳🇱 github.com/freefq - 荷兰  43
+      - 🇧🇬 github.com/freefq - 保加利亚索非亚Friendhosting有限责任公司 44
+      - 🇺🇸 github.com/freefq - 北美地区  45
+      - 🇮🇳 github.com/freefq - 印度孟买阿里云 46
+      - 🇺🇸 github.com/freefq - 美国RF Engineering 47
+      - 🇭🇰 github.com/freefq - 香港特别行政区 48
+      - 🇸🇬 github.com/freefq - 新加坡DigitalOcean数据中心 49
       - github.com/freefq - 广东省移动 50
-      - 🇧🇬 github.com/freefq - 保加利亚索非亚Friendhosting有限责任公司 51
-      - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 52
-      - 🇮🇳 github.com/freefq - 印度孟买阿里云 53
-      - 🇭🇰 github.com/freefq - 香港  54
-      - 🇨🇳 github.com/freefq - 广东省深圳市移动 55
-      - github.com/freefq - 广东省移动 56
-      - 🇨🇳 github.com/freefq - 广东省深圳市移动 57
-      - 🇺🇸 github.com/freefq - 美国华盛顿Cogent通信公司 58
-      - 🇸🇬 github.com/freefq - 北京市新国信通信有限公司 59
-      - 🇨🇳 github.com/freefq - 广东省深圳市移动 60
-      - 🇧🇬 github.com/freefq - 保加利亚索非亚Friendhosting有限责任公司 61
-      - 🇺🇸 github.com/freefq - 美国RF Engineering 62
-      - 🇺🇸 github.com/freefq - 北美地区  63
-      - 🇺🇸 github.com/freefq - 美国RF Engineering 64
+      - 🇨🇳 github.com/freefq - 广东省广州市电信IDC机房 51
+      - 🇺🇸 github.com/freefq - 美国华盛顿Cogent通信公司 52
+      - 🇯🇵 github.com/freefq - 日本  53
+      - 🇨🇳 github.com/freefq - 中国阿里云 54
+      - 🇸🇬 github.com/freefq - 北京市新国信通信有限公司 55
+      - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 56
+      - 🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶MULTACOM数据中心 57
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇨🇳 github.com/freefq - 中国阿里云 1
-      - github.com/freefq - 广东省移动 2
+      - 🇯🇵 github.com/freefq - 日本  1
+      - 🇯🇵 github.com/freefq - 日本东京Oracle数据中心 2
       - 🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶IT7网络 3
-      - 🇳🇱 github.com/freefq - 荷兰  4
-      - 🇨🇳 github.com/freefq - 广东省广州市移动 5
-      - 🇨🇳 github.com/freefq - 台湾省台中市中华电信 6
-      - 🇺🇸 github.com/freefq - 美国Microsoft数据中心 7
-      - 🇺🇸 github.com/freefq - 美国  8
-      - github.com/freefq - 广东省移动 9
-      - 🇯🇵 github.com/freefq - 日本  10
-      - 🇨🇳 github.com/freefq - 北京市移动 11
-      - github.com/freefq - 广东省移动 12
-      - 🇺🇸 github.com/freefq - 美国  13
-      - 🇺🇸 github.com/freefq - 美国华盛顿Cogent通信公司 14
-      - 🇸🇦 github.com/freefq - 沙特阿拉伯Arabic Computer System Co. 15
-      - 🇭🇺 github.com/freefq - 匈牙利  16
+      - 🇨🇳 github.com/freefq - 广东省深圳市移动 4
+      - 🇺🇸 github.com/freefq - 美国  5
+      - 🇨🇳 github.com/freefq - 广东省深圳市移动 6
+      - 🇨🇳 github.com/freefq - 广东省深圳市移动 7
+      - 🇨🇳 github.com/freefq - 广东省广州市移动 8
+      - 🇨🇳 github.com/freefq - 台湾省台中市中华电信 9
+      - 🇺🇸 github.com/freefq - 美国  10
+      - github.com/freefq - 广东省移动 11
+      - 🇺🇸 github.com/freefq - 美国  12
+      - 🇨🇳 github.com/freefq - 北京市移动 13
+      - github.com/freefq - 欧盟  14
+      - 🇺🇸 github.com/freefq - 美国华盛顿Cogent通信公司 15
+      - 🇺🇸 github.com/freefq - 美国  16
       - 🇺🇸 github.com/freefq - 美国华盛顿Cogent通信公司 17
-      - github.com/freefq - 广东省移动 18
-      - 🇷🇺 github.com/freefq - 俄罗斯莫斯科Melbicom数据中心 19
-      - 🇺🇸 github.com/freefq - 美国  20
-      - github.com/freefq - 欧盟  21
-      - 🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶MULTACOM数据中心 22
-      - 🇺🇸 github.com/freefq - 美国Nokia 23
-      - 🇸🇦 github.com/freefq - 沙特阿拉伯Arabic Computer System Co. 24
-      - 🇸🇬 github.com/freefq - 新加坡DigitalOcean数据中心 25
-      - 🇺🇸 github.com/freefq - 北美地区  26
-      - 🇺🇸 github.com/freefq - 美国Nokia 27
-      - 🇯🇵 github.com/freefq - 日本东京都东京Choopa数据中心 28
-      - 🇺🇸 github.com/freefq - 美国内华达州拉斯维加斯BuyVM数据中心 29
-      - 🇷🇴 github.com/freefq - 罗马尼亚  30
-      - 🇺🇸 github.com/freefq - 美国华盛顿Cogent通信公司 31
-      - 🇳🇱 github.com/freefq - 荷兰北荷兰省阿姆斯特丹Melbicom数据中心 32
-      - 🇺🇸 github.com/freefq - 美国Amazon数据中心 33
-      - 🇺🇸 github.com/freefq - 美国华盛顿Cogent通信公司 34
-      - 🇭🇰 github.com/freefq - 香港特别行政区 35
-      - 🇯🇵 github.com/freefq - 日本  36
-      - 🇺🇸 github.com/freefq - 美国  37
-      - 🇸🇬 github.com/freefq - 新加坡DigitalOcean数据中心 38
-      - 🇺🇸 github.com/freefq - 美国惠普公司 39
-      - 🇺🇸 github.com/freefq - 美国  40
-      - 🇬🇧 github.com/freefq - 英国社会保险安全部 41
-      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 42
-      - github.com/freefq - 亚太地区  43
-      - 🇨🇦 github.com/freefq - 加拿大  44
-      - 🇺🇸 github.com/freefq - 美国  45
-      - 🇺🇸 github.com/freefq - 美国  46
-      - 🇯🇵 github.com/freefq - 日本  47
-      - 🇺🇸 github.com/freefq - 美国  48
-      - 🇺🇸 github.com/freefq - 美国俄勒冈州波特兰Amazon数据中心 49
+      - 🇯🇵 github.com/freefq - 日本  18
+      - 🇺🇸 github.com/freefq - 北美地区  19
+      - 🇺🇸 github.com/freefq - 美国华盛顿Cogent通信公司 20
+      - 🇺🇸 github.com/freefq - 美国Nokia 21
+      - 🇺🇸 github.com/freefq - 美国  22
+      - 🇸🇬 github.com/freefq - 新加坡DigitalOcean数据中心 23
+      - 🇺🇸 github.com/freefq - 美国  24
+      - 🇺🇸 github.com/freefq - 美国华盛顿Cogent通信公司 25
+      - 🇬🇧 github.com/freefq - 英国  26
+      - 🇷🇺 github.com/freefq - 俄罗斯莫斯科Melbicom数据中心 27
+      - 🇺🇸 github.com/freefq - 美国Nokia 28
+      - 🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶Dedipath 29
+      - 🇺🇸 github.com/freefq - 美国  30
+      - github.com/freefq - 广东省移动 31
+      - 🇬🇧 github.com/freefq - 英国  32
+      - 🇺🇸 github.com/freefq - 美国华盛顿Cogent通信公司 33
+      - 🇺🇸 github.com/freefq - 美国亚利桑那州凤凰城Oracle云计算数据中心 34
+      - github.com/freefq - 广东省移动 35
+      - 🇬🇧 github.com/freefq - 英国社会保险安全部 36
+      - 🇺🇸 github.com/freefq - 美国俄勒冈州波特兰Amazon数据中心 37
+      - 🇨🇦 github.com/freefq - 加拿大  38
+      - github.com/freefq - 亚太地区  39
+      - 🇺🇸 github.com/freefq - 美国RF Engineering 40
+      - 🇺🇸 github.com/freefq - 美国  41
+      - 🇧🇬 github.com/freefq - 保加利亚索非亚Friendhosting有限责任公司 42
+      - 🇳🇱 github.com/freefq - 荷兰  43
+      - 🇧🇬 github.com/freefq - 保加利亚索非亚Friendhosting有限责任公司 44
+      - 🇺🇸 github.com/freefq - 北美地区  45
+      - 🇮🇳 github.com/freefq - 印度孟买阿里云 46
+      - 🇺🇸 github.com/freefq - 美国RF Engineering 47
+      - 🇭🇰 github.com/freefq - 香港特别行政区 48
+      - 🇸🇬 github.com/freefq - 新加坡DigitalOcean数据中心 49
       - github.com/freefq - 广东省移动 50
-      - 🇧🇬 github.com/freefq - 保加利亚索非亚Friendhosting有限责任公司 51
-      - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 52
-      - 🇮🇳 github.com/freefq - 印度孟买阿里云 53
-      - 🇭🇰 github.com/freefq - 香港  54
-      - 🇨🇳 github.com/freefq - 广东省深圳市移动 55
-      - github.com/freefq - 广东省移动 56
-      - 🇨🇳 github.com/freefq - 广东省深圳市移动 57
-      - 🇺🇸 github.com/freefq - 美国华盛顿Cogent通信公司 58
-      - 🇸🇬 github.com/freefq - 北京市新国信通信有限公司 59
-      - 🇨🇳 github.com/freefq - 广东省深圳市移动 60
-      - 🇧🇬 github.com/freefq - 保加利亚索非亚Friendhosting有限责任公司 61
-      - 🇺🇸 github.com/freefq - 美国RF Engineering 62
-      - 🇺🇸 github.com/freefq - 北美地区  63
-      - 🇺🇸 github.com/freefq - 美国RF Engineering 64
+      - 🇨🇳 github.com/freefq - 广东省广州市电信IDC机房 51
+      - 🇺🇸 github.com/freefq - 美国华盛顿Cogent通信公司 52
+      - 🇯🇵 github.com/freefq - 日本  53
+      - 🇨🇳 github.com/freefq - 中国阿里云 54
+      - 🇸🇬 github.com/freefq - 北京市新国信通信有限公司 55
+      - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 56
+      - 🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶MULTACOM数据中心 57
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 🇨🇳 github.com/freefq - 中国阿里云 1
-      - github.com/freefq - 广东省移动 2
+      - 🇯🇵 github.com/freefq - 日本  1
+      - 🇯🇵 github.com/freefq - 日本东京Oracle数据中心 2
       - 🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶IT7网络 3
-      - 🇳🇱 github.com/freefq - 荷兰  4
-      - 🇨🇳 github.com/freefq - 广东省广州市移动 5
-      - 🇨🇳 github.com/freefq - 台湾省台中市中华电信 6
-      - 🇺🇸 github.com/freefq - 美国Microsoft数据中心 7
-      - 🇺🇸 github.com/freefq - 美国  8
-      - github.com/freefq - 广东省移动 9
-      - 🇯🇵 github.com/freefq - 日本  10
-      - 🇨🇳 github.com/freefq - 北京市移动 11
-      - github.com/freefq - 广东省移动 12
-      - 🇺🇸 github.com/freefq - 美国  13
-      - 🇺🇸 github.com/freefq - 美国华盛顿Cogent通信公司 14
-      - 🇸🇦 github.com/freefq - 沙特阿拉伯Arabic Computer System Co. 15
-      - 🇭🇺 github.com/freefq - 匈牙利  16
+      - 🇨🇳 github.com/freefq - 广东省深圳市移动 4
+      - 🇺🇸 github.com/freefq - 美国  5
+      - 🇨🇳 github.com/freefq - 广东省深圳市移动 6
+      - 🇨🇳 github.com/freefq - 广东省深圳市移动 7
+      - 🇨🇳 github.com/freefq - 广东省广州市移动 8
+      - 🇨🇳 github.com/freefq - 台湾省台中市中华电信 9
+      - 🇺🇸 github.com/freefq - 美国  10
+      - github.com/freefq - 广东省移动 11
+      - 🇺🇸 github.com/freefq - 美国  12
+      - 🇨🇳 github.com/freefq - 北京市移动 13
+      - github.com/freefq - 欧盟  14
+      - 🇺🇸 github.com/freefq - 美国华盛顿Cogent通信公司 15
+      - 🇺🇸 github.com/freefq - 美国  16
       - 🇺🇸 github.com/freefq - 美国华盛顿Cogent通信公司 17
-      - github.com/freefq - 广东省移动 18
-      - 🇷🇺 github.com/freefq - 俄罗斯莫斯科Melbicom数据中心 19
-      - 🇺🇸 github.com/freefq - 美国  20
-      - github.com/freefq - 欧盟  21
-      - 🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶MULTACOM数据中心 22
-      - 🇺🇸 github.com/freefq - 美国Nokia 23
-      - 🇸🇦 github.com/freefq - 沙特阿拉伯Arabic Computer System Co. 24
-      - 🇸🇬 github.com/freefq - 新加坡DigitalOcean数据中心 25
-      - 🇺🇸 github.com/freefq - 北美地区  26
-      - 🇺🇸 github.com/freefq - 美国Nokia 27
-      - 🇯🇵 github.com/freefq - 日本东京都东京Choopa数据中心 28
-      - 🇺🇸 github.com/freefq - 美国内华达州拉斯维加斯BuyVM数据中心 29
-      - 🇷🇴 github.com/freefq - 罗马尼亚  30
-      - 🇺🇸 github.com/freefq - 美国华盛顿Cogent通信公司 31
-      - 🇳🇱 github.com/freefq - 荷兰北荷兰省阿姆斯特丹Melbicom数据中心 32
-      - 🇺🇸 github.com/freefq - 美国Amazon数据中心 33
-      - 🇺🇸 github.com/freefq - 美国华盛顿Cogent通信公司 34
-      - 🇭🇰 github.com/freefq - 香港特别行政区 35
-      - 🇯🇵 github.com/freefq - 日本  36
-      - 🇺🇸 github.com/freefq - 美国  37
-      - 🇸🇬 github.com/freefq - 新加坡DigitalOcean数据中心 38
-      - 🇺🇸 github.com/freefq - 美国惠普公司 39
-      - 🇺🇸 github.com/freefq - 美国  40
-      - 🇬🇧 github.com/freefq - 英国社会保险安全部 41
-      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 42
-      - github.com/freefq - 亚太地区  43
-      - 🇨🇦 github.com/freefq - 加拿大  44
-      - 🇺🇸 github.com/freefq - 美国  45
-      - 🇺🇸 github.com/freefq - 美国  46
-      - 🇯🇵 github.com/freefq - 日本  47
-      - 🇺🇸 github.com/freefq - 美国  48
-      - 🇺🇸 github.com/freefq - 美国俄勒冈州波特兰Amazon数据中心 49
+      - 🇯🇵 github.com/freefq - 日本  18
+      - 🇺🇸 github.com/freefq - 北美地区  19
+      - 🇺🇸 github.com/freefq - 美国华盛顿Cogent通信公司 20
+      - 🇺🇸 github.com/freefq - 美国Nokia 21
+      - 🇺🇸 github.com/freefq - 美国  22
+      - 🇸🇬 github.com/freefq - 新加坡DigitalOcean数据中心 23
+      - 🇺🇸 github.com/freefq - 美国  24
+      - 🇺🇸 github.com/freefq - 美国华盛顿Cogent通信公司 25
+      - 🇬🇧 github.com/freefq - 英国  26
+      - 🇷🇺 github.com/freefq - 俄罗斯莫斯科Melbicom数据中心 27
+      - 🇺🇸 github.com/freefq - 美国Nokia 28
+      - 🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶Dedipath 29
+      - 🇺🇸 github.com/freefq - 美国  30
+      - github.com/freefq - 广东省移动 31
+      - 🇬🇧 github.com/freefq - 英国  32
+      - 🇺🇸 github.com/freefq - 美国华盛顿Cogent通信公司 33
+      - 🇺🇸 github.com/freefq - 美国亚利桑那州凤凰城Oracle云计算数据中心 34
+      - github.com/freefq - 广东省移动 35
+      - 🇬🇧 github.com/freefq - 英国社会保险安全部 36
+      - 🇺🇸 github.com/freefq - 美国俄勒冈州波特兰Amazon数据中心 37
+      - 🇨🇦 github.com/freefq - 加拿大  38
+      - github.com/freefq - 亚太地区  39
+      - 🇺🇸 github.com/freefq - 美国RF Engineering 40
+      - 🇺🇸 github.com/freefq - 美国  41
+      - 🇧🇬 github.com/freefq - 保加利亚索非亚Friendhosting有限责任公司 42
+      - 🇳🇱 github.com/freefq - 荷兰  43
+      - 🇧🇬 github.com/freefq - 保加利亚索非亚Friendhosting有限责任公司 44
+      - 🇺🇸 github.com/freefq - 北美地区  45
+      - 🇮🇳 github.com/freefq - 印度孟买阿里云 46
+      - 🇺🇸 github.com/freefq - 美国RF Engineering 47
+      - 🇭🇰 github.com/freefq - 香港特别行政区 48
+      - 🇸🇬 github.com/freefq - 新加坡DigitalOcean数据中心 49
       - github.com/freefq - 广东省移动 50
-      - 🇧🇬 github.com/freefq - 保加利亚索非亚Friendhosting有限责任公司 51
-      - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 52
-      - 🇮🇳 github.com/freefq - 印度孟买阿里云 53
-      - 🇭🇰 github.com/freefq - 香港  54
-      - 🇨🇳 github.com/freefq - 广东省深圳市移动 55
-      - github.com/freefq - 广东省移动 56
-      - 🇨🇳 github.com/freefq - 广东省深圳市移动 57
-      - 🇺🇸 github.com/freefq - 美国华盛顿Cogent通信公司 58
-      - 🇸🇬 github.com/freefq - 北京市新国信通信有限公司 59
-      - 🇨🇳 github.com/freefq - 广东省深圳市移动 60
-      - 🇧🇬 github.com/freefq - 保加利亚索非亚Friendhosting有限责任公司 61
-      - 🇺🇸 github.com/freefq - 美国RF Engineering 62
-      - 🇺🇸 github.com/freefq - 北美地区  63
-      - 🇺🇸 github.com/freefq - 美国RF Engineering 64
+      - 🇨🇳 github.com/freefq - 广东省广州市电信IDC机房 51
+      - 🇺🇸 github.com/freefq - 美国华盛顿Cogent通信公司 52
+      - 🇯🇵 github.com/freefq - 日本  53
+      - 🇨🇳 github.com/freefq - 中国阿里云 54
+      - 🇸🇬 github.com/freefq - 北京市新国信通信有限公司 55
+      - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 56
+      - 🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶MULTACOM数据中心 57
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇨🇳 github.com/freefq - 中国阿里云 1
-      - github.com/freefq - 广东省移动 2
+      - 🇯🇵 github.com/freefq - 日本  1
+      - 🇯🇵 github.com/freefq - 日本东京Oracle数据中心 2
       - 🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶IT7网络 3
-      - 🇳🇱 github.com/freefq - 荷兰  4
-      - 🇨🇳 github.com/freefq - 广东省广州市移动 5
-      - 🇨🇳 github.com/freefq - 台湾省台中市中华电信 6
-      - 🇺🇸 github.com/freefq - 美国Microsoft数据中心 7
-      - 🇺🇸 github.com/freefq - 美国  8
-      - github.com/freefq - 广东省移动 9
-      - 🇯🇵 github.com/freefq - 日本  10
-      - 🇨🇳 github.com/freefq - 北京市移动 11
-      - github.com/freefq - 广东省移动 12
-      - 🇺🇸 github.com/freefq - 美国  13
-      - 🇺🇸 github.com/freefq - 美国华盛顿Cogent通信公司 14
-      - 🇸🇦 github.com/freefq - 沙特阿拉伯Arabic Computer System Co. 15
-      - 🇭🇺 github.com/freefq - 匈牙利  16
+      - 🇨🇳 github.com/freefq - 广东省深圳市移动 4
+      - 🇺🇸 github.com/freefq - 美国  5
+      - 🇨🇳 github.com/freefq - 广东省深圳市移动 6
+      - 🇨🇳 github.com/freefq - 广东省深圳市移动 7
+      - 🇨🇳 github.com/freefq - 广东省广州市移动 8
+      - 🇨🇳 github.com/freefq - 台湾省台中市中华电信 9
+      - 🇺🇸 github.com/freefq - 美国  10
+      - github.com/freefq - 广东省移动 11
+      - 🇺🇸 github.com/freefq - 美国  12
+      - 🇨🇳 github.com/freefq - 北京市移动 13
+      - github.com/freefq - 欧盟  14
+      - 🇺🇸 github.com/freefq - 美国华盛顿Cogent通信公司 15
+      - 🇺🇸 github.com/freefq - 美国  16
       - 🇺🇸 github.com/freefq - 美国华盛顿Cogent通信公司 17
-      - github.com/freefq - 广东省移动 18
-      - 🇷🇺 github.com/freefq - 俄罗斯莫斯科Melbicom数据中心 19
-      - 🇺🇸 github.com/freefq - 美国  20
-      - github.com/freefq - 欧盟  21
-      - 🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶MULTACOM数据中心 22
-      - 🇺🇸 github.com/freefq - 美国Nokia 23
-      - 🇸🇦 github.com/freefq - 沙特阿拉伯Arabic Computer System Co. 24
-      - 🇸🇬 github.com/freefq - 新加坡DigitalOcean数据中心 25
-      - 🇺🇸 github.com/freefq - 北美地区  26
-      - 🇺🇸 github.com/freefq - 美国Nokia 27
-      - 🇯🇵 github.com/freefq - 日本东京都东京Choopa数据中心 28
-      - 🇺🇸 github.com/freefq - 美国内华达州拉斯维加斯BuyVM数据中心 29
-      - 🇷🇴 github.com/freefq - 罗马尼亚  30
-      - 🇺🇸 github.com/freefq - 美国华盛顿Cogent通信公司 31
-      - 🇳🇱 github.com/freefq - 荷兰北荷兰省阿姆斯特丹Melbicom数据中心 32
-      - 🇺🇸 github.com/freefq - 美国Amazon数据中心 33
-      - 🇺🇸 github.com/freefq - 美国华盛顿Cogent通信公司 34
-      - 🇭🇰 github.com/freefq - 香港特别行政区 35
-      - 🇯🇵 github.com/freefq - 日本  36
-      - 🇺🇸 github.com/freefq - 美国  37
-      - 🇸🇬 github.com/freefq - 新加坡DigitalOcean数据中心 38
-      - 🇺🇸 github.com/freefq - 美国惠普公司 39
-      - 🇺🇸 github.com/freefq - 美国  40
-      - 🇬🇧 github.com/freefq - 英国社会保险安全部 41
-      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 42
-      - github.com/freefq - 亚太地区  43
-      - 🇨🇦 github.com/freefq - 加拿大  44
-      - 🇺🇸 github.com/freefq - 美国  45
-      - 🇺🇸 github.com/freefq - 美国  46
-      - 🇯🇵 github.com/freefq - 日本  47
-      - 🇺🇸 github.com/freefq - 美国  48
-      - 🇺🇸 github.com/freefq - 美国俄勒冈州波特兰Amazon数据中心 49
+      - 🇯🇵 github.com/freefq - 日本  18
+      - 🇺🇸 github.com/freefq - 北美地区  19
+      - 🇺🇸 github.com/freefq - 美国华盛顿Cogent通信公司 20
+      - 🇺🇸 github.com/freefq - 美国Nokia 21
+      - 🇺🇸 github.com/freefq - 美国  22
+      - 🇸🇬 github.com/freefq - 新加坡DigitalOcean数据中心 23
+      - 🇺🇸 github.com/freefq - 美国  24
+      - 🇺🇸 github.com/freefq - 美国华盛顿Cogent通信公司 25
+      - 🇬🇧 github.com/freefq - 英国  26
+      - 🇷🇺 github.com/freefq - 俄罗斯莫斯科Melbicom数据中心 27
+      - 🇺🇸 github.com/freefq - 美国Nokia 28
+      - 🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶Dedipath 29
+      - 🇺🇸 github.com/freefq - 美国  30
+      - github.com/freefq - 广东省移动 31
+      - 🇬🇧 github.com/freefq - 英国  32
+      - 🇺🇸 github.com/freefq - 美国华盛顿Cogent通信公司 33
+      - 🇺🇸 github.com/freefq - 美国亚利桑那州凤凰城Oracle云计算数据中心 34
+      - github.com/freefq - 广东省移动 35
+      - 🇬🇧 github.com/freefq - 英国社会保险安全部 36
+      - 🇺🇸 github.com/freefq - 美国俄勒冈州波特兰Amazon数据中心 37
+      - 🇨🇦 github.com/freefq - 加拿大  38
+      - github.com/freefq - 亚太地区  39
+      - 🇺🇸 github.com/freefq - 美国RF Engineering 40
+      - 🇺🇸 github.com/freefq - 美国  41
+      - 🇧🇬 github.com/freefq - 保加利亚索非亚Friendhosting有限责任公司 42
+      - 🇳🇱 github.com/freefq - 荷兰  43
+      - 🇧🇬 github.com/freefq - 保加利亚索非亚Friendhosting有限责任公司 44
+      - 🇺🇸 github.com/freefq - 北美地区  45
+      - 🇮🇳 github.com/freefq - 印度孟买阿里云 46
+      - 🇺🇸 github.com/freefq - 美国RF Engineering 47
+      - 🇭🇰 github.com/freefq - 香港特别行政区 48
+      - 🇸🇬 github.com/freefq - 新加坡DigitalOcean数据中心 49
       - github.com/freefq - 广东省移动 50
-      - 🇧🇬 github.com/freefq - 保加利亚索非亚Friendhosting有限责任公司 51
-      - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 52
-      - 🇮🇳 github.com/freefq - 印度孟买阿里云 53
-      - 🇭🇰 github.com/freefq - 香港  54
-      - 🇨🇳 github.com/freefq - 广东省深圳市移动 55
-      - github.com/freefq - 广东省移动 56
-      - 🇨🇳 github.com/freefq - 广东省深圳市移动 57
-      - 🇺🇸 github.com/freefq - 美国华盛顿Cogent通信公司 58
-      - 🇸🇬 github.com/freefq - 北京市新国信通信有限公司 59
-      - 🇨🇳 github.com/freefq - 广东省深圳市移动 60
-      - 🇧🇬 github.com/freefq - 保加利亚索非亚Friendhosting有限责任公司 61
-      - 🇺🇸 github.com/freefq - 美国RF Engineering 62
-      - 🇺🇸 github.com/freefq - 北美地区  63
-      - 🇺🇸 github.com/freefq - 美国RF Engineering 64
+      - 🇨🇳 github.com/freefq - 广东省广州市电信IDC机房 51
+      - 🇺🇸 github.com/freefq - 美国华盛顿Cogent通信公司 52
+      - 🇯🇵 github.com/freefq - 日本  53
+      - 🇨🇳 github.com/freefq - 中国阿里云 54
+      - 🇸🇬 github.com/freefq - 北京市新国信通信有限公司 55
+      - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 56
+      - 🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶MULTACOM数据中心 57
   - name: 📢 谷歌FCM
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇨🇳 github.com/freefq - 中国阿里云 1
-      - github.com/freefq - 广东省移动 2
+      - 🇯🇵 github.com/freefq - 日本  1
+      - 🇯🇵 github.com/freefq - 日本东京Oracle数据中心 2
       - 🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶IT7网络 3
-      - 🇳🇱 github.com/freefq - 荷兰  4
-      - 🇨🇳 github.com/freefq - 广东省广州市移动 5
-      - 🇨🇳 github.com/freefq - 台湾省台中市中华电信 6
-      - 🇺🇸 github.com/freefq - 美国Microsoft数据中心 7
-      - 🇺🇸 github.com/freefq - 美国  8
-      - github.com/freefq - 广东省移动 9
-      - 🇯🇵 github.com/freefq - 日本  10
-      - 🇨🇳 github.com/freefq - 北京市移动 11
-      - github.com/freefq - 广东省移动 12
-      - 🇺🇸 github.com/freefq - 美国  13
-      - 🇺🇸 github.com/freefq - 美国华盛顿Cogent通信公司 14
-      - 🇸🇦 github.com/freefq - 沙特阿拉伯Arabic Computer System Co. 15
-      - 🇭🇺 github.com/freefq - 匈牙利  16
+      - 🇨🇳 github.com/freefq - 广东省深圳市移动 4
+      - 🇺🇸 github.com/freefq - 美国  5
+      - 🇨🇳 github.com/freefq - 广东省深圳市移动 6
+      - 🇨🇳 github.com/freefq - 广东省深圳市移动 7
+      - 🇨🇳 github.com/freefq - 广东省广州市移动 8
+      - 🇨🇳 github.com/freefq - 台湾省台中市中华电信 9
+      - 🇺🇸 github.com/freefq - 美国  10
+      - github.com/freefq - 广东省移动 11
+      - 🇺🇸 github.com/freefq - 美国  12
+      - 🇨🇳 github.com/freefq - 北京市移动 13
+      - github.com/freefq - 欧盟  14
+      - 🇺🇸 github.com/freefq - 美国华盛顿Cogent通信公司 15
+      - 🇺🇸 github.com/freefq - 美国  16
       - 🇺🇸 github.com/freefq - 美国华盛顿Cogent通信公司 17
-      - github.com/freefq - 广东省移动 18
-      - 🇷🇺 github.com/freefq - 俄罗斯莫斯科Melbicom数据中心 19
-      - 🇺🇸 github.com/freefq - 美国  20
-      - github.com/freefq - 欧盟  21
-      - 🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶MULTACOM数据中心 22
-      - 🇺🇸 github.com/freefq - 美国Nokia 23
-      - 🇸🇦 github.com/freefq - 沙特阿拉伯Arabic Computer System Co. 24
-      - 🇸🇬 github.com/freefq - 新加坡DigitalOcean数据中心 25
-      - 🇺🇸 github.com/freefq - 北美地区  26
-      - 🇺🇸 github.com/freefq - 美国Nokia 27
-      - 🇯🇵 github.com/freefq - 日本东京都东京Choopa数据中心 28
-      - 🇺🇸 github.com/freefq - 美国内华达州拉斯维加斯BuyVM数据中心 29
-      - 🇷🇴 github.com/freefq - 罗马尼亚  30
-      - 🇺🇸 github.com/freefq - 美国华盛顿Cogent通信公司 31
-      - 🇳🇱 github.com/freefq - 荷兰北荷兰省阿姆斯特丹Melbicom数据中心 32
-      - 🇺🇸 github.com/freefq - 美国Amazon数据中心 33
-      - 🇺🇸 github.com/freefq - 美国华盛顿Cogent通信公司 34
-      - 🇭🇰 github.com/freefq - 香港特别行政区 35
-      - 🇯🇵 github.com/freefq - 日本  36
-      - 🇺🇸 github.com/freefq - 美国  37
-      - 🇸🇬 github.com/freefq - 新加坡DigitalOcean数据中心 38
-      - 🇺🇸 github.com/freefq - 美国惠普公司 39
-      - 🇺🇸 github.com/freefq - 美国  40
-      - 🇬🇧 github.com/freefq - 英国社会保险安全部 41
-      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 42
-      - github.com/freefq - 亚太地区  43
-      - 🇨🇦 github.com/freefq - 加拿大  44
-      - 🇺🇸 github.com/freefq - 美国  45
-      - 🇺🇸 github.com/freefq - 美国  46
-      - 🇯🇵 github.com/freefq - 日本  47
-      - 🇺🇸 github.com/freefq - 美国  48
-      - 🇺🇸 github.com/freefq - 美国俄勒冈州波特兰Amazon数据中心 49
+      - 🇯🇵 github.com/freefq - 日本  18
+      - 🇺🇸 github.com/freefq - 北美地区  19
+      - 🇺🇸 github.com/freefq - 美国华盛顿Cogent通信公司 20
+      - 🇺🇸 github.com/freefq - 美国Nokia 21
+      - 🇺🇸 github.com/freefq - 美国  22
+      - 🇸🇬 github.com/freefq - 新加坡DigitalOcean数据中心 23
+      - 🇺🇸 github.com/freefq - 美国  24
+      - 🇺🇸 github.com/freefq - 美国华盛顿Cogent通信公司 25
+      - 🇬🇧 github.com/freefq - 英国  26
+      - 🇷🇺 github.com/freefq - 俄罗斯莫斯科Melbicom数据中心 27
+      - 🇺🇸 github.com/freefq - 美国Nokia 28
+      - 🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶Dedipath 29
+      - 🇺🇸 github.com/freefq - 美国  30
+      - github.com/freefq - 广东省移动 31
+      - 🇬🇧 github.com/freefq - 英国  32
+      - 🇺🇸 github.com/freefq - 美国华盛顿Cogent通信公司 33
+      - 🇺🇸 github.com/freefq - 美国亚利桑那州凤凰城Oracle云计算数据中心 34
+      - github.com/freefq - 广东省移动 35
+      - 🇬🇧 github.com/freefq - 英国社会保险安全部 36
+      - 🇺🇸 github.com/freefq - 美国俄勒冈州波特兰Amazon数据中心 37
+      - 🇨🇦 github.com/freefq - 加拿大  38
+      - github.com/freefq - 亚太地区  39
+      - 🇺🇸 github.com/freefq - 美国RF Engineering 40
+      - 🇺🇸 github.com/freefq - 美国  41
+      - 🇧🇬 github.com/freefq - 保加利亚索非亚Friendhosting有限责任公司 42
+      - 🇳🇱 github.com/freefq - 荷兰  43
+      - 🇧🇬 github.com/freefq - 保加利亚索非亚Friendhosting有限责任公司 44
+      - 🇺🇸 github.com/freefq - 北美地区  45
+      - 🇮🇳 github.com/freefq - 印度孟买阿里云 46
+      - 🇺🇸 github.com/freefq - 美国RF Engineering 47
+      - 🇭🇰 github.com/freefq - 香港特别行政区 48
+      - 🇸🇬 github.com/freefq - 新加坡DigitalOcean数据中心 49
       - github.com/freefq - 广东省移动 50
-      - 🇧🇬 github.com/freefq - 保加利亚索非亚Friendhosting有限责任公司 51
-      - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 52
-      - 🇮🇳 github.com/freefq - 印度孟买阿里云 53
-      - 🇭🇰 github.com/freefq - 香港  54
-      - 🇨🇳 github.com/freefq - 广东省深圳市移动 55
-      - github.com/freefq - 广东省移动 56
-      - 🇨🇳 github.com/freefq - 广东省深圳市移动 57
-      - 🇺🇸 github.com/freefq - 美国华盛顿Cogent通信公司 58
-      - 🇸🇬 github.com/freefq - 北京市新国信通信有限公司 59
-      - 🇨🇳 github.com/freefq - 广东省深圳市移动 60
-      - 🇧🇬 github.com/freefq - 保加利亚索非亚Friendhosting有限责任公司 61
-      - 🇺🇸 github.com/freefq - 美国RF Engineering 62
-      - 🇺🇸 github.com/freefq - 北美地区  63
-      - 🇺🇸 github.com/freefq - 美国RF Engineering 64
+      - 🇨🇳 github.com/freefq - 广东省广州市电信IDC机房 51
+      - 🇺🇸 github.com/freefq - 美国华盛顿Cogent通信公司 52
+      - 🇯🇵 github.com/freefq - 日本  53
+      - 🇨🇳 github.com/freefq - 中国阿里云 54
+      - 🇸🇬 github.com/freefq - 北京市新国信通信有限公司 55
+      - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 56
+      - 🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶MULTACOM数据中心 57
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -578,102 +522,64 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇨🇳 github.com/freefq - 中国阿里云 1
-      - github.com/freefq - 广东省移动 2
+      - 🇯🇵 github.com/freefq - 日本  1
+      - 🇯🇵 github.com/freefq - 日本东京Oracle数据中心 2
       - 🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶IT7网络 3
-      - 🇳🇱 github.com/freefq - 荷兰  4
-      - 🇨🇳 github.com/freefq - 广东省广州市移动 5
-      - 🇨🇳 github.com/freefq - 台湾省台中市中华电信 6
-      - 🇺🇸 github.com/freefq - 美国Microsoft数据中心 7
-      - 🇺🇸 github.com/freefq - 美国  8
-      - github.com/freefq - 广东省移动 9
-      - 🇯🇵 github.com/freefq - 日本  10
-      - 🇨🇳 github.com/freefq - 北京市移动 11
-      - github.com/freefq - 广东省移动 12
-      - 🇺🇸 github.com/freefq - 美国  13
-      - 🇺🇸 github.com/freefq - 美国华盛顿Cogent通信公司 14
-      - 🇸🇦 github.com/freefq - 沙特阿拉伯Arabic Computer System Co. 15
-      - 🇭🇺 github.com/freefq - 匈牙利  16
+      - 🇨🇳 github.com/freefq - 广东省深圳市移动 4
+      - 🇺🇸 github.com/freefq - 美国  5
+      - 🇨🇳 github.com/freefq - 广东省深圳市移动 6
+      - 🇨🇳 github.com/freefq - 广东省深圳市移动 7
+      - 🇨🇳 github.com/freefq - 广东省广州市移动 8
+      - 🇨🇳 github.com/freefq - 台湾省台中市中华电信 9
+      - 🇺🇸 github.com/freefq - 美国  10
+      - github.com/freefq - 广东省移动 11
+      - 🇺🇸 github.com/freefq - 美国  12
+      - 🇨🇳 github.com/freefq - 北京市移动 13
+      - github.com/freefq - 欧盟  14
+      - 🇺🇸 github.com/freefq - 美国华盛顿Cogent通信公司 15
+      - 🇺🇸 github.com/freefq - 美国  16
       - 🇺🇸 github.com/freefq - 美国华盛顿Cogent通信公司 17
-      - github.com/freefq - 广东省移动 18
-      - 🇷🇺 github.com/freefq - 俄罗斯莫斯科Melbicom数据中心 19
-      - 🇺🇸 github.com/freefq - 美国  20
-      - github.com/freefq - 欧盟  21
-      - 🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶MULTACOM数据中心 22
-      - 🇺🇸 github.com/freefq - 美国Nokia 23
-      - 🇸🇦 github.com/freefq - 沙特阿拉伯Arabic Computer System Co. 24
-      - 🇸🇬 github.com/freefq - 新加坡DigitalOcean数据中心 25
-      - 🇺🇸 github.com/freefq - 北美地区  26
-      - 🇺🇸 github.com/freefq - 美国Nokia 27
-      - 🇯🇵 github.com/freefq - 日本东京都东京Choopa数据中心 28
-      - 🇺🇸 github.com/freefq - 美国内华达州拉斯维加斯BuyVM数据中心 29
-      - 🇷🇴 github.com/freefq - 罗马尼亚  30
-      - 🇺🇸 github.com/freefq - 美国华盛顿Cogent通信公司 31
-      - 🇳🇱 github.com/freefq - 荷兰北荷兰省阿姆斯特丹Melbicom数据中心 32
-      - 🇺🇸 github.com/freefq - 美国Amazon数据中心 33
-      - 🇺🇸 github.com/freefq - 美国华盛顿Cogent通信公司 34
-      - 🇭🇰 github.com/freefq - 香港特别行政区 35
-      - 🇯🇵 github.com/freefq - 日本  36
-      - 🇺🇸 github.com/freefq - 美国  37
-      - 🇸🇬 github.com/freefq - 新加坡DigitalOcean数据中心 38
-      - 🇺🇸 github.com/freefq - 美国惠普公司 39
-      - 🇺🇸 github.com/freefq - 美国  40
-      - 🇬🇧 github.com/freefq - 英国社会保险安全部 41
-      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 42
-      - github.com/freefq - 亚太地区  43
-      - 🇨🇦 github.com/freefq - 加拿大  44
-      - 🇺🇸 github.com/freefq - 美国  45
-      - 🇺🇸 github.com/freefq - 美国  46
-      - 🇯🇵 github.com/freefq - 日本  47
-      - 🇺🇸 github.com/freefq - 美国  48
-      - 🇺🇸 github.com/freefq - 美国俄勒冈州波特兰Amazon数据中心 49
+      - 🇯🇵 github.com/freefq - 日本  18
+      - 🇺🇸 github.com/freefq - 北美地区  19
+      - 🇺🇸 github.com/freefq - 美国华盛顿Cogent通信公司 20
+      - 🇺🇸 github.com/freefq - 美国Nokia 21
+      - 🇺🇸 github.com/freefq - 美国  22
+      - 🇸🇬 github.com/freefq - 新加坡DigitalOcean数据中心 23
+      - 🇺🇸 github.com/freefq - 美国  24
+      - 🇺🇸 github.com/freefq - 美国华盛顿Cogent通信公司 25
+      - 🇬🇧 github.com/freefq - 英国  26
+      - 🇷🇺 github.com/freefq - 俄罗斯莫斯科Melbicom数据中心 27
+      - 🇺🇸 github.com/freefq - 美国Nokia 28
+      - 🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶Dedipath 29
+      - 🇺🇸 github.com/freefq - 美国  30
+      - github.com/freefq - 广东省移动 31
+      - 🇬🇧 github.com/freefq - 英国  32
+      - 🇺🇸 github.com/freefq - 美国华盛顿Cogent通信公司 33
+      - 🇺🇸 github.com/freefq - 美国亚利桑那州凤凰城Oracle云计算数据中心 34
+      - github.com/freefq - 广东省移动 35
+      - 🇬🇧 github.com/freefq - 英国社会保险安全部 36
+      - 🇺🇸 github.com/freefq - 美国俄勒冈州波特兰Amazon数据中心 37
+      - 🇨🇦 github.com/freefq - 加拿大  38
+      - github.com/freefq - 亚太地区  39
+      - 🇺🇸 github.com/freefq - 美国RF Engineering 40
+      - 🇺🇸 github.com/freefq - 美国  41
+      - 🇧🇬 github.com/freefq - 保加利亚索非亚Friendhosting有限责任公司 42
+      - 🇳🇱 github.com/freefq - 荷兰  43
+      - 🇧🇬 github.com/freefq - 保加利亚索非亚Friendhosting有限责任公司 44
+      - 🇺🇸 github.com/freefq - 北美地区  45
+      - 🇮🇳 github.com/freefq - 印度孟买阿里云 46
+      - 🇺🇸 github.com/freefq - 美国RF Engineering 47
+      - 🇭🇰 github.com/freefq - 香港特别行政区 48
+      - 🇸🇬 github.com/freefq - 新加坡DigitalOcean数据中心 49
       - github.com/freefq - 广东省移动 50
-      - 🇧🇬 github.com/freefq - 保加利亚索非亚Friendhosting有限责任公司 51
-      - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 52
-      - 🇮🇳 github.com/freefq - 印度孟买阿里云 53
-      - 🇭🇰 github.com/freefq - 香港  54
-      - 🇨🇳 github.com/freefq - 广东省深圳市移动 55
-      - github.com/freefq - 广东省移动 56
-      - 🇨🇳 github.com/freefq - 广东省深圳市移动 57
-      - 🇺🇸 github.com/freefq - 美国华盛顿Cogent通信公司 58
-      - 🇸🇬 github.com/freefq - 北京市新国信通信有限公司 59
-      - 🇨🇳 github.com/freefq - 广东省深圳市移动 60
-      - 🇧🇬 github.com/freefq - 保加利亚索非亚Friendhosting有限责任公司 61
-      - 🇺🇸 github.com/freefq - 美国RF Engineering 62
-      - 🇺🇸 github.com/freefq - 北美地区  63
-      - 🇺🇸 github.com/freefq - 美国RF Engineering 64
+      - 🇨🇳 github.com/freefq - 广东省广州市电信IDC机房 51
+      - 🇺🇸 github.com/freefq - 美国华盛顿Cogent通信公司 52
+      - 🇯🇵 github.com/freefq - 日本  53
+      - 🇨🇳 github.com/freefq - 中国阿里云 54
+      - 🇸🇬 github.com/freefq - 北京市新国信通信有限公司 55
+      - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 56
+      - 🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶MULTACOM数据中心 57
 rules:
- - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
- - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
- - DOMAIN-SUFFIX,ip6-loopback,🎯 全球直连
- - DOMAIN-SUFFIX,lan,🎯 全球直连
- - DOMAIN-SUFFIX,local,🎯 全球直连
- - DOMAIN-SUFFIX,localhost,🎯 全球直连
- - IP-CIDR,10.0.0.0/8,🎯 全球直连,no-resolve
- - IP-CIDR,100.64.0.0/10,🎯 全球直连,no-resolve
- - IP-CIDR,127.0.0.0/8,🎯 全球直连,no-resolve
- - IP-CIDR,172.16.0.0/12,🎯 全球直连,no-resolve
- - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
- - IP-CIDR,198.18.0.0/16,🎯 全球直连,no-resolve
- - IP-CIDR,224.0.0.0/4,🎯 全球直连,no-resolve
- - IP-CIDR6,::1/128,🎯 全球直连,no-resolve
- - IP-CIDR6,fc00::/7,🎯 全球直连,no-resolve
- - IP-CIDR6,fe80::/10,🎯 全球直连,no-resolve
- - IP-CIDR6,fd00::/8,🎯 全球直连,no-resolve
- - DOMAIN,instant.arubanetworks.com,🎯 全球直连
- - DOMAIN,setmeup.arubanetworks.com,🎯 全球直连
- - DOMAIN,router.asus.com,🎯 全球直连
- - DOMAIN-SUFFIX,hiwifi.com,🎯 全球直连
- - DOMAIN-SUFFIX,leike.cc,🎯 全球直连
- - DOMAIN-SUFFIX,miwifi.com,🎯 全球直连
- - DOMAIN-SUFFIX,my.router,🎯 全球直连
- - DOMAIN-SUFFIX,p.to,🎯 全球直连
- - DOMAIN-SUFFIX,peiluyou.com,🎯 全球直连
- - DOMAIN-SUFFIX,phicomm.me,🎯 全球直连
- - DOMAIN-SUFFIX,router.ctc,🎯 全球直连
- - DOMAIN-SUFFIX,routerlogin.com,🎯 全球直连
- - DOMAIN-SUFFIX,tendawifi.com,🎯 全球直连
- - DOMAIN-SUFFIX,zte.home,🎯 全球直连
  - DOMAIN-SUFFIX,ol.epicgames.com,🎯 全球直连
  - DOMAIN-SUFFIX,dizhensubao.getui.com,🎯 全球直连
  - DOMAIN,dl.google.com,🎯 全球直连
@@ -2386,34 +2292,6 @@ rules:
  - DOMAIN-SUFFIX,update.googleapis.com,🎯 全球直连
  - DOMAIN-SUFFIX,www-googletagmanager.l.google.com,🎯 全球直连
  - DOMAIN-SUFFIX,www.gstatic.com,🎯 全球直连
- - DOMAIN,apple.comscoreresearch.com,🍎 苹果服务
- - DOMAIN-SUFFIX,aaplimg.com,🍎 苹果服务
- - DOMAIN-SUFFIX,akadns.net,🍎 苹果服务
- - DOMAIN-SUFFIX,apple-cloudkit.com,🍎 苹果服务
- - DOMAIN-SUFFIX,apple-mapkit.com,🍎 苹果服务
- - DOMAIN-SUFFIX,apple.co,🍎 苹果服务
- - DOMAIN-SUFFIX,apple.com,🍎 苹果服务
- - DOMAIN-SUFFIX,apple.com.cn,🍎 苹果服务
- - DOMAIN-SUFFIX,apple.news,🍎 苹果服务
- - DOMAIN-SUFFIX,appstore.com,🍎 苹果服务
- - DOMAIN-SUFFIX,cdn-apple.com,🍎 苹果服务
- - DOMAIN-SUFFIX,crashlytics.com,🍎 苹果服务
- - DOMAIN-SUFFIX,icloud-content.com,🍎 苹果服务
- - DOMAIN-SUFFIX,icloud.com,🍎 苹果服务
- - DOMAIN-SUFFIX,icloud.com.cn,🍎 苹果服务
- - DOMAIN-SUFFIX,itunes.com,🍎 苹果服务
- - DOMAIN-SUFFIX,me.com,🍎 苹果服务
- - DOMAIN-SUFFIX,mzstatic.com,🍎 苹果服务
- - IP-CIDR,17.0.0.0/8,🍎 苹果服务,no-resolve
- - IP-CIDR,63.92.224.0/19,🍎 苹果服务,no-resolve
- - IP-CIDR,65.199.22.0/23,🍎 苹果服务,no-resolve
- - IP-CIDR,139.178.128.0/18,🍎 苹果服务,no-resolve
- - IP-CIDR,144.178.0.0/19,🍎 苹果服务,no-resolve
- - IP-CIDR,144.178.36.0/22,🍎 苹果服务,no-resolve
- - IP-CIDR,144.178.48.0/20,🍎 苹果服务,no-resolve
- - IP-CIDR,192.35.50.0/24,🍎 苹果服务,no-resolve
- - IP-CIDR,198.183.17.0/24,🍎 苹果服务,no-resolve
- - IP-CIDR,205.180.175.0/24,🍎 苹果服务,no-resolve
  - DOMAIN-SUFFIX,t.me,📲 电报信息
  - DOMAIN-SUFFIX,tdesktop.com,📲 电报信息
  - DOMAIN-SUFFIX,telegra.ph,📲 电报信息
@@ -2709,417 +2587,6 @@ rules:
  - DOMAIN-SUFFIX,yt.be,🌍 国外媒体
  - DOMAIN-SUFFIX,ytimg.com,🌍 国外媒体
  - DOMAIN,music.youtube.com,🌍 国外媒体
- - DOMAIN-SUFFIX,1password.com,🚀 节点选择
- - DOMAIN-SUFFIX,adguard.org,🚀 节点选择
- - DOMAIN-SUFFIX,bit.no.com,🚀 节点选择
- - DOMAIN-SUFFIX,btlibrary.me,🚀 节点选择
- - DOMAIN-SUFFIX,cccat.io,🚀 节点选择
- - DOMAIN-SUFFIX,cloudcone.com,🚀 节点选择
- - DOMAIN-SUFFIX,dubox.com,🚀 节点选择
- - DOMAIN-SUFFIX,gameloft.com,🚀 节点选择
- - DOMAIN-SUFFIX,garena.com,🚀 节点选择
- - DOMAIN-SUFFIX,hoyolab.com,🚀 节点选择
- - DOMAIN-SUFFIX,inoreader.com,🚀 节点选择
- - DOMAIN-SUFFIX,ip138.com,🚀 节点选择
- - DOMAIN-SUFFIX,linkedin.com,🚀 节点选择
- - DOMAIN-SUFFIX,myteamspeak.com,🚀 节点选择
- - DOMAIN-SUFFIX,notion.so,🚀 节点选择
- - DOMAIN-SUFFIX,ping.pe,🚀 节点选择
- - DOMAIN-SUFFIX,reddit.com,🚀 节点选择
- - DOMAIN-SUFFIX,teddysun.com,🚀 节点选择
- - DOMAIN-SUFFIX,tumbex.com,🚀 节点选择
- - DOMAIN-SUFFIX,twdvd.com,🚀 节点选择
- - DOMAIN-SUFFIX,unsplash.com,🚀 节点选择
- - DOMAIN-SUFFIX,eu,🚀 节点选择
- - DOMAIN-SUFFIX,hk,🚀 节点选择
- - DOMAIN-SUFFIX,jp,🚀 节点选择
- - DOMAIN-SUFFIX,kr,🚀 节点选择
- - DOMAIN-SUFFIX,sg,🚀 节点选择
- - DOMAIN-SUFFIX,tw,🚀 节点选择
- - DOMAIN-SUFFIX,uk,🚀 节点选择
- - DOMAIN-SUFFIX,us,🚀 节点选择
- - DOMAIN-KEYWORD,1e100,🚀 节点选择
- - DOMAIN-KEYWORD,abema,🚀 节点选择
- - DOMAIN-KEYWORD,appledaily,🚀 节点选择
- - DOMAIN-KEYWORD,avtb,🚀 节点选择
- - DOMAIN-KEYWORD,beetalk,🚀 节点选择
- - DOMAIN-KEYWORD,blogspot,🚀 节点选择
- - DOMAIN-KEYWORD,dropbox,🚀 节点选择
- - DOMAIN-KEYWORD,facebook,🚀 节点选择
- - DOMAIN-KEYWORD,fbcdn,🚀 节点选择
- - DOMAIN-KEYWORD,github,🚀 节点选择
- - DOMAIN-KEYWORD,gmail,🚀 节点选择
- - DOMAIN-KEYWORD,google,🚀 节点选择
- - DOMAIN-KEYWORD,instagram,🚀 节点选择
- - DOMAIN-KEYWORD,porn,🚀 节点选择
- - DOMAIN-KEYWORD,sci-hub,🚀 节点选择
- - DOMAIN-KEYWORD,spotify,🚀 节点选择
- - DOMAIN-KEYWORD,telegram,🚀 节点选择
- - DOMAIN-KEYWORD,twitter,🚀 节点选择
- - DOMAIN-KEYWORD,whatsapp,🚀 节点选择
- - DOMAIN-KEYWORD,youtube,🚀 节点选择
- - DOMAIN-SUFFIX,4sqi.net,🚀 节点选择
- - DOMAIN-SUFFIX,a248.e.akamai.net,🚀 节点选择
- - DOMAIN-SUFFIX,adobedtm.com,🚀 节点选择
- - DOMAIN-SUFFIX,ampproject.org,🚀 节点选择
- - DOMAIN-SUFFIX,android.com,🚀 节点选择
- - DOMAIN-SUFFIX,aolcdn.com,🚀 节点选择
- - DOMAIN-SUFFIX,apkmirror.com,🚀 节点选择
- - DOMAIN-SUFFIX,apkpure.com,🚀 节点选择
- - DOMAIN-SUFFIX,app-measurement.com,🚀 节点选择
- - DOMAIN-SUFFIX,appspot.com,🚀 节点选择
- - DOMAIN-SUFFIX,archive.org,🚀 节点选择
- - DOMAIN-SUFFIX,armorgames.com,🚀 节点选择
- - DOMAIN-SUFFIX,aspnetcdn.com,🚀 节点选择
- - DOMAIN-SUFFIX,awsstatic.com,🚀 节点选择
- - DOMAIN-SUFFIX,azureedge.net,🚀 节点选择
- - DOMAIN-SUFFIX,azurewebsites.net,🚀 节点选择
- - DOMAIN-SUFFIX,bandwagonhost.com,🚀 节点选择
- - DOMAIN-SUFFIX,bing.com,🚀 节点选择
- - DOMAIN-SUFFIX,bkrtx.com,🚀 节点选择
- - DOMAIN-SUFFIX,blogcdn.com,🚀 节点选择
- - DOMAIN-SUFFIX,blogger.com,🚀 节点选择
- - DOMAIN-SUFFIX,blogsmithmedia.com,🚀 节点选择
- - DOMAIN-SUFFIX,blogspot.com,🚀 节点选择
- - DOMAIN-SUFFIX,blogspot.hk,🚀 节点选择
- - DOMAIN-SUFFIX,blogspot.jp,🚀 节点选择
- - DOMAIN-SUFFIX,bloomberg.cn,🚀 节点选择
- - DOMAIN-SUFFIX,bloomberg.com,🚀 节点选择
- - DOMAIN-SUFFIX,box.com,🚀 节点选择
- - DOMAIN-SUFFIX,cachefly.net,🚀 节点选择
- - DOMAIN-SUFFIX,cdnst.net,🚀 节点选择
- - DOMAIN-SUFFIX,cloudfront.net,🚀 节点选择
- - DOMAIN-SUFFIX,comodoca.com,🚀 节点选择
- - DOMAIN-SUFFIX,daum.net,🚀 节点选择
- - DOMAIN-SUFFIX,deskconnect.com,🚀 节点选择
- - DOMAIN-SUFFIX,disqus.com,🚀 节点选择
- - DOMAIN-SUFFIX,disquscdn.com,🚀 节点选择
- - DOMAIN-SUFFIX,dropbox.com,🚀 节点选择
- - DOMAIN-SUFFIX,dropboxapi.com,🚀 节点选择
- - DOMAIN-SUFFIX,dropboxstatic.com,🚀 节点选择
- - DOMAIN-SUFFIX,dropboxusercontent.com,🚀 节点选择
- - DOMAIN-SUFFIX,duckduckgo.com,🚀 节点选择
- - DOMAIN-SUFFIX,edgecastcdn.net,🚀 节点选择
- - DOMAIN-SUFFIX,edgekey.net,🚀 节点选择
- - DOMAIN-SUFFIX,edgesuite.net,🚀 节点选择
- - DOMAIN-SUFFIX,eurekavpt.com,🚀 节点选择
- - DOMAIN-SUFFIX,fastmail.com,🚀 节点选择
- - DOMAIN-SUFFIX,firebaseio.com,🚀 节点选择
- - DOMAIN-SUFFIX,flickr.com,🚀 节点选择
- - DOMAIN-SUFFIX,flipboard.com,🚀 节点选择
- - DOMAIN-SUFFIX,gfx.ms,🚀 节点选择
- - DOMAIN-SUFFIX,gongm.in,🚀 节点选择
- - DOMAIN-SUFFIX,hulu.com,🚀 节点选择
- - DOMAIN-SUFFIX,id.heroku.com,🚀 节点选择
- - DOMAIN-SUFFIX,io.io,🚀 节点选择
- - DOMAIN-SUFFIX,issuu.com,🚀 节点选择
- - DOMAIN-SUFFIX,ixquick.com,🚀 节点选择
- - DOMAIN-SUFFIX,jtvnw.net,🚀 节点选择
- - DOMAIN-SUFFIX,kat.cr,🚀 节点选择
- - DOMAIN-SUFFIX,kik.com,🚀 节点选择
- - DOMAIN-SUFFIX,kobo.com,🚀 节点选择
- - DOMAIN-SUFFIX,kobobooks.com,🚀 节点选择
- - DOMAIN-SUFFIX,licdn.com,🚀 节点选择
- - DOMAIN-SUFFIX,live.net,🚀 节点选择
- - DOMAIN-SUFFIX,livefilestore.com,🚀 节点选择
- - DOMAIN-SUFFIX,llnwd.net,🚀 节点选择
- - DOMAIN-SUFFIX,macrumors.com,🚀 节点选择
- - DOMAIN-SUFFIX,medium.com,🚀 节点选择
- - DOMAIN-SUFFIX,mega.nz,🚀 节点选择
- - DOMAIN-SUFFIX,megaupload.com,🚀 节点选择
- - DOMAIN-SUFFIX,messenger.com,🚀 节点选择
- - DOMAIN-SUFFIX,netdna-cdn.com,🚀 节点选择
- - DOMAIN-SUFFIX,nintendo.net,🚀 节点选择
- - DOMAIN-SUFFIX,nsstatic.net,🚀 节点选择
- - DOMAIN-SUFFIX,nytstyle.com,🚀 节点选择
- - DOMAIN-SUFFIX,overcast.fm,🚀 节点选择
- - DOMAIN-SUFFIX,openvpn.net,🚀 节点选择
- - DOMAIN-SUFFIX,periscope.tv,🚀 节点选择
- - DOMAIN-SUFFIX,pinimg.com,🚀 节点选择
- - DOMAIN-SUFFIX,pinterest.com,🚀 节点选择
- - DOMAIN-SUFFIX,potato.im,🚀 节点选择
- - DOMAIN-SUFFIX,prfct.co,🚀 节点选择
- - DOMAIN-SUFFIX,pscp.tv,🚀 节点选择
- - DOMAIN-SUFFIX,quora.com,🚀 节点选择
- - DOMAIN-SUFFIX,resilio.com,🚀 节点选择
- - DOMAIN-SUFFIX,sfx.ms,🚀 节点选择
- - DOMAIN-SUFFIX,shadowsocks.org,🚀 节点选择
- - DOMAIN-SUFFIX,slack-edge.com,🚀 节点选择
- - DOMAIN-SUFFIX,smartdnsproxy.com,🚀 节点选择
- - DOMAIN-SUFFIX,sndcdn.com,🚀 节点选择
- - DOMAIN-SUFFIX,soundcloud.com,🚀 节点选择
- - DOMAIN-SUFFIX,startpage.com,🚀 节点选择
- - DOMAIN-SUFFIX,staticflickr.com,🚀 节点选择
- - DOMAIN-SUFFIX,symauth.com,🚀 节点选择
- - DOMAIN-SUFFIX,symcb.com,🚀 节点选择
- - DOMAIN-SUFFIX,symcd.com,🚀 节点选择
- - DOMAIN-SUFFIX,textnow.com,🚀 节点选择
- - DOMAIN-SUFFIX,textnow.me,🚀 节点选择
- - DOMAIN-SUFFIX,thefacebook.com,🚀 节点选择
- - DOMAIN-SUFFIX,thepiratebay.org,🚀 节点选择
- - DOMAIN-SUFFIX,torproject.org,🚀 节点选择
- - DOMAIN-SUFFIX,trustasiassl.com,🚀 节点选择
- - DOMAIN-SUFFIX,tumblr.co,🚀 节点选择
- - DOMAIN-SUFFIX,tumblr.com,🚀 节点选择
- - DOMAIN-SUFFIX,tvb.com,🚀 节点选择
- - DOMAIN-SUFFIX,txmblr.com,🚀 节点选择
- - DOMAIN-SUFFIX,v2ex.com,🚀 节点选择
- - DOMAIN-SUFFIX,vimeo.com,🚀 节点选择
- - DOMAIN-SUFFIX,vine.co,🚀 节点选择
- - DOMAIN-SUFFIX,vox-cdn.com,🚀 节点选择
- - DOMAIN-SUFFIX,amazon.co.jp,🚀 节点选择
- - DOMAIN-SUFFIX,amazon.com,🚀 节点选择
- - DOMAIN-SUFFIX,amazonaws.com,🚀 节点选择
- - IP-CIDR,13.32.0.0/15,🚀 节点选择,no-resolve
- - IP-CIDR,13.35.0.0/17,🚀 节点选择,no-resolve
- - IP-CIDR,18.184.0.0/15,🚀 节点选择,no-resolve
- - IP-CIDR,18.194.0.0/15,🚀 节点选择,no-resolve
- - IP-CIDR,18.208.0.0/13,🚀 节点选择,no-resolve
- - IP-CIDR,18.232.0.0/14,🚀 节点选择,no-resolve
- - IP-CIDR,52.58.0.0/15,🚀 节点选择,no-resolve
- - IP-CIDR,52.74.0.0/16,🚀 节点选择,no-resolve
- - IP-CIDR,52.77.0.0/16,🚀 节点选择,no-resolve
- - IP-CIDR,52.84.0.0/15,🚀 节点选择,no-resolve
- - IP-CIDR,52.200.0.0/13,🚀 节点选择,no-resolve
- - IP-CIDR,54.93.0.0/16,🚀 节点选择,no-resolve
- - IP-CIDR,54.156.0.0/14,🚀 节点选择,no-resolve
- - IP-CIDR,54.226.0.0/15,🚀 节点选择,no-resolve
- - IP-CIDR,54.230.156.0/22,🚀 节点选择,no-resolve
- - DOMAIN-KEYWORD,uk-live,🚀 节点选择
- - DOMAIN-SUFFIX,bbc.co,🚀 节点选择
- - DOMAIN-SUFFIX,bbc.com,🚀 节点选择
- - DOMAIN-SUFFIX,apache.org,🚀 节点选择
- - DOMAIN-SUFFIX,docker.com,🚀 节点选择
- - DOMAIN-SUFFIX,elastic.co,🚀 节点选择
- - DOMAIN-SUFFIX,elastic.com,🚀 节点选择
- - DOMAIN-SUFFIX,gcr.io,🚀 节点选择
- - DOMAIN-SUFFIX,gitlab.com,🚀 节点选择
- - DOMAIN-SUFFIX,gitlab.io,🚀 节点选择
- - DOMAIN-SUFFIX,jitpack.io,🚀 节点选择
- - DOMAIN-SUFFIX,maven.org,🚀 节点选择
- - DOMAIN-SUFFIX,medium.com,🚀 节点选择
- - DOMAIN-SUFFIX,mvnrepository.com,🚀 节点选择
- - DOMAIN-SUFFIX,quay.io,🚀 节点选择
- - DOMAIN-SUFFIX,reddit.com,🚀 节点选择
- - DOMAIN-SUFFIX,redhat.com,🚀 节点选择
- - DOMAIN-SUFFIX,sonatype.org,🚀 节点选择
- - DOMAIN-SUFFIX,sourcegraph.com,🚀 节点选择
- - DOMAIN-SUFFIX,spring.io,🚀 节点选择
- - DOMAIN-SUFFIX,spring.net,🚀 节点选择
- - DOMAIN-SUFFIX,stackoverflow.com,🚀 节点选择
- - DOMAIN-SUFFIX,discord.co,🚀 节点选择
- - DOMAIN-SUFFIX,discord.com,🚀 节点选择
- - DOMAIN-SUFFIX,discord.gg,🚀 节点选择
- - DOMAIN-SUFFIX,discord.media,🚀 节点选择
- - DOMAIN-SUFFIX,discordapp.com,🚀 节点选择
- - DOMAIN-SUFFIX,discordapp.net,🚀 节点选择
- - DOMAIN-SUFFIX,facebook.com,🚀 节点选择
- - DOMAIN-SUFFIX,fb.com,🚀 节点选择
- - DOMAIN-SUFFIX,fb.me,🚀 节点选择
- - DOMAIN-SUFFIX,fbcdn.com,🚀 节点选择
- - DOMAIN-SUFFIX,fbcdn.net,🚀 节点选择
- - IP-CIDR,31.13.24.0/21,🚀 节点选择,no-resolve
- - IP-CIDR,31.13.64.0/18,🚀 节点选择,no-resolve
- - IP-CIDR,45.64.40.0/22,🚀 节点选择,no-resolve
- - IP-CIDR,66.220.144.0/20,🚀 节点选择,no-resolve
- - IP-CIDR,69.63.176.0/20,🚀 节点选择,no-resolve
- - IP-CIDR,69.171.224.0/19,🚀 节点选择,no-resolve
- - IP-CIDR,74.119.76.0/22,🚀 节点选择,no-resolve
- - IP-CIDR,103.4.96.0/22,🚀 节点选择,no-resolve
- - IP-CIDR,129.134.0.0/17,🚀 节点选择,no-resolve
- - IP-CIDR,157.240.0.0/17,🚀 节点选择,no-resolve
- - IP-CIDR,173.252.64.0/18,🚀 节点选择,no-resolve
- - IP-CIDR,179.60.192.0/22,🚀 节点选择,no-resolve
- - IP-CIDR,185.60.216.0/22,🚀 节点选择,no-resolve
- - IP-CIDR,204.15.20.0/22,🚀 节点选择,no-resolve
- - DOMAIN-SUFFIX,github.com,🚀 节点选择
- - DOMAIN-SUFFIX,github.io,🚀 节点选择
- - DOMAIN-SUFFIX,githubapp.com,🚀 节点选择
- - DOMAIN-SUFFIX,githubassets.com,🚀 节点选择
- - DOMAIN-SUFFIX,githubusercontent.com,🚀 节点选择
- - DOMAIN-SUFFIX,1e100.net,🚀 节点选择
- - DOMAIN-SUFFIX,2mdn.net,🚀 节点选择
- - DOMAIN-SUFFIX,app-measurement.net,🚀 节点选择
- - DOMAIN-SUFFIX,g.co,🚀 节点选择
- - DOMAIN-SUFFIX,ggpht.com,🚀 节点选择
- - DOMAIN-SUFFIX,goo.gl,🚀 节点选择
- - DOMAIN-SUFFIX,googleapis.cn,🚀 节点选择
- - DOMAIN-SUFFIX,googleapis.com,🚀 节点选择
- - DOMAIN-SUFFIX,gstatic.cn,🚀 节点选择
- - DOMAIN-SUFFIX,gstatic.com,🚀 节点选择
- - DOMAIN-SUFFIX,gvt0.com,🚀 节点选择
- - DOMAIN-SUFFIX,gvt1.com,🚀 节点选择
- - DOMAIN-SUFFIX,gvt2.com,🚀 节点选择
- - DOMAIN-SUFFIX,gvt3.com,🚀 节点选择
- - DOMAIN-SUFFIX,xn--ngstr-lra8j.com,🚀 节点选择
- - DOMAIN-SUFFIX,youtu.be,🚀 节点选择
- - DOMAIN-SUFFIX,youtube-nocookie.com,🚀 节点选择
- - DOMAIN-SUFFIX,youtube.com,🚀 节点选择
- - DOMAIN-SUFFIX,yt.be,🚀 节点选择
- - DOMAIN-SUFFIX,ytimg.com,🚀 节点选择
- - IP-CIDR,74.125.0.0/16,🚀 节点选择,no-resolve
- - IP-CIDR,173.194.0.0/16,🚀 节点选择,no-resolve
- - IP-CIDR,120.232.181.162/32,🚀 节点选择,no-resolve
- - IP-CIDR,120.241.147.226/32,🚀 节点选择,no-resolve
- - IP-CIDR,120.253.253.226/32,🚀 节点选择,no-resolve
- - IP-CIDR,120.253.255.162/32,🚀 节点选择,no-resolve
- - IP-CIDR,120.253.255.34/32,🚀 节点选择,no-resolve
- - IP-CIDR,120.253.255.98/32,🚀 节点选择,no-resolve
- - IP-CIDR,180.163.150.162/32,🚀 节点选择,no-resolve
- - IP-CIDR,180.163.150.34/32,🚀 节点选择,no-resolve
- - IP-CIDR,180.163.151.162/32,🚀 节点选择,no-resolve
- - IP-CIDR,180.163.151.34/32,🚀 节点选择,no-resolve
- - IP-CIDR,203.208.39.0/24,🚀 节点选择,no-resolve
- - IP-CIDR,203.208.40.0/24,🚀 节点选择,no-resolve
- - IP-CIDR,203.208.41.0/24,🚀 节点选择,no-resolve
- - IP-CIDR,203.208.43.0/24,🚀 节点选择,no-resolve
- - IP-CIDR,203.208.50.0/24,🚀 节点选择,no-resolve
- - IP-CIDR,220.181.174.162/32,🚀 节点选择,no-resolve
- - IP-CIDR,220.181.174.226/32,🚀 节点选择,no-resolve
- - IP-CIDR,220.181.174.34/32,🚀 节点选择,no-resolve
- - DOMAIN-SUFFIX,cdninstagram.com,🚀 节点选择
- - DOMAIN-SUFFIX,instagram.com,🚀 节点选择
- - DOMAIN-SUFFIX,instagr.am,🚀 节点选择
- - DOMAIN-SUFFIX,kakao.com,🚀 节点选择
- - DOMAIN-SUFFIX,kakao.co.kr,🚀 节点选择
- - DOMAIN-SUFFIX,kakaocdn.net,🚀 节点选择
- - IP-CIDR,1.201.0.0/24,🚀 节点选择,no-resolve
- - IP-CIDR,27.0.236.0/22,🚀 节点选择,no-resolve
- - IP-CIDR,103.27.148.0/22,🚀 节点选择,no-resolve
- - IP-CIDR,103.246.56.0/22,🚀 节点选择,no-resolve
- - IP-CIDR,110.76.140.0/22,🚀 节点选择,no-resolve
- - IP-CIDR,113.61.104.0/22,🚀 节点选择,no-resolve
- - DOMAIN-SUFFIX,lin.ee,🚀 节点选择
- - DOMAIN-SUFFIX,line-apps.com,🚀 节点选择
- - DOMAIN-SUFFIX,line-cdn.net,🚀 节点选择
- - DOMAIN-SUFFIX,line-scdn.net,🚀 节点选择
- - DOMAIN-SUFFIX,line.me,🚀 节点选择
- - DOMAIN-SUFFIX,line.naver.jp,🚀 节点选择
- - DOMAIN-SUFFIX,nhncorp.jp,🚀 节点选择
- - IP-CIDR,103.2.28.0/24,🚀 节点选择,no-resolve
- - IP-CIDR,103.2.30.0/23,🚀 节点选择,no-resolve
- - IP-CIDR,119.235.224.0/24,🚀 节点选择,no-resolve
- - IP-CIDR,119.235.232.0/24,🚀 节点选择,no-resolve
- - IP-CIDR,119.235.235.0/24,🚀 节点选择,no-resolve
- - IP-CIDR,119.235.236.0/23,🚀 节点选择,no-resolve
- - IP-CIDR,147.92.128.0/17,🚀 节点选择,no-resolve
- - IP-CIDR,203.104.128.0/19,🚀 节点选择,no-resolve
- - DOMAIN-KEYWORD,1drv,🚀 节点选择
- - DOMAIN-KEYWORD,onedrive,🚀 节点选择
- - DOMAIN-KEYWORD,skydrive,🚀 节点选择
- - DOMAIN-SUFFIX,livefilestore.com,🚀 节点选择
- - DOMAIN-SUFFIX,oneclient.sfx.ms,🚀 节点选择
- - DOMAIN-SUFFIX,onedrive.com,🚀 节点选择
- - DOMAIN-SUFFIX,onedrive.live.com,🚀 节点选择
- - DOMAIN-SUFFIX,photos.live.com,🚀 节点选择
- - DOMAIN-SUFFIX,skydrive.wns.windows.com,🚀 节点选择
- - DOMAIN-SUFFIX,spoprod-a.akamaihd.net,🚀 节点选择
- - DOMAIN-SUFFIX,storage.live.com,🚀 节点选择
- - DOMAIN-SUFFIX,storage.msn.com,🚀 节点选择
- - DOMAIN-KEYWORD,porn,🚀 节点选择
- - DOMAIN-SUFFIX,8teenxxx.com,🚀 节点选择
- - DOMAIN-SUFFIX,ahcdn.com,🚀 节点选择
- - DOMAIN-SUFFIX,bcvcdn.com,🚀 节点选择
- - DOMAIN-SUFFIX,bongacams.com,🚀 节点选择
- - DOMAIN-SUFFIX,chaturbate.com,🚀 节点选择
- - DOMAIN-SUFFIX,dditscdn.com,🚀 节点选择
- - DOMAIN-SUFFIX,livejasmin.com,🚀 节点选择
- - DOMAIN-SUFFIX,phncdn.com,🚀 节点选择
- - DOMAIN-SUFFIX,phprcdn.com,🚀 节点选择
- - DOMAIN-SUFFIX,pornhub.com,🚀 节点选择
- - DOMAIN-SUFFIX,pornhubpremium.com,🚀 节点选择
- - DOMAIN-SUFFIX,rdtcdn.com,🚀 节点选择
- - DOMAIN-SUFFIX,redtube.com,🚀 节点选择
- - DOMAIN-SUFFIX,sb-cd.com,🚀 节点选择
- - DOMAIN-SUFFIX,spankbang.com,🚀 节点选择
- - DOMAIN-SUFFIX,t66y.com,🚀 节点选择
- - DOMAIN-SUFFIX,xhamster.com,🚀 节点选择
- - DOMAIN-SUFFIX,xnxx-cdn.com,🚀 节点选择
- - DOMAIN-SUFFIX,xnxx.com,🚀 节点选择
- - DOMAIN-SUFFIX,xvideos-cdn.com,🚀 节点选择
- - DOMAIN-SUFFIX,xvideos.com,🚀 节点选择
- - DOMAIN-SUFFIX,ypncdn.com,🚀 节点选择
- - DOMAIN-SUFFIX,pixiv.net,🚀 节点选择
- - DOMAIN-SUFFIX,pximg.net,🚀 节点选择
- - DOMAIN-SUFFIX,amplitude.com,🚀 节点选择
- - DOMAIN-SUFFIX,firebaseio.com,🚀 节点选择
- - DOMAIN-SUFFIX,hockeyapp.net,🚀 节点选择
- - DOMAIN-SUFFIX,readdle.com,🚀 节点选择
- - DOMAIN-SUFFIX,smartmailcloud.com,🚀 节点选择
- - DOMAIN-SUFFIX,fanatical.com,🚀 节点选择
- - DOMAIN-SUFFIX,humblebundle.com,🚀 节点选择
- - DOMAIN-SUFFIX,underlords.com,🚀 节点选择
- - DOMAIN-SUFFIX,valvesoftware.com,🚀 节点选择
- - DOMAIN-SUFFIX,playartifact.com,🚀 节点选择
- - DOMAIN-SUFFIX,steam-chat.com,🚀 节点选择
- - DOMAIN-SUFFIX,steamcommunity.com,🚀 节点选择
- - DOMAIN-SUFFIX,steamgames.com,🚀 节点选择
- - DOMAIN-SUFFIX,steampowered.com,🚀 节点选择
- - DOMAIN-SUFFIX,steamserver.net,🚀 节点选择
- - DOMAIN-SUFFIX,steamstatic.com,🚀 节点选择
- - DOMAIN-SUFFIX,steamstat.us,🚀 节点选择
- - DOMAIN,steambroadcast.akamaized.net,🚀 节点选择
- - DOMAIN,steamcdn-a.akamaihd.net,🚀 节点选择
- - DOMAIN,steamcommunity-a.akamaihd.net,🚀 节点选择
- - DOMAIN,steamstore-a.akamaihd.net,🚀 节点选择
- - DOMAIN,steamusercontent-a.akamaihd.net,🚀 节点选择
- - DOMAIN,steamuserimages-a.akamaihd.net,🚀 节点选择
- - DOMAIN,steampipe.akamaized.net,🚀 节点选择
- - DOMAIN-SUFFIX,tap.io,🚀 节点选择
- - DOMAIN-SUFFIX,taptap.tw,🚀 节点选择
- - DOMAIN-SUFFIX,twitch.tv,🚀 节点选择
- - DOMAIN-SUFFIX,ttvnw.net,🚀 节点选择
- - DOMAIN-SUFFIX,jtvnw.net,🚀 节点选择
- - DOMAIN-KEYWORD,ttvnw,🚀 节点选择
- - DOMAIN-SUFFIX,t.co,🚀 节点选择
- - DOMAIN-SUFFIX,twimg.co,🚀 节点选择
- - DOMAIN-SUFFIX,twimg.com,🚀 节点选择
- - DOMAIN-SUFFIX,twimg.org,🚀 节点选择
- - DOMAIN-SUFFIX,t.me,🚀 节点选择
- - DOMAIN-SUFFIX,tdesktop.com,🚀 节点选择
- - DOMAIN-SUFFIX,telegra.ph,🚀 节点选择
- - DOMAIN-SUFFIX,telegram.me,🚀 节点选择
- - DOMAIN-SUFFIX,telegram.org,🚀 节点选择
- - DOMAIN-SUFFIX,telesco.pe,🚀 节点选择
- - IP-CIDR,91.108.0.0/16,🚀 节点选择,no-resolve
- - IP-CIDR,109.239.140.0/24,🚀 节点选择,no-resolve
- - IP-CIDR,149.154.160.0/20,🚀 节点选择,no-resolve
- - IP-CIDR6,2001:67c:4e8::/48,🚀 节点选择,no-resolve
- - IP-CIDR6,2001:b28:f23d::/48,🚀 节点选择,no-resolve
- - IP-CIDR6,2001:b28:f23f::/48,🚀 节点选择,no-resolve
- - DOMAIN-SUFFIX,terabox.com,🚀 节点选择
- - DOMAIN-SUFFIX,teraboxcdn.com,🚀 节点选择
- - IP-CIDR,18.194.0.0/15,🚀 节点选择,no-resolve
- - IP-CIDR,34.224.0.0/12,🚀 节点选择,no-resolve
- - IP-CIDR,54.242.0.0/15,🚀 节点选择,no-resolve
- - IP-CIDR,50.22.198.204/30,🚀 节点选择,no-resolve
- - IP-CIDR,208.43.122.128/27,🚀 节点选择,no-resolve
- - IP-CIDR,108.168.174.0/16,🚀 节点选择,no-resolve
- - IP-CIDR,173.192.231.32/27,🚀 节点选择,no-resolve
- - IP-CIDR,158.85.5.192/27,🚀 节点选择,no-resolve
- - IP-CIDR,174.37.243.0/16,🚀 节点选择,no-resolve
- - IP-CIDR,158.85.46.128/27,🚀 节点选择,no-resolve
- - IP-CIDR,173.192.222.160/27,🚀 节点选择,no-resolve
- - IP-CIDR,184.173.128.0/17,🚀 节点选择,no-resolve
- - IP-CIDR,158.85.224.160/27,🚀 节点选择,no-resolve
- - IP-CIDR,75.126.150.0/16,🚀 节点选择,no-resolve
- - IP-CIDR,69.171.235.0/16,🚀 节点选择,no-resolve
- - DOMAIN-SUFFIX,mediawiki.org,🚀 节点选择
- - DOMAIN-SUFFIX,wikibooks.org,🚀 节点选择
- - DOMAIN-SUFFIX,wikidata.org,🚀 节点选择
- - DOMAIN-SUFFIX,wikileaks.org,🚀 节点选择
- - DOMAIN-SUFFIX,wikimedia.org,🚀 节点选择
- - DOMAIN-SUFFIX,wikinews.org,🚀 节点选择
- - DOMAIN-SUFFIX,wikipedia.org,🚀 节点选择
- - DOMAIN-SUFFIX,wikiquote.org,🚀 节点选择
- - DOMAIN-SUFFIX,wikisource.org,🚀 节点选择
- - DOMAIN-SUFFIX,wikiversity.org,🚀 节点选择
- - DOMAIN-SUFFIX,wikivoyage.org,🚀 节点选择
- - DOMAIN-SUFFIX,wiktionary.org,🚀 节点选择
- - DOMAIN-SUFFIX,neulion.com,🚀 节点选择
- - DOMAIN-SUFFIX,icntv.xyz,🚀 节点选择
- - DOMAIN-SUFFIX,flzbcdn.xyz,🚀 节点选择
- - DOMAIN-SUFFIX,ocnttv.com,🚀 节点选择
  - IP-CIDR,8.128.0.0/10,🎯 全球直连,no-resolve
  - IP-CIDR,8.208.0.0/12,🎯 全球直连,no-resolve
  - IP-CIDR,14.1.112.0/22,🎯 全球直连,no-resolve
