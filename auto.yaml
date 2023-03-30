@@ -5,43 +5,51 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 美国 CloudFlare节点, server: 104.21.234.238, port: 443, type: vmess, uuid: 128a73ee-a5a3-4dce-a832-5c3f60841032, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: jp03.cctvvip.ml}}, udp: true}
-  - {name: 美国 CloudFlare节点 2, server: sogood.linefriends.com, port: 443, type: vmess, uuid: acd17818-d434-49ae-80a6-d194bcaf6392, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /vvip, headers: {Host: sgray.jagoan.vip}}, udp: true}
-  - {name: 欧盟 V2CROSS.COM, server: 45.85.119.10, port: 2096, type: vmess, uuid: 8537598c-2adc-45eb-9eb5-14aa3cc94412, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: wow2.melo-eztic.shop, network: ws, ws-opts: {path: /@melov2ray, headers: {Host: wow2.melo-eztic.shop}}, udp: true}
-  - {name: 中国 阿里云, server: cdn.wuki.moe, port: 80, type: vmess, uuid: 747695c7-1ed8-44d1-a1a0-6b1b162748ca, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/sbga?ed=2048", headers: {Host: woi-eu7.misakano.ml}}, udp: true}
-  - {name: 欧盟 V2CROSS.COM 2, server: legenderyserversirn.ddns.net, port: 443, type: vmess, uuid: DDB05F7A-A4A3-4F34-B730-FCC7ACB3B17F, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /speedtest, headers: {Host: Amsterdam.kotick.site}}, udp: true}
+  - {name: 美国 V2CROSS.COM, server: 172.99.188.99, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: 美国 CloudFlare节点, server: d.pgypgykmoljklj.xyz, port: 443, type: vmess, uuid: fa4cb529-3ac9-4268-bb04-ed4253813508, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: d.pgypgykmoljklj.xyz}}, udp: true}
+  - {name: 美国 CloudFlare节点 2, server: new8.hucloud-dns.xyz, port: 443, type: vmess, uuid: f11786fc-abf0-40e8-8177-992c699cc95f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /0fa5cea95e7/, headers: {Host: new8.hucloud-dns.xyz}}, udp: true}
+  - {name: 美国 CloudFlare节点 3, server: cf.noaries.de, port: 8080, type: vmess, uuid: ba1b14e5-33ad-46df-8116-a2935e712a2f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: waw.cloudflare.quest}}, udp: true}
+  - {name: 美国 CloudFlare节点 4, server: quranweb40.xyz, port: 443, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /current_time, headers: {Host: quranweb40.xyz}}, udp: true}
+  - {name: 美国 V2CROSS.COM 2, server: vus3.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: vus3.0bad.com}}, udp: true}
+  - {name: 丹麦 V2CROSS.COM, server: 185.162.228.2, port: 443, type: vmess, uuid: 17b2a313-37a0-4945-a8e4-e63375506b4a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 77.v2ray1.xyz}}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
+      - 美国 V2CROSS.COM
       - 美国 CloudFlare节点
       - 美国 CloudFlare节点 2
-      - 欧盟 V2CROSS.COM
-      - 中国 阿里云
-      - 欧盟 V2CROSS.COM 2
+      - 美国 CloudFlare节点 3
+      - 美国 CloudFlare节点 4
+      - 美国 V2CROSS.COM 2
+      - 丹麦 V2CROSS.COM
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
+      - 美国 V2CROSS.COM
       - 美国 CloudFlare节点
       - 美国 CloudFlare节点 2
-      - 欧盟 V2CROSS.COM
-      - 中国 阿里云
-      - 欧盟 V2CROSS.COM 2
+      - 美国 CloudFlare节点 3
+      - 美国 CloudFlare节点 4
+      - 美国 V2CROSS.COM 2
+      - 丹麦 V2CROSS.COM
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
+      - 美国 V2CROSS.COM
       - 美国 CloudFlare节点
       - 美国 CloudFlare节点 2
-      - 欧盟 V2CROSS.COM
-      - 中国 阿里云
-      - 欧盟 V2CROSS.COM 2
+      - 美国 CloudFlare节点 3
+      - 美国 CloudFlare节点 4
+      - 美国 V2CROSS.COM 2
+      - 丹麦 V2CROSS.COM
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -60,11 +68,13 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
+      - 美国 V2CROSS.COM
       - 美国 CloudFlare节点
       - 美国 CloudFlare节点 2
-      - 欧盟 V2CROSS.COM
-      - 中国 阿里云
-      - 欧盟 V2CROSS.COM 2
+      - 美国 CloudFlare节点 3
+      - 美国 CloudFlare节点 4
+      - 美国 V2CROSS.COM 2
+      - 丹麦 V2CROSS.COM
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -75,32 +85,38 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
+      - 美国 V2CROSS.COM
       - 美国 CloudFlare节点
       - 美国 CloudFlare节点 2
-      - 欧盟 V2CROSS.COM
-      - 中国 阿里云
-      - 欧盟 V2CROSS.COM 2
+      - 美国 CloudFlare节点 3
+      - 美国 CloudFlare节点 4
+      - 美国 V2CROSS.COM 2
+      - 丹麦 V2CROSS.COM
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
+      - 美国 V2CROSS.COM
       - 美国 CloudFlare节点
       - 美国 CloudFlare节点 2
-      - 欧盟 V2CROSS.COM
-      - 中国 阿里云
-      - 欧盟 V2CROSS.COM 2
+      - 美国 CloudFlare节点 3
+      - 美国 CloudFlare节点 4
+      - 美国 V2CROSS.COM 2
+      - 丹麦 V2CROSS.COM
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - 美国 V2CROSS.COM
       - 美国 CloudFlare节点
       - 美国 CloudFlare节点 2
-      - 欧盟 V2CROSS.COM
-      - 中国 阿里云
-      - 欧盟 V2CROSS.COM 2
+      - 美国 CloudFlare节点 3
+      - 美国 CloudFlare节点 4
+      - 美国 V2CROSS.COM 2
+      - 丹麦 V2CROSS.COM
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -116,11 +132,13 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - 美国 V2CROSS.COM
       - 美国 CloudFlare节点
       - 美国 CloudFlare节点 2
-      - 欧盟 V2CROSS.COM
-      - 中国 阿里云
-      - 欧盟 V2CROSS.COM 2
+      - 美国 CloudFlare节点 3
+      - 美国 CloudFlare节点 4
+      - 美国 V2CROSS.COM 2
+      - 丹麦 V2CROSS.COM
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
