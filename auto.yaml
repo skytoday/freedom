@@ -5,55 +5,47 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
+  - {name: 美国 CloudFlare节点, server: cf.noaries.de, port: 8080, type: vmess, uuid: fe8b7cbe-e217-4741-95d0-a58075051950, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /api/v3/download.getFile, headers: {Host: ssrsub.v10.asuka.buzz}}, udp: true}
+  - {name: 美国 马萨诸塞州埃塞克斯县安多弗镇ClearBlue科技公司, server: 204.216.214.102, port: 44386, type: trojan, password: C931CWacy8, skip-cert-verify: true, udp: true}
   - {name: 美国 V2CROSS.COM, server: tk-002-001.xiaoxiaobujidao.xyz, port: 443, type: trojan, password: 73b4be2f-2472-3c5c-a92c-3937ae1d8136, skip-cert-verify: true, udp: true}
-  - {name: 亚太地区 V2CROSS.COM, server: 103.173.255.234, port: 443, type: trojan, password: 7676cdb1-15ca-4b86-b0d4-a0c7f35febae, sni: glc.hruqoaw.cn, skip-cert-verify: true, udp: true}
-  - {name: 澳大利亚 Cranbourne Secondary College, server: 203.30.191.20, port: 443, type: vmess, uuid: 5f64fa65-7b14-49c5-954d-aa15c6bfcacd, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: clash6.ssr-free.xyz}}, udp: true}
-  - {name: 新加坡 亚马逊(Amazon)公司数据中心, server: n1674862955.jfzlasi.cn, port: 443, type: vmess, uuid: 022c42ba-c662-49bd-bd8c-f8428e6aa91c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: n1674862955.jfzlasi.cn}}, udp: true}
-  - {name: 美国 CloudFlare节点, server: eu6.739256.xyz, port: 443, type: vmess, uuid: 5775d530-ab7a-455f-d841-82bdca57b9b2, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: eu6.739256.xyz}}, udp: true}
-  - {name: 美国 V2CROSS.COM 2, server: 172.99.188.99, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: 美国 CloudFlare节点 2, server: s245.rpscloud3.cloud, port: 80, type: vmess, uuid: d65ca664-72d3-4a14-a836-00eadd0df46e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /graphql, headers: {Host: s245.rpscloud3.cloud}}, udp: true}
-  - {name: 亚太地区 V2CROSS.COM 2, server: 103.103.245.125, port: 50418, type: trojan, password: a70b39d1-62ea-4d9e-b681-9c5408352234, skip-cert-verify: true, udp: true}
+  - {name: 美国 V2CROSS.COM 2, server: dark100.viporg12345.info, port: 8443, type: vmess, uuid: 457d1938-cb62-4ce7-c13a-96b6812b9f05, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: t4.l9liiii.info, network: ws, ws-opts: {path: /, headers: {Host: t4.l9liiii.info}}, udp: true}
+  - {name: 美国 CloudFlare节点 2, server: 162.159.255.200, port: 80, type: vmess, uuid: 52466dc2-3550-4310-910c-74b7bf8a020e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: us-1.acyun.eu.org}}, udp: true}
+  - {name: 瑞典 V2CROSS.COM, server: 167.88.63.79, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 美国 V2CROSS.COM
-      - 亚太地区 V2CROSS.COM
-      - 澳大利亚 Cranbourne Secondary College
-      - 新加坡 亚马逊(Amazon)公司数据中心
       - 美国 CloudFlare节点
+      - 美国 马萨诸塞州埃塞克斯县安多弗镇ClearBlue科技公司
+      - 美国 V2CROSS.COM
       - 美国 V2CROSS.COM 2
       - 美国 CloudFlare节点 2
-      - 亚太地区 V2CROSS.COM 2
+      - 瑞典 V2CROSS.COM
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 美国 V2CROSS.COM
-      - 亚太地区 V2CROSS.COM
-      - 澳大利亚 Cranbourne Secondary College
-      - 新加坡 亚马逊(Amazon)公司数据中心
       - 美国 CloudFlare节点
+      - 美国 马萨诸塞州埃塞克斯县安多弗镇ClearBlue科技公司
+      - 美国 V2CROSS.COM
       - 美国 V2CROSS.COM 2
       - 美国 CloudFlare节点 2
-      - 亚太地区 V2CROSS.COM 2
+      - 瑞典 V2CROSS.COM
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 美国 V2CROSS.COM
-      - 亚太地区 V2CROSS.COM
-      - 澳大利亚 Cranbourne Secondary College
-      - 新加坡 亚马逊(Amazon)公司数据中心
       - 美国 CloudFlare节点
+      - 美国 马萨诸塞州埃塞克斯县安多弗镇ClearBlue科技公司
+      - 美国 V2CROSS.COM
       - 美国 V2CROSS.COM 2
       - 美国 CloudFlare节点 2
-      - 亚太地区 V2CROSS.COM 2
+      - 瑞典 V2CROSS.COM
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -72,14 +64,12 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 美国 V2CROSS.COM
-      - 亚太地区 V2CROSS.COM
-      - 澳大利亚 Cranbourne Secondary College
-      - 新加坡 亚马逊(Amazon)公司数据中心
       - 美国 CloudFlare节点
+      - 美国 马萨诸塞州埃塞克斯县安多弗镇ClearBlue科技公司
+      - 美国 V2CROSS.COM
       - 美国 V2CROSS.COM 2
       - 美国 CloudFlare节点 2
-      - 亚太地区 V2CROSS.COM 2
+      - 瑞典 V2CROSS.COM
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -90,41 +80,35 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 美国 V2CROSS.COM
-      - 亚太地区 V2CROSS.COM
-      - 澳大利亚 Cranbourne Secondary College
-      - 新加坡 亚马逊(Amazon)公司数据中心
       - 美国 CloudFlare节点
+      - 美国 马萨诸塞州埃塞克斯县安多弗镇ClearBlue科技公司
+      - 美国 V2CROSS.COM
       - 美国 V2CROSS.COM 2
       - 美国 CloudFlare节点 2
-      - 亚太地区 V2CROSS.COM 2
+      - 瑞典 V2CROSS.COM
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 美国 V2CROSS.COM
-      - 亚太地区 V2CROSS.COM
-      - 澳大利亚 Cranbourne Secondary College
-      - 新加坡 亚马逊(Amazon)公司数据中心
       - 美国 CloudFlare节点
+      - 美国 马萨诸塞州埃塞克斯县安多弗镇ClearBlue科技公司
+      - 美国 V2CROSS.COM
       - 美国 V2CROSS.COM 2
       - 美国 CloudFlare节点 2
-      - 亚太地区 V2CROSS.COM 2
+      - 瑞典 V2CROSS.COM
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 美国 V2CROSS.COM
-      - 亚太地区 V2CROSS.COM
-      - 澳大利亚 Cranbourne Secondary College
-      - 新加坡 亚马逊(Amazon)公司数据中心
       - 美国 CloudFlare节点
+      - 美国 马萨诸塞州埃塞克斯县安多弗镇ClearBlue科技公司
+      - 美国 V2CROSS.COM
       - 美国 V2CROSS.COM 2
       - 美国 CloudFlare节点 2
-      - 亚太地区 V2CROSS.COM 2
+      - 瑞典 V2CROSS.COM
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -140,14 +124,12 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 美国 V2CROSS.COM
-      - 亚太地区 V2CROSS.COM
-      - 澳大利亚 Cranbourne Secondary College
-      - 新加坡 亚马逊(Amazon)公司数据中心
       - 美国 CloudFlare节点
+      - 美国 马萨诸塞州埃塞克斯县安多弗镇ClearBlue科技公司
+      - 美国 V2CROSS.COM
       - 美国 V2CROSS.COM 2
       - 美国 CloudFlare节点 2
-      - 亚太地区 V2CROSS.COM 2
+      - 瑞典 V2CROSS.COM
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
