@@ -5,85 +5,117 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 🇺🇸 美国 CloudFlare节点, server: target.292228.xyz, port: 80, type: vmess, uuid: 12b1bed9-1534-41db-a530-a1dbf6c2a7c6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /filetransfer, headers: {Host: us-east-1.292228.xyz}}, udp: true}
-  - {name: 🇺🇸 美国 V2CROSS.COM, server: 152.70.74.66, port: 443, type: trojan, password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e, skip-cert-verify: false, udp: true}
-  - {name: 🇺🇸 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心, server: 23.224.191.6, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 32, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /path/220128071100}, udp: true}
-  - {name: 🇺🇸 美国 CloudFlare节点 2, server: mci.ircf.space, port: 2096, type: vmess, uuid: 6cf2745b-f46e-4820-8b1d-00082b2544b0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /graphql, headers: {Host: dl.filmino.online}}, udp: true}
-  - {name: 🇺🇸 美国 CloudFlare节点 3, server: 4bb4ced4.ikunxiao.top, port: 2096, type: vmess, uuid: 72fd33d5-5c1a-4193-96c6-665fc20b71c1, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /index, headers: {Host: 4bb4ced4.ikunxiao.top}}, udp: true}
+  - {name: 浙江省 移动, server: edge-mars.themars.top, port: 50004, type: ss, cipher: chacha20-ietf-poly1305, password: e5fbb896-cf74-44f5-90ae-b3333e1d3ca0, udp: true}
+  - {name: 🇺🇸 美国 CloudFlare节点, server: la.awsbest.com, port: 443, type: vmess, uuid: 8b6dd709-4d4e-4b92-f542-54a676efbfe4, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /shares, headers: {Host: la.awsbest.com}}, udp: true}
+  - {name: 🇺🇸 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心, server: 23.224.191.6, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /path/220128071100}, udp: true}
+  - {name: 🇺🇸 美国 CloudFlare节点 2, server: 162.159.255.200, port: 80, type: vmess, uuid: 52466dc2-3550-4310-910c-74b7bf8a020e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: us-1.acyun.eu.org}}, udp: true}
+  - {name: 🇨🇳 江苏省镇江市 移动, server: edge-hncm.themars.top, port: 50002, type: ss, cipher: chacha20-ietf-poly1305, password: e5fbb896-cf74-44f5-90ae-b3333e1d3ca0, udp: true}
+  - {name: 🇱🇹 立陶宛 V2CROSS.COM, server: dark100.viporg12345.info, port: 8443, type: vmess, uuid: 457d1938-cb62-4ce7-c13a-96b6812b9f05, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: t4.l9liiii.info}}, udp: true}
+  - {name: 欧盟 V2CROSS.COM, server: 45.86.11.147, port: 39182, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 🇺🇸 美国 CloudFlare节点 3, server: cf-lt.sharecentre.online, port: 8080, type: vmess, uuid: fe8b7cbe-e217-4741-95d0-a58075051950, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /api/v3/download.getFile, headers: {Host: ssrsub.v10.asuka.buzz}}, udp: true}
+  - {name: 广东省 移动, server: edge-earth.themars.top, port: 50002, type: ss, cipher: chacha20-ietf-poly1305, password: e5fbb896-cf74-44f5-90ae-b3333e1d3ca0, udp: true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
+      - 浙江省 移动
       - 🇺🇸 美国 CloudFlare节点
-      - 🇺🇸 美国 V2CROSS.COM
       - 🇺🇸 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
       - 🇺🇸 美国 CloudFlare节点 2
+      - 🇨🇳 江苏省镇江市 移动
+      - 🇱🇹 立陶宛 V2CROSS.COM
+      - 欧盟 V2CROSS.COM
       - 🇺🇸 美国 CloudFlare节点 3
+      - 广东省 移动
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
+      - 浙江省 移动
       - 🇺🇸 美国 CloudFlare节点
-      - 🇺🇸 美国 V2CROSS.COM
       - 🇺🇸 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
       - 🇺🇸 美国 CloudFlare节点 2
+      - 🇨🇳 江苏省镇江市 移动
+      - 🇱🇹 立陶宛 V2CROSS.COM
+      - 欧盟 V2CROSS.COM
       - 🇺🇸 美国 CloudFlare节点 3
+      - 广东省 移动
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
+      - 浙江省 移动
       - 🇺🇸 美国 CloudFlare节点
-      - 🇺🇸 美国 V2CROSS.COM
       - 🇺🇸 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
       - 🇺🇸 美国 CloudFlare节点 2
+      - 🇨🇳 江苏省镇江市 移动
+      - 🇱🇹 立陶宛 V2CROSS.COM
+      - 欧盟 V2CROSS.COM
       - 🇺🇸 美国 CloudFlare节点 3
+      - 广东省 移动
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
+      - 浙江省 移动
       - 🇺🇸 美国 CloudFlare节点
-      - 🇺🇸 美国 V2CROSS.COM
       - 🇺🇸 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
       - 🇺🇸 美国 CloudFlare节点 2
+      - 🇨🇳 江苏省镇江市 移动
+      - 🇱🇹 立陶宛 V2CROSS.COM
+      - 欧盟 V2CROSS.COM
       - 🇺🇸 美国 CloudFlare节点 3
+      - 广东省 移动
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
+      - 浙江省 移动
       - 🇺🇸 美国 CloudFlare节点
-      - 🇺🇸 美国 V2CROSS.COM
       - 🇺🇸 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
       - 🇺🇸 美国 CloudFlare节点 2
+      - 🇨🇳 江苏省镇江市 移动
+      - 🇱🇹 立陶宛 V2CROSS.COM
+      - 欧盟 V2CROSS.COM
       - 🇺🇸 美国 CloudFlare节点 3
+      - 广东省 移动
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
+      - 浙江省 移动
       - 🇺🇸 美国 CloudFlare节点
-      - 🇺🇸 美国 V2CROSS.COM
       - 🇺🇸 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
       - 🇺🇸 美国 CloudFlare节点 2
+      - 🇨🇳 江苏省镇江市 移动
+      - 🇱🇹 立陶宛 V2CROSS.COM
+      - 欧盟 V2CROSS.COM
       - 🇺🇸 美国 CloudFlare节点 3
+      - 广东省 移动
   - name: 📢 谷歌FCM
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - 浙江省 移动
       - 🇺🇸 美国 CloudFlare节点
-      - 🇺🇸 美国 V2CROSS.COM
       - 🇺🇸 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
       - 🇺🇸 美国 CloudFlare节点 2
+      - 🇨🇳 江苏省镇江市 移动
+      - 🇱🇹 立陶宛 V2CROSS.COM
+      - 欧盟 V2CROSS.COM
       - 🇺🇸 美国 CloudFlare节点 3
+      - 广东省 移动
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -106,11 +138,15 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - 浙江省 移动
       - 🇺🇸 美国 CloudFlare节点
-      - 🇺🇸 美国 V2CROSS.COM
       - 🇺🇸 美国加利福尼亚州洛杉矶 Coperation Coloction数据中心
       - 🇺🇸 美国 CloudFlare节点 2
+      - 🇨🇳 江苏省镇江市 移动
+      - 🇱🇹 立陶宛 V2CROSS.COM
+      - 欧盟 V2CROSS.COM
       - 🇺🇸 美国 CloudFlare节点 3
+      - 广东省 移动
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
@@ -1947,18 +1983,6 @@ rules:
  - IP-CIDR,192.35.50.0/24,🍎 苹果服务,no-resolve
  - IP-CIDR,198.183.17.0/24,🍎 苹果服务,no-resolve
  - IP-CIDR,205.180.175.0/24,🍎 苹果服务,no-resolve
- - DOMAIN-SUFFIX,t.me,📲 电报信息
- - DOMAIN-SUFFIX,tdesktop.com,📲 电报信息
- - DOMAIN-SUFFIX,telegra.ph,📲 电报信息
- - DOMAIN-SUFFIX,telegram.me,📲 电报信息
- - DOMAIN-SUFFIX,telegram.org,📲 电报信息
- - DOMAIN-SUFFIX,telesco.pe,📲 电报信息
- - IP-CIDR,91.108.0.0/16,📲 电报信息,no-resolve
- - IP-CIDR,109.239.140.0/24,📲 电报信息,no-resolve
- - IP-CIDR,149.154.160.0/20,📲 电报信息,no-resolve
- - IP-CIDR6,2001:67c:4e8::/48,📲 电报信息,no-resolve
- - IP-CIDR6,2001:b28:f23d::/48,📲 电报信息,no-resolve
- - IP-CIDR6,2001:b28:f23f::/48,📲 电报信息,no-resolve
  - DOMAIN-SUFFIX,edgedatg.com,🌍 国外媒体
  - DOMAIN-SUFFIX,go.com,🌍 国外媒体
  - DOMAIN-KEYWORD,abematv.akamaized.net,🌍 国外媒体
