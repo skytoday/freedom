@@ -5,14 +5,11 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 🇺🇸 美国 CloudFlare节点, server: 77.v2ray1.xyz, port: 443, type: vmess, uuid: 17b2a313-37a0-4945-a8e4-e63375506b4a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: 77.v2ray1.xyz}}, udp: true}
-  - {name: 🇺🇸 美国 V2CROSS.COM, server: vuk1.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /chat, headers: {Host: vuk1.0bad.com}}, udp: true}
-  - {name: 🇺🇸 美国 CloudFlare节点 2, server: eu6.739256.xyz, port: 443, type: vmess, uuid: 5775d530-ab7a-455f-d841-82bdca57b9b2, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: eu6.739256.xyz}}, udp: true}
-  - {name: 🇰🇷 韩国首尔 UCloud, server: 118.193.69.158, port: 53173, type: vmess, uuid: 3b76d1a8-55fd-465e-aa04-68c39a506175, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 🇺🇸 美国 CloudFlare节点 3, server: cf.noaries.de, port: 2082, type: vmess, uuid: 314c1387-618c-4689-97fc-4bc9a1ae5e05, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: ir2.nmsl.ninja}}, udp: true}
-  - {name: 🇺🇸 美国 CloudFlare节点 4, server: 172.67.190.50, port: 443, type: vmess, uuid: 823c31da-701f-483d-b36e-896e5cf0987a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /shirker, headers: {Host: sg1.sharecentrepro.com}}, udp: true}
-  - {name: 🇺🇸 美国 CloudFlare节点 5, server: cf-yd-dns.sharecentre.online, port: 80, type: vmess, uuid: 823c31da-701f-483d-b36e-896e5cf0987a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /shirker, headers: {Host: ny1.sharecentrepro.org}}, udp: true}
-  - {name: 🇺🇸 美国 CloudFlare节点 6, server: sg.herofree66.tk, port: 443, type: vmess, uuid: 5e3d4757-1395-4843-d498-bf7317470085, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /tg@herhero6, headers: {Host: sg.herofree66.tk}}, udp: true}
+  - {name: 🇺🇸 美国 CloudFlare节点, server: ming2.kiwireich.com, port: 443, type: vmess, uuid: 18e5f40f-bda6-4c15-9334-e87cda6047af, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /ray, headers: {Host: ming2.kiwireich.com}}, udp: true}
+  - {name: 🇺🇸 美国 CloudFlare节点 2, server: cfcdn.sanfencdn.net, port: 443, type: vmess, uuid: da9d5c74-a572-4cf4-a375-19b886f5ffc4, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /zh-cn, headers: {Host: us2.sanfencdn.net}}, udp: true}
+  - {name: 🇺🇸 美国 CloudFlare节点 3, server: cf-lt.sharecentre.online, port: 8080, type: vmess, uuid: fe8b7cbe-e217-4741-95d0-a58075051950, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /api/v3/download.getFile, headers: {Host: ssrsub.v10.asuka.buzz}}, udp: true}
+  - {name: 欧盟 V2CROSS.COM, server: eblis.viporg12345.info, port: 8443, type: vmess, uuid: 457d1938-cb62-4ce7-c13a-96b6812b9f05, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: t4.l9liiii.info, network: ws, ws-opts: {path: /, headers: {Host: t4.l9liiii.info}}, udp: true}
+  - {name: 🇺🇸 美国 V2CROSS.COM, server: 108.186.192.249, port: 35502, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -20,13 +17,10 @@ proxy-groups:
       - ♻️ 自动选择
       - DIRECT
       - 🇺🇸 美国 CloudFlare节点
-      - 🇺🇸 美国 V2CROSS.COM
       - 🇺🇸 美国 CloudFlare节点 2
-      - 🇰🇷 韩国首尔 UCloud
       - 🇺🇸 美国 CloudFlare节点 3
-      - 🇺🇸 美国 CloudFlare节点 4
-      - 🇺🇸 美国 CloudFlare节点 5
-      - 🇺🇸 美国 CloudFlare节点 6
+      - 欧盟 V2CROSS.COM
+      - 🇺🇸 美国 V2CROSS.COM
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -34,13 +28,10 @@ proxy-groups:
     tolerance: 50
     proxies:
       - 🇺🇸 美国 CloudFlare节点
-      - 🇺🇸 美国 V2CROSS.COM
       - 🇺🇸 美国 CloudFlare节点 2
-      - 🇰🇷 韩国首尔 UCloud
       - 🇺🇸 美国 CloudFlare节点 3
-      - 🇺🇸 美国 CloudFlare节点 4
-      - 🇺🇸 美国 CloudFlare节点 5
-      - 🇺🇸 美国 CloudFlare节点 6
+      - 欧盟 V2CROSS.COM
+      - 🇺🇸 美国 V2CROSS.COM
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -48,52 +39,40 @@ proxy-groups:
       - ♻️ 自动选择
       - 🎯 全球直连
       - 🇺🇸 美国 CloudFlare节点
-      - 🇺🇸 美国 V2CROSS.COM
       - 🇺🇸 美国 CloudFlare节点 2
-      - 🇰🇷 韩国首尔 UCloud
       - 🇺🇸 美国 CloudFlare节点 3
-      - 🇺🇸 美国 CloudFlare节点 4
-      - 🇺🇸 美国 CloudFlare节点 5
-      - 🇺🇸 美国 CloudFlare节点 6
+      - 欧盟 V2CROSS.COM
+      - 🇺🇸 美国 V2CROSS.COM
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - 🇺🇸 美国 CloudFlare节点
-      - 🇺🇸 美国 V2CROSS.COM
       - 🇺🇸 美国 CloudFlare节点 2
-      - 🇰🇷 韩国首尔 UCloud
       - 🇺🇸 美国 CloudFlare节点 3
-      - 🇺🇸 美国 CloudFlare节点 4
-      - 🇺🇸 美国 CloudFlare节点 5
-      - 🇺🇸 美国 CloudFlare节点 6
+      - 欧盟 V2CROSS.COM
+      - 🇺🇸 美国 V2CROSS.COM
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
       - 🇺🇸 美国 CloudFlare节点
-      - 🇺🇸 美国 V2CROSS.COM
       - 🇺🇸 美国 CloudFlare节点 2
-      - 🇰🇷 韩国首尔 UCloud
       - 🇺🇸 美国 CloudFlare节点 3
-      - 🇺🇸 美国 CloudFlare节点 4
-      - 🇺🇸 美国 CloudFlare节点 5
-      - 🇺🇸 美国 CloudFlare节点 6
+      - 欧盟 V2CROSS.COM
+      - 🇺🇸 美国 V2CROSS.COM
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - 🇺🇸 美国 CloudFlare节点
-      - 🇺🇸 美国 V2CROSS.COM
       - 🇺🇸 美国 CloudFlare节点 2
-      - 🇰🇷 韩国首尔 UCloud
       - 🇺🇸 美国 CloudFlare节点 3
-      - 🇺🇸 美国 CloudFlare节点 4
-      - 🇺🇸 美国 CloudFlare节点 5
-      - 🇺🇸 美国 CloudFlare节点 6
+      - 欧盟 V2CROSS.COM
+      - 🇺🇸 美国 V2CROSS.COM
   - name: 📢 谷歌FCM
     type: select
     proxies:
@@ -101,13 +80,10 @@ proxy-groups:
       - 🎯 全球直连
       - ♻️ 自动选择
       - 🇺🇸 美国 CloudFlare节点
-      - 🇺🇸 美国 V2CROSS.COM
       - 🇺🇸 美国 CloudFlare节点 2
-      - 🇰🇷 韩国首尔 UCloud
       - 🇺🇸 美国 CloudFlare节点 3
-      - 🇺🇸 美国 CloudFlare节点 4
-      - 🇺🇸 美国 CloudFlare节点 5
-      - 🇺🇸 美国 CloudFlare节点 6
+      - 欧盟 V2CROSS.COM
+      - 🇺🇸 美国 V2CROSS.COM
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -131,13 +107,10 @@ proxy-groups:
       - 🎯 全球直连
       - ♻️ 自动选择
       - 🇺🇸 美国 CloudFlare节点
-      - 🇺🇸 美国 V2CROSS.COM
       - 🇺🇸 美国 CloudFlare节点 2
-      - 🇰🇷 韩国首尔 UCloud
       - 🇺🇸 美国 CloudFlare节点 3
-      - 🇺🇸 美国 CloudFlare节点 4
-      - 🇺🇸 美国 CloudFlare节点 5
-      - 🇺🇸 美国 CloudFlare节点 6
+      - 欧盟 V2CROSS.COM
+      - 🇺🇸 美国 V2CROSS.COM
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
