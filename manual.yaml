@@ -5,221 +5,149 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 🇺🇸 github.com/freefq - 美国Microsoft数据中心 1, server: ch.mjt001.com, port: 443, type: trojan, password: af4dc66a-ec88-4057-9e46-777b584577f7, skip-cert-verify: false, udp: true}
-  - {name: 🇺🇸 github.com/freefq - 美国  2, server: 206.168.191.67, port: 80, type: vmess, uuid: 7997b5a0-f2f9-11ed-b436-205c6d5f5d78, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /r2vt59x8, headers: {Host: 206.168.191.67}}, udp: true}
-  - {name: 🇺🇸 github.com/freefq - 美国Microsoft数据中心 3, server: ua.mjt001.com, port: 443, type: trojan, password: af4dc66a-ec88-4057-9e46-777b584577f7, skip-cert-verify: false, udp: true}
-  - {name: 🇨🇳 github.com/freefq - 北京市移动 4, server: 36.134.16.171, port: 11023, type: vmess, uuid: 8c042a38-71c1-1dcb-00df-54880236e0dc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶Level3通信(DIA) 5, server: vn.mjt001.com, port: 443, type: trojan, password: af4dc66a-ec88-4057-9e46-777b584577f7, skip-cert-verify: false, udp: true}
-  - {name: 🇯🇵 github.com/freefq - 日本东京Amazon数据中心 6, server: uk.mjt001.com, port: 443, type: trojan, password: af4dc66a-ec88-4057-9e46-777b584577f7, skip-cert-verify: false, udp: true}
-  - {name: 🇺🇸 github.com/freefq - 美国Microsoft数据中心 7, server: usla.mjt001.com, port: 443, type: trojan, password: af4dc66a-ec88-4057-9e46-777b584577f7, skip-cert-verify: false, udp: true}
-  - {name: 🇺🇸 github.com/freefq - 美国CloudFlare节点 8, server: 172.67.94.59, port: 443, type: vmess, uuid: 9588cb0f-5102-4e66-d5fb-f96cba9acdda, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /qazxcv00, headers: {Host: tou.vtcss.top}}, udp: true}
-  - {name: 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 9, server: cf.yxjnode.com, port: 80, type: vmess, uuid: 09c1d32d-4458-4ebf-b36d-4dd732bae3aa, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /yxzbp, headers: {Host: dp1.yxjnode.com}}, udp: true}
-  - {name: 🇯🇵 github.com/freefq - 日本东京Amazon数据中心 10, server: il.mjt001.com, port: 443, type: trojan, password: af4dc66a-ec88-4057-9e46-777b584577f7, skip-cert-verify: false, udp: true}
-  - {name: 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 11, server: 104.24.16.109, port: 80, type: vmess, uuid: c5c9844d-050e-44f1-cb6d-ec5166772631, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /qwer, headers: {Host: zslbs.vtcss.top}}, udp: true}
-  - {name: 🇯🇵 github.com/freefq - 日本东京Amazon数据中心 12, server: pt.mjt001.com, port: 443, type: trojan, password: af4dc66a-ec88-4057-9e46-777b584577f7, skip-cert-verify: false, udp: true}
-  - {name: 🇺🇸 github.com/freefq - 美国  13, server: 192.203.230.86, port: 80, type: vmess, uuid: a442dacf-cbb3-488a-9744-61494ea38630, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: us-1.acyun.cf}}, udp: true}
-  - {name: 🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶Level3通信(DIA) 14, server: sa.mjt001.com, port: 443, type: trojan, password: af4dc66a-ec88-4057-9e46-777b584577f7, skip-cert-verify: false, udp: true}
-  - {name: 🇺🇸 github.com/freefq - 美国Microsoft数据中心 15, server: ar.mjt001.com, port: 443, type: trojan, password: af4dc66a-ec88-4057-9e46-777b584577f7, skip-cert-verify: false, udp: true}
-  - {name: 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 16, server: tech.noaries.de, port: 80, type: vmess, uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /shirker, headers: {Host: nl.sharecentrepro.com}}, udp: true}
-  - {name: 🇩🇪 github.com/freefq - 德国阿里云 17, server: cdncf.scyu.app, port: 8080, type: vmess, uuid: d1fca18b-00ce-4024-8cc8-4b49a4dd5e52, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /api/v3/download.getFile, headers: {Host: ssrsub.v03.ssrsub.com}}, udp: true}
-  - {name: 🇯🇵 github.com/freefq - 日本  18, server: jp06-vm0.entry.jpojpoh.art, port: 28785, type: vmess, uuid: 22acc467-7440-386a-927a-d84be554b37e, alterId: 1, cipher: auto, tls: true, skip-cert-verify: false, udp: true}
-  - {name: 🇯🇵 github.com/freefq - 日本东京Amazon数据中心 19, server: hinet.mjt001.com, port: 443, type: trojan, password: af4dc66a-ec88-4057-9e46-777b584577f7, skip-cert-verify: false, udp: true}
-  - {name: 🇨🇳 github.com/freefq - 中国阿里云 20, server: cdn.chigua.tk, port: 80, type: vmess, uuid: 01925169-e2ff-483c-89f2-6e778dcdd450, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: us-1.acyun.cf}}, udp: true}
-  - {name: 🇺🇸 github.com/freefq - 美国CloudFlare节点 21, server: 172.67.247.250, port: 80, type: vmess, uuid: 53ae65be-81ee-4766-8a09-da43c44c4d30, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /qwer11, headers: {Host: uyaa.vtcss.top}}, udp: true}
-  - {name: 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 22, server: www.gov.tw, port: 443, type: vmess, uuid: 2F094845-E2BD-EBF7-DEB7-995992436FAF, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /speedtest, headers: {Host: Kansas.kotick.site}}, udp: true}
+  - {name: 🇺🇸 github.com/freefq - 美国  1, server: freeuss.kmairplan.one, port: 10033, type: vmess, uuid: ebfeefa0-293f-4ba9-84fa-2e9cbac0b566, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: freeuss.kmairplan.one}}, udp: true}
+  - {name: 🇺🇸 github.com/freefq - 美国CloudFlare节点 2, server: cdncf.scyu.app, port: 80, type: vmess, uuid: 074c70d1-7479-4781-cf6d-e76515d4b0b3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: vc.scyu.app}}, udp: true}
+  - {name: 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 3, server: cf.yxjnode.com, port: 80, type: vmess, uuid: 09c1d32d-4458-4ebf-b36d-4dd732bae3aa, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /yxzbp, headers: {Host: dp1.yxjnode.com}}, udp: true}
+  - {name: 🇺🇸 github.com/freefq - 美国CloudFlare节点 4, server: cdncf.scyu.app, port: 8080, type: vmess, uuid: d1fca18b-00ce-4024-8cc8-4b49a4dd5e52, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /api/v3/download.getFile, headers: {Host: ssrsub.v03.ssrsub.com}}, udp: true}
+  - {name: 🇺🇸 github.com/freefq - 美国CloudFlare节点 5, server: cdn.chigua.tk, port: 80, type: vmess, uuid: 01925169-e2ff-483c-89f2-6e778dcdd450, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: us-1.acyun.cf}}, udp: true}
+  - {name: 🇦🇺 github.com/freefq - 澳大利亚  6, server: 140.83.63.38, port: 24445, type: vmess, uuid: 94c5ef37-4d82-49f9-c624-f01259374a17, alterId: 64, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 🇺🇸 github.com/freefq - 美国  7, server: 206.168.191.67, port: 80, type: vmess, uuid: 7997b5a0-f2f9-11ed-b436-205c6d5f5d78, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /r2vt59x8, headers: {Host: 206.168.191.67}}, udp: true}
+  - {name: 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 8, server: cfcdn.sanfencdn.net, port: 443, type: vmess, uuid: 951a393a-b557-4590-88b6-30948e1e0b8d, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: us1.sanfencdn.net}}, udp: true}
+  - {name: 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 9, server: new8.huvicloud.com, port: 443, type: vmess, uuid: a11ca760-9ef9-4a63-95c9-4c5c32d56251, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: new8.huvicloud.com}}, udp: true}
+  - {name: 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点(shopify) 10, server: 23.227.38.99, port: 443, type: vmess, uuid: 86d37526-5758-4cec-862f-df404b313086, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /3G6WPDL7, headers: {Host: 1.freek1.xyz}}, udp: true}
+  - {name: 🇺🇸 github.com/freefq - 美国CloudFlare节点 11, server: 172.67.134.123, port: 443, type: vmess, uuid: 8357816b-68e4-4a2b-830c-e9bdd369ea22, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /7ouWwj1jH2IbuOfQj2chg, headers: {Host: en.foriran.live}}, udp: true}
+  - {name: 🇺🇸 github.com/freefq - 美国CloudFlare节点 12, server: 172.67.247.250, port: 80, type: vmess, uuid: 53ae65be-81ee-4766-8a09-da43c44c4d30, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /qwer11, headers: {Host: uyaa.vtcss.top}}, udp: true}
+  - {name: 🇯🇵 github.com/freefq - 日本东京Amazon数据中心 13, server: jp05-vm0.entry.srthdw.art, port: 30593, type: vmess, uuid: 1bc52308-0bd9-30d0-90fd-cef337875d10, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 🇺🇸 github.com/freefq - 美国Microsoft数据中心 1
-      - 🇺🇸 github.com/freefq - 美国  2
-      - 🇺🇸 github.com/freefq - 美国Microsoft数据中心 3
-      - 🇨🇳 github.com/freefq - 北京市移动 4
-      - 🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶Level3通信(DIA) 5
-      - 🇯🇵 github.com/freefq - 日本东京Amazon数据中心 6
-      - 🇺🇸 github.com/freefq - 美国Microsoft数据中心 7
-      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 8
+      - 🇺🇸 github.com/freefq - 美国  1
+      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 2
+      - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 3
+      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 4
+      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 5
+      - 🇦🇺 github.com/freefq - 澳大利亚  6
+      - 🇺🇸 github.com/freefq - 美国  7
+      - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 8
       - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 9
-      - 🇯🇵 github.com/freefq - 日本东京Amazon数据中心 10
-      - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 11
-      - 🇯🇵 github.com/freefq - 日本东京Amazon数据中心 12
-      - 🇺🇸 github.com/freefq - 美国  13
-      - 🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶Level3通信(DIA) 14
-      - 🇺🇸 github.com/freefq - 美国Microsoft数据中心 15
-      - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 16
-      - 🇩🇪 github.com/freefq - 德国阿里云 17
-      - 🇯🇵 github.com/freefq - 日本  18
-      - 🇯🇵 github.com/freefq - 日本东京Amazon数据中心 19
-      - 🇨🇳 github.com/freefq - 中国阿里云 20
-      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 21
-      - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 22
+      - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点(shopify) 10
+      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 11
+      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 12
+      - 🇯🇵 github.com/freefq - 日本东京Amazon数据中心 13
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇺🇸 github.com/freefq - 美国Microsoft数据中心 1
-      - 🇺🇸 github.com/freefq - 美国  2
-      - 🇺🇸 github.com/freefq - 美国Microsoft数据中心 3
-      - 🇨🇳 github.com/freefq - 北京市移动 4
-      - 🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶Level3通信(DIA) 5
-      - 🇯🇵 github.com/freefq - 日本东京Amazon数据中心 6
-      - 🇺🇸 github.com/freefq - 美国Microsoft数据中心 7
-      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 8
+      - 🇺🇸 github.com/freefq - 美国  1
+      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 2
+      - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 3
+      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 4
+      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 5
+      - 🇦🇺 github.com/freefq - 澳大利亚  6
+      - 🇺🇸 github.com/freefq - 美国  7
+      - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 8
       - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 9
-      - 🇯🇵 github.com/freefq - 日本东京Amazon数据中心 10
-      - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 11
-      - 🇯🇵 github.com/freefq - 日本东京Amazon数据中心 12
-      - 🇺🇸 github.com/freefq - 美国  13
-      - 🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶Level3通信(DIA) 14
-      - 🇺🇸 github.com/freefq - 美国Microsoft数据中心 15
-      - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 16
-      - 🇩🇪 github.com/freefq - 德国阿里云 17
-      - 🇯🇵 github.com/freefq - 日本  18
-      - 🇯🇵 github.com/freefq - 日本东京Amazon数据中心 19
-      - 🇨🇳 github.com/freefq - 中国阿里云 20
-      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 21
-      - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 22
+      - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点(shopify) 10
+      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 11
+      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 12
+      - 🇯🇵 github.com/freefq - 日本东京Amazon数据中心 13
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇺🇸 github.com/freefq - 美国Microsoft数据中心 1
-      - 🇺🇸 github.com/freefq - 美国  2
-      - 🇺🇸 github.com/freefq - 美国Microsoft数据中心 3
-      - 🇨🇳 github.com/freefq - 北京市移动 4
-      - 🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶Level3通信(DIA) 5
-      - 🇯🇵 github.com/freefq - 日本东京Amazon数据中心 6
-      - 🇺🇸 github.com/freefq - 美国Microsoft数据中心 7
-      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 8
+      - 🇺🇸 github.com/freefq - 美国  1
+      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 2
+      - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 3
+      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 4
+      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 5
+      - 🇦🇺 github.com/freefq - 澳大利亚  6
+      - 🇺🇸 github.com/freefq - 美国  7
+      - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 8
       - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 9
-      - 🇯🇵 github.com/freefq - 日本东京Amazon数据中心 10
-      - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 11
-      - 🇯🇵 github.com/freefq - 日本东京Amazon数据中心 12
-      - 🇺🇸 github.com/freefq - 美国  13
-      - 🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶Level3通信(DIA) 14
-      - 🇺🇸 github.com/freefq - 美国Microsoft数据中心 15
-      - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 16
-      - 🇩🇪 github.com/freefq - 德国阿里云 17
-      - 🇯🇵 github.com/freefq - 日本  18
-      - 🇯🇵 github.com/freefq - 日本东京Amazon数据中心 19
-      - 🇨🇳 github.com/freefq - 中国阿里云 20
-      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 21
-      - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 22
+      - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点(shopify) 10
+      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 11
+      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 12
+      - 🇯🇵 github.com/freefq - 日本东京Amazon数据中心 13
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇺🇸 github.com/freefq - 美国Microsoft数据中心 1
-      - 🇺🇸 github.com/freefq - 美国  2
-      - 🇺🇸 github.com/freefq - 美国Microsoft数据中心 3
-      - 🇨🇳 github.com/freefq - 北京市移动 4
-      - 🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶Level3通信(DIA) 5
-      - 🇯🇵 github.com/freefq - 日本东京Amazon数据中心 6
-      - 🇺🇸 github.com/freefq - 美国Microsoft数据中心 7
-      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 8
+      - 🇺🇸 github.com/freefq - 美国  1
+      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 2
+      - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 3
+      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 4
+      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 5
+      - 🇦🇺 github.com/freefq - 澳大利亚  6
+      - 🇺🇸 github.com/freefq - 美国  7
+      - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 8
       - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 9
-      - 🇯🇵 github.com/freefq - 日本东京Amazon数据中心 10
-      - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 11
-      - 🇯🇵 github.com/freefq - 日本东京Amazon数据中心 12
-      - 🇺🇸 github.com/freefq - 美国  13
-      - 🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶Level3通信(DIA) 14
-      - 🇺🇸 github.com/freefq - 美国Microsoft数据中心 15
-      - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 16
-      - 🇩🇪 github.com/freefq - 德国阿里云 17
-      - 🇯🇵 github.com/freefq - 日本  18
-      - 🇯🇵 github.com/freefq - 日本东京Amazon数据中心 19
-      - 🇨🇳 github.com/freefq - 中国阿里云 20
-      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 21
-      - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 22
+      - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点(shopify) 10
+      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 11
+      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 12
+      - 🇯🇵 github.com/freefq - 日本东京Amazon数据中心 13
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 🇺🇸 github.com/freefq - 美国Microsoft数据中心 1
-      - 🇺🇸 github.com/freefq - 美国  2
-      - 🇺🇸 github.com/freefq - 美国Microsoft数据中心 3
-      - 🇨🇳 github.com/freefq - 北京市移动 4
-      - 🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶Level3通信(DIA) 5
-      - 🇯🇵 github.com/freefq - 日本东京Amazon数据中心 6
-      - 🇺🇸 github.com/freefq - 美国Microsoft数据中心 7
-      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 8
+      - 🇺🇸 github.com/freefq - 美国  1
+      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 2
+      - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 3
+      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 4
+      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 5
+      - 🇦🇺 github.com/freefq - 澳大利亚  6
+      - 🇺🇸 github.com/freefq - 美国  7
+      - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 8
       - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 9
-      - 🇯🇵 github.com/freefq - 日本东京Amazon数据中心 10
-      - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 11
-      - 🇯🇵 github.com/freefq - 日本东京Amazon数据中心 12
-      - 🇺🇸 github.com/freefq - 美国  13
-      - 🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶Level3通信(DIA) 14
-      - 🇺🇸 github.com/freefq - 美国Microsoft数据中心 15
-      - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 16
-      - 🇩🇪 github.com/freefq - 德国阿里云 17
-      - 🇯🇵 github.com/freefq - 日本  18
-      - 🇯🇵 github.com/freefq - 日本东京Amazon数据中心 19
-      - 🇨🇳 github.com/freefq - 中国阿里云 20
-      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 21
-      - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 22
+      - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点(shopify) 10
+      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 11
+      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 12
+      - 🇯🇵 github.com/freefq - 日本东京Amazon数据中心 13
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇺🇸 github.com/freefq - 美国Microsoft数据中心 1
-      - 🇺🇸 github.com/freefq - 美国  2
-      - 🇺🇸 github.com/freefq - 美国Microsoft数据中心 3
-      - 🇨🇳 github.com/freefq - 北京市移动 4
-      - 🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶Level3通信(DIA) 5
-      - 🇯🇵 github.com/freefq - 日本东京Amazon数据中心 6
-      - 🇺🇸 github.com/freefq - 美国Microsoft数据中心 7
-      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 8
+      - 🇺🇸 github.com/freefq - 美国  1
+      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 2
+      - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 3
+      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 4
+      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 5
+      - 🇦🇺 github.com/freefq - 澳大利亚  6
+      - 🇺🇸 github.com/freefq - 美国  7
+      - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 8
       - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 9
-      - 🇯🇵 github.com/freefq - 日本东京Amazon数据中心 10
-      - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 11
-      - 🇯🇵 github.com/freefq - 日本东京Amazon数据中心 12
-      - 🇺🇸 github.com/freefq - 美国  13
-      - 🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶Level3通信(DIA) 14
-      - 🇺🇸 github.com/freefq - 美国Microsoft数据中心 15
-      - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 16
-      - 🇩🇪 github.com/freefq - 德国阿里云 17
-      - 🇯🇵 github.com/freefq - 日本  18
-      - 🇯🇵 github.com/freefq - 日本东京Amazon数据中心 19
-      - 🇨🇳 github.com/freefq - 中国阿里云 20
-      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 21
-      - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 22
+      - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点(shopify) 10
+      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 11
+      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 12
+      - 🇯🇵 github.com/freefq - 日本东京Amazon数据中心 13
   - name: 📢 谷歌FCM
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇺🇸 github.com/freefq - 美国Microsoft数据中心 1
-      - 🇺🇸 github.com/freefq - 美国  2
-      - 🇺🇸 github.com/freefq - 美国Microsoft数据中心 3
-      - 🇨🇳 github.com/freefq - 北京市移动 4
-      - 🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶Level3通信(DIA) 5
-      - 🇯🇵 github.com/freefq - 日本东京Amazon数据中心 6
-      - 🇺🇸 github.com/freefq - 美国Microsoft数据中心 7
-      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 8
+      - 🇺🇸 github.com/freefq - 美国  1
+      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 2
+      - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 3
+      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 4
+      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 5
+      - 🇦🇺 github.com/freefq - 澳大利亚  6
+      - 🇺🇸 github.com/freefq - 美国  7
+      - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 8
       - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 9
-      - 🇯🇵 github.com/freefq - 日本东京Amazon数据中心 10
-      - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 11
-      - 🇯🇵 github.com/freefq - 日本东京Amazon数据中心 12
-      - 🇺🇸 github.com/freefq - 美国  13
-      - 🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶Level3通信(DIA) 14
-      - 🇺🇸 github.com/freefq - 美国Microsoft数据中心 15
-      - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 16
-      - 🇩🇪 github.com/freefq - 德国阿里云 17
-      - 🇯🇵 github.com/freefq - 日本  18
-      - 🇯🇵 github.com/freefq - 日本东京Amazon数据中心 19
-      - 🇨🇳 github.com/freefq - 中国阿里云 20
-      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 21
-      - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 22
+      - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点(shopify) 10
+      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 11
+      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 12
+      - 🇯🇵 github.com/freefq - 日本东京Amazon数据中心 13
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -242,28 +170,19 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇺🇸 github.com/freefq - 美国Microsoft数据中心 1
-      - 🇺🇸 github.com/freefq - 美国  2
-      - 🇺🇸 github.com/freefq - 美国Microsoft数据中心 3
-      - 🇨🇳 github.com/freefq - 北京市移动 4
-      - 🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶Level3通信(DIA) 5
-      - 🇯🇵 github.com/freefq - 日本东京Amazon数据中心 6
-      - 🇺🇸 github.com/freefq - 美国Microsoft数据中心 7
-      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 8
+      - 🇺🇸 github.com/freefq - 美国  1
+      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 2
+      - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 3
+      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 4
+      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 5
+      - 🇦🇺 github.com/freefq - 澳大利亚  6
+      - 🇺🇸 github.com/freefq - 美国  7
+      - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 8
       - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 9
-      - 🇯🇵 github.com/freefq - 日本东京Amazon数据中心 10
-      - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 11
-      - 🇯🇵 github.com/freefq - 日本东京Amazon数据中心 12
-      - 🇺🇸 github.com/freefq - 美国  13
-      - 🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶Level3通信(DIA) 14
-      - 🇺🇸 github.com/freefq - 美国Microsoft数据中心 15
-      - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 16
-      - 🇩🇪 github.com/freefq - 德国阿里云 17
-      - 🇯🇵 github.com/freefq - 日本  18
-      - 🇯🇵 github.com/freefq - 日本东京Amazon数据中心 19
-      - 🇨🇳 github.com/freefq - 中国阿里云 20
-      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 21
-      - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 22
+      - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点(shopify) 10
+      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 11
+      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 12
+      - 🇯🇵 github.com/freefq - 日本东京Amazon数据中心 13
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
@@ -300,6 +219,22 @@ rules:
  - DOMAIN-SUFFIX,zte.home,🎯 全球直连
  - DOMAIN-SUFFIX,tplogin.cn,🎯 全球直连
  - DOMAIN-SUFFIX,wifi.cmcc,🎯 全球直连
+ - DOMAIN-SUFFIX,ol.epicgames.com,🎯 全球直连
+ - DOMAIN-SUFFIX,dizhensubao.getui.com,🎯 全球直连
+ - DOMAIN,dl.google.com,🎯 全球直连
+ - DOMAIN-SUFFIX,googletraveladservices.com,🎯 全球直连
+ - DOMAIN-SUFFIX,tracking-protection.cdn.mozilla.net,🎯 全球直连
+ - DOMAIN,origin-a.akamaihd.net,🎯 全球直连
+ - DOMAIN,fairplay.l.qq.com,🎯 全球直连
+ - DOMAIN,livew.l.qq.com,🎯 全球直连
+ - DOMAIN,vd.l.qq.com,🎯 全球直连
+ - DOMAIN,errlog.umeng.com,🎯 全球直连
+ - DOMAIN,msg.umeng.com,🎯 全球直连
+ - DOMAIN,msg.umengcloud.com,🎯 全球直连
+ - DOMAIN,tracking.miui.com,🎯 全球直连
+ - DOMAIN,app.adjust.com,🎯 全球直连
+ - DOMAIN,bdtj.tagtic.cn,🎯 全球直连
+ - DOMAIN,rewards.hypixel.net,🎯 全球直连
  - DOMAIN-KEYWORD,admarvel,🛑 全球拦截
  - DOMAIN-KEYWORD,admaster,🛑 全球拦截
  - DOMAIN-KEYWORD,adsage,🛑 全球拦截
@@ -1979,6 +1914,113 @@ rules:
  - DOMAIN-SUFFIX,tools.google.com,🎯 全球直连
  - DOMAIN-SUFFIX,tools.l.google.com,🎯 全球直连
  - DOMAIN-SUFFIX,www-googletagmanager.l.google.com,🎯 全球直连
+ - DOMAIN-KEYWORD,1drv,Ⓜ️ 微软服务
+ - DOMAIN-KEYWORD,microsoft,Ⓜ️ 微软服务
+ - DOMAIN-SUFFIX,aadrm.com,Ⓜ️ 微软服务
+ - DOMAIN-SUFFIX,acompli.com,Ⓜ️ 微软服务
+ - DOMAIN-SUFFIX,acompli.net,Ⓜ️ 微软服务
+ - DOMAIN-SUFFIX,aka.ms,Ⓜ️ 微软服务
+ - DOMAIN-SUFFIX,akadns.net,Ⓜ️ 微软服务
+ - DOMAIN-SUFFIX,aspnetcdn.com,Ⓜ️ 微软服务
+ - DOMAIN-SUFFIX,assets-yammer.com,Ⓜ️ 微软服务
+ - DOMAIN-SUFFIX,azure.com,Ⓜ️ 微软服务
+ - DOMAIN-SUFFIX,azure.net,Ⓜ️ 微软服务
+ - DOMAIN-SUFFIX,azureedge.net,Ⓜ️ 微软服务
+ - DOMAIN-SUFFIX,azureiotcentral.com,Ⓜ️ 微软服务
+ - DOMAIN-SUFFIX,azurerms.com,Ⓜ️ 微软服务
+ - DOMAIN-SUFFIX,bing.com,Ⓜ️ 微软服务
+ - DOMAIN-SUFFIX,bing.net,Ⓜ️ 微软服务
+ - DOMAIN-SUFFIX,bingapis.com,Ⓜ️ 微软服务
+ - DOMAIN-SUFFIX,cloudapp.net,Ⓜ️ 微软服务
+ - DOMAIN-SUFFIX,cloudappsecurity.com,Ⓜ️ 微软服务
+ - DOMAIN-SUFFIX,edgesuite.net,Ⓜ️ 微软服务
+ - DOMAIN-SUFFIX,gfx.ms,Ⓜ️ 微软服务
+ - DOMAIN-SUFFIX,hotmail.com,Ⓜ️ 微软服务
+ - DOMAIN-SUFFIX,live.com,Ⓜ️ 微软服务
+ - DOMAIN-SUFFIX,live.net,Ⓜ️ 微软服务
+ - DOMAIN-SUFFIX,lync.com,Ⓜ️ 微软服务
+ - DOMAIN-SUFFIX,msappproxy.net,Ⓜ️ 微软服务
+ - DOMAIN-SUFFIX,msauth.net,Ⓜ️ 微软服务
+ - DOMAIN-SUFFIX,msauthimages.net,Ⓜ️ 微软服务
+ - DOMAIN-SUFFIX,msecnd.net,Ⓜ️ 微软服务
+ - DOMAIN-SUFFIX,msedge.net,Ⓜ️ 微软服务
+ - DOMAIN-SUFFIX,msft.net,Ⓜ️ 微软服务
+ - DOMAIN-SUFFIX,msftauth.net,Ⓜ️ 微软服务
+ - DOMAIN-SUFFIX,msftauthimages.net,Ⓜ️ 微软服务
+ - DOMAIN-SUFFIX,msftidentity.com,Ⓜ️ 微软服务
+ - DOMAIN-SUFFIX,msidentity.com,Ⓜ️ 微软服务
+ - DOMAIN-SUFFIX,msn.cn,Ⓜ️ 微软服务
+ - DOMAIN-SUFFIX,msn.com,Ⓜ️ 微软服务
+ - DOMAIN-SUFFIX,msocdn.com,Ⓜ️ 微软服务
+ - DOMAIN-SUFFIX,msocsp.com,Ⓜ️ 微软服务
+ - DOMAIN-SUFFIX,mstea.ms,Ⓜ️ 微软服务
+ - DOMAIN-SUFFIX,o365weve.com,Ⓜ️ 微软服务
+ - DOMAIN-SUFFIX,oaspapps.com,Ⓜ️ 微软服务
+ - DOMAIN-SUFFIX,office.com,Ⓜ️ 微软服务
+ - DOMAIN-SUFFIX,office.net,Ⓜ️ 微软服务
+ - DOMAIN-SUFFIX,office365.com,Ⓜ️ 微软服务
+ - DOMAIN-SUFFIX,officeppe.net,Ⓜ️ 微软服务
+ - DOMAIN-SUFFIX,omniroot.com,Ⓜ️ 微软服务
+ - DOMAIN-SUFFIX,onedrive.com,Ⓜ️ 微软服务
+ - DOMAIN-SUFFIX,onenote.com,Ⓜ️ 微软服务
+ - DOMAIN-SUFFIX,onenote.net,Ⓜ️ 微软服务
+ - DOMAIN-SUFFIX,onestore.ms,Ⓜ️ 微软服务
+ - DOMAIN-SUFFIX,outlook.com,Ⓜ️ 微软服务
+ - DOMAIN-SUFFIX,outlookmobile.com,Ⓜ️ 微软服务
+ - DOMAIN-SUFFIX,phonefactor.net,Ⓜ️ 微软服务
+ - DOMAIN-SUFFIX,public-trust.com,Ⓜ️ 微软服务
+ - DOMAIN-SUFFIX,sfbassets.com,Ⓜ️ 微软服务
+ - DOMAIN-SUFFIX,sfx.ms,Ⓜ️ 微软服务
+ - DOMAIN-SUFFIX,sharepoint.com,Ⓜ️ 微软服务
+ - DOMAIN-SUFFIX,sharepointonline.com,Ⓜ️ 微软服务
+ - DOMAIN-SUFFIX,skype.com,Ⓜ️ 微软服务
+ - DOMAIN-SUFFIX,skypeassets.com,Ⓜ️ 微软服务
+ - DOMAIN-SUFFIX,skypeforbusiness.com,Ⓜ️ 微软服务
+ - DOMAIN-SUFFIX,staffhub.ms,Ⓜ️ 微软服务
+ - DOMAIN-SUFFIX,svc.ms,Ⓜ️ 微软服务
+ - DOMAIN-SUFFIX,sway-cdn.com,Ⓜ️ 微软服务
+ - DOMAIN-SUFFIX,sway-extensions.com,Ⓜ️ 微软服务
+ - DOMAIN-SUFFIX,sway.com,Ⓜ️ 微软服务
+ - DOMAIN-SUFFIX,trafficmanager.net,Ⓜ️ 微软服务
+ - DOMAIN-SUFFIX,uservoice.com,Ⓜ️ 微软服务
+ - DOMAIN-SUFFIX,virtualearth.net,Ⓜ️ 微软服务
+ - DOMAIN-SUFFIX,visualstudio.com,Ⓜ️ 微软服务
+ - DOMAIN-SUFFIX,windows-ppe.net,Ⓜ️ 微软服务
+ - DOMAIN-SUFFIX,windows.com,Ⓜ️ 微软服务
+ - DOMAIN-SUFFIX,windows.net,Ⓜ️ 微软服务
+ - DOMAIN-SUFFIX,windowsazure.com,Ⓜ️ 微软服务
+ - DOMAIN-SUFFIX,windowsupdate.com,Ⓜ️ 微软服务
+ - DOMAIN-SUFFIX,wunderlist.com,Ⓜ️ 微软服务
+ - DOMAIN-SUFFIX,yammer.com,Ⓜ️ 微软服务
+ - DOMAIN-SUFFIX,yammerusercontent.com,Ⓜ️ 微软服务
+ - DOMAIN,apple.comscoreresearch.com,🍎 苹果服务
+ - DOMAIN-SUFFIX,aaplimg.com,🍎 苹果服务
+ - DOMAIN-SUFFIX,akadns.net,🍎 苹果服务
+ - DOMAIN-SUFFIX,apple-cloudkit.com,🍎 苹果服务
+ - DOMAIN-SUFFIX,apple-mapkit.com,🍎 苹果服务
+ - DOMAIN-SUFFIX,apple.co,🍎 苹果服务
+ - DOMAIN-SUFFIX,apple.com,🍎 苹果服务
+ - DOMAIN-SUFFIX,apple.com.cn,🍎 苹果服务
+ - DOMAIN-SUFFIX,apple.news,🍎 苹果服务
+ - DOMAIN-SUFFIX,appstore.com,🍎 苹果服务
+ - DOMAIN-SUFFIX,cdn-apple.com,🍎 苹果服务
+ - DOMAIN-SUFFIX,crashlytics.com,🍎 苹果服务
+ - DOMAIN-SUFFIX,icloud-content.com,🍎 苹果服务
+ - DOMAIN-SUFFIX,icloud.com,🍎 苹果服务
+ - DOMAIN-SUFFIX,icloud.com.cn,🍎 苹果服务
+ - DOMAIN-SUFFIX,itunes.com,🍎 苹果服务
+ - DOMAIN-SUFFIX,me.com,🍎 苹果服务
+ - DOMAIN-SUFFIX,mzstatic.com,🍎 苹果服务
+ - IP-CIDR,17.0.0.0/8,🍎 苹果服务,no-resolve
+ - IP-CIDR,63.92.224.0/19,🍎 苹果服务,no-resolve
+ - IP-CIDR,65.199.22.0/23,🍎 苹果服务,no-resolve
+ - IP-CIDR,139.178.128.0/18,🍎 苹果服务,no-resolve
+ - IP-CIDR,144.178.0.0/19,🍎 苹果服务,no-resolve
+ - IP-CIDR,144.178.36.0/22,🍎 苹果服务,no-resolve
+ - IP-CIDR,144.178.48.0/20,🍎 苹果服务,no-resolve
+ - IP-CIDR,192.35.50.0/24,🍎 苹果服务,no-resolve
+ - IP-CIDR,198.183.17.0/24,🍎 苹果服务,no-resolve
+ - IP-CIDR,205.180.175.0/24,🍎 苹果服务,no-resolve
  - DOMAIN-SUFFIX,t.me,📲 电报信息
  - DOMAIN-SUFFIX,tdesktop.com,📲 电报信息
  - DOMAIN-SUFFIX,telegra.ph,📲 电报信息
@@ -2304,6 +2346,420 @@ rules:
  - DOMAIN-SUFFIX,yt.be,🌍 国外媒体
  - DOMAIN-SUFFIX,ytimg.com,🌍 国外媒体
  - DOMAIN,music.youtube.com,🌍 国外媒体
+ - DOMAIN-SUFFIX,1password.com,🚀 节点选择
+ - DOMAIN-SUFFIX,adguard.org,🚀 节点选择
+ - DOMAIN-SUFFIX,bit.no.com,🚀 节点选择
+ - DOMAIN-SUFFIX,btlibrary.me,🚀 节点选择
+ - DOMAIN-SUFFIX,cloudcone.com,🚀 节点选择
+ - DOMAIN-SUFFIX,dubox.com,🚀 节点选择
+ - DOMAIN-SUFFIX,gameloft.com,🚀 节点选择
+ - DOMAIN-SUFFIX,garena.com,🚀 节点选择
+ - DOMAIN-SUFFIX,hoyolab.com,🚀 节点选择
+ - DOMAIN-SUFFIX,inoreader.com,🚀 节点选择
+ - DOMAIN-SUFFIX,ip138.com,🚀 节点选择
+ - DOMAIN-SUFFIX,linkedin.com,🚀 节点选择
+ - DOMAIN-SUFFIX,myteamspeak.com,🚀 节点选择
+ - DOMAIN-SUFFIX,notion.so,🚀 节点选择
+ - DOMAIN-SUFFIX,ping.pe,🚀 节点选择
+ - DOMAIN-SUFFIX,reddit.com,🚀 节点选择
+ - DOMAIN-SUFFIX,teddysun.com,🚀 节点选择
+ - DOMAIN-SUFFIX,tumbex.com,🚀 节点选择
+ - DOMAIN-SUFFIX,twdvd.com,🚀 节点选择
+ - DOMAIN-SUFFIX,unsplash.com,🚀 节点选择
+ - DOMAIN-SUFFIX,eu,🚀 节点选择
+ - DOMAIN-SUFFIX,hk,🚀 节点选择
+ - DOMAIN-SUFFIX,jp,🚀 节点选择
+ - DOMAIN-SUFFIX,kr,🚀 节点选择
+ - DOMAIN-SUFFIX,sg,🚀 节点选择
+ - DOMAIN-SUFFIX,tw,🚀 节点选择
+ - DOMAIN-SUFFIX,uk,🚀 节点选择
+ - DOMAIN-KEYWORD,1e100,🚀 节点选择
+ - DOMAIN-KEYWORD,abema,🚀 节点选择
+ - DOMAIN-KEYWORD,appledaily,🚀 节点选择
+ - DOMAIN-KEYWORD,avtb,🚀 节点选择
+ - DOMAIN-KEYWORD,beetalk,🚀 节点选择
+ - DOMAIN-KEYWORD,blogspot,🚀 节点选择
+ - DOMAIN-KEYWORD,dropbox,🚀 节点选择
+ - DOMAIN-KEYWORD,facebook,🚀 节点选择
+ - DOMAIN-KEYWORD,fbcdn,🚀 节点选择
+ - DOMAIN-KEYWORD,github,🚀 节点选择
+ - DOMAIN-KEYWORD,gmail,🚀 节点选择
+ - DOMAIN-KEYWORD,google,🚀 节点选择
+ - DOMAIN-KEYWORD,instagram,🚀 节点选择
+ - DOMAIN-KEYWORD,porn,🚀 节点选择
+ - DOMAIN-KEYWORD,sci-hub,🚀 节点选择
+ - DOMAIN-KEYWORD,spotify,🚀 节点选择
+ - DOMAIN-KEYWORD,telegram,🚀 节点选择
+ - DOMAIN-KEYWORD,twitter,🚀 节点选择
+ - DOMAIN-KEYWORD,whatsapp,🚀 节点选择
+ - DOMAIN-KEYWORD,youtube,🚀 节点选择
+ - DOMAIN-SUFFIX,4sqi.net,🚀 节点选择
+ - DOMAIN-SUFFIX,a248.e.akamai.net,🚀 节点选择
+ - DOMAIN-SUFFIX,adobedtm.com,🚀 节点选择
+ - DOMAIN-SUFFIX,ampproject.org,🚀 节点选择
+ - DOMAIN-SUFFIX,android.com,🚀 节点选择
+ - DOMAIN-SUFFIX,aolcdn.com,🚀 节点选择
+ - DOMAIN-SUFFIX,apkmirror.com,🚀 节点选择
+ - DOMAIN-SUFFIX,apkpure.com,🚀 节点选择
+ - DOMAIN-SUFFIX,app-measurement.com,🚀 节点选择
+ - DOMAIN-SUFFIX,appspot.com,🚀 节点选择
+ - DOMAIN-SUFFIX,archive.org,🚀 节点选择
+ - DOMAIN-SUFFIX,armorgames.com,🚀 节点选择
+ - DOMAIN-SUFFIX,aspnetcdn.com,🚀 节点选择
+ - DOMAIN-SUFFIX,awsstatic.com,🚀 节点选择
+ - DOMAIN-SUFFIX,azureedge.net,🚀 节点选择
+ - DOMAIN-SUFFIX,azurewebsites.net,🚀 节点选择
+ - DOMAIN-SUFFIX,bandwagonhost.com,🚀 节点选择
+ - DOMAIN-SUFFIX,bing.com,🚀 节点选择
+ - DOMAIN-SUFFIX,bkrtx.com,🚀 节点选择
+ - DOMAIN-SUFFIX,blogcdn.com,🚀 节点选择
+ - DOMAIN-SUFFIX,blogger.com,🚀 节点选择
+ - DOMAIN-SUFFIX,blogsmithmedia.com,🚀 节点选择
+ - DOMAIN-SUFFIX,blogspot.com,🚀 节点选择
+ - DOMAIN-SUFFIX,blogspot.hk,🚀 节点选择
+ - DOMAIN-SUFFIX,blogspot.jp,🚀 节点选择
+ - DOMAIN-SUFFIX,bloomberg.cn,🚀 节点选择
+ - DOMAIN-SUFFIX,bloomberg.com,🚀 节点选择
+ - DOMAIN-SUFFIX,box.com,🚀 节点选择
+ - DOMAIN-SUFFIX,cachefly.net,🚀 节点选择
+ - DOMAIN-SUFFIX,cdnst.net,🚀 节点选择
+ - DOMAIN-SUFFIX,cloudfront.net,🚀 节点选择
+ - DOMAIN-SUFFIX,comodoca.com,🚀 节点选择
+ - DOMAIN-SUFFIX,daum.net,🚀 节点选择
+ - DOMAIN-SUFFIX,deskconnect.com,🚀 节点选择
+ - DOMAIN-SUFFIX,disqus.com,🚀 节点选择
+ - DOMAIN-SUFFIX,disquscdn.com,🚀 节点选择
+ - DOMAIN-SUFFIX,dropbox.com,🚀 节点选择
+ - DOMAIN-SUFFIX,dropboxapi.com,🚀 节点选择
+ - DOMAIN-SUFFIX,dropboxstatic.com,🚀 节点选择
+ - DOMAIN-SUFFIX,dropboxusercontent.com,🚀 节点选择
+ - DOMAIN-SUFFIX,duckduckgo.com,🚀 节点选择
+ - DOMAIN-SUFFIX,edgecastcdn.net,🚀 节点选择
+ - DOMAIN-SUFFIX,edgekey.net,🚀 节点选择
+ - DOMAIN-SUFFIX,edgesuite.net,🚀 节点选择
+ - DOMAIN-SUFFIX,eurekavpt.com,🚀 节点选择
+ - DOMAIN-SUFFIX,fastmail.com,🚀 节点选择
+ - DOMAIN-SUFFIX,firebaseio.com,🚀 节点选择
+ - DOMAIN-SUFFIX,flickr.com,🚀 节点选择
+ - DOMAIN-SUFFIX,flipboard.com,🚀 节点选择
+ - DOMAIN-SUFFIX,gfx.ms,🚀 节点选择
+ - DOMAIN-SUFFIX,gongm.in,🚀 节点选择
+ - DOMAIN-SUFFIX,hulu.com,🚀 节点选择
+ - DOMAIN-SUFFIX,id.heroku.com,🚀 节点选择
+ - DOMAIN-SUFFIX,io.io,🚀 节点选择
+ - DOMAIN-SUFFIX,issuu.com,🚀 节点选择
+ - DOMAIN-SUFFIX,ixquick.com,🚀 节点选择
+ - DOMAIN-SUFFIX,jtvnw.net,🚀 节点选择
+ - DOMAIN-SUFFIX,kat.cr,🚀 节点选择
+ - DOMAIN-SUFFIX,kik.com,🚀 节点选择
+ - DOMAIN-SUFFIX,kobo.com,🚀 节点选择
+ - DOMAIN-SUFFIX,kobobooks.com,🚀 节点选择
+ - DOMAIN-SUFFIX,licdn.com,🚀 节点选择
+ - DOMAIN-SUFFIX,live.net,🚀 节点选择
+ - DOMAIN-SUFFIX,livefilestore.com,🚀 节点选择
+ - DOMAIN-SUFFIX,llnwd.net,🚀 节点选择
+ - DOMAIN-SUFFIX,macrumors.com,🚀 节点选择
+ - DOMAIN-SUFFIX,medium.com,🚀 节点选择
+ - DOMAIN-SUFFIX,mega.nz,🚀 节点选择
+ - DOMAIN-SUFFIX,megaupload.com,🚀 节点选择
+ - DOMAIN-SUFFIX,messenger.com,🚀 节点选择
+ - DOMAIN-SUFFIX,netdna-cdn.com,🚀 节点选择
+ - DOMAIN-SUFFIX,nintendo.net,🚀 节点选择
+ - DOMAIN-SUFFIX,nsstatic.net,🚀 节点选择
+ - DOMAIN-SUFFIX,nytstyle.com,🚀 节点选择
+ - DOMAIN-SUFFIX,overcast.fm,🚀 节点选择
+ - DOMAIN-SUFFIX,openvpn.net,🚀 节点选择
+ - DOMAIN-SUFFIX,periscope.tv,🚀 节点选择
+ - DOMAIN-SUFFIX,pinimg.com,🚀 节点选择
+ - DOMAIN-SUFFIX,pinterest.com,🚀 节点选择
+ - DOMAIN-SUFFIX,potato.im,🚀 节点选择
+ - DOMAIN-SUFFIX,prfct.co,🚀 节点选择
+ - DOMAIN-SUFFIX,pscp.tv,🚀 节点选择
+ - DOMAIN-SUFFIX,quora.com,🚀 节点选择
+ - DOMAIN-SUFFIX,resilio.com,🚀 节点选择
+ - DOMAIN-SUFFIX,sfx.ms,🚀 节点选择
+ - DOMAIN-SUFFIX,shadowsocks.org,🚀 节点选择
+ - DOMAIN-SUFFIX,slack-edge.com,🚀 节点选择
+ - DOMAIN-SUFFIX,smartdnsproxy.com,🚀 节点选择
+ - DOMAIN-SUFFIX,sndcdn.com,🚀 节点选择
+ - DOMAIN-SUFFIX,soundcloud.com,🚀 节点选择
+ - DOMAIN-SUFFIX,startpage.com,🚀 节点选择
+ - DOMAIN-SUFFIX,staticflickr.com,🚀 节点选择
+ - DOMAIN-SUFFIX,symauth.com,🚀 节点选择
+ - DOMAIN-SUFFIX,symcb.com,🚀 节点选择
+ - DOMAIN-SUFFIX,symcd.com,🚀 节点选择
+ - DOMAIN-SUFFIX,textnow.com,🚀 节点选择
+ - DOMAIN-SUFFIX,textnow.me,🚀 节点选择
+ - DOMAIN-SUFFIX,thefacebook.com,🚀 节点选择
+ - DOMAIN-SUFFIX,thepiratebay.org,🚀 节点选择
+ - DOMAIN-SUFFIX,torproject.org,🚀 节点选择
+ - DOMAIN-SUFFIX,trustasiassl.com,🚀 节点选择
+ - DOMAIN-SUFFIX,tumblr.co,🚀 节点选择
+ - DOMAIN-SUFFIX,tumblr.com,🚀 节点选择
+ - DOMAIN-SUFFIX,tvb.com,🚀 节点选择
+ - DOMAIN-SUFFIX,txmblr.com,🚀 节点选择
+ - DOMAIN-SUFFIX,v2ex.com,🚀 节点选择
+ - DOMAIN-SUFFIX,vimeo.com,🚀 节点选择
+ - DOMAIN-SUFFIX,vine.co,🚀 节点选择
+ - DOMAIN-SUFFIX,vox-cdn.com,🚀 节点选择
+ - DOMAIN-SUFFIX,amazon.co.jp,🚀 节点选择
+ - DOMAIN-SUFFIX,amazon.com,🚀 节点选择
+ - DOMAIN-SUFFIX,amazonaws.com,🚀 节点选择
+ - IP-CIDR,13.32.0.0/15,🚀 节点选择,no-resolve
+ - IP-CIDR,13.35.0.0/17,🚀 节点选择,no-resolve
+ - IP-CIDR,18.184.0.0/15,🚀 节点选择,no-resolve
+ - IP-CIDR,18.194.0.0/15,🚀 节点选择,no-resolve
+ - IP-CIDR,18.208.0.0/13,🚀 节点选择,no-resolve
+ - IP-CIDR,18.232.0.0/14,🚀 节点选择,no-resolve
+ - IP-CIDR,52.58.0.0/15,🚀 节点选择,no-resolve
+ - IP-CIDR,52.74.0.0/16,🚀 节点选择,no-resolve
+ - IP-CIDR,52.77.0.0/16,🚀 节点选择,no-resolve
+ - IP-CIDR,52.84.0.0/15,🚀 节点选择,no-resolve
+ - IP-CIDR,52.200.0.0/13,🚀 节点选择,no-resolve
+ - IP-CIDR,54.93.0.0/16,🚀 节点选择,no-resolve
+ - IP-CIDR,54.156.0.0/14,🚀 节点选择,no-resolve
+ - IP-CIDR,54.226.0.0/15,🚀 节点选择,no-resolve
+ - IP-CIDR,54.230.156.0/22,🚀 节点选择,no-resolve
+ - DOMAIN-KEYWORD,uk-live,🚀 节点选择
+ - DOMAIN-SUFFIX,bbc.co,🚀 节点选择
+ - DOMAIN-SUFFIX,bbc.com,🚀 节点选择
+ - DOMAIN-SUFFIX,apache.org,🚀 节点选择
+ - DOMAIN-SUFFIX,docker.com,🚀 节点选择
+ - DOMAIN-SUFFIX,elastic.co,🚀 节点选择
+ - DOMAIN-SUFFIX,elastic.com,🚀 节点选择
+ - DOMAIN-SUFFIX,gcr.io,🚀 节点选择
+ - DOMAIN-SUFFIX,gitlab.com,🚀 节点选择
+ - DOMAIN-SUFFIX,gitlab.io,🚀 节点选择
+ - DOMAIN-SUFFIX,jitpack.io,🚀 节点选择
+ - DOMAIN-SUFFIX,maven.org,🚀 节点选择
+ - DOMAIN-SUFFIX,medium.com,🚀 节点选择
+ - DOMAIN-SUFFIX,mvnrepository.com,🚀 节点选择
+ - DOMAIN-SUFFIX,quay.io,🚀 节点选择
+ - DOMAIN-SUFFIX,reddit.com,🚀 节点选择
+ - DOMAIN-SUFFIX,redhat.com,🚀 节点选择
+ - DOMAIN-SUFFIX,sonatype.org,🚀 节点选择
+ - DOMAIN-SUFFIX,sourcegraph.com,🚀 节点选择
+ - DOMAIN-SUFFIX,spring.io,🚀 节点选择
+ - DOMAIN-SUFFIX,spring.net,🚀 节点选择
+ - DOMAIN-SUFFIX,stackoverflow.com,🚀 节点选择
+ - DOMAIN-SUFFIX,discord.co,🚀 节点选择
+ - DOMAIN-SUFFIX,discord.com,🚀 节点选择
+ - DOMAIN-SUFFIX,discord.gg,🚀 节点选择
+ - DOMAIN-SUFFIX,discord.media,🚀 节点选择
+ - DOMAIN-SUFFIX,discordapp.com,🚀 节点选择
+ - DOMAIN-SUFFIX,discordapp.net,🚀 节点选择
+ - DOMAIN-SUFFIX,facebook.com,🚀 节点选择
+ - DOMAIN-SUFFIX,fb.com,🚀 节点选择
+ - DOMAIN-SUFFIX,fb.me,🚀 节点选择
+ - DOMAIN-SUFFIX,fbcdn.com,🚀 节点选择
+ - DOMAIN-SUFFIX,fbcdn.net,🚀 节点选择
+ - IP-CIDR,31.13.24.0/21,🚀 节点选择,no-resolve
+ - IP-CIDR,31.13.64.0/18,🚀 节点选择,no-resolve
+ - IP-CIDR,45.64.40.0/22,🚀 节点选择,no-resolve
+ - IP-CIDR,66.220.144.0/20,🚀 节点选择,no-resolve
+ - IP-CIDR,69.63.176.0/20,🚀 节点选择,no-resolve
+ - IP-CIDR,69.171.224.0/19,🚀 节点选择,no-resolve
+ - IP-CIDR,74.119.76.0/22,🚀 节点选择,no-resolve
+ - IP-CIDR,103.4.96.0/22,🚀 节点选择,no-resolve
+ - IP-CIDR,129.134.0.0/17,🚀 节点选择,no-resolve
+ - IP-CIDR,157.240.0.0/17,🚀 节点选择,no-resolve
+ - IP-CIDR,173.252.64.0/18,🚀 节点选择,no-resolve
+ - IP-CIDR,179.60.192.0/22,🚀 节点选择,no-resolve
+ - IP-CIDR,185.60.216.0/22,🚀 节点选择,no-resolve
+ - IP-CIDR,204.15.20.0/22,🚀 节点选择,no-resolve
+ - DOMAIN-SUFFIX,github.com,🚀 节点选择
+ - DOMAIN-SUFFIX,github.io,🚀 节点选择
+ - DOMAIN-SUFFIX,githubapp.com,🚀 节点选择
+ - DOMAIN-SUFFIX,githubassets.com,🚀 节点选择
+ - DOMAIN-SUFFIX,githubusercontent.com,🚀 节点选择
+ - DOMAIN-SUFFIX,1e100.net,🚀 节点选择
+ - DOMAIN-SUFFIX,2mdn.net,🚀 节点选择
+ - DOMAIN-SUFFIX,app-measurement.net,🚀 节点选择
+ - DOMAIN-SUFFIX,g.co,🚀 节点选择
+ - DOMAIN-SUFFIX,ggpht.com,🚀 节点选择
+ - DOMAIN-SUFFIX,goo.gl,🚀 节点选择
+ - DOMAIN-SUFFIX,googleapis.cn,🚀 节点选择
+ - DOMAIN-SUFFIX,googleapis.com,🚀 节点选择
+ - DOMAIN-SUFFIX,gstatic.cn,🚀 节点选择
+ - DOMAIN-SUFFIX,gstatic.com,🚀 节点选择
+ - DOMAIN-SUFFIX,gvt0.com,🚀 节点选择
+ - DOMAIN-SUFFIX,gvt1.com,🚀 节点选择
+ - DOMAIN-SUFFIX,gvt2.com,🚀 节点选择
+ - DOMAIN-SUFFIX,gvt3.com,🚀 节点选择
+ - DOMAIN-SUFFIX,xn--ngstr-lra8j.com,🚀 节点选择
+ - DOMAIN-SUFFIX,youtu.be,🚀 节点选择
+ - DOMAIN-SUFFIX,youtube-nocookie.com,🚀 节点选择
+ - DOMAIN-SUFFIX,youtube.com,🚀 节点选择
+ - DOMAIN-SUFFIX,yt.be,🚀 节点选择
+ - DOMAIN-SUFFIX,ytimg.com,🚀 节点选择
+ - IP-CIDR,74.125.0.0/16,🚀 节点选择,no-resolve
+ - IP-CIDR,173.194.0.0/16,🚀 节点选择,no-resolve
+ - IP-CIDR,120.232.181.162/32,🚀 节点选择,no-resolve
+ - IP-CIDR,120.241.147.226/32,🚀 节点选择,no-resolve
+ - IP-CIDR,120.253.253.226/32,🚀 节点选择,no-resolve
+ - IP-CIDR,120.253.255.162/32,🚀 节点选择,no-resolve
+ - IP-CIDR,120.253.255.34/32,🚀 节点选择,no-resolve
+ - IP-CIDR,120.253.255.98/32,🚀 节点选择,no-resolve
+ - IP-CIDR,180.163.150.162/32,🚀 节点选择,no-resolve
+ - IP-CIDR,180.163.150.34/32,🚀 节点选择,no-resolve
+ - IP-CIDR,180.163.151.162/32,🚀 节点选择,no-resolve
+ - IP-CIDR,180.163.151.34/32,🚀 节点选择,no-resolve
+ - IP-CIDR,203.208.39.0/24,🚀 节点选择,no-resolve
+ - IP-CIDR,203.208.40.0/24,🚀 节点选择,no-resolve
+ - IP-CIDR,203.208.41.0/24,🚀 节点选择,no-resolve
+ - IP-CIDR,203.208.43.0/24,🚀 节点选择,no-resolve
+ - IP-CIDR,203.208.50.0/24,🚀 节点选择,no-resolve
+ - IP-CIDR,220.181.174.162/32,🚀 节点选择,no-resolve
+ - IP-CIDR,220.181.174.226/32,🚀 节点选择,no-resolve
+ - IP-CIDR,220.181.174.34/32,🚀 节点选择,no-resolve
+ - DOMAIN-SUFFIX,cdninstagram.com,🚀 节点选择
+ - DOMAIN-SUFFIX,instagram.com,🚀 节点选择
+ - DOMAIN-SUFFIX,instagr.am,🚀 节点选择
+ - DOMAIN-SUFFIX,kakao.com,🚀 节点选择
+ - DOMAIN-SUFFIX,kakao.co.kr,🚀 节点选择
+ - DOMAIN-SUFFIX,kakaocdn.net,🚀 节点选择
+ - IP-CIDR,1.201.0.0/24,🚀 节点选择,no-resolve
+ - IP-CIDR,27.0.236.0/22,🚀 节点选择,no-resolve
+ - IP-CIDR,103.27.148.0/22,🚀 节点选择,no-resolve
+ - IP-CIDR,103.246.56.0/22,🚀 节点选择,no-resolve
+ - IP-CIDR,110.76.140.0/22,🚀 节点选择,no-resolve
+ - IP-CIDR,113.61.104.0/22,🚀 节点选择,no-resolve
+ - DOMAIN-SUFFIX,lin.ee,🚀 节点选择
+ - DOMAIN-SUFFIX,line-apps.com,🚀 节点选择
+ - DOMAIN-SUFFIX,line-cdn.net,🚀 节点选择
+ - DOMAIN-SUFFIX,line-scdn.net,🚀 节点选择
+ - DOMAIN-SUFFIX,line.me,🚀 节点选择
+ - DOMAIN-SUFFIX,line.naver.jp,🚀 节点选择
+ - DOMAIN-SUFFIX,nhncorp.jp,🚀 节点选择
+ - IP-CIDR,103.2.28.0/24,🚀 节点选择,no-resolve
+ - IP-CIDR,103.2.30.0/23,🚀 节点选择,no-resolve
+ - IP-CIDR,119.235.224.0/24,🚀 节点选择,no-resolve
+ - IP-CIDR,119.235.232.0/24,🚀 节点选择,no-resolve
+ - IP-CIDR,119.235.235.0/24,🚀 节点选择,no-resolve
+ - IP-CIDR,119.235.236.0/23,🚀 节点选择,no-resolve
+ - IP-CIDR,147.92.128.0/17,🚀 节点选择,no-resolve
+ - IP-CIDR,203.104.128.0/19,🚀 节点选择,no-resolve
+ - DOMAIN-SUFFIX,openai.com,🚀 节点选择
+ - DOMAIN-SUFFIX,challenges.cloudflare.com,🚀 节点选择
+ - DOMAIN-SUFFIX,ai.com,🚀 节点选择
+ - DOMAIN-KEYWORD,1drv,🚀 节点选择
+ - DOMAIN-KEYWORD,onedrive,🚀 节点选择
+ - DOMAIN-KEYWORD,skydrive,🚀 节点选择
+ - DOMAIN-SUFFIX,livefilestore.com,🚀 节点选择
+ - DOMAIN-SUFFIX,oneclient.sfx.ms,🚀 节点选择
+ - DOMAIN-SUFFIX,onedrive.com,🚀 节点选择
+ - DOMAIN-SUFFIX,onedrive.live.com,🚀 节点选择
+ - DOMAIN-SUFFIX,photos.live.com,🚀 节点选择
+ - DOMAIN-SUFFIX,skydrive.wns.windows.com,🚀 节点选择
+ - DOMAIN-SUFFIX,spoprod-a.akamaihd.net,🚀 节点选择
+ - DOMAIN-SUFFIX,storage.live.com,🚀 节点选择
+ - DOMAIN-SUFFIX,storage.msn.com,🚀 节点选择
+ - DOMAIN-KEYWORD,porn,🚀 节点选择
+ - DOMAIN-SUFFIX,8teenxxx.com,🚀 节点选择
+ - DOMAIN-SUFFIX,ahcdn.com,🚀 节点选择
+ - DOMAIN-SUFFIX,bcvcdn.com,🚀 节点选择
+ - DOMAIN-SUFFIX,bongacams.com,🚀 节点选择
+ - DOMAIN-SUFFIX,chaturbate.com,🚀 节点选择
+ - DOMAIN-SUFFIX,dditscdn.com,🚀 节点选择
+ - DOMAIN-SUFFIX,livejasmin.com,🚀 节点选择
+ - DOMAIN-SUFFIX,phncdn.com,🚀 节点选择
+ - DOMAIN-SUFFIX,phprcdn.com,🚀 节点选择
+ - DOMAIN-SUFFIX,pornhub.com,🚀 节点选择
+ - DOMAIN-SUFFIX,pornhubpremium.com,🚀 节点选择
+ - DOMAIN-SUFFIX,rdtcdn.com,🚀 节点选择
+ - DOMAIN-SUFFIX,redtube.com,🚀 节点选择
+ - DOMAIN-SUFFIX,sb-cd.com,🚀 节点选择
+ - DOMAIN-SUFFIX,spankbang.com,🚀 节点选择
+ - DOMAIN-SUFFIX,t66y.com,🚀 节点选择
+ - DOMAIN-SUFFIX,xhamster.com,🚀 节点选择
+ - DOMAIN-SUFFIX,xnxx-cdn.com,🚀 节点选择
+ - DOMAIN-SUFFIX,xnxx.com,🚀 节点选择
+ - DOMAIN-SUFFIX,xvideos-cdn.com,🚀 节点选择
+ - DOMAIN-SUFFIX,xvideos.com,🚀 节点选择
+ - DOMAIN-SUFFIX,ypncdn.com,🚀 节点选择
+ - DOMAIN-SUFFIX,pixiv.net,🚀 节点选择
+ - DOMAIN-SUFFIX,pximg.net,🚀 节点选择
+ - DOMAIN-SUFFIX,amplitude.com,🚀 节点选择
+ - DOMAIN-SUFFIX,firebaseio.com,🚀 节点选择
+ - DOMAIN-SUFFIX,hockeyapp.net,🚀 节点选择
+ - DOMAIN-SUFFIX,readdle.com,🚀 节点选择
+ - DOMAIN-SUFFIX,smartmailcloud.com,🚀 节点选择
+ - DOMAIN-SUFFIX,fanatical.com,🚀 节点选择
+ - DOMAIN-SUFFIX,humblebundle.com,🚀 节点选择
+ - DOMAIN-SUFFIX,underlords.com,🚀 节点选择
+ - DOMAIN-SUFFIX,valvesoftware.com,🚀 节点选择
+ - DOMAIN-SUFFIX,playartifact.com,🚀 节点选择
+ - DOMAIN-SUFFIX,steam-chat.com,🚀 节点选择
+ - DOMAIN-SUFFIX,steamcommunity.com,🚀 节点选择
+ - DOMAIN-SUFFIX,steamgames.com,🚀 节点选择
+ - DOMAIN-SUFFIX,steampowered.com,🚀 节点选择
+ - DOMAIN-SUFFIX,steamserver.net,🚀 节点选择
+ - DOMAIN-SUFFIX,steamstatic.com,🚀 节点选择
+ - DOMAIN-SUFFIX,steamstat.us,🚀 节点选择
+ - DOMAIN,steambroadcast.akamaized.net,🚀 节点选择
+ - DOMAIN,steamcdn-a.akamaihd.net,🚀 节点选择
+ - DOMAIN,steamcommunity-a.akamaihd.net,🚀 节点选择
+ - DOMAIN,steamstore-a.akamaihd.net,🚀 节点选择
+ - DOMAIN,steamusercontent-a.akamaihd.net,🚀 节点选择
+ - DOMAIN,steamuserimages-a.akamaihd.net,🚀 节点选择
+ - DOMAIN,steampipe.akamaized.net,🚀 节点选择
+ - DOMAIN-SUFFIX,tap.io,🚀 节点选择
+ - DOMAIN-SUFFIX,taptap.tw,🚀 节点选择
+ - DOMAIN-SUFFIX,twitch.tv,🚀 节点选择
+ - DOMAIN-SUFFIX,ttvnw.net,🚀 节点选择
+ - DOMAIN-SUFFIX,jtvnw.net,🚀 节点选择
+ - DOMAIN-KEYWORD,ttvnw,🚀 节点选择
+ - DOMAIN-SUFFIX,t.co,🚀 节点选择
+ - DOMAIN-SUFFIX,twimg.co,🚀 节点选择
+ - DOMAIN-SUFFIX,twimg.com,🚀 节点选择
+ - DOMAIN-SUFFIX,twimg.org,🚀 节点选择
+ - DOMAIN-SUFFIX,t.me,🚀 节点选择
+ - DOMAIN-SUFFIX,tdesktop.com,🚀 节点选择
+ - DOMAIN-SUFFIX,telegra.ph,🚀 节点选择
+ - DOMAIN-SUFFIX,telegram.me,🚀 节点选择
+ - DOMAIN-SUFFIX,telegram.org,🚀 节点选择
+ - DOMAIN-SUFFIX,telesco.pe,🚀 节点选择
+ - IP-CIDR,91.108.0.0/16,🚀 节点选择,no-resolve
+ - IP-CIDR,109.239.140.0/24,🚀 节点选择,no-resolve
+ - IP-CIDR,149.154.160.0/20,🚀 节点选择,no-resolve
+ - IP-CIDR6,2001:67c:4e8::/48,🚀 节点选择,no-resolve
+ - IP-CIDR6,2001:b28:f23d::/48,🚀 节点选择,no-resolve
+ - IP-CIDR6,2001:b28:f23f::/48,🚀 节点选择,no-resolve
+ - DOMAIN-SUFFIX,terabox.com,🚀 节点选择
+ - DOMAIN-SUFFIX,teraboxcdn.com,🚀 节点选择
+ - IP-CIDR,18.194.0.0/15,🚀 节点选择,no-resolve
+ - IP-CIDR,34.224.0.0/12,🚀 节点选择,no-resolve
+ - IP-CIDR,54.242.0.0/15,🚀 节点选择,no-resolve
+ - IP-CIDR,50.22.198.204/30,🚀 节点选择,no-resolve
+ - IP-CIDR,208.43.122.128/27,🚀 节点选择,no-resolve
+ - IP-CIDR,108.168.174.0/16,🚀 节点选择,no-resolve
+ - IP-CIDR,173.192.231.32/27,🚀 节点选择,no-resolve
+ - IP-CIDR,158.85.5.192/27,🚀 节点选择,no-resolve
+ - IP-CIDR,174.37.243.0/16,🚀 节点选择,no-resolve
+ - IP-CIDR,158.85.46.128/27,🚀 节点选择,no-resolve
+ - IP-CIDR,173.192.222.160/27,🚀 节点选择,no-resolve
+ - IP-CIDR,184.173.128.0/17,🚀 节点选择,no-resolve
+ - IP-CIDR,158.85.224.160/27,🚀 节点选择,no-resolve
+ - IP-CIDR,75.126.150.0/16,🚀 节点选择,no-resolve
+ - IP-CIDR,69.171.235.0/16,🚀 节点选择,no-resolve
+ - DOMAIN-SUFFIX,mediawiki.org,🚀 节点选择
+ - DOMAIN-SUFFIX,wikibooks.org,🚀 节点选择
+ - DOMAIN-SUFFIX,wikidata.org,🚀 节点选择
+ - DOMAIN-SUFFIX,wikileaks.org,🚀 节点选择
+ - DOMAIN-SUFFIX,wikimedia.org,🚀 节点选择
+ - DOMAIN-SUFFIX,wikinews.org,🚀 节点选择
+ - DOMAIN-SUFFIX,wikipedia.org,🚀 节点选择
+ - DOMAIN-SUFFIX,wikiquote.org,🚀 节点选择
+ - DOMAIN-SUFFIX,wikisource.org,🚀 节点选择
+ - DOMAIN-SUFFIX,wikiversity.org,🚀 节点选择
+ - DOMAIN-SUFFIX,wikivoyage.org,🚀 节点选择
+ - DOMAIN-SUFFIX,wiktionary.org,🚀 节点选择
+ - DOMAIN-SUFFIX,neulion.com,🚀 节点选择
+ - DOMAIN-SUFFIX,icntv.xyz,🚀 节点选择
+ - DOMAIN-SUFFIX,flzbcdn.xyz,🚀 节点选择
+ - DOMAIN-SUFFIX,ocnttv.com,🚀 节点选择
+ - DOMAIN-SUFFIX,vikacg.com,🚀 节点选择
+ - DOMAIN-SUFFIX,picjs.xyz,🚀 节点选择
  - DOMAIN-SUFFIX,13th.tech,🎯 全球直连
  - DOMAIN-SUFFIX,423down.com,🎯 全球直连
  - DOMAIN-SUFFIX,bokecc.com,🎯 全球直连
@@ -3016,5 +3472,226 @@ rules:
  - DOMAIN-SUFFIX,zhimg.com,🎯 全球直连
  - DOMAIN-SUFFIX,zhongsou.com,🎯 全球直连
  - DOMAIN-SUFFIX,zhuihd.com,🎯 全球直连
+ - IP-CIDR,8.128.0.0/10,🎯 全球直连,no-resolve
+ - IP-CIDR,8.208.0.0/12,🎯 全球直连,no-resolve
+ - IP-CIDR,14.1.112.0/22,🎯 全球直连,no-resolve
+ - IP-CIDR,41.222.240.0/22,🎯 全球直连,no-resolve
+ - IP-CIDR,41.223.119.0/24,🎯 全球直连,no-resolve
+ - IP-CIDR,43.242.168.0/22,🎯 全球直连,no-resolve
+ - IP-CIDR,45.112.212.0/22,🎯 全球直连,no-resolve
+ - IP-CIDR,47.52.0.0/16,🎯 全球直连,no-resolve
+ - IP-CIDR,47.56.0.0/15,🎯 全球直连,no-resolve
+ - IP-CIDR,47.74.0.0/15,🎯 全球直连,no-resolve
+ - IP-CIDR,47.76.0.0/14,🎯 全球直连,no-resolve
+ - IP-CIDR,47.80.0.0/12,🎯 全球直连,no-resolve
+ - IP-CIDR,47.235.0.0/16,🎯 全球直连,no-resolve
+ - IP-CIDR,47.236.0.0/14,🎯 全球直连,no-resolve
+ - IP-CIDR,47.240.0.0/14,🎯 全球直连,no-resolve
+ - IP-CIDR,47.244.0.0/15,🎯 全球直连,no-resolve
+ - IP-CIDR,47.246.0.0/16,🎯 全球直连,no-resolve
+ - IP-CIDR,47.250.0.0/15,🎯 全球直连,no-resolve
+ - IP-CIDR,47.252.0.0/15,🎯 全球直连,no-resolve
+ - IP-CIDR,47.254.0.0/16,🎯 全球直连,no-resolve
+ - IP-CIDR,59.82.0.0/20,🎯 全球直连,no-resolve
+ - IP-CIDR,59.82.240.0/21,🎯 全球直连,no-resolve
+ - IP-CIDR,59.82.248.0/22,🎯 全球直连,no-resolve
+ - IP-CIDR,72.254.0.0/16,🎯 全球直连,no-resolve
+ - IP-CIDR,103.38.56.0/22,🎯 全球直连,no-resolve
+ - IP-CIDR,103.52.76.0/22,🎯 全球直连,no-resolve
+ - IP-CIDR,103.206.40.0/22,🎯 全球直连,no-resolve
+ - IP-CIDR,110.76.21.0/24,🎯 全球直连,no-resolve
+ - IP-CIDR,110.76.23.0/24,🎯 全球直连,no-resolve
+ - IP-CIDR,112.125.0.0/17,🎯 全球直连,no-resolve
+ - IP-CIDR,116.251.64.0/18,🎯 全球直连,no-resolve
+ - IP-CIDR,119.38.208.0/20,🎯 全球直连,no-resolve
+ - IP-CIDR,119.38.224.0/20,🎯 全球直连,no-resolve
+ - IP-CIDR,119.42.224.0/20,🎯 全球直连,no-resolve
+ - IP-CIDR,139.95.0.0/16,🎯 全球直连,no-resolve
+ - IP-CIDR,140.205.1.0/24,🎯 全球直连,no-resolve
+ - IP-CIDR,140.205.122.0/24,🎯 全球直连,no-resolve
+ - IP-CIDR,147.139.0.0/16,🎯 全球直连,no-resolve
+ - IP-CIDR,149.129.0.0/16,🎯 全球直连,no-resolve
+ - IP-CIDR,155.102.0.0/16,🎯 全球直连,no-resolve
+ - IP-CIDR,161.117.0.0/16,🎯 全球直连,no-resolve
+ - IP-CIDR,163.181.0.0/16,🎯 全球直连,no-resolve
+ - IP-CIDR,170.33.0.0/16,🎯 全球直连,no-resolve
+ - IP-CIDR,198.11.128.0/18,🎯 全球直连,no-resolve
+ - IP-CIDR,205.204.96.0/19,🎯 全球直连,no-resolve
+ - IP-CIDR,19.28.0.0/23,🎯 全球直连,no-resolve
+ - IP-CIDR,45.40.192.0/19,🎯 全球直连,no-resolve
+ - IP-CIDR,49.51.0.0/16,🎯 全球直连,no-resolve
+ - IP-CIDR,62.234.0.0/16,🎯 全球直连,no-resolve
+ - IP-CIDR,94.191.0.0/17,🎯 全球直连,no-resolve
+ - IP-CIDR,103.7.28.0/22,🎯 全球直连,no-resolve
+ - IP-CIDR,103.116.50.0/23,🎯 全球直连,no-resolve
+ - IP-CIDR,103.231.60.0/24,🎯 全球直连,no-resolve
+ - IP-CIDR,109.244.0.0/16,🎯 全球直连,no-resolve
+ - IP-CIDR,111.30.128.0/21,🎯 全球直连,no-resolve
+ - IP-CIDR,111.30.136.0/24,🎯 全球直连,no-resolve
+ - IP-CIDR,111.30.139.0/24,🎯 全球直连,no-resolve
+ - IP-CIDR,111.30.140.0/23,🎯 全球直连,no-resolve
+ - IP-CIDR,115.159.0.0/16,🎯 全球直连,no-resolve
+ - IP-CIDR,119.28.0.0/15,🎯 全球直连,no-resolve
+ - IP-CIDR,120.88.56.0/23,🎯 全球直连,no-resolve
+ - IP-CIDR,121.51.0.0/16,🎯 全球直连,no-resolve
+ - IP-CIDR,129.28.0.0/16,🎯 全球直连,no-resolve
+ - IP-CIDR,129.204.0.0/16,🎯 全球直连,no-resolve
+ - IP-CIDR,129.211.0.0/16,🎯 全球直连,no-resolve
+ - IP-CIDR,132.232.0.0/16,🎯 全球直连,no-resolve
+ - IP-CIDR,134.175.0.0/16,🎯 全球直连,no-resolve
+ - IP-CIDR,146.56.192.0/18,🎯 全球直连,no-resolve
+ - IP-CIDR,148.70.0.0/16,🎯 全球直连,no-resolve
+ - IP-CIDR,150.109.0.0/16,🎯 全球直连,no-resolve
+ - IP-CIDR,152.136.0.0/16,🎯 全球直连,no-resolve
+ - IP-CIDR,162.14.0.0/16,🎯 全球直连,no-resolve
+ - IP-CIDR,162.62.0.0/16,🎯 全球直连,no-resolve
+ - IP-CIDR,170.106.130.0/24,🎯 全球直连,no-resolve
+ - IP-CIDR,182.254.0.0/16,🎯 全球直连,no-resolve
+ - IP-CIDR,188.131.128.0/17,🎯 全球直连,no-resolve
+ - IP-CIDR,203.195.128.0/17,🎯 全球直连,no-resolve
+ - IP-CIDR,203.205.128.0/17,🎯 全球直连,no-resolve
+ - IP-CIDR,210.4.138.0/24,🎯 全球直连,no-resolve
+ - IP-CIDR,211.152.128.0/23,🎯 全球直连,no-resolve
+ - IP-CIDR,211.152.132.0/23,🎯 全球直连,no-resolve
+ - IP-CIDR,211.152.148.0/23,🎯 全球直连,no-resolve
+ - IP-CIDR,212.64.0.0/17,🎯 全球直连,no-resolve
+ - IP-CIDR,212.129.128.0/17,🎯 全球直连,no-resolve
+ - IP-CIDR,45.113.192.0/22,🎯 全球直连,no-resolve
+ - IP-CIDR,63.217.23.0/24,🎯 全球直连,no-resolve
+ - IP-CIDR,63.243.252.0/24,🎯 全球直连,no-resolve
+ - IP-CIDR,103.235.44.0/22,🎯 全球直连,no-resolve
+ - IP-CIDR,104.193.88.0/22,🎯 全球直连,no-resolve
+ - IP-CIDR,106.12.0.0/15,🎯 全球直连,no-resolve
+ - IP-CIDR,114.28.224.0/20,🎯 全球直连,no-resolve
+ - IP-CIDR,119.63.192.0/21,🎯 全球直连,no-resolve
+ - IP-CIDR,180.76.0.0/24,🎯 全球直连,no-resolve
+ - IP-CIDR,180.76.0.0/16,🎯 全球直连,no-resolve
+ - IP-CIDR,182.61.0.0/16,🎯 全球直连,no-resolve
+ - IP-CIDR,185.10.104.0/22,🎯 全球直连,no-resolve
+ - IP-CIDR,202.46.48.0/20,🎯 全球直连,no-resolve
+ - IP-CIDR,203.90.238.0/24,🎯 全球直连,no-resolve
+ - IP-CIDR,43.254.0.0/22,🎯 全球直连,no-resolve
+ - IP-CIDR,45.249.212.0/22,🎯 全球直连,no-resolve
+ - IP-CIDR,49.4.0.0/17,🎯 全球直连,no-resolve
+ - IP-CIDR,78.101.192.0/19,🎯 全球直连,no-resolve
+ - IP-CIDR,78.101.224.0/20,🎯 全球直连,no-resolve
+ - IP-CIDR,81.52.161.0/24,🎯 全球直连,no-resolve
+ - IP-CIDR,85.97.220.0/22,🎯 全球直连,no-resolve
+ - IP-CIDR,103.31.200.0/22,🎯 全球直连,no-resolve
+ - IP-CIDR,103.69.140.0/23,🎯 全球直连,no-resolve
+ - IP-CIDR,103.218.216.0/22,🎯 全球直连,no-resolve
+ - IP-CIDR,114.115.128.0/17,🎯 全球直连,no-resolve
+ - IP-CIDR,114.116.0.0/16,🎯 全球直连,no-resolve
+ - IP-CIDR,116.63.128.0/18,🎯 全球直连,no-resolve
+ - IP-CIDR,116.66.184.0/22,🎯 全球直连,no-resolve
+ - IP-CIDR,116.71.96.0/20,🎯 全球直连,no-resolve
+ - IP-CIDR,116.71.128.0/21,🎯 全球直连,no-resolve
+ - IP-CIDR,116.71.136.0/22,🎯 全球直连,no-resolve
+ - IP-CIDR,116.71.141.0/24,🎯 全球直连,no-resolve
+ - IP-CIDR,116.71.142.0/24,🎯 全球直连,no-resolve
+ - IP-CIDR,116.71.243.0/24,🎯 全球直连,no-resolve
+ - IP-CIDR,116.71.244.0/24,🎯 全球直连,no-resolve
+ - IP-CIDR,116.71.251.0/24,🎯 全球直连,no-resolve
+ - IP-CIDR,117.78.0.0/18,🎯 全球直连,no-resolve
+ - IP-CIDR,119.3.0.0/16,🎯 全球直连,no-resolve
+ - IP-CIDR,119.8.0.0/21,🎯 全球直连,no-resolve
+ - IP-CIDR,119.8.32.0/19,🎯 全球直连,no-resolve
+ - IP-CIDR,121.36.0.0/17,🎯 全球直连,no-resolve
+ - IP-CIDR,121.36.128.0/18,🎯 全球直连,no-resolve
+ - IP-CIDR,121.37.0.0/17,🎯 全球直连,no-resolve
+ - IP-CIDR,122.112.128.0/17,🎯 全球直连,no-resolve
+ - IP-CIDR,139.9.0.0/18,🎯 全球直连,no-resolve
+ - IP-CIDR,139.9.64.0/19,🎯 全球直连,no-resolve
+ - IP-CIDR,139.9.100.0/22,🎯 全球直连,no-resolve
+ - IP-CIDR,139.9.104.0/21,🎯 全球直连,no-resolve
+ - IP-CIDR,139.9.112.0/20,🎯 全球直连,no-resolve
+ - IP-CIDR,139.9.128.0/18,🎯 全球直连,no-resolve
+ - IP-CIDR,139.9.192.0/19,🎯 全球直连,no-resolve
+ - IP-CIDR,139.9.224.0/20,🎯 全球直连,no-resolve
+ - IP-CIDR,139.9.240.0/21,🎯 全球直连,no-resolve
+ - IP-CIDR,139.9.248.0/22,🎯 全球直连,no-resolve
+ - IP-CIDR,139.159.128.0/19,🎯 全球直连,no-resolve
+ - IP-CIDR,139.159.160.0/22,🎯 全球直连,no-resolve
+ - IP-CIDR,139.159.164.0/23,🎯 全球直连,no-resolve
+ - IP-CIDR,139.159.168.0/21,🎯 全球直连,no-resolve
+ - IP-CIDR,139.159.176.0/20,🎯 全球直连,no-resolve
+ - IP-CIDR,139.159.192.0/18,🎯 全球直连,no-resolve
+ - IP-CIDR,159.138.0.0/18,🎯 全球直连,no-resolve
+ - IP-CIDR,159.138.64.0/21,🎯 全球直连,no-resolve
+ - IP-CIDR,159.138.79.0/24,🎯 全球直连,no-resolve
+ - IP-CIDR,159.138.80.0/20,🎯 全球直连,no-resolve
+ - IP-CIDR,159.138.96.0/20,🎯 全球直连,no-resolve
+ - IP-CIDR,159.138.112.0/21,🎯 全球直连,no-resolve
+ - IP-CIDR,159.138.125.0/24,🎯 全球直连,no-resolve
+ - IP-CIDR,159.138.128.0/18,🎯 全球直连,no-resolve
+ - IP-CIDR,159.138.192.0/20,🎯 全球直连,no-resolve
+ - IP-CIDR,159.138.223.0/24,🎯 全球直连,no-resolve
+ - IP-CIDR,159.138.224.0/19,🎯 全球直连,no-resolve
+ - IP-CIDR,168.195.92.0/22,🎯 全球直连,no-resolve
+ - IP-CIDR,185.176.76.0/22,🎯 全球直连,no-resolve
+ - IP-CIDR,197.199.0.0/18,🎯 全球直连,no-resolve
+ - IP-CIDR,197.210.163.0/24,🎯 全球直连,no-resolve
+ - IP-CIDR,197.252.1.0/24,🎯 全球直连,no-resolve
+ - IP-CIDR,197.252.2.0/23,🎯 全球直连,no-resolve
+ - IP-CIDR,197.252.4.0/22,🎯 全球直连,no-resolve
+ - IP-CIDR,197.252.8.0/21,🎯 全球直连,no-resolve
+ - IP-CIDR,200.32.52.0/24,🎯 全球直连,no-resolve
+ - IP-CIDR,200.32.54.0/24,🎯 全球直连,no-resolve
+ - IP-CIDR,200.32.57.0/24,🎯 全球直连,no-resolve
+ - IP-CIDR,203.135.0.0/22,🎯 全球直连,no-resolve
+ - IP-CIDR,203.135.4.0/23,🎯 全球直连,no-resolve
+ - IP-CIDR,203.135.8.0/23,🎯 全球直连,no-resolve
+ - IP-CIDR,203.135.11.0/24,🎯 全球直连,no-resolve
+ - IP-CIDR,203.135.13.0/24,🎯 全球直连,no-resolve
+ - IP-CIDR,203.135.20.0/24,🎯 全球直连,no-resolve
+ - IP-CIDR,203.135.22.0/23,🎯 全球直连,no-resolve
+ - IP-CIDR,203.135.24.0/23,🎯 全球直连,no-resolve
+ - IP-CIDR,203.135.26.0/24,🎯 全球直连,no-resolve
+ - IP-CIDR,203.135.29.0/24,🎯 全球直连,no-resolve
+ - IP-CIDR,203.135.33.0/24,🎯 全球直连,no-resolve
+ - IP-CIDR,203.135.38.0/23,🎯 全球直连,no-resolve
+ - IP-CIDR,203.135.40.0/24,🎯 全球直连,no-resolve
+ - IP-CIDR,203.135.43.0/24,🎯 全球直连,no-resolve
+ - IP-CIDR,203.135.48.0/24,🎯 全球直连,no-resolve
+ - IP-CIDR,203.135.50.0/24,🎯 全球直连,no-resolve
+ - IP-CIDR,42.186.0.0/16,🎯 全球直连,no-resolve
+ - IP-CIDR,45.127.128.0/22,🎯 全球直连,no-resolve
+ - IP-CIDR,45.195.24.0/24,🎯 全球直连,no-resolve
+ - IP-CIDR,45.253.132.0/22,🎯 全球直连,no-resolve
+ - IP-CIDR,45.253.240.0/22,🎯 全球直连,no-resolve
+ - IP-CIDR,45.254.48.0/23,🎯 全球直连,no-resolve
+ - IP-CIDR,59.111.0.0/20,🎯 全球直连,no-resolve
+ - IP-CIDR,59.111.128.0/17,🎯 全球直连,no-resolve
+ - IP-CIDR,103.71.120.0/21,🎯 全球直连,no-resolve
+ - IP-CIDR,103.71.128.0/22,🎯 全球直连,no-resolve
+ - IP-CIDR,103.71.196.0/22,🎯 全球直连,no-resolve
+ - IP-CIDR,103.71.200.0/22,🎯 全球直连,no-resolve
+ - IP-CIDR,103.72.12.0/22,🎯 全球直连,no-resolve
+ - IP-CIDR,103.72.18.0/23,🎯 全球直连,no-resolve
+ - IP-CIDR,103.72.24.0/22,🎯 全球直连,no-resolve
+ - IP-CIDR,103.72.28.0/23,🎯 全球直连,no-resolve
+ - IP-CIDR,103.72.38.0/23,🎯 全球直连,no-resolve
+ - IP-CIDR,103.72.40.0/23,🎯 全球直连,no-resolve
+ - IP-CIDR,103.72.44.0/22,🎯 全球直连,no-resolve
+ - IP-CIDR,103.72.48.0/21,🎯 全球直连,no-resolve
+ - IP-CIDR,103.72.128.0/21,🎯 全球直连,no-resolve
+ - IP-CIDR,103.74.24.0/21,🎯 全球直连,no-resolve
+ - IP-CIDR,103.74.48.0/22,🎯 全球直连,no-resolve
+ - IP-CIDR,103.126.92.0/22,🎯 全球直连,no-resolve
+ - IP-CIDR,103.129.252.0/22,🎯 全球直连,no-resolve
+ - IP-CIDR,103.131.252.0/22,🎯 全球直连,no-resolve
+ - IP-CIDR,103.135.240.0/22,🎯 全球直连,no-resolve
+ - IP-CIDR,103.196.64.0/22,🎯 全球直连,no-resolve
+ - IP-CIDR,106.2.32.0/19,🎯 全球直连,no-resolve
+ - IP-CIDR,106.2.64.0/18,🎯 全球直连,no-resolve
+ - IP-CIDR,114.113.196.0/22,🎯 全球直连,no-resolve
+ - IP-CIDR,114.113.200.0/22,🎯 全球直连,no-resolve
+ - IP-CIDR,115.236.112.0/20,🎯 全球直连,no-resolve
+ - IP-CIDR,115.238.76.0/22,🎯 全球直连,no-resolve
+ - IP-CIDR,123.58.160.0/19,🎯 全球直连,no-resolve
+ - IP-CIDR,223.252.192.0/19,🎯 全球直连,no-resolve
+ - IP-CIDR,101.198.128.0/18,🎯 全球直连,no-resolve
+ - IP-CIDR,101.198.192.0/19,🎯 全球直连,no-resolve
+ - IP-CIDR,101.199.196.0/22,🎯 全球直连,no-resolve
  - GEOIP,CN,🎯 全球直连
  - MATCH,🐟 漏网之鱼
