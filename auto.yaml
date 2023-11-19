@@ -5,71 +5,111 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: github.com/freefq - 美国CloudFlare公司CDN节点 1, server: fr-new01.gujuji.top, port: 8080, type: vmess, uuid: 36185a3e-f992-4e12-8ff5-87853733f50d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: fr-new01.gujuji.top}}, udp: true}
-  - {name: github.com/freefq - 法国格拉沃利讷OVH数据中心 2, server: 54.36.174.181, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: github.com/freefq - 美国CloudFlare节点 3, server: 172.67.68.136, port: 80, type: vmess, uuid: 08b2ceb1-5917-42da-b02c-0f942754aac6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: buyvm.iiio.wiki}}, udp: true}
-  - {name: github.com/freefq - 美国CloudFlare公司CDN节点 4, server: 104.16.120.85, port: 80, type: vmess, uuid: e6be09fb-b8f9-4f98-add0-7d450812e622, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: is2.xv2ray.net}}, udp: true}
-  - {name: github.com/freefq - 法国格拉沃利讷OVH数据中心 5, server: ak1751.www.outline.network.fr8678825324247b8176d59f83c30bd94d23d2e3ac5cd4a743bkwqeikvdyufr.cyou, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: github.com/freefq - 广东省移动 6, server: 183.237.20.148, port: 50707, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: github.com/freefq - 法国格拉沃利讷OVH数据中心 7, server: www.outline.network.ak1941.fr8678825324247b8176d59f83c30bd94d23d2e3ac5cd4a743bkwqeikvdyufr.cyou, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: github.com/freefq - 法国格拉沃利讷OVH数据中心 8, server: 54.36.174.181, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
-  - {name: github.com/freefq - 奥地利  9, server: 193.46.56.210, port: 8443, type: vmess, uuid: b72694db-ed21-46c1-8923-325305fa787f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: github.com/freefq - 法国格拉沃利讷OVH数据中心 10, server: 54.36.174.181, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: github.com/freefq - 美国CloudFlare公司CDN节点 11, server: ld2.shabijichang.com, port: 80, type: vmess, uuid: c458695d-6908-45c3-9512-e0c46418454c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: ld2.shabijichang.com}}, udp: true}
-  - {name: github.com/freefq - 美国CloudFlare公司CDN节点 12, server: hytron.io, port: 8080, type: vmess, uuid: 010c265f-5455-4141-ca23-4d69357ded0d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: aktw.daozhang.love}}, udp: true}
+  - {name: github.com/freefq - 台湾省台北市中华电信 1, server: nbq12.ntbq.dynu.net, port: 443, type: vmess, uuid: b4224a4d-6754-47e5-99ef-124697d24b4e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /b12, headers: {Host: nbq12.ntbq.dynu.net}}, udp: true}
+  - {name: github.com/freefq - 台湾省桃园市中华电信 2, server: b22.ntbq.dynu.net, port: 443, type: vmess, uuid: 450cd674-1411-4ea1-979b-bf56da87b21d, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: b22.ntbq.dynu.net}}, udp: true}
+  - {name: github.com/freefq - 台湾省新竹市中华电信 3, server: b23.ntbq.dynu.net, port: 443, type: vmess, uuid: 450cd674-1411-4ea1-979b-bf56da87b21d, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: b23.ntbq.dynu.net}}, udp: true}
+  - {name: github.com/freefq - 安徽省合肥市移动 4, server: 112.29.94.23, port: 49223, type: vmess, uuid: 21a9bff2-72de-4e62-93ff-8b159f66d875, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: github.com/freefq - 台湾省新竹市中华电信 5, server: b23.ntbq.dynu.net, port: 443, type: vmess, uuid: b4224a4d-6754-47e5-99ef-124697d24b4e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /b23, headers: {Host: b23.ntbq.dynu.net}}, udp: true}
+  - {name: github.com/freefq - 亚太地区  6, server: 103.35.190.65, port: 443, type: vmess, uuid: ed531ebe-4971-47f9-a881-636d0b101a45, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: github.com/freefq - 美国CloudFlare节点 7, server: 172.64.151.101, port: 443, type: vmess, uuid: 86b15746-8e58-49cb-ab2a-3e95d09d9128, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: usa1.iranspeed.me, network: ws, ws-opts: {path: /, headers: {Host: usa1.iranspeed.me}}, udp: true}
+  - {name: github.com/freefq - 台湾省桃园市中华电信 8, server: b22.ntbq.dynu.net, port: 443, type: vmess, uuid: b4224a4d-6754-47e5-99ef-124697d24b4e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /b22, headers: {Host: b22.ntbq.dynu.net}}, udp: true}
+  - {name: github.com/freefq - 台湾省新北市中华电信 9, server: b24.ntbq.dynu.net, port: 443, type: vmess, uuid: d201923c-daa9-4459-8e98-9b3ea0435926, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /b24, headers: {Host: b24.ntbq.dynu.net}}, udp: true}
+  - {name: github.com/freefq - 美国CloudFlare公司CDN节点 10, server: 104.17.129.28, port: 8080, type: vmess, uuid: 94242109-0930-427f-f899-15d34021130c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: eu2.openxai.link}}, udp: true}
+  - {name: github.com/freefq - 美国CloudFlare公司CDN节点 11, server: cf2.openxai.link, port: 8080, type: vmess, uuid: f440527e-5243-4ca8-890c-5e05e4b3bb41, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: eu1.openxai.link}}, udp: true}
+  - {name: github.com/freefq - 美国CloudFlare公司CDN节点 12, server: mm2.shabijichang.com, port: 80, type: vmess, uuid: 10ea3b2a-b615-45f1-b1b7-c62bafe8c80c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: mm2.shabijichang.com}}, udp: true}
+  - {name: github.com/freefq - 美国CloudFlare公司CDN节点 13, server: 104.26.13.8, port: 2053, type: vmess, uuid: a4089f68-2bb1-4734-d77a-8b049a80ae8c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: BAmIlo.ONlINeviSioNsTore.sITE, network: ws, ws-opts: {path: /, headers: {Host: BAmIlo.ONlINeviSioNsTore.sITE}}, udp: true}
+  - {name: github.com/freefq - 湖南省联通 14, server: bjcu.xzyunjiasu.icu, port: 33952, type: ss, cipher: aes-256-gcm, password: 5c8b210a-2f00-4292-964b-05281c7ad5d1, udp: true}
+  - {name: github.com/freefq - 美国CloudFlare公司CDN节点 15, server: web.parspack.com, port: 2096, type: vmess, uuid: a98626c1-88ee-47db-ad1d-a8bd15910a83, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: tElEWebIOn.onlIneVIsioNStorE.sITE, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: tElEWebIOn.onlIneVIsioNStorE.sITE}}, udp: true}
+  - {name: github.com/freefq - 法国格拉沃利讷OVH数据中心 16, server: 54.36.174.181, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: github.com/freefq - 美国CloudFlare公司CDN节点 17, server: c2.wuxianliulianng.xyz, port: 443, type: vmess, uuid: b0e43362-72b7-49ac-8eb6-fff69e07cfae, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: golinkwuxian.top, network: ws, ws-opts: {path: /apple, headers: {Host: 222.golinkwuxian.top}}, udp: true}
+  - {name: github.com/freefq - 法国格拉沃利讷OVH数据中心 18, server: 54.36.174.181, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: github.com/freefq - 台湾省新竹市中华电信 19, server: b23.ntbq.dynu.net, port: 443, type: vmess, uuid: 6b2e0602-bc1a-4ec3-88da-4238a6955ddd, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /b23, headers: {Host: b23.ntbq.dynu.net}}, udp: true}
+  - {name: github.com/freefq - 法国格拉沃利讷OVH数据中心 20, server: www.outline.network.ak1941.fr8678825324247b8176d59f83c30bd94d23d2e3ac5cd4a743bkwqeikvdyufr.cyou, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: github.com/freefq - 法国格拉沃利讷OVH数据中心 21, server: 54.36.174.181, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
+  - {name: github.com/freefq - 美国CloudFlare公司CDN节点 22, server: hytron.io, port: 8080, type: vmess, uuid: 010c265f-5455-4141-ca23-4d69357ded0d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: aktw.daozhang.love}}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - github.com/freefq - 美国CloudFlare公司CDN节点 1
-      - github.com/freefq - 法国格拉沃利讷OVH数据中心 2
-      - github.com/freefq - 美国CloudFlare节点 3
-      - github.com/freefq - 美国CloudFlare公司CDN节点 4
-      - github.com/freefq - 法国格拉沃利讷OVH数据中心 5
-      - github.com/freefq - 广东省移动 6
-      - github.com/freefq - 法国格拉沃利讷OVH数据中心 7
-      - github.com/freefq - 法国格拉沃利讷OVH数据中心 8
-      - github.com/freefq - 奥地利  9
-      - github.com/freefq - 法国格拉沃利讷OVH数据中心 10
+      - github.com/freefq - 台湾省台北市中华电信 1
+      - github.com/freefq - 台湾省桃园市中华电信 2
+      - github.com/freefq - 台湾省新竹市中华电信 3
+      - github.com/freefq - 安徽省合肥市移动 4
+      - github.com/freefq - 台湾省新竹市中华电信 5
+      - github.com/freefq - 亚太地区  6
+      - github.com/freefq - 美国CloudFlare节点 7
+      - github.com/freefq - 台湾省桃园市中华电信 8
+      - github.com/freefq - 台湾省新北市中华电信 9
+      - github.com/freefq - 美国CloudFlare公司CDN节点 10
       - github.com/freefq - 美国CloudFlare公司CDN节点 11
       - github.com/freefq - 美国CloudFlare公司CDN节点 12
+      - github.com/freefq - 美国CloudFlare公司CDN节点 13
+      - github.com/freefq - 湖南省联通 14
+      - github.com/freefq - 美国CloudFlare公司CDN节点 15
+      - github.com/freefq - 法国格拉沃利讷OVH数据中心 16
+      - github.com/freefq - 美国CloudFlare公司CDN节点 17
+      - github.com/freefq - 法国格拉沃利讷OVH数据中心 18
+      - github.com/freefq - 台湾省新竹市中华电信 19
+      - github.com/freefq - 法国格拉沃利讷OVH数据中心 20
+      - github.com/freefq - 法国格拉沃利讷OVH数据中心 21
+      - github.com/freefq - 美国CloudFlare公司CDN节点 22
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - github.com/freefq - 美国CloudFlare公司CDN节点 1
-      - github.com/freefq - 法国格拉沃利讷OVH数据中心 2
-      - github.com/freefq - 美国CloudFlare节点 3
-      - github.com/freefq - 美国CloudFlare公司CDN节点 4
-      - github.com/freefq - 法国格拉沃利讷OVH数据中心 5
-      - github.com/freefq - 广东省移动 6
-      - github.com/freefq - 法国格拉沃利讷OVH数据中心 7
-      - github.com/freefq - 法国格拉沃利讷OVH数据中心 8
-      - github.com/freefq - 奥地利  9
-      - github.com/freefq - 法国格拉沃利讷OVH数据中心 10
+      - github.com/freefq - 台湾省台北市中华电信 1
+      - github.com/freefq - 台湾省桃园市中华电信 2
+      - github.com/freefq - 台湾省新竹市中华电信 3
+      - github.com/freefq - 安徽省合肥市移动 4
+      - github.com/freefq - 台湾省新竹市中华电信 5
+      - github.com/freefq - 亚太地区  6
+      - github.com/freefq - 美国CloudFlare节点 7
+      - github.com/freefq - 台湾省桃园市中华电信 8
+      - github.com/freefq - 台湾省新北市中华电信 9
+      - github.com/freefq - 美国CloudFlare公司CDN节点 10
       - github.com/freefq - 美国CloudFlare公司CDN节点 11
       - github.com/freefq - 美国CloudFlare公司CDN节点 12
+      - github.com/freefq - 美国CloudFlare公司CDN节点 13
+      - github.com/freefq - 湖南省联通 14
+      - github.com/freefq - 美国CloudFlare公司CDN节点 15
+      - github.com/freefq - 法国格拉沃利讷OVH数据中心 16
+      - github.com/freefq - 美国CloudFlare公司CDN节点 17
+      - github.com/freefq - 法国格拉沃利讷OVH数据中心 18
+      - github.com/freefq - 台湾省新竹市中华电信 19
+      - github.com/freefq - 法国格拉沃利讷OVH数据中心 20
+      - github.com/freefq - 法国格拉沃利讷OVH数据中心 21
+      - github.com/freefq - 美国CloudFlare公司CDN节点 22
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - github.com/freefq - 美国CloudFlare公司CDN节点 1
-      - github.com/freefq - 法国格拉沃利讷OVH数据中心 2
-      - github.com/freefq - 美国CloudFlare节点 3
-      - github.com/freefq - 美国CloudFlare公司CDN节点 4
-      - github.com/freefq - 法国格拉沃利讷OVH数据中心 5
-      - github.com/freefq - 广东省移动 6
-      - github.com/freefq - 法国格拉沃利讷OVH数据中心 7
-      - github.com/freefq - 法国格拉沃利讷OVH数据中心 8
-      - github.com/freefq - 奥地利  9
-      - github.com/freefq - 法国格拉沃利讷OVH数据中心 10
+      - github.com/freefq - 台湾省台北市中华电信 1
+      - github.com/freefq - 台湾省桃园市中华电信 2
+      - github.com/freefq - 台湾省新竹市中华电信 3
+      - github.com/freefq - 安徽省合肥市移动 4
+      - github.com/freefq - 台湾省新竹市中华电信 5
+      - github.com/freefq - 亚太地区  6
+      - github.com/freefq - 美国CloudFlare节点 7
+      - github.com/freefq - 台湾省桃园市中华电信 8
+      - github.com/freefq - 台湾省新北市中华电信 9
+      - github.com/freefq - 美国CloudFlare公司CDN节点 10
       - github.com/freefq - 美国CloudFlare公司CDN节点 11
       - github.com/freefq - 美国CloudFlare公司CDN节点 12
+      - github.com/freefq - 美国CloudFlare公司CDN节点 13
+      - github.com/freefq - 湖南省联通 14
+      - github.com/freefq - 美国CloudFlare公司CDN节点 15
+      - github.com/freefq - 法国格拉沃利讷OVH数据中心 16
+      - github.com/freefq - 美国CloudFlare公司CDN节点 17
+      - github.com/freefq - 法国格拉沃利讷OVH数据中心 18
+      - github.com/freefq - 台湾省新竹市中华电信 19
+      - github.com/freefq - 法国格拉沃利讷OVH数据中心 20
+      - github.com/freefq - 法国格拉沃利讷OVH数据中心 21
+      - github.com/freefq - 美国CloudFlare公司CDN节点 22
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -88,75 +128,122 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - github.com/freefq - 美国CloudFlare公司CDN节点 1
-      - github.com/freefq - 法国格拉沃利讷OVH数据中心 2
-      - github.com/freefq - 美国CloudFlare节点 3
-      - github.com/freefq - 美国CloudFlare公司CDN节点 4
-      - github.com/freefq - 法国格拉沃利讷OVH数据中心 5
-      - github.com/freefq - 广东省移动 6
-      - github.com/freefq - 法国格拉沃利讷OVH数据中心 7
-      - github.com/freefq - 法国格拉沃利讷OVH数据中心 8
-      - github.com/freefq - 奥地利  9
-      - github.com/freefq - 法国格拉沃利讷OVH数据中心 10
+      - github.com/freefq - 台湾省台北市中华电信 1
+      - github.com/freefq - 台湾省桃园市中华电信 2
+      - github.com/freefq - 台湾省新竹市中华电信 3
+      - github.com/freefq - 安徽省合肥市移动 4
+      - github.com/freefq - 台湾省新竹市中华电信 5
+      - github.com/freefq - 亚太地区  6
+      - github.com/freefq - 美国CloudFlare节点 7
+      - github.com/freefq - 台湾省桃园市中华电信 8
+      - github.com/freefq - 台湾省新北市中华电信 9
+      - github.com/freefq - 美国CloudFlare公司CDN节点 10
       - github.com/freefq - 美国CloudFlare公司CDN节点 11
       - github.com/freefq - 美国CloudFlare公司CDN节点 12
+      - github.com/freefq - 美国CloudFlare公司CDN节点 13
+      - github.com/freefq - 湖南省联通 14
+      - github.com/freefq - 美国CloudFlare公司CDN节点 15
+      - github.com/freefq - 法国格拉沃利讷OVH数据中心 16
+      - github.com/freefq - 美国CloudFlare公司CDN节点 17
+      - github.com/freefq - 法国格拉沃利讷OVH数据中心 18
+      - github.com/freefq - 台湾省新竹市中华电信 19
+      - github.com/freefq - 法国格拉沃利讷OVH数据中心 20
+      - github.com/freefq - 法国格拉沃利讷OVH数据中心 21
+      - github.com/freefq - 美国CloudFlare公司CDN节点 22
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
+      - github.com/freefq - 台湾省台北市中华电信 1
+      - github.com/freefq - 台湾省桃园市中华电信 2
+      - github.com/freefq - 台湾省新竹市中华电信 3
+      - github.com/freefq - 台湾省新竹市中华电信 5
+      - github.com/freefq - 台湾省桃园市中华电信 8
+      - github.com/freefq - 台湾省新北市中华电信 9
+      - github.com/freefq - 台湾省新竹市中华电信 19
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - github.com/freefq - 美国CloudFlare公司CDN节点 1
-      - github.com/freefq - 法国格拉沃利讷OVH数据中心 2
-      - github.com/freefq - 美国CloudFlare节点 3
-      - github.com/freefq - 美国CloudFlare公司CDN节点 4
-      - github.com/freefq - 法国格拉沃利讷OVH数据中心 5
-      - github.com/freefq - 广东省移动 6
-      - github.com/freefq - 法国格拉沃利讷OVH数据中心 7
-      - github.com/freefq - 法国格拉沃利讷OVH数据中心 8
-      - github.com/freefq - 奥地利  9
-      - github.com/freefq - 法国格拉沃利讷OVH数据中心 10
+      - github.com/freefq - 台湾省台北市中华电信 1
+      - github.com/freefq - 台湾省桃园市中华电信 2
+      - github.com/freefq - 台湾省新竹市中华电信 3
+      - github.com/freefq - 安徽省合肥市移动 4
+      - github.com/freefq - 台湾省新竹市中华电信 5
+      - github.com/freefq - 亚太地区  6
+      - github.com/freefq - 美国CloudFlare节点 7
+      - github.com/freefq - 台湾省桃园市中华电信 8
+      - github.com/freefq - 台湾省新北市中华电信 9
+      - github.com/freefq - 美国CloudFlare公司CDN节点 10
       - github.com/freefq - 美国CloudFlare公司CDN节点 11
       - github.com/freefq - 美国CloudFlare公司CDN节点 12
+      - github.com/freefq - 美国CloudFlare公司CDN节点 13
+      - github.com/freefq - 湖南省联通 14
+      - github.com/freefq - 美国CloudFlare公司CDN节点 15
+      - github.com/freefq - 法国格拉沃利讷OVH数据中心 16
+      - github.com/freefq - 美国CloudFlare公司CDN节点 17
+      - github.com/freefq - 法国格拉沃利讷OVH数据中心 18
+      - github.com/freefq - 台湾省新竹市中华电信 19
+      - github.com/freefq - 法国格拉沃利讷OVH数据中心 20
+      - github.com/freefq - 法国格拉沃利讷OVH数据中心 21
+      - github.com/freefq - 美国CloudFlare公司CDN节点 22
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - github.com/freefq - 美国CloudFlare公司CDN节点 1
-      - github.com/freefq - 法国格拉沃利讷OVH数据中心 2
-      - github.com/freefq - 美国CloudFlare节点 3
-      - github.com/freefq - 美国CloudFlare公司CDN节点 4
-      - github.com/freefq - 法国格拉沃利讷OVH数据中心 5
-      - github.com/freefq - 广东省移动 6
-      - github.com/freefq - 法国格拉沃利讷OVH数据中心 7
-      - github.com/freefq - 法国格拉沃利讷OVH数据中心 8
-      - github.com/freefq - 奥地利  9
-      - github.com/freefq - 法国格拉沃利讷OVH数据中心 10
+      - github.com/freefq - 台湾省台北市中华电信 1
+      - github.com/freefq - 台湾省桃园市中华电信 2
+      - github.com/freefq - 台湾省新竹市中华电信 3
+      - github.com/freefq - 安徽省合肥市移动 4
+      - github.com/freefq - 台湾省新竹市中华电信 5
+      - github.com/freefq - 亚太地区  6
+      - github.com/freefq - 美国CloudFlare节点 7
+      - github.com/freefq - 台湾省桃园市中华电信 8
+      - github.com/freefq - 台湾省新北市中华电信 9
+      - github.com/freefq - 美国CloudFlare公司CDN节点 10
       - github.com/freefq - 美国CloudFlare公司CDN节点 11
       - github.com/freefq - 美国CloudFlare公司CDN节点 12
+      - github.com/freefq - 美国CloudFlare公司CDN节点 13
+      - github.com/freefq - 湖南省联通 14
+      - github.com/freefq - 美国CloudFlare公司CDN节点 15
+      - github.com/freefq - 法国格拉沃利讷OVH数据中心 16
+      - github.com/freefq - 美国CloudFlare公司CDN节点 17
+      - github.com/freefq - 法国格拉沃利讷OVH数据中心 18
+      - github.com/freefq - 台湾省新竹市中华电信 19
+      - github.com/freefq - 法国格拉沃利讷OVH数据中心 20
+      - github.com/freefq - 法国格拉沃利讷OVH数据中心 21
+      - github.com/freefq - 美国CloudFlare公司CDN节点 22
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - github.com/freefq - 美国CloudFlare公司CDN节点 1
-      - github.com/freefq - 法国格拉沃利讷OVH数据中心 2
-      - github.com/freefq - 美国CloudFlare节点 3
-      - github.com/freefq - 美国CloudFlare公司CDN节点 4
-      - github.com/freefq - 法国格拉沃利讷OVH数据中心 5
-      - github.com/freefq - 广东省移动 6
-      - github.com/freefq - 法国格拉沃利讷OVH数据中心 7
-      - github.com/freefq - 法国格拉沃利讷OVH数据中心 8
-      - github.com/freefq - 奥地利  9
-      - github.com/freefq - 法国格拉沃利讷OVH数据中心 10
+      - github.com/freefq - 台湾省台北市中华电信 1
+      - github.com/freefq - 台湾省桃园市中华电信 2
+      - github.com/freefq - 台湾省新竹市中华电信 3
+      - github.com/freefq - 安徽省合肥市移动 4
+      - github.com/freefq - 台湾省新竹市中华电信 5
+      - github.com/freefq - 亚太地区  6
+      - github.com/freefq - 美国CloudFlare节点 7
+      - github.com/freefq - 台湾省桃园市中华电信 8
+      - github.com/freefq - 台湾省新北市中华电信 9
+      - github.com/freefq - 美国CloudFlare公司CDN节点 10
       - github.com/freefq - 美国CloudFlare公司CDN节点 11
       - github.com/freefq - 美国CloudFlare公司CDN节点 12
+      - github.com/freefq - 美国CloudFlare公司CDN节点 13
+      - github.com/freefq - 湖南省联通 14
+      - github.com/freefq - 美国CloudFlare公司CDN节点 15
+      - github.com/freefq - 法国格拉沃利讷OVH数据中心 16
+      - github.com/freefq - 美国CloudFlare公司CDN节点 17
+      - github.com/freefq - 法国格拉沃利讷OVH数据中心 18
+      - github.com/freefq - 台湾省新竹市中华电信 19
+      - github.com/freefq - 法国格拉沃利讷OVH数据中心 20
+      - github.com/freefq - 法国格拉沃利讷OVH数据中心 21
+      - github.com/freefq - 美国CloudFlare公司CDN节点 22
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -172,18 +259,28 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - github.com/freefq - 美国CloudFlare公司CDN节点 1
-      - github.com/freefq - 法国格拉沃利讷OVH数据中心 2
-      - github.com/freefq - 美国CloudFlare节点 3
-      - github.com/freefq - 美国CloudFlare公司CDN节点 4
-      - github.com/freefq - 法国格拉沃利讷OVH数据中心 5
-      - github.com/freefq - 广东省移动 6
-      - github.com/freefq - 法国格拉沃利讷OVH数据中心 7
-      - github.com/freefq - 法国格拉沃利讷OVH数据中心 8
-      - github.com/freefq - 奥地利  9
-      - github.com/freefq - 法国格拉沃利讷OVH数据中心 10
+      - github.com/freefq - 台湾省台北市中华电信 1
+      - github.com/freefq - 台湾省桃园市中华电信 2
+      - github.com/freefq - 台湾省新竹市中华电信 3
+      - github.com/freefq - 安徽省合肥市移动 4
+      - github.com/freefq - 台湾省新竹市中华电信 5
+      - github.com/freefq - 亚太地区  6
+      - github.com/freefq - 美国CloudFlare节点 7
+      - github.com/freefq - 台湾省桃园市中华电信 8
+      - github.com/freefq - 台湾省新北市中华电信 9
+      - github.com/freefq - 美国CloudFlare公司CDN节点 10
       - github.com/freefq - 美国CloudFlare公司CDN节点 11
       - github.com/freefq - 美国CloudFlare公司CDN节点 12
+      - github.com/freefq - 美国CloudFlare公司CDN节点 13
+      - github.com/freefq - 湖南省联通 14
+      - github.com/freefq - 美国CloudFlare公司CDN节点 15
+      - github.com/freefq - 法国格拉沃利讷OVH数据中心 16
+      - github.com/freefq - 美国CloudFlare公司CDN节点 17
+      - github.com/freefq - 法国格拉沃利讷OVH数据中心 18
+      - github.com/freefq - 台湾省新竹市中华电信 19
+      - github.com/freefq - 法国格拉沃利讷OVH数据中心 20
+      - github.com/freefq - 法国格拉沃利讷OVH数据中心 21
+      - github.com/freefq - 美国CloudFlare公司CDN节点 22
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
