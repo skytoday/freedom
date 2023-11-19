@@ -5,157 +5,141 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 🇺🇸 github.com/freefq - 美国弗吉尼亚州文特山农场OVH数据中心 1, server: 51.81.186.195, port: 8388, type: ss, cipher: chacha20-ietf-poly1305, password: YWE3M, udp: true}
-  - {name: github.com/freefq - 安徽省合肥市移动 2, server: 112.29.94.23, port: 49223, type: vmess, uuid: 21a9bff2-72de-4e62-93ff-8b159f66d875, alterId: 64, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: github.com/freefq - 广东省移动 3, server: 183.237.20.148, port: 50707, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 🇫🇷 github.com/freefq - 法国格拉沃利讷OVH数据中心 4, server: 54.36.174.181, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: 🇺🇸 github.com/freefq - 美国CloudFlare节点 5, server: ml2.shabijichang.com, port: 80, type: vmess, uuid: 10ea3b2a-b615-45f1-b1b7-c62bafe8c80c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: ml2.shabijichang.com}}, udp: true}
-  - {name: github.com/freefq - 湖南省联通 6, server: bjcu.xzyunjiasu.icu, port: 33952, type: ss, cipher: aes-256-gcm, password: 5c8b210a-2f00-4292-964b-05281c7ad5d1, udp: true}
-  - {name: 🇺🇸 github.com/freefq - 美国CloudFlare节点 7, server: cc2.shabijichang.com, port: 80, type: vmess, uuid: 56278a1a-c7cc-459f-b00c-3037e4f99590, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: cc2.shabijichang.com}}, udp: true}
-  - {name: 🇫🇷 github.com/freefq - 法国格拉沃利讷OVH数据中心 8, server: ak1751.www.outline.network.fr8678825324247b8176d59f83c30bd94d23d2e3ac5cd4a743bkwqeikvdyufr.cyou, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 🇫🇷 github.com/freefq - 法国格拉沃利讷OVH数据中心 9, server: 54.36.174.181, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
+  - {name: 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 1, server: fr-new01.gujuji.top, port: 8080, type: vmess, uuid: 36185a3e-f992-4e12-8ff5-87853733f50d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: fr-new01.gujuji.top}}, udp: true}
+  - {name: 🇫🇷 github.com/freefq - 法国格拉沃利讷OVH数据中心 2, server: 54.36.174.181, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: 🇺🇸 github.com/freefq - 美国CloudFlare节点 3, server: 172.67.68.136, port: 80, type: vmess, uuid: 08b2ceb1-5917-42da-b02c-0f942754aac6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: buyvm.iiio.wiki}}, udp: true}
+  - {name: 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 4, server: 104.16.120.85, port: 80, type: vmess, uuid: e6be09fb-b8f9-4f98-add0-7d450812e622, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: is2.xv2ray.net}}, udp: true}
+  - {name: 🇫🇷 github.com/freefq - 法国格拉沃利讷OVH数据中心 5, server: ak1751.www.outline.network.fr8678825324247b8176d59f83c30bd94d23d2e3ac5cd4a743bkwqeikvdyufr.cyou, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: github.com/freefq - 广东省移动 6, server: 183.237.20.148, port: 50707, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 🇫🇷 github.com/freefq - 法国格拉沃利讷OVH数据中心 7, server: www.outline.network.ak1941.fr8678825324247b8176d59f83c30bd94d23d2e3ac5cd4a743bkwqeikvdyufr.cyou, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: 🇫🇷 github.com/freefq - 法国格拉沃利讷OVH数据中心 8, server: 54.36.174.181, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
+  - {name: 🇦🇹 github.com/freefq - 奥地利  9, server: 193.46.56.210, port: 8443, type: vmess, uuid: b72694db-ed21-46c1-8923-325305fa787f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, udp: true}
   - {name: 🇫🇷 github.com/freefq - 法国格拉沃利讷OVH数据中心 10, server: 54.36.174.181, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 🇦🇹 github.com/freefq - 奥地利  11, server: 193.46.56.210, port: 8443, type: vmess, uuid: b72694db-ed21-46c1-8923-325305fa787f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, udp: true}
-  - {name: 🇯🇵 github.com/freefq - 日本东京都Amazon数据中心 12, server: jp6.skynode.one, port: 8443, type: vmess, uuid: 861cb438-6731-3638-bbf1-153575f8a430, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: jp6.skynode.one}}, udp: true}
-  - {name: 🇺🇸 github.com/freefq - 美国CloudFlare节点 13, server: hytron.io, port: 8080, type: vmess, uuid: 010c265f-5455-4141-ca23-4d69357ded0d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: aktw.daozhang.love}}, udp: true}
-  - {name: 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 14, server: cf1.openxai.link, port: 8080, type: vmess, uuid: 218996e0-5a6e-4806-8106-6b7b42e6d0d6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: eu4.openxai.link}}, udp: true}
+  - {name: 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 11, server: ld2.shabijichang.com, port: 80, type: vmess, uuid: c458695d-6908-45c3-9512-e0c46418454c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: ld2.shabijichang.com}}, udp: true}
+  - {name: 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 12, server: hytron.io, port: 8080, type: vmess, uuid: 010c265f-5455-4141-ca23-4d69357ded0d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: aktw.daozhang.love}}, udp: true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 🇺🇸 github.com/freefq - 美国弗吉尼亚州文特山农场OVH数据中心 1
-      - github.com/freefq - 安徽省合肥市移动 2
-      - github.com/freefq - 广东省移动 3
-      - 🇫🇷 github.com/freefq - 法国格拉沃利讷OVH数据中心 4
-      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 5
-      - github.com/freefq - 湖南省联通 6
-      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 7
+      - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 1
+      - 🇫🇷 github.com/freefq - 法国格拉沃利讷OVH数据中心 2
+      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 3
+      - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 4
+      - 🇫🇷 github.com/freefq - 法国格拉沃利讷OVH数据中心 5
+      - github.com/freefq - 广东省移动 6
+      - 🇫🇷 github.com/freefq - 法国格拉沃利讷OVH数据中心 7
       - 🇫🇷 github.com/freefq - 法国格拉沃利讷OVH数据中心 8
-      - 🇫🇷 github.com/freefq - 法国格拉沃利讷OVH数据中心 9
+      - 🇦🇹 github.com/freefq - 奥地利  9
       - 🇫🇷 github.com/freefq - 法国格拉沃利讷OVH数据中心 10
-      - 🇦🇹 github.com/freefq - 奥地利  11
-      - 🇯🇵 github.com/freefq - 日本东京都Amazon数据中心 12
-      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 13
-      - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 14
+      - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 11
+      - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 12
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇺🇸 github.com/freefq - 美国弗吉尼亚州文特山农场OVH数据中心 1
-      - github.com/freefq - 安徽省合肥市移动 2
-      - github.com/freefq - 广东省移动 3
-      - 🇫🇷 github.com/freefq - 法国格拉沃利讷OVH数据中心 4
-      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 5
-      - github.com/freefq - 湖南省联通 6
-      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 7
+      - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 1
+      - 🇫🇷 github.com/freefq - 法国格拉沃利讷OVH数据中心 2
+      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 3
+      - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 4
+      - 🇫🇷 github.com/freefq - 法国格拉沃利讷OVH数据中心 5
+      - github.com/freefq - 广东省移动 6
+      - 🇫🇷 github.com/freefq - 法国格拉沃利讷OVH数据中心 7
       - 🇫🇷 github.com/freefq - 法国格拉沃利讷OVH数据中心 8
-      - 🇫🇷 github.com/freefq - 法国格拉沃利讷OVH数据中心 9
+      - 🇦🇹 github.com/freefq - 奥地利  9
       - 🇫🇷 github.com/freefq - 法国格拉沃利讷OVH数据中心 10
-      - 🇦🇹 github.com/freefq - 奥地利  11
-      - 🇯🇵 github.com/freefq - 日本东京都Amazon数据中心 12
-      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 13
-      - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 14
+      - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 11
+      - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 12
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇺🇸 github.com/freefq - 美国弗吉尼亚州文特山农场OVH数据中心 1
-      - github.com/freefq - 安徽省合肥市移动 2
-      - github.com/freefq - 广东省移动 3
-      - 🇫🇷 github.com/freefq - 法国格拉沃利讷OVH数据中心 4
-      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 5
-      - github.com/freefq - 湖南省联通 6
-      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 7
+      - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 1
+      - 🇫🇷 github.com/freefq - 法国格拉沃利讷OVH数据中心 2
+      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 3
+      - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 4
+      - 🇫🇷 github.com/freefq - 法国格拉沃利讷OVH数据中心 5
+      - github.com/freefq - 广东省移动 6
+      - 🇫🇷 github.com/freefq - 法国格拉沃利讷OVH数据中心 7
       - 🇫🇷 github.com/freefq - 法国格拉沃利讷OVH数据中心 8
-      - 🇫🇷 github.com/freefq - 法国格拉沃利讷OVH数据中心 9
+      - 🇦🇹 github.com/freefq - 奥地利  9
       - 🇫🇷 github.com/freefq - 法国格拉沃利讷OVH数据中心 10
-      - 🇦🇹 github.com/freefq - 奥地利  11
-      - 🇯🇵 github.com/freefq - 日本东京都Amazon数据中心 12
-      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 13
-      - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 14
+      - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 11
+      - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 12
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇺🇸 github.com/freefq - 美国弗吉尼亚州文特山农场OVH数据中心 1
-      - github.com/freefq - 安徽省合肥市移动 2
-      - github.com/freefq - 广东省移动 3
-      - 🇫🇷 github.com/freefq - 法国格拉沃利讷OVH数据中心 4
-      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 5
-      - github.com/freefq - 湖南省联通 6
-      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 7
+      - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 1
+      - 🇫🇷 github.com/freefq - 法国格拉沃利讷OVH数据中心 2
+      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 3
+      - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 4
+      - 🇫🇷 github.com/freefq - 法国格拉沃利讷OVH数据中心 5
+      - github.com/freefq - 广东省移动 6
+      - 🇫🇷 github.com/freefq - 法国格拉沃利讷OVH数据中心 7
       - 🇫🇷 github.com/freefq - 法国格拉沃利讷OVH数据中心 8
-      - 🇫🇷 github.com/freefq - 法国格拉沃利讷OVH数据中心 9
+      - 🇦🇹 github.com/freefq - 奥地利  9
       - 🇫🇷 github.com/freefq - 法国格拉沃利讷OVH数据中心 10
-      - 🇦🇹 github.com/freefq - 奥地利  11
-      - 🇯🇵 github.com/freefq - 日本东京都Amazon数据中心 12
-      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 13
-      - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 14
+      - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 11
+      - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 12
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 🇺🇸 github.com/freefq - 美国弗吉尼亚州文特山农场OVH数据中心 1
-      - github.com/freefq - 安徽省合肥市移动 2
-      - github.com/freefq - 广东省移动 3
-      - 🇫🇷 github.com/freefq - 法国格拉沃利讷OVH数据中心 4
-      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 5
-      - github.com/freefq - 湖南省联通 6
-      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 7
+      - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 1
+      - 🇫🇷 github.com/freefq - 法国格拉沃利讷OVH数据中心 2
+      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 3
+      - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 4
+      - 🇫🇷 github.com/freefq - 法国格拉沃利讷OVH数据中心 5
+      - github.com/freefq - 广东省移动 6
+      - 🇫🇷 github.com/freefq - 法国格拉沃利讷OVH数据中心 7
       - 🇫🇷 github.com/freefq - 法国格拉沃利讷OVH数据中心 8
-      - 🇫🇷 github.com/freefq - 法国格拉沃利讷OVH数据中心 9
+      - 🇦🇹 github.com/freefq - 奥地利  9
       - 🇫🇷 github.com/freefq - 法国格拉沃利讷OVH数据中心 10
-      - 🇦🇹 github.com/freefq - 奥地利  11
-      - 🇯🇵 github.com/freefq - 日本东京都Amazon数据中心 12
-      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 13
-      - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 14
+      - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 11
+      - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 12
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇺🇸 github.com/freefq - 美国弗吉尼亚州文特山农场OVH数据中心 1
-      - github.com/freefq - 安徽省合肥市移动 2
-      - github.com/freefq - 广东省移动 3
-      - 🇫🇷 github.com/freefq - 法国格拉沃利讷OVH数据中心 4
-      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 5
-      - github.com/freefq - 湖南省联通 6
-      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 7
+      - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 1
+      - 🇫🇷 github.com/freefq - 法国格拉沃利讷OVH数据中心 2
+      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 3
+      - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 4
+      - 🇫🇷 github.com/freefq - 法国格拉沃利讷OVH数据中心 5
+      - github.com/freefq - 广东省移动 6
+      - 🇫🇷 github.com/freefq - 法国格拉沃利讷OVH数据中心 7
       - 🇫🇷 github.com/freefq - 法国格拉沃利讷OVH数据中心 8
-      - 🇫🇷 github.com/freefq - 法国格拉沃利讷OVH数据中心 9
+      - 🇦🇹 github.com/freefq - 奥地利  9
       - 🇫🇷 github.com/freefq - 法国格拉沃利讷OVH数据中心 10
-      - 🇦🇹 github.com/freefq - 奥地利  11
-      - 🇯🇵 github.com/freefq - 日本东京都Amazon数据中心 12
-      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 13
-      - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 14
+      - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 11
+      - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 12
   - name: 📢 谷歌FCM
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇺🇸 github.com/freefq - 美国弗吉尼亚州文特山农场OVH数据中心 1
-      - github.com/freefq - 安徽省合肥市移动 2
-      - github.com/freefq - 广东省移动 3
-      - 🇫🇷 github.com/freefq - 法国格拉沃利讷OVH数据中心 4
-      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 5
-      - github.com/freefq - 湖南省联通 6
-      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 7
+      - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 1
+      - 🇫🇷 github.com/freefq - 法国格拉沃利讷OVH数据中心 2
+      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 3
+      - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 4
+      - 🇫🇷 github.com/freefq - 法国格拉沃利讷OVH数据中心 5
+      - github.com/freefq - 广东省移动 6
+      - 🇫🇷 github.com/freefq - 法国格拉沃利讷OVH数据中心 7
       - 🇫🇷 github.com/freefq - 法国格拉沃利讷OVH数据中心 8
-      - 🇫🇷 github.com/freefq - 法国格拉沃利讷OVH数据中心 9
+      - 🇦🇹 github.com/freefq - 奥地利  9
       - 🇫🇷 github.com/freefq - 法国格拉沃利讷OVH数据中心 10
-      - 🇦🇹 github.com/freefq - 奥地利  11
-      - 🇯🇵 github.com/freefq - 日本东京都Amazon数据中心 12
-      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 13
-      - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 14
+      - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 11
+      - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 12
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -178,56 +162,19 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇺🇸 github.com/freefq - 美国弗吉尼亚州文特山农场OVH数据中心 1
-      - github.com/freefq - 安徽省合肥市移动 2
-      - github.com/freefq - 广东省移动 3
-      - 🇫🇷 github.com/freefq - 法国格拉沃利讷OVH数据中心 4
-      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 5
-      - github.com/freefq - 湖南省联通 6
-      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 7
+      - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 1
+      - 🇫🇷 github.com/freefq - 法国格拉沃利讷OVH数据中心 2
+      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 3
+      - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 4
+      - 🇫🇷 github.com/freefq - 法国格拉沃利讷OVH数据中心 5
+      - github.com/freefq - 广东省移动 6
+      - 🇫🇷 github.com/freefq - 法国格拉沃利讷OVH数据中心 7
       - 🇫🇷 github.com/freefq - 法国格拉沃利讷OVH数据中心 8
-      - 🇫🇷 github.com/freefq - 法国格拉沃利讷OVH数据中心 9
+      - 🇦🇹 github.com/freefq - 奥地利  9
       - 🇫🇷 github.com/freefq - 法国格拉沃利讷OVH数据中心 10
-      - 🇦🇹 github.com/freefq - 奥地利  11
-      - 🇯🇵 github.com/freefq - 日本东京都Amazon数据中心 12
-      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 13
-      - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 14
+      - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 11
+      - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 12
 rules:
- - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
- - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
- - DOMAIN-SUFFIX,ip6-loopback,🎯 全球直连
- - DOMAIN-SUFFIX,lan,🎯 全球直连
- - DOMAIN-SUFFIX,local,🎯 全球直连
- - DOMAIN-SUFFIX,localhost,🎯 全球直连
- - IP-CIDR,0.0.0.0/8,🎯 全球直连,no-resolve
- - IP-CIDR,10.0.0.0/8,🎯 全球直连,no-resolve
- - IP-CIDR,100.64.0.0/10,🎯 全球直连,no-resolve
- - IP-CIDR,127.0.0.0/8,🎯 全球直连,no-resolve
- - IP-CIDR,172.16.0.0/12,🎯 全球直连,no-resolve
- - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
- - IP-CIDR,198.18.0.0/16,🎯 全球直连,no-resolve
- - IP-CIDR,224.0.0.0/4,🎯 全球直连,no-resolve
- - IP-CIDR6,::1/128,🎯 全球直连,no-resolve
- - IP-CIDR6,fc00::/7,🎯 全球直连,no-resolve
- - IP-CIDR6,fe80::/10,🎯 全球直连,no-resolve
- - IP-CIDR6,fd00::/8,🎯 全球直连,no-resolve
- - DOMAIN,instant.arubanetworks.com,🎯 全球直连
- - DOMAIN,setmeup.arubanetworks.com,🎯 全球直连
- - DOMAIN,router.asus.com,🎯 全球直连
- - DOMAIN,www.asusrouter.com,🎯 全球直连
- - DOMAIN-SUFFIX,hiwifi.com,🎯 全球直连
- - DOMAIN-SUFFIX,leike.cc,🎯 全球直连
- - DOMAIN-SUFFIX,miwifi.com,🎯 全球直连
- - DOMAIN-SUFFIX,my.router,🎯 全球直连
- - DOMAIN-SUFFIX,p.to,🎯 全球直连
- - DOMAIN-SUFFIX,peiluyou.com,🎯 全球直连
- - DOMAIN-SUFFIX,phicomm.me,🎯 全球直连
- - DOMAIN-SUFFIX,router.ctc,🎯 全球直连
- - DOMAIN-SUFFIX,routerlogin.com,🎯 全球直连
- - DOMAIN-SUFFIX,tendawifi.com,🎯 全球直连
- - DOMAIN-SUFFIX,zte.home,🎯 全球直连
- - DOMAIN-SUFFIX,tplogin.cn,🎯 全球直连
- - DOMAIN-SUFFIX,wifi.cmcc,🎯 全球直连
  - DOMAIN-SUFFIX,ol.epicgames.com,🎯 全球直连
  - DOMAIN-SUFFIX,dizhensubao.getui.com,🎯 全球直连
  - DOMAIN,dl.google.com,🎯 全球直连
@@ -1860,41 +1807,6 @@ rules:
  - DOMAIN-SUFFIX,tralog.ganji.com,🍃 应用净化
  - DOMAIN-SUFFIX,up.qingdaonews.com,🍃 应用净化
  - DOMAIN-SUFFIX,vaserviece.10jqka.com.cn,🍃 应用净化
- - DOMAIN,alt1-mtalk.google.com,📢 谷歌FCM
- - DOMAIN,alt2-mtalk.google.com,📢 谷歌FCM
- - DOMAIN,alt3-mtalk.google.com,📢 谷歌FCM
- - DOMAIN,alt4-mtalk.google.com,📢 谷歌FCM
- - DOMAIN,alt5-mtalk.google.com,📢 谷歌FCM
- - DOMAIN,alt6-mtalk.google.com,📢 谷歌FCM
- - DOMAIN,alt7-mtalk.google.com,📢 谷歌FCM
- - DOMAIN,alt8-mtalk.google.com,📢 谷歌FCM
- - DOMAIN,mtalk.google.com,📢 谷歌FCM
- - IP-CIDR,64.233.177.188/32,📢 谷歌FCM,no-resolve
- - IP-CIDR,64.233.186.188/32,📢 谷歌FCM,no-resolve
- - IP-CIDR,64.233.187.188/32,📢 谷歌FCM,no-resolve
- - IP-CIDR,64.233.188.188/32,📢 谷歌FCM,no-resolve
- - IP-CIDR,64.233.189.188/32,📢 谷歌FCM,no-resolve
- - IP-CIDR,74.125.23.188/32,📢 谷歌FCM,no-resolve
- - IP-CIDR,74.125.24.188/32,📢 谷歌FCM,no-resolve
- - IP-CIDR,74.125.28.188/32,📢 谷歌FCM,no-resolve
- - IP-CIDR,74.125.127.188/32,📢 谷歌FCM,no-resolve
- - IP-CIDR,74.125.137.188/32,📢 谷歌FCM,no-resolve
- - IP-CIDR,74.125.203.188/32,📢 谷歌FCM,no-resolve
- - IP-CIDR,74.125.204.188/32,📢 谷歌FCM,no-resolve
- - IP-CIDR,74.125.206.188/32,📢 谷歌FCM,no-resolve
- - IP-CIDR,108.177.125.188/32,📢 谷歌FCM,no-resolve
- - IP-CIDR,142.250.4.188/32,📢 谷歌FCM,no-resolve
- - IP-CIDR,142.250.10.188/32,📢 谷歌FCM,no-resolve
- - IP-CIDR,142.250.31.188/32,📢 谷歌FCM,no-resolve
- - IP-CIDR,142.250.96.188/32,📢 谷歌FCM,no-resolve
- - IP-CIDR,172.217.194.188/32,📢 谷歌FCM,no-resolve
- - IP-CIDR,172.217.218.188/32,📢 谷歌FCM,no-resolve
- - IP-CIDR,172.217.219.188/32,📢 谷歌FCM,no-resolve
- - IP-CIDR,172.253.63.188/32,📢 谷歌FCM,no-resolve
- - IP-CIDR,172.253.122.188/32,📢 谷歌FCM,no-resolve
- - IP-CIDR,173.194.175.188/32,📢 谷歌FCM,no-resolve
- - IP-CIDR,173.194.218.188/32,📢 谷歌FCM,no-resolve
- - IP-CIDR,209.85.233.188/32,📢 谷歌FCM,no-resolve
  - DOMAIN-SUFFIX,265.com,🎯 全球直连
  - DOMAIN-SUFFIX,2mdn.net,🎯 全球直连
  - DOMAIN-SUFFIX,alt1-mtalk.google.com,🎯 全球直连
@@ -2003,35 +1915,6 @@ rules:
  - DOMAIN-SUFFIX,wunderlist.com,Ⓜ️ 微软服务
  - DOMAIN-SUFFIX,yammer.com,Ⓜ️ 微软服务
  - DOMAIN-SUFFIX,yammerusercontent.com,Ⓜ️ 微软服务
- - DOMAIN,apple.comscoreresearch.com,🍎 苹果服务
- - DOMAIN-SUFFIX,aaplimg.com,🍎 苹果服务
- - DOMAIN-SUFFIX,akadns.net,🍎 苹果服务
- - DOMAIN-SUFFIX,apple-cloudkit.com,🍎 苹果服务
- - DOMAIN-SUFFIX,apple-dns.net,🍎 苹果服务
- - DOMAIN-SUFFIX,apple-mapkit.com,🍎 苹果服务
- - DOMAIN-SUFFIX,apple.co,🍎 苹果服务
- - DOMAIN-SUFFIX,apple.com,🍎 苹果服务
- - DOMAIN-SUFFIX,apple.com.cn,🍎 苹果服务
- - DOMAIN-SUFFIX,apple.news,🍎 苹果服务
- - DOMAIN-SUFFIX,appstore.com,🍎 苹果服务
- - DOMAIN-SUFFIX,cdn-apple.com,🍎 苹果服务
- - DOMAIN-SUFFIX,crashlytics.com,🍎 苹果服务
- - DOMAIN-SUFFIX,icloud-content.com,🍎 苹果服务
- - DOMAIN-SUFFIX,icloud.com,🍎 苹果服务
- - DOMAIN-SUFFIX,icloud.com.cn,🍎 苹果服务
- - DOMAIN-SUFFIX,itunes.com,🍎 苹果服务
- - DOMAIN-SUFFIX,me.com,🍎 苹果服务
- - DOMAIN-SUFFIX,mzstatic.com,🍎 苹果服务
- - IP-CIDR,17.0.0.0/8,🍎 苹果服务,no-resolve
- - IP-CIDR,63.92.224.0/19,🍎 苹果服务,no-resolve
- - IP-CIDR,65.199.22.0/23,🍎 苹果服务,no-resolve
- - IP-CIDR,139.178.128.0/18,🍎 苹果服务,no-resolve
- - IP-CIDR,144.178.0.0/19,🍎 苹果服务,no-resolve
- - IP-CIDR,144.178.36.0/22,🍎 苹果服务,no-resolve
- - IP-CIDR,144.178.48.0/20,🍎 苹果服务,no-resolve
- - IP-CIDR,192.35.50.0/24,🍎 苹果服务,no-resolve
- - IP-CIDR,198.183.17.0/24,🍎 苹果服务,no-resolve
- - IP-CIDR,205.180.175.0/24,🍎 苹果服务,no-resolve
  - DOMAIN-SUFFIX,t.me,📲 电报信息
  - DOMAIN-SUFFIX,tdesktop.com,📲 电报信息
  - DOMAIN-SUFFIX,telegra.ph,📲 电报信息
