@@ -6,11 +6,12 @@ log-level: info
 external-controller: :9090
 proxies:
   - {name: github.com/freefq - 广东省移动 1, server: 183.240.232.93, port: 34001, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 🇺🇸 github.com/freefq - 美国CloudFlare节点 2, server: cloudflare.cfgo.cc, port: 8080, type: vmess, uuid: 579fd6f1-7618-4fff-8635-9dba4a61df96, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: cc.992688.xyz}}, udp: true}
-  - {name: 🇺🇸 github.com/freefq - 美国CloudFlare节点 3, server: zfc.windowsupdate1.com, port: 80, type: vmess, uuid: f32fb637-67eb-48be-9f29-4523c4720de7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: jpyx.651568.xyz}}, udp: true}
-  - {name: 🇨🇳 github.com/freefq - 广东省广州市移动 4, server: service.ouluyun9803.com, port: 20001, type: ss, cipher: chacha20-ietf-poly1305, password: d89ca371-e94b-4dfe-ad6f-02bd13edf7c4, udp: true}
-  - {name: 🇨🇳 github.com/freefq - 广东省广州市移动 5, server: service.ouluyun9803.com, port: 26667, type: ss, cipher: chacha20-ietf-poly1305, password: d89ca371-e94b-4dfe-ad6f-02bd13edf7c4, udp: true}
-  - {name: 🇨🇳 github.com/freefq - 广东省广州市移动 6, server: service.ouluyun9803.com, port: 50001, type: ss, cipher: chacha20-ietf-poly1305, password: d89ca371-e94b-4dfe-ad6f-02bd13edf7c4, udp: true}
+  - {name: 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 2, server: cloudflare.cfgo.cc, port: 8080, type: vmess, uuid: 579fd6f1-7618-4fff-8635-9dba4a61df96, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: cc.992688.xyz}}, udp: true}
+  - {name: 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 3, server: hexsen.com, port: 443, type: vmess, uuid: de04add9-5c68-8bab-950c-08cd5320df18, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: "/argo-vmess?ed=2048", headers: {Host: arthur-experienced-hate-maiden.trycloudflare.com}}, udp: true}
+  - {name: 🇺🇸 github.com/freefq - 美国CloudFlare节点 4, server: cf-lt.sharecentre.online, port: 80, type: vmess, uuid: b1e30339-a603-47d1-b31c-1d0ceb59952e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /api/v3/download.getFile, headers: {Host: ssrsub.v005.ssrsub.com}}, udp: true}
+  - {name: 🇨🇳 github.com/freefq - 广东省广州市移动 5, server: service.ouluyun9803.com, port: 50001, type: ss, cipher: chacha20-ietf-poly1305, password: d89ca371-e94b-4dfe-ad6f-02bd13edf7c4, udp: true}
+  - {name: 🇨🇳 github.com/freefq - 广东省广州市移动 6, server: service.ouluyun9803.com, port: 26667, type: ss, cipher: chacha20-ietf-poly1305, password: d89ca371-e94b-4dfe-ad6f-02bd13edf7c4, udp: true}
+  - {name: 🇨🇳 github.com/freefq - 广东省广州市移动 7, server: service.ouluyun9803.com, port: 20001, type: ss, cipher: chacha20-ietf-poly1305, password: d89ca371-e94b-4dfe-ad6f-02bd13edf7c4, udp: true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -18,11 +19,12 @@ proxy-groups:
       - ♻️ 自动选择
       - DIRECT
       - github.com/freefq - 广东省移动 1
-      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 2
-      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 3
-      - 🇨🇳 github.com/freefq - 广东省广州市移动 4
+      - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 2
+      - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 3
+      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 4
       - 🇨🇳 github.com/freefq - 广东省广州市移动 5
       - 🇨🇳 github.com/freefq - 广东省广州市移动 6
+      - 🇨🇳 github.com/freefq - 广东省广州市移动 7
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -30,11 +32,12 @@ proxy-groups:
     tolerance: 50
     proxies:
       - github.com/freefq - 广东省移动 1
-      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 2
-      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 3
-      - 🇨🇳 github.com/freefq - 广东省广州市移动 4
+      - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 2
+      - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 3
+      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 4
       - 🇨🇳 github.com/freefq - 广东省广州市移动 5
       - 🇨🇳 github.com/freefq - 广东省广州市移动 6
+      - 🇨🇳 github.com/freefq - 广东省广州市移动 7
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -42,44 +45,48 @@ proxy-groups:
       - ♻️ 自动选择
       - 🎯 全球直连
       - github.com/freefq - 广东省移动 1
-      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 2
-      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 3
-      - 🇨🇳 github.com/freefq - 广东省广州市移动 4
+      - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 2
+      - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 3
+      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 4
       - 🇨🇳 github.com/freefq - 广东省广州市移动 5
       - 🇨🇳 github.com/freefq - 广东省广州市移动 6
+      - 🇨🇳 github.com/freefq - 广东省广州市移动 7
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - github.com/freefq - 广东省移动 1
-      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 2
-      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 3
-      - 🇨🇳 github.com/freefq - 广东省广州市移动 4
+      - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 2
+      - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 3
+      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 4
       - 🇨🇳 github.com/freefq - 广东省广州市移动 5
       - 🇨🇳 github.com/freefq - 广东省广州市移动 6
+      - 🇨🇳 github.com/freefq - 广东省广州市移动 7
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
       - github.com/freefq - 广东省移动 1
-      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 2
-      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 3
-      - 🇨🇳 github.com/freefq - 广东省广州市移动 4
+      - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 2
+      - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 3
+      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 4
       - 🇨🇳 github.com/freefq - 广东省广州市移动 5
       - 🇨🇳 github.com/freefq - 广东省广州市移动 6
+      - 🇨🇳 github.com/freefq - 广东省广州市移动 7
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - github.com/freefq - 广东省移动 1
-      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 2
-      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 3
-      - 🇨🇳 github.com/freefq - 广东省广州市移动 4
+      - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 2
+      - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 3
+      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 4
       - 🇨🇳 github.com/freefq - 广东省广州市移动 5
       - 🇨🇳 github.com/freefq - 广东省广州市移动 6
+      - 🇨🇳 github.com/freefq - 广东省广州市移动 7
   - name: 📢 谷歌FCM
     type: select
     proxies:
@@ -87,11 +94,12 @@ proxy-groups:
       - 🎯 全球直连
       - ♻️ 自动选择
       - github.com/freefq - 广东省移动 1
-      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 2
-      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 3
-      - 🇨🇳 github.com/freefq - 广东省广州市移动 4
+      - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 2
+      - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 3
+      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 4
       - 🇨🇳 github.com/freefq - 广东省广州市移动 5
       - 🇨🇳 github.com/freefq - 广东省广州市移动 6
+      - 🇨🇳 github.com/freefq - 广东省广州市移动 7
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -115,11 +123,12 @@ proxy-groups:
       - 🎯 全球直连
       - ♻️ 自动选择
       - github.com/freefq - 广东省移动 1
-      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 2
-      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 3
-      - 🇨🇳 github.com/freefq - 广东省广州市移动 4
+      - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 2
+      - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 3
+      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 4
       - 🇨🇳 github.com/freefq - 广东省广州市移动 5
       - 🇨🇳 github.com/freefq - 广东省广州市移动 6
+      - 🇨🇳 github.com/freefq - 广东省广州市移动 7
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
@@ -592,6 +601,7 @@ rules:
  - DOMAIN-SUFFIX,zhjfad.com,🛑 全球拦截
  - DOMAIN-SUFFIX,zqzxz.com,🛑 全球拦截
  - DOMAIN-SUFFIX,zzsx8.com,🛑 全球拦截
+ - DOMAIN-SUFFIX,wwads.cn,🛑 全球拦截
  - DOMAIN-SUFFIX,acuityplatform.com,🛑 全球拦截
  - DOMAIN-SUFFIX,ad-stir.com,🛑 全球拦截
  - DOMAIN-SUFFIX,ad-survey.com,🛑 全球拦截
@@ -2222,6 +2232,8 @@ rules:
  - DOMAIN-SUFFIX,identrust.com,🌍 国外媒体
  - DOMAIN-SUFFIX,intercom.io,🌍 国外媒体
  - DOMAIN-SUFFIX,intercomcdn.com,🌍 国外媒体
+ - DOMAIN-SUFFIX,oaistatic.com,🌍 国外媒体
+ - DOMAIN-SUFFIX,oaiusercontent.com,🌍 国外媒体
  - DOMAIN-SUFFIX,openai.com,🌍 国外媒体
  - DOMAIN-SUFFIX,openaiapi-site.azureedge.net,🌍 国外媒体
  - DOMAIN-SUFFIX,sentry.io,🌍 国外媒体
@@ -2316,6 +2328,7 @@ rules:
  - DOMAIN-SUFFIX,tumbex.com,🚀 节点选择
  - DOMAIN-SUFFIX,twdvd.com,🚀 节点选择
  - DOMAIN-SUFFIX,unsplash.com,🚀 节点选择
+ - DOMAIN-SUFFIX,buzzsprout.com,🚀 节点选择
  - DOMAIN-SUFFIX,eu,🚀 节点选择
  - DOMAIN-SUFFIX,hk,🚀 节点选择
  - DOMAIN-SUFFIX,jp,🚀 节点选择
@@ -2473,6 +2486,8 @@ rules:
  - DOMAIN-KEYWORD,uk-live,🚀 节点选择
  - DOMAIN-SUFFIX,bbc.co,🚀 节点选择
  - DOMAIN-SUFFIX,bbc.com,🚀 节点选择
+ - DOMAIN-SUFFIX,claude.ai,🚀 节点选择
+ - DOMAIN-SUFFIX,anthropic.com,🚀 节点选择
  - DOMAIN-SUFFIX,apache.org,🚀 节点选择
  - DOMAIN-SUFFIX,docker.com,🚀 节点选择
  - DOMAIN-SUFFIX,elastic.co,🚀 节点选择
@@ -2628,6 +2643,7 @@ rules:
  - DOMAIN-SUFFIX,ypncdn.com,🚀 节点选择
  - DOMAIN-SUFFIX,pixiv.net,🚀 节点选择
  - DOMAIN-SUFFIX,pximg.net,🚀 节点选择
+ - DOMAIN-SUFFIX,fanbox.cc,🚀 节点选择
  - DOMAIN-SUFFIX,amplitude.com,🚀 节点选择
  - DOMAIN-SUFFIX,firebaseio.com,🚀 节点选择
  - DOMAIN-SUFFIX,hockeyapp.net,🚀 节点选择
@@ -2702,6 +2718,8 @@ rules:
  - DOMAIN-SUFFIX,wikiversity.org,🚀 节点选择
  - DOMAIN-SUFFIX,wikivoyage.org,🚀 节点选择
  - DOMAIN-SUFFIX,wiktionary.org,🚀 节点选择
+ - DOMAIN-SUFFIX,zoom.us,🚀 节点选择
+ - DOMAIN-SUFFIX,zoomgov.com,🚀 节点选择
  - DOMAIN-SUFFIX,neulion.com,🚀 节点选择
  - DOMAIN-SUFFIX,icntv.xyz,🚀 节点选择
  - DOMAIN-SUFFIX,flzbcdn.xyz,🚀 节点选择
@@ -2724,6 +2742,7 @@ rules:
  - DOMAIN-SUFFIX,zhenguanyu.biz,🎯 全球直连
  - DOMAIN-SUFFIX,zhenguanyu.com,🎯 全球直连
  - DOMAIN-SUFFIX,snapdrop.net,🎯 全球直连
+ - DOMAIN-SUFFIX,tebex.io,🎯 全球直连
  - DOMAIN-SUFFIX,cn,🎯 全球直连
  - DOMAIN-SUFFIX,xn--fiqs8s,🎯 全球直连
  - DOMAIN-SUFFIX,xn--55qx5d,🎯 全球直连
@@ -2774,6 +2793,7 @@ rules:
  - DOMAIN-SUFFIX,aliyuncdn.com,🎯 全球直连
  - DOMAIN-SUFFIX,aliyuncs.com,🎯 全球直连
  - DOMAIN-SUFFIX,aliyundrive.com,🎯 全球直连
+ - DOMAIN-SUFFIX,aliyundrive.net,🎯 全球直连
  - DOMAIN-SUFFIX,amap.com,🎯 全球直连
  - DOMAIN-SUFFIX,autonavi.com,🎯 全球直连
  - DOMAIN-SUFFIX,dingtalk.com,🎯 全球直连
@@ -3100,6 +3120,7 @@ rules:
  - DOMAIN-SUFFIX,biqudu.com,🎯 全球直连
  - DOMAIN-SUFFIX,biquge.com,🎯 全球直连
  - DOMAIN-SUFFIX,bitauto.com,🎯 全球直连
+ - DOMAIN-SUFFIX,bosszhipin.com,🎯 全球直连
  - DOMAIN-SUFFIX,c-ctrip.com,🎯 全球直连
  - DOMAIN-SUFFIX,camera360.com,🎯 全球直连
  - DOMAIN-SUFFIX,cdnmama.com,🎯 全球直连
@@ -3308,6 +3329,7 @@ rules:
  - DOMAIN-SUFFIX,zhaopin.com,🎯 全球直连
  - DOMAIN-SUFFIX,zhihu.com,🎯 全球直连
  - DOMAIN-SUFFIX,zhimg.com,🎯 全球直连
+ - DOMAIN-SUFFIX,zhipin.com,🎯 全球直连
  - DOMAIN-SUFFIX,zhongsou.com,🎯 全球直连
  - DOMAIN-SUFFIX,zhuihd.com,🎯 全球直连
  - IP-CIDR,8.128.0.0/10,🎯 全球直连,no-resolve
