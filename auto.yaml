@@ -5,155 +5,407 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: github.com/freefq - 台湾省中华电信(HiNet)数据中心 1, server: c11.twtc.dynu.net, port: 6899, type: vmess, uuid: d9e103fc-741d-459f-9a92-4f59bfb083ef, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: github.com/freefq - 美国  2, server: muran-kr.qrfly.me, port: 20254, type: vmess, uuid: 007be9ad-8db6-4164-fc49-49989bbcba96, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: muran-kr.qrfly.me}}, udp: true}
-  - {name: github.com/freefq - 台湾省中华电信(HiNet)数据中心 3, server: b23.ntbq.dynu.net, port: 2024, type: vmess, uuid: d9e103fc-741d-459f-9a92-4f59bfb083ef, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: github.com/freefq - 台湾省中华电信(HiNet)数据中心 4, server: nb36.ntbq.dynu.net, port: 4211, type: vmess, uuid: d9e103fc-741d-459f-9a92-4f59bfb083ef, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: github.com/freefq - 广东省广州市移动 5, server: cm.awslcn.info, port: 25233, type: vmess, uuid: 93ec7261-1c92-4149-848a-26b6fb9fc4ce, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: cm.awslcn.info}}, udp: true}
-  - {name: github.com/freefq - 广东省移动 6, server: nc.cm.go002.xyz, port: 19584, type: ss, cipher: chacha20-ietf-poly1305, password: dcbc1c7f-c323-4365-bd48-cf767f9081ce, udp: true}
-  - {name: github.com/freefq - 美国Microsoft数据中心 7, server: sk01.trojanyyds.xyz, port: 443, type: trojan, password: 93ec7261-1c92-4149-848a-26b6fb9fc4ce, skip-cert-verify: true, udp: true}
-  - {name: github.com/freefq - 广东省广州市移动 8, server: hk1.awslcn.info, port: 25242, type: vmess, uuid: 93ec7261-1c92-4149-848a-26b6fb9fc4ce, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: hk1.awslcn.info}}, udp: true}
-  - {name: github.com/freefq - 韩国  9, server: 45.138.70.247, port: 34660, type: vmess, uuid: 0fff3d8c-574f-45a8-eddc-7a7f6f77eb41, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /write.php}, udp: true}
-  - {name: github.com/freefq - 广东省广州市移动 10, server: cm1.awslcn.info, port: 25258, type: vmess, uuid: 93ec7261-1c92-4149-848a-26b6fb9fc4ce, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: cm1.awslcn.info}}, udp: true}
-  - {name: github.com/freefq - 香港Microsoft数据中心 11, server: de01.trojanyyds.xyz, port: 443, type: trojan, password: 93ec7261-1c92-4149-848a-26b6fb9fc4ce, skip-cert-verify: true, udp: true}
-  - {name: github.com/freefq - 美国CloudFlare公司CDN节点 12, server: 104.17.129.28, port: 8080, type: vmess, uuid: 94242109-0930-427f-f899-15d34021130c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: eu2.openxai.link}}, udp: true}
-  - {name: github.com/freefq - 香港Microsoft数据中心 13, server: hk04.trojanyyds.xyz, port: 443, type: trojan, password: 93ec7261-1c92-4149-848a-26b6fb9fc4ce, skip-cert-verify: true, udp: true}
-  - {name: github.com/freefq - 美国  14, server: 172.99.190.109, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: github.com/freefq - 孟加拉  15, server: 103.67.197.195, port: 80, type: vmess, uuid: bfb9f927-eef3-4dfd-adbe-05bcc8279b41, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /ongtrumdata.com, headers: {Host: dl.kgvn.garenanow.com}}, udp: true}
-  - {name: github.com/freefq - 广东省移动 16, server: nc.cm.go002.xyz, port: 19511, type: ss, cipher: chacha20-ietf-poly1305, password: dcbc1c7f-c323-4365-bd48-cf767f9081ce, udp: true}
-  - {name: github.com/freefq - 美国Microsoft数据中心 17, server: ru01.trojanyyds.xyz, port: 443, type: trojan, password: 93ec7261-1c92-4149-848a-26b6fb9fc4ce, skip-cert-verify: true, udp: true}
-  - {name: github.com/freefq - 孟加拉  18, server: vn3.network.io.vn, port: 80, type: vmess, uuid: a3467009-2d14-4dfe-98e8-ad5bb4ddbe4c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /network, headers: {Host: dl.kgvn.garenanow.com}}, udp: true}
-  - {name: github.com/freefq - 美国CloudFlare公司CDN节点 19, server: 104.21.3.4, port: 80, type: vmess, uuid: c97cf46e-1554-36cb-8b36-c3556b883dc4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: v118a.ai88888.top}}, udp: true}
-  - {name: github.com/freefq - 孟加拉  20, server: vn2.network.io.vn, port: 80, type: vmess, uuid: a3467009-2d14-4dfe-98e8-ad5bb4ddbe4c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /network, headers: {Host: dl.kgvn.garenanow.com}}, udp: true}
-  - {name: github.com/freefq - 越南  21, server: mcvl1.vpndata.vn, port: 80, type: vmess, uuid: a2c7eeea-53f9-480a-be9d-536518b4fb0b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /VPNDATA.xYx, headers: {Host: dl.kgvn.garenanow.com}}, udp: true}
-  - {name: github.com/freefq - 广东省广州市移动 22, server: service.ouluyun9803.com, port: 26667, type: ss, cipher: chacha20-ietf-poly1305, password: 057bf3ac-fda1-44c3-aa8e-07eed7ddc5b6, udp: true}
-  - {name: github.com/freefq - 湖南省联通 23, server: yes.cnmjcn.net, port: 16616, type: vmess, uuid: c2c76420-257f-492a-b20f-6560f3bfa78d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: d4d028243c73047d9171bacb9b0439e8.mobgslb.tbcache.com}}, udp: true}
-  - {name: github.com/freefq - 广东省广州市移动 24, server: service.ouluyun9803.com, port: 50003, type: ss, cipher: chacha20-ietf-poly1305, password: 057bf3ac-fda1-44c3-aa8e-07eed7ddc5b6, udp: true}
-  - {name: github.com/freefq - 广东省广州市移动 25, server: service.ouluyun9803.com, port: 50005, type: ss, cipher: chacha20-ietf-poly1305, password: 057bf3ac-fda1-44c3-aa8e-07eed7ddc5b6, udp: true}
-  - {name: github.com/freefq - 广东省移动 26, server: m.cnmjcn.com, port: 16648, type: vmess, uuid: c2c76420-257f-492a-b20f-6560f3bfa78d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: d4d028243c73047d9171bacb9b0439e8.mobgslb.tbcache.com}}, udp: true}
-  - {name: github.com/freefq - 越南  27, server: 58.187.206.121, port: 80, type: vmess, uuid: a2893b4e-e6f8-40cb-bae5-8b3cb8937dae, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: dl.kgvn.garenanow.com}}, udp: true}
-  - {name: github.com/freefq - 美国CloudFlare节点 28, server: cf-lt.sharecentre.online, port: 80, type: vmess, uuid: b1e30339-a603-47d1-b31c-1d0ceb59952e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /api/v3/download.getFile, headers: {Host: ssrsub.v004.ssrsub.com}}, udp: true}
-  - {name: github.com/freefq - 乌克兰  29, server: 193.238.153.14, port: 8443, type: vmess, uuid: 159693e0-5146-482d-9e46-8c4f2fc865b1, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: github.com/freefq - 孟加拉  30, server: vn2.5gtocdocao.com, port: 80, type: vmess, uuid: 7a2c5296-683d-48db-9856-373cafac48b5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /anti9.5gtocdocao.com, headers: {Host: dl.kgvn.garenanow.com}}, udp: true}
-  - {name: github.com/freefq - 日本  31, server: octopus.koreanbbq.link, port: 443, type: trojan, password: 8wOSlN5I8uAFRe3ZjZE3AyFBaD23yYCCCX0DaSO67aT4zpc39YlpexSDRqnKxg, skip-cert-verify: true, udp: true}
-  - {name: github.com/freefq - 日本  32, server: crispy.koreanbbq.link, port: 443, type: trojan, password: EAeReaI2cyzTnjuK8SS6NOgpxCZRl3p0AO8DXSF3B4aq93CyZ3aDxFYCY5Dwl7, skip-cert-verify: true, udp: true}
-  - {name: github.com/freefq - 美国CloudFlare公司CDN节点 33, server: 104.21.75.246, port: 80, type: vmess, uuid: c458695d-6908-45c3-9512-e0c46418454c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: sbl2.shabijichang.com}}, udp: true}
+  - {name: github.com/freefq - 日本东京Choopa数据中心 1, server: 45.77.176.217, port: 16142, type: vmess, uuid: 1f57a1cc-d395-4bde-bfcf-f62a8a4f9559, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: github.com/freefq - 美国华盛顿Cogent通信公司 2, server: 38.75.136.21, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: github.com/freefq - 美国  3, server: 129.146.247.135, port: 42598, type: vmess, uuid: 1773b226-0bdb-43c5-87d8-270d26211dda, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: github.com/freefq - 俄罗斯  4, server: 46.29.166.237, port: 47555, type: vmess, uuid: 0c49cd19-2758-4d38-e6a8-11f2d6635860, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: github.com/freefq - 美国华盛顿Cogent通信公司 5, server: 38.75.136.135, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: github.com/freefq - 台湾省台中市中华电信 6, server: c12.twtc.dynu.net, port: 6122, type: vmess, uuid: 27c6999b-58aa-48b4-b065-786d2badc074, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: github.com/freefq - 美国华盛顿Cogent通信公司 7, server: 38.91.102.30, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: github.com/freefq - 美国阿里云 8, server: 47.236.111.83, port: 31091, type: vmess, uuid: f0eafd6b-ad39-4875-9b29-722237d155f3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: github.com/freefq - 美国华盛顿Cogent通信公司 9, server: 38.121.43.65, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: github.com/freefq - 美国华盛顿州 10, server: 205.134.180.145, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: hgLCgfLRgB6d, udp: true}
+  - {name: github.com/freefq - 美国华盛顿Cogent通信公司 11, server: 38.68.134.69, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: github.com/freefq - 印度  12, server: 103.114.201.143, port: 59487, type: vmess, uuid: 51fb562e-0a9b-4c27-e4d8-6f4883bb5165, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: github.com/freefq - 美国Akamai科技公司CDN网络节点 13, server: 172.233.188.166, port: 11397, type: vmess, uuid: 20e0d67d-f7aa-4bb1-daae-b7f217306bba, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: github.com/freefq - 美国华盛顿Cogent通信公司 14, server: 38.91.102.30, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: github.com/freefq - 美国华盛顿Cogent通信公司 15, server: 38.75.136.135, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: github.com/freefq - 美国华盛顿Cogent通信公司 16, server: 38.143.66.87, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: github.com/freefq - 美国  17, server: 138.2.44.211, port: 20081, type: vmess, uuid: 593b8525-0c48-4b0f-d9af-2d73a9148973, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: github.com/freefq - 美国亚利桑那州凤凰城Oracle云计算数据中心 18, server: 129.146.46.181, port: 52408, type: vmess, uuid: a797ff7b-8161-40a6-d577-1b2c213b3885, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: github.com/freefq - 北美地区  19, server: 198.57.27.212, port: 22324, type: vmess, uuid: 04621bae-ab36-11ec-b909-0242ac120002, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: github.com/freefq - 法国巴黎Online S.A.S 20, server: 51.159.106.157, port: 6917, type: ss, cipher: chacha20-ietf-poly1305, password: VV5v4GjMdKsNt8j0bfTW6y, udp: true}
+  - {name: github.com/freefq - 美国  21, server: 162.251.62.115, port: 22324, type: vmess, uuid: 04621bae-ab36-11ec-b909-0242ac120002, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: github.com/freefq - 澳大利亚  22, server: 140.83.63.38, port: 24445, type: vmess, uuid: 94c5ef37-4d82-49f9-c624-f01259374a17, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: github.com/freefq - 美国CloudFlare节点 23, server: cf-lt.sharecentre.online, port: 80, type: vmess, uuid: b1e30339-a603-47d1-b31c-1d0ceb59952e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /api/v3/download.getFile, headers: {Host: ssrsub.v03.ssrsub.com}}, udp: true}
+  - {name: github.com/freefq - 意大利  24, server: 212.102.53.81, port: 443, type: ss, cipher: aes-128-gcm, password: shadowsocks, udp: true}
+  - {name: github.com/freefq - 美国华盛顿Cogent通信公司 25, server: 38.121.43.97, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: github.com/freefq - 美国华盛顿州 26, server: 205.134.180.137, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: g13S7doXar0A, udp: true}
+  - {name: github.com/freefq - 瑞典  27, server: 148.135.33.94, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: www.30994104.xyz}}, udp: true}
+  - {name: github.com/freefq - 美国华盛顿Cogent通信公司 28, server: 38.91.107.37, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: github.com/freefq - 美国  29, server: 45.144.30.202, port: 28490, type: ss, cipher: chacha20-ietf-poly1305, password: yZdRgske85Hou96z2dRdtH, udp: true}
+  - {name: github.com/freefq - 英国  30, server: 145.239.1.100, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: github.com/freefq - 乌克兰  31, server: 5.181.21.19, port: 8388, type: ss, cipher: chacha20-ietf-poly1305, password: Njk2Nzcy, udp: true}
+  - {name: github.com/freefq - 英国  32, server: 145.239.1.100, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: github.com/freefq - 美国加利福尼亚州洛杉矶PetaExpress 33, server: 198.2.202.81, port: 30000, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, servername: www.65825524.xyz, network: ws, ws-opts: {path: /path/1702961716738, headers: {Host: www.65825524.xyz}}, udp: true}
+  - {name: github.com/freefq - 日本东京Choopa数据中心 34, server: 167.179.111.237, port: 14935, type: vmess, uuid: e961894f-8e90-472f-98d3-09402e4be453, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: github.com/freefq - 印度  35, server: hanoi4.5gsieutocdo.com, port: 80, type: vmess, uuid: c95357eb-2869-4511-8940-f0dc5e1ec9b1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: dl.kgvn.garenanow.com}}, udp: true}
+  - {name: github.com/freefq - 美国华盛顿Cogent通信公司 36, server: 38.180.33.136, port: 50104, type: vmess, uuid: 790f6802-7535-4109-de6d-15f676d5e3f7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: github.com/freefq - 越南  37, server: 58.187.206.121, port: 80, type: vmess, uuid: a2893b4e-e6f8-40cb-bae5-8b3cb8937dae, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: dl.kgvn.garenanow.com}}, udp: true}
+  - {name: github.com/freefq - 加拿大  38, server: 142.202.48.99, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: github.com/freefq - 加拿大  39, server: 142.171.122.68, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, servername: www.21463847.xyz, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: github.com/freefq - 越南  40, server: 103.82.134.110, port: 80, type: vmess, uuid: bfb9f927-eef3-4dfd-adbe-05bcc8279b41, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 103.82.134.110}}, udp: true}
+  - {name: github.com/freefq - 湖北省武汉市移动 41, server: t.cnmjcn.cyou, port: 16648, type: vmess, uuid: c2c76420-257f-492a-b20f-6560f3bfa78d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: d4d028243c73047d9171bacb9b0439e8.mobgslb.tbcache.com}}, udp: true}
+  - {name: github.com/freefq - 乌克兰  42, server: 95.164.37.226, port: 8388, type: ss, cipher: chacha20-ietf-poly1305, password: NjJkZmYw, udp: true}
+  - {name: github.com/freefq - 美国CloudFlare公司CDN节点 43, server: 104.21.40.162, port: 80, type: vmess, uuid: 0580abe6-9aaf-40e2-ba33-0bc9f3b6ef2b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /vmess, headers: {Host: ee1.xv2ray.net}}, udp: true}
+  - {name: github.com/freefq - 俄罗斯  44, server: 212.113.106.243, port: 12949, type: ss, cipher: chacha20-ietf-poly1305, password: P2zxXPewlV3BlfqqYiSthvtLc, udp: true}
+  - {name: github.com/freefq - 印度尼西亚  45, server: 113.20.28.102, port: 22188, type: vmess, uuid: 00677eb4-91c2-41f1-e790-963b9a093fd5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: github.com/freefq - 法国OVH 46, server: 51.77.53.200, port: 4444, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: github.com/freefq - 美国  47, server: 172.99.190.109, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: github.com/freefq - 广东省移动 48, server: nc.cm.go002.xyz, port: 19511, type: ss, cipher: chacha20-ietf-poly1305, password: dcbc1c7f-c323-4365-bd48-cf767f9081ce, udp: true}
+  - {name: github.com/freefq - 法国格拉沃利讷OVH数据中心 49, server: 54.36.174.181, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: github.com/freefq - 法国格拉沃利讷OVH数据中心 50, server: 54.36.174.181, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: github.com/freefq - 印度  51, server: hanoi4.speed4g.click, port: 80, type: vmess, uuid: b379fd8e-75c6-4bd6-8a5b-88f3e64bb3fa, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: hanoi4.speed4g.click}}, udp: true}
+  - {name: github.com/freefq - 法国OVH 52, server: 51.77.53.200, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: github.com/freefq - 美国CloudFlare公司CDN节点 53, server: 104.17.193.145, port: 8080, type: vmess, uuid: e2695bd0-945f-4476-aac5-0e37bcdbd7fc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: eu5.openxai.link}}, udp: true}
+  - {name: github.com/freefq - 瑞典  54, server: 167.88.61.175, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: github.com/freefq - 孟加拉  55, server: 103.67.197.195, port: 80, type: vmess, uuid: bfb9f927-eef3-4dfd-adbe-05bcc8279b41, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /ongtrumdata.com, headers: {Host: dl.kgvn.garenanow.com}}, udp: true}
+  - {name: github.com/freefq - 美国CloudFlare节点 56, server: zfc.windowsupdate1.com, port: 8080, type: vmess, uuid: cef51002-47b0-4e48-9d91-850e15ff95e8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: kryx.651568.xyz}}, udp: true}
+  - {name: github.com/freefq - 广东省广州市移动 57, server: service.ouluyun9803.com, port: 50005, type: ss, cipher: chacha20-ietf-poly1305, password: 057bf3ac-fda1-44c3-aa8e-07eed7ddc5b6, udp: true}
+  - {name: github.com/freefq - 广东省广州市移动 58, server: nc.cm.go002.xyz, port: 19584, type: ss, cipher: chacha20-ietf-poly1305, password: dcbc1c7f-c323-4365-bd48-cf767f9081ce, udp: true}
+  - {name: github.com/freefq - 加拿大  59, server: 142.202.48.99, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: github.com/freefq - 挪威  60, server: 146.59.147.250, port: 29776, type: vmess, uuid: 82447abf-dcb9-408a-9ca6-79e0a7698d08, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: github.com/freefq - 广西河池市联通 61, server: yes.cnmjcn.net, port: 16616, type: vmess, uuid: c2c76420-257f-492a-b20f-6560f3bfa78d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: d4d028243c73047d9171bacb9b0439e8.mobgslb.tbcache.com}}, udp: true}
+  - {name: github.com/freefq - 美国华盛顿Cogent通信公司 62, server: 38.54.36.70, port: 58300, type: vmess, uuid: 0c1e5254-eab9-4c47-f749-a467019cf2ba, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: internet.life.com.by}}, udp: true}
+  - {name: github.com/freefq - 法国OVH SAS 63, server: 217.182.198.219, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: github.com/freefq - 法国OVH 64, server: 51.77.53.200, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: github.com/freefq - 美国华盛顿Cogent通信公司 65, server: 38.54.36.99, port: 14163, type: vmess, uuid: 482a7849-2557-45de-e85c-95519c1b88e0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: github.com/freefq - 越南  66, server: 103.82.21.6, port: 80, type: vmess, uuid: bfb9f927-eef3-4dfd-adbe-05bcc8279b41, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: dl.kgvn.garenanow.com}}, udp: true}
+  - {name: github.com/freefq - 孟加拉  67, server: vn2.network.io.vn, port: 80, type: vmess, uuid: a3467009-2d14-4dfe-98e8-ad5bb4ddbe4c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /network, headers: {Host: dl.kgvn.garenanow.com}}, udp: true}
+  - {name: github.com/freefq - 亚太地区  68, server: vn6.5gsieutocdo.com, port: 80, type: vmess, uuid: c95357eb-2869-4511-8940-f0dc5e1ec9b1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: vn6.5gsieutocdo.com}}, udp: true}
+  - {name: github.com/freefq - 孟加拉  69, server: vn3.network.io.vn, port: 80, type: vmess, uuid: a3467009-2d14-4dfe-98e8-ad5bb4ddbe4c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /network, headers: {Host: dl.kgvn.garenanow.com}}, udp: true}
+  - {name: github.com/freefq - 美国俄亥俄州都柏林Amazon数据中心 70, server: 18.216.249.151, port: 46403, type: vmess, uuid: 28dc6b61-09d8-4c19-b655-233cfb535567, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: github.com/freefq - 亚太地区  71, server: vn7.5gsieutocdo.com, port: 80, type: vmess, uuid: c95357eb-2869-4511-8940-f0dc5e1ec9b1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /5gsieutocdo.club, headers: {Host: dl.kgvn.garenanow.com}}, udp: true}
+  - {name: github.com/freefq - 孟加拉  72, server: vn1.network.io.vn, port: 80, type: vmess, uuid: a3467009-2d14-4dfe-98e8-ad5bb4ddbe4c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /network, headers: {Host: vn1.network.io.vn}}, udp: true}
+  - {name: github.com/freefq - 越南  73, server: mcvl1.vpndata.vn, port: 80, type: vmess, uuid: 41592d20-fb44-4399-b061-5d7eb175ba60, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /VPNDATA.xYx, headers: {Host: dl.kgvn.garenanow.com}}, udp: true}
+  - {name: github.com/freefq - 日本  74, server: crispy.koreanbbq.link, port: 443, type: trojan, password: EAeReaI2cyzTnjuK8SS6NOgpxCZRl3p0AO8DXSF3B4aq93CyZ3aDxFYCY5Dwl7, skip-cert-verify: true, udp: true}
+  - {name: github.com/freefq - 法国OVH机房SAS硬盘BGP主机 75, server: 149.202.82.172, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: github.com/freefq - 泰国  76, server: 103.15.90.199, port: 80, type: vmess, uuid: baa85f59-844b-4aa6-95e6-1747d9b78e8a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /vpngiangon.com, headers: {Host: dl.kgvn.garenanow.com}}, udp: true}
+  - {name: github.com/freefq - 法国OVH SAS 77, server: 217.182.198.219, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: github.com/freefq - 法国OVH机房SAS硬盘BGP主机 78, server: 149.202.82.172, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: github.com/freefq - 美国CloudFlare节点 79, server: upload.ir, port: 443, type: vmess, uuid: 33653184-91f3-4f3f-b707-2fc21e9adeb8, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: pl1-vmess.sshmax.xyz}}, udp: true}
+  - {name: github.com/freefq - 日本  80, server: octopus.koreanbbq.link, port: 443, type: trojan, password: 8wOSlN5I8uAFRe3ZjZE3AyFBaD23yYCCCX0DaSO67aT4zpc39YlpexSDRqnKxg, skip-cert-verify: true, udp: true}
+  - {name: github.com/freefq - 英国  81, server: 145.239.1.100, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: github.com/freefq - 广东省广州市移动 82, server: service.ouluyun9803.com, port: 50003, type: ss, cipher: chacha20-ietf-poly1305, password: 057bf3ac-fda1-44c3-aa8e-07eed7ddc5b6, udp: true}
+  - {name: github.com/freefq - 广东省广州市移动 83, server: service.ouluyun9803.com, port: 26667, type: ss, cipher: chacha20-ietf-poly1305, password: 057bf3ac-fda1-44c3-aa8e-07eed7ddc5b6, udp: true}
+  - {name: github.com/freefq - 瑞典  84, server: 167.88.61.175, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: github.com/freefq - 法国格拉沃利讷OVH数据中心 85, server: 54.36.174.181, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: github.com/freefq - 荷兰北荷兰省阿姆斯特丹Sharktech数据中心 86, server: 45.58.153.25, port: 30000, type: vmess, uuid: 4242f9e0-6b7e-4257-9e93-7ad38015c46a, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: github.com/freefq - 香港特别行政区 87, server: 154.90.39.63, port: 45343, type: vmess, uuid: 08aa8499-d616-4ff1-d6ab-ce0c522824aa, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: github.com/freefq - 美国CloudFlare节点 88, server: us-02.jikuai.xyz, port: 2082, type: vmess, uuid: 70666776-4e9f-4350-b3f0-afaff6a70db0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: us-02.jikuai.xyz}}, udp: true}
+  - {name: github.com/freefq - 德国Hetzner 89, server: www.casperco.online, port: 993, type: trojan, password: 74811f39-8f69-4334-9e0f-a8a25d7413c1, skip-cert-verify: true, udp: true}
+  - {name: github.com/freefq - 香港阿里云 90, server: 47.57.232.119, port: 2119, type: ss, cipher: aes-256-gcm, password: 3B9vFTBSlp, udp: true}
+  - {name: github.com/freefq - 美国华盛顿州 91, server: 205.134.180.143, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: R9Xc4dHXGv3c, udp: true}
+  - {name: github.com/freefq - 加拿大  92, server: 142.202.48.99, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: github.com/freefq - 俄罗斯  93, server: 2508join.outline-vpn.cloud, port: 8388, type: ss, cipher: chacha20-ietf-poly1305, password: YaXvybxrP9HL79Gfltym9bw/5QIQAW/f, udp: true}
+  - {name: github.com/freefq - 台湾省  94, server: 45.121.48.196, port: 10001, type: vmess, uuid: 0ed35629-919a-4891-ba0f-13cd198f863b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: github.com/freefq - 美国华盛顿Cogent通信公司 95, server: 38.180.98.215, port: 8080, type: vmess, uuid: 773ac60d-36d7-45b5-c99e-a0e3903e2e3a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: github.com/freefq - 美国华盛顿Cogent通信公司 96, server: 38.54.82.54, port: 41604, type: vmess, uuid: 54de50e5-5e4b-443f-d9b8-9e9e0eee865c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - github.com/freefq - 台湾省中华电信(HiNet)数据中心 1
-      - github.com/freefq - 美国  2
-      - github.com/freefq - 台湾省中华电信(HiNet)数据中心 3
-      - github.com/freefq - 台湾省中华电信(HiNet)数据中心 4
-      - github.com/freefq - 广东省广州市移动 5
-      - github.com/freefq - 广东省移动 6
-      - github.com/freefq - 美国Microsoft数据中心 7
-      - github.com/freefq - 广东省广州市移动 8
-      - github.com/freefq - 韩国  9
-      - github.com/freefq - 广东省广州市移动 10
-      - github.com/freefq - 香港Microsoft数据中心 11
-      - github.com/freefq - 美国CloudFlare公司CDN节点 12
-      - github.com/freefq - 香港Microsoft数据中心 13
-      - github.com/freefq - 美国  14
-      - github.com/freefq - 孟加拉  15
-      - github.com/freefq - 广东省移动 16
-      - github.com/freefq - 美国Microsoft数据中心 17
-      - github.com/freefq - 孟加拉  18
-      - github.com/freefq - 美国CloudFlare公司CDN节点 19
-      - github.com/freefq - 孟加拉  20
-      - github.com/freefq - 越南  21
-      - github.com/freefq - 广东省广州市移动 22
-      - github.com/freefq - 湖南省联通 23
-      - github.com/freefq - 广东省广州市移动 24
-      - github.com/freefq - 广东省广州市移动 25
-      - github.com/freefq - 广东省移动 26
-      - github.com/freefq - 越南  27
-      - github.com/freefq - 美国CloudFlare节点 28
-      - github.com/freefq - 乌克兰  29
-      - github.com/freefq - 孟加拉  30
-      - github.com/freefq - 日本  31
-      - github.com/freefq - 日本  32
-      - github.com/freefq - 美国CloudFlare公司CDN节点 33
+      - github.com/freefq - 日本东京Choopa数据中心 1
+      - github.com/freefq - 美国华盛顿Cogent通信公司 2
+      - github.com/freefq - 美国  3
+      - github.com/freefq - 俄罗斯  4
+      - github.com/freefq - 美国华盛顿Cogent通信公司 5
+      - github.com/freefq - 台湾省台中市中华电信 6
+      - github.com/freefq - 美国华盛顿Cogent通信公司 7
+      - github.com/freefq - 美国阿里云 8
+      - github.com/freefq - 美国华盛顿Cogent通信公司 9
+      - github.com/freefq - 美国华盛顿州 10
+      - github.com/freefq - 美国华盛顿Cogent通信公司 11
+      - github.com/freefq - 印度  12
+      - github.com/freefq - 美国Akamai科技公司CDN网络节点 13
+      - github.com/freefq - 美国华盛顿Cogent通信公司 14
+      - github.com/freefq - 美国华盛顿Cogent通信公司 15
+      - github.com/freefq - 美国华盛顿Cogent通信公司 16
+      - github.com/freefq - 美国  17
+      - github.com/freefq - 美国亚利桑那州凤凰城Oracle云计算数据中心 18
+      - github.com/freefq - 北美地区  19
+      - github.com/freefq - 法国巴黎Online S.A.S 20
+      - github.com/freefq - 美国  21
+      - github.com/freefq - 澳大利亚  22
+      - github.com/freefq - 美国CloudFlare节点 23
+      - github.com/freefq - 意大利  24
+      - github.com/freefq - 美国华盛顿Cogent通信公司 25
+      - github.com/freefq - 美国华盛顿州 26
+      - github.com/freefq - 瑞典  27
+      - github.com/freefq - 美国华盛顿Cogent通信公司 28
+      - github.com/freefq - 美国  29
+      - github.com/freefq - 英国  30
+      - github.com/freefq - 乌克兰  31
+      - github.com/freefq - 英国  32
+      - github.com/freefq - 美国加利福尼亚州洛杉矶PetaExpress 33
+      - github.com/freefq - 日本东京Choopa数据中心 34
+      - github.com/freefq - 印度  35
+      - github.com/freefq - 美国华盛顿Cogent通信公司 36
+      - github.com/freefq - 越南  37
+      - github.com/freefq - 加拿大  38
+      - github.com/freefq - 加拿大  39
+      - github.com/freefq - 越南  40
+      - github.com/freefq - 湖北省武汉市移动 41
+      - github.com/freefq - 乌克兰  42
+      - github.com/freefq - 美国CloudFlare公司CDN节点 43
+      - github.com/freefq - 俄罗斯  44
+      - github.com/freefq - 印度尼西亚  45
+      - github.com/freefq - 法国OVH 46
+      - github.com/freefq - 美国  47
+      - github.com/freefq - 广东省移动 48
+      - github.com/freefq - 法国格拉沃利讷OVH数据中心 49
+      - github.com/freefq - 法国格拉沃利讷OVH数据中心 50
+      - github.com/freefq - 印度  51
+      - github.com/freefq - 法国OVH 52
+      - github.com/freefq - 美国CloudFlare公司CDN节点 53
+      - github.com/freefq - 瑞典  54
+      - github.com/freefq - 孟加拉  55
+      - github.com/freefq - 美国CloudFlare节点 56
+      - github.com/freefq - 广东省广州市移动 57
+      - github.com/freefq - 广东省广州市移动 58
+      - github.com/freefq - 加拿大  59
+      - github.com/freefq - 挪威  60
+      - github.com/freefq - 广西河池市联通 61
+      - github.com/freefq - 美国华盛顿Cogent通信公司 62
+      - github.com/freefq - 法国OVH SAS 63
+      - github.com/freefq - 法国OVH 64
+      - github.com/freefq - 美国华盛顿Cogent通信公司 65
+      - github.com/freefq - 越南  66
+      - github.com/freefq - 孟加拉  67
+      - github.com/freefq - 亚太地区  68
+      - github.com/freefq - 孟加拉  69
+      - github.com/freefq - 美国俄亥俄州都柏林Amazon数据中心 70
+      - github.com/freefq - 亚太地区  71
+      - github.com/freefq - 孟加拉  72
+      - github.com/freefq - 越南  73
+      - github.com/freefq - 日本  74
+      - github.com/freefq - 法国OVH机房SAS硬盘BGP主机 75
+      - github.com/freefq - 泰国  76
+      - github.com/freefq - 法国OVH SAS 77
+      - github.com/freefq - 法国OVH机房SAS硬盘BGP主机 78
+      - github.com/freefq - 美国CloudFlare节点 79
+      - github.com/freefq - 日本  80
+      - github.com/freefq - 英国  81
+      - github.com/freefq - 广东省广州市移动 82
+      - github.com/freefq - 广东省广州市移动 83
+      - github.com/freefq - 瑞典  84
+      - github.com/freefq - 法国格拉沃利讷OVH数据中心 85
+      - github.com/freefq - 荷兰北荷兰省阿姆斯特丹Sharktech数据中心 86
+      - github.com/freefq - 香港特别行政区 87
+      - github.com/freefq - 美国CloudFlare节点 88
+      - github.com/freefq - 德国Hetzner 89
+      - github.com/freefq - 香港阿里云 90
+      - github.com/freefq - 美国华盛顿州 91
+      - github.com/freefq - 加拿大  92
+      - github.com/freefq - 俄罗斯  93
+      - github.com/freefq - 台湾省  94
+      - github.com/freefq - 美国华盛顿Cogent通信公司 95
+      - github.com/freefq - 美国华盛顿Cogent通信公司 96
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - github.com/freefq - 台湾省中华电信(HiNet)数据中心 1
-      - github.com/freefq - 美国  2
-      - github.com/freefq - 台湾省中华电信(HiNet)数据中心 3
-      - github.com/freefq - 台湾省中华电信(HiNet)数据中心 4
-      - github.com/freefq - 广东省广州市移动 5
-      - github.com/freefq - 广东省移动 6
-      - github.com/freefq - 美国Microsoft数据中心 7
-      - github.com/freefq - 广东省广州市移动 8
-      - github.com/freefq - 韩国  9
-      - github.com/freefq - 广东省广州市移动 10
-      - github.com/freefq - 香港Microsoft数据中心 11
-      - github.com/freefq - 美国CloudFlare公司CDN节点 12
-      - github.com/freefq - 香港Microsoft数据中心 13
-      - github.com/freefq - 美国  14
-      - github.com/freefq - 孟加拉  15
-      - github.com/freefq - 广东省移动 16
-      - github.com/freefq - 美国Microsoft数据中心 17
-      - github.com/freefq - 孟加拉  18
-      - github.com/freefq - 美国CloudFlare公司CDN节点 19
-      - github.com/freefq - 孟加拉  20
-      - github.com/freefq - 越南  21
-      - github.com/freefq - 广东省广州市移动 22
-      - github.com/freefq - 湖南省联通 23
-      - github.com/freefq - 广东省广州市移动 24
-      - github.com/freefq - 广东省广州市移动 25
-      - github.com/freefq - 广东省移动 26
-      - github.com/freefq - 越南  27
-      - github.com/freefq - 美国CloudFlare节点 28
-      - github.com/freefq - 乌克兰  29
-      - github.com/freefq - 孟加拉  30
-      - github.com/freefq - 日本  31
-      - github.com/freefq - 日本  32
-      - github.com/freefq - 美国CloudFlare公司CDN节点 33
+      - github.com/freefq - 日本东京Choopa数据中心 1
+      - github.com/freefq - 美国华盛顿Cogent通信公司 2
+      - github.com/freefq - 美国  3
+      - github.com/freefq - 俄罗斯  4
+      - github.com/freefq - 美国华盛顿Cogent通信公司 5
+      - github.com/freefq - 台湾省台中市中华电信 6
+      - github.com/freefq - 美国华盛顿Cogent通信公司 7
+      - github.com/freefq - 美国阿里云 8
+      - github.com/freefq - 美国华盛顿Cogent通信公司 9
+      - github.com/freefq - 美国华盛顿州 10
+      - github.com/freefq - 美国华盛顿Cogent通信公司 11
+      - github.com/freefq - 印度  12
+      - github.com/freefq - 美国Akamai科技公司CDN网络节点 13
+      - github.com/freefq - 美国华盛顿Cogent通信公司 14
+      - github.com/freefq - 美国华盛顿Cogent通信公司 15
+      - github.com/freefq - 美国华盛顿Cogent通信公司 16
+      - github.com/freefq - 美国  17
+      - github.com/freefq - 美国亚利桑那州凤凰城Oracle云计算数据中心 18
+      - github.com/freefq - 北美地区  19
+      - github.com/freefq - 法国巴黎Online S.A.S 20
+      - github.com/freefq - 美国  21
+      - github.com/freefq - 澳大利亚  22
+      - github.com/freefq - 美国CloudFlare节点 23
+      - github.com/freefq - 意大利  24
+      - github.com/freefq - 美国华盛顿Cogent通信公司 25
+      - github.com/freefq - 美国华盛顿州 26
+      - github.com/freefq - 瑞典  27
+      - github.com/freefq - 美国华盛顿Cogent通信公司 28
+      - github.com/freefq - 美国  29
+      - github.com/freefq - 英国  30
+      - github.com/freefq - 乌克兰  31
+      - github.com/freefq - 英国  32
+      - github.com/freefq - 美国加利福尼亚州洛杉矶PetaExpress 33
+      - github.com/freefq - 日本东京Choopa数据中心 34
+      - github.com/freefq - 印度  35
+      - github.com/freefq - 美国华盛顿Cogent通信公司 36
+      - github.com/freefq - 越南  37
+      - github.com/freefq - 加拿大  38
+      - github.com/freefq - 加拿大  39
+      - github.com/freefq - 越南  40
+      - github.com/freefq - 湖北省武汉市移动 41
+      - github.com/freefq - 乌克兰  42
+      - github.com/freefq - 美国CloudFlare公司CDN节点 43
+      - github.com/freefq - 俄罗斯  44
+      - github.com/freefq - 印度尼西亚  45
+      - github.com/freefq - 法国OVH 46
+      - github.com/freefq - 美国  47
+      - github.com/freefq - 广东省移动 48
+      - github.com/freefq - 法国格拉沃利讷OVH数据中心 49
+      - github.com/freefq - 法国格拉沃利讷OVH数据中心 50
+      - github.com/freefq - 印度  51
+      - github.com/freefq - 法国OVH 52
+      - github.com/freefq - 美国CloudFlare公司CDN节点 53
+      - github.com/freefq - 瑞典  54
+      - github.com/freefq - 孟加拉  55
+      - github.com/freefq - 美国CloudFlare节点 56
+      - github.com/freefq - 广东省广州市移动 57
+      - github.com/freefq - 广东省广州市移动 58
+      - github.com/freefq - 加拿大  59
+      - github.com/freefq - 挪威  60
+      - github.com/freefq - 广西河池市联通 61
+      - github.com/freefq - 美国华盛顿Cogent通信公司 62
+      - github.com/freefq - 法国OVH SAS 63
+      - github.com/freefq - 法国OVH 64
+      - github.com/freefq - 美国华盛顿Cogent通信公司 65
+      - github.com/freefq - 越南  66
+      - github.com/freefq - 孟加拉  67
+      - github.com/freefq - 亚太地区  68
+      - github.com/freefq - 孟加拉  69
+      - github.com/freefq - 美国俄亥俄州都柏林Amazon数据中心 70
+      - github.com/freefq - 亚太地区  71
+      - github.com/freefq - 孟加拉  72
+      - github.com/freefq - 越南  73
+      - github.com/freefq - 日本  74
+      - github.com/freefq - 法国OVH机房SAS硬盘BGP主机 75
+      - github.com/freefq - 泰国  76
+      - github.com/freefq - 法国OVH SAS 77
+      - github.com/freefq - 法国OVH机房SAS硬盘BGP主机 78
+      - github.com/freefq - 美国CloudFlare节点 79
+      - github.com/freefq - 日本  80
+      - github.com/freefq - 英国  81
+      - github.com/freefq - 广东省广州市移动 82
+      - github.com/freefq - 广东省广州市移动 83
+      - github.com/freefq - 瑞典  84
+      - github.com/freefq - 法国格拉沃利讷OVH数据中心 85
+      - github.com/freefq - 荷兰北荷兰省阿姆斯特丹Sharktech数据中心 86
+      - github.com/freefq - 香港特别行政区 87
+      - github.com/freefq - 美国CloudFlare节点 88
+      - github.com/freefq - 德国Hetzner 89
+      - github.com/freefq - 香港阿里云 90
+      - github.com/freefq - 美国华盛顿州 91
+      - github.com/freefq - 加拿大  92
+      - github.com/freefq - 俄罗斯  93
+      - github.com/freefq - 台湾省  94
+      - github.com/freefq - 美国华盛顿Cogent通信公司 95
+      - github.com/freefq - 美国华盛顿Cogent通信公司 96
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - github.com/freefq - 台湾省中华电信(HiNet)数据中心 1
-      - github.com/freefq - 美国  2
-      - github.com/freefq - 台湾省中华电信(HiNet)数据中心 3
-      - github.com/freefq - 台湾省中华电信(HiNet)数据中心 4
-      - github.com/freefq - 广东省广州市移动 5
-      - github.com/freefq - 广东省移动 6
-      - github.com/freefq - 美国Microsoft数据中心 7
-      - github.com/freefq - 广东省广州市移动 8
-      - github.com/freefq - 韩国  9
-      - github.com/freefq - 广东省广州市移动 10
-      - github.com/freefq - 香港Microsoft数据中心 11
-      - github.com/freefq - 美国CloudFlare公司CDN节点 12
-      - github.com/freefq - 香港Microsoft数据中心 13
-      - github.com/freefq - 美国  14
-      - github.com/freefq - 孟加拉  15
-      - github.com/freefq - 广东省移动 16
-      - github.com/freefq - 美国Microsoft数据中心 17
-      - github.com/freefq - 孟加拉  18
-      - github.com/freefq - 美国CloudFlare公司CDN节点 19
-      - github.com/freefq - 孟加拉  20
-      - github.com/freefq - 越南  21
-      - github.com/freefq - 广东省广州市移动 22
-      - github.com/freefq - 湖南省联通 23
-      - github.com/freefq - 广东省广州市移动 24
-      - github.com/freefq - 广东省广州市移动 25
-      - github.com/freefq - 广东省移动 26
-      - github.com/freefq - 越南  27
-      - github.com/freefq - 美国CloudFlare节点 28
-      - github.com/freefq - 乌克兰  29
-      - github.com/freefq - 孟加拉  30
-      - github.com/freefq - 日本  31
-      - github.com/freefq - 日本  32
-      - github.com/freefq - 美国CloudFlare公司CDN节点 33
+      - github.com/freefq - 日本东京Choopa数据中心 1
+      - github.com/freefq - 美国华盛顿Cogent通信公司 2
+      - github.com/freefq - 美国  3
+      - github.com/freefq - 俄罗斯  4
+      - github.com/freefq - 美国华盛顿Cogent通信公司 5
+      - github.com/freefq - 台湾省台中市中华电信 6
+      - github.com/freefq - 美国华盛顿Cogent通信公司 7
+      - github.com/freefq - 美国阿里云 8
+      - github.com/freefq - 美国华盛顿Cogent通信公司 9
+      - github.com/freefq - 美国华盛顿州 10
+      - github.com/freefq - 美国华盛顿Cogent通信公司 11
+      - github.com/freefq - 印度  12
+      - github.com/freefq - 美国Akamai科技公司CDN网络节点 13
+      - github.com/freefq - 美国华盛顿Cogent通信公司 14
+      - github.com/freefq - 美国华盛顿Cogent通信公司 15
+      - github.com/freefq - 美国华盛顿Cogent通信公司 16
+      - github.com/freefq - 美国  17
+      - github.com/freefq - 美国亚利桑那州凤凰城Oracle云计算数据中心 18
+      - github.com/freefq - 北美地区  19
+      - github.com/freefq - 法国巴黎Online S.A.S 20
+      - github.com/freefq - 美国  21
+      - github.com/freefq - 澳大利亚  22
+      - github.com/freefq - 美国CloudFlare节点 23
+      - github.com/freefq - 意大利  24
+      - github.com/freefq - 美国华盛顿Cogent通信公司 25
+      - github.com/freefq - 美国华盛顿州 26
+      - github.com/freefq - 瑞典  27
+      - github.com/freefq - 美国华盛顿Cogent通信公司 28
+      - github.com/freefq - 美国  29
+      - github.com/freefq - 英国  30
+      - github.com/freefq - 乌克兰  31
+      - github.com/freefq - 英国  32
+      - github.com/freefq - 美国加利福尼亚州洛杉矶PetaExpress 33
+      - github.com/freefq - 日本东京Choopa数据中心 34
+      - github.com/freefq - 印度  35
+      - github.com/freefq - 美国华盛顿Cogent通信公司 36
+      - github.com/freefq - 越南  37
+      - github.com/freefq - 加拿大  38
+      - github.com/freefq - 加拿大  39
+      - github.com/freefq - 越南  40
+      - github.com/freefq - 湖北省武汉市移动 41
+      - github.com/freefq - 乌克兰  42
+      - github.com/freefq - 美国CloudFlare公司CDN节点 43
+      - github.com/freefq - 俄罗斯  44
+      - github.com/freefq - 印度尼西亚  45
+      - github.com/freefq - 法国OVH 46
+      - github.com/freefq - 美国  47
+      - github.com/freefq - 广东省移动 48
+      - github.com/freefq - 法国格拉沃利讷OVH数据中心 49
+      - github.com/freefq - 法国格拉沃利讷OVH数据中心 50
+      - github.com/freefq - 印度  51
+      - github.com/freefq - 法国OVH 52
+      - github.com/freefq - 美国CloudFlare公司CDN节点 53
+      - github.com/freefq - 瑞典  54
+      - github.com/freefq - 孟加拉  55
+      - github.com/freefq - 美国CloudFlare节点 56
+      - github.com/freefq - 广东省广州市移动 57
+      - github.com/freefq - 广东省广州市移动 58
+      - github.com/freefq - 加拿大  59
+      - github.com/freefq - 挪威  60
+      - github.com/freefq - 广西河池市联通 61
+      - github.com/freefq - 美国华盛顿Cogent通信公司 62
+      - github.com/freefq - 法国OVH SAS 63
+      - github.com/freefq - 法国OVH 64
+      - github.com/freefq - 美国华盛顿Cogent通信公司 65
+      - github.com/freefq - 越南  66
+      - github.com/freefq - 孟加拉  67
+      - github.com/freefq - 亚太地区  68
+      - github.com/freefq - 孟加拉  69
+      - github.com/freefq - 美国俄亥俄州都柏林Amazon数据中心 70
+      - github.com/freefq - 亚太地区  71
+      - github.com/freefq - 孟加拉  72
+      - github.com/freefq - 越南  73
+      - github.com/freefq - 日本  74
+      - github.com/freefq - 法国OVH机房SAS硬盘BGP主机 75
+      - github.com/freefq - 泰国  76
+      - github.com/freefq - 法国OVH SAS 77
+      - github.com/freefq - 法国OVH机房SAS硬盘BGP主机 78
+      - github.com/freefq - 美国CloudFlare节点 79
+      - github.com/freefq - 日本  80
+      - github.com/freefq - 英国  81
+      - github.com/freefq - 广东省广州市移动 82
+      - github.com/freefq - 广东省广州市移动 83
+      - github.com/freefq - 瑞典  84
+      - github.com/freefq - 法国格拉沃利讷OVH数据中心 85
+      - github.com/freefq - 荷兰北荷兰省阿姆斯特丹Sharktech数据中心 86
+      - github.com/freefq - 香港特别行政区 87
+      - github.com/freefq - 美国CloudFlare节点 88
+      - github.com/freefq - 德国Hetzner 89
+      - github.com/freefq - 香港阿里云 90
+      - github.com/freefq - 美国华盛顿州 91
+      - github.com/freefq - 加拿大  92
+      - github.com/freefq - 俄罗斯  93
+      - github.com/freefq - 台湾省  94
+      - github.com/freefq - 美国华盛顿Cogent通信公司 95
+      - github.com/freefq - 美国华盛顿Cogent通信公司 96
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -172,164 +424,415 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - github.com/freefq - 台湾省中华电信(HiNet)数据中心 1
-      - github.com/freefq - 美国  2
-      - github.com/freefq - 台湾省中华电信(HiNet)数据中心 3
-      - github.com/freefq - 台湾省中华电信(HiNet)数据中心 4
-      - github.com/freefq - 广东省广州市移动 5
-      - github.com/freefq - 广东省移动 6
-      - github.com/freefq - 美国Microsoft数据中心 7
-      - github.com/freefq - 广东省广州市移动 8
-      - github.com/freefq - 韩国  9
-      - github.com/freefq - 广东省广州市移动 10
-      - github.com/freefq - 香港Microsoft数据中心 11
-      - github.com/freefq - 美国CloudFlare公司CDN节点 12
-      - github.com/freefq - 香港Microsoft数据中心 13
-      - github.com/freefq - 美国  14
-      - github.com/freefq - 孟加拉  15
-      - github.com/freefq - 广东省移动 16
-      - github.com/freefq - 美国Microsoft数据中心 17
-      - github.com/freefq - 孟加拉  18
-      - github.com/freefq - 美国CloudFlare公司CDN节点 19
-      - github.com/freefq - 孟加拉  20
-      - github.com/freefq - 越南  21
-      - github.com/freefq - 广东省广州市移动 22
-      - github.com/freefq - 湖南省联通 23
-      - github.com/freefq - 广东省广州市移动 24
-      - github.com/freefq - 广东省广州市移动 25
-      - github.com/freefq - 广东省移动 26
-      - github.com/freefq - 越南  27
-      - github.com/freefq - 美国CloudFlare节点 28
-      - github.com/freefq - 乌克兰  29
-      - github.com/freefq - 孟加拉  30
-      - github.com/freefq - 日本  31
-      - github.com/freefq - 日本  32
-      - github.com/freefq - 美国CloudFlare公司CDN节点 33
+      - github.com/freefq - 日本东京Choopa数据中心 1
+      - github.com/freefq - 美国华盛顿Cogent通信公司 2
+      - github.com/freefq - 美国  3
+      - github.com/freefq - 俄罗斯  4
+      - github.com/freefq - 美国华盛顿Cogent通信公司 5
+      - github.com/freefq - 台湾省台中市中华电信 6
+      - github.com/freefq - 美国华盛顿Cogent通信公司 7
+      - github.com/freefq - 美国阿里云 8
+      - github.com/freefq - 美国华盛顿Cogent通信公司 9
+      - github.com/freefq - 美国华盛顿州 10
+      - github.com/freefq - 美国华盛顿Cogent通信公司 11
+      - github.com/freefq - 印度  12
+      - github.com/freefq - 美国Akamai科技公司CDN网络节点 13
+      - github.com/freefq - 美国华盛顿Cogent通信公司 14
+      - github.com/freefq - 美国华盛顿Cogent通信公司 15
+      - github.com/freefq - 美国华盛顿Cogent通信公司 16
+      - github.com/freefq - 美国  17
+      - github.com/freefq - 美国亚利桑那州凤凰城Oracle云计算数据中心 18
+      - github.com/freefq - 北美地区  19
+      - github.com/freefq - 法国巴黎Online S.A.S 20
+      - github.com/freefq - 美国  21
+      - github.com/freefq - 澳大利亚  22
+      - github.com/freefq - 美国CloudFlare节点 23
+      - github.com/freefq - 意大利  24
+      - github.com/freefq - 美国华盛顿Cogent通信公司 25
+      - github.com/freefq - 美国华盛顿州 26
+      - github.com/freefq - 瑞典  27
+      - github.com/freefq - 美国华盛顿Cogent通信公司 28
+      - github.com/freefq - 美国  29
+      - github.com/freefq - 英国  30
+      - github.com/freefq - 乌克兰  31
+      - github.com/freefq - 英国  32
+      - github.com/freefq - 美国加利福尼亚州洛杉矶PetaExpress 33
+      - github.com/freefq - 日本东京Choopa数据中心 34
+      - github.com/freefq - 印度  35
+      - github.com/freefq - 美国华盛顿Cogent通信公司 36
+      - github.com/freefq - 越南  37
+      - github.com/freefq - 加拿大  38
+      - github.com/freefq - 加拿大  39
+      - github.com/freefq - 越南  40
+      - github.com/freefq - 湖北省武汉市移动 41
+      - github.com/freefq - 乌克兰  42
+      - github.com/freefq - 美国CloudFlare公司CDN节点 43
+      - github.com/freefq - 俄罗斯  44
+      - github.com/freefq - 印度尼西亚  45
+      - github.com/freefq - 法国OVH 46
+      - github.com/freefq - 美国  47
+      - github.com/freefq - 广东省移动 48
+      - github.com/freefq - 法国格拉沃利讷OVH数据中心 49
+      - github.com/freefq - 法国格拉沃利讷OVH数据中心 50
+      - github.com/freefq - 印度  51
+      - github.com/freefq - 法国OVH 52
+      - github.com/freefq - 美国CloudFlare公司CDN节点 53
+      - github.com/freefq - 瑞典  54
+      - github.com/freefq - 孟加拉  55
+      - github.com/freefq - 美国CloudFlare节点 56
+      - github.com/freefq - 广东省广州市移动 57
+      - github.com/freefq - 广东省广州市移动 58
+      - github.com/freefq - 加拿大  59
+      - github.com/freefq - 挪威  60
+      - github.com/freefq - 广西河池市联通 61
+      - github.com/freefq - 美国华盛顿Cogent通信公司 62
+      - github.com/freefq - 法国OVH SAS 63
+      - github.com/freefq - 法国OVH 64
+      - github.com/freefq - 美国华盛顿Cogent通信公司 65
+      - github.com/freefq - 越南  66
+      - github.com/freefq - 孟加拉  67
+      - github.com/freefq - 亚太地区  68
+      - github.com/freefq - 孟加拉  69
+      - github.com/freefq - 美国俄亥俄州都柏林Amazon数据中心 70
+      - github.com/freefq - 亚太地区  71
+      - github.com/freefq - 孟加拉  72
+      - github.com/freefq - 越南  73
+      - github.com/freefq - 日本  74
+      - github.com/freefq - 法国OVH机房SAS硬盘BGP主机 75
+      - github.com/freefq - 泰国  76
+      - github.com/freefq - 法国OVH SAS 77
+      - github.com/freefq - 法国OVH机房SAS硬盘BGP主机 78
+      - github.com/freefq - 美国CloudFlare节点 79
+      - github.com/freefq - 日本  80
+      - github.com/freefq - 英国  81
+      - github.com/freefq - 广东省广州市移动 82
+      - github.com/freefq - 广东省广州市移动 83
+      - github.com/freefq - 瑞典  84
+      - github.com/freefq - 法国格拉沃利讷OVH数据中心 85
+      - github.com/freefq - 荷兰北荷兰省阿姆斯特丹Sharktech数据中心 86
+      - github.com/freefq - 香港特别行政区 87
+      - github.com/freefq - 美国CloudFlare节点 88
+      - github.com/freefq - 德国Hetzner 89
+      - github.com/freefq - 香港阿里云 90
+      - github.com/freefq - 美国华盛顿州 91
+      - github.com/freefq - 加拿大  92
+      - github.com/freefq - 俄罗斯  93
+      - github.com/freefq - 台湾省  94
+      - github.com/freefq - 美国华盛顿Cogent通信公司 95
+      - github.com/freefq - 美国华盛顿Cogent通信公司 96
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - github.com/freefq - 台湾省中华电信(HiNet)数据中心 1
-      - github.com/freefq - 台湾省中华电信(HiNet)数据中心 3
-      - github.com/freefq - 台湾省中华电信(HiNet)数据中心 4
-      - github.com/freefq - 香港Microsoft数据中心 11
-      - github.com/freefq - 香港Microsoft数据中心 13
+      - github.com/freefq - 台湾省台中市中华电信 6
+      - github.com/freefq - 香港特别行政区 87
+      - github.com/freefq - 香港阿里云 90
+      - github.com/freefq - 台湾省  94
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - github.com/freefq - 台湾省中华电信(HiNet)数据中心 1
-      - github.com/freefq - 美国  2
-      - github.com/freefq - 台湾省中华电信(HiNet)数据中心 3
-      - github.com/freefq - 台湾省中华电信(HiNet)数据中心 4
-      - github.com/freefq - 广东省广州市移动 5
-      - github.com/freefq - 广东省移动 6
-      - github.com/freefq - 美国Microsoft数据中心 7
-      - github.com/freefq - 广东省广州市移动 8
-      - github.com/freefq - 韩国  9
-      - github.com/freefq - 广东省广州市移动 10
-      - github.com/freefq - 香港Microsoft数据中心 11
-      - github.com/freefq - 美国CloudFlare公司CDN节点 12
-      - github.com/freefq - 香港Microsoft数据中心 13
-      - github.com/freefq - 美国  14
-      - github.com/freefq - 孟加拉  15
-      - github.com/freefq - 广东省移动 16
-      - github.com/freefq - 美国Microsoft数据中心 17
-      - github.com/freefq - 孟加拉  18
-      - github.com/freefq - 美国CloudFlare公司CDN节点 19
-      - github.com/freefq - 孟加拉  20
-      - github.com/freefq - 越南  21
-      - github.com/freefq - 广东省广州市移动 22
-      - github.com/freefq - 湖南省联通 23
-      - github.com/freefq - 广东省广州市移动 24
-      - github.com/freefq - 广东省广州市移动 25
-      - github.com/freefq - 广东省移动 26
-      - github.com/freefq - 越南  27
-      - github.com/freefq - 美国CloudFlare节点 28
-      - github.com/freefq - 乌克兰  29
-      - github.com/freefq - 孟加拉  30
-      - github.com/freefq - 日本  31
-      - github.com/freefq - 日本  32
-      - github.com/freefq - 美国CloudFlare公司CDN节点 33
+      - github.com/freefq - 日本东京Choopa数据中心 1
+      - github.com/freefq - 美国华盛顿Cogent通信公司 2
+      - github.com/freefq - 美国  3
+      - github.com/freefq - 俄罗斯  4
+      - github.com/freefq - 美国华盛顿Cogent通信公司 5
+      - github.com/freefq - 台湾省台中市中华电信 6
+      - github.com/freefq - 美国华盛顿Cogent通信公司 7
+      - github.com/freefq - 美国阿里云 8
+      - github.com/freefq - 美国华盛顿Cogent通信公司 9
+      - github.com/freefq - 美国华盛顿州 10
+      - github.com/freefq - 美国华盛顿Cogent通信公司 11
+      - github.com/freefq - 印度  12
+      - github.com/freefq - 美国Akamai科技公司CDN网络节点 13
+      - github.com/freefq - 美国华盛顿Cogent通信公司 14
+      - github.com/freefq - 美国华盛顿Cogent通信公司 15
+      - github.com/freefq - 美国华盛顿Cogent通信公司 16
+      - github.com/freefq - 美国  17
+      - github.com/freefq - 美国亚利桑那州凤凰城Oracle云计算数据中心 18
+      - github.com/freefq - 北美地区  19
+      - github.com/freefq - 法国巴黎Online S.A.S 20
+      - github.com/freefq - 美国  21
+      - github.com/freefq - 澳大利亚  22
+      - github.com/freefq - 美国CloudFlare节点 23
+      - github.com/freefq - 意大利  24
+      - github.com/freefq - 美国华盛顿Cogent通信公司 25
+      - github.com/freefq - 美国华盛顿州 26
+      - github.com/freefq - 瑞典  27
+      - github.com/freefq - 美国华盛顿Cogent通信公司 28
+      - github.com/freefq - 美国  29
+      - github.com/freefq - 英国  30
+      - github.com/freefq - 乌克兰  31
+      - github.com/freefq - 英国  32
+      - github.com/freefq - 美国加利福尼亚州洛杉矶PetaExpress 33
+      - github.com/freefq - 日本东京Choopa数据中心 34
+      - github.com/freefq - 印度  35
+      - github.com/freefq - 美国华盛顿Cogent通信公司 36
+      - github.com/freefq - 越南  37
+      - github.com/freefq - 加拿大  38
+      - github.com/freefq - 加拿大  39
+      - github.com/freefq - 越南  40
+      - github.com/freefq - 湖北省武汉市移动 41
+      - github.com/freefq - 乌克兰  42
+      - github.com/freefq - 美国CloudFlare公司CDN节点 43
+      - github.com/freefq - 俄罗斯  44
+      - github.com/freefq - 印度尼西亚  45
+      - github.com/freefq - 法国OVH 46
+      - github.com/freefq - 美国  47
+      - github.com/freefq - 广东省移动 48
+      - github.com/freefq - 法国格拉沃利讷OVH数据中心 49
+      - github.com/freefq - 法国格拉沃利讷OVH数据中心 50
+      - github.com/freefq - 印度  51
+      - github.com/freefq - 法国OVH 52
+      - github.com/freefq - 美国CloudFlare公司CDN节点 53
+      - github.com/freefq - 瑞典  54
+      - github.com/freefq - 孟加拉  55
+      - github.com/freefq - 美国CloudFlare节点 56
+      - github.com/freefq - 广东省广州市移动 57
+      - github.com/freefq - 广东省广州市移动 58
+      - github.com/freefq - 加拿大  59
+      - github.com/freefq - 挪威  60
+      - github.com/freefq - 广西河池市联通 61
+      - github.com/freefq - 美国华盛顿Cogent通信公司 62
+      - github.com/freefq - 法国OVH SAS 63
+      - github.com/freefq - 法国OVH 64
+      - github.com/freefq - 美国华盛顿Cogent通信公司 65
+      - github.com/freefq - 越南  66
+      - github.com/freefq - 孟加拉  67
+      - github.com/freefq - 亚太地区  68
+      - github.com/freefq - 孟加拉  69
+      - github.com/freefq - 美国俄亥俄州都柏林Amazon数据中心 70
+      - github.com/freefq - 亚太地区  71
+      - github.com/freefq - 孟加拉  72
+      - github.com/freefq - 越南  73
+      - github.com/freefq - 日本  74
+      - github.com/freefq - 法国OVH机房SAS硬盘BGP主机 75
+      - github.com/freefq - 泰国  76
+      - github.com/freefq - 法国OVH SAS 77
+      - github.com/freefq - 法国OVH机房SAS硬盘BGP主机 78
+      - github.com/freefq - 美国CloudFlare节点 79
+      - github.com/freefq - 日本  80
+      - github.com/freefq - 英国  81
+      - github.com/freefq - 广东省广州市移动 82
+      - github.com/freefq - 广东省广州市移动 83
+      - github.com/freefq - 瑞典  84
+      - github.com/freefq - 法国格拉沃利讷OVH数据中心 85
+      - github.com/freefq - 荷兰北荷兰省阿姆斯特丹Sharktech数据中心 86
+      - github.com/freefq - 香港特别行政区 87
+      - github.com/freefq - 美国CloudFlare节点 88
+      - github.com/freefq - 德国Hetzner 89
+      - github.com/freefq - 香港阿里云 90
+      - github.com/freefq - 美国华盛顿州 91
+      - github.com/freefq - 加拿大  92
+      - github.com/freefq - 俄罗斯  93
+      - github.com/freefq - 台湾省  94
+      - github.com/freefq - 美国华盛顿Cogent通信公司 95
+      - github.com/freefq - 美国华盛顿Cogent通信公司 96
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - github.com/freefq - 台湾省中华电信(HiNet)数据中心 1
-      - github.com/freefq - 美国  2
-      - github.com/freefq - 台湾省中华电信(HiNet)数据中心 3
-      - github.com/freefq - 台湾省中华电信(HiNet)数据中心 4
-      - github.com/freefq - 广东省广州市移动 5
-      - github.com/freefq - 广东省移动 6
-      - github.com/freefq - 美国Microsoft数据中心 7
-      - github.com/freefq - 广东省广州市移动 8
-      - github.com/freefq - 韩国  9
-      - github.com/freefq - 广东省广州市移动 10
-      - github.com/freefq - 香港Microsoft数据中心 11
-      - github.com/freefq - 美国CloudFlare公司CDN节点 12
-      - github.com/freefq - 香港Microsoft数据中心 13
-      - github.com/freefq - 美国  14
-      - github.com/freefq - 孟加拉  15
-      - github.com/freefq - 广东省移动 16
-      - github.com/freefq - 美国Microsoft数据中心 17
-      - github.com/freefq - 孟加拉  18
-      - github.com/freefq - 美国CloudFlare公司CDN节点 19
-      - github.com/freefq - 孟加拉  20
-      - github.com/freefq - 越南  21
-      - github.com/freefq - 广东省广州市移动 22
-      - github.com/freefq - 湖南省联通 23
-      - github.com/freefq - 广东省广州市移动 24
-      - github.com/freefq - 广东省广州市移动 25
-      - github.com/freefq - 广东省移动 26
-      - github.com/freefq - 越南  27
-      - github.com/freefq - 美国CloudFlare节点 28
-      - github.com/freefq - 乌克兰  29
-      - github.com/freefq - 孟加拉  30
-      - github.com/freefq - 日本  31
-      - github.com/freefq - 日本  32
-      - github.com/freefq - 美国CloudFlare公司CDN节点 33
+      - github.com/freefq - 日本东京Choopa数据中心 1
+      - github.com/freefq - 美国华盛顿Cogent通信公司 2
+      - github.com/freefq - 美国  3
+      - github.com/freefq - 俄罗斯  4
+      - github.com/freefq - 美国华盛顿Cogent通信公司 5
+      - github.com/freefq - 台湾省台中市中华电信 6
+      - github.com/freefq - 美国华盛顿Cogent通信公司 7
+      - github.com/freefq - 美国阿里云 8
+      - github.com/freefq - 美国华盛顿Cogent通信公司 9
+      - github.com/freefq - 美国华盛顿州 10
+      - github.com/freefq - 美国华盛顿Cogent通信公司 11
+      - github.com/freefq - 印度  12
+      - github.com/freefq - 美国Akamai科技公司CDN网络节点 13
+      - github.com/freefq - 美国华盛顿Cogent通信公司 14
+      - github.com/freefq - 美国华盛顿Cogent通信公司 15
+      - github.com/freefq - 美国华盛顿Cogent通信公司 16
+      - github.com/freefq - 美国  17
+      - github.com/freefq - 美国亚利桑那州凤凰城Oracle云计算数据中心 18
+      - github.com/freefq - 北美地区  19
+      - github.com/freefq - 法国巴黎Online S.A.S 20
+      - github.com/freefq - 美国  21
+      - github.com/freefq - 澳大利亚  22
+      - github.com/freefq - 美国CloudFlare节点 23
+      - github.com/freefq - 意大利  24
+      - github.com/freefq - 美国华盛顿Cogent通信公司 25
+      - github.com/freefq - 美国华盛顿州 26
+      - github.com/freefq - 瑞典  27
+      - github.com/freefq - 美国华盛顿Cogent通信公司 28
+      - github.com/freefq - 美国  29
+      - github.com/freefq - 英国  30
+      - github.com/freefq - 乌克兰  31
+      - github.com/freefq - 英国  32
+      - github.com/freefq - 美国加利福尼亚州洛杉矶PetaExpress 33
+      - github.com/freefq - 日本东京Choopa数据中心 34
+      - github.com/freefq - 印度  35
+      - github.com/freefq - 美国华盛顿Cogent通信公司 36
+      - github.com/freefq - 越南  37
+      - github.com/freefq - 加拿大  38
+      - github.com/freefq - 加拿大  39
+      - github.com/freefq - 越南  40
+      - github.com/freefq - 湖北省武汉市移动 41
+      - github.com/freefq - 乌克兰  42
+      - github.com/freefq - 美国CloudFlare公司CDN节点 43
+      - github.com/freefq - 俄罗斯  44
+      - github.com/freefq - 印度尼西亚  45
+      - github.com/freefq - 法国OVH 46
+      - github.com/freefq - 美国  47
+      - github.com/freefq - 广东省移动 48
+      - github.com/freefq - 法国格拉沃利讷OVH数据中心 49
+      - github.com/freefq - 法国格拉沃利讷OVH数据中心 50
+      - github.com/freefq - 印度  51
+      - github.com/freefq - 法国OVH 52
+      - github.com/freefq - 美国CloudFlare公司CDN节点 53
+      - github.com/freefq - 瑞典  54
+      - github.com/freefq - 孟加拉  55
+      - github.com/freefq - 美国CloudFlare节点 56
+      - github.com/freefq - 广东省广州市移动 57
+      - github.com/freefq - 广东省广州市移动 58
+      - github.com/freefq - 加拿大  59
+      - github.com/freefq - 挪威  60
+      - github.com/freefq - 广西河池市联通 61
+      - github.com/freefq - 美国华盛顿Cogent通信公司 62
+      - github.com/freefq - 法国OVH SAS 63
+      - github.com/freefq - 法国OVH 64
+      - github.com/freefq - 美国华盛顿Cogent通信公司 65
+      - github.com/freefq - 越南  66
+      - github.com/freefq - 孟加拉  67
+      - github.com/freefq - 亚太地区  68
+      - github.com/freefq - 孟加拉  69
+      - github.com/freefq - 美国俄亥俄州都柏林Amazon数据中心 70
+      - github.com/freefq - 亚太地区  71
+      - github.com/freefq - 孟加拉  72
+      - github.com/freefq - 越南  73
+      - github.com/freefq - 日本  74
+      - github.com/freefq - 法国OVH机房SAS硬盘BGP主机 75
+      - github.com/freefq - 泰国  76
+      - github.com/freefq - 法国OVH SAS 77
+      - github.com/freefq - 法国OVH机房SAS硬盘BGP主机 78
+      - github.com/freefq - 美国CloudFlare节点 79
+      - github.com/freefq - 日本  80
+      - github.com/freefq - 英国  81
+      - github.com/freefq - 广东省广州市移动 82
+      - github.com/freefq - 广东省广州市移动 83
+      - github.com/freefq - 瑞典  84
+      - github.com/freefq - 法国格拉沃利讷OVH数据中心 85
+      - github.com/freefq - 荷兰北荷兰省阿姆斯特丹Sharktech数据中心 86
+      - github.com/freefq - 香港特别行政区 87
+      - github.com/freefq - 美国CloudFlare节点 88
+      - github.com/freefq - 德国Hetzner 89
+      - github.com/freefq - 香港阿里云 90
+      - github.com/freefq - 美国华盛顿州 91
+      - github.com/freefq - 加拿大  92
+      - github.com/freefq - 俄罗斯  93
+      - github.com/freefq - 台湾省  94
+      - github.com/freefq - 美国华盛顿Cogent通信公司 95
+      - github.com/freefq - 美国华盛顿Cogent通信公司 96
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - github.com/freefq - 台湾省中华电信(HiNet)数据中心 1
-      - github.com/freefq - 美国  2
-      - github.com/freefq - 台湾省中华电信(HiNet)数据中心 3
-      - github.com/freefq - 台湾省中华电信(HiNet)数据中心 4
-      - github.com/freefq - 广东省广州市移动 5
-      - github.com/freefq - 广东省移动 6
-      - github.com/freefq - 美国Microsoft数据中心 7
-      - github.com/freefq - 广东省广州市移动 8
-      - github.com/freefq - 韩国  9
-      - github.com/freefq - 广东省广州市移动 10
-      - github.com/freefq - 香港Microsoft数据中心 11
-      - github.com/freefq - 美国CloudFlare公司CDN节点 12
-      - github.com/freefq - 香港Microsoft数据中心 13
-      - github.com/freefq - 美国  14
-      - github.com/freefq - 孟加拉  15
-      - github.com/freefq - 广东省移动 16
-      - github.com/freefq - 美国Microsoft数据中心 17
-      - github.com/freefq - 孟加拉  18
-      - github.com/freefq - 美国CloudFlare公司CDN节点 19
-      - github.com/freefq - 孟加拉  20
-      - github.com/freefq - 越南  21
-      - github.com/freefq - 广东省广州市移动 22
-      - github.com/freefq - 湖南省联通 23
-      - github.com/freefq - 广东省广州市移动 24
-      - github.com/freefq - 广东省广州市移动 25
-      - github.com/freefq - 广东省移动 26
-      - github.com/freefq - 越南  27
-      - github.com/freefq - 美国CloudFlare节点 28
-      - github.com/freefq - 乌克兰  29
-      - github.com/freefq - 孟加拉  30
-      - github.com/freefq - 日本  31
-      - github.com/freefq - 日本  32
-      - github.com/freefq - 美国CloudFlare公司CDN节点 33
+      - github.com/freefq - 日本东京Choopa数据中心 1
+      - github.com/freefq - 美国华盛顿Cogent通信公司 2
+      - github.com/freefq - 美国  3
+      - github.com/freefq - 俄罗斯  4
+      - github.com/freefq - 美国华盛顿Cogent通信公司 5
+      - github.com/freefq - 台湾省台中市中华电信 6
+      - github.com/freefq - 美国华盛顿Cogent通信公司 7
+      - github.com/freefq - 美国阿里云 8
+      - github.com/freefq - 美国华盛顿Cogent通信公司 9
+      - github.com/freefq - 美国华盛顿州 10
+      - github.com/freefq - 美国华盛顿Cogent通信公司 11
+      - github.com/freefq - 印度  12
+      - github.com/freefq - 美国Akamai科技公司CDN网络节点 13
+      - github.com/freefq - 美国华盛顿Cogent通信公司 14
+      - github.com/freefq - 美国华盛顿Cogent通信公司 15
+      - github.com/freefq - 美国华盛顿Cogent通信公司 16
+      - github.com/freefq - 美国  17
+      - github.com/freefq - 美国亚利桑那州凤凰城Oracle云计算数据中心 18
+      - github.com/freefq - 北美地区  19
+      - github.com/freefq - 法国巴黎Online S.A.S 20
+      - github.com/freefq - 美国  21
+      - github.com/freefq - 澳大利亚  22
+      - github.com/freefq - 美国CloudFlare节点 23
+      - github.com/freefq - 意大利  24
+      - github.com/freefq - 美国华盛顿Cogent通信公司 25
+      - github.com/freefq - 美国华盛顿州 26
+      - github.com/freefq - 瑞典  27
+      - github.com/freefq - 美国华盛顿Cogent通信公司 28
+      - github.com/freefq - 美国  29
+      - github.com/freefq - 英国  30
+      - github.com/freefq - 乌克兰  31
+      - github.com/freefq - 英国  32
+      - github.com/freefq - 美国加利福尼亚州洛杉矶PetaExpress 33
+      - github.com/freefq - 日本东京Choopa数据中心 34
+      - github.com/freefq - 印度  35
+      - github.com/freefq - 美国华盛顿Cogent通信公司 36
+      - github.com/freefq - 越南  37
+      - github.com/freefq - 加拿大  38
+      - github.com/freefq - 加拿大  39
+      - github.com/freefq - 越南  40
+      - github.com/freefq - 湖北省武汉市移动 41
+      - github.com/freefq - 乌克兰  42
+      - github.com/freefq - 美国CloudFlare公司CDN节点 43
+      - github.com/freefq - 俄罗斯  44
+      - github.com/freefq - 印度尼西亚  45
+      - github.com/freefq - 法国OVH 46
+      - github.com/freefq - 美国  47
+      - github.com/freefq - 广东省移动 48
+      - github.com/freefq - 法国格拉沃利讷OVH数据中心 49
+      - github.com/freefq - 法国格拉沃利讷OVH数据中心 50
+      - github.com/freefq - 印度  51
+      - github.com/freefq - 法国OVH 52
+      - github.com/freefq - 美国CloudFlare公司CDN节点 53
+      - github.com/freefq - 瑞典  54
+      - github.com/freefq - 孟加拉  55
+      - github.com/freefq - 美国CloudFlare节点 56
+      - github.com/freefq - 广东省广州市移动 57
+      - github.com/freefq - 广东省广州市移动 58
+      - github.com/freefq - 加拿大  59
+      - github.com/freefq - 挪威  60
+      - github.com/freefq - 广西河池市联通 61
+      - github.com/freefq - 美国华盛顿Cogent通信公司 62
+      - github.com/freefq - 法国OVH SAS 63
+      - github.com/freefq - 法国OVH 64
+      - github.com/freefq - 美国华盛顿Cogent通信公司 65
+      - github.com/freefq - 越南  66
+      - github.com/freefq - 孟加拉  67
+      - github.com/freefq - 亚太地区  68
+      - github.com/freefq - 孟加拉  69
+      - github.com/freefq - 美国俄亥俄州都柏林Amazon数据中心 70
+      - github.com/freefq - 亚太地区  71
+      - github.com/freefq - 孟加拉  72
+      - github.com/freefq - 越南  73
+      - github.com/freefq - 日本  74
+      - github.com/freefq - 法国OVH机房SAS硬盘BGP主机 75
+      - github.com/freefq - 泰国  76
+      - github.com/freefq - 法国OVH SAS 77
+      - github.com/freefq - 法国OVH机房SAS硬盘BGP主机 78
+      - github.com/freefq - 美国CloudFlare节点 79
+      - github.com/freefq - 日本  80
+      - github.com/freefq - 英国  81
+      - github.com/freefq - 广东省广州市移动 82
+      - github.com/freefq - 广东省广州市移动 83
+      - github.com/freefq - 瑞典  84
+      - github.com/freefq - 法国格拉沃利讷OVH数据中心 85
+      - github.com/freefq - 荷兰北荷兰省阿姆斯特丹Sharktech数据中心 86
+      - github.com/freefq - 香港特别行政区 87
+      - github.com/freefq - 美国CloudFlare节点 88
+      - github.com/freefq - 德国Hetzner 89
+      - github.com/freefq - 香港阿里云 90
+      - github.com/freefq - 美国华盛顿州 91
+      - github.com/freefq - 加拿大  92
+      - github.com/freefq - 俄罗斯  93
+      - github.com/freefq - 台湾省  94
+      - github.com/freefq - 美国华盛顿Cogent通信公司 95
+      - github.com/freefq - 美国华盛顿Cogent通信公司 96
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -345,39 +848,102 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - github.com/freefq - 台湾省中华电信(HiNet)数据中心 1
-      - github.com/freefq - 美国  2
-      - github.com/freefq - 台湾省中华电信(HiNet)数据中心 3
-      - github.com/freefq - 台湾省中华电信(HiNet)数据中心 4
-      - github.com/freefq - 广东省广州市移动 5
-      - github.com/freefq - 广东省移动 6
-      - github.com/freefq - 美国Microsoft数据中心 7
-      - github.com/freefq - 广东省广州市移动 8
-      - github.com/freefq - 韩国  9
-      - github.com/freefq - 广东省广州市移动 10
-      - github.com/freefq - 香港Microsoft数据中心 11
-      - github.com/freefq - 美国CloudFlare公司CDN节点 12
-      - github.com/freefq - 香港Microsoft数据中心 13
-      - github.com/freefq - 美国  14
-      - github.com/freefq - 孟加拉  15
-      - github.com/freefq - 广东省移动 16
-      - github.com/freefq - 美国Microsoft数据中心 17
-      - github.com/freefq - 孟加拉  18
-      - github.com/freefq - 美国CloudFlare公司CDN节点 19
-      - github.com/freefq - 孟加拉  20
-      - github.com/freefq - 越南  21
-      - github.com/freefq - 广东省广州市移动 22
-      - github.com/freefq - 湖南省联通 23
-      - github.com/freefq - 广东省广州市移动 24
-      - github.com/freefq - 广东省广州市移动 25
-      - github.com/freefq - 广东省移动 26
-      - github.com/freefq - 越南  27
-      - github.com/freefq - 美国CloudFlare节点 28
-      - github.com/freefq - 乌克兰  29
-      - github.com/freefq - 孟加拉  30
-      - github.com/freefq - 日本  31
-      - github.com/freefq - 日本  32
-      - github.com/freefq - 美国CloudFlare公司CDN节点 33
+      - github.com/freefq - 日本东京Choopa数据中心 1
+      - github.com/freefq - 美国华盛顿Cogent通信公司 2
+      - github.com/freefq - 美国  3
+      - github.com/freefq - 俄罗斯  4
+      - github.com/freefq - 美国华盛顿Cogent通信公司 5
+      - github.com/freefq - 台湾省台中市中华电信 6
+      - github.com/freefq - 美国华盛顿Cogent通信公司 7
+      - github.com/freefq - 美国阿里云 8
+      - github.com/freefq - 美国华盛顿Cogent通信公司 9
+      - github.com/freefq - 美国华盛顿州 10
+      - github.com/freefq - 美国华盛顿Cogent通信公司 11
+      - github.com/freefq - 印度  12
+      - github.com/freefq - 美国Akamai科技公司CDN网络节点 13
+      - github.com/freefq - 美国华盛顿Cogent通信公司 14
+      - github.com/freefq - 美国华盛顿Cogent通信公司 15
+      - github.com/freefq - 美国华盛顿Cogent通信公司 16
+      - github.com/freefq - 美国  17
+      - github.com/freefq - 美国亚利桑那州凤凰城Oracle云计算数据中心 18
+      - github.com/freefq - 北美地区  19
+      - github.com/freefq - 法国巴黎Online S.A.S 20
+      - github.com/freefq - 美国  21
+      - github.com/freefq - 澳大利亚  22
+      - github.com/freefq - 美国CloudFlare节点 23
+      - github.com/freefq - 意大利  24
+      - github.com/freefq - 美国华盛顿Cogent通信公司 25
+      - github.com/freefq - 美国华盛顿州 26
+      - github.com/freefq - 瑞典  27
+      - github.com/freefq - 美国华盛顿Cogent通信公司 28
+      - github.com/freefq - 美国  29
+      - github.com/freefq - 英国  30
+      - github.com/freefq - 乌克兰  31
+      - github.com/freefq - 英国  32
+      - github.com/freefq - 美国加利福尼亚州洛杉矶PetaExpress 33
+      - github.com/freefq - 日本东京Choopa数据中心 34
+      - github.com/freefq - 印度  35
+      - github.com/freefq - 美国华盛顿Cogent通信公司 36
+      - github.com/freefq - 越南  37
+      - github.com/freefq - 加拿大  38
+      - github.com/freefq - 加拿大  39
+      - github.com/freefq - 越南  40
+      - github.com/freefq - 湖北省武汉市移动 41
+      - github.com/freefq - 乌克兰  42
+      - github.com/freefq - 美国CloudFlare公司CDN节点 43
+      - github.com/freefq - 俄罗斯  44
+      - github.com/freefq - 印度尼西亚  45
+      - github.com/freefq - 法国OVH 46
+      - github.com/freefq - 美国  47
+      - github.com/freefq - 广东省移动 48
+      - github.com/freefq - 法国格拉沃利讷OVH数据中心 49
+      - github.com/freefq - 法国格拉沃利讷OVH数据中心 50
+      - github.com/freefq - 印度  51
+      - github.com/freefq - 法国OVH 52
+      - github.com/freefq - 美国CloudFlare公司CDN节点 53
+      - github.com/freefq - 瑞典  54
+      - github.com/freefq - 孟加拉  55
+      - github.com/freefq - 美国CloudFlare节点 56
+      - github.com/freefq - 广东省广州市移动 57
+      - github.com/freefq - 广东省广州市移动 58
+      - github.com/freefq - 加拿大  59
+      - github.com/freefq - 挪威  60
+      - github.com/freefq - 广西河池市联通 61
+      - github.com/freefq - 美国华盛顿Cogent通信公司 62
+      - github.com/freefq - 法国OVH SAS 63
+      - github.com/freefq - 法国OVH 64
+      - github.com/freefq - 美国华盛顿Cogent通信公司 65
+      - github.com/freefq - 越南  66
+      - github.com/freefq - 孟加拉  67
+      - github.com/freefq - 亚太地区  68
+      - github.com/freefq - 孟加拉  69
+      - github.com/freefq - 美国俄亥俄州都柏林Amazon数据中心 70
+      - github.com/freefq - 亚太地区  71
+      - github.com/freefq - 孟加拉  72
+      - github.com/freefq - 越南  73
+      - github.com/freefq - 日本  74
+      - github.com/freefq - 法国OVH机房SAS硬盘BGP主机 75
+      - github.com/freefq - 泰国  76
+      - github.com/freefq - 法国OVH SAS 77
+      - github.com/freefq - 法国OVH机房SAS硬盘BGP主机 78
+      - github.com/freefq - 美国CloudFlare节点 79
+      - github.com/freefq - 日本  80
+      - github.com/freefq - 英国  81
+      - github.com/freefq - 广东省广州市移动 82
+      - github.com/freefq - 广东省广州市移动 83
+      - github.com/freefq - 瑞典  84
+      - github.com/freefq - 法国格拉沃利讷OVH数据中心 85
+      - github.com/freefq - 荷兰北荷兰省阿姆斯特丹Sharktech数据中心 86
+      - github.com/freefq - 香港特别行政区 87
+      - github.com/freefq - 美国CloudFlare节点 88
+      - github.com/freefq - 德国Hetzner 89
+      - github.com/freefq - 香港阿里云 90
+      - github.com/freefq - 美国华盛顿州 91
+      - github.com/freefq - 加拿大  92
+      - github.com/freefq - 俄罗斯  93
+      - github.com/freefq - 台湾省  94
+      - github.com/freefq - 美国华盛顿Cogent通信公司 95
+      - github.com/freefq - 美国华盛顿Cogent通信公司 96
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
