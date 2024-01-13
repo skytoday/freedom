@@ -5,24 +5,25 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 🇨🇳 github.com/freefq - 台湾省彰化县中华电信 1, server: 36.233.233.240, port: 6122, type: vmess, uuid: bbbf3acb-bfaa-4545-9d2c-dcac332b71ac, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 🇺🇸 github.com/freefq - 美国华盛顿州西雅图市亚马逊(Amazon)公司数据中心 2, server: series-a2-me.samanehha.co, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: Bog0ELmMM9DSxDdQ, udp: true}
-  - {name: 🇨🇳 github.com/freefq - 台湾省中华电信(HiNet)数据中心 3, server: nb22.ntbq.dynu.net, port: 12002, type: vmess, uuid: bbbf3acb-bfaa-4545-9d2c-dcac332b71ac, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 🇮🇷 github.com/freefq - 伊朗  4, server: 79.143.84.117, port: 25477, type: vmess, uuid: 9b788fa7-9e35-4ed5-e0e9-7d788b26ec07, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 🇨🇳 github.com/freefq - 北京市移动 5, server: zhejiang.wandacloud.xyz, port: 32143, type: ss, cipher: chacha20-ietf-poly1305, password: 432fe02f-b649-4bdc-91d8-f91ae87002f7, udp: true}
-  - {name: 🇺🇸 github.com/freefq - 美国  6, server: 146.190.111.121, port: 54642, type: vmess, uuid: 97e9c42a-69fe-44ef-917c-80d941d1114a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: www.xbox.com}}, udp: true}
-  - {name: 🇺🇸 github.com/freefq - 美国CloudFlare节点 7, server: a3.bcbot.in, port: 8880, type: vmess, uuid: ce9aadc8-8c6e-4867-d247-9a84b469ac27, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: a3.bcbot.in}}, udp: true}
-  - {name: 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 8, server: 104.17.2.183, port: 80, type: vmess, uuid: 3c59b3ca-def3-4d3a-9ef4-c32f797803a2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: holloll32.adanademirspor.eu}}, udp: true}
-  - {name: 🇺🇸 github.com/freefq - 美国  9, server: kz-v2ray.ipracevpn.com, port: 8443, type: vmess, uuid: 48b10b02-2c60-4323-bc65-a11b15144745, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, udp: true}
-  - {name: 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 10, server: glasco.fx-trader.shop, port: 80, type: vmess, uuid: f256a3ae-0f85-4a1d-d0cd-2d0b4b73f4f1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: v3ra3do.wakeuptimerap.shop}}, udp: true}
-  - {name: 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 11, server: 104.18.154.42, port: 80, type: vmess, uuid: b2d821b2-f727-4e67-898d-1a29bf41ee0d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: us3.889611.com}}, udp: true}
-  - {name: github.com/freefq - 广东省移动 12, server: data-us-v1.shwjfkw.cn, port: 20401, type: vmess, uuid: b1478e24-4916-3abe-8f17-15931012ecbe, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /debian, headers: {Host: data-us-v1.shwjfkw.cn}}, udp: true}
-  - {name: 🇸🇪 github.com/freefq - 瑞典  13, server: 185.146.173.27, port: 8880, type: vmess, uuid: 8ec29f7f-edee-4065-bec5-b31d10c2d7e4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /main, headers: {Host: telegram.shadowbrowse.online}}, udp: true}
-  - {name: 🇮🇷 github.com/freefq - 伊朗  14, server: 81.12.27.4, port: 20512, type: vmess, uuid: 5d0b61a0-64fc-4a9f-e4bc-50ecdbc37623, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 🇨🇳 github.com/freefq - 广东省广州市移动 15, server: service.ouluyun9803.com, port: 20007, type: ss, cipher: chacha20-ietf-poly1305, password: 7f821ff8-2ef2-4433-b810-f0ce77fd5491, udp: true}
-  - {name: github.com/freefq - 乌克兰  16, server: 94.131.10.135, port: 80, type: vmess, uuid: 099b5b7a-9d71-43cd-80e3-b8fbe1cc2695, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /vmess}, udp: true}
-  - {name: 🇨🇳 github.com/freefq - 广东省广州市移动 17, server: service.ouluyun9803.com, port: 20109, type: ss, cipher: chacha20-ietf-poly1305, password: 7f821ff8-2ef2-4433-b810-f0ce77fd5491, udp: true}
-  - {name: 🇨🇳 github.com/freefq - 广东省广州市移动 18, server: service.ouluyun9803.com, port: 21003, type: ss, cipher: chacha20-ietf-poly1305, password: 7f821ff8-2ef2-4433-b810-f0ce77fd5491, udp: true}
+  - {name: 🇨🇳 github.com/freefq - 台湾省彰化县中华电信 1, server: c12.twtc.dynu.net, port: 6122, type: vmess, uuid: a36db716-c6d0-4bc2-bd76-69e278215124, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 🇨🇦 github.com/freefq - 加拿大  2, server: 142.171.237.214, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: www.23168499.xyz}}, udp: true}
+  - {name: 🇬🇧 github.com/freefq - 英国伦敦Amazon数据中心 3, server: series-a2-me.samanehha.co, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: Bog0ELmMM9DSxDdQ, udp: true}
+  - {name: 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 4, server: cdn20.nwaf98.top, port: 80, type: vmess, uuid: 4046171f-2176-4f56-8008-adc55676931a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, servername: cdn20.nwaf98.top, network: ws, ws-opts: {path: /, headers: {Host: cdn20.nwaf98.top}}, udp: true}
+  - {name: 🇮🇳 github.com/freefq - 印度  5, server: bs2.loadingip.com, port: 80, type: vmess, uuid: 5278f5d3-f001-4459-94b6-7e0915238998, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /bs, headers: {Host: bs2.loadingip.com}}, udp: true}
+  - {name: 🇺🇸 github.com/freefq - 美国CloudFlare节点 6, server: a3.bcbot.in, port: 8880, type: vmess, uuid: ce9aadc8-8c6e-4867-d247-9a84b469ac27, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: a3.bcbot.in}}, udp: true}
+  - {name: 🇨🇳 github.com/freefq - 台湾省中华电信(HiNet)数据中心 7, server: nb22.ntbq.dynu.net, port: 12002, type: vmess, uuid: a36db716-c6d0-4bc2-bd76-69e278215124, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 🇸🇪 github.com/freefq - 瑞典  8, server: 185.146.173.27, port: 8880, type: vmess, uuid: 8ec29f7f-edee-4065-bec5-b31d10c2d7e4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /main, headers: {Host: telegram.shadowbrowse.online}}, udp: true}
+  - {name: 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 9, server: glaSco.fx-trAder.shop, port: 80, type: vmess, uuid: cdbb0899-7113-4d4e-f868-31339c75ad3c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: vvv2vayo2.everythingisreve.shop}}, udp: true}
+  - {name: 🇮🇷 github.com/freefq - 伊朗  10, server: 79.143.84.117, port: 25477, type: vmess, uuid: 9b788fa7-9e35-4ed5-e0e9-7d788b26ec07, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 11, server: glasco.fx-trader.shop, port: 80, type: vmess, uuid: f256a3ae-0f85-4a1d-d0cd-2d0b4b73f4f1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: v3ra3do.wakeuptimerap.shop}}, udp: true}
+  - {name: 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 12, server: 104.17.2.183, port: 80, type: vmess, uuid: 3c59b3ca-def3-4d3a-9ef4-c32f797803a2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: holloll32.adanademirspor.eu}}, udp: true}
+  - {name: 🇨🇳 github.com/freefq - 台湾省新北市中华电信 13, server: b23.ntbq.dynu.net, port: 2024, type: vmess, uuid: a36db716-c6d0-4bc2-bd76-69e278215124, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 🇨🇳 github.com/freefq - 广东省广州市移动 14, server: service.ouluyun9803.com, port: 21003, type: ss, cipher: chacha20-ietf-poly1305, password: 7f821ff8-2ef2-4433-b810-f0ce77fd5491, udp: true}
+  - {name: 🇨🇳 github.com/freefq - 北京市移动 15, server: zhejiang.wandacloud.xyz, port: 32143, type: ss, cipher: chacha20-ietf-poly1305, password: 432fe02f-b649-4bdc-91d8-f91ae87002f7, udp: true}
+  - {name: 🇨🇳 github.com/freefq - 广东省广州市移动 16, server: service.ouluyun9803.com, port: 20007, type: ss, cipher: chacha20-ietf-poly1305, password: 7f821ff8-2ef2-4433-b810-f0ce77fd5491, udp: true}
+  - {name: 🇺🇸 github.com/freefq - 美国  17, server: kz-v2ray.ipracevpn.com, port: 8443, type: vmess, uuid: 48b10b02-2c60-4323-bc65-a11b15144745, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, udp: true}
+  - {name: 🇮🇷 github.com/freefq - 伊朗  18, server: 81.12.27.4, port: 20512, type: vmess, uuid: 5d0b61a0-64fc-4a9f-e4bc-50ecdbc37623, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 🇺🇸 github.com/freefq - 美国CloudFlare节点 19, server: 172.67.217.144, port: 80, type: vmess, uuid: 85674552-ce41-44d9-bb2a-50f76450b3d8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: lv1.xv2ray.net}}, udp: true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -30,23 +31,24 @@ proxy-groups:
       - ♻️ 自动选择
       - DIRECT
       - 🇨🇳 github.com/freefq - 台湾省彰化县中华电信 1
-      - 🇺🇸 github.com/freefq - 美国华盛顿州西雅图市亚马逊(Amazon)公司数据中心 2
-      - 🇨🇳 github.com/freefq - 台湾省中华电信(HiNet)数据中心 3
-      - 🇮🇷 github.com/freefq - 伊朗  4
-      - 🇨🇳 github.com/freefq - 北京市移动 5
-      - 🇺🇸 github.com/freefq - 美国  6
-      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 7
-      - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 8
-      - 🇺🇸 github.com/freefq - 美国  9
-      - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 10
+      - 🇨🇦 github.com/freefq - 加拿大  2
+      - 🇬🇧 github.com/freefq - 英国伦敦Amazon数据中心 3
+      - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 4
+      - 🇮🇳 github.com/freefq - 印度  5
+      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 6
+      - 🇨🇳 github.com/freefq - 台湾省中华电信(HiNet)数据中心 7
+      - 🇸🇪 github.com/freefq - 瑞典  8
+      - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 9
+      - 🇮🇷 github.com/freefq - 伊朗  10
       - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 11
-      - github.com/freefq - 广东省移动 12
-      - 🇸🇪 github.com/freefq - 瑞典  13
-      - 🇮🇷 github.com/freefq - 伊朗  14
-      - 🇨🇳 github.com/freefq - 广东省广州市移动 15
-      - github.com/freefq - 乌克兰  16
-      - 🇨🇳 github.com/freefq - 广东省广州市移动 17
-      - 🇨🇳 github.com/freefq - 广东省广州市移动 18
+      - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 12
+      - 🇨🇳 github.com/freefq - 台湾省新北市中华电信 13
+      - 🇨🇳 github.com/freefq - 广东省广州市移动 14
+      - 🇨🇳 github.com/freefq - 北京市移动 15
+      - 🇨🇳 github.com/freefq - 广东省广州市移动 16
+      - 🇺🇸 github.com/freefq - 美国  17
+      - 🇮🇷 github.com/freefq - 伊朗  18
+      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 19
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -54,23 +56,24 @@ proxy-groups:
     tolerance: 50
     proxies:
       - 🇨🇳 github.com/freefq - 台湾省彰化县中华电信 1
-      - 🇺🇸 github.com/freefq - 美国华盛顿州西雅图市亚马逊(Amazon)公司数据中心 2
-      - 🇨🇳 github.com/freefq - 台湾省中华电信(HiNet)数据中心 3
-      - 🇮🇷 github.com/freefq - 伊朗  4
-      - 🇨🇳 github.com/freefq - 北京市移动 5
-      - 🇺🇸 github.com/freefq - 美国  6
-      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 7
-      - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 8
-      - 🇺🇸 github.com/freefq - 美国  9
-      - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 10
+      - 🇨🇦 github.com/freefq - 加拿大  2
+      - 🇬🇧 github.com/freefq - 英国伦敦Amazon数据中心 3
+      - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 4
+      - 🇮🇳 github.com/freefq - 印度  5
+      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 6
+      - 🇨🇳 github.com/freefq - 台湾省中华电信(HiNet)数据中心 7
+      - 🇸🇪 github.com/freefq - 瑞典  8
+      - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 9
+      - 🇮🇷 github.com/freefq - 伊朗  10
       - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 11
-      - github.com/freefq - 广东省移动 12
-      - 🇸🇪 github.com/freefq - 瑞典  13
-      - 🇮🇷 github.com/freefq - 伊朗  14
-      - 🇨🇳 github.com/freefq - 广东省广州市移动 15
-      - github.com/freefq - 乌克兰  16
-      - 🇨🇳 github.com/freefq - 广东省广州市移动 17
-      - 🇨🇳 github.com/freefq - 广东省广州市移动 18
+      - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 12
+      - 🇨🇳 github.com/freefq - 台湾省新北市中华电信 13
+      - 🇨🇳 github.com/freefq - 广东省广州市移动 14
+      - 🇨🇳 github.com/freefq - 北京市移动 15
+      - 🇨🇳 github.com/freefq - 广东省广州市移动 16
+      - 🇺🇸 github.com/freefq - 美国  17
+      - 🇮🇷 github.com/freefq - 伊朗  18
+      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 19
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -78,92 +81,96 @@ proxy-groups:
       - ♻️ 自动选择
       - 🎯 全球直连
       - 🇨🇳 github.com/freefq - 台湾省彰化县中华电信 1
-      - 🇺🇸 github.com/freefq - 美国华盛顿州西雅图市亚马逊(Amazon)公司数据中心 2
-      - 🇨🇳 github.com/freefq - 台湾省中华电信(HiNet)数据中心 3
-      - 🇮🇷 github.com/freefq - 伊朗  4
-      - 🇨🇳 github.com/freefq - 北京市移动 5
-      - 🇺🇸 github.com/freefq - 美国  6
-      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 7
-      - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 8
-      - 🇺🇸 github.com/freefq - 美国  9
-      - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 10
+      - 🇨🇦 github.com/freefq - 加拿大  2
+      - 🇬🇧 github.com/freefq - 英国伦敦Amazon数据中心 3
+      - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 4
+      - 🇮🇳 github.com/freefq - 印度  5
+      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 6
+      - 🇨🇳 github.com/freefq - 台湾省中华电信(HiNet)数据中心 7
+      - 🇸🇪 github.com/freefq - 瑞典  8
+      - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 9
+      - 🇮🇷 github.com/freefq - 伊朗  10
       - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 11
-      - github.com/freefq - 广东省移动 12
-      - 🇸🇪 github.com/freefq - 瑞典  13
-      - 🇮🇷 github.com/freefq - 伊朗  14
-      - 🇨🇳 github.com/freefq - 广东省广州市移动 15
-      - github.com/freefq - 乌克兰  16
-      - 🇨🇳 github.com/freefq - 广东省广州市移动 17
-      - 🇨🇳 github.com/freefq - 广东省广州市移动 18
+      - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 12
+      - 🇨🇳 github.com/freefq - 台湾省新北市中华电信 13
+      - 🇨🇳 github.com/freefq - 广东省广州市移动 14
+      - 🇨🇳 github.com/freefq - 北京市移动 15
+      - 🇨🇳 github.com/freefq - 广东省广州市移动 16
+      - 🇺🇸 github.com/freefq - 美国  17
+      - 🇮🇷 github.com/freefq - 伊朗  18
+      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 19
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - 🇨🇳 github.com/freefq - 台湾省彰化县中华电信 1
-      - 🇺🇸 github.com/freefq - 美国华盛顿州西雅图市亚马逊(Amazon)公司数据中心 2
-      - 🇨🇳 github.com/freefq - 台湾省中华电信(HiNet)数据中心 3
-      - 🇮🇷 github.com/freefq - 伊朗  4
-      - 🇨🇳 github.com/freefq - 北京市移动 5
-      - 🇺🇸 github.com/freefq - 美国  6
-      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 7
-      - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 8
-      - 🇺🇸 github.com/freefq - 美国  9
-      - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 10
+      - 🇨🇦 github.com/freefq - 加拿大  2
+      - 🇬🇧 github.com/freefq - 英国伦敦Amazon数据中心 3
+      - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 4
+      - 🇮🇳 github.com/freefq - 印度  5
+      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 6
+      - 🇨🇳 github.com/freefq - 台湾省中华电信(HiNet)数据中心 7
+      - 🇸🇪 github.com/freefq - 瑞典  8
+      - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 9
+      - 🇮🇷 github.com/freefq - 伊朗  10
       - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 11
-      - github.com/freefq - 广东省移动 12
-      - 🇸🇪 github.com/freefq - 瑞典  13
-      - 🇮🇷 github.com/freefq - 伊朗  14
-      - 🇨🇳 github.com/freefq - 广东省广州市移动 15
-      - github.com/freefq - 乌克兰  16
-      - 🇨🇳 github.com/freefq - 广东省广州市移动 17
-      - 🇨🇳 github.com/freefq - 广东省广州市移动 18
+      - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 12
+      - 🇨🇳 github.com/freefq - 台湾省新北市中华电信 13
+      - 🇨🇳 github.com/freefq - 广东省广州市移动 14
+      - 🇨🇳 github.com/freefq - 北京市移动 15
+      - 🇨🇳 github.com/freefq - 广东省广州市移动 16
+      - 🇺🇸 github.com/freefq - 美国  17
+      - 🇮🇷 github.com/freefq - 伊朗  18
+      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 19
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
       - 🇨🇳 github.com/freefq - 台湾省彰化县中华电信 1
-      - 🇺🇸 github.com/freefq - 美国华盛顿州西雅图市亚马逊(Amazon)公司数据中心 2
-      - 🇨🇳 github.com/freefq - 台湾省中华电信(HiNet)数据中心 3
-      - 🇮🇷 github.com/freefq - 伊朗  4
-      - 🇨🇳 github.com/freefq - 北京市移动 5
-      - 🇺🇸 github.com/freefq - 美国  6
-      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 7
-      - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 8
-      - 🇺🇸 github.com/freefq - 美国  9
-      - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 10
+      - 🇨🇦 github.com/freefq - 加拿大  2
+      - 🇬🇧 github.com/freefq - 英国伦敦Amazon数据中心 3
+      - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 4
+      - 🇮🇳 github.com/freefq - 印度  5
+      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 6
+      - 🇨🇳 github.com/freefq - 台湾省中华电信(HiNet)数据中心 7
+      - 🇸🇪 github.com/freefq - 瑞典  8
+      - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 9
+      - 🇮🇷 github.com/freefq - 伊朗  10
       - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 11
-      - github.com/freefq - 广东省移动 12
-      - 🇸🇪 github.com/freefq - 瑞典  13
-      - 🇮🇷 github.com/freefq - 伊朗  14
-      - 🇨🇳 github.com/freefq - 广东省广州市移动 15
-      - github.com/freefq - 乌克兰  16
-      - 🇨🇳 github.com/freefq - 广东省广州市移动 17
-      - 🇨🇳 github.com/freefq - 广东省广州市移动 18
+      - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 12
+      - 🇨🇳 github.com/freefq - 台湾省新北市中华电信 13
+      - 🇨🇳 github.com/freefq - 广东省广州市移动 14
+      - 🇨🇳 github.com/freefq - 北京市移动 15
+      - 🇨🇳 github.com/freefq - 广东省广州市移动 16
+      - 🇺🇸 github.com/freefq - 美国  17
+      - 🇮🇷 github.com/freefq - 伊朗  18
+      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 19
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - 🇨🇳 github.com/freefq - 台湾省彰化县中华电信 1
-      - 🇺🇸 github.com/freefq - 美国华盛顿州西雅图市亚马逊(Amazon)公司数据中心 2
-      - 🇨🇳 github.com/freefq - 台湾省中华电信(HiNet)数据中心 3
-      - 🇮🇷 github.com/freefq - 伊朗  4
-      - 🇨🇳 github.com/freefq - 北京市移动 5
-      - 🇺🇸 github.com/freefq - 美国  6
-      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 7
-      - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 8
-      - 🇺🇸 github.com/freefq - 美国  9
-      - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 10
+      - 🇨🇦 github.com/freefq - 加拿大  2
+      - 🇬🇧 github.com/freefq - 英国伦敦Amazon数据中心 3
+      - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 4
+      - 🇮🇳 github.com/freefq - 印度  5
+      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 6
+      - 🇨🇳 github.com/freefq - 台湾省中华电信(HiNet)数据中心 7
+      - 🇸🇪 github.com/freefq - 瑞典  8
+      - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 9
+      - 🇮🇷 github.com/freefq - 伊朗  10
       - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 11
-      - github.com/freefq - 广东省移动 12
-      - 🇸🇪 github.com/freefq - 瑞典  13
-      - 🇮🇷 github.com/freefq - 伊朗  14
-      - 🇨🇳 github.com/freefq - 广东省广州市移动 15
-      - github.com/freefq - 乌克兰  16
-      - 🇨🇳 github.com/freefq - 广东省广州市移动 17
-      - 🇨🇳 github.com/freefq - 广东省广州市移动 18
+      - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 12
+      - 🇨🇳 github.com/freefq - 台湾省新北市中华电信 13
+      - 🇨🇳 github.com/freefq - 广东省广州市移动 14
+      - 🇨🇳 github.com/freefq - 北京市移动 15
+      - 🇨🇳 github.com/freefq - 广东省广州市移动 16
+      - 🇺🇸 github.com/freefq - 美国  17
+      - 🇮🇷 github.com/freefq - 伊朗  18
+      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 19
   - name: 📢 谷歌FCM
     type: select
     proxies:
@@ -171,23 +178,24 @@ proxy-groups:
       - 🎯 全球直连
       - ♻️ 自动选择
       - 🇨🇳 github.com/freefq - 台湾省彰化县中华电信 1
-      - 🇺🇸 github.com/freefq - 美国华盛顿州西雅图市亚马逊(Amazon)公司数据中心 2
-      - 🇨🇳 github.com/freefq - 台湾省中华电信(HiNet)数据中心 3
-      - 🇮🇷 github.com/freefq - 伊朗  4
-      - 🇨🇳 github.com/freefq - 北京市移动 5
-      - 🇺🇸 github.com/freefq - 美国  6
-      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 7
-      - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 8
-      - 🇺🇸 github.com/freefq - 美国  9
-      - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 10
+      - 🇨🇦 github.com/freefq - 加拿大  2
+      - 🇬🇧 github.com/freefq - 英国伦敦Amazon数据中心 3
+      - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 4
+      - 🇮🇳 github.com/freefq - 印度  5
+      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 6
+      - 🇨🇳 github.com/freefq - 台湾省中华电信(HiNet)数据中心 7
+      - 🇸🇪 github.com/freefq - 瑞典  8
+      - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 9
+      - 🇮🇷 github.com/freefq - 伊朗  10
       - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 11
-      - github.com/freefq - 广东省移动 12
-      - 🇸🇪 github.com/freefq - 瑞典  13
-      - 🇮🇷 github.com/freefq - 伊朗  14
-      - 🇨🇳 github.com/freefq - 广东省广州市移动 15
-      - github.com/freefq - 乌克兰  16
-      - 🇨🇳 github.com/freefq - 广东省广州市移动 17
-      - 🇨🇳 github.com/freefq - 广东省广州市移动 18
+      - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 12
+      - 🇨🇳 github.com/freefq - 台湾省新北市中华电信 13
+      - 🇨🇳 github.com/freefq - 广东省广州市移动 14
+      - 🇨🇳 github.com/freefq - 北京市移动 15
+      - 🇨🇳 github.com/freefq - 广东省广州市移动 16
+      - 🇺🇸 github.com/freefq - 美国  17
+      - 🇮🇷 github.com/freefq - 伊朗  18
+      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 19
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -211,23 +219,24 @@ proxy-groups:
       - 🎯 全球直连
       - ♻️ 自动选择
       - 🇨🇳 github.com/freefq - 台湾省彰化县中华电信 1
-      - 🇺🇸 github.com/freefq - 美国华盛顿州西雅图市亚马逊(Amazon)公司数据中心 2
-      - 🇨🇳 github.com/freefq - 台湾省中华电信(HiNet)数据中心 3
-      - 🇮🇷 github.com/freefq - 伊朗  4
-      - 🇨🇳 github.com/freefq - 北京市移动 5
-      - 🇺🇸 github.com/freefq - 美国  6
-      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 7
-      - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 8
-      - 🇺🇸 github.com/freefq - 美国  9
-      - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 10
+      - 🇨🇦 github.com/freefq - 加拿大  2
+      - 🇬🇧 github.com/freefq - 英国伦敦Amazon数据中心 3
+      - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 4
+      - 🇮🇳 github.com/freefq - 印度  5
+      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 6
+      - 🇨🇳 github.com/freefq - 台湾省中华电信(HiNet)数据中心 7
+      - 🇸🇪 github.com/freefq - 瑞典  8
+      - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 9
+      - 🇮🇷 github.com/freefq - 伊朗  10
       - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 11
-      - github.com/freefq - 广东省移动 12
-      - 🇸🇪 github.com/freefq - 瑞典  13
-      - 🇮🇷 github.com/freefq - 伊朗  14
-      - 🇨🇳 github.com/freefq - 广东省广州市移动 15
-      - github.com/freefq - 乌克兰  16
-      - 🇨🇳 github.com/freefq - 广东省广州市移动 17
-      - 🇨🇳 github.com/freefq - 广东省广州市移动 18
+      - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 12
+      - 🇨🇳 github.com/freefq - 台湾省新北市中华电信 13
+      - 🇨🇳 github.com/freefq - 广东省广州市移动 14
+      - 🇨🇳 github.com/freefq - 北京市移动 15
+      - 🇨🇳 github.com/freefq - 广东省广州市移动 16
+      - 🇺🇸 github.com/freefq - 美国  17
+      - 🇮🇷 github.com/freefq - 伊朗  18
+      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 19
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
@@ -1926,47 +1935,6 @@ rules:
  - DOMAIN-SUFFIX,tools.google.com,🎯 全球直连
  - DOMAIN-SUFFIX,tools.l.google.com,🎯 全球直连
  - DOMAIN-SUFFIX,www-googletagmanager.l.google.com,🎯 全球直连
- - DOMAIN,apple.comscoreresearch.com,🍎 苹果服务
- - DOMAIN-SUFFIX,aaplimg.com,🍎 苹果服务
- - DOMAIN-SUFFIX,akadns.net,🍎 苹果服务
- - DOMAIN-SUFFIX,apple-cloudkit.com,🍎 苹果服务
- - DOMAIN-SUFFIX,apple-dns.net,🍎 苹果服务
- - DOMAIN-SUFFIX,apple-mapkit.com,🍎 苹果服务
- - DOMAIN-SUFFIX,apple.co,🍎 苹果服务
- - DOMAIN-SUFFIX,apple.com,🍎 苹果服务
- - DOMAIN-SUFFIX,apple.com.cn,🍎 苹果服务
- - DOMAIN-SUFFIX,apple.news,🍎 苹果服务
- - DOMAIN-SUFFIX,appstore.com,🍎 苹果服务
- - DOMAIN-SUFFIX,cdn-apple.com,🍎 苹果服务
- - DOMAIN-SUFFIX,crashlytics.com,🍎 苹果服务
- - DOMAIN-SUFFIX,icloud-content.com,🍎 苹果服务
- - DOMAIN-SUFFIX,icloud.com,🍎 苹果服务
- - DOMAIN-SUFFIX,icloud.com.cn,🍎 苹果服务
- - DOMAIN-SUFFIX,itunes.com,🍎 苹果服务
- - DOMAIN-SUFFIX,me.com,🍎 苹果服务
- - DOMAIN-SUFFIX,mzstatic.com,🍎 苹果服务
- - IP-CIDR,17.0.0.0/8,🍎 苹果服务,no-resolve
- - IP-CIDR,63.92.224.0/19,🍎 苹果服务,no-resolve
- - IP-CIDR,65.199.22.0/23,🍎 苹果服务,no-resolve
- - IP-CIDR,139.178.128.0/18,🍎 苹果服务,no-resolve
- - IP-CIDR,144.178.0.0/19,🍎 苹果服务,no-resolve
- - IP-CIDR,144.178.36.0/22,🍎 苹果服务,no-resolve
- - IP-CIDR,144.178.48.0/20,🍎 苹果服务,no-resolve
- - IP-CIDR,192.35.50.0/24,🍎 苹果服务,no-resolve
- - IP-CIDR,198.183.17.0/24,🍎 苹果服务,no-resolve
- - IP-CIDR,205.180.175.0/24,🍎 苹果服务,no-resolve
- - DOMAIN-SUFFIX,t.me,📲 电报信息
- - DOMAIN-SUFFIX,tdesktop.com,📲 电报信息
- - DOMAIN-SUFFIX,telegra.ph,📲 电报信息
- - DOMAIN-SUFFIX,telegram.me,📲 电报信息
- - DOMAIN-SUFFIX,telegram.org,📲 电报信息
- - DOMAIN-SUFFIX,telesco.pe,📲 电报信息
- - IP-CIDR,91.108.0.0/16,📲 电报信息,no-resolve
- - IP-CIDR,109.239.140.0/24,📲 电报信息,no-resolve
- - IP-CIDR,149.154.160.0/20,📲 电报信息,no-resolve
- - IP-CIDR6,2001:67c:4e8::/48,📲 电报信息,no-resolve
- - IP-CIDR6,2001:b28:f23d::/48,📲 电报信息,no-resolve
- - IP-CIDR6,2001:b28:f23f::/48,📲 电报信息,no-resolve
  - DOMAIN-SUFFIX,edgedatg.com,🌍 国外媒体
  - DOMAIN-SUFFIX,go.com,🌍 国外媒体
  - DOMAIN-KEYWORD,abematv.akamaized.net,🌍 国外媒体
@@ -3317,226 +3285,5 @@ rules:
  - DOMAIN-SUFFIX,zhipin.com,🎯 全球直连
  - DOMAIN-SUFFIX,zhongsou.com,🎯 全球直连
  - DOMAIN-SUFFIX,zhuihd.com,🎯 全球直连
- - IP-CIDR,8.128.0.0/10,🎯 全球直连,no-resolve
- - IP-CIDR,8.208.0.0/12,🎯 全球直连,no-resolve
- - IP-CIDR,14.1.112.0/22,🎯 全球直连,no-resolve
- - IP-CIDR,41.222.240.0/22,🎯 全球直连,no-resolve
- - IP-CIDR,41.223.119.0/24,🎯 全球直连,no-resolve
- - IP-CIDR,43.242.168.0/22,🎯 全球直连,no-resolve
- - IP-CIDR,45.112.212.0/22,🎯 全球直连,no-resolve
- - IP-CIDR,47.52.0.0/16,🎯 全球直连,no-resolve
- - IP-CIDR,47.56.0.0/15,🎯 全球直连,no-resolve
- - IP-CIDR,47.74.0.0/15,🎯 全球直连,no-resolve
- - IP-CIDR,47.76.0.0/14,🎯 全球直连,no-resolve
- - IP-CIDR,47.80.0.0/12,🎯 全球直连,no-resolve
- - IP-CIDR,47.235.0.0/16,🎯 全球直连,no-resolve
- - IP-CIDR,47.236.0.0/14,🎯 全球直连,no-resolve
- - IP-CIDR,47.240.0.0/14,🎯 全球直连,no-resolve
- - IP-CIDR,47.244.0.0/15,🎯 全球直连,no-resolve
- - IP-CIDR,47.246.0.0/16,🎯 全球直连,no-resolve
- - IP-CIDR,47.250.0.0/15,🎯 全球直连,no-resolve
- - IP-CIDR,47.252.0.0/15,🎯 全球直连,no-resolve
- - IP-CIDR,47.254.0.0/16,🎯 全球直连,no-resolve
- - IP-CIDR,59.82.0.0/20,🎯 全球直连,no-resolve
- - IP-CIDR,59.82.240.0/21,🎯 全球直连,no-resolve
- - IP-CIDR,59.82.248.0/22,🎯 全球直连,no-resolve
- - IP-CIDR,72.254.0.0/16,🎯 全球直连,no-resolve
- - IP-CIDR,103.38.56.0/22,🎯 全球直连,no-resolve
- - IP-CIDR,103.52.76.0/22,🎯 全球直连,no-resolve
- - IP-CIDR,103.206.40.0/22,🎯 全球直连,no-resolve
- - IP-CIDR,110.76.21.0/24,🎯 全球直连,no-resolve
- - IP-CIDR,110.76.23.0/24,🎯 全球直连,no-resolve
- - IP-CIDR,112.125.0.0/17,🎯 全球直连,no-resolve
- - IP-CIDR,116.251.64.0/18,🎯 全球直连,no-resolve
- - IP-CIDR,119.38.208.0/20,🎯 全球直连,no-resolve
- - IP-CIDR,119.38.224.0/20,🎯 全球直连,no-resolve
- - IP-CIDR,119.42.224.0/20,🎯 全球直连,no-resolve
- - IP-CIDR,139.95.0.0/16,🎯 全球直连,no-resolve
- - IP-CIDR,140.205.1.0/24,🎯 全球直连,no-resolve
- - IP-CIDR,140.205.122.0/24,🎯 全球直连,no-resolve
- - IP-CIDR,147.139.0.0/16,🎯 全球直连,no-resolve
- - IP-CIDR,149.129.0.0/16,🎯 全球直连,no-resolve
- - IP-CIDR,155.102.0.0/16,🎯 全球直连,no-resolve
- - IP-CIDR,161.117.0.0/16,🎯 全球直连,no-resolve
- - IP-CIDR,163.181.0.0/16,🎯 全球直连,no-resolve
- - IP-CIDR,170.33.0.0/16,🎯 全球直连,no-resolve
- - IP-CIDR,198.11.128.0/18,🎯 全球直连,no-resolve
- - IP-CIDR,205.204.96.0/19,🎯 全球直连,no-resolve
- - IP-CIDR,19.28.0.0/23,🎯 全球直连,no-resolve
- - IP-CIDR,45.40.192.0/19,🎯 全球直连,no-resolve
- - IP-CIDR,49.51.0.0/16,🎯 全球直连,no-resolve
- - IP-CIDR,62.234.0.0/16,🎯 全球直连,no-resolve
- - IP-CIDR,94.191.0.0/17,🎯 全球直连,no-resolve
- - IP-CIDR,103.7.28.0/22,🎯 全球直连,no-resolve
- - IP-CIDR,103.116.50.0/23,🎯 全球直连,no-resolve
- - IP-CIDR,103.231.60.0/24,🎯 全球直连,no-resolve
- - IP-CIDR,109.244.0.0/16,🎯 全球直连,no-resolve
- - IP-CIDR,111.30.128.0/21,🎯 全球直连,no-resolve
- - IP-CIDR,111.30.136.0/24,🎯 全球直连,no-resolve
- - IP-CIDR,111.30.139.0/24,🎯 全球直连,no-resolve
- - IP-CIDR,111.30.140.0/23,🎯 全球直连,no-resolve
- - IP-CIDR,115.159.0.0/16,🎯 全球直连,no-resolve
- - IP-CIDR,119.28.0.0/15,🎯 全球直连,no-resolve
- - IP-CIDR,120.88.56.0/23,🎯 全球直连,no-resolve
- - IP-CIDR,121.51.0.0/16,🎯 全球直连,no-resolve
- - IP-CIDR,129.28.0.0/16,🎯 全球直连,no-resolve
- - IP-CIDR,129.204.0.0/16,🎯 全球直连,no-resolve
- - IP-CIDR,129.211.0.0/16,🎯 全球直连,no-resolve
- - IP-CIDR,132.232.0.0/16,🎯 全球直连,no-resolve
- - IP-CIDR,134.175.0.0/16,🎯 全球直连,no-resolve
- - IP-CIDR,146.56.192.0/18,🎯 全球直连,no-resolve
- - IP-CIDR,148.70.0.0/16,🎯 全球直连,no-resolve
- - IP-CIDR,150.109.0.0/16,🎯 全球直连,no-resolve
- - IP-CIDR,152.136.0.0/16,🎯 全球直连,no-resolve
- - IP-CIDR,162.14.0.0/16,🎯 全球直连,no-resolve
- - IP-CIDR,162.62.0.0/16,🎯 全球直连,no-resolve
- - IP-CIDR,170.106.130.0/24,🎯 全球直连,no-resolve
- - IP-CIDR,182.254.0.0/16,🎯 全球直连,no-resolve
- - IP-CIDR,188.131.128.0/17,🎯 全球直连,no-resolve
- - IP-CIDR,203.195.128.0/17,🎯 全球直连,no-resolve
- - IP-CIDR,203.205.128.0/17,🎯 全球直连,no-resolve
- - IP-CIDR,210.4.138.0/24,🎯 全球直连,no-resolve
- - IP-CIDR,211.152.128.0/23,🎯 全球直连,no-resolve
- - IP-CIDR,211.152.132.0/23,🎯 全球直连,no-resolve
- - IP-CIDR,211.152.148.0/23,🎯 全球直连,no-resolve
- - IP-CIDR,212.64.0.0/17,🎯 全球直连,no-resolve
- - IP-CIDR,212.129.128.0/17,🎯 全球直连,no-resolve
- - IP-CIDR,45.113.192.0/22,🎯 全球直连,no-resolve
- - IP-CIDR,63.217.23.0/24,🎯 全球直连,no-resolve
- - IP-CIDR,63.243.252.0/24,🎯 全球直连,no-resolve
- - IP-CIDR,103.235.44.0/22,🎯 全球直连,no-resolve
- - IP-CIDR,104.193.88.0/22,🎯 全球直连,no-resolve
- - IP-CIDR,106.12.0.0/15,🎯 全球直连,no-resolve
- - IP-CIDR,114.28.224.0/20,🎯 全球直连,no-resolve
- - IP-CIDR,119.63.192.0/21,🎯 全球直连,no-resolve
- - IP-CIDR,180.76.0.0/24,🎯 全球直连,no-resolve
- - IP-CIDR,180.76.0.0/16,🎯 全球直连,no-resolve
- - IP-CIDR,182.61.0.0/16,🎯 全球直连,no-resolve
- - IP-CIDR,185.10.104.0/22,🎯 全球直连,no-resolve
- - IP-CIDR,202.46.48.0/20,🎯 全球直连,no-resolve
- - IP-CIDR,203.90.238.0/24,🎯 全球直连,no-resolve
- - IP-CIDR,43.254.0.0/22,🎯 全球直连,no-resolve
- - IP-CIDR,45.249.212.0/22,🎯 全球直连,no-resolve
- - IP-CIDR,49.4.0.0/17,🎯 全球直连,no-resolve
- - IP-CIDR,78.101.192.0/19,🎯 全球直连,no-resolve
- - IP-CIDR,78.101.224.0/20,🎯 全球直连,no-resolve
- - IP-CIDR,81.52.161.0/24,🎯 全球直连,no-resolve
- - IP-CIDR,85.97.220.0/22,🎯 全球直连,no-resolve
- - IP-CIDR,103.31.200.0/22,🎯 全球直连,no-resolve
- - IP-CIDR,103.69.140.0/23,🎯 全球直连,no-resolve
- - IP-CIDR,103.218.216.0/22,🎯 全球直连,no-resolve
- - IP-CIDR,114.115.128.0/17,🎯 全球直连,no-resolve
- - IP-CIDR,114.116.0.0/16,🎯 全球直连,no-resolve
- - IP-CIDR,116.63.128.0/18,🎯 全球直连,no-resolve
- - IP-CIDR,116.66.184.0/22,🎯 全球直连,no-resolve
- - IP-CIDR,116.71.96.0/20,🎯 全球直连,no-resolve
- - IP-CIDR,116.71.128.0/21,🎯 全球直连,no-resolve
- - IP-CIDR,116.71.136.0/22,🎯 全球直连,no-resolve
- - IP-CIDR,116.71.141.0/24,🎯 全球直连,no-resolve
- - IP-CIDR,116.71.142.0/24,🎯 全球直连,no-resolve
- - IP-CIDR,116.71.243.0/24,🎯 全球直连,no-resolve
- - IP-CIDR,116.71.244.0/24,🎯 全球直连,no-resolve
- - IP-CIDR,116.71.251.0/24,🎯 全球直连,no-resolve
- - IP-CIDR,117.78.0.0/18,🎯 全球直连,no-resolve
- - IP-CIDR,119.3.0.0/16,🎯 全球直连,no-resolve
- - IP-CIDR,119.8.0.0/21,🎯 全球直连,no-resolve
- - IP-CIDR,119.8.32.0/19,🎯 全球直连,no-resolve
- - IP-CIDR,121.36.0.0/17,🎯 全球直连,no-resolve
- - IP-CIDR,121.36.128.0/18,🎯 全球直连,no-resolve
- - IP-CIDR,121.37.0.0/17,🎯 全球直连,no-resolve
- - IP-CIDR,122.112.128.0/17,🎯 全球直连,no-resolve
- - IP-CIDR,139.9.0.0/18,🎯 全球直连,no-resolve
- - IP-CIDR,139.9.64.0/19,🎯 全球直连,no-resolve
- - IP-CIDR,139.9.100.0/22,🎯 全球直连,no-resolve
- - IP-CIDR,139.9.104.0/21,🎯 全球直连,no-resolve
- - IP-CIDR,139.9.112.0/20,🎯 全球直连,no-resolve
- - IP-CIDR,139.9.128.0/18,🎯 全球直连,no-resolve
- - IP-CIDR,139.9.192.0/19,🎯 全球直连,no-resolve
- - IP-CIDR,139.9.224.0/20,🎯 全球直连,no-resolve
- - IP-CIDR,139.9.240.0/21,🎯 全球直连,no-resolve
- - IP-CIDR,139.9.248.0/22,🎯 全球直连,no-resolve
- - IP-CIDR,139.159.128.0/19,🎯 全球直连,no-resolve
- - IP-CIDR,139.159.160.0/22,🎯 全球直连,no-resolve
- - IP-CIDR,139.159.164.0/23,🎯 全球直连,no-resolve
- - IP-CIDR,139.159.168.0/21,🎯 全球直连,no-resolve
- - IP-CIDR,139.159.176.0/20,🎯 全球直连,no-resolve
- - IP-CIDR,139.159.192.0/18,🎯 全球直连,no-resolve
- - IP-CIDR,159.138.0.0/18,🎯 全球直连,no-resolve
- - IP-CIDR,159.138.64.0/21,🎯 全球直连,no-resolve
- - IP-CIDR,159.138.79.0/24,🎯 全球直连,no-resolve
- - IP-CIDR,159.138.80.0/20,🎯 全球直连,no-resolve
- - IP-CIDR,159.138.96.0/20,🎯 全球直连,no-resolve
- - IP-CIDR,159.138.112.0/21,🎯 全球直连,no-resolve
- - IP-CIDR,159.138.125.0/24,🎯 全球直连,no-resolve
- - IP-CIDR,159.138.128.0/18,🎯 全球直连,no-resolve
- - IP-CIDR,159.138.192.0/20,🎯 全球直连,no-resolve
- - IP-CIDR,159.138.223.0/24,🎯 全球直连,no-resolve
- - IP-CIDR,159.138.224.0/19,🎯 全球直连,no-resolve
- - IP-CIDR,168.195.92.0/22,🎯 全球直连,no-resolve
- - IP-CIDR,185.176.76.0/22,🎯 全球直连,no-resolve
- - IP-CIDR,197.199.0.0/18,🎯 全球直连,no-resolve
- - IP-CIDR,197.210.163.0/24,🎯 全球直连,no-resolve
- - IP-CIDR,197.252.1.0/24,🎯 全球直连,no-resolve
- - IP-CIDR,197.252.2.0/23,🎯 全球直连,no-resolve
- - IP-CIDR,197.252.4.0/22,🎯 全球直连,no-resolve
- - IP-CIDR,197.252.8.0/21,🎯 全球直连,no-resolve
- - IP-CIDR,200.32.52.0/24,🎯 全球直连,no-resolve
- - IP-CIDR,200.32.54.0/24,🎯 全球直连,no-resolve
- - IP-CIDR,200.32.57.0/24,🎯 全球直连,no-resolve
- - IP-CIDR,203.135.0.0/22,🎯 全球直连,no-resolve
- - IP-CIDR,203.135.4.0/23,🎯 全球直连,no-resolve
- - IP-CIDR,203.135.8.0/23,🎯 全球直连,no-resolve
- - IP-CIDR,203.135.11.0/24,🎯 全球直连,no-resolve
- - IP-CIDR,203.135.13.0/24,🎯 全球直连,no-resolve
- - IP-CIDR,203.135.20.0/24,🎯 全球直连,no-resolve
- - IP-CIDR,203.135.22.0/23,🎯 全球直连,no-resolve
- - IP-CIDR,203.135.24.0/23,🎯 全球直连,no-resolve
- - IP-CIDR,203.135.26.0/24,🎯 全球直连,no-resolve
- - IP-CIDR,203.135.29.0/24,🎯 全球直连,no-resolve
- - IP-CIDR,203.135.33.0/24,🎯 全球直连,no-resolve
- - IP-CIDR,203.135.38.0/23,🎯 全球直连,no-resolve
- - IP-CIDR,203.135.40.0/24,🎯 全球直连,no-resolve
- - IP-CIDR,203.135.43.0/24,🎯 全球直连,no-resolve
- - IP-CIDR,203.135.48.0/24,🎯 全球直连,no-resolve
- - IP-CIDR,203.135.50.0/24,🎯 全球直连,no-resolve
- - IP-CIDR,42.186.0.0/16,🎯 全球直连,no-resolve
- - IP-CIDR,45.127.128.0/22,🎯 全球直连,no-resolve
- - IP-CIDR,45.195.24.0/24,🎯 全球直连,no-resolve
- - IP-CIDR,45.253.132.0/22,🎯 全球直连,no-resolve
- - IP-CIDR,45.253.240.0/22,🎯 全球直连,no-resolve
- - IP-CIDR,45.254.48.0/23,🎯 全球直连,no-resolve
- - IP-CIDR,59.111.0.0/20,🎯 全球直连,no-resolve
- - IP-CIDR,59.111.128.0/17,🎯 全球直连,no-resolve
- - IP-CIDR,103.71.120.0/21,🎯 全球直连,no-resolve
- - IP-CIDR,103.71.128.0/22,🎯 全球直连,no-resolve
- - IP-CIDR,103.71.196.0/22,🎯 全球直连,no-resolve
- - IP-CIDR,103.71.200.0/22,🎯 全球直连,no-resolve
- - IP-CIDR,103.72.12.0/22,🎯 全球直连,no-resolve
- - IP-CIDR,103.72.18.0/23,🎯 全球直连,no-resolve
- - IP-CIDR,103.72.24.0/22,🎯 全球直连,no-resolve
- - IP-CIDR,103.72.28.0/23,🎯 全球直连,no-resolve
- - IP-CIDR,103.72.38.0/23,🎯 全球直连,no-resolve
- - IP-CIDR,103.72.40.0/23,🎯 全球直连,no-resolve
- - IP-CIDR,103.72.44.0/22,🎯 全球直连,no-resolve
- - IP-CIDR,103.72.48.0/21,🎯 全球直连,no-resolve
- - IP-CIDR,103.72.128.0/21,🎯 全球直连,no-resolve
- - IP-CIDR,103.74.24.0/21,🎯 全球直连,no-resolve
- - IP-CIDR,103.74.48.0/22,🎯 全球直连,no-resolve
- - IP-CIDR,103.126.92.0/22,🎯 全球直连,no-resolve
- - IP-CIDR,103.129.252.0/22,🎯 全球直连,no-resolve
- - IP-CIDR,103.131.252.0/22,🎯 全球直连,no-resolve
- - IP-CIDR,103.135.240.0/22,🎯 全球直连,no-resolve
- - IP-CIDR,103.196.64.0/22,🎯 全球直连,no-resolve
- - IP-CIDR,106.2.32.0/19,🎯 全球直连,no-resolve
- - IP-CIDR,106.2.64.0/18,🎯 全球直连,no-resolve
- - IP-CIDR,114.113.196.0/22,🎯 全球直连,no-resolve
- - IP-CIDR,114.113.200.0/22,🎯 全球直连,no-resolve
- - IP-CIDR,115.236.112.0/20,🎯 全球直连,no-resolve
- - IP-CIDR,115.238.76.0/22,🎯 全球直连,no-resolve
- - IP-CIDR,123.58.160.0/19,🎯 全球直连,no-resolve
- - IP-CIDR,223.252.192.0/19,🎯 全球直连,no-resolve
- - IP-CIDR,101.198.128.0/18,🎯 全球直连,no-resolve
- - IP-CIDR,101.198.192.0/19,🎯 全球直连,no-resolve
- - IP-CIDR,101.199.196.0/22,🎯 全球直连,no-resolve
  - GEOIP,CN,🎯 全球直连
  - MATCH,🐟 漏网之鱼
