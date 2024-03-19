@@ -5,89 +5,78 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 美国 CloudFlare节点, server: 104.21.221.207, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: a.prapt1.ir}}, udp: true}
-  - {name: 美国 CloudFlare节点 2, server: 104.21.224.112, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/?ed=2048&Telegram🇨🇳", headers: {Host: a.prapt1.ir}}, udp: true}
-  - {name: 美国 弗吉尼亚州文特山农场OVH数据中心, server: 147.135.26.48, port: 47212, type: vmess, uuid: c46ec369-6de2-4f4c-a788-001703eefdd8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美国 CloudFlare节点 3, server: 104.21.234.74, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/?ed=2048&Telegram🇨🇳", headers: {Host: a.prapt1.ir}}, udp: true}
-  - {name: 美国 CloudFlare节点 4, server: 104.21.224.104, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/?ed=2048&Telegram🇨🇳@WangCai_8", headers: {Host: a.prapt1.ir}}, udp: true}
-  - {name: 美国 CloudFlare节点 5, server: 104.21.227.16, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/?ed=2048&Telegram🇨🇳", headers: {Host: a.prapt4.ir}}, udp: true}
-  - {name: 美国 CloudFlare节点 6, server: 104.21.236.64, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/?ed=2048&Telegram🇨🇳@WangCai_8", headers: {Host: a.prapt4.ir}}, udp: true}
-  - {name: 美国 CloudFlare节点 7, server: 104.21.229.48, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/?ed=2048&Telegram🇨🇳@WangCai_8", headers: {Host: a.prapt4.ir}}, udp: true}
-  - {name: 美国 CloudFlare节点 8, server: 104.21.221.197, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: a.prapt1.ir}}, udp: true}
-  - {name: 波兰 V2CROSS.COM, server: 193.243.147.128, port: 40368, type: ss, cipher: aes-256-gcm, password: 7BcLdsO1WweoGD0X, udp: true}
-  - {name: 美国 CloudFlare节点 9, server: 104.21.236.60, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/?ed=2048&Telegram🇨🇳", headers: {Host: a.prapt4.ir}}, udp: true}
-  - {name: 美国 CloudFlare节点 10, server: 104.21.224.202, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/?ed=2048&Telegram🇨🇳@WangCai_8", headers: {Host: a.prapt1.ir}}, udp: true}
-  - {name: 美国 CloudFlare节点 11, server: 104.21.226.33, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: a.prapt1.ir}}, udp: true}
-  - {name: 挪威 V2CROSS.COM, server: 146.59.102.109, port: 35230, type: ss, cipher: aes-256-gcm, password: lSreYGyaPfCsJQWf, udp: true}
-  - {name: 广东省揭阳市 移动, server: jp2.mhw7e2.online, port: 20014, type: ss, cipher: chacha20-ietf-poly1305, password: 70747514-fb14-4f31-8390-e1f0453eff6d, udp: true}
-  - {name: 美国 CloudFlare节点 12, server: 104.21.224.21, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/?ed=2048&Telegram🇨🇳 @WangCai08", headers: {Host: a.prapt4.ir}}, udp: true}
-  - {name: 美国 CloudFlare节点 13, server: 104.21.234.72, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: a.prapt1.ir}}, udp: true}
-  - {name: 美国 CloudFlare节点 14, server: 104.21.221.169, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: a.prapt1.ir}}, udp: true}
-  - {name: 美国 CloudFlare节点 15, server: 104.21.221.200, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: a.prapt1.ir}}, udp: true}
-  - {name: 美国 CloudFlare节点 16, server: 104.21.222.38, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: a.prapt4.ir}}, udp: true}
-  - {name: 美国 CloudFlare节点 17, server: 104.21.237.67, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/?ed=2048&Telegram🇨🇳 @WangCai08", headers: {Host: a.prapt4.ir}}, udp: true}
-  - {name: 印度 卡纳塔克邦班加罗尔DigitalOcean数据中心, server: 139.59.24.215, port: 3389, type: vmess, uuid: 9c050a86-d612-48f1-ec32-e573df08a1b7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美国 CloudFlare节点 18, server: 104.21.220.104, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/?ed=2048&Telegram🇨🇳", headers: {Host: a.prapt1.ir}}, udp: true}
-  - {name: 美国 CloudFlare节点 19, server: 104.21.229.45, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/?ed=2048&Telegram🇨🇳 @WangCai08", headers: {Host: a.prapt4.ir}}, udp: true}
-  - {name: 美国 CloudFlare节点 20, server: 104.21.228.44, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/?ed=2048&Telegram🇨🇳", headers: {Host: a.prapt4.ir}}, udp: true}
-  - {name: 美国 CloudFlare节点 21, server: 104.21.231.37, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/?ed=2048&Telegram🇨🇳", headers: {Host: a.prapt1.ir}}, udp: true}
-  - {name: 美国 CloudFlare节点 22, server: 104.21.224.242, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/?ed=2048&Telegram🇨🇳@WangCai_8", headers: {Host: a.prapt1.ir}}, udp: true}
-  - {name: 美国 CloudFlare节点 23, server: 104.21.224.245, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: a.prapt1.ir}}, udp: true}
-  - {name: 北美地区 V2CROSS.COM, server: 169.197.142.216, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: 美国 CloudFlare节点 24, server: 104.21.224.3, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/?ed=2048&Telegram🇨🇳", headers: {Host: a.prapt1.ir}}, udp: true}
-  - {name: 广东省佛山市 移动, server: 183.232.170.157, port: 20301, type: vmess, uuid: b1478e24-4916-3abe-8f17-15931012ecbe, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /debian, headers: {Host: data-jp-v1.usabooks.com.cn}}, udp: true}
-  - {name: 印度 V2CROSS.COM, server: 202.78.162.5, port: 443, type: vmess, uuid: 716eded6-2201-4dbd-9d63-1638c9e8e677, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: pendar.onthewifi.com}}, udp: true}
-  - {name: 美国 CloudFlare节点 25, server: 104.21.224.58, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/?ed=2048&Telegram🇨🇳@WangCai_8", headers: {Host: a.prapt1.ir}}, udp: true}
-  - {name: 美国 CloudFlare节点 26, server: 104.21.225.29, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/?ed=2048&Telegram🇨🇳 @WangCai08", headers: {Host: a.prapt1.ir}}, udp: true}
-  - {name: 美国 CloudFlare节点 27, server: 104.21.47.176, port: 443, type: trojan, password: 52701795-3c3b-46b4-b7cf-c5978b3a4cf2, sni: hdfyc1.achaemenidempireofpersia.uk, skip-cert-verify: true, udp: true}
-  - {name: 美国 CloudFlare节点 28, server: 104.21.224.86, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/?ed=2048&Telegram🇨🇳@WangCai_8", headers: {Host: a.prapt1.ir}}, udp: true}
-  - {name: 美国 CloudFlare节点 29, server: 104.21.229.49, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: a.prapt4.ir}}, udp: true}
-  - {name: 美国 CloudFlare节点 30, server: 104.21.239.98, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: a.prapt4.ir}}, udp: true}
-  - {name: 美国 CloudFlare节点 31, server: server32.beheshtbaneh.com, port: 8880, type: vmess, uuid: 044ba8ed-7285-472a-bc14-fb91dc6be4c9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: server32.beheshtbaneh.com}}, udp: true}
-  - {name: 美国 CloudFlare节点 32, server: 104.21.229.46, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/?ed=2048&Telegram🇨🇳 @WangCai08", headers: {Host: a.prapt4.ir}}, udp: true}
-  - {name: 美国 CloudFlare节点 33, server: 104.21.227.15, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/?ed=2048&Telegram🇨🇳@WangCai_8", headers: {Host: a.prapt1.ir}}, udp: true}
-  - {name: 德国 黑森州法兰克福Amazon数据中心, server: 54.93.126.137, port: 22222, type: trojan, password: telegram-id-directvpn, sni: trojan.burgerip.co.uk, skip-cert-verify: true, udp: true}
-  - {name: 法国 OVH SAS, server: max-ip.hiroman5445.ir, port: 3586, type: vmess, uuid: 763d2999-6321-4e4a-9eea-574820d0a547, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美国 Amazon数据中心, server: 13.43.82.74, port: 22222, type: trojan, password: telegram-id-privatevpns, sni: trojan.burgerip.co.uk, skip-cert-verify: true, udp: true}
-  - {name: 美国 CloudFlare节点 34, server: 104.21.229.47, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/?ed=2048&Telegram🇨🇳", headers: {Host: a.prapt1.ir}}, udp: true}
-  - {name: 美国 CloudFlare节点 35, server: 104.21.224.23, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/?ed=2048&Telegram🇨🇳", headers: {Host: a.prapt1.ir}}, udp: true}
-  - {name: 美国 CloudFlare节点 36, server: 104.21.224.156, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/?ed=2048&Telegram🇨🇳", headers: {Host: a.prapt1.ir}}, udp: true}
-  - {name: 美国 CloudFlare节点 37, server: 104.21.225.5, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/?ed=2048&Telegram🇨🇳@WangCai_8", headers: {Host: a.prapt4.ir}}, udp: true}
-  - {name: 美国 CloudFlare节点 38, server: 104.21.63.52, port: 80, type: vmess, uuid: 60f12435-bb55-4da2-cb7d-4fea34ecfa37, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: us65.netfilx.live}}, udp: true}
+  - {name: 美国 CloudFlare节点, server: 104.21.63.52, port: 80, type: vmess, uuid: 60f12435-bb55-4da2-cb7d-4fea34ecfa37, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: us65.netfilx.live}}, udp: true}
+  - {name: 美国 CloudFlare节点 2, server: 104.21.234.52, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/?ed=2048&Telegram🇨🇳", headers: {Host: a.prapt4.ir}}, udp: true}
+  - {name: 美国 CloudFlare节点 3, server: 104.21.224.157, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/?ed=2048&Telegram🇨🇳@WangCai_8", headers: {Host: a.prapt1.ir}}, udp: true}
   - {name: 乌克兰 V2CROSS.COM, server: 95.164.33.62, port: 443, type: trojan, password: 0b1371aa-649d-41dc-9126-338c87936500, sni: sourceforge.net, skip-cert-verify: true, udp: true}
-  - {name: 美国 CloudFlare节点 39, server: 104.21.228.42, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/?ed=2048&Telegram🇨🇳", headers: {Host: a.prapt4.ir}}, udp: true}
-  - {name: 美国 CloudFlare节点 40, server: 104.21.224.109, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/?ed=2048&Telegram🇨🇳@WangCai_8", headers: {Host: a.prapt1.ir}}, udp: true}
-  - {name: 美国 CloudFlare节点 41, server: 104.21.224.8, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/?ed=2048&Telegram🇨🇳", headers: {Host: a.prapt1.ir}}, udp: true}
-  - {name: 美国 CloudFlare节点 42, server: 104.21.224.209, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: a.prapt1.ir}}, udp: true}
-  - {name: 美国 CloudFlare节点 43, server: 172.67.170.25, port: 8080, type: vmess, uuid: aa1dbb68-bfb5-4484-f7e7-7335eac3988c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: eu2.openxai.link}}, udp: true}
-  - {name: 美国 CloudFlare节点 44, server: 104.21.220.82, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: a.prapt1.ir}}, udp: true}
-  - {name: 美国 CloudFlare节点 45, server: 104.21.226.12, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/?ed=2048&Telegram🇨🇳 @WangCai08", headers: {Host: a.prapt4.ir}}, udp: true}
-  - {name: 美国 CloudFlare节点 46, server: 104.21.234.52, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: a.prapt1.ir}}, udp: true}
-  - {name: 美国 CloudFlare节点 47, server: 104.21.233.49, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/?ed=2048&Telegram🇨🇳", headers: {Host: a.prapt1.ir}}, udp: true}
+  - {name: 美国 CloudFlare节点 4, server: 104.21.229.28, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/?ed=2048&Telegram🇨🇳 @WangCai08", headers: {Host: a.prapt4.ir}}, udp: true}
+  - {name: 美国 CloudFlare节点 5, server: 104.21.233.66, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: a.prapt4.ir}}, udp: true}
   - {name: 法国 V2CROSS.COM, server: 94.140.0.110, port: 8880, type: vmess, uuid: 0d1bf26a-ce97-4707-a270-7f4d2ae37334, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: food.zhaal.ir}}, udp: true}
-  - {name: 美国 CloudFlare节点 48, server: 104.21.224.40, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/?ed=2048&Telegram🇨🇳@WangCai_8", headers: {Host: a.prapt1.ir}}, udp: true}
-  - {name: 美国 CloudFlare节点 49, server: 104.21.224.113, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/?ed=2048&Telegram🇨🇳", headers: {Host: a.prapt1.ir}}, udp: true}
-  - {name: 美国 CloudFlare节点 50, server: 104.21.221.203, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: a.prapt1.ir}}, udp: true}
-  - {name: 美国 CloudFlare节点 51, server: 104.21.235.75, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/?ed=2048&Telegram🇨🇳 @WangCai08", headers: {Host: a.prapt1.ir}}, udp: true}
-  - {name: 美国 CloudFlare节点 52, server: 104.21.224.234, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/?ed=2048&Telegram🇨🇳 @WangCai08", headers: {Host: a.prapt1.ir}}, udp: true}
-  - {name: 爱尔兰都柏林 亚马逊云, server: 3.251.108.173, port: 22222, type: trojan, password: telegram-id-privatevpns, sni: trojan.burgerip.co.uk, skip-cert-verify: true, udp: true}
-  - {name: 美国 CloudFlare节点 53, server: 104.21.230.54, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/?ed=2048&Telegram🇨🇳", headers: {Host: a.prapt4.ir}}, udp: true}
-  - {name: 美国 CloudFlare节点 54, server: 104.21.221.235, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: a.prapt1.ir}}, udp: true}
-  - {name: 美国 CloudFlare节点 55, server: 104.21.231.39, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/?ed=2048&Telegram🇨🇳 @WangCai08", headers: {Host: a.prapt4.ir}}, udp: true}
-  - {name: 美国 CloudFlare节点 56, server: 104.21.232.64, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/?ed=2048&Telegram🇨🇳", headers: {Host: a.prapt4.ir}}, udp: true}
-  - {name: 美国 CloudFlare节点 57, server: yh1.dtku41.xyz, port: 8080, type: vmess, uuid: 34c0bb5e-c120-432d-9c58-bd7d82c7397b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: 34c0bb5e-c120-432d-9c58-bd7d82c7397b-vm, headers: {Host: uh-lawyers-instruments-kernel.trycloudflare.com}}, udp: true}
-  - {name: 美国 CloudFlare节点 58, server: 104.21.237.87, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/?ed=2048&Telegram🇨🇳", headers: {Host: a.prapt1.ir}}, udp: true}
-  - {name: 美国 CloudFlare节点 59, server: 104.21.225.6, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/?ed=2048&Telegram🇨🇳@WangCai08", headers: {Host: a.prapt4.ir}}, udp: true}
-  - {name: 美国 CloudFlare节点 60, server: 104.21.224.106, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/?ed=2048&Telegram🇨🇳", headers: {Host: a.prapt1.ir}}, udp: true}
-  - {name: 美国 CloudFlare节点 61, server: 104.21.232.62, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/?ed=2048&Telegram🇨🇳 @WangCai08", headers: {Host: a.prapt4.ir}}, udp: true}
-  - {name: 美国 CloudFlare节点 62, server: 104.21.238.93, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/?ed=2048&amp;Telegram🇨🇳", headers: {Host: a.prapt4.ir}}, udp: true}
-  - {name: 美国 华盛顿Cogent通信公司, server: 38.75.136.135, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 美国 CloudFlare节点 63, server: 104.21.227.35, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/?ed=2048&Telegram🇨🇳", headers: {Host: a.prapt4.ir}}, udp: true}
-  - {name: 美国 CloudFlare节点 64, server: 104.21.228.41, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/?ed=2048&Telegram🇨🇳@WangCai_8", headers: {Host: a.prapt1.ir}}, udp: true}
-  - {name: 美国 CloudFlare节点 65, server: 104.21.82.39, port: 2052, type: vmess, uuid: 7a737f41-b792-4260-94ff-3d864da67b80, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: mahilu.site}}, udp: true}
-  - {name: 美国 CloudFlare节点 66, server: 104.21.238.71, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: a.prapt1.ir}}, udp: true}
-  - {name: 美国 CloudFlare节点 67, server: 104.21.230.51, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/?ed=2048&Telegram🇨🇳 @WangCai08", headers: {Host: a.prapt1.ir}}, udp: true}
-  - {name: 美国 CloudFlare节点 68, server: 162.159.1.33, port: 8080, type: vmess, uuid: d9c5ec6a-a8d8-4732-8447-56fbd2f93e96, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: d9c5ec6a-a8d8-4732-8447-56fbd2f93e96-vm, headers: {Host: pcs-referenced-camera-concerns.trycloudflare.com}}, udp: true}
+  - {name: 美国 CloudFlare节点 6, server: 104.21.224.94, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/?ed=2048&Telegram🇨🇳@WangCai_8", headers: {Host: a.prapt1.ir}}, udp: true}
+  - {name: 美国 CloudFlare节点 7, server: 104.21.228.21, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/?ed=2048&Telegram🇨🇳 @WangCai08", headers: {Host: a.prapt1.ir}}, udp: true}
+  - {name: 美国 CloudFlare节点 8, server: 104.21.224.20, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/?ed=2048&Telegram🇨🇳 @WangCai08", headers: {Host: a.prapt1.ir}}, udp: true}
+  - {name: 广东省揭阳市 移动, server: jp2.mhw7e2.online, port: 20014, type: ss, cipher: chacha20-ietf-poly1305, password: 70747514-fb14-4f31-8390-e1f0453eff6d, udp: true}
+  - {name: 美国 CloudFlare节点 9, server: 104.21.228.40, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: a.prapt4.ir}}, udp: true}
+  - {name: 美国 CloudFlare节点 10, server: 104.21.229.29, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/?ed=2048&Telegram🇨🇳", headers: {Host: a.prapt1.ir}}, udp: true}
+  - {name: 广东省佛山市 移动, server: 183.232.170.157, port: 20301, type: vmess, uuid: b1478e24-4916-3abe-8f17-15931012ecbe, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /debian, headers: {Host: data-jp-v1.usabooks.com.cn}}, udp: true}
+  - {name: 美国 CloudFlare节点 11, server: 104.21.221.240, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: a.prapt1.ir}}, udp: true}
+  - {name: 美国 CloudFlare节点 12, server: 104.21.224.65, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/?ed=2048&Telegram🇨🇳 @WangCai08", headers: {Host: a.prapt1.ir}}, udp: true}
+  - {name: 美国 CloudFlare节点 13, server: 104.21.224.206, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: a.prapt1.ir}}, udp: true}
+  - {name: 美国 CloudFlare节点 14, server: 104.21.232.63, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/?ed=2048&Telegram🇨🇳", headers: {Host: a.prapt4.ir}}, udp: true}
+  - {name: 美国 CloudFlare节点 15, server: 104.21.234.53, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/?ed=2048&Telegram🇨🇳", headers: {Host: a.prapt4.ir}}, udp: true}
+  - {name: 美国 CloudFlare节点 16, server: 104.21.233.47, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/?ed=2048&Telegram🇨🇳", headers: {Host: a.prapt1.ir}}, udp: true}
+  - {name: 美国 CloudFlare节点 17, server: 172.67.66.46, port: 8080, type: vmess, uuid: aa1dbb68-bfb5-4484-f7e7-7335eac3988c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: eu2.openxai.link}}, udp: true}
+  - {name: 美国 CloudFlare节点 18, server: 104.21.227.19, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/?ed=2048&Telegram🇨🇳", headers: {Host: a.prapt1.ir}}, udp: true}
+  - {name: 美国 CloudFlare节点 19, server: 104.21.237.65, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/?ed=2048&Telegram🇨🇳@WangCai08", headers: {Host: a.prapt1.ir}}, udp: true}
+  - {name: 美国 CloudFlare节点 20, server: 104.21.231.35, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: a.prapt1.ir}}, udp: true}
+  - {name: 美国 CloudFlare节点 21, server: 104.21.228.41, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/?ed=2048&Telegram🇨🇳", headers: {Host: a.prapt1.ir}}, udp: true}
+  - {name: 法国 OVH SAS, server: max-ip.hiroman5445.ir, port: 3586, type: vmess, uuid: 763d2999-6321-4e4a-9eea-574820d0a547, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国 CloudFlare节点 22, server: 104.21.221.215, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: a.prapt1.ir}}, udp: true}
+  - {name: 美国 CloudFlare节点 23, server: 172.67.130.140, port: 2082, type: vmess, uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: s1c.v2.v001sss.xyz}}, udp: true}
+  - {name: 美国 CloudFlare节点 24, server: 104.21.221.219, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: a.prapt1.ir}}, udp: true}
+  - {name: 美国 CloudFlare节点 25, server: 104.21.228.44, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/?ed=2048&Telegram🇨🇳", headers: {Host: a.prapt4.ir}}, udp: true}
+  - {name: 美国 CloudFlare节点 26, server: 104.21.224.76, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/?ed=2048&Telegram🇨🇳@WangCai_8", headers: {Host: a.prapt1.ir}}, udp: true}
+  - {name: 美国 CloudFlare节点 27, server: 104.21.221.135, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: a.prapt1.ir}}, udp: true}
+  - {name: 美国 CloudFlare节点 28, server: 104.21.229.26, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: a.prapt4.ir}}, udp: true}
+  - {name: 美国 CloudFlare节点 29, server: 104.21.224.56, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: a.prapt1.ir}}, udp: true}
+  - {name: 美国 CloudFlare节点 30, server: 104.21.237.66, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/?ed=2048&Telegram🇨🇳", headers: {Host: a.prapt4.ir}}, udp: true}
+  - {name: 美国 CloudFlare节点 31, server: 104.21.224.37, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/?ed=2048&Telegram🇨🇳", headers: {Host: a.prapt1.ir}}, udp: true}
+  - {name: 美国 CloudFlare节点 32, server: 104.21.236.61, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/?ed=2048&Telegram🇨🇳", headers: {Host: a.prapt4.ir}}, udp: true}
+  - {name: 美国 CloudFlare节点 33, server: 104.21.237.85, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/?ed=2048&Telegram🇨🇳", headers: {Host: a.prapt4.ir}}, udp: true}
+  - {name: 美国 CloudFlare节点 34, server: 104.21.239.76, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/?ed=2048&Telegram🇨🇳", headers: {Host: a.prapt1.ir}}, udp: true}
+  - {name: 美国 CloudFlare节点 35, server: 104.21.224.137, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: a.prapt1.ir}}, udp: true}
+  - {name: 美国 CloudFlare节点 36, server: 104.21.224.202, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/?ed=2048&Telegram🇨🇳@WangCai_8", headers: {Host: a.prapt1.ir}}, udp: true}
+  - {name: 美国 CloudFlare节点 37, server: 104.21.231.55, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: a.prapt4.ir}}, udp: true}
+  - {name: 广东省佛山市 移动 2, server: data-jp-v1.usabooks.com.cn, port: 20301, type: vmess, uuid: b1478e24-4916-3abe-8f17-15931012ecbe, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /debian, headers: {Host: data-jp-v1.usabooks.com.cn}}, udp: true}
+  - {name: 美国 CloudFlare节点 38, server: us65.netfilx.live, port: 80, type: vmess, uuid: 60f12435-bb55-4da2-cb7d-4fea34ecfa37, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: us65.netfilx.live}}, udp: true}
+  - {name: 美国 CloudFlare节点 39, server: jahfkjha.cfd, port: 443, type: vmess, uuid: 950db6aa-4926-4616-816e-ec0312dcb87b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /linkws, headers: {Host: jahfkjha.cfd}}, udp: true}
+  - {name: 美国 CloudFlare节点 40, server: 104.21.224.132, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/?ed=2048&Telegram🇨🇳 @WangCai08", headers: {Host: a.prapt1.ir}}, udp: true}
+  - {name: 美国 CloudFlare节点 41, server: 104.21.227.16, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/?ed=2048&Telegram🇨🇳", headers: {Host: a.prapt1.ir}}, udp: true}
+  - {name: 美国科罗拉多州布隆菲尔德市 Level3, server: service.ouluyun9803.com, port: 26667, type: ss, cipher: chacha20-ietf-poly1305, password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2, udp: true}
+  - {name: 美国 CloudFlare节点 42, server: 104.21.239.99, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/?ed=2048&Telegram🇨🇳@WangCai_8", headers: {Host: a.prapt4.ir}}, udp: true}
+  - {name: 美国 CloudFlare节点 43, server: 104.21.221.203, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: a.prapt1.ir}}, udp: true}
+  - {name: 俄罗斯 V2CROSS.COM, server: 185.242.86.156, port: 54170, type: ss, cipher: chacha20-ietf-poly1305, password: 36ZCHeabUSfKjfQEvJ4HDV, udp: true}
+  - {name: 美国 CloudFlare节点 44, server: 104.21.221.185, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: a.prapt1.ir}}, udp: true}
+  - {name: 美国 华盛顿州昆西Microsoft公司, server: 51.143.178.209, port: 8657, type: ss, cipher: chacha20-ietf-poly1305, password: 1GvHt1qmWlEyH70qoDVbLT, udp: true}
+  - {name: 美国 CloudFlare节点 45, server: 162.159.5.6, port: 8080, type: vmess, uuid: d9c5ec6a-a8d8-4732-8447-56fbd2f93e96, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: d9c5ec6a-a8d8-4732-8447-56fbd2f93e96-vm, headers: {Host: pcs-referenced-camera-concerns.trycloudflare.com}}, udp: true}
+  - {name: 美国 CloudFlare节点 46, server: 104.21.236.63, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: a.prapt1.ir}}, udp: true}
+  - {name: 韩国 蘑菇主机BGP数据中心, server: 103.214.68.57, port: 10003, type: trojan, password: 6x8HcghsjS, sni: yes998.chickenkiller.com, skip-cert-verify: true, udp: true}
+  - {name: 美国 CloudFlare节点 47, server: 104.21.225.5, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/?ed=2048&Telegram🇨🇳@WangCai_8", headers: {Host: a.prapt4.ir}}, udp: true}
+  - {name: 美国 CloudFlare节点 48, server: 104.21.237.67, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: a.prapt4.ir}}, udp: true}
+  - {name: 美国 CloudFlare节点 49, server: 104.21.226.32, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/?ed=2048&Telegram🇨🇳@WangCai_8", headers: {Host: a.prapt1.ir}}, udp: true}
+  - {name: 美国 CloudFlare节点 50, server: russia.com, port: 8880, type: vmess, uuid: 6658a3a6-225a-4d33-a5d2-82cfde565b4e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /api/v3/download.getFile, headers: {Host: ssrsub.v03.ssrsub.com}}, udp: true}
+  - {name: 美国 Fastly全球Anycast节点, server: gov.uk, port: 443, type: vmess, uuid: 77848824-93b7-4b89-ffd0-e91afff406ce, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /77848824, headers: {Host: zheshiscp.com}}, udp: true}
+  - {name: 美国 CloudFlare节点 51, server: 104.21.230.53, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/?ed=2048&Telegram🇨🇳", headers: {Host: a.prapt1.ir}}, udp: true}
+  - {name: 美国 CloudFlare节点 52, server: 104.21.233.46, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/?ed=2048&Telegram🇨🇳", headers: {Host: a.prapt1.ir}}, udp: true}
+  - {name: 美国 CloudFlare节点 53, server: 104.21.54.252, port: 8080, type: vmess, uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: www.velvetmountain.shop}}, udp: true}
+  - {name: 美国 CloudFlare节点 54, server: 104.21.221.244, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: a.prapt1.ir}}, udp: true}
+  - {name: 美国 CloudFlare节点 55, server: 104.21.235.58, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/?ed=2048&Telegram🇨🇳 @WangCai08", headers: {Host: a.prapt1.ir}}, udp: true}
+  - {name: 乌克兰 V2CROSS.COM 2, server: 95.164.68.116, port: 2053, type: trojan, password: f37a931d-7092-48fe-b82f-a98da3040eb2, sni: ftp.debian.org, skip-cert-verify: true, udp: true}
+  - {name: 美国 CloudFlare节点 56, server: 104.21.236.81, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/?ed=2048&Telegram🇨🇳", headers: {Host: a.prapt1.ir}}, udp: true}
+  - {name: 美国 CloudFlare节点 57, server: fbi.gov, port: 8080, type: vmess, uuid: ef8c954e-014f-4b36-8273-9b5086afab34, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: ef8c954e-014f-4b36-8273-9b5086afab34-vm, headers: {Host: bibliographic-sword-sequence-advertisers.trycloudflare.com}}, udp: true}
+  - {name: 美国 CloudFlare节点 58, server: 104.21.224.156, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/?ed=2048&Telegram🇨🇳", headers: {Host: a.prapt1.ir}}, udp: true}
+  - {name: 美国科罗拉多州布隆菲尔德市 Level3 2, server: service.ouluyun9803.com, port: 20003, type: ss, cipher: chacha20-ietf-poly1305, password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2, udp: true}
+  - {name: 美国 Merit网络公司, server: 35.83.210.16, port: 22222, type: trojan, password: telegram-id-directvpn, sni: trojan.burgerip.co.uk, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
@@ -96,36 +85,33 @@ proxy-groups:
       - 🎯 全球直连
       - 美国 CloudFlare节点
       - 美国 CloudFlare节点 2
-      - 美国 弗吉尼亚州文特山农场OVH数据中心
       - 美国 CloudFlare节点 3
+      - 乌克兰 V2CROSS.COM
       - 美国 CloudFlare节点 4
       - 美国 CloudFlare节点 5
+      - 法国 V2CROSS.COM
       - 美国 CloudFlare节点 6
       - 美国 CloudFlare节点 7
       - 美国 CloudFlare节点 8
-      - 波兰 V2CROSS.COM
+      - 广东省揭阳市 移动
       - 美国 CloudFlare节点 9
       - 美国 CloudFlare节点 10
+      - 广东省佛山市 移动
       - 美国 CloudFlare节点 11
-      - 挪威 V2CROSS.COM
-      - 广东省揭阳市 移动
       - 美国 CloudFlare节点 12
       - 美国 CloudFlare节点 13
       - 美国 CloudFlare节点 14
       - 美国 CloudFlare节点 15
       - 美国 CloudFlare节点 16
       - 美国 CloudFlare节点 17
-      - 印度 卡纳塔克邦班加罗尔DigitalOcean数据中心
       - 美国 CloudFlare节点 18
       - 美国 CloudFlare节点 19
       - 美国 CloudFlare节点 20
       - 美国 CloudFlare节点 21
+      - 法国 OVH SAS
       - 美国 CloudFlare节点 22
       - 美国 CloudFlare节点 23
-      - 北美地区 V2CROSS.COM
       - 美国 CloudFlare节点 24
-      - 广东省佛山市 移动
-      - 印度 V2CROSS.COM
       - 美国 CloudFlare节点 25
       - 美国 CloudFlare节点 26
       - 美国 CloudFlare节点 27
@@ -135,48 +121,40 @@ proxy-groups:
       - 美国 CloudFlare节点 31
       - 美国 CloudFlare节点 32
       - 美国 CloudFlare节点 33
-      - 德国 黑森州法兰克福Amazon数据中心
-      - 法国 OVH SAS
-      - 美国 Amazon数据中心
       - 美国 CloudFlare节点 34
       - 美国 CloudFlare节点 35
       - 美国 CloudFlare节点 36
       - 美国 CloudFlare节点 37
+      - 广东省佛山市 移动 2
       - 美国 CloudFlare节点 38
-      - 乌克兰 V2CROSS.COM
       - 美国 CloudFlare节点 39
       - 美国 CloudFlare节点 40
       - 美国 CloudFlare节点 41
+      - 美国科罗拉多州布隆菲尔德市 Level3
       - 美国 CloudFlare节点 42
       - 美国 CloudFlare节点 43
+      - 俄罗斯 V2CROSS.COM
       - 美国 CloudFlare节点 44
+      - 美国 华盛顿州昆西Microsoft公司
       - 美国 CloudFlare节点 45
       - 美国 CloudFlare节点 46
+      - 韩国 蘑菇主机BGP数据中心
       - 美国 CloudFlare节点 47
-      - 法国 V2CROSS.COM
       - 美国 CloudFlare节点 48
       - 美国 CloudFlare节点 49
       - 美国 CloudFlare节点 50
+      - 美国 Fastly全球Anycast节点
       - 美国 CloudFlare节点 51
       - 美国 CloudFlare节点 52
-      - 爱尔兰都柏林 亚马逊云
       - 美国 CloudFlare节点 53
       - 美国 CloudFlare节点 54
       - 美国 CloudFlare节点 55
+      - 乌克兰 V2CROSS.COM 2
       - 美国 CloudFlare节点 56
       - 美国 CloudFlare节点 57
       - 美国 CloudFlare节点 58
-      - 美国 CloudFlare节点 59
-      - 美国 CloudFlare节点 60
-      - 美国 CloudFlare节点 61
-      - 美国 CloudFlare节点 62
-      - 美国 华盛顿Cogent通信公司
-      - 美国 CloudFlare节点 63
-      - 美国 CloudFlare节点 64
-      - 美国 CloudFlare节点 65
-      - 美国 CloudFlare节点 66
-      - 美国 CloudFlare节点 67
-      - 美国 CloudFlare节点 68
+      - 美国科罗拉多州布隆菲尔德市 Level3 2
+      - 美国 Merit网络公司
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -184,36 +162,33 @@ proxy-groups:
     proxies:
       - 美国 CloudFlare节点
       - 美国 CloudFlare节点 2
-      - 美国 弗吉尼亚州文特山农场OVH数据中心
       - 美国 CloudFlare节点 3
+      - 乌克兰 V2CROSS.COM
       - 美国 CloudFlare节点 4
       - 美国 CloudFlare节点 5
+      - 法国 V2CROSS.COM
       - 美国 CloudFlare节点 6
       - 美国 CloudFlare节点 7
       - 美国 CloudFlare节点 8
-      - 波兰 V2CROSS.COM
+      - 广东省揭阳市 移动
       - 美国 CloudFlare节点 9
       - 美国 CloudFlare节点 10
+      - 广东省佛山市 移动
       - 美国 CloudFlare节点 11
-      - 挪威 V2CROSS.COM
-      - 广东省揭阳市 移动
       - 美国 CloudFlare节点 12
       - 美国 CloudFlare节点 13
       - 美国 CloudFlare节点 14
       - 美国 CloudFlare节点 15
       - 美国 CloudFlare节点 16
       - 美国 CloudFlare节点 17
-      - 印度 卡纳塔克邦班加罗尔DigitalOcean数据中心
       - 美国 CloudFlare节点 18
       - 美国 CloudFlare节点 19
       - 美国 CloudFlare节点 20
       - 美国 CloudFlare节点 21
+      - 法国 OVH SAS
       - 美国 CloudFlare节点 22
       - 美国 CloudFlare节点 23
-      - 北美地区 V2CROSS.COM
       - 美国 CloudFlare节点 24
-      - 广东省佛山市 移动
-      - 印度 V2CROSS.COM
       - 美国 CloudFlare节点 25
       - 美国 CloudFlare节点 26
       - 美国 CloudFlare节点 27
@@ -223,48 +198,40 @@ proxy-groups:
       - 美国 CloudFlare节点 31
       - 美国 CloudFlare节点 32
       - 美国 CloudFlare节点 33
-      - 德国 黑森州法兰克福Amazon数据中心
-      - 法国 OVH SAS
-      - 美国 Amazon数据中心
       - 美国 CloudFlare节点 34
       - 美国 CloudFlare节点 35
       - 美国 CloudFlare节点 36
       - 美国 CloudFlare节点 37
+      - 广东省佛山市 移动 2
       - 美国 CloudFlare节点 38
-      - 乌克兰 V2CROSS.COM
       - 美国 CloudFlare节点 39
       - 美国 CloudFlare节点 40
       - 美国 CloudFlare节点 41
+      - 美国科罗拉多州布隆菲尔德市 Level3
       - 美国 CloudFlare节点 42
       - 美国 CloudFlare节点 43
+      - 俄罗斯 V2CROSS.COM
       - 美国 CloudFlare节点 44
+      - 美国 华盛顿州昆西Microsoft公司
       - 美国 CloudFlare节点 45
       - 美国 CloudFlare节点 46
+      - 韩国 蘑菇主机BGP数据中心
       - 美国 CloudFlare节点 47
-      - 法国 V2CROSS.COM
       - 美国 CloudFlare节点 48
       - 美国 CloudFlare节点 49
       - 美国 CloudFlare节点 50
+      - 美国 Fastly全球Anycast节点
       - 美国 CloudFlare节点 51
       - 美国 CloudFlare节点 52
-      - 爱尔兰都柏林 亚马逊云
       - 美国 CloudFlare节点 53
       - 美国 CloudFlare节点 54
       - 美国 CloudFlare节点 55
+      - 乌克兰 V2CROSS.COM 2
       - 美国 CloudFlare节点 56
       - 美国 CloudFlare节点 57
       - 美国 CloudFlare节点 58
-      - 美国 CloudFlare节点 59
-      - 美国 CloudFlare节点 60
-      - 美国 CloudFlare节点 61
-      - 美国 CloudFlare节点 62
-      - 美国 华盛顿Cogent通信公司
-      - 美国 CloudFlare节点 63
-      - 美国 CloudFlare节点 64
-      - 美国 CloudFlare节点 65
-      - 美国 CloudFlare节点 66
-      - 美国 CloudFlare节点 67
-      - 美国 CloudFlare节点 68
+      - 美国科罗拉多州布隆菲尔德市 Level3 2
+      - 美国 Merit网络公司
   - name: 🎥 NETFLIX
     type: select
     proxies:
@@ -273,36 +240,33 @@ proxy-groups:
       - 🎯 全球直连
       - 美国 CloudFlare节点
       - 美国 CloudFlare节点 2
-      - 美国 弗吉尼亚州文特山农场OVH数据中心
       - 美国 CloudFlare节点 3
+      - 乌克兰 V2CROSS.COM
       - 美国 CloudFlare节点 4
       - 美国 CloudFlare节点 5
+      - 法国 V2CROSS.COM
       - 美国 CloudFlare节点 6
       - 美国 CloudFlare节点 7
       - 美国 CloudFlare节点 8
-      - 波兰 V2CROSS.COM
+      - 广东省揭阳市 移动
       - 美国 CloudFlare节点 9
       - 美国 CloudFlare节点 10
+      - 广东省佛山市 移动
       - 美国 CloudFlare节点 11
-      - 挪威 V2CROSS.COM
-      - 广东省揭阳市 移动
       - 美国 CloudFlare节点 12
       - 美国 CloudFlare节点 13
       - 美国 CloudFlare节点 14
       - 美国 CloudFlare节点 15
       - 美国 CloudFlare节点 16
       - 美国 CloudFlare节点 17
-      - 印度 卡纳塔克邦班加罗尔DigitalOcean数据中心
       - 美国 CloudFlare节点 18
       - 美国 CloudFlare节点 19
       - 美国 CloudFlare节点 20
       - 美国 CloudFlare节点 21
+      - 法国 OVH SAS
       - 美国 CloudFlare节点 22
       - 美国 CloudFlare节点 23
-      - 北美地区 V2CROSS.COM
       - 美国 CloudFlare节点 24
-      - 广东省佛山市 移动
-      - 印度 V2CROSS.COM
       - 美国 CloudFlare节点 25
       - 美国 CloudFlare节点 26
       - 美国 CloudFlare节点 27
@@ -312,48 +276,40 @@ proxy-groups:
       - 美国 CloudFlare节点 31
       - 美国 CloudFlare节点 32
       - 美国 CloudFlare节点 33
-      - 德国 黑森州法兰克福Amazon数据中心
-      - 法国 OVH SAS
-      - 美国 Amazon数据中心
       - 美国 CloudFlare节点 34
       - 美国 CloudFlare节点 35
       - 美国 CloudFlare节点 36
       - 美国 CloudFlare节点 37
+      - 广东省佛山市 移动 2
       - 美国 CloudFlare节点 38
-      - 乌克兰 V2CROSS.COM
       - 美国 CloudFlare节点 39
       - 美国 CloudFlare节点 40
       - 美国 CloudFlare节点 41
+      - 美国科罗拉多州布隆菲尔德市 Level3
       - 美国 CloudFlare节点 42
       - 美国 CloudFlare节点 43
+      - 俄罗斯 V2CROSS.COM
       - 美国 CloudFlare节点 44
+      - 美国 华盛顿州昆西Microsoft公司
       - 美国 CloudFlare节点 45
       - 美国 CloudFlare节点 46
+      - 韩国 蘑菇主机BGP数据中心
       - 美国 CloudFlare节点 47
-      - 法国 V2CROSS.COM
       - 美国 CloudFlare节点 48
       - 美国 CloudFlare节点 49
       - 美国 CloudFlare节点 50
+      - 美国 Fastly全球Anycast节点
       - 美国 CloudFlare节点 51
       - 美国 CloudFlare节点 52
-      - 爱尔兰都柏林 亚马逊云
       - 美国 CloudFlare节点 53
       - 美国 CloudFlare节点 54
       - 美国 CloudFlare节点 55
+      - 乌克兰 V2CROSS.COM 2
       - 美国 CloudFlare节点 56
       - 美国 CloudFlare节点 57
       - 美国 CloudFlare节点 58
-      - 美国 CloudFlare节点 59
-      - 美国 CloudFlare节点 60
-      - 美国 CloudFlare节点 61
-      - 美国 CloudFlare节点 62
-      - 美国 华盛顿Cogent通信公司
-      - 美国 CloudFlare节点 63
-      - 美国 CloudFlare节点 64
-      - 美国 CloudFlare节点 65
-      - 美国 CloudFlare节点 66
-      - 美国 CloudFlare节点 67
-      - 美国 CloudFlare节点 68
+      - 美国科罗拉多州布隆菲尔德市 Level3 2
+      - 美国 Merit网络公司
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -374,36 +330,33 @@ proxy-groups:
       - 🎯 全球直连
       - 美国 CloudFlare节点
       - 美国 CloudFlare节点 2
-      - 美国 弗吉尼亚州文特山农场OVH数据中心
       - 美国 CloudFlare节点 3
+      - 乌克兰 V2CROSS.COM
       - 美国 CloudFlare节点 4
       - 美国 CloudFlare节点 5
+      - 法国 V2CROSS.COM
       - 美国 CloudFlare节点 6
       - 美国 CloudFlare节点 7
       - 美国 CloudFlare节点 8
-      - 波兰 V2CROSS.COM
+      - 广东省揭阳市 移动
       - 美国 CloudFlare节点 9
       - 美国 CloudFlare节点 10
+      - 广东省佛山市 移动
       - 美国 CloudFlare节点 11
-      - 挪威 V2CROSS.COM
-      - 广东省揭阳市 移动
       - 美国 CloudFlare节点 12
       - 美国 CloudFlare节点 13
       - 美国 CloudFlare节点 14
       - 美国 CloudFlare节点 15
       - 美国 CloudFlare节点 16
       - 美国 CloudFlare节点 17
-      - 印度 卡纳塔克邦班加罗尔DigitalOcean数据中心
       - 美国 CloudFlare节点 18
       - 美国 CloudFlare节点 19
       - 美国 CloudFlare节点 20
       - 美国 CloudFlare节点 21
+      - 法国 OVH SAS
       - 美国 CloudFlare节点 22
       - 美国 CloudFlare节点 23
-      - 北美地区 V2CROSS.COM
       - 美国 CloudFlare节点 24
-      - 广东省佛山市 移动
-      - 印度 V2CROSS.COM
       - 美国 CloudFlare节点 25
       - 美国 CloudFlare节点 26
       - 美国 CloudFlare节点 27
@@ -413,48 +366,40 @@ proxy-groups:
       - 美国 CloudFlare节点 31
       - 美国 CloudFlare节点 32
       - 美国 CloudFlare节点 33
-      - 德国 黑森州法兰克福Amazon数据中心
-      - 法国 OVH SAS
-      - 美国 Amazon数据中心
       - 美国 CloudFlare节点 34
       - 美国 CloudFlare节点 35
       - 美国 CloudFlare节点 36
       - 美国 CloudFlare节点 37
+      - 广东省佛山市 移动 2
       - 美国 CloudFlare节点 38
-      - 乌克兰 V2CROSS.COM
       - 美国 CloudFlare节点 39
       - 美国 CloudFlare节点 40
       - 美国 CloudFlare节点 41
+      - 美国科罗拉多州布隆菲尔德市 Level3
       - 美国 CloudFlare节点 42
       - 美国 CloudFlare节点 43
+      - 俄罗斯 V2CROSS.COM
       - 美国 CloudFlare节点 44
+      - 美国 华盛顿州昆西Microsoft公司
       - 美国 CloudFlare节点 45
       - 美国 CloudFlare节点 46
+      - 韩国 蘑菇主机BGP数据中心
       - 美国 CloudFlare节点 47
-      - 法国 V2CROSS.COM
       - 美国 CloudFlare节点 48
       - 美国 CloudFlare节点 49
       - 美国 CloudFlare节点 50
+      - 美国 Fastly全球Anycast节点
       - 美国 CloudFlare节点 51
       - 美国 CloudFlare节点 52
-      - 爱尔兰都柏林 亚马逊云
       - 美国 CloudFlare节点 53
       - 美国 CloudFlare节点 54
       - 美国 CloudFlare节点 55
+      - 乌克兰 V2CROSS.COM 2
       - 美国 CloudFlare节点 56
       - 美国 CloudFlare节点 57
       - 美国 CloudFlare节点 58
-      - 美国 CloudFlare节点 59
-      - 美国 CloudFlare节点 60
-      - 美国 CloudFlare节点 61
-      - 美国 CloudFlare节点 62
-      - 美国 华盛顿Cogent通信公司
-      - 美国 CloudFlare节点 63
-      - 美国 CloudFlare节点 64
-      - 美国 CloudFlare节点 65
-      - 美国 CloudFlare节点 66
-      - 美国 CloudFlare节点 67
-      - 美国 CloudFlare节点 68
+      - 美国科罗拉多州布隆菲尔德市 Level3 2
+      - 美国 Merit网络公司
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -467,36 +412,33 @@ proxy-groups:
       - 🔰 节点选择
       - 美国 CloudFlare节点
       - 美国 CloudFlare节点 2
-      - 美国 弗吉尼亚州文特山农场OVH数据中心
       - 美国 CloudFlare节点 3
+      - 乌克兰 V2CROSS.COM
       - 美国 CloudFlare节点 4
       - 美国 CloudFlare节点 5
+      - 法国 V2CROSS.COM
       - 美国 CloudFlare节点 6
       - 美国 CloudFlare节点 7
       - 美国 CloudFlare节点 8
-      - 波兰 V2CROSS.COM
+      - 广东省揭阳市 移动
       - 美国 CloudFlare节点 9
       - 美国 CloudFlare节点 10
+      - 广东省佛山市 移动
       - 美国 CloudFlare节点 11
-      - 挪威 V2CROSS.COM
-      - 广东省揭阳市 移动
       - 美国 CloudFlare节点 12
       - 美国 CloudFlare节点 13
       - 美国 CloudFlare节点 14
       - 美国 CloudFlare节点 15
       - 美国 CloudFlare节点 16
       - 美国 CloudFlare节点 17
-      - 印度 卡纳塔克邦班加罗尔DigitalOcean数据中心
       - 美国 CloudFlare节点 18
       - 美国 CloudFlare节点 19
       - 美国 CloudFlare节点 20
       - 美国 CloudFlare节点 21
+      - 法国 OVH SAS
       - 美国 CloudFlare节点 22
       - 美国 CloudFlare节点 23
-      - 北美地区 V2CROSS.COM
       - 美国 CloudFlare节点 24
-      - 广东省佛山市 移动
-      - 印度 V2CROSS.COM
       - 美国 CloudFlare节点 25
       - 美国 CloudFlare节点 26
       - 美国 CloudFlare节点 27
@@ -506,48 +448,40 @@ proxy-groups:
       - 美国 CloudFlare节点 31
       - 美国 CloudFlare节点 32
       - 美国 CloudFlare节点 33
-      - 德国 黑森州法兰克福Amazon数据中心
-      - 法国 OVH SAS
-      - 美国 Amazon数据中心
       - 美国 CloudFlare节点 34
       - 美国 CloudFlare节点 35
       - 美国 CloudFlare节点 36
       - 美国 CloudFlare节点 37
+      - 广东省佛山市 移动 2
       - 美国 CloudFlare节点 38
-      - 乌克兰 V2CROSS.COM
       - 美国 CloudFlare节点 39
       - 美国 CloudFlare节点 40
       - 美国 CloudFlare节点 41
+      - 美国科罗拉多州布隆菲尔德市 Level3
       - 美国 CloudFlare节点 42
       - 美国 CloudFlare节点 43
+      - 俄罗斯 V2CROSS.COM
       - 美国 CloudFlare节点 44
+      - 美国 华盛顿州昆西Microsoft公司
       - 美国 CloudFlare节点 45
       - 美国 CloudFlare节点 46
+      - 韩国 蘑菇主机BGP数据中心
       - 美国 CloudFlare节点 47
-      - 法国 V2CROSS.COM
       - 美国 CloudFlare节点 48
       - 美国 CloudFlare节点 49
       - 美国 CloudFlare节点 50
+      - 美国 Fastly全球Anycast节点
       - 美国 CloudFlare节点 51
       - 美国 CloudFlare节点 52
-      - 爱尔兰都柏林 亚马逊云
       - 美国 CloudFlare节点 53
       - 美国 CloudFlare节点 54
       - 美国 CloudFlare节点 55
+      - 乌克兰 V2CROSS.COM 2
       - 美国 CloudFlare节点 56
       - 美国 CloudFlare节点 57
       - 美国 CloudFlare节点 58
-      - 美国 CloudFlare节点 59
-      - 美国 CloudFlare节点 60
-      - 美国 CloudFlare节点 61
-      - 美国 CloudFlare节点 62
-      - 美国 华盛顿Cogent通信公司
-      - 美国 CloudFlare节点 63
-      - 美国 CloudFlare节点 64
-      - 美国 CloudFlare节点 65
-      - 美国 CloudFlare节点 66
-      - 美国 CloudFlare节点 67
-      - 美国 CloudFlare节点 68
+      - 美国科罗拉多州布隆菲尔德市 Level3 2
+      - 美国 Merit网络公司
   - name: 📲 电报信息
     type: select
     proxies:
@@ -555,36 +489,33 @@ proxy-groups:
       - 🎯 全球直连
       - 美国 CloudFlare节点
       - 美国 CloudFlare节点 2
-      - 美国 弗吉尼亚州文特山农场OVH数据中心
       - 美国 CloudFlare节点 3
+      - 乌克兰 V2CROSS.COM
       - 美国 CloudFlare节点 4
       - 美国 CloudFlare节点 5
+      - 法国 V2CROSS.COM
       - 美国 CloudFlare节点 6
       - 美国 CloudFlare节点 7
       - 美国 CloudFlare节点 8
-      - 波兰 V2CROSS.COM
+      - 广东省揭阳市 移动
       - 美国 CloudFlare节点 9
       - 美国 CloudFlare节点 10
+      - 广东省佛山市 移动
       - 美国 CloudFlare节点 11
-      - 挪威 V2CROSS.COM
-      - 广东省揭阳市 移动
       - 美国 CloudFlare节点 12
       - 美国 CloudFlare节点 13
       - 美国 CloudFlare节点 14
       - 美国 CloudFlare节点 15
       - 美国 CloudFlare节点 16
       - 美国 CloudFlare节点 17
-      - 印度 卡纳塔克邦班加罗尔DigitalOcean数据中心
       - 美国 CloudFlare节点 18
       - 美国 CloudFlare节点 19
       - 美国 CloudFlare节点 20
       - 美国 CloudFlare节点 21
+      - 法国 OVH SAS
       - 美国 CloudFlare节点 22
       - 美国 CloudFlare节点 23
-      - 北美地区 V2CROSS.COM
       - 美国 CloudFlare节点 24
-      - 广东省佛山市 移动
-      - 印度 V2CROSS.COM
       - 美国 CloudFlare节点 25
       - 美国 CloudFlare节点 26
       - 美国 CloudFlare节点 27
@@ -594,48 +525,40 @@ proxy-groups:
       - 美国 CloudFlare节点 31
       - 美国 CloudFlare节点 32
       - 美国 CloudFlare节点 33
-      - 德国 黑森州法兰克福Amazon数据中心
-      - 法国 OVH SAS
-      - 美国 Amazon数据中心
       - 美国 CloudFlare节点 34
       - 美国 CloudFlare节点 35
       - 美国 CloudFlare节点 36
       - 美国 CloudFlare节点 37
+      - 广东省佛山市 移动 2
       - 美国 CloudFlare节点 38
-      - 乌克兰 V2CROSS.COM
       - 美国 CloudFlare节点 39
       - 美国 CloudFlare节点 40
       - 美国 CloudFlare节点 41
+      - 美国科罗拉多州布隆菲尔德市 Level3
       - 美国 CloudFlare节点 42
       - 美国 CloudFlare节点 43
+      - 俄罗斯 V2CROSS.COM
       - 美国 CloudFlare节点 44
+      - 美国 华盛顿州昆西Microsoft公司
       - 美国 CloudFlare节点 45
       - 美国 CloudFlare节点 46
+      - 韩国 蘑菇主机BGP数据中心
       - 美国 CloudFlare节点 47
-      - 法国 V2CROSS.COM
       - 美国 CloudFlare节点 48
       - 美国 CloudFlare节点 49
       - 美国 CloudFlare节点 50
+      - 美国 Fastly全球Anycast节点
       - 美国 CloudFlare节点 51
       - 美国 CloudFlare节点 52
-      - 爱尔兰都柏林 亚马逊云
       - 美国 CloudFlare节点 53
       - 美国 CloudFlare节点 54
       - 美国 CloudFlare节点 55
+      - 乌克兰 V2CROSS.COM 2
       - 美国 CloudFlare节点 56
       - 美国 CloudFlare节点 57
       - 美国 CloudFlare节点 58
-      - 美国 CloudFlare节点 59
-      - 美国 CloudFlare节点 60
-      - 美国 CloudFlare节点 61
-      - 美国 CloudFlare节点 62
-      - 美国 华盛顿Cogent通信公司
-      - 美国 CloudFlare节点 63
-      - 美国 CloudFlare节点 64
-      - 美国 CloudFlare节点 65
-      - 美国 CloudFlare节点 66
-      - 美国 CloudFlare节点 67
-      - 美国 CloudFlare节点 68
+      - 美国科罗拉多州布隆菲尔德市 Level3 2
+      - 美国 Merit网络公司
   - name: 🍎 苹果服务
     type: select
     proxies:
@@ -644,36 +567,33 @@ proxy-groups:
       - ♻️ 自动选择
       - 美国 CloudFlare节点
       - 美国 CloudFlare节点 2
-      - 美国 弗吉尼亚州文特山农场OVH数据中心
       - 美国 CloudFlare节点 3
+      - 乌克兰 V2CROSS.COM
       - 美国 CloudFlare节点 4
       - 美国 CloudFlare节点 5
+      - 法国 V2CROSS.COM
       - 美国 CloudFlare节点 6
       - 美国 CloudFlare节点 7
       - 美国 CloudFlare节点 8
-      - 波兰 V2CROSS.COM
+      - 广东省揭阳市 移动
       - 美国 CloudFlare节点 9
       - 美国 CloudFlare节点 10
+      - 广东省佛山市 移动
       - 美国 CloudFlare节点 11
-      - 挪威 V2CROSS.COM
-      - 广东省揭阳市 移动
       - 美国 CloudFlare节点 12
       - 美国 CloudFlare节点 13
       - 美国 CloudFlare节点 14
       - 美国 CloudFlare节点 15
       - 美国 CloudFlare节点 16
       - 美国 CloudFlare节点 17
-      - 印度 卡纳塔克邦班加罗尔DigitalOcean数据中心
       - 美国 CloudFlare节点 18
       - 美国 CloudFlare节点 19
       - 美国 CloudFlare节点 20
       - 美国 CloudFlare节点 21
+      - 法国 OVH SAS
       - 美国 CloudFlare节点 22
       - 美国 CloudFlare节点 23
-      - 北美地区 V2CROSS.COM
       - 美国 CloudFlare节点 24
-      - 广东省佛山市 移动
-      - 印度 V2CROSS.COM
       - 美国 CloudFlare节点 25
       - 美国 CloudFlare节点 26
       - 美国 CloudFlare节点 27
@@ -683,48 +603,40 @@ proxy-groups:
       - 美国 CloudFlare节点 31
       - 美国 CloudFlare节点 32
       - 美国 CloudFlare节点 33
-      - 德国 黑森州法兰克福Amazon数据中心
-      - 法国 OVH SAS
-      - 美国 Amazon数据中心
       - 美国 CloudFlare节点 34
       - 美国 CloudFlare节点 35
       - 美国 CloudFlare节点 36
       - 美国 CloudFlare节点 37
+      - 广东省佛山市 移动 2
       - 美国 CloudFlare节点 38
-      - 乌克兰 V2CROSS.COM
       - 美国 CloudFlare节点 39
       - 美国 CloudFlare节点 40
       - 美国 CloudFlare节点 41
+      - 美国科罗拉多州布隆菲尔德市 Level3
       - 美国 CloudFlare节点 42
       - 美国 CloudFlare节点 43
+      - 俄罗斯 V2CROSS.COM
       - 美国 CloudFlare节点 44
+      - 美国 华盛顿州昆西Microsoft公司
       - 美国 CloudFlare节点 45
       - 美国 CloudFlare节点 46
+      - 韩国 蘑菇主机BGP数据中心
       - 美国 CloudFlare节点 47
-      - 法国 V2CROSS.COM
       - 美国 CloudFlare节点 48
       - 美国 CloudFlare节点 49
       - 美国 CloudFlare节点 50
+      - 美国 Fastly全球Anycast节点
       - 美国 CloudFlare节点 51
       - 美国 CloudFlare节点 52
-      - 爱尔兰都柏林 亚马逊云
       - 美国 CloudFlare节点 53
       - 美国 CloudFlare节点 54
       - 美国 CloudFlare节点 55
+      - 乌克兰 V2CROSS.COM 2
       - 美国 CloudFlare节点 56
       - 美国 CloudFlare节点 57
       - 美国 CloudFlare节点 58
-      - 美国 CloudFlare节点 59
-      - 美国 CloudFlare节点 60
-      - 美国 CloudFlare节点 61
-      - 美国 CloudFlare节点 62
-      - 美国 华盛顿Cogent通信公司
-      - 美国 CloudFlare节点 63
-      - 美国 CloudFlare节点 64
-      - 美国 CloudFlare节点 65
-      - 美国 CloudFlare节点 66
-      - 美国 CloudFlare节点 67
-      - 美国 CloudFlare节点 68
+      - 美国科罗拉多州布隆菲尔德市 Level3 2
+      - 美国 Merit网络公司
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -742,36 +654,33 @@ proxy-groups:
       - ♻️ 自动选择
       - 美国 CloudFlare节点
       - 美国 CloudFlare节点 2
-      - 美国 弗吉尼亚州文特山农场OVH数据中心
       - 美国 CloudFlare节点 3
+      - 乌克兰 V2CROSS.COM
       - 美国 CloudFlare节点 4
       - 美国 CloudFlare节点 5
+      - 法国 V2CROSS.COM
       - 美国 CloudFlare节点 6
       - 美国 CloudFlare节点 7
       - 美国 CloudFlare节点 8
-      - 波兰 V2CROSS.COM
+      - 广东省揭阳市 移动
       - 美国 CloudFlare节点 9
       - 美国 CloudFlare节点 10
+      - 广东省佛山市 移动
       - 美国 CloudFlare节点 11
-      - 挪威 V2CROSS.COM
-      - 广东省揭阳市 移动
       - 美国 CloudFlare节点 12
       - 美国 CloudFlare节点 13
       - 美国 CloudFlare节点 14
       - 美国 CloudFlare节点 15
       - 美国 CloudFlare节点 16
       - 美国 CloudFlare节点 17
-      - 印度 卡纳塔克邦班加罗尔DigitalOcean数据中心
       - 美国 CloudFlare节点 18
       - 美国 CloudFlare节点 19
       - 美国 CloudFlare节点 20
       - 美国 CloudFlare节点 21
+      - 法国 OVH SAS
       - 美国 CloudFlare节点 22
       - 美国 CloudFlare节点 23
-      - 北美地区 V2CROSS.COM
       - 美国 CloudFlare节点 24
-      - 广东省佛山市 移动
-      - 印度 V2CROSS.COM
       - 美国 CloudFlare节点 25
       - 美国 CloudFlare节点 26
       - 美国 CloudFlare节点 27
@@ -781,48 +690,40 @@ proxy-groups:
       - 美国 CloudFlare节点 31
       - 美国 CloudFlare节点 32
       - 美国 CloudFlare节点 33
-      - 德国 黑森州法兰克福Amazon数据中心
-      - 法国 OVH SAS
-      - 美国 Amazon数据中心
       - 美国 CloudFlare节点 34
       - 美国 CloudFlare节点 35
       - 美国 CloudFlare节点 36
       - 美国 CloudFlare节点 37
+      - 广东省佛山市 移动 2
       - 美国 CloudFlare节点 38
-      - 乌克兰 V2CROSS.COM
       - 美国 CloudFlare节点 39
       - 美国 CloudFlare节点 40
       - 美国 CloudFlare节点 41
+      - 美国科罗拉多州布隆菲尔德市 Level3
       - 美国 CloudFlare节点 42
       - 美国 CloudFlare节点 43
+      - 俄罗斯 V2CROSS.COM
       - 美国 CloudFlare节点 44
+      - 美国 华盛顿州昆西Microsoft公司
       - 美国 CloudFlare节点 45
       - 美国 CloudFlare节点 46
+      - 韩国 蘑菇主机BGP数据中心
       - 美国 CloudFlare节点 47
-      - 法国 V2CROSS.COM
       - 美国 CloudFlare节点 48
       - 美国 CloudFlare节点 49
       - 美国 CloudFlare节点 50
+      - 美国 Fastly全球Anycast节点
       - 美国 CloudFlare节点 51
       - 美国 CloudFlare节点 52
-      - 爱尔兰都柏林 亚马逊云
       - 美国 CloudFlare节点 53
       - 美国 CloudFlare节点 54
       - 美国 CloudFlare节点 55
+      - 乌克兰 V2CROSS.COM 2
       - 美国 CloudFlare节点 56
       - 美国 CloudFlare节点 57
       - 美国 CloudFlare节点 58
-      - 美国 CloudFlare节点 59
-      - 美国 CloudFlare节点 60
-      - 美国 CloudFlare节点 61
-      - 美国 CloudFlare节点 62
-      - 美国 华盛顿Cogent通信公司
-      - 美国 CloudFlare节点 63
-      - 美国 CloudFlare节点 64
-      - 美国 CloudFlare节点 65
-      - 美国 CloudFlare节点 66
-      - 美国 CloudFlare节点 67
-      - 美国 CloudFlare节点 68
+      - 美国科罗拉多州布隆菲尔德市 Level3 2
+      - 美国 Merit网络公司
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
