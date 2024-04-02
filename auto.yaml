@@ -5,127 +5,135 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 北美地区 V2CROSS.COM, server: 107.175.136.164, port: 16899, type: ss, cipher: aes-128-gcm, password: Yc2CtrIz8L, udp: true}
-  - {name: 美国 CloudFlare节点, server: 104.21.227.36, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: a.prapt5.ir}}, udp: true}
-  - {name: 台湾省桃园市 中华电信(HiNet), server: ty11t.twty.dynu.net, port: 13761, type: trojan, password: 3bedceff-1956-4f2c-a9c1-45c74568a560, skip-cert-verify: true, udp: true}
-  - {name: 美国 CloudFlare节点 2, server: onea.flha.ru, port: 2095, type: vmess, uuid: 7a737f41-b792-4260-94ff-3d864da67b80, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: onea.flha.ru}}, udp: true}
-  - {name: 美国 CloudFlare节点 3, server: racknerd.gorgorchicken.one, port: 8443, type: vmess, uuid: 1df0a6ca-5812-4bce-ddb1-9cd5548f4919, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: racknerd.gorgorchicken.one, network: ws, ws-opts: {path: /racknerd, headers: {Host: racknerd.gorgorchicken.one}}, udp: true}
-  - {name: 新加坡 Amazon数据中心, server: sg5g.xn--vhq70hxyat50h6wk.com, port: 80, type: vmess, uuid: ae1e5588-79c2-44a9-a2c8-a8e4b645fcce, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: sg5g.xn--vhq70hxyat50h6wk.com}}, udp: true}
-  - {name: 美国 CloudFlare节点 4, server: 173.245.58.100, port: 8080, type: vmess, uuid: 9b196b50-37f2-4f4b-b175-06273adc6207, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: 9b196b50-37f2-4f4b-b175-06273adc6207-vm, headers: {Host: technological-mel-fill-decide.trycloudflare.com}}, udp: true}
-  - {name: 美国 CloudFlare节点 5, server: 162.159.1.33, port: 8080, type: vmess, uuid: ef8c954e-014f-4b36-8273-9b5086afab34, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: ef8c954e-014f-4b36-8273-9b5086afab34-vm, headers: {Host: bibliographic-sword-sequence-advertisers.trycloudflare.com}}, udp: true}
-  - {name: 美国 CloudFlare节点 6, server: 104.21.229.49, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/?ed=2048&Telegram🇨🇳@WangCai08", headers: {Host: a.prapt4.ir}}, udp: true}
-  - {name: 美国 CloudFlare节点 7, server: 104.21.4.14, port: 2086, type: vmess, uuid: 7d93e992-48cf-42d4-84f8-75768e815a4c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: admin.arzonhost.ir}}, udp: true}
-  - {name: 台湾省高雄市 中华电信, server: tw1g.xn--vhq70hxyat50h6wk.com, port: 80, type: vmess, uuid: ae1e5588-79c2-44a9-a2c8-a8e4b645fcce, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: tw1g.xn--vhq70hxyat50h6wk.com}}, udp: true}
-  - {name: 俄罗斯 莫斯科JustHost, server: 176.32.35.167, port: 1007, type: trojan, password: 85bce006-4885-11ee-8792-f23c9164ca5d, sni: 004282c1-sbdj40-sdlngq-1n7jq.ru.z7zi.com, skip-cert-verify: true, udp: true}
-  - {name: 亚太地区 CacheFly亚洲Anycast节点, server: 204.93.164.187, port: 16899, type: ss, cipher: aes-128-gcm, password: Yc2CtrIz8L, udp: true}
-  - {name: 美国 CloudFlare公司CDN节点(shopify), server: 23.227.38.23, port: 8080, type: vmess, uuid: 34c0bb5e-c120-432d-9c58-bd7d82c7397b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: 34c0bb5e-c120-432d-9c58-bd7d82c7397b-vm, headers: {Host: uh-lawyers-instruments-kernel.trycloudflare.com}}, udp: true}
-  - {name: 美国 CloudFlare节点 8, server: 104.21.225.55, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: a.prapt5.ir}}, udp: true}
-  - {name: 美国 CloudFlare节点 9, server: 172.64.107.100, port: 2082, type: vmess, uuid: d4a530d5-9755-4ff9-a9ed-5a058cf0038b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /video/CuTy87zAzV/, headers: {Host: us4Bb5oSgJA.fzbqfrse.xyz}}, udp: true}
-  - {name: 瑞典 斯德哥尔摩Amazon数据中心, server: 13.49.11.215, port: 22222, type: trojan, password: telegram-id-directvpn, sni: trojan.burgerip.co.uk, skip-cert-verify: true, udp: true}
-  - {name: 美国 CloudFlare节点 10, server: 104.21.8.157, port: 2082, type: vmess, uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: s1c.v2.v001sss.xyz}}, udp: true}
-  - {name: 美国 Amazon EC2服务器, server: 3.67.57.153, port: 22222, type: trojan, password: telegram-id-directvpn, sni: trojan.burgerip.co.uk, skip-cert-verify: true, udp: true}
-  - {name: 美国 CloudFlare节点 11, server: cdn2_de.majutsu.top, port: 443, type: vmess, uuid: 61abbe9b-ac90-4dcc-99de-35e17f0ce847, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /acc, headers: {Host: cdn2_de.majutsu.top}}, udp: true}
-  - {name: 法国 巴黎Amazon数据中心, server: 35.180.183.76, port: 22222, type: trojan, password: telegram-id-privatevpns, sni: trojan.burgerip.co.uk, skip-cert-verify: true, udp: true}
-  - {name: 保加利亚 V2CROSS.COM, server: 87.120.204.200, port: 8080, type: vmess, uuid: bdd22841-c4d2-4aa8-acf2-95aa9125f159, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 87.120.204.200}}, udp: true}
+  - {name: 美国 CloudFlare节点, server: 162.159.137.249, port: 8080, type: vmess, uuid: 028c8131-9e3e-4836-94ac-ea7f24d4d05a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: 028c8131-9e3e-4836-94ac-ea7f24d4d05a-vm, headers: {Host: nest-emily-healing-h.trycloudflare.com}}, udp: true}
+  - {name: 法国 OVH SAS, server: 213.32.63.176, port: 3586, type: vmess, uuid: acba8460-6c85-4d67-8f74-5a51da5e8393, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "@vmessprotocol  رفع فیلتر", server: 0:0:0:0:0:ffff:b2d0:5790, port: 45015, type: vmess, uuid: 21f54c15-c624-460a-d6f3-95bb2041ea4a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 广东省广州市 移动, server: gz.quanstring.top, port: 25519, type: ss, cipher: chacha20-ietf-poly1305, password: 9c709e3d-f733-4b08-853d-2c81c4f393b5, udp: true}
+  - {name: 美国 CloudFlare节点 2, server: npmjs.com, port: 443, type: vmess, uuid: 52701795-3c3b-46b4-b7cf-c5978b3a4cf2, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /hdfyc5.achaemenidempireofpersia.uk/sNpuhb8v1rEIIa5hne1e, headers: {Host: csub6.CPiFORPERsiA.UK}}, udp: true}
+  - {name: 美国 CloudFlare节点 3, server: 162.159.1.33, port: 8080, type: vmess, uuid: d9c5ec6a-a8d8-4732-8447-56fbd2f93e96, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: d9c5ec6a-a8d8-4732-8447-56fbd2f93e96-vm, headers: {Host: pcs-referenced-camera-concerns.trycloudflare.com}}, udp: true}
+  - {name: 美国 CloudFlare节点 4, server: 104.21.4.14, port: 2086, type: vmess, uuid: 7d93e992-48cf-42d4-84f8-75768e815a4c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: admin.arzonhost.ir}}, udp: true}
+  - {name: 美国 CloudFlare节点 5, server: 104.19.201.135, port: 2082, type: vmess, uuid: d4a530d5-9755-4ff9-a9ed-5a058cf0038b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /video/CuTy87zAzV/, headers: {Host: us4Bb5oSgJA.fzbqfrse.xyz}}, udp: true}
+  - {name: 韩国 KT电信, server: service.ouluyun9803.com, port: 26667, type: ss, cipher: chacha20-ietf-poly1305, password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2, udp: true}
+  - {name: 浙江省杭州市 阿里云, server: 121.43.117.216, port: 10001, type: ss, cipher: chacha20-ietf-poly1305, password: Rad35baG, udp: true}
+  - {name: 法国 V2CROSS.COM, server: 94.140.0.110, port: 8880, type: vmess, uuid: 0d1bf26a-ce97-4707-a270-7f4d2ae37334, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: food.zhaal.ir}}, udp: true}
+  - {name: 美国 CloudFlare节点 6, server: 104.21.51.242, port: 2087, type: trojan, password: 241f01b9-8dfc-474f-8342-3fbd5c46417e, sni: grpcfr.arminhadadi.site, skip-cert-verify: true, udp: true}
+  - {name: 俄罗斯 莫斯科JustHost, server: 004282c1-sbdj40-sdlngq-1n7jq.ru.z7zi.com, port: 1007, type: trojan, password: 85bce006-4885-11ee-8792-f23c9164ca5d, skip-cert-verify: true, udp: true}
   - {name: 广东省 移动, server: data-us-v1.shwjfkw.cn, port: 20401, type: vmess, uuid: b1478e24-4916-3abe-8f17-15931012ecbe, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /debian, headers: {Host: data-us-v1.shwjfkw.cn}}, udp: true}
-  - {name: 乌克兰 V2CROSS.COM, server: 91.199.82.78, port: 8080, type: vmess, uuid: bdd22841-c4d2-4aa8-acf2-95aa9125f159, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: usma-12.trollfunny.net, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: 美国 CloudFlare节点 12, server: 172.67.66.46, port: 8080, type: vmess, uuid: aa1dbb68-bfb5-4484-f7e7-7335eac3988c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: eu2.openxai.link}}, udp: true}
-  - {name: 美国 CloudFlare节点 13, server: yh1.freeh1.xyz, port: 8080, type: vmess, uuid: ef8c954e-014f-4b36-8273-9b5086afab34, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: ef8c954e-014f-4b36-8273-9b5086afab34-vm, headers: {Host: bibliographic-sword-sequence-advertisers.trycloudflare.com}}, udp: true}
+  - {name: 美国 CloudFlare节点 7, server: mizban.arzonhost.ir, port: 2086, type: vmess, uuid: e690ff9e-1676-4be3-d136-dcae586cb1e7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: mizban.arzonhost.ir}}, udp: true}
+  - {name: 美国 CloudFlare节点 8, server: 104.21.20.16, port: 80, type: vmess, uuid: c9e99213-170b-458a-b45b-79454ac7cf4b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /vmess, headers: {Host: fi2-vmess.sshmax.xyz}}, udp: true}
+  - {name: 美国 CloudFlare节点 9, server: 162.159.130.208, port: 8080, type: vmess, uuid: 55021a7c-bd6c-418e-be95-ceac8ba27b45, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: 55021a7c-bd6c-418e-be95-ceac8ba27b45-vm, headers: {Host: widescreen-instruction-breakdown-postage.trycloudflare.com}}, udp: true}
+  - {name: 美国 CloudFlare节点 10, server: mahilu.site, port: 2052, type: vmess, uuid: 7a737f41-b792-4260-94ff-3d864da67b80, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: mahilu.site}}, udp: true}
+  - {name: 美国 CloudFlare节点 11, server: 104.21.69.44, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: a.prapt4.ir}}, udp: true}
+  - {name: 美国 CloudFlare节点 12, server: 104.21.235.58, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: a.prapt5.ir}}, udp: true}
+  - {name: 美国 CloudFlare节点 13, server: jpc.flha.ru, port: 2095, type: vmess, uuid: 7a737f41-b792-4260-94ff-3d864da67b80, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: jpc.flha.ru}}, udp: true}
+  - {name: 美国 CloudFlare节点 14, server: 172.67.192.61, port: 2087, type: trojan, password: 241f01b9-8dfc-474f-8342-3fbd5c46417e, sni: grpcfr.arminhadadi.site, skip-cert-verify: true, udp: true}
+  - {name: 美国 CloudFlare节点 15, server: 104.21.224.221, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: a.prapt1.ir}}, udp: true}
+  - {name: 俄罗斯 V2CROSS.COM, server: 185.242.86.156, port: 54170, type: ss, cipher: chacha20-ietf-poly1305, password: 36ZCHeabUSfKjfQEvJ4HDV, udp: true}
+  - {name: 德国 V2CROSS.COM, server: 194.99.79.178, port: 8080, type: vmess, uuid: bdd22841-c4d2-4aa8-acf2-95aa9125f159, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 194.99.79.178}}, udp: true}
+  - {name: 美国 CloudFlare节点 16, server: m07.tk4433.com, port: 2053, type: vmess, uuid: 5e2b3a4d-bd24-4a58-f55d-ed7bdcd421d3, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /m07.tk4433.com, headers: {Host: m07.tk4433.com}}, udp: true}
+  - {name: 俄罗斯 莫斯科JustHost 2, server: 45.144.2.113, port: 80, type: vmess, uuid: 1cb996c8-e5bf-40d2-9a3c-149b3b721c5f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 45.144.2.113}}, udp: true}
+  - {name: 台湾省桃园市 中华电信(HiNet), server: ty11t.twty.dynu.net, port: 13761, type: trojan, password: 3bedceff-1956-4f2c-a9c1-45c74568a560, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 北美地区 V2CROSS.COM
       - 美国 CloudFlare节点
-      - 台湾省桃园市 中华电信(HiNet)
+      - 法国 OVH SAS
+      - "@vmessprotocol  رفع فیلتر"
+      - 广东省广州市 移动
       - 美国 CloudFlare节点 2
       - 美国 CloudFlare节点 3
-      - 新加坡 Amazon数据中心
       - 美国 CloudFlare节点 4
       - 美国 CloudFlare节点 5
+      - 韩国 KT电信
+      - 浙江省杭州市 阿里云
+      - 法国 V2CROSS.COM
       - 美国 CloudFlare节点 6
-      - 美国 CloudFlare节点 7
-      - 台湾省高雄市 中华电信
       - 俄罗斯 莫斯科JustHost
-      - 亚太地区 CacheFly亚洲Anycast节点
-      - 美国 CloudFlare公司CDN节点(shopify)
+      - 广东省 移动
+      - 美国 CloudFlare节点 7
       - 美国 CloudFlare节点 8
       - 美国 CloudFlare节点 9
-      - 瑞典 斯德哥尔摩Amazon数据中心
       - 美国 CloudFlare节点 10
-      - 美国 Amazon EC2服务器
       - 美国 CloudFlare节点 11
-      - 法国 巴黎Amazon数据中心
-      - 保加利亚 V2CROSS.COM
-      - 广东省 移动
-      - 乌克兰 V2CROSS.COM
       - 美国 CloudFlare节点 12
       - 美国 CloudFlare节点 13
+      - 美国 CloudFlare节点 14
+      - 美国 CloudFlare节点 15
+      - 俄罗斯 V2CROSS.COM
+      - 德国 V2CROSS.COM
+      - 美国 CloudFlare节点 16
+      - 俄罗斯 莫斯科JustHost 2
+      - 台湾省桃园市 中华电信(HiNet)
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 北美地区 V2CROSS.COM
       - 美国 CloudFlare节点
-      - 台湾省桃园市 中华电信(HiNet)
+      - 法国 OVH SAS
+      - "@vmessprotocol  رفع فیلتر"
+      - 广东省广州市 移动
       - 美国 CloudFlare节点 2
       - 美国 CloudFlare节点 3
-      - 新加坡 Amazon数据中心
       - 美国 CloudFlare节点 4
       - 美国 CloudFlare节点 5
+      - 韩国 KT电信
+      - 浙江省杭州市 阿里云
+      - 法国 V2CROSS.COM
       - 美国 CloudFlare节点 6
-      - 美国 CloudFlare节点 7
-      - 台湾省高雄市 中华电信
       - 俄罗斯 莫斯科JustHost
-      - 亚太地区 CacheFly亚洲Anycast节点
-      - 美国 CloudFlare公司CDN节点(shopify)
+      - 广东省 移动
+      - 美国 CloudFlare节点 7
       - 美国 CloudFlare节点 8
       - 美国 CloudFlare节点 9
-      - 瑞典 斯德哥尔摩Amazon数据中心
       - 美国 CloudFlare节点 10
-      - 美国 Amazon EC2服务器
       - 美国 CloudFlare节点 11
-      - 法国 巴黎Amazon数据中心
-      - 保加利亚 V2CROSS.COM
-      - 广东省 移动
-      - 乌克兰 V2CROSS.COM
       - 美国 CloudFlare节点 12
       - 美国 CloudFlare节点 13
+      - 美国 CloudFlare节点 14
+      - 美国 CloudFlare节点 15
+      - 俄罗斯 V2CROSS.COM
+      - 德国 V2CROSS.COM
+      - 美国 CloudFlare节点 16
+      - 俄罗斯 莫斯科JustHost 2
+      - 台湾省桃园市 中华电信(HiNet)
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 北美地区 V2CROSS.COM
       - 美国 CloudFlare节点
-      - 台湾省桃园市 中华电信(HiNet)
+      - 法国 OVH SAS
+      - "@vmessprotocol  رفع فیلتر"
+      - 广东省广州市 移动
       - 美国 CloudFlare节点 2
       - 美国 CloudFlare节点 3
-      - 新加坡 Amazon数据中心
       - 美国 CloudFlare节点 4
       - 美国 CloudFlare节点 5
+      - 韩国 KT电信
+      - 浙江省杭州市 阿里云
+      - 法国 V2CROSS.COM
       - 美国 CloudFlare节点 6
-      - 美国 CloudFlare节点 7
-      - 台湾省高雄市 中华电信
       - 俄罗斯 莫斯科JustHost
-      - 亚太地区 CacheFly亚洲Anycast节点
-      - 美国 CloudFlare公司CDN节点(shopify)
+      - 广东省 移动
+      - 美国 CloudFlare节点 7
       - 美国 CloudFlare节点 8
       - 美国 CloudFlare节点 9
-      - 瑞典 斯德哥尔摩Amazon数据中心
       - 美国 CloudFlare节点 10
-      - 美国 Amazon EC2服务器
       - 美国 CloudFlare节点 11
-      - 法国 巴黎Amazon数据中心
-      - 保加利亚 V2CROSS.COM
-      - 广东省 移动
-      - 乌克兰 V2CROSS.COM
       - 美国 CloudFlare节点 12
       - 美国 CloudFlare节点 13
+      - 美国 CloudFlare节点 14
+      - 美国 CloudFlare节点 15
+      - 俄罗斯 V2CROSS.COM
+      - 德国 V2CROSS.COM
+      - 美国 CloudFlare节点 16
+      - 俄罗斯 莫斯科JustHost 2
+      - 台湾省桃园市 中华电信(HiNet)
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -144,133 +152,140 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 北美地区 V2CROSS.COM
       - 美国 CloudFlare节点
-      - 台湾省桃园市 中华电信(HiNet)
+      - 法国 OVH SAS
+      - "@vmessprotocol  رفع فیلتر"
+      - 广东省广州市 移动
       - 美国 CloudFlare节点 2
       - 美国 CloudFlare节点 3
-      - 新加坡 Amazon数据中心
       - 美国 CloudFlare节点 4
       - 美国 CloudFlare节点 5
+      - 韩国 KT电信
+      - 浙江省杭州市 阿里云
+      - 法国 V2CROSS.COM
       - 美国 CloudFlare节点 6
-      - 美国 CloudFlare节点 7
-      - 台湾省高雄市 中华电信
       - 俄罗斯 莫斯科JustHost
-      - 亚太地区 CacheFly亚洲Anycast节点
-      - 美国 CloudFlare公司CDN节点(shopify)
+      - 广东省 移动
+      - 美国 CloudFlare节点 7
       - 美国 CloudFlare节点 8
       - 美国 CloudFlare节点 9
-      - 瑞典 斯德哥尔摩Amazon数据中心
       - 美国 CloudFlare节点 10
-      - 美国 Amazon EC2服务器
       - 美国 CloudFlare节点 11
-      - 法国 巴黎Amazon数据中心
-      - 保加利亚 V2CROSS.COM
-      - 广东省 移动
-      - 乌克兰 V2CROSS.COM
       - 美国 CloudFlare节点 12
       - 美国 CloudFlare节点 13
+      - 美国 CloudFlare节点 14
+      - 美国 CloudFlare节点 15
+      - 俄罗斯 V2CROSS.COM
+      - 德国 V2CROSS.COM
+      - 美国 CloudFlare节点 16
+      - 俄罗斯 莫斯科JustHost 2
+      - 台湾省桃园市 中华电信(HiNet)
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
       - 台湾省桃园市 中华电信(HiNet)
-      - 台湾省高雄市 中华电信
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 北美地区 V2CROSS.COM
       - 美国 CloudFlare节点
-      - 台湾省桃园市 中华电信(HiNet)
+      - 法国 OVH SAS
+      - "@vmessprotocol  رفع فیلتر"
+      - 广东省广州市 移动
       - 美国 CloudFlare节点 2
       - 美国 CloudFlare节点 3
-      - 新加坡 Amazon数据中心
       - 美国 CloudFlare节点 4
       - 美国 CloudFlare节点 5
+      - 韩国 KT电信
+      - 浙江省杭州市 阿里云
+      - 法国 V2CROSS.COM
       - 美国 CloudFlare节点 6
-      - 美国 CloudFlare节点 7
-      - 台湾省高雄市 中华电信
       - 俄罗斯 莫斯科JustHost
-      - 亚太地区 CacheFly亚洲Anycast节点
-      - 美国 CloudFlare公司CDN节点(shopify)
+      - 广东省 移动
+      - 美国 CloudFlare节点 7
       - 美国 CloudFlare节点 8
       - 美国 CloudFlare节点 9
-      - 瑞典 斯德哥尔摩Amazon数据中心
       - 美国 CloudFlare节点 10
-      - 美国 Amazon EC2服务器
       - 美国 CloudFlare节点 11
-      - 法国 巴黎Amazon数据中心
-      - 保加利亚 V2CROSS.COM
-      - 广东省 移动
-      - 乌克兰 V2CROSS.COM
       - 美国 CloudFlare节点 12
       - 美国 CloudFlare节点 13
+      - 美国 CloudFlare节点 14
+      - 美国 CloudFlare节点 15
+      - 俄罗斯 V2CROSS.COM
+      - 德国 V2CROSS.COM
+      - 美国 CloudFlare节点 16
+      - 俄罗斯 莫斯科JustHost 2
+      - 台湾省桃园市 中华电信(HiNet)
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 北美地区 V2CROSS.COM
       - 美国 CloudFlare节点
-      - 台湾省桃园市 中华电信(HiNet)
+      - 法国 OVH SAS
+      - "@vmessprotocol  رفع فیلتر"
+      - 广东省广州市 移动
       - 美国 CloudFlare节点 2
       - 美国 CloudFlare节点 3
-      - 新加坡 Amazon数据中心
       - 美国 CloudFlare节点 4
       - 美国 CloudFlare节点 5
+      - 韩国 KT电信
+      - 浙江省杭州市 阿里云
+      - 法国 V2CROSS.COM
       - 美国 CloudFlare节点 6
-      - 美国 CloudFlare节点 7
-      - 台湾省高雄市 中华电信
       - 俄罗斯 莫斯科JustHost
-      - 亚太地区 CacheFly亚洲Anycast节点
-      - 美国 CloudFlare公司CDN节点(shopify)
+      - 广东省 移动
+      - 美国 CloudFlare节点 7
       - 美国 CloudFlare节点 8
       - 美国 CloudFlare节点 9
-      - 瑞典 斯德哥尔摩Amazon数据中心
       - 美国 CloudFlare节点 10
-      - 美国 Amazon EC2服务器
       - 美国 CloudFlare节点 11
-      - 法国 巴黎Amazon数据中心
-      - 保加利亚 V2CROSS.COM
-      - 广东省 移动
-      - 乌克兰 V2CROSS.COM
       - 美国 CloudFlare节点 12
       - 美国 CloudFlare节点 13
+      - 美国 CloudFlare节点 14
+      - 美国 CloudFlare节点 15
+      - 俄罗斯 V2CROSS.COM
+      - 德国 V2CROSS.COM
+      - 美国 CloudFlare节点 16
+      - 俄罗斯 莫斯科JustHost 2
+      - 台湾省桃园市 中华电信(HiNet)
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 北美地区 V2CROSS.COM
       - 美国 CloudFlare节点
-      - 台湾省桃园市 中华电信(HiNet)
+      - 法国 OVH SAS
+      - "@vmessprotocol  رفع فیلتر"
+      - 广东省广州市 移动
       - 美国 CloudFlare节点 2
       - 美国 CloudFlare节点 3
-      - 新加坡 Amazon数据中心
       - 美国 CloudFlare节点 4
       - 美国 CloudFlare节点 5
+      - 韩国 KT电信
+      - 浙江省杭州市 阿里云
+      - 法国 V2CROSS.COM
       - 美国 CloudFlare节点 6
-      - 美国 CloudFlare节点 7
-      - 台湾省高雄市 中华电信
       - 俄罗斯 莫斯科JustHost
-      - 亚太地区 CacheFly亚洲Anycast节点
-      - 美国 CloudFlare公司CDN节点(shopify)
+      - 广东省 移动
+      - 美国 CloudFlare节点 7
       - 美国 CloudFlare节点 8
       - 美国 CloudFlare节点 9
-      - 瑞典 斯德哥尔摩Amazon数据中心
       - 美国 CloudFlare节点 10
-      - 美国 Amazon EC2服务器
       - 美国 CloudFlare节点 11
-      - 法国 巴黎Amazon数据中心
-      - 保加利亚 V2CROSS.COM
-      - 广东省 移动
-      - 乌克兰 V2CROSS.COM
       - 美国 CloudFlare节点 12
       - 美国 CloudFlare节点 13
+      - 美国 CloudFlare节点 14
+      - 美国 CloudFlare节点 15
+      - 俄罗斯 V2CROSS.COM
+      - 德国 V2CROSS.COM
+      - 美国 CloudFlare节点 16
+      - 俄罗斯 莫斯科JustHost 2
+      - 台湾省桃园市 中华电信(HiNet)
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -286,32 +301,34 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 北美地区 V2CROSS.COM
       - 美国 CloudFlare节点
-      - 台湾省桃园市 中华电信(HiNet)
+      - 法国 OVH SAS
+      - "@vmessprotocol  رفع فیلتر"
+      - 广东省广州市 移动
       - 美国 CloudFlare节点 2
       - 美国 CloudFlare节点 3
-      - 新加坡 Amazon数据中心
       - 美国 CloudFlare节点 4
       - 美国 CloudFlare节点 5
+      - 韩国 KT电信
+      - 浙江省杭州市 阿里云
+      - 法国 V2CROSS.COM
       - 美国 CloudFlare节点 6
-      - 美国 CloudFlare节点 7
-      - 台湾省高雄市 中华电信
       - 俄罗斯 莫斯科JustHost
-      - 亚太地区 CacheFly亚洲Anycast节点
-      - 美国 CloudFlare公司CDN节点(shopify)
+      - 广东省 移动
+      - 美国 CloudFlare节点 7
       - 美国 CloudFlare节点 8
       - 美国 CloudFlare节点 9
-      - 瑞典 斯德哥尔摩Amazon数据中心
       - 美国 CloudFlare节点 10
-      - 美国 Amazon EC2服务器
       - 美国 CloudFlare节点 11
-      - 法国 巴黎Amazon数据中心
-      - 保加利亚 V2CROSS.COM
-      - 广东省 移动
-      - 乌克兰 V2CROSS.COM
       - 美国 CloudFlare节点 12
       - 美国 CloudFlare节点 13
+      - 美国 CloudFlare节点 14
+      - 美国 CloudFlare节点 15
+      - 俄罗斯 V2CROSS.COM
+      - 德国 V2CROSS.COM
+      - 美国 CloudFlare节点 16
+      - 俄罗斯 莫斯科JustHost 2
+      - 台湾省桃园市 中华电信(HiNet)
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
