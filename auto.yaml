@@ -5,167 +5,79 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 美国 俄勒冈州波特兰Amazon数据中心, server: 34.220.217.72, port: 17119, type: trojan, password: T7D4VyYS8971, sni: appsvs.shop, skip-cert-verify: true, udp: true}
-  - {name: 法国 OVH机房SAS硬盘BGP主机, server: 149.202.82.172, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: 法国 OVH机房SAS硬盘BGP主机 2, server: 149.202.82.172, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 广东省 移动, server: m.cnmjin.net, port: 16632, type: vmess, uuid: 2b8cfb7b-d3e7-4525-8418-e13a9b8fd73b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: dcef278233434a15c3587ef998dd119d.mobgslb.tbcache.com}}, udp: true}
-  - {name: 瑞典 斯德哥尔摩Amazon数据中心, server: 13.49.108.162, port: 22222, type: trojan, password: telegram-id-privatevpns, sni: trojan.burgerip.co.uk, skip-cert-verify: true, udp: true}
-  - {name: 广东省汕头市 移动, server: 183.240.179.195, port: 15603, type: vmess, uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 加拿大蒙特利尔 V2CROSS.COM, server: 134.195.196.178, port: 808, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
-  - {name: 美国 惠普HP, server: 15.204.87.225, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: 美国 Akamai科技公司CDN网络节点, server: 172.233.56.110, port: 50876, type: ss, cipher: chacha20-ietf-poly1305, password: zWQ8buP6LmRbQGaCoOJr0u, udp: true}
-  - {name: 广东省佛山市 移动, server: gfoq.b4-h5a6gq7.h3w-kr01.my777999.top, port: 32999, type: ss, cipher: chacha20-ietf-poly1305, password: 6399ac7d-8265-436d-b348-299df4b735a5, udp: true}
-  - {name: 美国 CloudFlare节点, server: onea.flha.ru, port: 2095, type: vmess, uuid: 7a737f41-b792-4260-94ff-3d864da67b80, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: onea.flha.ru}}, udp: true}
-  - {name: 四川省 联通数据上网公共出口, server: yes.cnmjcn.net, port: 16632, type: vmess, uuid: 2b8cfb7b-d3e7-4525-8418-e13a9b8fd73b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: dcef278233434a15c3587ef998dd119d.mobgslb.tbcache.com}}, udp: true}
-  - {name: 法国 OVH机房SAS硬盘BGP主机 3, server: 149.202.82.172, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: 美国 Amazon EC2服务器, server: 3.138.124.104, port: 17097, type: trojan, password: 11p9aRLFXxzA, sni: appsvs.shop, skip-cert-verify: true, udp: true}
-  - {name: 广东省深圳市 阿里云, server: 119.23.104.213, port: 8474, type: ss, cipher: chacha20-ietf-poly1305, password: a501c82c72d790b8, udp: true}
-  - {name: 美国 惠普公司, server: 15.222.62.15, port: 17117, type: trojan, password: BEeLiz3FpuRd, sni: appsvs.shop, skip-cert-verify: true, udp: true}
-  - {name: 美国 CloudFlare节点 2, server: 172.67.185.79, port: 8080, type: vmess, uuid: b551aa22-22af-11ee-b8d8-f23c932eb68d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: oiictw.yydsii.com}}, udp: true}
-  - {name: 美国 CloudFlare节点 3, server: 104.16.45.182, port: 80, type: vmess, uuid: c0453a16-67e9-4eab-bdc9-b9624ad6bd29, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/?ed=2048&Telegram🇨🇳 @WangCai_8", headers: {Host: jp.xlb8.eu.org}}, udp: true}
-  - {name: 广东省佛山市 移动 2, server: 1zg1yf-blnvbcw.0on68-ino1.my777999.top, port: 31999, type: ss, cipher: chacha20-ietf-poly1305, password: 6399ac7d-8265-436d-b348-299df4b735a5, udp: true}
+  - {name: 美国 惠普HP, server: 15.204.87.225, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: 英国 社会保险安全部, server: 51.103.169.16, port: 60873, type: ss, cipher: chacha20-ietf-poly1305, password: vqOqXZkqUthjjaqlQpHa77, udp: true}
+  - {name: 广东省佛山市 移动, server: 183.232.199.61, port: 15603, type: vmess, uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 德国 黑森州法兰克福Amazon数据中心, server: 3.124.193.181, port: 17358, type: trojan, password: Vsy4Liz3YqNX, sni: appsvs.shop, skip-cert-verify: true, udp: true}
   - {name: 美国 惠普HP 2, server: 15.204.87.225, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: 日本 V2CROSS.COM, server: 43.201.16.34, port: 17123, type: trojan, password: gdXm3jayvDQq, sni: appsvs.shop, skip-cert-verify: true, udp: true}
-  - {name: 日本 东京Amazon数据中心, server: 13.230.60.31, port: 17117, type: trojan, password: Zx9GHBfJpZRW, sni: appsvs.shop, skip-cert-verify: true, udp: true}
-  - {name: 美国 Amazon数据中心, server: 13.39.144.77, port: 22222, type: trojan, password: telegram-id-privatevpns, sni: trojan.burgerip.co.uk, skip-cert-verify: true, udp: true}
-  - {name: 广东省汕头市 移动 2, server: 183.240.179.195, port: 61002, type: vmess, uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 广东省深圳市 移动, server: 183.232.142.179, port: 61002, type: vmess, uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 俄罗斯 V2CROSS.COM, server: 185.231.205.80, port: 8388, type: ss, cipher: chacha20-ietf-poly1305, password: YjA5YmMx, udp: true}
-  - {name: 法国 OVH机房SAS硬盘BGP主机 4, server: 149.202.82.172, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 伊朗 V2CROSS.COM, server: 178.239.150.174, port: 80, type: vmess, uuid: 2b7ce1d2-0372-4104-aa06-f7d999f26e1d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 北美地区 V2CROSS.COM, server: 23.154.136.2, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: 广东省佛山市 移动 3, server: 183.232.199.61, port: 61001, type: vmess, uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 德国 Hetzner, server: 138.201.100.212, port: 47070, type: vmess, uuid: c44c6a0f-676f-461c-87d2-3f0c7a47eaf0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 广东省广州市 移动, server: 183.236.51.59, port: 51707, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 法国 OVH机房SAS硬盘BGP主机 5, server: 149.202.82.172, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: 美国 Amazon EC2服务器 2, server: 3.96.148.21, port: 17096, type: trojan, password: FoMdX8nAIkMk, sni: appsvs.shop, skip-cert-verify: true, udp: true}
-  - {name: 美国 CloudFlare节点 4, server: 172.64.229.209, port: 80, type: vmess, uuid: f1b6bc05-40dd-4180-ca18-b05288fd33bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: ccs2.hostmjj.com}}, udp: true}
-  - {name: 北美地区 V2CROSS.COM 2, server: 23.157.40.83, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: 美国 Amazon EC2服务器, server: 3.131.72.49, port: 22222, type: trojan, password: telegram-id-directvpn, sni: trojan.burgerip.co.uk, skip-cert-verify: true, udp: true}
+  - {name: 瑞典 斯德哥尔摩Amazon数据中心, server: 13.49.108.162, port: 22222, type: trojan, password: telegram-id-privatevpns, sni: trojan.burgerip.co.uk, skip-cert-verify: true, udp: true}
+  - {name: 广东省 移动, server: m.cnmjin.net, port: 16632, type: vmess, uuid: 2b8cfb7b-d3e7-4525-8418-e13a9b8fd73b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: dcef278233434a15c3587ef998dd119d.mobgslb.tbcache.com}}, udp: true}
+  - {name: 美国 惠普HP 3, server: 15.204.87.225, port: 5499, type: ss, cipher: aes-256-gcm, password: lGqs95QkFHo2NV, udp: true}
+  - {name: 美国 V2CROSS.COM, server: 23.162.200.130, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: 北美地区 V2CROSS.COM, server: 23.157.40.83, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: 俄罗斯 V2CROSS.COM, server: 62.133.60.134, port: 10001, type: vmess, uuid: f6756940-1228-11ef-95e6-1b5e7ee0e351, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: gr6.vpnjantit.com, network: ws, ws-opts: {path: /vpnjantit}, udp: true}
+  - {name: 新加坡 亚马逊(Amazon)公司数据中心, server: 54.254.19.88, port: 17346, type: trojan, password: 5Ed89jqE0hV6, sni: appsvs.shop, skip-cert-verify: true, udp: true}
+  - {name: 广东省佛山市 移动 2, server: gfoq.b4-h5a6gq7.h3w-kr01.my777999.top, port: 32999, type: ss, cipher: chacha20-ietf-poly1305, password: 6399ac7d-8265-436d-b348-299df4b735a5, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 美国 俄勒冈州波特兰Amazon数据中心
-      - 法国 OVH机房SAS硬盘BGP主机
-      - 法国 OVH机房SAS硬盘BGP主机 2
-      - 广东省 移动
-      - 瑞典 斯德哥尔摩Amazon数据中心
-      - 广东省汕头市 移动
-      - 加拿大蒙特利尔 V2CROSS.COM
       - 美国 惠普HP
-      - 美国 Akamai科技公司CDN网络节点
+      - 英国 社会保险安全部
       - 广东省佛山市 移动
-      - 美国 CloudFlare节点
-      - 四川省 联通数据上网公共出口
-      - 法国 OVH机房SAS硬盘BGP主机 3
-      - 美国 Amazon EC2服务器
-      - 广东省深圳市 阿里云
-      - 美国 惠普公司
-      - 美国 CloudFlare节点 2
-      - 美国 CloudFlare节点 3
-      - 广东省佛山市 移动 2
+      - 德国 黑森州法兰克福Amazon数据中心
       - 美国 惠普HP 2
-      - 日本 V2CROSS.COM
-      - 日本 东京Amazon数据中心
-      - 美国 Amazon数据中心
-      - 广东省汕头市 移动 2
-      - 广东省深圳市 移动
-      - 俄罗斯 V2CROSS.COM
-      - 法国 OVH机房SAS硬盘BGP主机 4
-      - 伊朗 V2CROSS.COM
+      - 美国 Amazon EC2服务器
+      - 瑞典 斯德哥尔摩Amazon数据中心
+      - 广东省 移动
+      - 美国 惠普HP 3
+      - 美国 V2CROSS.COM
       - 北美地区 V2CROSS.COM
-      - 广东省佛山市 移动 3
-      - 德国 Hetzner
-      - 广东省广州市 移动
-      - 法国 OVH机房SAS硬盘BGP主机 5
-      - 美国 Amazon EC2服务器 2
-      - 美国 CloudFlare节点 4
-      - 北美地区 V2CROSS.COM 2
+      - 俄罗斯 V2CROSS.COM
+      - 新加坡 亚马逊(Amazon)公司数据中心
+      - 广东省佛山市 移动 2
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 美国 俄勒冈州波特兰Amazon数据中心
-      - 法国 OVH机房SAS硬盘BGP主机
-      - 法国 OVH机房SAS硬盘BGP主机 2
-      - 广东省 移动
-      - 瑞典 斯德哥尔摩Amazon数据中心
-      - 广东省汕头市 移动
-      - 加拿大蒙特利尔 V2CROSS.COM
       - 美国 惠普HP
-      - 美国 Akamai科技公司CDN网络节点
+      - 英国 社会保险安全部
       - 广东省佛山市 移动
-      - 美国 CloudFlare节点
-      - 四川省 联通数据上网公共出口
-      - 法国 OVH机房SAS硬盘BGP主机 3
-      - 美国 Amazon EC2服务器
-      - 广东省深圳市 阿里云
-      - 美国 惠普公司
-      - 美国 CloudFlare节点 2
-      - 美国 CloudFlare节点 3
-      - 广东省佛山市 移动 2
+      - 德国 黑森州法兰克福Amazon数据中心
       - 美国 惠普HP 2
-      - 日本 V2CROSS.COM
-      - 日本 东京Amazon数据中心
-      - 美国 Amazon数据中心
-      - 广东省汕头市 移动 2
-      - 广东省深圳市 移动
-      - 俄罗斯 V2CROSS.COM
-      - 法国 OVH机房SAS硬盘BGP主机 4
-      - 伊朗 V2CROSS.COM
+      - 美国 Amazon EC2服务器
+      - 瑞典 斯德哥尔摩Amazon数据中心
+      - 广东省 移动
+      - 美国 惠普HP 3
+      - 美国 V2CROSS.COM
       - 北美地区 V2CROSS.COM
-      - 广东省佛山市 移动 3
-      - 德国 Hetzner
-      - 广东省广州市 移动
-      - 法国 OVH机房SAS硬盘BGP主机 5
-      - 美国 Amazon EC2服务器 2
-      - 美国 CloudFlare节点 4
-      - 北美地区 V2CROSS.COM 2
+      - 俄罗斯 V2CROSS.COM
+      - 新加坡 亚马逊(Amazon)公司数据中心
+      - 广东省佛山市 移动 2
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 美国 俄勒冈州波特兰Amazon数据中心
-      - 法国 OVH机房SAS硬盘BGP主机
-      - 法国 OVH机房SAS硬盘BGP主机 2
-      - 广东省 移动
-      - 瑞典 斯德哥尔摩Amazon数据中心
-      - 广东省汕头市 移动
-      - 加拿大蒙特利尔 V2CROSS.COM
       - 美国 惠普HP
-      - 美国 Akamai科技公司CDN网络节点
+      - 英国 社会保险安全部
       - 广东省佛山市 移动
-      - 美国 CloudFlare节点
-      - 四川省 联通数据上网公共出口
-      - 法国 OVH机房SAS硬盘BGP主机 3
-      - 美国 Amazon EC2服务器
-      - 广东省深圳市 阿里云
-      - 美国 惠普公司
-      - 美国 CloudFlare节点 2
-      - 美国 CloudFlare节点 3
-      - 广东省佛山市 移动 2
+      - 德国 黑森州法兰克福Amazon数据中心
       - 美国 惠普HP 2
-      - 日本 V2CROSS.COM
-      - 日本 东京Amazon数据中心
-      - 美国 Amazon数据中心
-      - 广东省汕头市 移动 2
-      - 广东省深圳市 移动
-      - 俄罗斯 V2CROSS.COM
-      - 法国 OVH机房SAS硬盘BGP主机 4
-      - 伊朗 V2CROSS.COM
+      - 美国 Amazon EC2服务器
+      - 瑞典 斯德哥尔摩Amazon数据中心
+      - 广东省 移动
+      - 美国 惠普HP 3
+      - 美国 V2CROSS.COM
       - 北美地区 V2CROSS.COM
-      - 广东省佛山市 移动 3
-      - 德国 Hetzner
-      - 广东省广州市 移动
-      - 法国 OVH机房SAS硬盘BGP主机 5
-      - 美国 Amazon EC2服务器 2
-      - 美国 CloudFlare节点 4
-      - 北美地区 V2CROSS.COM 2
+      - 俄罗斯 V2CROSS.COM
+      - 新加坡 亚马逊(Amazon)公司数据中心
+      - 广东省佛山市 移动 2
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -184,42 +96,20 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 美国 俄勒冈州波特兰Amazon数据中心
-      - 法国 OVH机房SAS硬盘BGP主机
-      - 法国 OVH机房SAS硬盘BGP主机 2
-      - 广东省 移动
-      - 瑞典 斯德哥尔摩Amazon数据中心
-      - 广东省汕头市 移动
-      - 加拿大蒙特利尔 V2CROSS.COM
       - 美国 惠普HP
-      - 美国 Akamai科技公司CDN网络节点
+      - 英国 社会保险安全部
       - 广东省佛山市 移动
-      - 美国 CloudFlare节点
-      - 四川省 联通数据上网公共出口
-      - 法国 OVH机房SAS硬盘BGP主机 3
-      - 美国 Amazon EC2服务器
-      - 广东省深圳市 阿里云
-      - 美国 惠普公司
-      - 美国 CloudFlare节点 2
-      - 美国 CloudFlare节点 3
-      - 广东省佛山市 移动 2
+      - 德国 黑森州法兰克福Amazon数据中心
       - 美国 惠普HP 2
-      - 日本 V2CROSS.COM
-      - 日本 东京Amazon数据中心
-      - 美国 Amazon数据中心
-      - 广东省汕头市 移动 2
-      - 广东省深圳市 移动
-      - 俄罗斯 V2CROSS.COM
-      - 法国 OVH机房SAS硬盘BGP主机 4
-      - 伊朗 V2CROSS.COM
+      - 美国 Amazon EC2服务器
+      - 瑞典 斯德哥尔摩Amazon数据中心
+      - 广东省 移动
+      - 美国 惠普HP 3
+      - 美国 V2CROSS.COM
       - 北美地区 V2CROSS.COM
-      - 广东省佛山市 移动 3
-      - 德国 Hetzner
-      - 广东省广州市 移动
-      - 法国 OVH机房SAS硬盘BGP主机 5
-      - 美国 Amazon EC2服务器 2
-      - 美国 CloudFlare节点 4
-      - 北美地区 V2CROSS.COM 2
+      - 俄罗斯 V2CROSS.COM
+      - 新加坡 亚马逊(Amazon)公司数据中心
+      - 广东省佛山市 移动 2
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -230,125 +120,59 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 美国 俄勒冈州波特兰Amazon数据中心
-      - 法国 OVH机房SAS硬盘BGP主机
-      - 法国 OVH机房SAS硬盘BGP主机 2
-      - 广东省 移动
-      - 瑞典 斯德哥尔摩Amazon数据中心
-      - 广东省汕头市 移动
-      - 加拿大蒙特利尔 V2CROSS.COM
       - 美国 惠普HP
-      - 美国 Akamai科技公司CDN网络节点
+      - 英国 社会保险安全部
       - 广东省佛山市 移动
-      - 美国 CloudFlare节点
-      - 四川省 联通数据上网公共出口
-      - 法国 OVH机房SAS硬盘BGP主机 3
-      - 美国 Amazon EC2服务器
-      - 广东省深圳市 阿里云
-      - 美国 惠普公司
-      - 美国 CloudFlare节点 2
-      - 美国 CloudFlare节点 3
-      - 广东省佛山市 移动 2
+      - 德国 黑森州法兰克福Amazon数据中心
       - 美国 惠普HP 2
-      - 日本 V2CROSS.COM
-      - 日本 东京Amazon数据中心
-      - 美国 Amazon数据中心
-      - 广东省汕头市 移动 2
-      - 广东省深圳市 移动
-      - 俄罗斯 V2CROSS.COM
-      - 法国 OVH机房SAS硬盘BGP主机 4
-      - 伊朗 V2CROSS.COM
+      - 美国 Amazon EC2服务器
+      - 瑞典 斯德哥尔摩Amazon数据中心
+      - 广东省 移动
+      - 美国 惠普HP 3
+      - 美国 V2CROSS.COM
       - 北美地区 V2CROSS.COM
-      - 广东省佛山市 移动 3
-      - 德国 Hetzner
-      - 广东省广州市 移动
-      - 法国 OVH机房SAS硬盘BGP主机 5
-      - 美国 Amazon EC2服务器 2
-      - 美国 CloudFlare节点 4
-      - 北美地区 V2CROSS.COM 2
+      - 俄罗斯 V2CROSS.COM
+      - 新加坡 亚马逊(Amazon)公司数据中心
+      - 广东省佛山市 移动 2
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 美国 俄勒冈州波特兰Amazon数据中心
-      - 法国 OVH机房SAS硬盘BGP主机
-      - 法国 OVH机房SAS硬盘BGP主机 2
-      - 广东省 移动
-      - 瑞典 斯德哥尔摩Amazon数据中心
-      - 广东省汕头市 移动
-      - 加拿大蒙特利尔 V2CROSS.COM
       - 美国 惠普HP
-      - 美国 Akamai科技公司CDN网络节点
+      - 英国 社会保险安全部
       - 广东省佛山市 移动
-      - 美国 CloudFlare节点
-      - 四川省 联通数据上网公共出口
-      - 法国 OVH机房SAS硬盘BGP主机 3
-      - 美国 Amazon EC2服务器
-      - 广东省深圳市 阿里云
-      - 美国 惠普公司
-      - 美国 CloudFlare节点 2
-      - 美国 CloudFlare节点 3
-      - 广东省佛山市 移动 2
+      - 德国 黑森州法兰克福Amazon数据中心
       - 美国 惠普HP 2
-      - 日本 V2CROSS.COM
-      - 日本 东京Amazon数据中心
-      - 美国 Amazon数据中心
-      - 广东省汕头市 移动 2
-      - 广东省深圳市 移动
-      - 俄罗斯 V2CROSS.COM
-      - 法国 OVH机房SAS硬盘BGP主机 4
-      - 伊朗 V2CROSS.COM
+      - 美国 Amazon EC2服务器
+      - 瑞典 斯德哥尔摩Amazon数据中心
+      - 广东省 移动
+      - 美国 惠普HP 3
+      - 美国 V2CROSS.COM
       - 北美地区 V2CROSS.COM
-      - 广东省佛山市 移动 3
-      - 德国 Hetzner
-      - 广东省广州市 移动
-      - 法国 OVH机房SAS硬盘BGP主机 5
-      - 美国 Amazon EC2服务器 2
-      - 美国 CloudFlare节点 4
-      - 北美地区 V2CROSS.COM 2
+      - 俄罗斯 V2CROSS.COM
+      - 新加坡 亚马逊(Amazon)公司数据中心
+      - 广东省佛山市 移动 2
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 美国 俄勒冈州波特兰Amazon数据中心
-      - 法国 OVH机房SAS硬盘BGP主机
-      - 法国 OVH机房SAS硬盘BGP主机 2
-      - 广东省 移动
-      - 瑞典 斯德哥尔摩Amazon数据中心
-      - 广东省汕头市 移动
-      - 加拿大蒙特利尔 V2CROSS.COM
       - 美国 惠普HP
-      - 美国 Akamai科技公司CDN网络节点
+      - 英国 社会保险安全部
       - 广东省佛山市 移动
-      - 美国 CloudFlare节点
-      - 四川省 联通数据上网公共出口
-      - 法国 OVH机房SAS硬盘BGP主机 3
-      - 美国 Amazon EC2服务器
-      - 广东省深圳市 阿里云
-      - 美国 惠普公司
-      - 美国 CloudFlare节点 2
-      - 美国 CloudFlare节点 3
-      - 广东省佛山市 移动 2
+      - 德国 黑森州法兰克福Amazon数据中心
       - 美国 惠普HP 2
-      - 日本 V2CROSS.COM
-      - 日本 东京Amazon数据中心
-      - 美国 Amazon数据中心
-      - 广东省汕头市 移动 2
-      - 广东省深圳市 移动
-      - 俄罗斯 V2CROSS.COM
-      - 法国 OVH机房SAS硬盘BGP主机 4
-      - 伊朗 V2CROSS.COM
+      - 美国 Amazon EC2服务器
+      - 瑞典 斯德哥尔摩Amazon数据中心
+      - 广东省 移动
+      - 美国 惠普HP 3
+      - 美国 V2CROSS.COM
       - 北美地区 V2CROSS.COM
-      - 广东省佛山市 移动 3
-      - 德国 Hetzner
-      - 广东省广州市 移动
-      - 法国 OVH机房SAS硬盘BGP主机 5
-      - 美国 Amazon EC2服务器 2
-      - 美国 CloudFlare节点 4
-      - 北美地区 V2CROSS.COM 2
+      - 俄罗斯 V2CROSS.COM
+      - 新加坡 亚马逊(Amazon)公司数据中心
+      - 广东省佛山市 移动 2
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -364,42 +188,20 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 美国 俄勒冈州波特兰Amazon数据中心
-      - 法国 OVH机房SAS硬盘BGP主机
-      - 法国 OVH机房SAS硬盘BGP主机 2
-      - 广东省 移动
-      - 瑞典 斯德哥尔摩Amazon数据中心
-      - 广东省汕头市 移动
-      - 加拿大蒙特利尔 V2CROSS.COM
       - 美国 惠普HP
-      - 美国 Akamai科技公司CDN网络节点
+      - 英国 社会保险安全部
       - 广东省佛山市 移动
-      - 美国 CloudFlare节点
-      - 四川省 联通数据上网公共出口
-      - 法国 OVH机房SAS硬盘BGP主机 3
-      - 美国 Amazon EC2服务器
-      - 广东省深圳市 阿里云
-      - 美国 惠普公司
-      - 美国 CloudFlare节点 2
-      - 美国 CloudFlare节点 3
-      - 广东省佛山市 移动 2
+      - 德国 黑森州法兰克福Amazon数据中心
       - 美国 惠普HP 2
-      - 日本 V2CROSS.COM
-      - 日本 东京Amazon数据中心
-      - 美国 Amazon数据中心
-      - 广东省汕头市 移动 2
-      - 广东省深圳市 移动
-      - 俄罗斯 V2CROSS.COM
-      - 法国 OVH机房SAS硬盘BGP主机 4
-      - 伊朗 V2CROSS.COM
+      - 美国 Amazon EC2服务器
+      - 瑞典 斯德哥尔摩Amazon数据中心
+      - 广东省 移动
+      - 美国 惠普HP 3
+      - 美国 V2CROSS.COM
       - 北美地区 V2CROSS.COM
-      - 广东省佛山市 移动 3
-      - 德国 Hetzner
-      - 广东省广州市 移动
-      - 法国 OVH机房SAS硬盘BGP主机 5
-      - 美国 Amazon EC2服务器 2
-      - 美国 CloudFlare节点 4
-      - 北美地区 V2CROSS.COM 2
+      - 俄罗斯 V2CROSS.COM
+      - 新加坡 亚马逊(Amazon)公司数据中心
+      - 广东省佛山市 移动 2
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
