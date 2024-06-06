@@ -5,143 +5,47 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 美国 加州, server: x.y49t1kh1.5ebf71z0-tro1.my777999.top, port: 21991, type: vmess, uuid: 33aefd89-3285-4347-9083-6249711f02e9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 法国 OVH, server: 51.77.53.200, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: 法国 OVH 2, server: 51.77.53.200, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: 美国 Amazon EC2服务器, server: 3.65.241.0, port: 22222, type: trojan, password: telegram-id-directvpn, sni: trojan.burgerip.co.uk, skip-cert-verify: true, udp: true}
-  - {name: 美国 弗吉尼亚州阿什本Amazon数据中心, server: 18.212.235.57, port: 12342, type: trojan, password: ZTHAK9JLRxjB, sni: appsvs.shop, skip-cert-verify: true, udp: true}
-  - {name: 法国 OVH 3, server: 51.77.53.200, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: 美国 Amazon数据中心, server: 13.37.153.61, port: 22222, type: trojan, password: telegram-id-privatevpns, sni: trojan.burgerip.co.uk, skip-cert-verify: true, udp: true}
-  - {name: 广东省深圳市 阿里云, server: 119.23.104.213, port: 8474, type: ss, cipher: chacha20-ietf-poly1305, password: a501c82c72d790b8, udp: true}
-  - {name: 美国 华盛顿Cogent通信公司, server: 38.75.137.93, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: 香港 阿里云, server: 8.210.203.7, port: 2087, type: trojan, password: moist, sni: trojan.freenods.sbs, skip-cert-verify: true, udp: true}
-  - {name: 美国 加利福尼亚州森尼韦尔市PEG TECH公司, server: 142.0.134.241, port: 45017, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 法国 OVH机房SAS硬盘BGP主机, server: 149.202.82.172, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 美国科罗拉多州布隆菲尔德市 Level3, server: service.ouluyun9803.com, port: 20005, type: ss, cipher: chacha20-ietf-poly1305, password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2, udp: true}
-  - {name: 美国 CloudFlare节点, server: www.speedtest.net, port: 80, type: vmess, uuid: 31488365-7b6a-434a-8b7b-8f35012c6a22, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /vmess#DONT-FORGET-TO-SUPPORT-SSHMAX.NET-TO-KEEP-THIS-SERVER-ALIVE, headers: {Host: Se2.vmess.site.}}, udp: true}
-  - {name: 法国 OVH机房SAS硬盘BGP主机 2, server: 149.202.82.172, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 日本 V2CROSS.COM, server: 146.56.145.38, port: 50001, type: trojan, password: moist, sni: trojan.freenods.sbs, skip-cert-verify: true, udp: true}
-  - {name: 意大利 V2CROSS.COM, server: 212.102.53.197, port: 443, type: ss, cipher: aes-128-gcm, password: shadowsocks, udp: true}
-  - {name: 德国 V2CROSS.COM, server: au-full.privateip.net, port: 443, type: vmess, uuid: 09d4b837-72f6-4f9f-a0fe-db52aea19564, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /RACEVPN, headers: {Host: au-full.privateip.net}}, udp: true}
-  - {name: 法国 OVH 4, server: 51.77.53.200, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: 美国 CloudFlare节点 2, server: server31.beheshtbaneh.com, port: 8880, type: vmess, uuid: 4154143c-bbba-47a4-9f79-c2ed087cbcc9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: server31.beheshtbaneh.com}}, udp: true}
-  - {name: 美国 Amazon EC2服务器 2, server: 3.129.2.129, port: 22222, type: trojan, password: telegram-id-directvpn, sni: trojan.burgerip.co.uk, skip-cert-verify: true, udp: true}
-  - {name: 广东省云浮市 移动, server: 183.232.139.22, port: 4027, type: trojan, password: gkviEOYc, skip-cert-verify: true, udp: true}
+  - {name: 美国 CloudFlare节点, server: onea.flha.ru, port: 2095, type: vmess, uuid: 7a737f41-b792-4260-94ff-3d864da67b80, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: onea.flha.ru}}, udp: true}
+  - {name: 美国 CloudFlare节点 2, server: 104.17.16.37, port: 2052, type: vmess, uuid: 1d95edba-c8c7-4f0e-be25-5503fa31b509, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: ptddg.xyyjc.top}}, udp: true}
+  - {name: 美国 CloudFlare节点 3, server: 172.67.144.201, port: 2052, type: vmess, uuid: 1d95edba-c8c7-4f0e-be25-5503fa31b509, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: ptdny.xyyjc.top}}, udp: true}
+  - {name: 美国 CloudFlare节点 4, server: geili.mulanwevictory.top, port: 8443, type: vmess, uuid: 09b03d66-b585-48ee-d3f5-6badba645d5c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /MGNF44G, headers: {Host: geili.mulanwevictory.top}}, udp: true}
   - {name: 俄罗斯 V2CROSS.COM, server: 31.192.234.7, port: 12954, type: vmess, uuid: 8259cb1c-dd6c-4739-9c88-af550d977525, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: 法国 OVH 5, server: 51.77.53.200, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
-  - {name: 美国 加利福尼亚, server: 64.176.15.74, port: 3389, type: vmess, uuid: 9c050a86-d612-48f1-ec32-e573df08a1b7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美国 Amazon EC2服务器 3, server: 3.75.250.28, port: 12344, type: trojan, password: iOFYe7KCWgjX, sni: appsvs.shop, skip-cert-verify: true, udp: true}
-  - {name: 法国 OVH 6, server: 51.77.53.200, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: 海南省海口市 电信, server: 124.225.86.196, port: 34000, type: ss, cipher: aes-128-gcm, password: 0de41793-cd10-4e5f-93ac-0ca82fe4e8c9, udp: true}
-  - {name: 印度 V2CROSS.COM, server: 202.78.162.5, port: 443, type: vmess, uuid: 2ff97c6d-8557-42a4-b43f-19c77c5959ea, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: irsoft.sytes.net}}, udp: true}
-  - {name: 印度 V2CROSS.COM 2, server: 202.78.162.5, port: 443, type: vmess, uuid: 118287d2-e968-42e1-80d0-12fa2f5d38d6, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: sahand.serveminecraft.net}}, udp: true}
+  - {name: 巴西圣保罗 CloudFlare节点, server: 188.114.97.3, port: 80, type: vmess, uuid: b25f8da6-54a2-49b3-bacf-8403b4c36556, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /vmess#DONT-FORGET-TO-SUPPORT-SSHMAX.NET-TO-KEEP-THIS-SERVER-ALIVE, headers: {Host: De1.vmess.site.}}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 美国 加州
-      - 法国 OVH
-      - 法国 OVH 2
-      - 美国 Amazon EC2服务器
-      - 美国 弗吉尼亚州阿什本Amazon数据中心
-      - 法国 OVH 3
-      - 美国 Amazon数据中心
-      - 广东省深圳市 阿里云
-      - 美国 华盛顿Cogent通信公司
-      - 香港 阿里云
-      - 美国 加利福尼亚州森尼韦尔市PEG TECH公司
-      - 法国 OVH机房SAS硬盘BGP主机
-      - 美国科罗拉多州布隆菲尔德市 Level3
       - 美国 CloudFlare节点
-      - 法国 OVH机房SAS硬盘BGP主机 2
-      - 日本 V2CROSS.COM
-      - 意大利 V2CROSS.COM
-      - 德国 V2CROSS.COM
-      - 法国 OVH 4
       - 美国 CloudFlare节点 2
-      - 美国 Amazon EC2服务器 2
-      - 广东省云浮市 移动
+      - 美国 CloudFlare节点 3
+      - 美国 CloudFlare节点 4
       - 俄罗斯 V2CROSS.COM
-      - 法国 OVH 5
-      - 美国 加利福尼亚
-      - 美国 Amazon EC2服务器 3
-      - 法国 OVH 6
-      - 海南省海口市 电信
-      - 印度 V2CROSS.COM
-      - 印度 V2CROSS.COM 2
+      - 巴西圣保罗 CloudFlare节点
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 美国 加州
-      - 法国 OVH
-      - 法国 OVH 2
-      - 美国 Amazon EC2服务器
-      - 美国 弗吉尼亚州阿什本Amazon数据中心
-      - 法国 OVH 3
-      - 美国 Amazon数据中心
-      - 广东省深圳市 阿里云
-      - 美国 华盛顿Cogent通信公司
-      - 香港 阿里云
-      - 美国 加利福尼亚州森尼韦尔市PEG TECH公司
-      - 法国 OVH机房SAS硬盘BGP主机
-      - 美国科罗拉多州布隆菲尔德市 Level3
       - 美国 CloudFlare节点
-      - 法国 OVH机房SAS硬盘BGP主机 2
-      - 日本 V2CROSS.COM
-      - 意大利 V2CROSS.COM
-      - 德国 V2CROSS.COM
-      - 法国 OVH 4
       - 美国 CloudFlare节点 2
-      - 美国 Amazon EC2服务器 2
-      - 广东省云浮市 移动
+      - 美国 CloudFlare节点 3
+      - 美国 CloudFlare节点 4
       - 俄罗斯 V2CROSS.COM
-      - 法国 OVH 5
-      - 美国 加利福尼亚
-      - 美国 Amazon EC2服务器 3
-      - 法国 OVH 6
-      - 海南省海口市 电信
-      - 印度 V2CROSS.COM
-      - 印度 V2CROSS.COM 2
+      - 巴西圣保罗 CloudFlare节点
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 美国 加州
-      - 法国 OVH
-      - 法国 OVH 2
-      - 美国 Amazon EC2服务器
-      - 美国 弗吉尼亚州阿什本Amazon数据中心
-      - 法国 OVH 3
-      - 美国 Amazon数据中心
-      - 广东省深圳市 阿里云
-      - 美国 华盛顿Cogent通信公司
-      - 香港 阿里云
-      - 美国 加利福尼亚州森尼韦尔市PEG TECH公司
-      - 法国 OVH机房SAS硬盘BGP主机
-      - 美国科罗拉多州布隆菲尔德市 Level3
       - 美国 CloudFlare节点
-      - 法国 OVH机房SAS硬盘BGP主机 2
-      - 日本 V2CROSS.COM
-      - 意大利 V2CROSS.COM
-      - 德国 V2CROSS.COM
-      - 法国 OVH 4
       - 美国 CloudFlare节点 2
-      - 美国 Amazon EC2服务器 2
-      - 广东省云浮市 移动
+      - 美国 CloudFlare节点 3
+      - 美国 CloudFlare节点 4
       - 俄罗斯 V2CROSS.COM
-      - 法国 OVH 5
-      - 美国 加利福尼亚
-      - 美国 Amazon EC2服务器 3
-      - 法国 OVH 6
-      - 海南省海口市 电信
-      - 印度 V2CROSS.COM
-      - 印度 V2CROSS.COM 2
+      - 巴西圣保罗 CloudFlare节点
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -160,148 +64,51 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 美国 加州
-      - 法国 OVH
-      - 法国 OVH 2
-      - 美国 Amazon EC2服务器
-      - 美国 弗吉尼亚州阿什本Amazon数据中心
-      - 法国 OVH 3
-      - 美国 Amazon数据中心
-      - 广东省深圳市 阿里云
-      - 美国 华盛顿Cogent通信公司
-      - 香港 阿里云
-      - 美国 加利福尼亚州森尼韦尔市PEG TECH公司
-      - 法国 OVH机房SAS硬盘BGP主机
-      - 美国科罗拉多州布隆菲尔德市 Level3
       - 美国 CloudFlare节点
-      - 法国 OVH机房SAS硬盘BGP主机 2
-      - 日本 V2CROSS.COM
-      - 意大利 V2CROSS.COM
-      - 德国 V2CROSS.COM
-      - 法国 OVH 4
       - 美国 CloudFlare节点 2
-      - 美国 Amazon EC2服务器 2
-      - 广东省云浮市 移动
+      - 美国 CloudFlare节点 3
+      - 美国 CloudFlare节点 4
       - 俄罗斯 V2CROSS.COM
-      - 法国 OVH 5
-      - 美国 加利福尼亚
-      - 美国 Amazon EC2服务器 3
-      - 法国 OVH 6
-      - 海南省海口市 电信
-      - 印度 V2CROSS.COM
-      - 印度 V2CROSS.COM 2
+      - 巴西圣保罗 CloudFlare节点
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 香港 阿里云
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 美国 加州
-      - 法国 OVH
-      - 法国 OVH 2
-      - 美国 Amazon EC2服务器
-      - 美国 弗吉尼亚州阿什本Amazon数据中心
-      - 法国 OVH 3
-      - 美国 Amazon数据中心
-      - 广东省深圳市 阿里云
-      - 美国 华盛顿Cogent通信公司
-      - 香港 阿里云
-      - 美国 加利福尼亚州森尼韦尔市PEG TECH公司
-      - 法国 OVH机房SAS硬盘BGP主机
-      - 美国科罗拉多州布隆菲尔德市 Level3
       - 美国 CloudFlare节点
-      - 法国 OVH机房SAS硬盘BGP主机 2
-      - 日本 V2CROSS.COM
-      - 意大利 V2CROSS.COM
-      - 德国 V2CROSS.COM
-      - 法国 OVH 4
       - 美国 CloudFlare节点 2
-      - 美国 Amazon EC2服务器 2
-      - 广东省云浮市 移动
+      - 美国 CloudFlare节点 3
+      - 美国 CloudFlare节点 4
       - 俄罗斯 V2CROSS.COM
-      - 法国 OVH 5
-      - 美国 加利福尼亚
-      - 美国 Amazon EC2服务器 3
-      - 法国 OVH 6
-      - 海南省海口市 电信
-      - 印度 V2CROSS.COM
-      - 印度 V2CROSS.COM 2
+      - 巴西圣保罗 CloudFlare节点
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 美国 加州
-      - 法国 OVH
-      - 法国 OVH 2
-      - 美国 Amazon EC2服务器
-      - 美国 弗吉尼亚州阿什本Amazon数据中心
-      - 法国 OVH 3
-      - 美国 Amazon数据中心
-      - 广东省深圳市 阿里云
-      - 美国 华盛顿Cogent通信公司
-      - 香港 阿里云
-      - 美国 加利福尼亚州森尼韦尔市PEG TECH公司
-      - 法国 OVH机房SAS硬盘BGP主机
-      - 美国科罗拉多州布隆菲尔德市 Level3
       - 美国 CloudFlare节点
-      - 法国 OVH机房SAS硬盘BGP主机 2
-      - 日本 V2CROSS.COM
-      - 意大利 V2CROSS.COM
-      - 德国 V2CROSS.COM
-      - 法国 OVH 4
       - 美国 CloudFlare节点 2
-      - 美国 Amazon EC2服务器 2
-      - 广东省云浮市 移动
+      - 美国 CloudFlare节点 3
+      - 美国 CloudFlare节点 4
       - 俄罗斯 V2CROSS.COM
-      - 法国 OVH 5
-      - 美国 加利福尼亚
-      - 美国 Amazon EC2服务器 3
-      - 法国 OVH 6
-      - 海南省海口市 电信
-      - 印度 V2CROSS.COM
-      - 印度 V2CROSS.COM 2
+      - 巴西圣保罗 CloudFlare节点
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 美国 加州
-      - 法国 OVH
-      - 法国 OVH 2
-      - 美国 Amazon EC2服务器
-      - 美国 弗吉尼亚州阿什本Amazon数据中心
-      - 法国 OVH 3
-      - 美国 Amazon数据中心
-      - 广东省深圳市 阿里云
-      - 美国 华盛顿Cogent通信公司
-      - 香港 阿里云
-      - 美国 加利福尼亚州森尼韦尔市PEG TECH公司
-      - 法国 OVH机房SAS硬盘BGP主机
-      - 美国科罗拉多州布隆菲尔德市 Level3
       - 美国 CloudFlare节点
-      - 法国 OVH机房SAS硬盘BGP主机 2
-      - 日本 V2CROSS.COM
-      - 意大利 V2CROSS.COM
-      - 德国 V2CROSS.COM
-      - 法国 OVH 4
       - 美国 CloudFlare节点 2
-      - 美国 Amazon EC2服务器 2
-      - 广东省云浮市 移动
+      - 美国 CloudFlare节点 3
+      - 美国 CloudFlare节点 4
       - 俄罗斯 V2CROSS.COM
-      - 法国 OVH 5
-      - 美国 加利福尼亚
-      - 美国 Amazon EC2服务器 3
-      - 法国 OVH 6
-      - 海南省海口市 电信
-      - 印度 V2CROSS.COM
-      - 印度 V2CROSS.COM 2
+      - 巴西圣保罗 CloudFlare节点
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -317,36 +124,12 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 美国 加州
-      - 法国 OVH
-      - 法国 OVH 2
-      - 美国 Amazon EC2服务器
-      - 美国 弗吉尼亚州阿什本Amazon数据中心
-      - 法国 OVH 3
-      - 美国 Amazon数据中心
-      - 广东省深圳市 阿里云
-      - 美国 华盛顿Cogent通信公司
-      - 香港 阿里云
-      - 美国 加利福尼亚州森尼韦尔市PEG TECH公司
-      - 法国 OVH机房SAS硬盘BGP主机
-      - 美国科罗拉多州布隆菲尔德市 Level3
       - 美国 CloudFlare节点
-      - 法国 OVH机房SAS硬盘BGP主机 2
-      - 日本 V2CROSS.COM
-      - 意大利 V2CROSS.COM
-      - 德国 V2CROSS.COM
-      - 法国 OVH 4
       - 美国 CloudFlare节点 2
-      - 美国 Amazon EC2服务器 2
-      - 广东省云浮市 移动
+      - 美国 CloudFlare节点 3
+      - 美国 CloudFlare节点 4
       - 俄罗斯 V2CROSS.COM
-      - 法国 OVH 5
-      - 美国 加利福尼亚
-      - 美国 Amazon EC2服务器 3
-      - 法国 OVH 6
-      - 海南省海口市 电信
-      - 印度 V2CROSS.COM
-      - 印度 V2CROSS.COM 2
+      - 巴西圣保罗 CloudFlare节点
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
