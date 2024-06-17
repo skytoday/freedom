@@ -5,109 +5,109 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 广东省云浮市 移动, server: 183.232.139.22, port: 4027, type: trojan, password: gkviEOYc, skip-cert-verify: false, udp: true}
-  - {name: 🇮🇳 印度 V2CROSS.COM, server: 202.78.162.5, port: 443, type: vmess, uuid: 2ff97c6d-8557-42a4-b43f-19c77c5959ea, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: irsoft.sytes.net}}, udp: true}
-  - {name: 🇵🇱 波兰 V2CROSS.COM, server: 193.243.147.128, port: 40368, type: ss, cipher: aes-256-gcm, password: 7BcLdsO1WweoGD0X, udp: true}
+  - {name: 🇮🇳 印度 V2CROSS.COM, server: 202.78.162.5, port: 443, type: vmess, uuid: 118287d2-e968-42e1-80d0-12fa2f5d38d6, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: sahand.serveminecraft.net}}, udp: true}
+  - {name: 🇺🇸 美国科罗拉多州布隆菲尔德市 Level3, server: service.ouluyun9803.com, port: 20005, type: ss, cipher: chacha20-ietf-poly1305, password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2, udp: true}
+  - {name: 🇨🇳 广东省深圳市 阿里云, server: 119.23.104.213, port: 8474, type: ss, cipher: chacha20-ietf-poly1305, password: a501c82c72d790b8, udp: true}
+  - {name: 🇺🇸 美国 惠普HP, server: 16.170.13.55, port: 22222, type: trojan, password: telegram-id-privatevpns, sni: trojan.burgerip.co.uk, skip-cert-verify: false, udp: true}
+  - {name: 🇷🇺 俄罗斯 V2CROSS.COM, server: 31.129.22.73, port: 1080, type: ss, cipher: chacha20-ietf-poly1305, password: 3pURuTUf-lFgg5qWg8euFA, udp: true}
+  - {name: 🇮🇹 意大利 V2CROSS.COM, server: 212.102.53.194, port: 443, type: ss, cipher: aes-128-gcm, password: shadowsocks, udp: true}
+  - {name: 🇷🇺 俄罗斯 V2CROSS.COM 2, server: 77.221.157.128, port: 41136, type: vmess, uuid: b2f79b1c-adb2-4727-983f-5b57e3cbd544, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
   - {name: 🇺🇸 美国 CloudFlare节点, server: 104.21.82.183, port: 8880, type: vmess, uuid: 5a7021e0-26b4-45d6-b175-fe551601ca97, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: server26.beheshtbaneh.com}}, udp: true}
-  - {name: 🇫🇷 法国 OVH机房SAS硬盘BGP主机, server: 149.202.82.172, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: 🇷🇺 俄罗斯 V2CROSS.COM, server: 185.242.86.156, port: 54170, type: ss, cipher: chacha20-ietf-poly1305, password: 36ZCHeabUSfKjfQEvJ4HDV, udp: true}
-  - {name: 🇫🇷 法国 OVH机房SAS硬盘BGP主机 2, server: 149.202.82.172, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: 🇺🇸 美国 CloudFlare节点 2, server: 104.19.47.238, port: 8080, type: vmess, uuid: b551aa22-22af-11ee-b8d8-f23c932eb68d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: oiictw.yydsii.com}}, udp: true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 广东省云浮市 移动
       - 🇮🇳 印度 V2CROSS.COM
-      - 🇵🇱 波兰 V2CROSS.COM
-      - 🇺🇸 美国 CloudFlare节点
-      - 🇫🇷 法国 OVH机房SAS硬盘BGP主机
+      - 🇺🇸 美国科罗拉多州布隆菲尔德市 Level3
+      - 🇨🇳 广东省深圳市 阿里云
+      - 🇺🇸 美国 惠普HP
       - 🇷🇺 俄罗斯 V2CROSS.COM
-      - 🇫🇷 法国 OVH机房SAS硬盘BGP主机 2
-      - 🇺🇸 美国 CloudFlare节点 2
+      - 🇮🇹 意大利 V2CROSS.COM
+      - 🇷🇺 俄罗斯 V2CROSS.COM 2
+      - 🇺🇸 美国 CloudFlare节点
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 广东省云浮市 移动
       - 🇮🇳 印度 V2CROSS.COM
-      - 🇵🇱 波兰 V2CROSS.COM
-      - 🇺🇸 美国 CloudFlare节点
-      - 🇫🇷 法国 OVH机房SAS硬盘BGP主机
+      - 🇺🇸 美国科罗拉多州布隆菲尔德市 Level3
+      - 🇨🇳 广东省深圳市 阿里云
+      - 🇺🇸 美国 惠普HP
       - 🇷🇺 俄罗斯 V2CROSS.COM
-      - 🇫🇷 法国 OVH机房SAS硬盘BGP主机 2
-      - 🇺🇸 美国 CloudFlare节点 2
+      - 🇮🇹 意大利 V2CROSS.COM
+      - 🇷🇺 俄罗斯 V2CROSS.COM 2
+      - 🇺🇸 美国 CloudFlare节点
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 广东省云浮市 移动
       - 🇮🇳 印度 V2CROSS.COM
-      - 🇵🇱 波兰 V2CROSS.COM
-      - 🇺🇸 美国 CloudFlare节点
-      - 🇫🇷 法国 OVH机房SAS硬盘BGP主机
+      - 🇺🇸 美国科罗拉多州布隆菲尔德市 Level3
+      - 🇨🇳 广东省深圳市 阿里云
+      - 🇺🇸 美国 惠普HP
       - 🇷🇺 俄罗斯 V2CROSS.COM
-      - 🇫🇷 法国 OVH机房SAS硬盘BGP主机 2
-      - 🇺🇸 美国 CloudFlare节点 2
+      - 🇮🇹 意大利 V2CROSS.COM
+      - 🇷🇺 俄罗斯 V2CROSS.COM 2
+      - 🇺🇸 美国 CloudFlare节点
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 广东省云浮市 移动
       - 🇮🇳 印度 V2CROSS.COM
-      - 🇵🇱 波兰 V2CROSS.COM
-      - 🇺🇸 美国 CloudFlare节点
-      - 🇫🇷 法国 OVH机房SAS硬盘BGP主机
+      - 🇺🇸 美国科罗拉多州布隆菲尔德市 Level3
+      - 🇨🇳 广东省深圳市 阿里云
+      - 🇺🇸 美国 惠普HP
       - 🇷🇺 俄罗斯 V2CROSS.COM
-      - 🇫🇷 法国 OVH机房SAS硬盘BGP主机 2
-      - 🇺🇸 美国 CloudFlare节点 2
+      - 🇮🇹 意大利 V2CROSS.COM
+      - 🇷🇺 俄罗斯 V2CROSS.COM 2
+      - 🇺🇸 美国 CloudFlare节点
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 广东省云浮市 移动
       - 🇮🇳 印度 V2CROSS.COM
-      - 🇵🇱 波兰 V2CROSS.COM
-      - 🇺🇸 美国 CloudFlare节点
-      - 🇫🇷 法国 OVH机房SAS硬盘BGP主机
+      - 🇺🇸 美国科罗拉多州布隆菲尔德市 Level3
+      - 🇨🇳 广东省深圳市 阿里云
+      - 🇺🇸 美国 惠普HP
       - 🇷🇺 俄罗斯 V2CROSS.COM
-      - 🇫🇷 法国 OVH机房SAS硬盘BGP主机 2
-      - 🇺🇸 美国 CloudFlare节点 2
+      - 🇮🇹 意大利 V2CROSS.COM
+      - 🇷🇺 俄罗斯 V2CROSS.COM 2
+      - 🇺🇸 美国 CloudFlare节点
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 广东省云浮市 移动
       - 🇮🇳 印度 V2CROSS.COM
-      - 🇵🇱 波兰 V2CROSS.COM
-      - 🇺🇸 美国 CloudFlare节点
-      - 🇫🇷 法国 OVH机房SAS硬盘BGP主机
+      - 🇺🇸 美国科罗拉多州布隆菲尔德市 Level3
+      - 🇨🇳 广东省深圳市 阿里云
+      - 🇺🇸 美国 惠普HP
       - 🇷🇺 俄罗斯 V2CROSS.COM
-      - 🇫🇷 法国 OVH机房SAS硬盘BGP主机 2
-      - 🇺🇸 美国 CloudFlare节点 2
+      - 🇮🇹 意大利 V2CROSS.COM
+      - 🇷🇺 俄罗斯 V2CROSS.COM 2
+      - 🇺🇸 美国 CloudFlare节点
   - name: 📢 谷歌FCM
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 广东省云浮市 移动
       - 🇮🇳 印度 V2CROSS.COM
-      - 🇵🇱 波兰 V2CROSS.COM
-      - 🇺🇸 美国 CloudFlare节点
-      - 🇫🇷 法国 OVH机房SAS硬盘BGP主机
+      - 🇺🇸 美国科罗拉多州布隆菲尔德市 Level3
+      - 🇨🇳 广东省深圳市 阿里云
+      - 🇺🇸 美国 惠普HP
       - 🇷🇺 俄罗斯 V2CROSS.COM
-      - 🇫🇷 法国 OVH机房SAS硬盘BGP主机 2
-      - 🇺🇸 美国 CloudFlare节点 2
+      - 🇮🇹 意大利 V2CROSS.COM
+      - 🇷🇺 俄罗斯 V2CROSS.COM 2
+      - 🇺🇸 美国 CloudFlare节点
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -130,14 +130,14 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 广东省云浮市 移动
       - 🇮🇳 印度 V2CROSS.COM
-      - 🇵🇱 波兰 V2CROSS.COM
-      - 🇺🇸 美国 CloudFlare节点
-      - 🇫🇷 法国 OVH机房SAS硬盘BGP主机
+      - 🇺🇸 美国科罗拉多州布隆菲尔德市 Level3
+      - 🇨🇳 广东省深圳市 阿里云
+      - 🇺🇸 美国 惠普HP
       - 🇷🇺 俄罗斯 V2CROSS.COM
-      - 🇫🇷 法国 OVH机房SAS硬盘BGP主机 2
-      - 🇺🇸 美国 CloudFlare节点 2
+      - 🇮🇹 意大利 V2CROSS.COM
+      - 🇷🇺 俄罗斯 V2CROSS.COM 2
+      - 🇺🇸 美国 CloudFlare节点
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
