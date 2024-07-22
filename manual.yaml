@@ -5,133 +5,77 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 🇨🇳 四川省成都市 移动, server: v01.gutingting.com, port: 20223, type: trojan, password: 8600edf3-bd1e-4e07-9eff-5588e909e791, sni: v2sg01.fuqiangren.com, skip-cert-verify: false, udp: true}
-  - {name: 🇺🇸 美国 CloudFlare节点, server: 104.21.82.183, port: 8880, type: vmess, uuid: 5a7021e0-26b4-45d6-b175-fe551601ca97, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: server26.beheshtbaneh.com}}, udp: true}
   - {name: 🇭🇰 香港 UCloud, server: data-us-v1.shwjfkw.cn, port: 20401, type: vmess, uuid: b1478e24-4916-3abe-8f17-15931012ecbe, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /debian, headers: {Host: data-us-v1.shwjfkw.cn}}, udp: true}
-  - {name: 🇺🇸 美国 CloudFlare节点 2, server: 172.67.185.9, port: 8080, type: vmess, uuid: b551aa22-22af-11ee-b8d8-f23c932eb68d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: oiictw.yydsii.com}}, udp: true}
-  - {name: 🇺🇸 美国 CloudFlare节点 3, server: 172.67.185.161, port: 8080, type: vmess, uuid: b551aa22-22af-11ee-b8d8-f23c932eb68d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: oiictw.yydsii.com}}, udp: true}
-  - {name: 🇮🇳 印度 V2CROSS.COM, server: 202.78.162.5, port: 443, type: vmess, uuid: 716eded6-2201-4dbd-9d63-1638c9e8e677, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: pendar.onthewifi.com}}, udp: true}
-  - {name: 🇰🇷 韩国 KT电信, server: service.ouluyun9803.com, port: 26667, type: ss, cipher: chacha20-ietf-poly1305, password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2, udp: true}
-  - {name: 广东省 移动, server: 183.238.202.173, port: 51193, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 🇷🇺 俄罗斯 V2CROSS.COM, server: 185.242.86.156, port: 54170, type: ss, cipher: chacha20-ietf-poly1305, password: 36ZCHeabUSfKjfQEvJ4HDV, udp: true}
-  - {name: 🇺🇸 美国 CloudFlare节点 4, server: 104.16.60.8, port: 8880, type: vmess, uuid: f584de15-2034-4170-a723-f48c2bae5e0f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /afrhms16v.bestxray.buzz/linkws, headers: {Host: 8shhebsj78wjisnbhsjvess-pond-6cc6.cerog91216.workers.dev}}, udp: true}
-  - {name: 🇺🇸 美国 CloudFlare节点 5, server: 172.64.233.7, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip2.1457230.xyz}}, udp: true}
+  - {name: 🇮🇳 印度 V2CROSS.COM, server: 202.78.162.5, port: 443, type: vmess, uuid: 2ff97c6d-8557-42a4-b43f-19c77c5959ea, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: irsoft.sytes.net}}, udp: true}
+  - {name: 🇵🇱 波兰 V2CROSS.COM, server: 193.243.147.128, port: 40368, type: ss, cipher: aes-256-gcm, password: 7BcLdsO1WweoGD0X, udp: true}
+  - {name: 🇺🇸 美国 CloudFlare节点, server: server31.beheshtbaneh.com, port: 8880, type: vmess, uuid: 4154143c-bbba-47a4-9f79-c2ed087cbcc9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: server31.beheshtbaneh.com}}, udp: true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 🇨🇳 四川省成都市 移动
-      - 🇺🇸 美国 CloudFlare节点
       - 🇭🇰 香港 UCloud
-      - 🇺🇸 美国 CloudFlare节点 2
-      - 🇺🇸 美国 CloudFlare节点 3
       - 🇮🇳 印度 V2CROSS.COM
-      - 🇰🇷 韩国 KT电信
-      - 广东省 移动
-      - 🇷🇺 俄罗斯 V2CROSS.COM
-      - 🇺🇸 美国 CloudFlare节点 4
-      - 🇺🇸 美国 CloudFlare节点 5
+      - 🇵🇱 波兰 V2CROSS.COM
+      - 🇺🇸 美国 CloudFlare节点
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇨🇳 四川省成都市 移动
-      - 🇺🇸 美国 CloudFlare节点
       - 🇭🇰 香港 UCloud
-      - 🇺🇸 美国 CloudFlare节点 2
-      - 🇺🇸 美国 CloudFlare节点 3
       - 🇮🇳 印度 V2CROSS.COM
-      - 🇰🇷 韩国 KT电信
-      - 广东省 移动
-      - 🇷🇺 俄罗斯 V2CROSS.COM
-      - 🇺🇸 美国 CloudFlare节点 4
-      - 🇺🇸 美国 CloudFlare节点 5
+      - 🇵🇱 波兰 V2CROSS.COM
+      - 🇺🇸 美国 CloudFlare节点
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇨🇳 四川省成都市 移动
-      - 🇺🇸 美国 CloudFlare节点
       - 🇭🇰 香港 UCloud
-      - 🇺🇸 美国 CloudFlare节点 2
-      - 🇺🇸 美国 CloudFlare节点 3
       - 🇮🇳 印度 V2CROSS.COM
-      - 🇰🇷 韩国 KT电信
-      - 广东省 移动
-      - 🇷🇺 俄罗斯 V2CROSS.COM
-      - 🇺🇸 美国 CloudFlare节点 4
-      - 🇺🇸 美国 CloudFlare节点 5
+      - 🇵🇱 波兰 V2CROSS.COM
+      - 🇺🇸 美国 CloudFlare节点
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇨🇳 四川省成都市 移动
-      - 🇺🇸 美国 CloudFlare节点
       - 🇭🇰 香港 UCloud
-      - 🇺🇸 美国 CloudFlare节点 2
-      - 🇺🇸 美国 CloudFlare节点 3
       - 🇮🇳 印度 V2CROSS.COM
-      - 🇰🇷 韩国 KT电信
-      - 广东省 移动
-      - 🇷🇺 俄罗斯 V2CROSS.COM
-      - 🇺🇸 美国 CloudFlare节点 4
-      - 🇺🇸 美国 CloudFlare节点 5
+      - 🇵🇱 波兰 V2CROSS.COM
+      - 🇺🇸 美国 CloudFlare节点
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 🇨🇳 四川省成都市 移动
-      - 🇺🇸 美国 CloudFlare节点
       - 🇭🇰 香港 UCloud
-      - 🇺🇸 美国 CloudFlare节点 2
-      - 🇺🇸 美国 CloudFlare节点 3
       - 🇮🇳 印度 V2CROSS.COM
-      - 🇰🇷 韩国 KT电信
-      - 广东省 移动
-      - 🇷🇺 俄罗斯 V2CROSS.COM
-      - 🇺🇸 美国 CloudFlare节点 4
-      - 🇺🇸 美国 CloudFlare节点 5
+      - 🇵🇱 波兰 V2CROSS.COM
+      - 🇺🇸 美国 CloudFlare节点
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇨🇳 四川省成都市 移动
-      - 🇺🇸 美国 CloudFlare节点
       - 🇭🇰 香港 UCloud
-      - 🇺🇸 美国 CloudFlare节点 2
-      - 🇺🇸 美国 CloudFlare节点 3
       - 🇮🇳 印度 V2CROSS.COM
-      - 🇰🇷 韩国 KT电信
-      - 广东省 移动
-      - 🇷🇺 俄罗斯 V2CROSS.COM
-      - 🇺🇸 美国 CloudFlare节点 4
-      - 🇺🇸 美国 CloudFlare节点 5
+      - 🇵🇱 波兰 V2CROSS.COM
+      - 🇺🇸 美国 CloudFlare节点
   - name: 📢 谷歌FCM
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇨🇳 四川省成都市 移动
-      - 🇺🇸 美国 CloudFlare节点
       - 🇭🇰 香港 UCloud
-      - 🇺🇸 美国 CloudFlare节点 2
-      - 🇺🇸 美国 CloudFlare节点 3
       - 🇮🇳 印度 V2CROSS.COM
-      - 🇰🇷 韩国 KT电信
-      - 广东省 移动
-      - 🇷🇺 俄罗斯 V2CROSS.COM
-      - 🇺🇸 美国 CloudFlare节点 4
-      - 🇺🇸 美国 CloudFlare节点 5
+      - 🇵🇱 波兰 V2CROSS.COM
+      - 🇺🇸 美国 CloudFlare节点
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -154,53 +98,11 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇨🇳 四川省成都市 移动
-      - 🇺🇸 美国 CloudFlare节点
       - 🇭🇰 香港 UCloud
-      - 🇺🇸 美国 CloudFlare节点 2
-      - 🇺🇸 美国 CloudFlare节点 3
       - 🇮🇳 印度 V2CROSS.COM
-      - 🇰🇷 韩国 KT电信
-      - 广东省 移动
-      - 🇷🇺 俄罗斯 V2CROSS.COM
-      - 🇺🇸 美国 CloudFlare节点 4
-      - 🇺🇸 美国 CloudFlare节点 5
+      - 🇵🇱 波兰 V2CROSS.COM
+      - 🇺🇸 美国 CloudFlare节点
 rules:
- - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
- - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
- - DOMAIN-SUFFIX,ip6-loopback,🎯 全球直连
- - DOMAIN-SUFFIX,lan,🎯 全球直连
- - DOMAIN-SUFFIX,local,🎯 全球直连
- - DOMAIN-SUFFIX,localhost,🎯 全球直连
- - IP-CIDR,0.0.0.0/8,🎯 全球直连,no-resolve
- - IP-CIDR,10.0.0.0/8,🎯 全球直连,no-resolve
- - IP-CIDR,100.64.0.0/10,🎯 全球直连,no-resolve
- - IP-CIDR,127.0.0.0/8,🎯 全球直连,no-resolve
- - IP-CIDR,172.16.0.0/12,🎯 全球直连,no-resolve
- - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
- - IP-CIDR,198.18.0.0/16,🎯 全球直连,no-resolve
- - IP-CIDR,224.0.0.0/4,🎯 全球直连,no-resolve
- - IP-CIDR6,::1/128,🎯 全球直连,no-resolve
- - IP-CIDR6,fc00::/7,🎯 全球直连,no-resolve
- - IP-CIDR6,fe80::/10,🎯 全球直连,no-resolve
- - IP-CIDR6,fd00::/8,🎯 全球直连,no-resolve
- - DOMAIN,instant.arubanetworks.com,🎯 全球直连
- - DOMAIN,setmeup.arubanetworks.com,🎯 全球直连
- - DOMAIN,router.asus.com,🎯 全球直连
- - DOMAIN,www.asusrouter.com,🎯 全球直连
- - DOMAIN-SUFFIX,hiwifi.com,🎯 全球直连
- - DOMAIN-SUFFIX,leike.cc,🎯 全球直连
- - DOMAIN-SUFFIX,miwifi.com,🎯 全球直连
- - DOMAIN-SUFFIX,my.router,🎯 全球直连
- - DOMAIN-SUFFIX,p.to,🎯 全球直连
- - DOMAIN-SUFFIX,peiluyou.com,🎯 全球直连
- - DOMAIN-SUFFIX,phicomm.me,🎯 全球直连
- - DOMAIN-SUFFIX,router.ctc,🎯 全球直连
- - DOMAIN-SUFFIX,routerlogin.com,🎯 全球直连
- - DOMAIN-SUFFIX,tendawifi.com,🎯 全球直连
- - DOMAIN-SUFFIX,zte.home,🎯 全球直连
- - DOMAIN-SUFFIX,tplogin.cn,🎯 全球直连
- - DOMAIN-SUFFIX,wifi.cmcc,🎯 全球直连
  - DOMAIN-SUFFIX,ol.epicgames.com,🎯 全球直连
  - DOMAIN-SUFFIX,dizhensubao.getui.com,🎯 全球直连
  - DOMAIN,dl.google.com,🎯 全球直连
