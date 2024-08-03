@@ -5,463 +5,419 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 美国 CloudFlare节点, server: 104.19.58.175, port: 2052, type: vmess, uuid: d6b6d982-d52f-465a-b988-85670b23f64a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: cdn1.freegradely.xyz}}, udp: true}
-  - {name: 广东省 移动, server: dd99e6d3-3da1-18b7-533f-fbbe92bdd9a8.ss03.net, port: 22404, type: ss, cipher: chacha20-ietf-poly1305, password: 790524d9-a4f1-4bb9-87e2-b3a2744a002c, udp: true}
-  - {name: 印度 V2CROSS.COM, server: 202.78.162.5, port: 443, type: vmess, uuid: 2ff97c6d-8557-42a4-b43f-19c77c5959ea, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: irsoft.sytes.net}}, udp: true}
-  - {name: 美国 CloudFlare节点 2, server: 172.64.194.76, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip14.freegradely.xyz}}, udp: true}
-  - {name: 广东省 移动 2, server: 03e826b1-4e00-2f2b-aac6-06f12a13b5dd.ss03.net, port: 22383, type: ss, cipher: chacha20-ietf-poly1305, password: 790524d9-a4f1-4bb9-87e2-b3a2744a002c, udp: true}
-  - {name: 立陶宛 V2CROSS.COM, server: nlch.blueberrynetwork.store, port: 80, type: vmess, uuid: 3e5cda0a-6122-4f54-9e3c-3f49e7a526f9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc}}, udp: true}
-  - {name: 美国 CloudFlare节点 3, server: 162.159.140.89, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip1.1789034.xyz}}, udp: true}
-  - {name: 美国 CloudFlare节点 4, server: 172.64.198.249, port: 2052, type: vmess, uuid: d6b6d982-d52f-465a-b988-85670b23f64a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: cdn1.freegradely.xyz}}, udp: true}
-  - {name: 广东省 移动 3, server: 3b810d31-ea04-5bc0-b986-ff4cfd42ecd0.ss03.net, port: 22366, type: ss, cipher: chacha20-ietf-poly1305, password: 790524d9-a4f1-4bb9-87e2-b3a2744a002c, udp: true}
-  - {name: 美国 Amazon EC2服务器, server: 3.69.157.106, port: 22222, type: trojan, password: telegram-id-privatevpns, sni: trojan.burgerip.co.uk, skip-cert-verify: true, udp: true}
-  - {name: 广东省 移动 4, server: 3b810d31-ea04-5bc0-b986-ff4cfd42ecd0.ss03.net, port: 22371, type: ss, cipher: chacha20-ietf-poly1305, password: 790524d9-a4f1-4bb9-87e2-b3a2744a002c, udp: true}
-  - {name: 美国 CloudFlare节点 5, server: 104.19.21.230, port: 2052, type: vmess, uuid: d6b6d982-d52f-465a-b988-85670b23f64a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, servername: cdn1.freegradely.xyz, network: ws, ws-opts: {path: /, headers: {Host: cdn1.freegradely.xyz}}, udp: true}
-  - {name: 爱尔兰 都柏林Amazon数据中心, server: 52.50.73.142, port: 22222, type: trojan, password: telegram-id-directvpn, sni: trojan.burgerip.co.uk, skip-cert-verify: true, udp: true}
-  - {name: 美国 CloudFlare节点 6, server: 162.159.129.138, port: 80, type: vmess, uuid: 5820093a-bb7d-4e15-8575-1a529f2d8282, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: rn2.hostmjj.com}}, udp: true}
-  - {name: 广东省 移动 5, server: 061a43b9-2e7f-93ab-5ed1-8e9e582bd574.ss03.net, port: 22411, type: ss, cipher: chacha20-ietf-poly1305, password: 790524d9-a4f1-4bb9-87e2-b3a2744a002c, udp: true}
-  - {name: 美国 CloudFlare节点 7, server: 104.19.45.80, port: 2095, type: vmess, uuid: 7a737f41-b792-4260-94ff-3d864da67b80, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: onea.flha.ru}}, udp: true}
-  - {name: 德国 V2CROSS.COM, server: 193.201.15.185, port: 35199, type: ss, cipher: chacha20-ietf-poly1305, password: KD1HHqw3qyK7RhaipiqRap, udp: true}
-  - {name: 美国 Amazon数据中心, server: 18.226.4.245, port: 17024, type: trojan, password: R4pHE7TG0sto, sni: appsvs.shop, skip-cert-verify: true, udp: true}
-  - {name: 美国 CloudFlare节点 8, server: 104.19.47.27, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip1.1457230.xyz}}, udp: true}
-  - {name: 爱尔兰 都柏林Amazon数据中心 2, server: 34.240.94.4, port: 22222, type: trojan, password: telegram-id-privatevpns, sni: trojan.burgerip.co.uk, skip-cert-verify: true, udp: true}
-  - {name: 美国 CloudFlare节点 9, server: 104.18.57.111, port: 2052, type: vmess, uuid: d6b6d982-d52f-465a-b988-85670b23f64a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: cdn1.freegradely.xyz}}, udp: true}
-  - {name: 美国 CloudFlare节点 10, server: 104.19.55.49, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip11.freegradely.xyz}}, udp: true}
-  - {name: 美国 CloudFlare节点 11, server: 104.19.45.114, port: 2095, type: vmess, uuid: 7a737f41-b792-4260-94ff-3d864da67b80, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: onea.flha.ru}}, udp: true}
-  - {name: 美国 CloudFlare节点 12, server: 172.64.167.22, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip2.1457230.xyz}}, udp: true}
-  - {name: 美国 CloudFlare节点 13, server: 104.19.45.12, port: 2095, type: vmess, uuid: 7a737f41-b792-4260-94ff-3d864da67b80, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: onea.flha.ru}}, udp: true}
-  - {name: 美国 Merit网络公司, server: 35.89.232.143, port: 17039, type: trojan, password: lKjOoPnBE0C4, sni: appsvs.shop, skip-cert-verify: true, udp: true}
-  - {name: 美国 CloudFlare节点 14, server: 162.159.140.77, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip1.1789034.xyz}}, udp: true}
-  - {name: 广东省 移动 6, server: dd99e6d3-3da1-18b7-533f-fbbe92bdd9a8.ss03.net, port: 22376, type: ss, cipher: aes-128-gcm, password: 790524d9-a4f1-4bb9-87e2-b3a2744a002c, udp: true}
-  - {name: 美国 CloudFlare节点 15, server: cfcdn1.sanfencdn9.com, port: 8080, type: vmess, uuid: 1dbf5c96-31cb-4fd7-8f63-ba8d2bdace34, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /video/f8ZKTGaGoC/, headers: {Host: us5PhAx6xsj.fzbqfrse.xyz}}, udp: true}
-  - {name: 广东省广州市 移动, server: mmhk01.micloud.buzz, port: 46001, type: vmess, uuid: f9b02d8c-b69b-435f-aa25-68393e5fb121, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /zh-cn, headers: {Host: mmhk01.micloud.buzz}}, udp: true}
-  - {name: 乌克兰 V2CROSS.COM, server: dk1.connecton.surf, port: 443, type: vmess, uuid: a808defb-a600-4abc-a489-f3f500c3b901, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: vmess, headers: {Host: dk1.connecton.surf}}, udp: true}
-  - {name: 美国 CloudFlare节点 16, server: 104.19.45.35, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip13.freegradely.xyz}}, udp: true}
-  - {name: 美国 CloudFlare节点 17, server: 104.19.45.31, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip13.freegradely.xyz}}, udp: true}
-  - {name: 日本 V2CROSS.COM, server: kr2.mmmmmmmmmm.cfd, port: 64123, type: trojan, password: 2062a5ca-a34e-47bf-9810-db91185f07fc, sni: apple.com, skip-cert-verify: true, udp: true}
-  - {name: 美国 CloudFlare节点 18, server: 162.159.140.56, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip1.1789034.xyz}}, udp: true}
+  - {name: 美国 惠普HP, server: 16.171.100.224, port: 22222, type: trojan, password: telegram-id-privatevpns, sni: trojan.burgerip.co.uk, skip-cert-verify: true, udp: true}
+  - {name: 伊朗 V2CROSS.COM, server: 37.27.44.231, port: 15809, type: vmess, uuid: ebf43ab5-5431-4501-a41b-8fb66b690066, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: free.best-antiaging-reviews.com, network: ws, ws-opts: {path: /}, udp: true}
   - {name: 香港 电讯盈科有限公司, server: 203.198.108.147, port: 443, type: trojan, password: NUeBvQHox0BmnHpu, sni: gquuangc27.xyz, skip-cert-verify: true, udp: true}
-  - {name: 美国 CloudFlare节点 19, server: rn.37624682.xyz, port: 2052, type: vmess, uuid: 2573b4c8-476d-491c-a428-43193159909d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: rn.37624682.xyz}}, udp: true}
-  - {name: 美国 CloudFlare节点 20, server: 172.64.167.35, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, servername: ip2.1457230.xyz, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip2.1457230.xyz}}, udp: true}
-  - {name: 美国 CloudFlare节点 21, server: 104.19.21.71, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, servername: ip2.1457230.xyz, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip2.1457230.xyz}}, udp: true}
-  - {name: 乌克兰 V2CROSS.COM 2, server: fr1.trojanvpn.de, port: 2053, type: trojan, password: 5c7941b5-c393-4eea-a76d-d44b59baf8a0, skip-cert-verify: true, udp: true}
-  - {name: 美国 CloudFlare节点 22, server: 104.19.32.216, port: 2052, type: vmess, uuid: d6b6d982-d52f-465a-b988-85670b23f64a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: cdn1.freegradely.xyz}}, udp: true}
-  - {name: 美国 CloudFlare节点 23, server: www.speedtest.net, port: 8880, type: vmess, uuid: add2ffac-f376-416e-bd31-0db44d2049b3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 2d.irvn.debian.6.6.1b1.8.fxp.debian.org.speedtest.net.列列男事的事列上赛.abkon.cyou.}}, udp: true}
-  - {name: 美国 Amazon数据中心 2, server: 13.37.27.141, port: 22222, type: trojan, password: telegram-id-privatevpns, sni: trojan.burgerip.co.uk, skip-cert-verify: true, udp: true}
-  - {name: 广东省 移动 7, server: dd99e6d3-3da1-18b7-533f-fbbe92bdd9a8.ss03.net, port: 22368, type: ss, cipher: chacha20-ietf-poly1305, password: 790524d9-a4f1-4bb9-87e2-b3a2744a002c, udp: true}
-  - {name: 美国 CloudFlare节点 24, server: 104.19.46.103, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip14.freegradely.xyz}}, udp: true}
-  - {name: 美国 圣安娜Krypt机房, server: us.37624682.xyz, port: 22087, type: vmess, uuid: 2573b4c8-476d-491c-a428-43193159909d, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: us.37624682.xyz}}, udp: true}
-  - {name: 美国 CloudFlare节点 25, server: 104.19.57.24, port: 2052, type: vmess, uuid: d6b6d982-d52f-465a-b988-85670b23f64a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, servername: cdn3.freegradely.xyz, network: ws, ws-opts: {path: /, headers: {Host: cdn3.freegradely.xyz}}, udp: true}
-  - {name: 德国 黑森州法兰克福Amazon数据中心, server: 35.157.89.0, port: 22222, type: trojan, password: telegram-id-privatevpns, sni: trojan.burgerip.co.uk, skip-cert-verify: true, udp: true}
-  - {name: 美国 CloudFlare节点 26, server: 104.19.45.13, port: 2095, type: vmess, uuid: 7a737f41-b792-4260-94ff-3d864da67b80, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: onea.flha.ru}}, udp: true}
-  - {name: 美国 CloudFlare节点 27, server: 104.19.45.209, port: 2095, type: vmess, uuid: 7a737f41-b792-4260-94ff-3d864da67b80, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: onea.flha.ru}}, udp: true}
-  - {name: 日本 东京Amazon数据中心, server: jp6.mmmmmmmmmm.cfd, port: 23234, type: vmess, uuid: 2062a5ca-a34e-47bf-9810-db91185f07fc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美国 CloudFlare公司CDN节点(shopify), server: 23.227.38.3, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip14.freegradely.xyz}}, udp: true}
-  - {name: 美国 CloudFlare节点 28, server: www.visa.com, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip1.1789034.xyz}}, udp: true}
-  - {name: 美国 CloudFlare节点 29, server: 104.19.58.175, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip14.freegradely.xyz}}, udp: true}
-  - {name: 美国 CloudFlare节点 30, server: 172.64.166.33, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip2.1457230.xyz}}, udp: true}
-  - {name: 美国 CloudFlare节点 31, server: 104.19.45.194, port: 2095, type: vmess, uuid: 7a737f41-b792-4260-94ff-3d864da67b80, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: onea.flha.ru}}, udp: true}
-  - {name: 美国 CloudFlare节点 32, server: 104.21.82.183, port: 8880, type: vmess, uuid: 5a7021e0-26b4-45d6-b175-fe551601ca97, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: server26.beheshtbaneh.com}}, udp: true}
-  - {name: 广东省 移动 8, server: dd99e6d3-3da1-18b7-533f-fbbe92bdd9a8.ss03.net, port: 12377, type: ss, cipher: chacha20-ietf-poly1305, password: 790524d9-a4f1-4bb9-87e2-b3a2744a002c, udp: true}
-  - {name: 美国 CloudFlare节点 33, server: 104.19.55.79, port: 2052, type: vmess, uuid: d6b6d982-d52f-465a-b988-85670b23f64a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: cdn3.freegradely.xyz}}, udp: true}
-  - {name: 美国 CloudFlare节点 34, server: 104.16.67.38, port: 80, type: vmess, uuid: 2a8a10fb-9ca3-367e-a234-cf09f841be4f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /v118-fccxmxm35, headers: {Host: us3e-mmnnfr9dop0.v2freevpn.com}}, udp: true}
-  - {name: 美国 CloudFlare节点 35, server: 104.19.47.122, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip14.freegradely.xyz}}, udp: true}
-  - {name: 广东省 移动 9, server: dd99e6d3-3da1-18b7-533f-fbbe92bdd9a8.ss03.net, port: 12388, type: ss, cipher: chacha20-ietf-poly1305, password: 790524d9-a4f1-4bb9-87e2-b3a2744a002c, udp: true}
-  - {name: 日本 东京Amazon数据中心 2, server: jp7.mmmmmmmmmm.cfd, port: 53638, type: trojan, password: 2062a5ca-a34e-47bf-9810-db91185f07fc, sni: apple.com, skip-cert-verify: true, udp: true}
-  - {name: 美国 CloudFlare节点 36, server: 104.18.84.104, port: 80, type: vmess, uuid: 211d8a34-9c48-4435-b4bf-343ae1cbda0e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: rn1.hostmjj.com}}, udp: true}
-  - {name: 美国 CloudFlare节点 37, server: 104.26.5.66, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip1.1789034.xyz}}, udp: true}
-  - {name: 美国 俄勒冈州波特兰Amazon数据中心, server: fuck5.mmmmmmmmmm.cfd, port: 59019, type: ss, cipher: chacha20-ietf-poly1305, password: 2062a5ca-a34e-47bf-9810-db91185f07fc, udp: true}
-  - {name: 美国 CloudFlare节点 38, server: 162.159.128.248, port: 80, type: vmess, uuid: 211d8a34-9c48-4435-b4bf-343ae1cbda0e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: rn1.hostmjj.com}}, udp: true}
-  - {name: 广东省 移动 10, server: bad12afa-2ae9-a5bd-4038-f409b618f68a.ss03.net, port: 12343, type: ss, cipher: chacha20-ietf-poly1305, password: 790524d9-a4f1-4bb9-87e2-b3a2744a002c, udp: true}
-  - {name: 广东省 移动 11, server: bad12afa-2ae9-a5bd-4038-f409b618f68a.ss03.net, port: 12344, type: ss, cipher: chacha20-ietf-poly1305, password: 790524d9-a4f1-4bb9-87e2-b3a2744a002c, udp: true}
-  - {name: 广东省广州市 移动 2, server: 120.232.153.71, port: 45972, type: vmess, uuid: 770ee730-2450-4e3c-a6c6-3932bd32afbd, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美国 CloudFlare节点 39, server: 172.64.233.37, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip2.1457230.xyz}}, udp: true}
-  - {name: 爱尔兰 都柏林Amazon数据中心 3, server: 52.215.102.118, port: 22222, type: trojan, password: telegram-id-directvpn, sni: trojan.burgerip.co.uk, skip-cert-verify: true, udp: true}
-  - {name: 美国 CloudFlare节点 40, server: 162.159.140.93, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip1.1789034.xyz}}, udp: true}
-  - {name: 俄罗斯 V2CROSS.COM, server: 185.242.86.156, port: 54170, type: ss, cipher: chacha20-ietf-poly1305, password: 36ZCHeabUSfKjfQEvJ4HDV, udp: true}
-  - {name: 美国 CloudFlare节点 41, server: 172.64.175.213, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip11.freegradely.xyz}}, udp: true}
-  - {name: 美国 Amazon数据中心 3, server: 18.199.144.130, port: 17065, type: trojan, password: QPlNabH67R9I, sni: appsvs.shop, skip-cert-verify: true, udp: true}
-  - {name: 日本 V2CROSS.COM 2, server: kr1.mmmmmmmmmm.cfd, port: 51256, type: trojan, password: 2062a5ca-a34e-47bf-9810-db91185f07fc, sni: apple.com, skip-cert-verify: true, udp: true}
-  - {name: 美国 CloudFlare节点 42, server: 104.17.148.22, port: 8880, type: vmess, uuid: add2ffac-f376-416e-bd31-0db44d2049b3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 2d.irvn.debian.6.6.1b1.8.fxp.debian.org.speedtest.net.列列男事的事列上赛.abkon.cyou.}}, udp: true}
-  - {name: 美国 弗吉尼亚州阿什本Amazon数据中心, server: 3.220.164.158, port: 17067, type: trojan, password: E6xDDsXxhgeA, sni: appsvs.shop, skip-cert-verify: true, udp: true}
-  - {name: 广东省 移动 12, server: 3b810d31-ea04-5bc0-b986-ff4cfd42ecd0.ss03.net, port: 22375, type: ss, cipher: chacha20-ietf-poly1305, password: 790524d9-a4f1-4bb9-87e2-b3a2744a002c, udp: true}
-  - {name: 广东省 移动 13, server: dd99e6d3-3da1-18b7-533f-fbbe92bdd9a8.ss03.net, port: 12371, type: ss, cipher: chacha20-ietf-poly1305, password: 790524d9-a4f1-4bb9-87e2-b3a2744a002c, udp: true}
-  - {name: 广东省 移动 14, server: dd99e6d3-3da1-18b7-533f-fbbe92bdd9a8.ss03.net, port: 12382, type: ss, cipher: chacha20-ietf-poly1305, password: 790524d9-a4f1-4bb9-87e2-b3a2744a002c, udp: true}
-  - {name: 美国 CloudFlare节点 43, server: 104.19.21.73, port: 2052, type: vmess, uuid: d6b6d982-d52f-465a-b988-85670b23f64a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: cdn3.freegradely.xyz}}, udp: true}
-  - {name: 美国 CloudFlare节点 44, server: 104.26.5.145, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip1.1789034.xyz}}, udp: true}
-  - {name: 广东省 移动 15, server: 3b810d31-ea04-5bc0-b986-ff4cfd42ecd0.ss03.net, port: 22372, type: ss, cipher: chacha20-ietf-poly1305, password: 790524d9-a4f1-4bb9-87e2-b3a2744a002c, udp: true}
-  - {name: 广东省 移动 16, server: 3b810d31-ea04-5bc0-b986-ff4cfd42ecd0.ss03.net, port: 22373, type: ss, cipher: chacha20-ietf-poly1305, password: 790524d9-a4f1-4bb9-87e2-b3a2744a002c, udp: true}
-  - {name: 美国 CloudFlare节点 45, server: 104.19.45.191, port: 2095, type: vmess, uuid: 7a737f41-b792-4260-94ff-3d864da67b80, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: onea.flha.ru}}, udp: true}
-  - {name: 广东省广州市 移动 3, server: 120.232.153.37, port: 42055, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美国 CloudFlare节点 46, server: 104.19.45.98, port: 2095, type: vmess, uuid: 7a737f41-b792-4260-94ff-3d864da67b80, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: onea.flha.ru}}, udp: true}
-  - {name: 美国 CloudFlare节点 47, server: 104.16.148.244, port: 2086, type: vmess, uuid: 29eebb60-b27b-4a9d-bba5-947763d9205e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, servername: ip006.freegradely.xyz, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip006.freegradely.xyz}}, udp: true}
-  - {name: 美国 CloudFlare节点 48, server: 104.19.45.232, port: 2095, type: vmess, uuid: 7a737f41-b792-4260-94ff-3d864da67b80, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: onea.flha.ru}}, udp: true}
-  - {name: 美国 CloudFlare节点 49, server: 104.19.45.228, port: 2095, type: vmess, uuid: 7a737f41-b792-4260-94ff-3d864da67b80, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: onea.flha.ru}}, udp: true}
-  - {name: 美国 CloudFlare节点 50, server: 104.19.32.216, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip14.freegradely.xyz}}, udp: true}
-  - {name: 美国 CloudFlare节点 51, server: 104.19.45.179, port: 2095, type: vmess, uuid: 7a737f41-b792-4260-94ff-3d864da67b80, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: onea.flha.ru}}, udp: true}
-  - {name: 美国 CloudFlare节点 52, server: 104.17.148.22, port: 2053, type: vmess, uuid: 00fb7867-95ad-4eaf-99f1-22255beb6251, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: "", network: grpc, grpc-opts: {grpc-service-name: /}, udp: true}
-  - {name: 美国 CloudFlare节点 53, server: 172.64.233.15, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip2.1457230.xyz}}, udp: true}
-  - {name: 美国 CloudFlare节点 54, server: 104.19.45.42, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip14.freegradely.xyz}}, udp: true}
-  - {name: 美国 CloudFlare节点 55, server: 104.19.21.63, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip11.freegradely.xyz}}, udp: true}
-  - {name: 美国 CloudFlare节点 56, server: 104.19.45.212, port: 2095, type: vmess, uuid: 7a737f41-b792-4260-94ff-3d864da67b80, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: onea.flha.ru}}, udp: true}
-  - {name: 美国 CloudFlare节点 57, server: 104.19.38.88, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip5-4.freegradely.xyz}}, udp: true}
-  - {name: 美国 Amazon数据中心 4, server: 18.202.75.44, port: 22222, type: trojan, password: telegram-id-privatevpns, sni: trojan.burgerip.co.uk, skip-cert-verify: true, udp: true}
-  - {name: 美国 CloudFlare节点 58, server: 172.64.167.44, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip2.1457230.xyz}}, udp: true}
-  - {name: 广东省 移动 17, server: 381e05c3-70bf-87f9-b533-8da1de749286.ss03.net, port: 22388, type: ss, cipher: chacha20-ietf-poly1305, password: 790524d9-a4f1-4bb9-87e2-b3a2744a002c, udp: true}
-  - {name: 美国 CloudFlare节点 59, server: 104.17.106.151, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip14.freegradely.xyz}}, udp: true}
-  - {name: 美国 Xerox, server: sg5.mmmmmmmmmm.cfd, port: 54126, type: vmess, uuid: 2062a5ca-a34e-47bf-9810-db91185f07fc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美国 CloudFlare节点 60, server: 172.64.166.28, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip2.1457230.xyz}}, udp: true}
-  - {name: 德国下萨克森州萨尔茨吉特 德国电信, server: service.ouluyun9803.com, port: 20003, type: ss, cipher: chacha20-ietf-poly1305, password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2, udp: true}
-  - {name: 美国 惠普公司, server: 15.222.188.17, port: 22222, type: trojan, password: telegram-id-directvpn, sni: trojan.burgerip.co.uk, skip-cert-verify: true, udp: true}
-  - {name: 广东省 移动 18, server: bad12afa-2ae9-a5bd-4038-f409b618f68a.ss03.net, port: 12341, type: ss, cipher: chacha20-ietf-poly1305, password: 790524d9-a4f1-4bb9-87e2-b3a2744a002c, udp: true}
-  - {name: 美国 CloudFlare节点 61, server: 172.64.233.7, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip2.1457230.xyz}}, udp: true}
+  - {name: 爱尔兰 都柏林Amazon数据中心, server: 52.211.19.61, port: 22222, type: trojan, password: telegram-id-privatevpns, sni: trojan.burgerip.co.uk, skip-cert-verify: true, udp: true}
+  - {name: 美国 CloudFlare节点, server: 104.19.21.63, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip11.freegradely.xyz}}, udp: true}
+  - {name: 美国 CloudFlare节点 2, server: 172.64.99.22, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip11.freegradely.xyz}}, udp: true}
+  - {name: 香港 电讯盈科有限公司 2, server: pplaca05.top, port: 443, type: trojan, password: NUeBvQHox0BmnHpu, sni: pplaca05.top, skip-cert-verify: true, udp: true}
+  - {name: 美国 CloudFlare节点 3, server: www.visa.com, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip1.1789034.xyz}}, udp: true}
+  - {name: 美国 CloudFlare节点 4, server: 104.26.0.66, port: 2052, type: vmess, uuid: d6b6d982-d52f-465a-b988-85670b23f64a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, servername: cdn3.freegradely.xyz, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: cdn3.freegradely.xyz}}, udp: true}
+  - {name: 美国 CloudFlare节点 5, server: 104.19.57.24, port: 2052, type: vmess, uuid: d6b6d982-d52f-465a-b988-85670b23f64a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, servername: cdn3.freegradely.xyz, network: ws, ws-opts: {path: /, headers: {Host: cdn3.freegradely.xyz}}, udp: true}
+  - {name: 广东省广州市 移动, server: 120.232.153.71, port: 45972, type: vmess, uuid: 770ee730-2450-4e3c-a6c6-3932bd32afbd, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国 CloudFlare节点 6, server: 104.19.45.47, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip13.freegradely.xyz}}, udp: true}
+  - {name: 美国 CloudFlare节点 7, server: 104.19.47.36, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip2.1457230.xyz}}, udp: true}
+  - {name: 美国 CloudFlare节点 8, server: 172.64.233.15, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip2.1457230.xyz}}, udp: true}
+  - {name: 美国 CloudFlare节点 9, server: 172.64.167.22, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip2.1457230.xyz}}, udp: true}
+  - {name: 美国 CloudFlare节点 10, server: server31.beheshtbaneh.com, port: 8880, type: vmess, uuid: 4154143c-bbba-47a4-9f79-c2ed087cbcc9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: server31.beheshtbaneh.com}}, udp: true}
+  - {name: 美国 CloudFlare节点 11, server: 104.18.16.112, port: 2052, type: vmess, uuid: 1dbf5c96-31cb-4fd7-8f63-ba8d2bdace34, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /video/u4eCZTxW, headers: {Host: jpafzyhfsg3.yofnhkfc.xyz}}, udp: true}
+  - {name: 美国 麻省理工学院, server: 18.133.80.216, port: 22222, type: trojan, password: telegram-id-directvpn, sni: trojan.burgerip.co.uk, skip-cert-verify: true, udp: true}
+  - {name: 美国 CloudFlare节点 12, server: 172.64.198.249, port: 2052, type: vmess, uuid: d6b6d982-d52f-465a-b988-85670b23f64a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: cdn1.freegradely.xyz}}, udp: true}
+  - {name: 美国 CloudFlare节点 13, server: 172.64.166.16, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip2.1457230.xyz}}, udp: true}
+  - {name: 美国 Amazon EC2服务器, server: 3.69.157.106, port: 22222, type: trojan, password: telegram-id-privatevpns, sni: trojan.burgerip.co.uk, skip-cert-verify: true, udp: true}
+  - {name: 美国 CloudFlare节点 14, server: 162.159.136.106, port: 80, type: vmess, uuid: 5820093a-bb7d-4e15-8575-1a529f2d8282, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: rn2.hostmjj.com}}, udp: true}
+  - {name: 德国 黑森州法兰克福Amazon数据中心, server: 18.184.134.54, port: 17249, type: trojan, password: 8FNiL7AEaZ2s, sni: appsvs.shop, skip-cert-verify: true, udp: true}
+  - {name: 波兰 V2CROSS.COM, server: 193.243.147.128, port: 40368, type: ss, cipher: aes-256-gcm, password: 7BcLdsO1WweoGD0X, udp: true}
+  - {name: 伊朗 德黑兰市, server: 78.39.51.238, port: 45042, type: vmess, uuid: a658ac7c-1bfa-4e06-ae3b-df27d7a62bdb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国 CloudFlare节点 15, server: 172.67.130.140, port: 2082, type: vmess, uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: s1c.v2.v001sss.xyz}}, udp: true}
+  - {name: 美国 CloudFlare节点 16, server: 104.19.21.73, port: 2052, type: vmess, uuid: d6b6d982-d52f-465a-b988-85670b23f64a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, servername: cdn3.freegradely.xyz, network: ws, ws-opts: {path: /, headers: {Host: cdn3.freegradely.xyz}}, udp: true}
+  - {name: 美国 CloudFlare节点 17, server: www.zula.ir, port: 80, type: vmess, uuid: 3e5cda0a-6122-4f54-9e3c-3f49e7a526f9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: nlch.blueberrynetwork.store}}, udp: true}
+  - {name: 科威特 V2CROSS.COM, server: 89.107.10.65, port: 51348, type: ss, cipher: chacha20-ietf-poly1305, password: WM5adrXijpwApm1wLsEB3WFSCrG9aQ6QAJjVc2btj73FvBnw, udp: true}
+  - {name: 乌克兰 V2CROSS.COM, server: fr1.trojanvpn.de, port: 2053, type: trojan, password: 5c7941b5-c393-4eea-a76d-d44b59baf8a0, skip-cert-verify: true, udp: true}
+  - {name: 美国 CloudFlare节点 18, server: 172.64.233.37, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip2.1457230.xyz}}, udp: true}
+  - {name: 美国 CloudFlare节点 19, server: 104.19.45.84, port: 2095, type: vmess, uuid: 7a737f41-b792-4260-94ff-3d864da67b80, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: onea.flha.ru}}, udp: true}
+  - {name: 美国 CloudFlare节点 20, server: 104.19.45.5, port: 2095, type: vmess, uuid: 7a737f41-b792-4260-94ff-3d864da67b80, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: onea.flha.ru}}, udp: true}
+  - {name: 美国 CloudFlare节点 21, server: 172.64.166.33, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip2.1457230.xyz}}, udp: true}
+  - {name: 美国 CloudFlare节点 22, server: 108.162.192.63, port: 80, type: vmess, uuid: b2413a5a-d5d0-4447-b6d7-6dbcd2989a35, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /vmess, headers: {Host: dl2.127.0.0.1.востейcontrol.控制.kонтроль農達懲罰.cводкаhо.wonkacapitano.buzz.}}, udp: true}
+  - {name: 加拿大 魁北克省蒙特利尔Amazon数据中心, server: 35.182.52.123, port: 17310, type: trojan, password: I7RhiHZsVFJn, sni: appsvs.shop, skip-cert-verify: true, udp: true}
+  - {name: 美国 CloudFlare节点 23, server: 104.19.45.50, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip13.freegradely.xyz}}, udp: true}
+  - {name: 美国 CloudFlare节点 24, server: icook.tw, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip1.1789034.xyz}}, udp: true}
+  - {name: 英国 伦敦Amazon数据中心, server: 3.8.212.165, port: 17244, type: trojan, password: Gh4280gyJ3fn, sni: appsvs.shop, skip-cert-verify: true, udp: true}
+  - {name: 美国 CloudFlare节点 25, server: 104.19.46.33, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip13.freegradely.xyz}}, udp: true}
+  - {name: 美国 CloudFlare节点 26, server: 104.19.57.4, port: 2052, type: vmess, uuid: d6b6d982-d52f-465a-b988-85670b23f64a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: cdn1.freegradely.xyz}}, udp: true}
+  - {name: 美国 Merit网络公司, server: 35.89.232.143, port: 17268, type: trojan, password: SFDdpbQKqOJ6, sni: appsvs.shop, skip-cert-verify: true, udp: true}
+  - {name: 美国 CloudFlare节点 27, server: 172.64.198.229, port: 2052, type: vmess, uuid: d6b6d982-d52f-465a-b988-85670b23f64a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: cdn2.freegradely.xyz}}, udp: true}
+  - {name: 美国 CloudFlare节点 28, server: 104.19.45.13, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip13.freegradely.xyz}}, udp: true}
+  - {name: 香港 电讯盈科有限公司 3, server: hk1.mmmmmmmmmm.cfd, port: 34180, type: vmess, uuid: 2062a5ca-a34e-47bf-9810-db91185f07fc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国 CloudFlare节点 29, server: 104.18.57.111, port: 2052, type: vmess, uuid: d6b6d982-d52f-465a-b988-85670b23f64a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: cdn1.freegradely.xyz}}, udp: true}
+  - {name: 美国 戴维逊大学, server: 152.42.212.118, port: 60738, type: ss, cipher: chacha20-ietf-poly1305, password: zkUtfFiw8wRkYexjsnMIBf, udp: true}
+  - {name: 日本 东京都Amazon数据中心, server: 18.182.15.9, port: 17299, type: trojan, password: hCbNyy1gPxlK, sni: appsvs.shop, skip-cert-verify: true, udp: true}
+  - {name: 美国 CloudFlare节点 30, server: 104.19.45.241, port: 2095, type: vmess, uuid: 7a737f41-b792-4260-94ff-3d864da67b80, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: onea.flha.ru}}, udp: true}
+  - {name: 美国 CloudFlare节点 31, server: 104.19.45.80, port: 2095, type: vmess, uuid: 7a737f41-b792-4260-94ff-3d864da67b80, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: onea.flha.ru}}, udp: true}
+  - {name: 美国 CloudFlare节点 32, server: 104.19.46.36, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip13.freegradely.xyz}}, udp: true}
+  - {name: 美国 CloudFlare节点 33, server: 104.19.45.70, port: 2095, type: vmess, uuid: 7a737f41-b792-4260-94ff-3d864da67b80, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: onea.flha.ru}}, udp: true}
+  - {name: 美国 CloudFlare节点 34, server: 172.64.99.32, port: 2052, type: vmess, uuid: d6b6d982-d52f-465a-b988-85670b23f64a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: cdn2.freegradely.xyz}}, udp: true}
+  - {name: 美国 CloudFlare节点 35, server: 104.19.21.240, port: 2052, type: vmess, uuid: d6b6d982-d52f-465a-b988-85670b23f64a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, servername: cdn3.freegradely.xyz, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: cdn3.freegradely.xyz}}, udp: true}
+  - {name: 美国 CloudFlare节点 36, server: 104.17.148.22, port: 2053, type: vmess, uuid: 00fb7867-95ad-4eaf-99f1-22255beb6251, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: "", network: grpc, grpc-opts: {grpc-service-name: /}, udp: true}
+  - {name: 美国 CloudFlare节点 37, server: 104.20.17.186, port: 2052, type: vmess, uuid: d6b6d982-d52f-465a-b988-85670b23f64a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: cdn1.freegradely.xyz}}, udp: true}
+  - {name: 美国 CloudFlare节点 38, server: 104.20.17.196, port: 2052, type: vmess, uuid: d6b6d982-d52f-465a-b988-85670b23f64a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: cdn3.freegradely.xyz}}, udp: true}
+  - {name: 美国 CloudFlare节点 39, server: 172.64.233.17, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip2.1457230.xyz}}, udp: true}
+  - {name: 英国 伦敦Amazon数据中心 2, server: 52.56.149.226, port: 17311, type: trojan, password: RUQqNf81mXuw, sni: appsvs.shop, skip-cert-verify: true, udp: true}
+  - {name: 美国 CloudFlare节点 40, server: 104.18.57.121, port: 2052, type: vmess, uuid: d6b6d982-d52f-465a-b988-85670b23f64a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: cdn1.freegradely.xyz}}, udp: true}
+  - {name: 北美地区 V2CROSS.COM, server: 23.157.40.120, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: 美国 CloudFlare节点 41, server: max.mankadmu.com, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /linkvws, headers: {Host: max.mankadmu.com}}, udp: true}
+  - {name: 美国 CloudFlare节点 42, server: 172.64.166.2, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip2.1457230.xyz}}, udp: true}
+  - {name: 美国 CloudFlare节点 43, server: 172.64.167.19, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip2.1457230.xyz}}, udp: true}
+  - {name: 美国 CloudFlare节点 44, server: 104.26.0.50, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: ip5-4.freegradely.xyz}}, udp: true}
+  - {name: 美国 CloudFlare节点 45, server: 104.19.45.222, port: 2095, type: vmess, uuid: 7a737f41-b792-4260-94ff-3d864da67b80, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: onea.flha.ru}}, udp: true}
+  - {name: 美国 CloudFlare节点 46, server: 104.19.21.220, port: 2052, type: vmess, uuid: d6b6d982-d52f-465a-b988-85670b23f64a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, servername: cdn3.freegradely.xyz, network: ws, ws-opts: {path: /, headers: {Host: cdn3.freegradely.xyz}}, udp: true}
+  - {name: 美国 CloudFlare节点 47, server: 104.19.46.56, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip2.1457230.xyz}}, udp: true}
+  - {name: 香港 电讯盈科有限公司 4, server: 203.198.108.32, port: 443, type: trojan, password: NUeBvQHox0BmnHpu, sni: pplaca05.top, skip-cert-verify: true, udp: true}
+  - {name: 美国 CloudFlare节点 48, server: 104.19.45.51, port: 2095, type: vmess, uuid: 7a737f41-b792-4260-94ff-3d864da67b80, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: onea.flha.ru}}, udp: true}
+  - {name: 美国 CloudFlare节点 49, server: 104.19.45.88, port: 2095, type: vmess, uuid: 7a737f41-b792-4260-94ff-3d864da67b80, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: onea.flha.ru}}, udp: true}
+  - {name: 江苏省宿迁市 蒲公英网络有限公司, server: 15074.kuaiyin02.top, port: 15074, type: vmess, uuid: 9f513161-576b-3abc-9c98-06e52c3a24c6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国 Amazon数据中心, server: 44.216.29.54, port: 22222, type: trojan, password: telegram-id-directvpn, sni: trojan.burgerip.co.uk, skip-cert-verify: true, udp: true}
+  - {name: 波斯尼亚和黑塞哥维那 V2CROSS.COM, server: 80.71.157.175, port: 38211, type: ss, cipher: chacha20-ietf-poly1305, password: l9xcy04lpbvjKzkXziEgKu, udp: true}
+  - {name: 美国 CloudFlare节点 50, server: 104.19.45.4, port: 2095, type: vmess, uuid: 7a737f41-b792-4260-94ff-3d864da67b80, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: onea.flha.ru}}, udp: true}
+  - {name: 美国 麻省理工学院 2, server: 18.133.132.157, port: 22222, type: trojan, password: telegram-id-privatevpns, sni: trojan.burgerip.co.uk, skip-cert-verify: true, udp: true}
+  - {name: 美国 CloudFlare节点 51, server: 172.64.233.9, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip2.1457230.xyz}}, udp: true}
+  - {name: 美国 CloudFlare节点 52, server: 104.19.46.63, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip2.1457230.xyz}}, udp: true}
+  - {name: 美国 CloudFlare节点 53, server: 172.64.175.88, port: 2052, type: vmess, uuid: d6b6d982-d52f-465a-b988-85670b23f64a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: cdn1.freegradely.xyz}}, udp: true}
+  - {name: 美国 CloudFlare节点 54, server: 104.19.46.27, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip14.freegradely.xyz}}, udp: true}
+  - {name: 美国 CloudFlare节点 55, server: 104.26.0.56, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip14.freegradely.xyz}}, udp: true}
+  - {name: 美国 CloudFlare节点 56, server: 104.19.38.8, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip14.freegradely.xyz}}, udp: true}
+  - {name: 美国 Amazon数据中心 2, server: 13.37.112.29, port: 22222, type: trojan, password: telegram-id-privatevpns, sni: trojan.burgerip.co.uk, skip-cert-verify: true, udp: true}
+  - {name: 美国 CloudFlare节点 57, server: 104.19.21.63, port: 2052, type: vmess, uuid: d6b6d982-d52f-465a-b988-85670b23f64a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: cdn1.freegradely.xyz}}, udp: true}
+  - {name: 香港 电讯盈科有限公司 5, server: lsodgkanq04.xyz, port: 443, type: trojan, password: NUeBvQHox0BmnHpu, sni: lsodgkanq04.xyz, skip-cert-verify: true, udp: true}
+  - {name: 新加坡 DigitalOcean数据中心, server: 128.199.80.121, port: 41008, type: vmess, uuid: e08eae1e-5f46-4dc7-e3ec-8772ee04cf84, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国 CloudFlare节点 58, server: 104.19.45.114, port: 2095, type: vmess, uuid: 7a737f41-b792-4260-94ff-3d864da67b80, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: onea.flha.ru}}, udp: true}
+  - {name: 美国 Fastly全球Anycast节点, server: gov.uk, port: 443, type: vmess, uuid: 77848824-93b7-4b89-ffd0-e91afff406ce, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /77848824, headers: {Host: zheshiscp.com}}, udp: true}
+  - {name: 美国 CloudFlare节点 59, server: 104.19.59.89, port: 2052, type: vmess, uuid: d6b6d982-d52f-465a-b988-85670b23f64a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: cdn1.freegradely.xyz}}, udp: true}
+  - {name: 美国 CloudFlare节点 60, server: 104.19.58.185, port: 2052, type: vmess, uuid: d6b6d982-d52f-465a-b988-85670b23f64a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: cdn2.freegradely.xyz}}, udp: true}
+  - {name: 香港 电讯盈科有限公司 6, server: hk2.mmmmmmmmmm.cfd, port: 28069, type: trojan, password: 2062a5ca-a34e-47bf-9810-db91185f07fc, skip-cert-verify: true, udp: true}
+  - {name: 美国 CloudFlare节点 61, server: 104.16.192.1, port: 443, type: trojan, password: 0ab6c98dae3b48e8b9c4a776b6c9c19a, sni: sherasheba.com, skip-cert-verify: true, udp: true}
+  - {name: 美国 CloudFlare节点 62, server: 104.19.38.88, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip5-4.freegradely.xyz}}, udp: true}
+  - {name: 美国 CloudFlare节点 63, server: 172.64.233.43, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip2.1457230.xyz}}, udp: true}
+  - {name: 美国 CloudFlare节点 64, server: 104.19.21.71, port: 2052, type: vmess, uuid: d6b6d982-d52f-465a-b988-85670b23f64a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: cdn1.freegradely.xyz}}, udp: true}
+  - {name: 美国 CloudFlare节点 65, server: 104.19.45.56, port: 2095, type: vmess, uuid: 7a737f41-b792-4260-94ff-3d864da67b80, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: onea.flha.ru}}, udp: true}
+  - {name: 美国 CloudFlare节点 66, server: 104.19.45.17, port: 2095, type: vmess, uuid: 7a737f41-b792-4260-94ff-3d864da67b80, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: onea.flha.ru}}, udp: true}
+  - {name: 美国 Amazon数据中心 3, server: 18.168.186.177, port: 22222, type: trojan, password: telegram-id-privatevpns, sni: trojan.burgerip.co.uk, skip-cert-verify: true, udp: true}
+  - {name: 美国 CloudFlare节点 67, server: 108.162.192.109, port: 80, type: vmess, uuid: 5d214f53-1332-449f-ad0e-0a1888ef5479, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /vmess, headers: {Host: dl2.arsha.разведки守望者.hаблюдатели.watchers.aгент.偵察探員.wonkacapitano.buzz.}}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
+      - 美国 惠普HP
+      - 伊朗 V2CROSS.COM
+      - 香港 电讯盈科有限公司
+      - 爱尔兰 都柏林Amazon数据中心
       - 美国 CloudFlare节点
-      - 广东省 移动
-      - 印度 V2CROSS.COM
       - 美国 CloudFlare节点 2
-      - 广东省 移动 2
-      - 立陶宛 V2CROSS.COM
+      - 香港 电讯盈科有限公司 2
       - 美国 CloudFlare节点 3
       - 美国 CloudFlare节点 4
-      - 广东省 移动 3
-      - 美国 Amazon EC2服务器
-      - 广东省 移动 4
       - 美国 CloudFlare节点 5
-      - 爱尔兰 都柏林Amazon数据中心
+      - 广东省广州市 移动
       - 美国 CloudFlare节点 6
-      - 广东省 移动 5
       - 美国 CloudFlare节点 7
-      - 德国 V2CROSS.COM
-      - 美国 Amazon数据中心
       - 美国 CloudFlare节点 8
-      - 爱尔兰 都柏林Amazon数据中心 2
       - 美国 CloudFlare节点 9
       - 美国 CloudFlare节点 10
       - 美国 CloudFlare节点 11
+      - 美国 麻省理工学院
       - 美国 CloudFlare节点 12
       - 美国 CloudFlare节点 13
-      - 美国 Merit网络公司
+      - 美国 Amazon EC2服务器
       - 美国 CloudFlare节点 14
-      - 广东省 移动 6
+      - 德国 黑森州法兰克福Amazon数据中心
+      - 波兰 V2CROSS.COM
+      - 伊朗 德黑兰市
       - 美国 CloudFlare节点 15
-      - 广东省广州市 移动
-      - 乌克兰 V2CROSS.COM
       - 美国 CloudFlare节点 16
       - 美国 CloudFlare节点 17
-      - 日本 V2CROSS.COM
+      - 科威特 V2CROSS.COM
+      - 乌克兰 V2CROSS.COM
       - 美国 CloudFlare节点 18
-      - 香港 电讯盈科有限公司
       - 美国 CloudFlare节点 19
       - 美国 CloudFlare节点 20
       - 美国 CloudFlare节点 21
-      - 乌克兰 V2CROSS.COM 2
       - 美国 CloudFlare节点 22
+      - 加拿大 魁北克省蒙特利尔Amazon数据中心
       - 美国 CloudFlare节点 23
-      - 美国 Amazon数据中心 2
-      - 广东省 移动 7
       - 美国 CloudFlare节点 24
-      - 美国 圣安娜Krypt机房
+      - 英国 伦敦Amazon数据中心
       - 美国 CloudFlare节点 25
-      - 德国 黑森州法兰克福Amazon数据中心
       - 美国 CloudFlare节点 26
+      - 美国 Merit网络公司
       - 美国 CloudFlare节点 27
-      - 日本 东京Amazon数据中心
-      - 美国 CloudFlare公司CDN节点(shopify)
       - 美国 CloudFlare节点 28
+      - 香港 电讯盈科有限公司 3
       - 美国 CloudFlare节点 29
+      - 美国 戴维逊大学
+      - 日本 东京都Amazon数据中心
       - 美国 CloudFlare节点 30
       - 美国 CloudFlare节点 31
       - 美国 CloudFlare节点 32
-      - 广东省 移动 8
       - 美国 CloudFlare节点 33
       - 美国 CloudFlare节点 34
       - 美国 CloudFlare节点 35
-      - 广东省 移动 9
-      - 日本 东京Amazon数据中心 2
       - 美国 CloudFlare节点 36
       - 美国 CloudFlare节点 37
-      - 美国 俄勒冈州波特兰Amazon数据中心
       - 美国 CloudFlare节点 38
-      - 广东省 移动 10
-      - 广东省 移动 11
-      - 广东省广州市 移动 2
       - 美国 CloudFlare节点 39
-      - 爱尔兰 都柏林Amazon数据中心 3
+      - 英国 伦敦Amazon数据中心 2
       - 美国 CloudFlare节点 40
-      - 俄罗斯 V2CROSS.COM
+      - 北美地区 V2CROSS.COM
       - 美国 CloudFlare节点 41
-      - 美国 Amazon数据中心 3
-      - 日本 V2CROSS.COM 2
       - 美国 CloudFlare节点 42
-      - 美国 弗吉尼亚州阿什本Amazon数据中心
-      - 广东省 移动 12
-      - 广东省 移动 13
-      - 广东省 移动 14
       - 美国 CloudFlare节点 43
       - 美国 CloudFlare节点 44
-      - 广东省 移动 15
-      - 广东省 移动 16
       - 美国 CloudFlare节点 45
-      - 广东省广州市 移动 3
       - 美国 CloudFlare节点 46
       - 美国 CloudFlare节点 47
+      - 香港 电讯盈科有限公司 4
       - 美国 CloudFlare节点 48
       - 美国 CloudFlare节点 49
+      - 江苏省宿迁市 蒲公英网络有限公司
+      - 美国 Amazon数据中心
+      - 波斯尼亚和黑塞哥维那 V2CROSS.COM
       - 美国 CloudFlare节点 50
+      - 美国 麻省理工学院 2
       - 美国 CloudFlare节点 51
       - 美国 CloudFlare节点 52
       - 美国 CloudFlare节点 53
       - 美国 CloudFlare节点 54
       - 美国 CloudFlare节点 55
       - 美国 CloudFlare节点 56
+      - 美国 Amazon数据中心 2
       - 美国 CloudFlare节点 57
-      - 美国 Amazon数据中心 4
+      - 香港 电讯盈科有限公司 5
+      - 新加坡 DigitalOcean数据中心
       - 美国 CloudFlare节点 58
-      - 广东省 移动 17
+      - 美国 Fastly全球Anycast节点
       - 美国 CloudFlare节点 59
-      - 美国 Xerox
       - 美国 CloudFlare节点 60
-      - 德国下萨克森州萨尔茨吉特 德国电信
-      - 美国 惠普公司
-      - 广东省 移动 18
+      - 香港 电讯盈科有限公司 6
       - 美国 CloudFlare节点 61
+      - 美国 CloudFlare节点 62
+      - 美国 CloudFlare节点 63
+      - 美国 CloudFlare节点 64
+      - 美国 CloudFlare节点 65
+      - 美国 CloudFlare节点 66
+      - 美国 Amazon数据中心 3
+      - 美国 CloudFlare节点 67
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
+      - 美国 惠普HP
+      - 伊朗 V2CROSS.COM
+      - 香港 电讯盈科有限公司
+      - 爱尔兰 都柏林Amazon数据中心
       - 美国 CloudFlare节点
-      - 广东省 移动
-      - 印度 V2CROSS.COM
       - 美国 CloudFlare节点 2
-      - 广东省 移动 2
-      - 立陶宛 V2CROSS.COM
+      - 香港 电讯盈科有限公司 2
       - 美国 CloudFlare节点 3
       - 美国 CloudFlare节点 4
-      - 广东省 移动 3
-      - 美国 Amazon EC2服务器
-      - 广东省 移动 4
       - 美国 CloudFlare节点 5
-      - 爱尔兰 都柏林Amazon数据中心
+      - 广东省广州市 移动
       - 美国 CloudFlare节点 6
-      - 广东省 移动 5
       - 美国 CloudFlare节点 7
-      - 德国 V2CROSS.COM
-      - 美国 Amazon数据中心
       - 美国 CloudFlare节点 8
-      - 爱尔兰 都柏林Amazon数据中心 2
       - 美国 CloudFlare节点 9
       - 美国 CloudFlare节点 10
       - 美国 CloudFlare节点 11
+      - 美国 麻省理工学院
       - 美国 CloudFlare节点 12
       - 美国 CloudFlare节点 13
-      - 美国 Merit网络公司
+      - 美国 Amazon EC2服务器
       - 美国 CloudFlare节点 14
-      - 广东省 移动 6
+      - 德国 黑森州法兰克福Amazon数据中心
+      - 波兰 V2CROSS.COM
+      - 伊朗 德黑兰市
       - 美国 CloudFlare节点 15
-      - 广东省广州市 移动
-      - 乌克兰 V2CROSS.COM
       - 美国 CloudFlare节点 16
       - 美国 CloudFlare节点 17
-      - 日本 V2CROSS.COM
+      - 科威特 V2CROSS.COM
+      - 乌克兰 V2CROSS.COM
       - 美国 CloudFlare节点 18
-      - 香港 电讯盈科有限公司
       - 美国 CloudFlare节点 19
       - 美国 CloudFlare节点 20
       - 美国 CloudFlare节点 21
-      - 乌克兰 V2CROSS.COM 2
       - 美国 CloudFlare节点 22
+      - 加拿大 魁北克省蒙特利尔Amazon数据中心
       - 美国 CloudFlare节点 23
-      - 美国 Amazon数据中心 2
-      - 广东省 移动 7
       - 美国 CloudFlare节点 24
-      - 美国 圣安娜Krypt机房
+      - 英国 伦敦Amazon数据中心
       - 美国 CloudFlare节点 25
-      - 德国 黑森州法兰克福Amazon数据中心
       - 美国 CloudFlare节点 26
+      - 美国 Merit网络公司
       - 美国 CloudFlare节点 27
-      - 日本 东京Amazon数据中心
-      - 美国 CloudFlare公司CDN节点(shopify)
       - 美国 CloudFlare节点 28
+      - 香港 电讯盈科有限公司 3
       - 美国 CloudFlare节点 29
+      - 美国 戴维逊大学
+      - 日本 东京都Amazon数据中心
       - 美国 CloudFlare节点 30
       - 美国 CloudFlare节点 31
       - 美国 CloudFlare节点 32
-      - 广东省 移动 8
       - 美国 CloudFlare节点 33
       - 美国 CloudFlare节点 34
       - 美国 CloudFlare节点 35
-      - 广东省 移动 9
-      - 日本 东京Amazon数据中心 2
       - 美国 CloudFlare节点 36
       - 美国 CloudFlare节点 37
-      - 美国 俄勒冈州波特兰Amazon数据中心
       - 美国 CloudFlare节点 38
-      - 广东省 移动 10
-      - 广东省 移动 11
-      - 广东省广州市 移动 2
       - 美国 CloudFlare节点 39
-      - 爱尔兰 都柏林Amazon数据中心 3
+      - 英国 伦敦Amazon数据中心 2
       - 美国 CloudFlare节点 40
-      - 俄罗斯 V2CROSS.COM
+      - 北美地区 V2CROSS.COM
       - 美国 CloudFlare节点 41
-      - 美国 Amazon数据中心 3
-      - 日本 V2CROSS.COM 2
       - 美国 CloudFlare节点 42
-      - 美国 弗吉尼亚州阿什本Amazon数据中心
-      - 广东省 移动 12
-      - 广东省 移动 13
-      - 广东省 移动 14
       - 美国 CloudFlare节点 43
       - 美国 CloudFlare节点 44
-      - 广东省 移动 15
-      - 广东省 移动 16
       - 美国 CloudFlare节点 45
-      - 广东省广州市 移动 3
       - 美国 CloudFlare节点 46
       - 美国 CloudFlare节点 47
+      - 香港 电讯盈科有限公司 4
       - 美国 CloudFlare节点 48
       - 美国 CloudFlare节点 49
+      - 江苏省宿迁市 蒲公英网络有限公司
+      - 美国 Amazon数据中心
+      - 波斯尼亚和黑塞哥维那 V2CROSS.COM
       - 美国 CloudFlare节点 50
+      - 美国 麻省理工学院 2
       - 美国 CloudFlare节点 51
       - 美国 CloudFlare节点 52
       - 美国 CloudFlare节点 53
       - 美国 CloudFlare节点 54
       - 美国 CloudFlare节点 55
       - 美国 CloudFlare节点 56
+      - 美国 Amazon数据中心 2
       - 美国 CloudFlare节点 57
-      - 美国 Amazon数据中心 4
+      - 香港 电讯盈科有限公司 5
+      - 新加坡 DigitalOcean数据中心
       - 美国 CloudFlare节点 58
-      - 广东省 移动 17
+      - 美国 Fastly全球Anycast节点
       - 美国 CloudFlare节点 59
-      - 美国 Xerox
       - 美国 CloudFlare节点 60
-      - 德国下萨克森州萨尔茨吉特 德国电信
-      - 美国 惠普公司
-      - 广东省 移动 18
+      - 香港 电讯盈科有限公司 6
       - 美国 CloudFlare节点 61
+      - 美国 CloudFlare节点 62
+      - 美国 CloudFlare节点 63
+      - 美国 CloudFlare节点 64
+      - 美国 CloudFlare节点 65
+      - 美国 CloudFlare节点 66
+      - 美国 Amazon数据中心 3
+      - 美国 CloudFlare节点 67
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
+      - 美国 惠普HP
+      - 伊朗 V2CROSS.COM
+      - 香港 电讯盈科有限公司
+      - 爱尔兰 都柏林Amazon数据中心
       - 美国 CloudFlare节点
-      - 广东省 移动
-      - 印度 V2CROSS.COM
       - 美国 CloudFlare节点 2
-      - 广东省 移动 2
-      - 立陶宛 V2CROSS.COM
+      - 香港 电讯盈科有限公司 2
       - 美国 CloudFlare节点 3
       - 美国 CloudFlare节点 4
-      - 广东省 移动 3
-      - 美国 Amazon EC2服务器
-      - 广东省 移动 4
       - 美国 CloudFlare节点 5
-      - 爱尔兰 都柏林Amazon数据中心
+      - 广东省广州市 移动
       - 美国 CloudFlare节点 6
-      - 广东省 移动 5
       - 美国 CloudFlare节点 7
-      - 德国 V2CROSS.COM
-      - 美国 Amazon数据中心
       - 美国 CloudFlare节点 8
-      - 爱尔兰 都柏林Amazon数据中心 2
       - 美国 CloudFlare节点 9
       - 美国 CloudFlare节点 10
       - 美国 CloudFlare节点 11
+      - 美国 麻省理工学院
       - 美国 CloudFlare节点 12
       - 美国 CloudFlare节点 13
-      - 美国 Merit网络公司
+      - 美国 Amazon EC2服务器
       - 美国 CloudFlare节点 14
-      - 广东省 移动 6
+      - 德国 黑森州法兰克福Amazon数据中心
+      - 波兰 V2CROSS.COM
+      - 伊朗 德黑兰市
       - 美国 CloudFlare节点 15
-      - 广东省广州市 移动
-      - 乌克兰 V2CROSS.COM
       - 美国 CloudFlare节点 16
       - 美国 CloudFlare节点 17
-      - 日本 V2CROSS.COM
+      - 科威特 V2CROSS.COM
+      - 乌克兰 V2CROSS.COM
       - 美国 CloudFlare节点 18
-      - 香港 电讯盈科有限公司
       - 美国 CloudFlare节点 19
       - 美国 CloudFlare节点 20
       - 美国 CloudFlare节点 21
-      - 乌克兰 V2CROSS.COM 2
       - 美国 CloudFlare节点 22
+      - 加拿大 魁北克省蒙特利尔Amazon数据中心
       - 美国 CloudFlare节点 23
-      - 美国 Amazon数据中心 2
-      - 广东省 移动 7
       - 美国 CloudFlare节点 24
-      - 美国 圣安娜Krypt机房
+      - 英国 伦敦Amazon数据中心
       - 美国 CloudFlare节点 25
-      - 德国 黑森州法兰克福Amazon数据中心
       - 美国 CloudFlare节点 26
+      - 美国 Merit网络公司
       - 美国 CloudFlare节点 27
-      - 日本 东京Amazon数据中心
-      - 美国 CloudFlare公司CDN节点(shopify)
       - 美国 CloudFlare节点 28
+      - 香港 电讯盈科有限公司 3
       - 美国 CloudFlare节点 29
+      - 美国 戴维逊大学
+      - 日本 东京都Amazon数据中心
       - 美国 CloudFlare节点 30
       - 美国 CloudFlare节点 31
       - 美国 CloudFlare节点 32
-      - 广东省 移动 8
       - 美国 CloudFlare节点 33
       - 美国 CloudFlare节点 34
       - 美国 CloudFlare节点 35
-      - 广东省 移动 9
-      - 日本 东京Amazon数据中心 2
       - 美国 CloudFlare节点 36
       - 美国 CloudFlare节点 37
-      - 美国 俄勒冈州波特兰Amazon数据中心
       - 美国 CloudFlare节点 38
-      - 广东省 移动 10
-      - 广东省 移动 11
-      - 广东省广州市 移动 2
       - 美国 CloudFlare节点 39
-      - 爱尔兰 都柏林Amazon数据中心 3
+      - 英国 伦敦Amazon数据中心 2
       - 美国 CloudFlare节点 40
-      - 俄罗斯 V2CROSS.COM
+      - 北美地区 V2CROSS.COM
       - 美国 CloudFlare节点 41
-      - 美国 Amazon数据中心 3
-      - 日本 V2CROSS.COM 2
       - 美国 CloudFlare节点 42
-      - 美国 弗吉尼亚州阿什本Amazon数据中心
-      - 广东省 移动 12
-      - 广东省 移动 13
-      - 广东省 移动 14
       - 美国 CloudFlare节点 43
       - 美国 CloudFlare节点 44
-      - 广东省 移动 15
-      - 广东省 移动 16
       - 美国 CloudFlare节点 45
-      - 广东省广州市 移动 3
       - 美国 CloudFlare节点 46
       - 美国 CloudFlare节点 47
+      - 香港 电讯盈科有限公司 4
       - 美国 CloudFlare节点 48
       - 美国 CloudFlare节点 49
+      - 江苏省宿迁市 蒲公英网络有限公司
+      - 美国 Amazon数据中心
+      - 波斯尼亚和黑塞哥维那 V2CROSS.COM
       - 美国 CloudFlare节点 50
+      - 美国 麻省理工学院 2
       - 美国 CloudFlare节点 51
       - 美国 CloudFlare节点 52
       - 美国 CloudFlare节点 53
       - 美国 CloudFlare节点 54
       - 美国 CloudFlare节点 55
       - 美国 CloudFlare节点 56
+      - 美国 Amazon数据中心 2
       - 美国 CloudFlare节点 57
-      - 美国 Amazon数据中心 4
+      - 香港 电讯盈科有限公司 5
+      - 新加坡 DigitalOcean数据中心
       - 美国 CloudFlare节点 58
-      - 广东省 移动 17
+      - 美国 Fastly全球Anycast节点
       - 美国 CloudFlare节点 59
-      - 美国 Xerox
       - 美国 CloudFlare节点 60
-      - 德国下萨克森州萨尔茨吉特 德国电信
-      - 美国 惠普公司
-      - 广东省 移动 18
+      - 香港 电讯盈科有限公司 6
       - 美国 CloudFlare节点 61
+      - 美国 CloudFlare节点 62
+      - 美国 CloudFlare节点 63
+      - 美国 CloudFlare节点 64
+      - 美国 CloudFlare节点 65
+      - 美国 CloudFlare节点 66
+      - 美国 Amazon数据中心 3
+      - 美国 CloudFlare节点 67
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -480,468 +436,429 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
+      - 美国 惠普HP
+      - 伊朗 V2CROSS.COM
+      - 香港 电讯盈科有限公司
+      - 爱尔兰 都柏林Amazon数据中心
       - 美国 CloudFlare节点
-      - 广东省 移动
-      - 印度 V2CROSS.COM
       - 美国 CloudFlare节点 2
-      - 广东省 移动 2
-      - 立陶宛 V2CROSS.COM
+      - 香港 电讯盈科有限公司 2
       - 美国 CloudFlare节点 3
       - 美国 CloudFlare节点 4
-      - 广东省 移动 3
-      - 美国 Amazon EC2服务器
-      - 广东省 移动 4
       - 美国 CloudFlare节点 5
-      - 爱尔兰 都柏林Amazon数据中心
+      - 广东省广州市 移动
       - 美国 CloudFlare节点 6
-      - 广东省 移动 5
       - 美国 CloudFlare节点 7
-      - 德国 V2CROSS.COM
-      - 美国 Amazon数据中心
       - 美国 CloudFlare节点 8
-      - 爱尔兰 都柏林Amazon数据中心 2
       - 美国 CloudFlare节点 9
       - 美国 CloudFlare节点 10
       - 美国 CloudFlare节点 11
+      - 美国 麻省理工学院
       - 美国 CloudFlare节点 12
       - 美国 CloudFlare节点 13
-      - 美国 Merit网络公司
+      - 美国 Amazon EC2服务器
       - 美国 CloudFlare节点 14
-      - 广东省 移动 6
+      - 德国 黑森州法兰克福Amazon数据中心
+      - 波兰 V2CROSS.COM
+      - 伊朗 德黑兰市
       - 美国 CloudFlare节点 15
-      - 广东省广州市 移动
-      - 乌克兰 V2CROSS.COM
       - 美国 CloudFlare节点 16
       - 美国 CloudFlare节点 17
-      - 日本 V2CROSS.COM
+      - 科威特 V2CROSS.COM
+      - 乌克兰 V2CROSS.COM
       - 美国 CloudFlare节点 18
-      - 香港 电讯盈科有限公司
       - 美国 CloudFlare节点 19
       - 美国 CloudFlare节点 20
       - 美国 CloudFlare节点 21
-      - 乌克兰 V2CROSS.COM 2
       - 美国 CloudFlare节点 22
+      - 加拿大 魁北克省蒙特利尔Amazon数据中心
       - 美国 CloudFlare节点 23
-      - 美国 Amazon数据中心 2
-      - 广东省 移动 7
       - 美国 CloudFlare节点 24
-      - 美国 圣安娜Krypt机房
+      - 英国 伦敦Amazon数据中心
       - 美国 CloudFlare节点 25
-      - 德国 黑森州法兰克福Amazon数据中心
       - 美国 CloudFlare节点 26
+      - 美国 Merit网络公司
       - 美国 CloudFlare节点 27
-      - 日本 东京Amazon数据中心
-      - 美国 CloudFlare公司CDN节点(shopify)
       - 美国 CloudFlare节点 28
+      - 香港 电讯盈科有限公司 3
       - 美国 CloudFlare节点 29
+      - 美国 戴维逊大学
+      - 日本 东京都Amazon数据中心
       - 美国 CloudFlare节点 30
       - 美国 CloudFlare节点 31
       - 美国 CloudFlare节点 32
-      - 广东省 移动 8
       - 美国 CloudFlare节点 33
       - 美国 CloudFlare节点 34
       - 美国 CloudFlare节点 35
-      - 广东省 移动 9
-      - 日本 东京Amazon数据中心 2
       - 美国 CloudFlare节点 36
       - 美国 CloudFlare节点 37
-      - 美国 俄勒冈州波特兰Amazon数据中心
       - 美国 CloudFlare节点 38
-      - 广东省 移动 10
-      - 广东省 移动 11
-      - 广东省广州市 移动 2
       - 美国 CloudFlare节点 39
-      - 爱尔兰 都柏林Amazon数据中心 3
+      - 英国 伦敦Amazon数据中心 2
       - 美国 CloudFlare节点 40
-      - 俄罗斯 V2CROSS.COM
+      - 北美地区 V2CROSS.COM
       - 美国 CloudFlare节点 41
-      - 美国 Amazon数据中心 3
-      - 日本 V2CROSS.COM 2
       - 美国 CloudFlare节点 42
-      - 美国 弗吉尼亚州阿什本Amazon数据中心
-      - 广东省 移动 12
-      - 广东省 移动 13
-      - 广东省 移动 14
       - 美国 CloudFlare节点 43
       - 美国 CloudFlare节点 44
-      - 广东省 移动 15
-      - 广东省 移动 16
       - 美国 CloudFlare节点 45
-      - 广东省广州市 移动 3
       - 美国 CloudFlare节点 46
       - 美国 CloudFlare节点 47
+      - 香港 电讯盈科有限公司 4
       - 美国 CloudFlare节点 48
       - 美国 CloudFlare节点 49
+      - 江苏省宿迁市 蒲公英网络有限公司
+      - 美国 Amazon数据中心
+      - 波斯尼亚和黑塞哥维那 V2CROSS.COM
       - 美国 CloudFlare节点 50
+      - 美国 麻省理工学院 2
       - 美国 CloudFlare节点 51
       - 美国 CloudFlare节点 52
       - 美国 CloudFlare节点 53
       - 美国 CloudFlare节点 54
       - 美国 CloudFlare节点 55
       - 美国 CloudFlare节点 56
+      - 美国 Amazon数据中心 2
       - 美国 CloudFlare节点 57
-      - 美国 Amazon数据中心 4
+      - 香港 电讯盈科有限公司 5
+      - 新加坡 DigitalOcean数据中心
       - 美国 CloudFlare节点 58
-      - 广东省 移动 17
+      - 美国 Fastly全球Anycast节点
       - 美国 CloudFlare节点 59
-      - 美国 Xerox
       - 美国 CloudFlare节点 60
-      - 德国下萨克森州萨尔茨吉特 德国电信
-      - 美国 惠普公司
-      - 广东省 移动 18
+      - 香港 电讯盈科有限公司 6
       - 美国 CloudFlare节点 61
+      - 美国 CloudFlare节点 62
+      - 美国 CloudFlare节点 63
+      - 美国 CloudFlare节点 64
+      - 美国 CloudFlare节点 65
+      - 美国 CloudFlare节点 66
+      - 美国 Amazon数据中心 3
+      - 美国 CloudFlare节点 67
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
       - 香港 电讯盈科有限公司
+      - 香港 电讯盈科有限公司 2
+      - 香港 电讯盈科有限公司 3
+      - 香港 电讯盈科有限公司 4
+      - 香港 电讯盈科有限公司 5
+      - 香港 电讯盈科有限公司 6
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
+      - 美国 惠普HP
+      - 伊朗 V2CROSS.COM
+      - 香港 电讯盈科有限公司
+      - 爱尔兰 都柏林Amazon数据中心
       - 美国 CloudFlare节点
-      - 广东省 移动
-      - 印度 V2CROSS.COM
       - 美国 CloudFlare节点 2
-      - 广东省 移动 2
-      - 立陶宛 V2CROSS.COM
+      - 香港 电讯盈科有限公司 2
       - 美国 CloudFlare节点 3
       - 美国 CloudFlare节点 4
-      - 广东省 移动 3
-      - 美国 Amazon EC2服务器
-      - 广东省 移动 4
       - 美国 CloudFlare节点 5
-      - 爱尔兰 都柏林Amazon数据中心
+      - 广东省广州市 移动
       - 美国 CloudFlare节点 6
-      - 广东省 移动 5
       - 美国 CloudFlare节点 7
-      - 德国 V2CROSS.COM
-      - 美国 Amazon数据中心
       - 美国 CloudFlare节点 8
-      - 爱尔兰 都柏林Amazon数据中心 2
       - 美国 CloudFlare节点 9
       - 美国 CloudFlare节点 10
       - 美国 CloudFlare节点 11
+      - 美国 麻省理工学院
       - 美国 CloudFlare节点 12
       - 美国 CloudFlare节点 13
-      - 美国 Merit网络公司
+      - 美国 Amazon EC2服务器
       - 美国 CloudFlare节点 14
-      - 广东省 移动 6
+      - 德国 黑森州法兰克福Amazon数据中心
+      - 波兰 V2CROSS.COM
+      - 伊朗 德黑兰市
       - 美国 CloudFlare节点 15
-      - 广东省广州市 移动
-      - 乌克兰 V2CROSS.COM
       - 美国 CloudFlare节点 16
       - 美国 CloudFlare节点 17
-      - 日本 V2CROSS.COM
+      - 科威特 V2CROSS.COM
+      - 乌克兰 V2CROSS.COM
       - 美国 CloudFlare节点 18
-      - 香港 电讯盈科有限公司
       - 美国 CloudFlare节点 19
       - 美国 CloudFlare节点 20
       - 美国 CloudFlare节点 21
-      - 乌克兰 V2CROSS.COM 2
       - 美国 CloudFlare节点 22
+      - 加拿大 魁北克省蒙特利尔Amazon数据中心
       - 美国 CloudFlare节点 23
-      - 美国 Amazon数据中心 2
-      - 广东省 移动 7
       - 美国 CloudFlare节点 24
-      - 美国 圣安娜Krypt机房
+      - 英国 伦敦Amazon数据中心
       - 美国 CloudFlare节点 25
-      - 德国 黑森州法兰克福Amazon数据中心
       - 美国 CloudFlare节点 26
+      - 美国 Merit网络公司
       - 美国 CloudFlare节点 27
-      - 日本 东京Amazon数据中心
-      - 美国 CloudFlare公司CDN节点(shopify)
       - 美国 CloudFlare节点 28
+      - 香港 电讯盈科有限公司 3
       - 美国 CloudFlare节点 29
+      - 美国 戴维逊大学
+      - 日本 东京都Amazon数据中心
       - 美国 CloudFlare节点 30
       - 美国 CloudFlare节点 31
       - 美国 CloudFlare节点 32
-      - 广东省 移动 8
       - 美国 CloudFlare节点 33
       - 美国 CloudFlare节点 34
       - 美国 CloudFlare节点 35
-      - 广东省 移动 9
-      - 日本 东京Amazon数据中心 2
       - 美国 CloudFlare节点 36
       - 美国 CloudFlare节点 37
-      - 美国 俄勒冈州波特兰Amazon数据中心
       - 美国 CloudFlare节点 38
-      - 广东省 移动 10
-      - 广东省 移动 11
-      - 广东省广州市 移动 2
       - 美国 CloudFlare节点 39
-      - 爱尔兰 都柏林Amazon数据中心 3
+      - 英国 伦敦Amazon数据中心 2
       - 美国 CloudFlare节点 40
-      - 俄罗斯 V2CROSS.COM
+      - 北美地区 V2CROSS.COM
       - 美国 CloudFlare节点 41
-      - 美国 Amazon数据中心 3
-      - 日本 V2CROSS.COM 2
       - 美国 CloudFlare节点 42
-      - 美国 弗吉尼亚州阿什本Amazon数据中心
-      - 广东省 移动 12
-      - 广东省 移动 13
-      - 广东省 移动 14
       - 美国 CloudFlare节点 43
       - 美国 CloudFlare节点 44
-      - 广东省 移动 15
-      - 广东省 移动 16
       - 美国 CloudFlare节点 45
-      - 广东省广州市 移动 3
       - 美国 CloudFlare节点 46
       - 美国 CloudFlare节点 47
+      - 香港 电讯盈科有限公司 4
       - 美国 CloudFlare节点 48
       - 美国 CloudFlare节点 49
+      - 江苏省宿迁市 蒲公英网络有限公司
+      - 美国 Amazon数据中心
+      - 波斯尼亚和黑塞哥维那 V2CROSS.COM
       - 美国 CloudFlare节点 50
+      - 美国 麻省理工学院 2
       - 美国 CloudFlare节点 51
       - 美国 CloudFlare节点 52
       - 美国 CloudFlare节点 53
       - 美国 CloudFlare节点 54
       - 美国 CloudFlare节点 55
       - 美国 CloudFlare节点 56
+      - 美国 Amazon数据中心 2
       - 美国 CloudFlare节点 57
-      - 美国 Amazon数据中心 4
+      - 香港 电讯盈科有限公司 5
+      - 新加坡 DigitalOcean数据中心
       - 美国 CloudFlare节点 58
-      - 广东省 移动 17
+      - 美国 Fastly全球Anycast节点
       - 美国 CloudFlare节点 59
-      - 美国 Xerox
       - 美国 CloudFlare节点 60
-      - 德国下萨克森州萨尔茨吉特 德国电信
-      - 美国 惠普公司
-      - 广东省 移动 18
+      - 香港 电讯盈科有限公司 6
       - 美国 CloudFlare节点 61
+      - 美国 CloudFlare节点 62
+      - 美国 CloudFlare节点 63
+      - 美国 CloudFlare节点 64
+      - 美国 CloudFlare节点 65
+      - 美国 CloudFlare节点 66
+      - 美国 Amazon数据中心 3
+      - 美国 CloudFlare节点 67
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
+      - 美国 惠普HP
+      - 伊朗 V2CROSS.COM
+      - 香港 电讯盈科有限公司
+      - 爱尔兰 都柏林Amazon数据中心
       - 美国 CloudFlare节点
-      - 广东省 移动
-      - 印度 V2CROSS.COM
       - 美国 CloudFlare节点 2
-      - 广东省 移动 2
-      - 立陶宛 V2CROSS.COM
+      - 香港 电讯盈科有限公司 2
       - 美国 CloudFlare节点 3
       - 美国 CloudFlare节点 4
-      - 广东省 移动 3
-      - 美国 Amazon EC2服务器
-      - 广东省 移动 4
       - 美国 CloudFlare节点 5
-      - 爱尔兰 都柏林Amazon数据中心
+      - 广东省广州市 移动
       - 美国 CloudFlare节点 6
-      - 广东省 移动 5
       - 美国 CloudFlare节点 7
-      - 德国 V2CROSS.COM
-      - 美国 Amazon数据中心
       - 美国 CloudFlare节点 8
-      - 爱尔兰 都柏林Amazon数据中心 2
       - 美国 CloudFlare节点 9
       - 美国 CloudFlare节点 10
       - 美国 CloudFlare节点 11
+      - 美国 麻省理工学院
       - 美国 CloudFlare节点 12
       - 美国 CloudFlare节点 13
-      - 美国 Merit网络公司
+      - 美国 Amazon EC2服务器
       - 美国 CloudFlare节点 14
-      - 广东省 移动 6
+      - 德国 黑森州法兰克福Amazon数据中心
+      - 波兰 V2CROSS.COM
+      - 伊朗 德黑兰市
       - 美国 CloudFlare节点 15
-      - 广东省广州市 移动
-      - 乌克兰 V2CROSS.COM
       - 美国 CloudFlare节点 16
       - 美国 CloudFlare节点 17
-      - 日本 V2CROSS.COM
+      - 科威特 V2CROSS.COM
+      - 乌克兰 V2CROSS.COM
       - 美国 CloudFlare节点 18
-      - 香港 电讯盈科有限公司
       - 美国 CloudFlare节点 19
       - 美国 CloudFlare节点 20
       - 美国 CloudFlare节点 21
-      - 乌克兰 V2CROSS.COM 2
       - 美国 CloudFlare节点 22
+      - 加拿大 魁北克省蒙特利尔Amazon数据中心
       - 美国 CloudFlare节点 23
-      - 美国 Amazon数据中心 2
-      - 广东省 移动 7
       - 美国 CloudFlare节点 24
-      - 美国 圣安娜Krypt机房
+      - 英国 伦敦Amazon数据中心
       - 美国 CloudFlare节点 25
-      - 德国 黑森州法兰克福Amazon数据中心
       - 美国 CloudFlare节点 26
+      - 美国 Merit网络公司
       - 美国 CloudFlare节点 27
-      - 日本 东京Amazon数据中心
-      - 美国 CloudFlare公司CDN节点(shopify)
       - 美国 CloudFlare节点 28
+      - 香港 电讯盈科有限公司 3
       - 美国 CloudFlare节点 29
+      - 美国 戴维逊大学
+      - 日本 东京都Amazon数据中心
       - 美国 CloudFlare节点 30
       - 美国 CloudFlare节点 31
       - 美国 CloudFlare节点 32
-      - 广东省 移动 8
       - 美国 CloudFlare节点 33
       - 美国 CloudFlare节点 34
       - 美国 CloudFlare节点 35
-      - 广东省 移动 9
-      - 日本 东京Amazon数据中心 2
       - 美国 CloudFlare节点 36
       - 美国 CloudFlare节点 37
-      - 美国 俄勒冈州波特兰Amazon数据中心
       - 美国 CloudFlare节点 38
-      - 广东省 移动 10
-      - 广东省 移动 11
-      - 广东省广州市 移动 2
       - 美国 CloudFlare节点 39
-      - 爱尔兰 都柏林Amazon数据中心 3
+      - 英国 伦敦Amazon数据中心 2
       - 美国 CloudFlare节点 40
-      - 俄罗斯 V2CROSS.COM
+      - 北美地区 V2CROSS.COM
       - 美国 CloudFlare节点 41
-      - 美国 Amazon数据中心 3
-      - 日本 V2CROSS.COM 2
       - 美国 CloudFlare节点 42
-      - 美国 弗吉尼亚州阿什本Amazon数据中心
-      - 广东省 移动 12
-      - 广东省 移动 13
-      - 广东省 移动 14
       - 美国 CloudFlare节点 43
       - 美国 CloudFlare节点 44
-      - 广东省 移动 15
-      - 广东省 移动 16
       - 美国 CloudFlare节点 45
-      - 广东省广州市 移动 3
       - 美国 CloudFlare节点 46
       - 美国 CloudFlare节点 47
+      - 香港 电讯盈科有限公司 4
       - 美国 CloudFlare节点 48
       - 美国 CloudFlare节点 49
+      - 江苏省宿迁市 蒲公英网络有限公司
+      - 美国 Amazon数据中心
+      - 波斯尼亚和黑塞哥维那 V2CROSS.COM
       - 美国 CloudFlare节点 50
+      - 美国 麻省理工学院 2
       - 美国 CloudFlare节点 51
       - 美国 CloudFlare节点 52
       - 美国 CloudFlare节点 53
       - 美国 CloudFlare节点 54
       - 美国 CloudFlare节点 55
       - 美国 CloudFlare节点 56
+      - 美国 Amazon数据中心 2
       - 美国 CloudFlare节点 57
-      - 美国 Amazon数据中心 4
+      - 香港 电讯盈科有限公司 5
+      - 新加坡 DigitalOcean数据中心
       - 美国 CloudFlare节点 58
-      - 广东省 移动 17
+      - 美国 Fastly全球Anycast节点
       - 美国 CloudFlare节点 59
-      - 美国 Xerox
       - 美国 CloudFlare节点 60
-      - 德国下萨克森州萨尔茨吉特 德国电信
-      - 美国 惠普公司
-      - 广东省 移动 18
+      - 香港 电讯盈科有限公司 6
       - 美国 CloudFlare节点 61
+      - 美国 CloudFlare节点 62
+      - 美国 CloudFlare节点 63
+      - 美国 CloudFlare节点 64
+      - 美国 CloudFlare节点 65
+      - 美国 CloudFlare节点 66
+      - 美国 Amazon数据中心 3
+      - 美国 CloudFlare节点 67
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - 美国 惠普HP
+      - 伊朗 V2CROSS.COM
+      - 香港 电讯盈科有限公司
+      - 爱尔兰 都柏林Amazon数据中心
       - 美国 CloudFlare节点
-      - 广东省 移动
-      - 印度 V2CROSS.COM
       - 美国 CloudFlare节点 2
-      - 广东省 移动 2
-      - 立陶宛 V2CROSS.COM
+      - 香港 电讯盈科有限公司 2
       - 美国 CloudFlare节点 3
       - 美国 CloudFlare节点 4
-      - 广东省 移动 3
-      - 美国 Amazon EC2服务器
-      - 广东省 移动 4
       - 美国 CloudFlare节点 5
-      - 爱尔兰 都柏林Amazon数据中心
+      - 广东省广州市 移动
       - 美国 CloudFlare节点 6
-      - 广东省 移动 5
       - 美国 CloudFlare节点 7
-      - 德国 V2CROSS.COM
-      - 美国 Amazon数据中心
       - 美国 CloudFlare节点 8
-      - 爱尔兰 都柏林Amazon数据中心 2
       - 美国 CloudFlare节点 9
       - 美国 CloudFlare节点 10
       - 美国 CloudFlare节点 11
+      - 美国 麻省理工学院
       - 美国 CloudFlare节点 12
       - 美国 CloudFlare节点 13
-      - 美国 Merit网络公司
+      - 美国 Amazon EC2服务器
       - 美国 CloudFlare节点 14
-      - 广东省 移动 6
+      - 德国 黑森州法兰克福Amazon数据中心
+      - 波兰 V2CROSS.COM
+      - 伊朗 德黑兰市
       - 美国 CloudFlare节点 15
-      - 广东省广州市 移动
-      - 乌克兰 V2CROSS.COM
       - 美国 CloudFlare节点 16
       - 美国 CloudFlare节点 17
-      - 日本 V2CROSS.COM
+      - 科威特 V2CROSS.COM
+      - 乌克兰 V2CROSS.COM
       - 美国 CloudFlare节点 18
-      - 香港 电讯盈科有限公司
       - 美国 CloudFlare节点 19
       - 美国 CloudFlare节点 20
       - 美国 CloudFlare节点 21
-      - 乌克兰 V2CROSS.COM 2
       - 美国 CloudFlare节点 22
+      - 加拿大 魁北克省蒙特利尔Amazon数据中心
       - 美国 CloudFlare节点 23
-      - 美国 Amazon数据中心 2
-      - 广东省 移动 7
       - 美国 CloudFlare节点 24
-      - 美国 圣安娜Krypt机房
+      - 英国 伦敦Amazon数据中心
       - 美国 CloudFlare节点 25
-      - 德国 黑森州法兰克福Amazon数据中心
       - 美国 CloudFlare节点 26
+      - 美国 Merit网络公司
       - 美国 CloudFlare节点 27
-      - 日本 东京Amazon数据中心
-      - 美国 CloudFlare公司CDN节点(shopify)
       - 美国 CloudFlare节点 28
+      - 香港 电讯盈科有限公司 3
       - 美国 CloudFlare节点 29
+      - 美国 戴维逊大学
+      - 日本 东京都Amazon数据中心
       - 美国 CloudFlare节点 30
       - 美国 CloudFlare节点 31
       - 美国 CloudFlare节点 32
-      - 广东省 移动 8
       - 美国 CloudFlare节点 33
       - 美国 CloudFlare节点 34
       - 美国 CloudFlare节点 35
-      - 广东省 移动 9
-      - 日本 东京Amazon数据中心 2
       - 美国 CloudFlare节点 36
       - 美国 CloudFlare节点 37
-      - 美国 俄勒冈州波特兰Amazon数据中心
       - 美国 CloudFlare节点 38
-      - 广东省 移动 10
-      - 广东省 移动 11
-      - 广东省广州市 移动 2
       - 美国 CloudFlare节点 39
-      - 爱尔兰 都柏林Amazon数据中心 3
+      - 英国 伦敦Amazon数据中心 2
       - 美国 CloudFlare节点 40
-      - 俄罗斯 V2CROSS.COM
+      - 北美地区 V2CROSS.COM
       - 美国 CloudFlare节点 41
-      - 美国 Amazon数据中心 3
-      - 日本 V2CROSS.COM 2
       - 美国 CloudFlare节点 42
-      - 美国 弗吉尼亚州阿什本Amazon数据中心
-      - 广东省 移动 12
-      - 广东省 移动 13
-      - 广东省 移动 14
       - 美国 CloudFlare节点 43
       - 美国 CloudFlare节点 44
-      - 广东省 移动 15
-      - 广东省 移动 16
       - 美国 CloudFlare节点 45
-      - 广东省广州市 移动 3
       - 美国 CloudFlare节点 46
       - 美国 CloudFlare节点 47
+      - 香港 电讯盈科有限公司 4
       - 美国 CloudFlare节点 48
       - 美国 CloudFlare节点 49
+      - 江苏省宿迁市 蒲公英网络有限公司
+      - 美国 Amazon数据中心
+      - 波斯尼亚和黑塞哥维那 V2CROSS.COM
       - 美国 CloudFlare节点 50
+      - 美国 麻省理工学院 2
       - 美国 CloudFlare节点 51
       - 美国 CloudFlare节点 52
       - 美国 CloudFlare节点 53
       - 美国 CloudFlare节点 54
       - 美国 CloudFlare节点 55
       - 美国 CloudFlare节点 56
+      - 美国 Amazon数据中心 2
       - 美国 CloudFlare节点 57
-      - 美国 Amazon数据中心 4
+      - 香港 电讯盈科有限公司 5
+      - 新加坡 DigitalOcean数据中心
       - 美国 CloudFlare节点 58
-      - 广东省 移动 17
+      - 美国 Fastly全球Anycast节点
       - 美国 CloudFlare节点 59
-      - 美国 Xerox
       - 美国 CloudFlare节点 60
-      - 德国下萨克森州萨尔茨吉特 德国电信
-      - 美国 惠普公司
-      - 广东省 移动 18
+      - 香港 电讯盈科有限公司 6
       - 美国 CloudFlare节点 61
+      - 美国 CloudFlare节点 62
+      - 美国 CloudFlare节点 63
+      - 美国 CloudFlare节点 64
+      - 美国 CloudFlare节点 65
+      - 美国 CloudFlare节点 66
+      - 美国 Amazon数据中心 3
+      - 美国 CloudFlare节点 67
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -957,116 +874,105 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - 美国 惠普HP
+      - 伊朗 V2CROSS.COM
+      - 香港 电讯盈科有限公司
+      - 爱尔兰 都柏林Amazon数据中心
       - 美国 CloudFlare节点
-      - 广东省 移动
-      - 印度 V2CROSS.COM
       - 美国 CloudFlare节点 2
-      - 广东省 移动 2
-      - 立陶宛 V2CROSS.COM
+      - 香港 电讯盈科有限公司 2
       - 美国 CloudFlare节点 3
       - 美国 CloudFlare节点 4
-      - 广东省 移动 3
-      - 美国 Amazon EC2服务器
-      - 广东省 移动 4
       - 美国 CloudFlare节点 5
-      - 爱尔兰 都柏林Amazon数据中心
+      - 广东省广州市 移动
       - 美国 CloudFlare节点 6
-      - 广东省 移动 5
       - 美国 CloudFlare节点 7
-      - 德国 V2CROSS.COM
-      - 美国 Amazon数据中心
       - 美国 CloudFlare节点 8
-      - 爱尔兰 都柏林Amazon数据中心 2
       - 美国 CloudFlare节点 9
       - 美国 CloudFlare节点 10
       - 美国 CloudFlare节点 11
+      - 美国 麻省理工学院
       - 美国 CloudFlare节点 12
       - 美国 CloudFlare节点 13
-      - 美国 Merit网络公司
+      - 美国 Amazon EC2服务器
       - 美国 CloudFlare节点 14
-      - 广东省 移动 6
+      - 德国 黑森州法兰克福Amazon数据中心
+      - 波兰 V2CROSS.COM
+      - 伊朗 德黑兰市
       - 美国 CloudFlare节点 15
-      - 广东省广州市 移动
-      - 乌克兰 V2CROSS.COM
       - 美国 CloudFlare节点 16
       - 美国 CloudFlare节点 17
-      - 日本 V2CROSS.COM
+      - 科威特 V2CROSS.COM
+      - 乌克兰 V2CROSS.COM
       - 美国 CloudFlare节点 18
-      - 香港 电讯盈科有限公司
       - 美国 CloudFlare节点 19
       - 美国 CloudFlare节点 20
       - 美国 CloudFlare节点 21
-      - 乌克兰 V2CROSS.COM 2
       - 美国 CloudFlare节点 22
+      - 加拿大 魁北克省蒙特利尔Amazon数据中心
       - 美国 CloudFlare节点 23
-      - 美国 Amazon数据中心 2
-      - 广东省 移动 7
       - 美国 CloudFlare节点 24
-      - 美国 圣安娜Krypt机房
+      - 英国 伦敦Amazon数据中心
       - 美国 CloudFlare节点 25
-      - 德国 黑森州法兰克福Amazon数据中心
       - 美国 CloudFlare节点 26
+      - 美国 Merit网络公司
       - 美国 CloudFlare节点 27
-      - 日本 东京Amazon数据中心
-      - 美国 CloudFlare公司CDN节点(shopify)
       - 美国 CloudFlare节点 28
+      - 香港 电讯盈科有限公司 3
       - 美国 CloudFlare节点 29
+      - 美国 戴维逊大学
+      - 日本 东京都Amazon数据中心
       - 美国 CloudFlare节点 30
       - 美国 CloudFlare节点 31
       - 美国 CloudFlare节点 32
-      - 广东省 移动 8
       - 美国 CloudFlare节点 33
       - 美国 CloudFlare节点 34
       - 美国 CloudFlare节点 35
-      - 广东省 移动 9
-      - 日本 东京Amazon数据中心 2
       - 美国 CloudFlare节点 36
       - 美国 CloudFlare节点 37
-      - 美国 俄勒冈州波特兰Amazon数据中心
       - 美国 CloudFlare节点 38
-      - 广东省 移动 10
-      - 广东省 移动 11
-      - 广东省广州市 移动 2
       - 美国 CloudFlare节点 39
-      - 爱尔兰 都柏林Amazon数据中心 3
+      - 英国 伦敦Amazon数据中心 2
       - 美国 CloudFlare节点 40
-      - 俄罗斯 V2CROSS.COM
+      - 北美地区 V2CROSS.COM
       - 美国 CloudFlare节点 41
-      - 美国 Amazon数据中心 3
-      - 日本 V2CROSS.COM 2
       - 美国 CloudFlare节点 42
-      - 美国 弗吉尼亚州阿什本Amazon数据中心
-      - 广东省 移动 12
-      - 广东省 移动 13
-      - 广东省 移动 14
       - 美国 CloudFlare节点 43
       - 美国 CloudFlare节点 44
-      - 广东省 移动 15
-      - 广东省 移动 16
       - 美国 CloudFlare节点 45
-      - 广东省广州市 移动 3
       - 美国 CloudFlare节点 46
       - 美国 CloudFlare节点 47
+      - 香港 电讯盈科有限公司 4
       - 美国 CloudFlare节点 48
       - 美国 CloudFlare节点 49
+      - 江苏省宿迁市 蒲公英网络有限公司
+      - 美国 Amazon数据中心
+      - 波斯尼亚和黑塞哥维那 V2CROSS.COM
       - 美国 CloudFlare节点 50
+      - 美国 麻省理工学院 2
       - 美国 CloudFlare节点 51
       - 美国 CloudFlare节点 52
       - 美国 CloudFlare节点 53
       - 美国 CloudFlare节点 54
       - 美国 CloudFlare节点 55
       - 美国 CloudFlare节点 56
+      - 美国 Amazon数据中心 2
       - 美国 CloudFlare节点 57
-      - 美国 Amazon数据中心 4
+      - 香港 电讯盈科有限公司 5
+      - 新加坡 DigitalOcean数据中心
       - 美国 CloudFlare节点 58
-      - 广东省 移动 17
+      - 美国 Fastly全球Anycast节点
       - 美国 CloudFlare节点 59
-      - 美国 Xerox
       - 美国 CloudFlare节点 60
-      - 德国下萨克森州萨尔茨吉特 德国电信
-      - 美国 惠普公司
-      - 广东省 移动 18
+      - 香港 电讯盈科有限公司 6
       - 美国 CloudFlare节点 61
+      - 美国 CloudFlare节点 62
+      - 美国 CloudFlare节点 63
+      - 美国 CloudFlare节点 64
+      - 美国 CloudFlare节点 65
+      - 美国 CloudFlare节点 66
+      - 美国 Amazon数据中心 3
+      - 美国 CloudFlare节点 67
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
