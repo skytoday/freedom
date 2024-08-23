@@ -5,501 +5,109 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 🇺🇸 美国 CloudFlare节点, server: 104.19.45.90, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip13.freegradely.xyz}}, udp: true}
-  - {name: 🇺🇸 美国 Amazon数据中心, server: 18.198.147.190, port: 22222, type: trojan, password: telegram-id-privatevpns, sni: trojan.burgerip.co.uk, skip-cert-verify: false, udp: true}
-  - {name: 🇨🇳 广东省广州市 移动, server: 183.236.51.23, port: 45020, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 🇨🇦 加拿大 V2CROSS.COM, server: 142.202.49.68, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: 🇺🇸 美国 CloudFlare节点 2, server: 104.26.13.31, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip1.1789034.xyz}}, udp: true}
-  - {name: 🇨🇳 广东省深圳市 电信, server: mmhk01.micloud.buzz, port: 46001, type: vmess, uuid: 638501f6-0ba0-47cb-bcfe-200cc1169e81, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /zh-cn, headers: {Host: mmhk01.micloud.buzz}}, udp: true}
-  - {name: 🇺🇸 美国 Digital Ocean, server: 157.245.214.123, port: 37228, type: ss, cipher: chacha20-ietf-poly1305, password: mXRkVZDHIJz3wmmccAPySz, udp: true}
-  - {name: 乌克兰 V2CROSS.COM, server: 82.117.226.218, port: 12073, type: trojan, password: 3698a3e7-2877-4ded-a665-d81ee3cfd449, sni: cdn.alibaba.com, skip-cert-verify: false, udp: true}
-  - {name: 🇺🇸 美国 CloudFlare节点 3, server: 104.19.32.46, port: 2086, type: vmess, uuid: 29eebb60-b27b-4a9d-bba5-947763d9205e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, servername: ip006.3196772.xyz, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip006.3196772.xyz}}, udp: true}
-  - {name: 🇨🇦 加拿大 V2CROSS.COM 2, server: 142.202.49.68, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: 🇨🇳 中国 阿里云, server: cn2.cdn.xfltd-cdn.top, port: 12031, type: trojan, password: 3698a3e7-2877-4ded-a665-d81ee3cfd449, sni: cdn.alibaba.com, skip-cert-verify: false, udp: true}
-  - {name: 🇺🇸 美国 CloudFlare节点 4, server: 104.16.148.244, port: 2086, type: vmess, uuid: 29eebb60-b27b-4a9d-bba5-947763d9205e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip006.freegradely.xyz}}, udp: true}
-  - {name: 🇫🇷 法国 OVH SAS, server: 217.182.198.219, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: 🇨🇦 加拿大 V2CROSS.COM 3, server: 142.202.49.68, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: 乌克兰 V2CROSS.COM 2, server: 82.117.226.218, port: 12002, type: trojan, password: 3698a3e7-2877-4ded-a665-d81ee3cfd449, sni: cn1.cdn.xfltd-cdn.top, skip-cert-verify: false, udp: true}
-  - {name: 🇰🇷 韩国 KT电信, server: 175.199.54.84, port: 38520, type: trojan, password: CMLiu, sni: aliorg.filegear-sg.me, skip-cert-verify: false, udp: true}
-  - {name: 🇺🇸 美国 CloudFlare节点 5, server: 104.19.45.161, port: 2095, type: vmess, uuid: 7a737f41-b792-4260-94ff-3d864da67b80, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: onea.flha.ru}}, udp: true}
-  - {name: 🇨🇳 北京市 阿里云BGP服务器, server: cn2.cdn.xfltd-cdn.top, port: 12075, type: trojan, password: 3698a3e7-2877-4ded-a665-d81ee3cfd449, sni: cdn.alibaba.com, skip-cert-verify: false, udp: true}
-  - {name: 🇺🇸 美国 CloudFlare节点 6, server: 172.64.198.249, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip14.freegradely.xyz}}, udp: true}
-  - {name: 🇷🇺 俄罗斯 V2CROSS.COM, server: 89.23.110.74, port: 61194, type: ss, cipher: chacha20-ietf-poly1305, password: rfSLE9PSaANpcg29U8x4KW, udp: true}
-  - {name: 🇺🇸 美国 CloudFlare节点 7, server: 104.19.58.175, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip14.freegradely.xyz}}, udp: true}
-  - {name: 🇺🇸 美国 麻省理工学院, server: 18.133.13.89, port: 22222, type: trojan, password: telegram-id-privatevpns, sni: trojan.burgerip.co.uk, skip-cert-verify: false, udp: true}
-  - {name: 🇨🇳 中国 阿里云 2, server: cn2.cdn.xfltd-cdn.top, port: 12066, type: trojan, password: 3698a3e7-2877-4ded-a665-d81ee3cfd449, sni: cdn.alibaba.com, skip-cert-verify: false, udp: true}
-  - {name: 广东省江门市 移动, server: service.ouluyun9803.com, port: 20003, type: ss, cipher: chacha20-ietf-poly1305, password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2, udp: true}
-  - {name: 🇨🇳 广东省广州市 移动 2, server: 120.232.153.40, port: 35601, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 🇺🇸 美国 CloudFlare节点 8, server: www.speedtest.org, port: 2087, type: vmess, uuid: 2a3263e2-891c-4446-b474-a8c63acb6e25, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: www.speedtest.org, network: grpc, grpc-opts: {grpc-service-name: /}, udp: true}
-  - {name: 🇺🇸 美国 惠普HP, server: 16.170.64.249, port: 22222, type: trojan, password: telegram-id-privatevpns, sni: trojan.burgerip.co.uk, skip-cert-verify: false, udp: true}
-  - {name: 🇺🇸 美国 CloudFlare节点 9, server: 104.19.46.56, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip14.freegradely.xyz}}, udp: true}
-  - {name: 🇺🇸 美国 惠普HP 2, server: 15.204.87.225, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: 🇨🇳 北京市 阿里云BGP服务器 2, server: cn2.cdn.xfltd-cdn.top, port: 12073, type: trojan, password: 3698a3e7-2877-4ded-a665-d81ee3cfd449, sni: cdn.alibaba.com, skip-cert-verify: false, udp: true}
-  - {name: 🇷🇺 俄罗斯 V2CROSS.COM 2, server: 85.159.228.23, port: 8443, type: trojan, password: CMLiu, sni: aliorg.filegear-sg.me, skip-cert-verify: false, udp: true}
-  - {name: 🇺🇸 美国 CloudFlare节点 10, server: 104.19.38.8, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: ip14.freegradely.xyz}}, udp: true}
-  - {name: 🇺🇸 美国 CloudFlare节点 11, server: server31.beheshtbaneh.com, port: 8880, type: vmess, uuid: 4154143c-bbba-47a4-9f79-c2ed087cbcc9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: server31.beheshtbaneh.com}}, udp: true}
-  - {name: 🇰🇷 韩国 KT电信 2, server: 218.158.87.155, port: 11423, type: trojan, password: CMLiu, sni: aliorg.filegear-sg.me, skip-cert-verify: false, udp: true}
-  - {name: 🇬🇧 英国 V2CROSS.COM, server: 185.5.38.111, port: 55988, type: ss, cipher: chacha20-ietf-poly1305, password: oFjeDTFR12tSUD2kTmVB2G88g72Pxe8m38jmfv6eew3QXSoU8aP5D5fLU7Q3Yn5CadkiatQE5jFC3H4DUhVnfsuCHSqBG33A, udp: true}
-  - {name: 🇺🇸 美国 CloudFlare节点 12, server: 172.64.233.35, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip2.1457230.xyz}}, udp: true}
-  - {name: 🇨🇳 北京市 阿里云, server: cn2.cdn.xfltd-cdn.top, port: 12035, type: trojan, password: 3698a3e7-2877-4ded-a665-d81ee3cfd449, sni: cdn.alibaba.com, skip-cert-verify: false, udp: true}
-  - {name: 🇮🇳 印度 V2CROSS.COM, server: 159.65.149.72, port: 51348, type: ss, cipher: chacha20-ietf-poly1305, password: p7EhC8MR7o7GuRn27YF8SQNAKJ2lUbBNIjcyqSmBHsy8wLbJ, udp: true}
-  - {name: 🇪🇸 西班牙 V2CROSS.COM, server: 193.17.183.40, port: 32563, type: ss, cipher: chacha20-ietf-poly1305, password: NZ1YmZqRbPsSPcZYxU4fgB, udp: true}
-  - {name: 🇨🇦 加拿大 V2CROSS.COM 4, server: 142.202.49.68, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 🇸🇬 美国 新泽西州(Merck公司), server: 54.37.18.75, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: 🇨🇳 北京市 阿里云BGP服务器 3, server: cn2.cdn.xfltd-cdn.top, port: 12023, type: trojan, password: 3698a3e7-2877-4ded-a665-d81ee3cfd449, sni: cdn.alibaba.com, skip-cert-verify: false, udp: true}
-  - {name: 🇺🇸 美国 华盛顿Cogent通信公司, server: 38.99.82.85, port: 20088, type: ss, cipher: chacha20-ietf-poly1305, password: ڦʺl٬TJ1q8DFgǪǥ, udp: true}
-  - {name: 🇺🇸 美国 CloudFlare节点 13, server: 172.64.166.32, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: ip2.1457230.xyz}}, udp: true}
-  - {name: 乌克兰 V2CROSS.COM 3, server: 82.117.226.218, port: 12004, type: trojan, password: 3698a3e7-2877-4ded-a665-d81ee3cfd449, sni: cn1.cdn.xfltd-cdn.top, skip-cert-verify: false, udp: true}
-  - {name: 🇨🇳 北京市 阿里云BGP服务器 4, server: cn2.cdn.xfltd-cdn.top, port: 12072, type: trojan, password: 3698a3e7-2877-4ded-a665-d81ee3cfd449, sni: cdn.alibaba.com, skip-cert-verify: false, udp: true}
-  - {name: 🇳🇱 荷兰 阿姆斯特丹Online S.A.S, server: 51.15.127.125, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: Hc62VbGjmcZtOblYB7N5Cn, udp: true}
-  - {name: 🇸🇬 美国 新泽西州(Merck公司) 2, server: 54.37.18.75, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 🇺🇸 美国 CloudFlare节点 14, server: 104.19.47.22, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip14.freegradely.xyz}}, udp: true}
-  - {name: 🇨🇳 北京市 阿里云 2, server: cn2.cdn.xfltd-cdn.top, port: 12068, type: trojan, password: 3698a3e7-2877-4ded-a665-d81ee3cfd449, sni: cdn.alibaba.com, skip-cert-verify: false, udp: true}
-  - {name: 🇨🇦 加拿大 V2CROSS.COM 5, server: 142.202.49.68, port: 5498, type: ss, cipher: aes-256-gcm, password: lGqs95QkFHo2NV, udp: true}
-  - {name: 🇺🇸 美国 CloudFlare节点 15, server: 172.64.166.22, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip2.1457230.xyz}}, udp: true}
-  - {name: 🇺🇸 美国 Fastly全球Anycast节点, server: speedtest.net, port: 443, type: vmess, uuid: dab4d9da-13c4-4242-8526-9386a659133b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=443", headers: {Host: DubaiFreeServer.com}}, udp: true}
-  - {name: 🇺🇸 美国 CloudFlare节点 16, server: 172.64.166.12, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip2.1457230.xyz}}, udp: true}
-  - {name: 🇺🇸 美国 Amazon数据中心 2, server: 13.37.214.55, port: 22222, type: trojan, password: telegram-id-privatevpns, sni: trojan.burgerip.co.uk, skip-cert-verify: false, udp: true}
-  - {name: 🇨🇳 广东省广州市 移动 3, server: 120.232.153.37, port: 42055, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 🇮🇳 印度 卡纳塔克邦班加罗尔DigitalOcean数据中心, server: 139.59.37.175, port: 3127, type: ss, cipher: chacha20-ietf-poly1305, password: xyPHsaBfREzA3NiHjLebhG, udp: true}
+  - {name: 🇮🇳 印度 V2CROSS.COM, server: 202.78.162.5, port: 443, type: vmess, uuid: 716eded6-2201-4dbd-9d63-1638c9e8e677, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: pendar.onthewifi.com}}, udp: true}
+  - {name: 🇺🇸 美国 CloudFlare节点, server: 104.26.5.88, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip1.1789034.xyz}}, udp: true}
+  - {name: 广东省江门市 移动, server: service.ouluyun9803.com, port: 26667, type: ss, cipher: chacha20-ietf-poly1305, password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2, udp: true}
+  - {name: 🇷🇺 俄罗斯 V2CROSS.COM, server: 185.242.86.156, port: 54170, type: ss, cipher: chacha20-ietf-poly1305, password: 36ZCHeabUSfKjfQEvJ4HDV, udp: true}
+  - {name: 🇨🇳 中国 阿里云, server: cn2.cdn.xfltd-cdn.top, port: 12073, type: trojan, password: 3698a3e7-2877-4ded-a665-d81ee3cfd449, sni: cdn.alibaba.com, skip-cert-verify: false, udp: true}
+  - {name: 🇺🇸 美国 CloudFlare节点 2, server: 172.66.44.170, port: 2095, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /max.mankadmu.com/linkvws, headers: {Host: sany0116.donovan-a79.workers.dev}}, udp: true}
+  - {name: 🇺🇸 美国 CloudFlare节点 3, server: 104.17.61.2, port: 443, type: trojan, password: dba20dcb635e430fa4d3bfc303a149d2, sni: jobscareerforstudent.com, skip-cert-verify: false, udp: true}
+  - {name: 🇮🇳 印度 V2CROSS.COM 2, server: 202.78.162.5, port: 443, type: vmess, uuid: 2ff97c6d-8557-42a4-b43f-19c77c5959ea, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: irsoft.sytes.net}}, udp: true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 🇺🇸 美国 CloudFlare节点
-      - 🇺🇸 美国 Amazon数据中心
-      - 🇨🇳 广东省广州市 移动
-      - 🇨🇦 加拿大 V2CROSS.COM
-      - 🇺🇸 美国 CloudFlare节点 2
-      - 🇨🇳 广东省深圳市 电信
-      - 🇺🇸 美国 Digital Ocean
-      - 乌克兰 V2CROSS.COM
-      - 🇺🇸 美国 CloudFlare节点 3
-      - 🇨🇦 加拿大 V2CROSS.COM 2
-      - 🇨🇳 中国 阿里云
-      - 🇺🇸 美国 CloudFlare节点 4
-      - 🇫🇷 法国 OVH SAS
-      - 🇨🇦 加拿大 V2CROSS.COM 3
-      - 乌克兰 V2CROSS.COM 2
-      - 🇰🇷 韩国 KT电信
-      - 🇺🇸 美国 CloudFlare节点 5
-      - 🇨🇳 北京市 阿里云BGP服务器
-      - 🇺🇸 美国 CloudFlare节点 6
-      - 🇷🇺 俄罗斯 V2CROSS.COM
-      - 🇺🇸 美国 CloudFlare节点 7
-      - 🇺🇸 美国 麻省理工学院
-      - 🇨🇳 中国 阿里云 2
-      - 广东省江门市 移动
-      - 🇨🇳 广东省广州市 移动 2
-      - 🇺🇸 美国 CloudFlare节点 8
-      - 🇺🇸 美国 惠普HP
-      - 🇺🇸 美国 CloudFlare节点 9
-      - 🇺🇸 美国 惠普HP 2
-      - 🇨🇳 北京市 阿里云BGP服务器 2
-      - 🇷🇺 俄罗斯 V2CROSS.COM 2
-      - 🇺🇸 美国 CloudFlare节点 10
-      - 🇺🇸 美国 CloudFlare节点 11
-      - 🇰🇷 韩国 KT电信 2
-      - 🇬🇧 英国 V2CROSS.COM
-      - 🇺🇸 美国 CloudFlare节点 12
-      - 🇨🇳 北京市 阿里云
       - 🇮🇳 印度 V2CROSS.COM
-      - 🇪🇸 西班牙 V2CROSS.COM
-      - 🇨🇦 加拿大 V2CROSS.COM 4
-      - 🇸🇬 美国 新泽西州(Merck公司)
-      - 🇨🇳 北京市 阿里云BGP服务器 3
-      - 🇺🇸 美国 华盛顿Cogent通信公司
-      - 🇺🇸 美国 CloudFlare节点 13
-      - 乌克兰 V2CROSS.COM 3
-      - 🇨🇳 北京市 阿里云BGP服务器 4
-      - 🇳🇱 荷兰 阿姆斯特丹Online S.A.S
-      - 🇸🇬 美国 新泽西州(Merck公司) 2
-      - 🇺🇸 美国 CloudFlare节点 14
-      - 🇨🇳 北京市 阿里云 2
-      - 🇨🇦 加拿大 V2CROSS.COM 5
-      - 🇺🇸 美国 CloudFlare节点 15
-      - 🇺🇸 美国 Fastly全球Anycast节点
-      - 🇺🇸 美国 CloudFlare节点 16
-      - 🇺🇸 美国 Amazon数据中心 2
-      - 🇨🇳 广东省广州市 移动 3
-      - 🇮🇳 印度 卡纳塔克邦班加罗尔DigitalOcean数据中心
+      - 🇺🇸 美国 CloudFlare节点
+      - 广东省江门市 移动
+      - 🇷🇺 俄罗斯 V2CROSS.COM
+      - 🇨🇳 中国 阿里云
+      - 🇺🇸 美国 CloudFlare节点 2
+      - 🇺🇸 美国 CloudFlare节点 3
+      - 🇮🇳 印度 V2CROSS.COM 2
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇺🇸 美国 CloudFlare节点
-      - 🇺🇸 美国 Amazon数据中心
-      - 🇨🇳 广东省广州市 移动
-      - 🇨🇦 加拿大 V2CROSS.COM
-      - 🇺🇸 美国 CloudFlare节点 2
-      - 🇨🇳 广东省深圳市 电信
-      - 🇺🇸 美国 Digital Ocean
-      - 乌克兰 V2CROSS.COM
-      - 🇺🇸 美国 CloudFlare节点 3
-      - 🇨🇦 加拿大 V2CROSS.COM 2
-      - 🇨🇳 中国 阿里云
-      - 🇺🇸 美国 CloudFlare节点 4
-      - 🇫🇷 法国 OVH SAS
-      - 🇨🇦 加拿大 V2CROSS.COM 3
-      - 乌克兰 V2CROSS.COM 2
-      - 🇰🇷 韩国 KT电信
-      - 🇺🇸 美国 CloudFlare节点 5
-      - 🇨🇳 北京市 阿里云BGP服务器
-      - 🇺🇸 美国 CloudFlare节点 6
-      - 🇷🇺 俄罗斯 V2CROSS.COM
-      - 🇺🇸 美国 CloudFlare节点 7
-      - 🇺🇸 美国 麻省理工学院
-      - 🇨🇳 中国 阿里云 2
-      - 广东省江门市 移动
-      - 🇨🇳 广东省广州市 移动 2
-      - 🇺🇸 美国 CloudFlare节点 8
-      - 🇺🇸 美国 惠普HP
-      - 🇺🇸 美国 CloudFlare节点 9
-      - 🇺🇸 美国 惠普HP 2
-      - 🇨🇳 北京市 阿里云BGP服务器 2
-      - 🇷🇺 俄罗斯 V2CROSS.COM 2
-      - 🇺🇸 美国 CloudFlare节点 10
-      - 🇺🇸 美国 CloudFlare节点 11
-      - 🇰🇷 韩国 KT电信 2
-      - 🇬🇧 英国 V2CROSS.COM
-      - 🇺🇸 美国 CloudFlare节点 12
-      - 🇨🇳 北京市 阿里云
       - 🇮🇳 印度 V2CROSS.COM
-      - 🇪🇸 西班牙 V2CROSS.COM
-      - 🇨🇦 加拿大 V2CROSS.COM 4
-      - 🇸🇬 美国 新泽西州(Merck公司)
-      - 🇨🇳 北京市 阿里云BGP服务器 3
-      - 🇺🇸 美国 华盛顿Cogent通信公司
-      - 🇺🇸 美国 CloudFlare节点 13
-      - 乌克兰 V2CROSS.COM 3
-      - 🇨🇳 北京市 阿里云BGP服务器 4
-      - 🇳🇱 荷兰 阿姆斯特丹Online S.A.S
-      - 🇸🇬 美国 新泽西州(Merck公司) 2
-      - 🇺🇸 美国 CloudFlare节点 14
-      - 🇨🇳 北京市 阿里云 2
-      - 🇨🇦 加拿大 V2CROSS.COM 5
-      - 🇺🇸 美国 CloudFlare节点 15
-      - 🇺🇸 美国 Fastly全球Anycast节点
-      - 🇺🇸 美国 CloudFlare节点 16
-      - 🇺🇸 美国 Amazon数据中心 2
-      - 🇨🇳 广东省广州市 移动 3
-      - 🇮🇳 印度 卡纳塔克邦班加罗尔DigitalOcean数据中心
+      - 🇺🇸 美国 CloudFlare节点
+      - 广东省江门市 移动
+      - 🇷🇺 俄罗斯 V2CROSS.COM
+      - 🇨🇳 中国 阿里云
+      - 🇺🇸 美国 CloudFlare节点 2
+      - 🇺🇸 美国 CloudFlare节点 3
+      - 🇮🇳 印度 V2CROSS.COM 2
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇺🇸 美国 CloudFlare节点
-      - 🇺🇸 美国 Amazon数据中心
-      - 🇨🇳 广东省广州市 移动
-      - 🇨🇦 加拿大 V2CROSS.COM
-      - 🇺🇸 美国 CloudFlare节点 2
-      - 🇨🇳 广东省深圳市 电信
-      - 🇺🇸 美国 Digital Ocean
-      - 乌克兰 V2CROSS.COM
-      - 🇺🇸 美国 CloudFlare节点 3
-      - 🇨🇦 加拿大 V2CROSS.COM 2
-      - 🇨🇳 中国 阿里云
-      - 🇺🇸 美国 CloudFlare节点 4
-      - 🇫🇷 法国 OVH SAS
-      - 🇨🇦 加拿大 V2CROSS.COM 3
-      - 乌克兰 V2CROSS.COM 2
-      - 🇰🇷 韩国 KT电信
-      - 🇺🇸 美国 CloudFlare节点 5
-      - 🇨🇳 北京市 阿里云BGP服务器
-      - 🇺🇸 美国 CloudFlare节点 6
-      - 🇷🇺 俄罗斯 V2CROSS.COM
-      - 🇺🇸 美国 CloudFlare节点 7
-      - 🇺🇸 美国 麻省理工学院
-      - 🇨🇳 中国 阿里云 2
-      - 广东省江门市 移动
-      - 🇨🇳 广东省广州市 移动 2
-      - 🇺🇸 美国 CloudFlare节点 8
-      - 🇺🇸 美国 惠普HP
-      - 🇺🇸 美国 CloudFlare节点 9
-      - 🇺🇸 美国 惠普HP 2
-      - 🇨🇳 北京市 阿里云BGP服务器 2
-      - 🇷🇺 俄罗斯 V2CROSS.COM 2
-      - 🇺🇸 美国 CloudFlare节点 10
-      - 🇺🇸 美国 CloudFlare节点 11
-      - 🇰🇷 韩国 KT电信 2
-      - 🇬🇧 英国 V2CROSS.COM
-      - 🇺🇸 美国 CloudFlare节点 12
-      - 🇨🇳 北京市 阿里云
       - 🇮🇳 印度 V2CROSS.COM
-      - 🇪🇸 西班牙 V2CROSS.COM
-      - 🇨🇦 加拿大 V2CROSS.COM 4
-      - 🇸🇬 美国 新泽西州(Merck公司)
-      - 🇨🇳 北京市 阿里云BGP服务器 3
-      - 🇺🇸 美国 华盛顿Cogent通信公司
-      - 🇺🇸 美国 CloudFlare节点 13
-      - 乌克兰 V2CROSS.COM 3
-      - 🇨🇳 北京市 阿里云BGP服务器 4
-      - 🇳🇱 荷兰 阿姆斯特丹Online S.A.S
-      - 🇸🇬 美国 新泽西州(Merck公司) 2
-      - 🇺🇸 美国 CloudFlare节点 14
-      - 🇨🇳 北京市 阿里云 2
-      - 🇨🇦 加拿大 V2CROSS.COM 5
-      - 🇺🇸 美国 CloudFlare节点 15
-      - 🇺🇸 美国 Fastly全球Anycast节点
-      - 🇺🇸 美国 CloudFlare节点 16
-      - 🇺🇸 美国 Amazon数据中心 2
-      - 🇨🇳 广东省广州市 移动 3
-      - 🇮🇳 印度 卡纳塔克邦班加罗尔DigitalOcean数据中心
+      - 🇺🇸 美国 CloudFlare节点
+      - 广东省江门市 移动
+      - 🇷🇺 俄罗斯 V2CROSS.COM
+      - 🇨🇳 中国 阿里云
+      - 🇺🇸 美国 CloudFlare节点 2
+      - 🇺🇸 美国 CloudFlare节点 3
+      - 🇮🇳 印度 V2CROSS.COM 2
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇺🇸 美国 CloudFlare节点
-      - 🇺🇸 美国 Amazon数据中心
-      - 🇨🇳 广东省广州市 移动
-      - 🇨🇦 加拿大 V2CROSS.COM
-      - 🇺🇸 美国 CloudFlare节点 2
-      - 🇨🇳 广东省深圳市 电信
-      - 🇺🇸 美国 Digital Ocean
-      - 乌克兰 V2CROSS.COM
-      - 🇺🇸 美国 CloudFlare节点 3
-      - 🇨🇦 加拿大 V2CROSS.COM 2
-      - 🇨🇳 中国 阿里云
-      - 🇺🇸 美国 CloudFlare节点 4
-      - 🇫🇷 法国 OVH SAS
-      - 🇨🇦 加拿大 V2CROSS.COM 3
-      - 乌克兰 V2CROSS.COM 2
-      - 🇰🇷 韩国 KT电信
-      - 🇺🇸 美国 CloudFlare节点 5
-      - 🇨🇳 北京市 阿里云BGP服务器
-      - 🇺🇸 美国 CloudFlare节点 6
-      - 🇷🇺 俄罗斯 V2CROSS.COM
-      - 🇺🇸 美国 CloudFlare节点 7
-      - 🇺🇸 美国 麻省理工学院
-      - 🇨🇳 中国 阿里云 2
-      - 广东省江门市 移动
-      - 🇨🇳 广东省广州市 移动 2
-      - 🇺🇸 美国 CloudFlare节点 8
-      - 🇺🇸 美国 惠普HP
-      - 🇺🇸 美国 CloudFlare节点 9
-      - 🇺🇸 美国 惠普HP 2
-      - 🇨🇳 北京市 阿里云BGP服务器 2
-      - 🇷🇺 俄罗斯 V2CROSS.COM 2
-      - 🇺🇸 美国 CloudFlare节点 10
-      - 🇺🇸 美国 CloudFlare节点 11
-      - 🇰🇷 韩国 KT电信 2
-      - 🇬🇧 英国 V2CROSS.COM
-      - 🇺🇸 美国 CloudFlare节点 12
-      - 🇨🇳 北京市 阿里云
       - 🇮🇳 印度 V2CROSS.COM
-      - 🇪🇸 西班牙 V2CROSS.COM
-      - 🇨🇦 加拿大 V2CROSS.COM 4
-      - 🇸🇬 美国 新泽西州(Merck公司)
-      - 🇨🇳 北京市 阿里云BGP服务器 3
-      - 🇺🇸 美国 华盛顿Cogent通信公司
-      - 🇺🇸 美国 CloudFlare节点 13
-      - 乌克兰 V2CROSS.COM 3
-      - 🇨🇳 北京市 阿里云BGP服务器 4
-      - 🇳🇱 荷兰 阿姆斯特丹Online S.A.S
-      - 🇸🇬 美国 新泽西州(Merck公司) 2
-      - 🇺🇸 美国 CloudFlare节点 14
-      - 🇨🇳 北京市 阿里云 2
-      - 🇨🇦 加拿大 V2CROSS.COM 5
-      - 🇺🇸 美国 CloudFlare节点 15
-      - 🇺🇸 美国 Fastly全球Anycast节点
-      - 🇺🇸 美国 CloudFlare节点 16
-      - 🇺🇸 美国 Amazon数据中心 2
-      - 🇨🇳 广东省广州市 移动 3
-      - 🇮🇳 印度 卡纳塔克邦班加罗尔DigitalOcean数据中心
+      - 🇺🇸 美国 CloudFlare节点
+      - 广东省江门市 移动
+      - 🇷🇺 俄罗斯 V2CROSS.COM
+      - 🇨🇳 中国 阿里云
+      - 🇺🇸 美国 CloudFlare节点 2
+      - 🇺🇸 美国 CloudFlare节点 3
+      - 🇮🇳 印度 V2CROSS.COM 2
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 🇺🇸 美国 CloudFlare节点
-      - 🇺🇸 美国 Amazon数据中心
-      - 🇨🇳 广东省广州市 移动
-      - 🇨🇦 加拿大 V2CROSS.COM
-      - 🇺🇸 美国 CloudFlare节点 2
-      - 🇨🇳 广东省深圳市 电信
-      - 🇺🇸 美国 Digital Ocean
-      - 乌克兰 V2CROSS.COM
-      - 🇺🇸 美国 CloudFlare节点 3
-      - 🇨🇦 加拿大 V2CROSS.COM 2
-      - 🇨🇳 中国 阿里云
-      - 🇺🇸 美国 CloudFlare节点 4
-      - 🇫🇷 法国 OVH SAS
-      - 🇨🇦 加拿大 V2CROSS.COM 3
-      - 乌克兰 V2CROSS.COM 2
-      - 🇰🇷 韩国 KT电信
-      - 🇺🇸 美国 CloudFlare节点 5
-      - 🇨🇳 北京市 阿里云BGP服务器
-      - 🇺🇸 美国 CloudFlare节点 6
-      - 🇷🇺 俄罗斯 V2CROSS.COM
-      - 🇺🇸 美国 CloudFlare节点 7
-      - 🇺🇸 美国 麻省理工学院
-      - 🇨🇳 中国 阿里云 2
-      - 广东省江门市 移动
-      - 🇨🇳 广东省广州市 移动 2
-      - 🇺🇸 美国 CloudFlare节点 8
-      - 🇺🇸 美国 惠普HP
-      - 🇺🇸 美国 CloudFlare节点 9
-      - 🇺🇸 美国 惠普HP 2
-      - 🇨🇳 北京市 阿里云BGP服务器 2
-      - 🇷🇺 俄罗斯 V2CROSS.COM 2
-      - 🇺🇸 美国 CloudFlare节点 10
-      - 🇺🇸 美国 CloudFlare节点 11
-      - 🇰🇷 韩国 KT电信 2
-      - 🇬🇧 英国 V2CROSS.COM
-      - 🇺🇸 美国 CloudFlare节点 12
-      - 🇨🇳 北京市 阿里云
       - 🇮🇳 印度 V2CROSS.COM
-      - 🇪🇸 西班牙 V2CROSS.COM
-      - 🇨🇦 加拿大 V2CROSS.COM 4
-      - 🇸🇬 美国 新泽西州(Merck公司)
-      - 🇨🇳 北京市 阿里云BGP服务器 3
-      - 🇺🇸 美国 华盛顿Cogent通信公司
-      - 🇺🇸 美国 CloudFlare节点 13
-      - 乌克兰 V2CROSS.COM 3
-      - 🇨🇳 北京市 阿里云BGP服务器 4
-      - 🇳🇱 荷兰 阿姆斯特丹Online S.A.S
-      - 🇸🇬 美国 新泽西州(Merck公司) 2
-      - 🇺🇸 美国 CloudFlare节点 14
-      - 🇨🇳 北京市 阿里云 2
-      - 🇨🇦 加拿大 V2CROSS.COM 5
-      - 🇺🇸 美国 CloudFlare节点 15
-      - 🇺🇸 美国 Fastly全球Anycast节点
-      - 🇺🇸 美国 CloudFlare节点 16
-      - 🇺🇸 美国 Amazon数据中心 2
-      - 🇨🇳 广东省广州市 移动 3
-      - 🇮🇳 印度 卡纳塔克邦班加罗尔DigitalOcean数据中心
+      - 🇺🇸 美国 CloudFlare节点
+      - 广东省江门市 移动
+      - 🇷🇺 俄罗斯 V2CROSS.COM
+      - 🇨🇳 中国 阿里云
+      - 🇺🇸 美国 CloudFlare节点 2
+      - 🇺🇸 美国 CloudFlare节点 3
+      - 🇮🇳 印度 V2CROSS.COM 2
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇺🇸 美国 CloudFlare节点
-      - 🇺🇸 美国 Amazon数据中心
-      - 🇨🇳 广东省广州市 移动
-      - 🇨🇦 加拿大 V2CROSS.COM
-      - 🇺🇸 美国 CloudFlare节点 2
-      - 🇨🇳 广东省深圳市 电信
-      - 🇺🇸 美国 Digital Ocean
-      - 乌克兰 V2CROSS.COM
-      - 🇺🇸 美国 CloudFlare节点 3
-      - 🇨🇦 加拿大 V2CROSS.COM 2
-      - 🇨🇳 中国 阿里云
-      - 🇺🇸 美国 CloudFlare节点 4
-      - 🇫🇷 法国 OVH SAS
-      - 🇨🇦 加拿大 V2CROSS.COM 3
-      - 乌克兰 V2CROSS.COM 2
-      - 🇰🇷 韩国 KT电信
-      - 🇺🇸 美国 CloudFlare节点 5
-      - 🇨🇳 北京市 阿里云BGP服务器
-      - 🇺🇸 美国 CloudFlare节点 6
-      - 🇷🇺 俄罗斯 V2CROSS.COM
-      - 🇺🇸 美国 CloudFlare节点 7
-      - 🇺🇸 美国 麻省理工学院
-      - 🇨🇳 中国 阿里云 2
-      - 广东省江门市 移动
-      - 🇨🇳 广东省广州市 移动 2
-      - 🇺🇸 美国 CloudFlare节点 8
-      - 🇺🇸 美国 惠普HP
-      - 🇺🇸 美国 CloudFlare节点 9
-      - 🇺🇸 美国 惠普HP 2
-      - 🇨🇳 北京市 阿里云BGP服务器 2
-      - 🇷🇺 俄罗斯 V2CROSS.COM 2
-      - 🇺🇸 美国 CloudFlare节点 10
-      - 🇺🇸 美国 CloudFlare节点 11
-      - 🇰🇷 韩国 KT电信 2
-      - 🇬🇧 英国 V2CROSS.COM
-      - 🇺🇸 美国 CloudFlare节点 12
-      - 🇨🇳 北京市 阿里云
       - 🇮🇳 印度 V2CROSS.COM
-      - 🇪🇸 西班牙 V2CROSS.COM
-      - 🇨🇦 加拿大 V2CROSS.COM 4
-      - 🇸🇬 美国 新泽西州(Merck公司)
-      - 🇨🇳 北京市 阿里云BGP服务器 3
-      - 🇺🇸 美国 华盛顿Cogent通信公司
-      - 🇺🇸 美国 CloudFlare节点 13
-      - 乌克兰 V2CROSS.COM 3
-      - 🇨🇳 北京市 阿里云BGP服务器 4
-      - 🇳🇱 荷兰 阿姆斯特丹Online S.A.S
-      - 🇸🇬 美国 新泽西州(Merck公司) 2
-      - 🇺🇸 美国 CloudFlare节点 14
-      - 🇨🇳 北京市 阿里云 2
-      - 🇨🇦 加拿大 V2CROSS.COM 5
-      - 🇺🇸 美国 CloudFlare节点 15
-      - 🇺🇸 美国 Fastly全球Anycast节点
-      - 🇺🇸 美国 CloudFlare节点 16
-      - 🇺🇸 美国 Amazon数据中心 2
-      - 🇨🇳 广东省广州市 移动 3
-      - 🇮🇳 印度 卡纳塔克邦班加罗尔DigitalOcean数据中心
+      - 🇺🇸 美国 CloudFlare节点
+      - 广东省江门市 移动
+      - 🇷🇺 俄罗斯 V2CROSS.COM
+      - 🇨🇳 中国 阿里云
+      - 🇺🇸 美国 CloudFlare节点 2
+      - 🇺🇸 美国 CloudFlare节点 3
+      - 🇮🇳 印度 V2CROSS.COM 2
   - name: 📢 谷歌FCM
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇺🇸 美国 CloudFlare节点
-      - 🇺🇸 美国 Amazon数据中心
-      - 🇨🇳 广东省广州市 移动
-      - 🇨🇦 加拿大 V2CROSS.COM
-      - 🇺🇸 美国 CloudFlare节点 2
-      - 🇨🇳 广东省深圳市 电信
-      - 🇺🇸 美国 Digital Ocean
-      - 乌克兰 V2CROSS.COM
-      - 🇺🇸 美国 CloudFlare节点 3
-      - 🇨🇦 加拿大 V2CROSS.COM 2
-      - 🇨🇳 中国 阿里云
-      - 🇺🇸 美国 CloudFlare节点 4
-      - 🇫🇷 法国 OVH SAS
-      - 🇨🇦 加拿大 V2CROSS.COM 3
-      - 乌克兰 V2CROSS.COM 2
-      - 🇰🇷 韩国 KT电信
-      - 🇺🇸 美国 CloudFlare节点 5
-      - 🇨🇳 北京市 阿里云BGP服务器
-      - 🇺🇸 美国 CloudFlare节点 6
-      - 🇷🇺 俄罗斯 V2CROSS.COM
-      - 🇺🇸 美国 CloudFlare节点 7
-      - 🇺🇸 美国 麻省理工学院
-      - 🇨🇳 中国 阿里云 2
-      - 广东省江门市 移动
-      - 🇨🇳 广东省广州市 移动 2
-      - 🇺🇸 美国 CloudFlare节点 8
-      - 🇺🇸 美国 惠普HP
-      - 🇺🇸 美国 CloudFlare节点 9
-      - 🇺🇸 美国 惠普HP 2
-      - 🇨🇳 北京市 阿里云BGP服务器 2
-      - 🇷🇺 俄罗斯 V2CROSS.COM 2
-      - 🇺🇸 美国 CloudFlare节点 10
-      - 🇺🇸 美国 CloudFlare节点 11
-      - 🇰🇷 韩国 KT电信 2
-      - 🇬🇧 英国 V2CROSS.COM
-      - 🇺🇸 美国 CloudFlare节点 12
-      - 🇨🇳 北京市 阿里云
       - 🇮🇳 印度 V2CROSS.COM
-      - 🇪🇸 西班牙 V2CROSS.COM
-      - 🇨🇦 加拿大 V2CROSS.COM 4
-      - 🇸🇬 美国 新泽西州(Merck公司)
-      - 🇨🇳 北京市 阿里云BGP服务器 3
-      - 🇺🇸 美国 华盛顿Cogent通信公司
-      - 🇺🇸 美国 CloudFlare节点 13
-      - 乌克兰 V2CROSS.COM 3
-      - 🇨🇳 北京市 阿里云BGP服务器 4
-      - 🇳🇱 荷兰 阿姆斯特丹Online S.A.S
-      - 🇸🇬 美国 新泽西州(Merck公司) 2
-      - 🇺🇸 美国 CloudFlare节点 14
-      - 🇨🇳 北京市 阿里云 2
-      - 🇨🇦 加拿大 V2CROSS.COM 5
-      - 🇺🇸 美国 CloudFlare节点 15
-      - 🇺🇸 美国 Fastly全球Anycast节点
-      - 🇺🇸 美国 CloudFlare节点 16
-      - 🇺🇸 美国 Amazon数据中心 2
-      - 🇨🇳 广东省广州市 移动 3
-      - 🇮🇳 印度 卡纳塔克邦班加罗尔DigitalOcean数据中心
+      - 🇺🇸 美国 CloudFlare节点
+      - 广东省江门市 移动
+      - 🇷🇺 俄罗斯 V2CROSS.COM
+      - 🇨🇳 中国 阿里云
+      - 🇺🇸 美国 CloudFlare节点 2
+      - 🇺🇸 美国 CloudFlare节点 3
+      - 🇮🇳 印度 V2CROSS.COM 2
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -522,63 +130,14 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇺🇸 美国 CloudFlare节点
-      - 🇺🇸 美国 Amazon数据中心
-      - 🇨🇳 广东省广州市 移动
-      - 🇨🇦 加拿大 V2CROSS.COM
-      - 🇺🇸 美国 CloudFlare节点 2
-      - 🇨🇳 广东省深圳市 电信
-      - 🇺🇸 美国 Digital Ocean
-      - 乌克兰 V2CROSS.COM
-      - 🇺🇸 美国 CloudFlare节点 3
-      - 🇨🇦 加拿大 V2CROSS.COM 2
-      - 🇨🇳 中国 阿里云
-      - 🇺🇸 美国 CloudFlare节点 4
-      - 🇫🇷 法国 OVH SAS
-      - 🇨🇦 加拿大 V2CROSS.COM 3
-      - 乌克兰 V2CROSS.COM 2
-      - 🇰🇷 韩国 KT电信
-      - 🇺🇸 美国 CloudFlare节点 5
-      - 🇨🇳 北京市 阿里云BGP服务器
-      - 🇺🇸 美国 CloudFlare节点 6
-      - 🇷🇺 俄罗斯 V2CROSS.COM
-      - 🇺🇸 美国 CloudFlare节点 7
-      - 🇺🇸 美国 麻省理工学院
-      - 🇨🇳 中国 阿里云 2
-      - 广东省江门市 移动
-      - 🇨🇳 广东省广州市 移动 2
-      - 🇺🇸 美国 CloudFlare节点 8
-      - 🇺🇸 美国 惠普HP
-      - 🇺🇸 美国 CloudFlare节点 9
-      - 🇺🇸 美国 惠普HP 2
-      - 🇨🇳 北京市 阿里云BGP服务器 2
-      - 🇷🇺 俄罗斯 V2CROSS.COM 2
-      - 🇺🇸 美国 CloudFlare节点 10
-      - 🇺🇸 美国 CloudFlare节点 11
-      - 🇰🇷 韩国 KT电信 2
-      - 🇬🇧 英国 V2CROSS.COM
-      - 🇺🇸 美国 CloudFlare节点 12
-      - 🇨🇳 北京市 阿里云
       - 🇮🇳 印度 V2CROSS.COM
-      - 🇪🇸 西班牙 V2CROSS.COM
-      - 🇨🇦 加拿大 V2CROSS.COM 4
-      - 🇸🇬 美国 新泽西州(Merck公司)
-      - 🇨🇳 北京市 阿里云BGP服务器 3
-      - 🇺🇸 美国 华盛顿Cogent通信公司
-      - 🇺🇸 美国 CloudFlare节点 13
-      - 乌克兰 V2CROSS.COM 3
-      - 🇨🇳 北京市 阿里云BGP服务器 4
-      - 🇳🇱 荷兰 阿姆斯特丹Online S.A.S
-      - 🇸🇬 美国 新泽西州(Merck公司) 2
-      - 🇺🇸 美国 CloudFlare节点 14
-      - 🇨🇳 北京市 阿里云 2
-      - 🇨🇦 加拿大 V2CROSS.COM 5
-      - 🇺🇸 美国 CloudFlare节点 15
-      - 🇺🇸 美国 Fastly全球Anycast节点
-      - 🇺🇸 美国 CloudFlare节点 16
-      - 🇺🇸 美国 Amazon数据中心 2
-      - 🇨🇳 广东省广州市 移动 3
-      - 🇮🇳 印度 卡纳塔克邦班加罗尔DigitalOcean数据中心
+      - 🇺🇸 美国 CloudFlare节点
+      - 广东省江门市 移动
+      - 🇷🇺 俄罗斯 V2CROSS.COM
+      - 🇨🇳 中国 阿里云
+      - 🇺🇸 美国 CloudFlare节点 2
+      - 🇺🇸 美国 CloudFlare节点 3
+      - 🇮🇳 印度 V2CROSS.COM 2
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
