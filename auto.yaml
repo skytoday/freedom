@@ -5,43 +5,95 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 广东省江门市 移动, server: service.ouluyun9803.com, port: 26667, type: ss, cipher: chacha20-ietf-poly1305, password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2, udp: true}
-  - {name: 印度 V2CROSS.COM, server: 202.78.162.5, port: 443, type: vmess, uuid: 716eded6-2201-4dbd-9d63-1638c9e8e677, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: pendar.onthewifi.com}}, udp: true}
-  - {name: 美国 CloudFlare节点, server: 104.19.45.42, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip14.freegradely.xyz}}, udp: true}
-  - {name: 美国 CloudFlare节点 2, server: 172.64.167.44, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip2.1457230.xyz}}, udp: true}
-  - {name: 广东省江门市 移动 2, server: service.ouluyun9803.com, port: 20003, type: ss, cipher: chacha20-ietf-poly1305, password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2, udp: true}
+  - {name: 美国 华盛顿Cogent通信公司, server: 38.121.43.97, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: 广东省江门市 移动, server: service.ouluyun9803.com, port: 20005, type: ss, cipher: chacha20-ietf-poly1305, password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2, udp: true}
+  - {name: 美国 CloudFlare节点, server: 172.64.166.16, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip2.1457230.xyz}}, udp: true}
+  - {name: 美国 华盛顿Cogent通信公司 2, server: 38.127.237.108, port: 26841, type: vmess, uuid: 2544bc98-772d-4be2-a37b-be28f17d74c7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 湖北省武汉市 联通, server: cn2.cdn.xfltd-cdn.top, port: 12066, type: trojan, password: 3698a3e7-2877-4ded-a665-d81ee3cfd449, sni: cdn.alibaba.com, skip-cert-verify: true, udp: true}
+  - {name: 美国 CloudFlare节点 2, server: 172.64.175.213, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip2.1457230.xyz}}, udp: true}
+  - {name: 美国 Amazon EC2服务器, server: 3.72.83.187, port: 22222, type: trojan, password: telegram-id-privatevpns, sni: trojan.burgerip.co.uk, skip-cert-verify: true, udp: true}
+  - {name: 美国 CloudFlare节点 3, server: 104.19.45.108, port: 2095, type: vmess, uuid: 7a737f41-b792-4260-94ff-3d864da67b80, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: onea.flha.ru}}, udp: true}
+  - {name: 湖北省武汉市 联通 2, server: cn2.cdn.xfltd-cdn.top, port: 12035, type: trojan, password: 3698a3e7-2877-4ded-a665-d81ee3cfd449, sni: cdn.alibaba.com, skip-cert-verify: true, udp: true}
+  - {name: 美国 新泽西州(Merck公司), server: 54.37.18.75, port: 5499, type: ss, cipher: aes-256-gcm, password: lGqs95QkFHo2NV, udp: true}
+  - {name: 美国 华盛顿Cogent通信公司 3, server: 38.121.43.97, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: 印度 V2CROSS.COM, server: 202.78.162.5, port: 443, type: vmess, uuid: 2ff97c6d-8557-42a4-b43f-19c77c5959ea, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: irsoft.sytes.net}}, udp: true}
+  - {name: 美国 Fastly全球Anycast节点, server: gov.uk, port: 443, type: vmess, uuid: 77848824-93b7-4b89-ffd0-e91afff406ce, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /77848824, headers: {Host: zheshiscp.com}}, udp: true}
+  - {name: 美国 CloudFlare节点 4, server: 104.19.46.56, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip14.freegradely.xyz}}, udp: true}
+  - {name: 加拿大 V2CROSS.COM, server: 142.202.49.119, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: 香港 电讯盈科有限公司, server: 220.246.57.24, port: 40046, type: vmess, uuid: 3576aac2-d531-4275-aa60-39498e035dbb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 美国 新泽西州(Merck公司) 2, server: 54.37.18.75, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: 中国 阿里云, server: cn2.cdn.xfltd-cdn.top, port: 12051, type: trojan, password: 3698a3e7-2877-4ded-a665-d81ee3cfd449, sni: cdn.alibaba.com, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
+      - 美国 华盛顿Cogent通信公司
       - 广东省江门市 移动
-      - 印度 V2CROSS.COM
       - 美国 CloudFlare节点
+      - 美国 华盛顿Cogent通信公司 2
+      - 湖北省武汉市 联通
       - 美国 CloudFlare节点 2
-      - 广东省江门市 移动 2
+      - 美国 Amazon EC2服务器
+      - 美国 CloudFlare节点 3
+      - 湖北省武汉市 联通 2
+      - 美国 新泽西州(Merck公司)
+      - 美国 华盛顿Cogent通信公司 3
+      - 印度 V2CROSS.COM
+      - 美国 Fastly全球Anycast节点
+      - 美国 CloudFlare节点 4
+      - 加拿大 V2CROSS.COM
+      - 香港 电讯盈科有限公司
+      - 美国 新泽西州(Merck公司) 2
+      - 中国 阿里云
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
+      - 美国 华盛顿Cogent通信公司
       - 广东省江门市 移动
-      - 印度 V2CROSS.COM
       - 美国 CloudFlare节点
+      - 美国 华盛顿Cogent通信公司 2
+      - 湖北省武汉市 联通
       - 美国 CloudFlare节点 2
-      - 广东省江门市 移动 2
+      - 美国 Amazon EC2服务器
+      - 美国 CloudFlare节点 3
+      - 湖北省武汉市 联通 2
+      - 美国 新泽西州(Merck公司)
+      - 美国 华盛顿Cogent通信公司 3
+      - 印度 V2CROSS.COM
+      - 美国 Fastly全球Anycast节点
+      - 美国 CloudFlare节点 4
+      - 加拿大 V2CROSS.COM
+      - 香港 电讯盈科有限公司
+      - 美国 新泽西州(Merck公司) 2
+      - 中国 阿里云
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
+      - 美国 华盛顿Cogent通信公司
       - 广东省江门市 移动
-      - 印度 V2CROSS.COM
       - 美国 CloudFlare节点
+      - 美国 华盛顿Cogent通信公司 2
+      - 湖北省武汉市 联通
       - 美国 CloudFlare节点 2
-      - 广东省江门市 移动 2
+      - 美国 Amazon EC2服务器
+      - 美国 CloudFlare节点 3
+      - 湖北省武汉市 联通 2
+      - 美国 新泽西州(Merck公司)
+      - 美国 华盛顿Cogent通信公司 3
+      - 印度 V2CROSS.COM
+      - 美国 Fastly全球Anycast节点
+      - 美国 CloudFlare节点 4
+      - 加拿大 V2CROSS.COM
+      - 香港 电讯盈科有限公司
+      - 美国 新泽西州(Merck公司) 2
+      - 中国 阿里云
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -60,47 +112,100 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
+      - 美国 华盛顿Cogent通信公司
       - 广东省江门市 移动
-      - 印度 V2CROSS.COM
       - 美国 CloudFlare节点
+      - 美国 华盛顿Cogent通信公司 2
+      - 湖北省武汉市 联通
       - 美国 CloudFlare节点 2
-      - 广东省江门市 移动 2
+      - 美国 Amazon EC2服务器
+      - 美国 CloudFlare节点 3
+      - 湖北省武汉市 联通 2
+      - 美国 新泽西州(Merck公司)
+      - 美国 华盛顿Cogent通信公司 3
+      - 印度 V2CROSS.COM
+      - 美国 Fastly全球Anycast节点
+      - 美国 CloudFlare节点 4
+      - 加拿大 V2CROSS.COM
+      - 香港 电讯盈科有限公司
+      - 美国 新泽西州(Merck公司) 2
+      - 中国 阿里云
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
+      - 香港 电讯盈科有限公司
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
+      - 美国 华盛顿Cogent通信公司
       - 广东省江门市 移动
-      - 印度 V2CROSS.COM
       - 美国 CloudFlare节点
+      - 美国 华盛顿Cogent通信公司 2
+      - 湖北省武汉市 联通
       - 美国 CloudFlare节点 2
-      - 广东省江门市 移动 2
+      - 美国 Amazon EC2服务器
+      - 美国 CloudFlare节点 3
+      - 湖北省武汉市 联通 2
+      - 美国 新泽西州(Merck公司)
+      - 美国 华盛顿Cogent通信公司 3
+      - 印度 V2CROSS.COM
+      - 美国 Fastly全球Anycast节点
+      - 美国 CloudFlare节点 4
+      - 加拿大 V2CROSS.COM
+      - 香港 电讯盈科有限公司
+      - 美国 新泽西州(Merck公司) 2
+      - 中国 阿里云
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
+      - 美国 华盛顿Cogent通信公司
       - 广东省江门市 移动
-      - 印度 V2CROSS.COM
       - 美国 CloudFlare节点
+      - 美国 华盛顿Cogent通信公司 2
+      - 湖北省武汉市 联通
       - 美国 CloudFlare节点 2
-      - 广东省江门市 移动 2
+      - 美国 Amazon EC2服务器
+      - 美国 CloudFlare节点 3
+      - 湖北省武汉市 联通 2
+      - 美国 新泽西州(Merck公司)
+      - 美国 华盛顿Cogent通信公司 3
+      - 印度 V2CROSS.COM
+      - 美国 Fastly全球Anycast节点
+      - 美国 CloudFlare节点 4
+      - 加拿大 V2CROSS.COM
+      - 香港 电讯盈科有限公司
+      - 美国 新泽西州(Merck公司) 2
+      - 中国 阿里云
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - 美国 华盛顿Cogent通信公司
       - 广东省江门市 移动
-      - 印度 V2CROSS.COM
       - 美国 CloudFlare节点
+      - 美国 华盛顿Cogent通信公司 2
+      - 湖北省武汉市 联通
       - 美国 CloudFlare节点 2
-      - 广东省江门市 移动 2
+      - 美国 Amazon EC2服务器
+      - 美国 CloudFlare节点 3
+      - 湖北省武汉市 联通 2
+      - 美国 新泽西州(Merck公司)
+      - 美国 华盛顿Cogent通信公司 3
+      - 印度 V2CROSS.COM
+      - 美国 Fastly全球Anycast节点
+      - 美国 CloudFlare节点 4
+      - 加拿大 V2CROSS.COM
+      - 香港 电讯盈科有限公司
+      - 美国 新泽西州(Merck公司) 2
+      - 中国 阿里云
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -116,11 +221,24 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - 美国 华盛顿Cogent通信公司
       - 广东省江门市 移动
-      - 印度 V2CROSS.COM
       - 美国 CloudFlare节点
+      - 美国 华盛顿Cogent通信公司 2
+      - 湖北省武汉市 联通
       - 美国 CloudFlare节点 2
-      - 广东省江门市 移动 2
+      - 美国 Amazon EC2服务器
+      - 美国 CloudFlare节点 3
+      - 湖北省武汉市 联通 2
+      - 美国 新泽西州(Merck公司)
+      - 美国 华盛顿Cogent通信公司 3
+      - 印度 V2CROSS.COM
+      - 美国 Fastly全球Anycast节点
+      - 美国 CloudFlare节点 4
+      - 加拿大 V2CROSS.COM
+      - 香港 电讯盈科有限公司
+      - 美国 新泽西州(Merck公司) 2
+      - 中国 阿里云
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
