@@ -5,117 +5,389 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 🇰🇷 韩国 KT电信, server: service.ouluyun9803.com, port: 20005, type: ss, cipher: chacha20-ietf-poly1305, password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2, udp: true}
-  - {name: 🇺🇸 美国 CloudFlare节点, server: 104.19.47.22, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip14.freegradely.xyz}}, udp: true}
-  - {name: 🇺🇸 美国 CloudFlare节点 2, server: 104.19.45.50, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip13.freegradely.xyz}}, udp: true}
-  - {name: 🇺🇸 美国 CloudFlare节点 3, server: www.darkroom.lol, port: 8080, type: vmess, uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: www.darkroom.lol}}, udp: true}
-  - {name: 🇨🇳 上海市 UCloud, server: 5c404a0e5048e5e4.cdn.jiashule.com, port: 21850, type: ss, cipher: aes-256-gcm, password: c6d35094-dd85-4202-81ef-5e387c560481, udp: true}
+  - {name: 🇺🇸 美国 CloudFlare节点, server: 104.19.46.59, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip13.freegradely.xyz}}, udp: true}
+  - {name: 🇺🇸 美国 CloudFlare节点 2, server: 172.67.74.112, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip11.freegradely.xyz}}, udp: true}
+  - {name: 🇺🇸 美国 CloudFlare节点 3, server: 104.19.47.45, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip14.freegradely.xyz}}, udp: true}
+  - {name: 🇺🇸 美国 CloudFlare节点 4, server: 104.18.14.19, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip1.1789034.xyz}}, udp: true}
+  - {name: 🇺🇸 美国 CloudFlare节点 5, server: 104.19.57.4, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip2.1457230.xyz}}, udp: true}
+  - {name: 🇺🇸 美国 CloudFlare节点 6, server: 104.19.46.39, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip13.freegradely.xyz}}, udp: true}
+  - {name: 🇺🇸 美国 CloudFlare节点 7, server: 104.19.46.42, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip2.1457230.xyz}}, udp: true}
+  - {name: 🇺🇸 美国 CloudFlare节点 8, server: 104.19.47.22, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip14.freegradely.xyz}}, udp: true}
   - {name: 🇺🇸 美国 CloudFlare公司CDN节点(shopify), server: 23.227.38.8, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip5-10.freegradely.xyz}}, udp: true}
   - {name: 🇺🇸 美国 Fastly全球Anycast节点, server: gov.uk, port: 443, type: vmess, uuid: 77848824-93b7-4b89-ffd0-e91afff406ce, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /77848824, headers: {Host: zheshiscp.com}}, udp: true}
+  - {name: 🇺🇸 美国 CloudFlare节点 9, server: 104.19.46.103, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip14.freegradely.xyz}}, udp: true}
+  - {name: 🇺🇸 美国 麻省理工学院, server: 18.133.176.249, port: 22222, type: trojan, password: telegram-id-directvpn, sni: trojan.burgerip.co.uk, skip-cert-verify: false, udp: true}
+  - {name: 🇺🇸 美国 CloudFlare节点 10, server: 104.26.9.156, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip1.1789034.xyz}}, udp: true}
+  - {name: 🇺🇸 美国 CloudFlare节点 11, server: cdn.anymath.ir, port: 80, type: vmess, uuid: 59e40062-ff66-4a2a-f2be-af7f56a239bc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /@CHANGE_IP1, headers: {Host: speedtest.net.zula.ir.www.anymath.ir}}, udp: true}
+  - {name: 🇺🇸 美国 CloudFlare节点 12, server: fbi.gov, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip1.1789034.xyz}}, udp: true}
+  - {name: 🇺🇸 美国 CloudFlare节点 13, server: 104.19.32.46, port: 2086, type: vmess, uuid: 29eebb60-b27b-4a9d-bba5-947763d9205e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip006.3196772.xyz}}, udp: true}
+  - {name: 🇺🇸 美国 CloudFlare节点 14, server: 172.64.175.88, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip1.1457230.xyz}}, udp: true}
+  - {name: 🇺🇸 美国 CloudFlare节点 15, server: 104.26.5.112, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip1.1789034.xyz}}, udp: true}
+  - {name: 🇺🇸 美国科罗拉多州布隆菲尔德市 Level3, server: service.ouluyun9803.com, port: 20005, type: ss, cipher: chacha20-ietf-poly1305, password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2, udp: true}
+  - {name: 🇺🇸 美国 CloudFlare节点 16, server: 104.19.45.31, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip13.freegradely.xyz}}, udp: true}
+  - {name: 🇺🇸 美国 CloudFlare节点 17, server: 104.26.7.132, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip14.freegradely.xyz}}, udp: true}
+  - {name: 🇺🇸 美国 CloudFlare节点 18, server: 104.19.47.77, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip14.freegradely.xyz}}, udp: true}
+  - {name: 🇺🇸 美国 CloudFlare节点 19, server: 104.19.45.13, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip13.freegradely.xyz}}, udp: true}
+  - {name: 🇨🇳 广东省广州市 移动, server: 183.236.51.23, port: 45020, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 🇺🇸 美国 CloudFlare节点 20, server: 104.19.45.13, port: 2095, type: vmess, uuid: 7a737f41-b792-4260-94ff-3d864da67b80, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: onea.flha.ru}}, udp: true}
+  - {name: 🇺🇸 美国 CloudFlare节点 21, server: 104.19.45.35, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip13.freegradely.xyz}}, udp: true}
+  - {name: 🇺🇸 美国 CloudFlare节点 22, server: 172.67.130.140, port: 2082, type: vmess, uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: s1c.v2.v001sss.xyz}}, udp: true}
+  - {name: 🇺🇸 美国 CloudFlare节点 23, server: icook.tw, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip1.1789034.xyz}}, udp: true}
+  - {name: 🇺🇸 美国 CloudFlare节点 24, server: 104.17.106.151, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip14.freegradely.xyz}}, udp: true}
+  - {name: 🇺🇸 美国 CloudFlare节点 25, server: ip.sb, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip1.1789034.xyz}}, udp: true}
+  - {name: 🇺🇸 美国 CloudFlare节点 26, server: cfcdn3.sanfencdn9.com, port: 80, type: vmess, uuid: 20c2af39-b0ef-498e-ac2f-6d8861e8b798, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /video/qTjvEqix, headers: {Host: CfwMEEhvjp3.wzjwkqya.xyz}}, udp: true}
+  - {name: 🇺🇸 美国 CloudFlare节点 27, server: 104.19.38.62, port: 2086, type: vmess, uuid: 29eebb60-b27b-4a9d-bba5-947763d9205e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip006.freegradely.xyz}}, udp: true}
+  - {name: 🇺🇸 美国 惠普HP, server: series-a2-me.varzesh360.co, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: Bog0ELmMM9DSxDdQ, udp: true}
+  - {name: 🇺🇸 美国 CloudFlare节点 28, server: 104.19.45.14, port: 2095, type: vmess, uuid: 7a737f41-b792-4260-94ff-3d864da67b80, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: onea.flha.ru}}, udp: true}
   - {name: 🇮🇳 印度 V2CROSS.COM, server: 202.78.162.5, port: 443, type: vmess, uuid: 118287d2-e968-42e1-80d0-12fa2f5d38d6, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: sahand.serveminecraft.net}}, udp: true}
-  - {name: 🇺🇸 美国 CloudFlare节点 4, server: server31.beheshtbaneh.com, port: 8880, type: vmess, uuid: 4154143c-bbba-47a4-9f79-c2ed087cbcc9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: server31.beheshtbaneh.com}}, udp: true}
+  - {name: 🇺🇸 美国 CloudFlare节点 29, server: 172.64.167.15, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip2.1457230.xyz}}, udp: true}
+  - {name: 🇭🇰 香港 电讯盈科有限公司, server: aliyun.2096.us.kg, port: 443, type: trojan, password: 95b, sni: 30388d70-6f5c-4d7c-8daa-9d3df7c5c526.9150e878-8296-4798-a172-c3fe66b8dee5.ddnsgeek.com, skip-cert-verify: false, udp: true}
+  - {name: 🇺🇸 美国 CloudFlare节点 30, server: 104.19.44.151, port: 8080, type: vmess, uuid: 3fdf9d48-578a-42dc-9fdd-0dfcefa3d0c5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048&Telegram🇨🇳 @WangCai_8", headers: {Host: amd2.720208.xyz}}, udp: true}
+  - {name: 🇺🇸 美国 麻省理工学院 2, server: 18.133.16.202, port: 22222, type: trojan, password: telegram-id-privatevpns, sni: trojan.burgerip.co.uk, skip-cert-verify: false, udp: true}
+  - {name: 🇺🇸 美国 CloudFlare节点 31, server: cfcdn1.sanfencdn9.com, port: 2052, type: vmess, uuid: 20c2af39-b0ef-498e-ac2f-6d8861e8b798, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /video/WNMicnDh, headers: {Host: tw1eskJpKcA.inivtrak.xyz}}, udp: true}
+  - {name: 🇺🇸 美国 CloudFlare节点 32, server: 104.26.13.31, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip1.1789034.xyz}}, udp: true}
+  - {name: 🇮🇪 爱尔兰 都柏林Amazon数据中心, server: 54.195.163.244, port: 22222, type: trojan, password: telegram-id-privatevpns, sni: trojan.burgerip.co.uk, skip-cert-verify: false, udp: true}
+  - {name: 🇺🇸 美国 CloudFlare节点 33, server: 104.19.58.175, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip14.freegradely.xyz}}, udp: true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 🇰🇷 韩国 KT电信
       - 🇺🇸 美国 CloudFlare节点
       - 🇺🇸 美国 CloudFlare节点 2
       - 🇺🇸 美国 CloudFlare节点 3
-      - 🇨🇳 上海市 UCloud
+      - 🇺🇸 美国 CloudFlare节点 4
+      - 🇺🇸 美国 CloudFlare节点 5
+      - 🇺🇸 美国 CloudFlare节点 6
+      - 🇺🇸 美国 CloudFlare节点 7
+      - 🇺🇸 美国 CloudFlare节点 8
       - 🇺🇸 美国 CloudFlare公司CDN节点(shopify)
       - 🇺🇸 美国 Fastly全球Anycast节点
+      - 🇺🇸 美国 CloudFlare节点 9
+      - 🇺🇸 美国 麻省理工学院
+      - 🇺🇸 美国 CloudFlare节点 10
+      - 🇺🇸 美国 CloudFlare节点 11
+      - 🇺🇸 美国 CloudFlare节点 12
+      - 🇺🇸 美国 CloudFlare节点 13
+      - 🇺🇸 美国 CloudFlare节点 14
+      - 🇺🇸 美国 CloudFlare节点 15
+      - 🇺🇸 美国科罗拉多州布隆菲尔德市 Level3
+      - 🇺🇸 美国 CloudFlare节点 16
+      - 🇺🇸 美国 CloudFlare节点 17
+      - 🇺🇸 美国 CloudFlare节点 18
+      - 🇺🇸 美国 CloudFlare节点 19
+      - 🇨🇳 广东省广州市 移动
+      - 🇺🇸 美国 CloudFlare节点 20
+      - 🇺🇸 美国 CloudFlare节点 21
+      - 🇺🇸 美国 CloudFlare节点 22
+      - 🇺🇸 美国 CloudFlare节点 23
+      - 🇺🇸 美国 CloudFlare节点 24
+      - 🇺🇸 美国 CloudFlare节点 25
+      - 🇺🇸 美国 CloudFlare节点 26
+      - 🇺🇸 美国 CloudFlare节点 27
+      - 🇺🇸 美国 惠普HP
+      - 🇺🇸 美国 CloudFlare节点 28
       - 🇮🇳 印度 V2CROSS.COM
-      - 🇺🇸 美国 CloudFlare节点 4
+      - 🇺🇸 美国 CloudFlare节点 29
+      - 🇭🇰 香港 电讯盈科有限公司
+      - 🇺🇸 美国 CloudFlare节点 30
+      - 🇺🇸 美国 麻省理工学院 2
+      - 🇺🇸 美国 CloudFlare节点 31
+      - 🇺🇸 美国 CloudFlare节点 32
+      - 🇮🇪 爱尔兰 都柏林Amazon数据中心
+      - 🇺🇸 美国 CloudFlare节点 33
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇰🇷 韩国 KT电信
       - 🇺🇸 美国 CloudFlare节点
       - 🇺🇸 美国 CloudFlare节点 2
       - 🇺🇸 美国 CloudFlare节点 3
-      - 🇨🇳 上海市 UCloud
+      - 🇺🇸 美国 CloudFlare节点 4
+      - 🇺🇸 美国 CloudFlare节点 5
+      - 🇺🇸 美国 CloudFlare节点 6
+      - 🇺🇸 美国 CloudFlare节点 7
+      - 🇺🇸 美国 CloudFlare节点 8
       - 🇺🇸 美国 CloudFlare公司CDN节点(shopify)
       - 🇺🇸 美国 Fastly全球Anycast节点
+      - 🇺🇸 美国 CloudFlare节点 9
+      - 🇺🇸 美国 麻省理工学院
+      - 🇺🇸 美国 CloudFlare节点 10
+      - 🇺🇸 美国 CloudFlare节点 11
+      - 🇺🇸 美国 CloudFlare节点 12
+      - 🇺🇸 美国 CloudFlare节点 13
+      - 🇺🇸 美国 CloudFlare节点 14
+      - 🇺🇸 美国 CloudFlare节点 15
+      - 🇺🇸 美国科罗拉多州布隆菲尔德市 Level3
+      - 🇺🇸 美国 CloudFlare节点 16
+      - 🇺🇸 美国 CloudFlare节点 17
+      - 🇺🇸 美国 CloudFlare节点 18
+      - 🇺🇸 美国 CloudFlare节点 19
+      - 🇨🇳 广东省广州市 移动
+      - 🇺🇸 美国 CloudFlare节点 20
+      - 🇺🇸 美国 CloudFlare节点 21
+      - 🇺🇸 美国 CloudFlare节点 22
+      - 🇺🇸 美国 CloudFlare节点 23
+      - 🇺🇸 美国 CloudFlare节点 24
+      - 🇺🇸 美国 CloudFlare节点 25
+      - 🇺🇸 美国 CloudFlare节点 26
+      - 🇺🇸 美国 CloudFlare节点 27
+      - 🇺🇸 美国 惠普HP
+      - 🇺🇸 美国 CloudFlare节点 28
       - 🇮🇳 印度 V2CROSS.COM
-      - 🇺🇸 美国 CloudFlare节点 4
+      - 🇺🇸 美国 CloudFlare节点 29
+      - 🇭🇰 香港 电讯盈科有限公司
+      - 🇺🇸 美国 CloudFlare节点 30
+      - 🇺🇸 美国 麻省理工学院 2
+      - 🇺🇸 美国 CloudFlare节点 31
+      - 🇺🇸 美国 CloudFlare节点 32
+      - 🇮🇪 爱尔兰 都柏林Amazon数据中心
+      - 🇺🇸 美国 CloudFlare节点 33
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇰🇷 韩国 KT电信
       - 🇺🇸 美国 CloudFlare节点
       - 🇺🇸 美国 CloudFlare节点 2
       - 🇺🇸 美国 CloudFlare节点 3
-      - 🇨🇳 上海市 UCloud
+      - 🇺🇸 美国 CloudFlare节点 4
+      - 🇺🇸 美国 CloudFlare节点 5
+      - 🇺🇸 美国 CloudFlare节点 6
+      - 🇺🇸 美国 CloudFlare节点 7
+      - 🇺🇸 美国 CloudFlare节点 8
       - 🇺🇸 美国 CloudFlare公司CDN节点(shopify)
       - 🇺🇸 美国 Fastly全球Anycast节点
+      - 🇺🇸 美国 CloudFlare节点 9
+      - 🇺🇸 美国 麻省理工学院
+      - 🇺🇸 美国 CloudFlare节点 10
+      - 🇺🇸 美国 CloudFlare节点 11
+      - 🇺🇸 美国 CloudFlare节点 12
+      - 🇺🇸 美国 CloudFlare节点 13
+      - 🇺🇸 美国 CloudFlare节点 14
+      - 🇺🇸 美国 CloudFlare节点 15
+      - 🇺🇸 美国科罗拉多州布隆菲尔德市 Level3
+      - 🇺🇸 美国 CloudFlare节点 16
+      - 🇺🇸 美国 CloudFlare节点 17
+      - 🇺🇸 美国 CloudFlare节点 18
+      - 🇺🇸 美国 CloudFlare节点 19
+      - 🇨🇳 广东省广州市 移动
+      - 🇺🇸 美国 CloudFlare节点 20
+      - 🇺🇸 美国 CloudFlare节点 21
+      - 🇺🇸 美国 CloudFlare节点 22
+      - 🇺🇸 美国 CloudFlare节点 23
+      - 🇺🇸 美国 CloudFlare节点 24
+      - 🇺🇸 美国 CloudFlare节点 25
+      - 🇺🇸 美国 CloudFlare节点 26
+      - 🇺🇸 美国 CloudFlare节点 27
+      - 🇺🇸 美国 惠普HP
+      - 🇺🇸 美国 CloudFlare节点 28
       - 🇮🇳 印度 V2CROSS.COM
-      - 🇺🇸 美国 CloudFlare节点 4
+      - 🇺🇸 美国 CloudFlare节点 29
+      - 🇭🇰 香港 电讯盈科有限公司
+      - 🇺🇸 美国 CloudFlare节点 30
+      - 🇺🇸 美国 麻省理工学院 2
+      - 🇺🇸 美国 CloudFlare节点 31
+      - 🇺🇸 美国 CloudFlare节点 32
+      - 🇮🇪 爱尔兰 都柏林Amazon数据中心
+      - 🇺🇸 美国 CloudFlare节点 33
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇰🇷 韩国 KT电信
       - 🇺🇸 美国 CloudFlare节点
       - 🇺🇸 美国 CloudFlare节点 2
       - 🇺🇸 美国 CloudFlare节点 3
-      - 🇨🇳 上海市 UCloud
+      - 🇺🇸 美国 CloudFlare节点 4
+      - 🇺🇸 美国 CloudFlare节点 5
+      - 🇺🇸 美国 CloudFlare节点 6
+      - 🇺🇸 美国 CloudFlare节点 7
+      - 🇺🇸 美国 CloudFlare节点 8
       - 🇺🇸 美国 CloudFlare公司CDN节点(shopify)
       - 🇺🇸 美国 Fastly全球Anycast节点
+      - 🇺🇸 美国 CloudFlare节点 9
+      - 🇺🇸 美国 麻省理工学院
+      - 🇺🇸 美国 CloudFlare节点 10
+      - 🇺🇸 美国 CloudFlare节点 11
+      - 🇺🇸 美国 CloudFlare节点 12
+      - 🇺🇸 美国 CloudFlare节点 13
+      - 🇺🇸 美国 CloudFlare节点 14
+      - 🇺🇸 美国 CloudFlare节点 15
+      - 🇺🇸 美国科罗拉多州布隆菲尔德市 Level3
+      - 🇺🇸 美国 CloudFlare节点 16
+      - 🇺🇸 美国 CloudFlare节点 17
+      - 🇺🇸 美国 CloudFlare节点 18
+      - 🇺🇸 美国 CloudFlare节点 19
+      - 🇨🇳 广东省广州市 移动
+      - 🇺🇸 美国 CloudFlare节点 20
+      - 🇺🇸 美国 CloudFlare节点 21
+      - 🇺🇸 美国 CloudFlare节点 22
+      - 🇺🇸 美国 CloudFlare节点 23
+      - 🇺🇸 美国 CloudFlare节点 24
+      - 🇺🇸 美国 CloudFlare节点 25
+      - 🇺🇸 美国 CloudFlare节点 26
+      - 🇺🇸 美国 CloudFlare节点 27
+      - 🇺🇸 美国 惠普HP
+      - 🇺🇸 美国 CloudFlare节点 28
       - 🇮🇳 印度 V2CROSS.COM
-      - 🇺🇸 美国 CloudFlare节点 4
+      - 🇺🇸 美国 CloudFlare节点 29
+      - 🇭🇰 香港 电讯盈科有限公司
+      - 🇺🇸 美国 CloudFlare节点 30
+      - 🇺🇸 美国 麻省理工学院 2
+      - 🇺🇸 美国 CloudFlare节点 31
+      - 🇺🇸 美国 CloudFlare节点 32
+      - 🇮🇪 爱尔兰 都柏林Amazon数据中心
+      - 🇺🇸 美国 CloudFlare节点 33
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 🇰🇷 韩国 KT电信
       - 🇺🇸 美国 CloudFlare节点
       - 🇺🇸 美国 CloudFlare节点 2
       - 🇺🇸 美国 CloudFlare节点 3
-      - 🇨🇳 上海市 UCloud
+      - 🇺🇸 美国 CloudFlare节点 4
+      - 🇺🇸 美国 CloudFlare节点 5
+      - 🇺🇸 美国 CloudFlare节点 6
+      - 🇺🇸 美国 CloudFlare节点 7
+      - 🇺🇸 美国 CloudFlare节点 8
       - 🇺🇸 美国 CloudFlare公司CDN节点(shopify)
       - 🇺🇸 美国 Fastly全球Anycast节点
+      - 🇺🇸 美国 CloudFlare节点 9
+      - 🇺🇸 美国 麻省理工学院
+      - 🇺🇸 美国 CloudFlare节点 10
+      - 🇺🇸 美国 CloudFlare节点 11
+      - 🇺🇸 美国 CloudFlare节点 12
+      - 🇺🇸 美国 CloudFlare节点 13
+      - 🇺🇸 美国 CloudFlare节点 14
+      - 🇺🇸 美国 CloudFlare节点 15
+      - 🇺🇸 美国科罗拉多州布隆菲尔德市 Level3
+      - 🇺🇸 美国 CloudFlare节点 16
+      - 🇺🇸 美国 CloudFlare节点 17
+      - 🇺🇸 美国 CloudFlare节点 18
+      - 🇺🇸 美国 CloudFlare节点 19
+      - 🇨🇳 广东省广州市 移动
+      - 🇺🇸 美国 CloudFlare节点 20
+      - 🇺🇸 美国 CloudFlare节点 21
+      - 🇺🇸 美国 CloudFlare节点 22
+      - 🇺🇸 美国 CloudFlare节点 23
+      - 🇺🇸 美国 CloudFlare节点 24
+      - 🇺🇸 美国 CloudFlare节点 25
+      - 🇺🇸 美国 CloudFlare节点 26
+      - 🇺🇸 美国 CloudFlare节点 27
+      - 🇺🇸 美国 惠普HP
+      - 🇺🇸 美国 CloudFlare节点 28
       - 🇮🇳 印度 V2CROSS.COM
-      - 🇺🇸 美国 CloudFlare节点 4
+      - 🇺🇸 美国 CloudFlare节点 29
+      - 🇭🇰 香港 电讯盈科有限公司
+      - 🇺🇸 美国 CloudFlare节点 30
+      - 🇺🇸 美国 麻省理工学院 2
+      - 🇺🇸 美国 CloudFlare节点 31
+      - 🇺🇸 美国 CloudFlare节点 32
+      - 🇮🇪 爱尔兰 都柏林Amazon数据中心
+      - 🇺🇸 美国 CloudFlare节点 33
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇰🇷 韩国 KT电信
       - 🇺🇸 美国 CloudFlare节点
       - 🇺🇸 美国 CloudFlare节点 2
       - 🇺🇸 美国 CloudFlare节点 3
-      - 🇨🇳 上海市 UCloud
+      - 🇺🇸 美国 CloudFlare节点 4
+      - 🇺🇸 美国 CloudFlare节点 5
+      - 🇺🇸 美国 CloudFlare节点 6
+      - 🇺🇸 美国 CloudFlare节点 7
+      - 🇺🇸 美国 CloudFlare节点 8
       - 🇺🇸 美国 CloudFlare公司CDN节点(shopify)
       - 🇺🇸 美国 Fastly全球Anycast节点
+      - 🇺🇸 美国 CloudFlare节点 9
+      - 🇺🇸 美国 麻省理工学院
+      - 🇺🇸 美国 CloudFlare节点 10
+      - 🇺🇸 美国 CloudFlare节点 11
+      - 🇺🇸 美国 CloudFlare节点 12
+      - 🇺🇸 美国 CloudFlare节点 13
+      - 🇺🇸 美国 CloudFlare节点 14
+      - 🇺🇸 美国 CloudFlare节点 15
+      - 🇺🇸 美国科罗拉多州布隆菲尔德市 Level3
+      - 🇺🇸 美国 CloudFlare节点 16
+      - 🇺🇸 美国 CloudFlare节点 17
+      - 🇺🇸 美国 CloudFlare节点 18
+      - 🇺🇸 美国 CloudFlare节点 19
+      - 🇨🇳 广东省广州市 移动
+      - 🇺🇸 美国 CloudFlare节点 20
+      - 🇺🇸 美国 CloudFlare节点 21
+      - 🇺🇸 美国 CloudFlare节点 22
+      - 🇺🇸 美国 CloudFlare节点 23
+      - 🇺🇸 美国 CloudFlare节点 24
+      - 🇺🇸 美国 CloudFlare节点 25
+      - 🇺🇸 美国 CloudFlare节点 26
+      - 🇺🇸 美国 CloudFlare节点 27
+      - 🇺🇸 美国 惠普HP
+      - 🇺🇸 美国 CloudFlare节点 28
       - 🇮🇳 印度 V2CROSS.COM
-      - 🇺🇸 美国 CloudFlare节点 4
+      - 🇺🇸 美国 CloudFlare节点 29
+      - 🇭🇰 香港 电讯盈科有限公司
+      - 🇺🇸 美国 CloudFlare节点 30
+      - 🇺🇸 美国 麻省理工学院 2
+      - 🇺🇸 美国 CloudFlare节点 31
+      - 🇺🇸 美国 CloudFlare节点 32
+      - 🇮🇪 爱尔兰 都柏林Amazon数据中心
+      - 🇺🇸 美国 CloudFlare节点 33
   - name: 📢 谷歌FCM
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇰🇷 韩国 KT电信
       - 🇺🇸 美国 CloudFlare节点
       - 🇺🇸 美国 CloudFlare节点 2
       - 🇺🇸 美国 CloudFlare节点 3
-      - 🇨🇳 上海市 UCloud
+      - 🇺🇸 美国 CloudFlare节点 4
+      - 🇺🇸 美国 CloudFlare节点 5
+      - 🇺🇸 美国 CloudFlare节点 6
+      - 🇺🇸 美国 CloudFlare节点 7
+      - 🇺🇸 美国 CloudFlare节点 8
       - 🇺🇸 美国 CloudFlare公司CDN节点(shopify)
       - 🇺🇸 美国 Fastly全球Anycast节点
+      - 🇺🇸 美国 CloudFlare节点 9
+      - 🇺🇸 美国 麻省理工学院
+      - 🇺🇸 美国 CloudFlare节点 10
+      - 🇺🇸 美国 CloudFlare节点 11
+      - 🇺🇸 美国 CloudFlare节点 12
+      - 🇺🇸 美国 CloudFlare节点 13
+      - 🇺🇸 美国 CloudFlare节点 14
+      - 🇺🇸 美国 CloudFlare节点 15
+      - 🇺🇸 美国科罗拉多州布隆菲尔德市 Level3
+      - 🇺🇸 美国 CloudFlare节点 16
+      - 🇺🇸 美国 CloudFlare节点 17
+      - 🇺🇸 美国 CloudFlare节点 18
+      - 🇺🇸 美国 CloudFlare节点 19
+      - 🇨🇳 广东省广州市 移动
+      - 🇺🇸 美国 CloudFlare节点 20
+      - 🇺🇸 美国 CloudFlare节点 21
+      - 🇺🇸 美国 CloudFlare节点 22
+      - 🇺🇸 美国 CloudFlare节点 23
+      - 🇺🇸 美国 CloudFlare节点 24
+      - 🇺🇸 美国 CloudFlare节点 25
+      - 🇺🇸 美国 CloudFlare节点 26
+      - 🇺🇸 美国 CloudFlare节点 27
+      - 🇺🇸 美国 惠普HP
+      - 🇺🇸 美国 CloudFlare节点 28
       - 🇮🇳 印度 V2CROSS.COM
-      - 🇺🇸 美国 CloudFlare节点 4
+      - 🇺🇸 美国 CloudFlare节点 29
+      - 🇭🇰 香港 电讯盈科有限公司
+      - 🇺🇸 美国 CloudFlare节点 30
+      - 🇺🇸 美国 麻省理工学院 2
+      - 🇺🇸 美国 CloudFlare节点 31
+      - 🇺🇸 美国 CloudFlare节点 32
+      - 🇮🇪 爱尔兰 都柏林Amazon数据中心
+      - 🇺🇸 美国 CloudFlare节点 33
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -138,15 +410,49 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇰🇷 韩国 KT电信
       - 🇺🇸 美国 CloudFlare节点
       - 🇺🇸 美国 CloudFlare节点 2
       - 🇺🇸 美国 CloudFlare节点 3
-      - 🇨🇳 上海市 UCloud
+      - 🇺🇸 美国 CloudFlare节点 4
+      - 🇺🇸 美国 CloudFlare节点 5
+      - 🇺🇸 美国 CloudFlare节点 6
+      - 🇺🇸 美国 CloudFlare节点 7
+      - 🇺🇸 美国 CloudFlare节点 8
       - 🇺🇸 美国 CloudFlare公司CDN节点(shopify)
       - 🇺🇸 美国 Fastly全球Anycast节点
+      - 🇺🇸 美国 CloudFlare节点 9
+      - 🇺🇸 美国 麻省理工学院
+      - 🇺🇸 美国 CloudFlare节点 10
+      - 🇺🇸 美国 CloudFlare节点 11
+      - 🇺🇸 美国 CloudFlare节点 12
+      - 🇺🇸 美国 CloudFlare节点 13
+      - 🇺🇸 美国 CloudFlare节点 14
+      - 🇺🇸 美国 CloudFlare节点 15
+      - 🇺🇸 美国科罗拉多州布隆菲尔德市 Level3
+      - 🇺🇸 美国 CloudFlare节点 16
+      - 🇺🇸 美国 CloudFlare节点 17
+      - 🇺🇸 美国 CloudFlare节点 18
+      - 🇺🇸 美国 CloudFlare节点 19
+      - 🇨🇳 广东省广州市 移动
+      - 🇺🇸 美国 CloudFlare节点 20
+      - 🇺🇸 美国 CloudFlare节点 21
+      - 🇺🇸 美国 CloudFlare节点 22
+      - 🇺🇸 美国 CloudFlare节点 23
+      - 🇺🇸 美国 CloudFlare节点 24
+      - 🇺🇸 美国 CloudFlare节点 25
+      - 🇺🇸 美国 CloudFlare节点 26
+      - 🇺🇸 美国 CloudFlare节点 27
+      - 🇺🇸 美国 惠普HP
+      - 🇺🇸 美国 CloudFlare节点 28
       - 🇮🇳 印度 V2CROSS.COM
-      - 🇺🇸 美国 CloudFlare节点 4
+      - 🇺🇸 美国 CloudFlare节点 29
+      - 🇭🇰 香港 电讯盈科有限公司
+      - 🇺🇸 美国 CloudFlare节点 30
+      - 🇺🇸 美国 麻省理工学院 2
+      - 🇺🇸 美国 CloudFlare节点 31
+      - 🇺🇸 美国 CloudFlare节点 32
+      - 🇮🇪 爱尔兰 都柏林Amazon数据中心
+      - 🇺🇸 美国 CloudFlare节点 33
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
@@ -1850,143 +2156,6 @@ rules:
  - IP-CIDR,173.194.175.188/32,📢 谷歌FCM,no-resolve
  - IP-CIDR,173.194.218.188/32,📢 谷歌FCM,no-resolve
  - IP-CIDR,209.85.233.188/32,📢 谷歌FCM,no-resolve
- - DOMAIN-SUFFIX,265.com,🎯 全球直连
- - DOMAIN-SUFFIX,2mdn.net,🎯 全球直连
- - DOMAIN-SUFFIX,alt1-mtalk.google.com,🎯 全球直连
- - DOMAIN-SUFFIX,alt2-mtalk.google.com,🎯 全球直连
- - DOMAIN-SUFFIX,alt3-mtalk.google.com,🎯 全球直连
- - DOMAIN-SUFFIX,alt4-mtalk.google.com,🎯 全球直连
- - DOMAIN-SUFFIX,alt5-mtalk.google.com,🎯 全球直连
- - DOMAIN-SUFFIX,alt6-mtalk.google.com,🎯 全球直连
- - DOMAIN-SUFFIX,alt7-mtalk.google.com,🎯 全球直连
- - DOMAIN-SUFFIX,alt8-mtalk.google.com,🎯 全球直连
- - DOMAIN-SUFFIX,app-measurement.com,🎯 全球直连
- - DOMAIN-SUFFIX,cache.pack.google.com,🎯 全球直连
- - DOMAIN-SUFFIX,clickserve.dartsearch.net,🎯 全球直连
- - DOMAIN-SUFFIX,crl.pki.goog,🎯 全球直连
- - DOMAIN-SUFFIX,dl.google.com,🎯 全球直连
- - DOMAIN-SUFFIX,dl.l.google.com,🎯 全球直连
- - DOMAIN-SUFFIX,googletagmanager.com,🎯 全球直连
- - DOMAIN-SUFFIX,googletagservices.com,🎯 全球直连
- - DOMAIN-SUFFIX,gtm.oasisfeng.com,🎯 全球直连
- - DOMAIN-SUFFIX,mtalk.google.com,🎯 全球直连
- - DOMAIN-SUFFIX,ocsp.pki.goog,🎯 全球直连
- - DOMAIN-SUFFIX,recaptcha.net,🎯 全球直连
- - DOMAIN-SUFFIX,safebrowsing-cache.google.com,🎯 全球直连
- - DOMAIN-SUFFIX,settings.crashlytics.com,🎯 全球直连
- - DOMAIN-SUFFIX,ssl-google-analytics.l.google.com,🎯 全球直连
- - DOMAIN-SUFFIX,toolbarqueries.google.com,🎯 全球直连
- - DOMAIN-SUFFIX,tools.google.com,🎯 全球直连
- - DOMAIN-SUFFIX,tools.l.google.com,🎯 全球直连
- - DOMAIN-SUFFIX,www-googletagmanager.l.google.com,🎯 全球直连
- - DOMAIN-KEYWORD,1drv,Ⓜ️ 微软服务
- - DOMAIN-KEYWORD,microsoft,Ⓜ️ 微软服务
- - DOMAIN-SUFFIX,aadrm.com,Ⓜ️ 微软服务
- - DOMAIN-SUFFIX,acompli.com,Ⓜ️ 微软服务
- - DOMAIN-SUFFIX,acompli.net,Ⓜ️ 微软服务
- - DOMAIN-SUFFIX,aka.ms,Ⓜ️ 微软服务
- - DOMAIN-SUFFIX,akadns.net,Ⓜ️ 微软服务
- - DOMAIN-SUFFIX,aspnetcdn.com,Ⓜ️ 微软服务
- - DOMAIN-SUFFIX,assets-yammer.com,Ⓜ️ 微软服务
- - DOMAIN-SUFFIX,azure.com,Ⓜ️ 微软服务
- - DOMAIN-SUFFIX,azure.net,Ⓜ️ 微软服务
- - DOMAIN-SUFFIX,azureedge.net,Ⓜ️ 微软服务
- - DOMAIN-SUFFIX,azureiotcentral.com,Ⓜ️ 微软服务
- - DOMAIN-SUFFIX,azurerms.com,Ⓜ️ 微软服务
- - DOMAIN-SUFFIX,bing.com,Ⓜ️ 微软服务
- - DOMAIN-SUFFIX,bing.net,Ⓜ️ 微软服务
- - DOMAIN-SUFFIX,bingapis.com,Ⓜ️ 微软服务
- - DOMAIN-SUFFIX,cloudapp.net,Ⓜ️ 微软服务
- - DOMAIN-SUFFIX,cloudappsecurity.com,Ⓜ️ 微软服务
- - DOMAIN-SUFFIX,edgesuite.net,Ⓜ️ 微软服务
- - DOMAIN-SUFFIX,gfx.ms,Ⓜ️ 微软服务
- - DOMAIN-SUFFIX,hotmail.com,Ⓜ️ 微软服务
- - DOMAIN-SUFFIX,live.com,Ⓜ️ 微软服务
- - DOMAIN-SUFFIX,live.net,Ⓜ️ 微软服务
- - DOMAIN-SUFFIX,lync.com,Ⓜ️ 微软服务
- - DOMAIN-SUFFIX,msappproxy.net,Ⓜ️ 微软服务
- - DOMAIN-SUFFIX,msauth.net,Ⓜ️ 微软服务
- - DOMAIN-SUFFIX,msauthimages.net,Ⓜ️ 微软服务
- - DOMAIN-SUFFIX,msecnd.net,Ⓜ️ 微软服务
- - DOMAIN-SUFFIX,msedge.net,Ⓜ️ 微软服务
- - DOMAIN-SUFFIX,msft.net,Ⓜ️ 微软服务
- - DOMAIN-SUFFIX,msftauth.net,Ⓜ️ 微软服务
- - DOMAIN-SUFFIX,msftauthimages.net,Ⓜ️ 微软服务
- - DOMAIN-SUFFIX,msftidentity.com,Ⓜ️ 微软服务
- - DOMAIN-SUFFIX,msidentity.com,Ⓜ️ 微软服务
- - DOMAIN-SUFFIX,msn.cn,Ⓜ️ 微软服务
- - DOMAIN-SUFFIX,msn.com,Ⓜ️ 微软服务
- - DOMAIN-SUFFIX,msocdn.com,Ⓜ️ 微软服务
- - DOMAIN-SUFFIX,msocsp.com,Ⓜ️ 微软服务
- - DOMAIN-SUFFIX,mstea.ms,Ⓜ️ 微软服务
- - DOMAIN-SUFFIX,o365weve.com,Ⓜ️ 微软服务
- - DOMAIN-SUFFIX,oaspapps.com,Ⓜ️ 微软服务
- - DOMAIN-SUFFIX,office.com,Ⓜ️ 微软服务
- - DOMAIN-SUFFIX,office.net,Ⓜ️ 微软服务
- - DOMAIN-SUFFIX,office365.com,Ⓜ️ 微软服务
- - DOMAIN-SUFFIX,officeppe.net,Ⓜ️ 微软服务
- - DOMAIN-SUFFIX,omniroot.com,Ⓜ️ 微软服务
- - DOMAIN-SUFFIX,onedrive.com,Ⓜ️ 微软服务
- - DOMAIN-SUFFIX,onenote.com,Ⓜ️ 微软服务
- - DOMAIN-SUFFIX,onenote.net,Ⓜ️ 微软服务
- - DOMAIN-SUFFIX,onestore.ms,Ⓜ️ 微软服务
- - DOMAIN-SUFFIX,outlook.com,Ⓜ️ 微软服务
- - DOMAIN-SUFFIX,outlookmobile.com,Ⓜ️ 微软服务
- - DOMAIN-SUFFIX,phonefactor.net,Ⓜ️ 微软服务
- - DOMAIN-SUFFIX,public-trust.com,Ⓜ️ 微软服务
- - DOMAIN-SUFFIX,sfbassets.com,Ⓜ️ 微软服务
- - DOMAIN-SUFFIX,sfx.ms,Ⓜ️ 微软服务
- - DOMAIN-SUFFIX,sharepoint.com,Ⓜ️ 微软服务
- - DOMAIN-SUFFIX,sharepointonline.com,Ⓜ️ 微软服务
- - DOMAIN-SUFFIX,skype.com,Ⓜ️ 微软服务
- - DOMAIN-SUFFIX,skypeassets.com,Ⓜ️ 微软服务
- - DOMAIN-SUFFIX,skypeforbusiness.com,Ⓜ️ 微软服务
- - DOMAIN-SUFFIX,staffhub.ms,Ⓜ️ 微软服务
- - DOMAIN-SUFFIX,svc.ms,Ⓜ️ 微软服务
- - DOMAIN-SUFFIX,sway-cdn.com,Ⓜ️ 微软服务
- - DOMAIN-SUFFIX,sway-extensions.com,Ⓜ️ 微软服务
- - DOMAIN-SUFFIX,sway.com,Ⓜ️ 微软服务
- - DOMAIN-SUFFIX,trafficmanager.net,Ⓜ️ 微软服务
- - DOMAIN-SUFFIX,uservoice.com,Ⓜ️ 微软服务
- - DOMAIN-SUFFIX,virtualearth.net,Ⓜ️ 微软服务
- - DOMAIN-SUFFIX,visualstudio.com,Ⓜ️ 微软服务
- - DOMAIN-SUFFIX,windows-ppe.net,Ⓜ️ 微软服务
- - DOMAIN-SUFFIX,windows.com,Ⓜ️ 微软服务
- - DOMAIN-SUFFIX,windows.net,Ⓜ️ 微软服务
- - DOMAIN-SUFFIX,windowsazure.com,Ⓜ️ 微软服务
- - DOMAIN-SUFFIX,windowsupdate.com,Ⓜ️ 微软服务
- - DOMAIN-SUFFIX,wunderlist.com,Ⓜ️ 微软服务
- - DOMAIN-SUFFIX,yammer.com,Ⓜ️ 微软服务
- - DOMAIN-SUFFIX,yammerusercontent.com,Ⓜ️ 微软服务
- - DOMAIN,apple.comscoreresearch.com,🍎 苹果服务
- - DOMAIN-SUFFIX,aaplimg.com,🍎 苹果服务
- - DOMAIN-SUFFIX,akadns.net,🍎 苹果服务
- - DOMAIN-SUFFIX,apple-cloudkit.com,🍎 苹果服务
- - DOMAIN-SUFFIX,apple-dns.net,🍎 苹果服务
- - DOMAIN-SUFFIX,apple-mapkit.com,🍎 苹果服务
- - DOMAIN-SUFFIX,apple.co,🍎 苹果服务
- - DOMAIN-SUFFIX,apple.com,🍎 苹果服务
- - DOMAIN-SUFFIX,apple.com.cn,🍎 苹果服务
- - DOMAIN-SUFFIX,apple.news,🍎 苹果服务
- - DOMAIN-SUFFIX,appstore.com,🍎 苹果服务
- - DOMAIN-SUFFIX,cdn-apple.com,🍎 苹果服务
- - DOMAIN-SUFFIX,crashlytics.com,🍎 苹果服务
- - DOMAIN-SUFFIX,icloud-content.com,🍎 苹果服务
- - DOMAIN-SUFFIX,icloud.com,🍎 苹果服务
- - DOMAIN-SUFFIX,icloud.com.cn,🍎 苹果服务
- - DOMAIN-SUFFIX,itunes.com,🍎 苹果服务
- - DOMAIN-SUFFIX,me.com,🍎 苹果服务
- - DOMAIN-SUFFIX,mzstatic.com,🍎 苹果服务
- - IP-CIDR,17.0.0.0/8,🍎 苹果服务,no-resolve
- - IP-CIDR,63.92.224.0/19,🍎 苹果服务,no-resolve
- - IP-CIDR,65.199.22.0/23,🍎 苹果服务,no-resolve
- - IP-CIDR,139.178.128.0/18,🍎 苹果服务,no-resolve
- - IP-CIDR,144.178.0.0/19,🍎 苹果服务,no-resolve
- - IP-CIDR,144.178.36.0/22,🍎 苹果服务,no-resolve
- - IP-CIDR,144.178.48.0/20,🍎 苹果服务,no-resolve
- - IP-CIDR,192.35.50.0/24,🍎 苹果服务,no-resolve
- - IP-CIDR,198.183.17.0/24,🍎 苹果服务,no-resolve
- - IP-CIDR,205.180.175.0/24,🍎 苹果服务,no-resolve
  - DOMAIN-SUFFIX,t.me,📲 电报信息
  - DOMAIN-SUFFIX,tdesktop.com,📲 电报信息
  - DOMAIN-SUFFIX,telegra.ph,📲 电报信息
@@ -2323,433 +2492,6 @@ rules:
  - DOMAIN-SUFFIX,yt.be,🌍 国外媒体
  - DOMAIN-SUFFIX,ytimg.com,🌍 国外媒体
  - DOMAIN,music.youtube.com,🌍 国外媒体
- - DOMAIN-SUFFIX,1password.com,🚀 节点选择
- - DOMAIN-SUFFIX,adguard.org,🚀 节点选择
- - DOMAIN-SUFFIX,bit.no.com,🚀 节点选择
- - DOMAIN-SUFFIX,btlibrary.me,🚀 节点选择
- - DOMAIN-SUFFIX,cloudcone.com,🚀 节点选择
- - DOMAIN-SUFFIX,dubox.com,🚀 节点选择
- - DOMAIN-SUFFIX,gameloft.com,🚀 节点选择
- - DOMAIN-SUFFIX,garena.com,🚀 节点选择
- - DOMAIN-SUFFIX,hoyolab.com,🚀 节点选择
- - DOMAIN-SUFFIX,inoreader.com,🚀 节点选择
- - DOMAIN-SUFFIX,ip138.com,🚀 节点选择
- - DOMAIN-SUFFIX,linkedin.com,🚀 节点选择
- - DOMAIN-SUFFIX,myteamspeak.com,🚀 节点选择
- - DOMAIN-SUFFIX,notion.so,🚀 节点选择
- - DOMAIN-SUFFIX,ping.pe,🚀 节点选择
- - DOMAIN-SUFFIX,reddit.com,🚀 节点选择
- - DOMAIN-SUFFIX,teddysun.com,🚀 节点选择
- - DOMAIN-SUFFIX,tumbex.com,🚀 节点选择
- - DOMAIN-SUFFIX,twdvd.com,🚀 节点选择
- - DOMAIN-SUFFIX,unsplash.com,🚀 节点选择
- - DOMAIN-SUFFIX,buzzsprout.com,🚀 节点选择
- - DOMAIN-SUFFIX,eu,🚀 节点选择
- - DOMAIN-SUFFIX,hk,🚀 节点选择
- - DOMAIN-SUFFIX,jp,🚀 节点选择
- - DOMAIN-SUFFIX,kr,🚀 节点选择
- - DOMAIN-SUFFIX,sg,🚀 节点选择
- - DOMAIN-SUFFIX,tw,🚀 节点选择
- - DOMAIN-SUFFIX,uk,🚀 节点选择
- - DOMAIN-KEYWORD,1e100,🚀 节点选择
- - DOMAIN-KEYWORD,abema,🚀 节点选择
- - DOMAIN-KEYWORD,appledaily,🚀 节点选择
- - DOMAIN-KEYWORD,avtb,🚀 节点选择
- - DOMAIN-KEYWORD,beetalk,🚀 节点选择
- - DOMAIN-KEYWORD,blogspot,🚀 节点选择
- - DOMAIN-KEYWORD,dropbox,🚀 节点选择
- - DOMAIN-KEYWORD,facebook,🚀 节点选择
- - DOMAIN-KEYWORD,fbcdn,🚀 节点选择
- - DOMAIN-KEYWORD,github,🚀 节点选择
- - DOMAIN-KEYWORD,gmail,🚀 节点选择
- - DOMAIN-KEYWORD,google,🚀 节点选择
- - DOMAIN-KEYWORD,instagram,🚀 节点选择
- - DOMAIN-KEYWORD,porn,🚀 节点选择
- - DOMAIN-KEYWORD,sci-hub,🚀 节点选择
- - DOMAIN-KEYWORD,spotify,🚀 节点选择
- - DOMAIN-KEYWORD,telegram,🚀 节点选择
- - DOMAIN-KEYWORD,twitter,🚀 节点选择
- - DOMAIN-KEYWORD,whatsapp,🚀 节点选择
- - DOMAIN-KEYWORD,youtube,🚀 节点选择
- - DOMAIN-SUFFIX,4sqi.net,🚀 节点选择
- - DOMAIN-SUFFIX,a248.e.akamai.net,🚀 节点选择
- - DOMAIN-SUFFIX,adobedtm.com,🚀 节点选择
- - DOMAIN-SUFFIX,ampproject.org,🚀 节点选择
- - DOMAIN-SUFFIX,android.com,🚀 节点选择
- - DOMAIN-SUFFIX,aolcdn.com,🚀 节点选择
- - DOMAIN-SUFFIX,apkmirror.com,🚀 节点选择
- - DOMAIN-SUFFIX,apkpure.com,🚀 节点选择
- - DOMAIN-SUFFIX,app-measurement.com,🚀 节点选择
- - DOMAIN-SUFFIX,appspot.com,🚀 节点选择
- - DOMAIN-SUFFIX,archive.org,🚀 节点选择
- - DOMAIN-SUFFIX,armorgames.com,🚀 节点选择
- - DOMAIN-SUFFIX,aspnetcdn.com,🚀 节点选择
- - DOMAIN-SUFFIX,awsstatic.com,🚀 节点选择
- - DOMAIN-SUFFIX,azureedge.net,🚀 节点选择
- - DOMAIN-SUFFIX,azurewebsites.net,🚀 节点选择
- - DOMAIN-SUFFIX,bandwagonhost.com,🚀 节点选择
- - DOMAIN-SUFFIX,bing.com,🚀 节点选择
- - DOMAIN-SUFFIX,bkrtx.com,🚀 节点选择
- - DOMAIN-SUFFIX,blogcdn.com,🚀 节点选择
- - DOMAIN-SUFFIX,blogger.com,🚀 节点选择
- - DOMAIN-SUFFIX,blogsmithmedia.com,🚀 节点选择
- - DOMAIN-SUFFIX,blogspot.com,🚀 节点选择
- - DOMAIN-SUFFIX,blogspot.hk,🚀 节点选择
- - DOMAIN-SUFFIX,blogspot.jp,🚀 节点选择
- - DOMAIN-SUFFIX,bloomberg.cn,🚀 节点选择
- - DOMAIN-SUFFIX,bloomberg.com,🚀 节点选择
- - DOMAIN-SUFFIX,box.com,🚀 节点选择
- - DOMAIN-SUFFIX,cachefly.net,🚀 节点选择
- - DOMAIN-SUFFIX,cdnst.net,🚀 节点选择
- - DOMAIN-SUFFIX,cloudfront.net,🚀 节点选择
- - DOMAIN-SUFFIX,comodoca.com,🚀 节点选择
- - DOMAIN-SUFFIX,daum.net,🚀 节点选择
- - DOMAIN-SUFFIX,deskconnect.com,🚀 节点选择
- - DOMAIN-SUFFIX,disqus.com,🚀 节点选择
- - DOMAIN-SUFFIX,disquscdn.com,🚀 节点选择
- - DOMAIN-SUFFIX,dropbox.com,🚀 节点选择
- - DOMAIN-SUFFIX,dropboxapi.com,🚀 节点选择
- - DOMAIN-SUFFIX,dropboxstatic.com,🚀 节点选择
- - DOMAIN-SUFFIX,dropboxusercontent.com,🚀 节点选择
- - DOMAIN-SUFFIX,duckduckgo.com,🚀 节点选择
- - DOMAIN-SUFFIX,edgecastcdn.net,🚀 节点选择
- - DOMAIN-SUFFIX,edgekey.net,🚀 节点选择
- - DOMAIN-SUFFIX,edgesuite.net,🚀 节点选择
- - DOMAIN-SUFFIX,eurekavpt.com,🚀 节点选择
- - DOMAIN-SUFFIX,fastmail.com,🚀 节点选择
- - DOMAIN-SUFFIX,firebaseio.com,🚀 节点选择
- - DOMAIN-SUFFIX,flickr.com,🚀 节点选择
- - DOMAIN-SUFFIX,flipboard.com,🚀 节点选择
- - DOMAIN-SUFFIX,gfx.ms,🚀 节点选择
- - DOMAIN-SUFFIX,gongm.in,🚀 节点选择
- - DOMAIN-SUFFIX,hulu.com,🚀 节点选择
- - DOMAIN-SUFFIX,id.heroku.com,🚀 节点选择
- - DOMAIN-SUFFIX,io.io,🚀 节点选择
- - DOMAIN-SUFFIX,issuu.com,🚀 节点选择
- - DOMAIN-SUFFIX,ixquick.com,🚀 节点选择
- - DOMAIN-SUFFIX,jtvnw.net,🚀 节点选择
- - DOMAIN-SUFFIX,kat.cr,🚀 节点选择
- - DOMAIN-SUFFIX,kik.com,🚀 节点选择
- - DOMAIN-SUFFIX,kobo.com,🚀 节点选择
- - DOMAIN-SUFFIX,kobobooks.com,🚀 节点选择
- - DOMAIN-SUFFIX,licdn.com,🚀 节点选择
- - DOMAIN-SUFFIX,live.net,🚀 节点选择
- - DOMAIN-SUFFIX,livefilestore.com,🚀 节点选择
- - DOMAIN-SUFFIX,llnwd.net,🚀 节点选择
- - DOMAIN-SUFFIX,macrumors.com,🚀 节点选择
- - DOMAIN-SUFFIX,medium.com,🚀 节点选择
- - DOMAIN-SUFFIX,mega.nz,🚀 节点选择
- - DOMAIN-SUFFIX,megaupload.com,🚀 节点选择
- - DOMAIN-SUFFIX,messenger.com,🚀 节点选择
- - DOMAIN-SUFFIX,netdna-cdn.com,🚀 节点选择
- - DOMAIN-SUFFIX,nintendo.net,🚀 节点选择
- - DOMAIN-SUFFIX,nsstatic.net,🚀 节点选择
- - DOMAIN-SUFFIX,nytstyle.com,🚀 节点选择
- - DOMAIN-SUFFIX,overcast.fm,🚀 节点选择
- - DOMAIN-SUFFIX,openvpn.net,🚀 节点选择
- - DOMAIN-SUFFIX,periscope.tv,🚀 节点选择
- - DOMAIN-SUFFIX,pinimg.com,🚀 节点选择
- - DOMAIN-SUFFIX,pinterest.com,🚀 节点选择
- - DOMAIN-SUFFIX,potato.im,🚀 节点选择
- - DOMAIN-SUFFIX,prfct.co,🚀 节点选择
- - DOMAIN-SUFFIX,pscp.tv,🚀 节点选择
- - DOMAIN-SUFFIX,quora.com,🚀 节点选择
- - DOMAIN-SUFFIX,resilio.com,🚀 节点选择
- - DOMAIN-SUFFIX,sfx.ms,🚀 节点选择
- - DOMAIN-SUFFIX,shadowsocks.org,🚀 节点选择
- - DOMAIN-SUFFIX,slack-edge.com,🚀 节点选择
- - DOMAIN-SUFFIX,smartdnsproxy.com,🚀 节点选择
- - DOMAIN-SUFFIX,sndcdn.com,🚀 节点选择
- - DOMAIN-SUFFIX,soundcloud.com,🚀 节点选择
- - DOMAIN-SUFFIX,startpage.com,🚀 节点选择
- - DOMAIN-SUFFIX,staticflickr.com,🚀 节点选择
- - DOMAIN-SUFFIX,symauth.com,🚀 节点选择
- - DOMAIN-SUFFIX,symcb.com,🚀 节点选择
- - DOMAIN-SUFFIX,symcd.com,🚀 节点选择
- - DOMAIN-SUFFIX,textnow.com,🚀 节点选择
- - DOMAIN-SUFFIX,textnow.me,🚀 节点选择
- - DOMAIN-SUFFIX,thefacebook.com,🚀 节点选择
- - DOMAIN-SUFFIX,thepiratebay.org,🚀 节点选择
- - DOMAIN-SUFFIX,torproject.org,🚀 节点选择
- - DOMAIN-SUFFIX,trustasiassl.com,🚀 节点选择
- - DOMAIN-SUFFIX,tumblr.co,🚀 节点选择
- - DOMAIN-SUFFIX,tumblr.com,🚀 节点选择
- - DOMAIN-SUFFIX,tvb.com,🚀 节点选择
- - DOMAIN-SUFFIX,txmblr.com,🚀 节点选择
- - DOMAIN-SUFFIX,v2ex.com,🚀 节点选择
- - DOMAIN-SUFFIX,vimeo.com,🚀 节点选择
- - DOMAIN-SUFFIX,vine.co,🚀 节点选择
- - DOMAIN-SUFFIX,vox-cdn.com,🚀 节点选择
- - DOMAIN-SUFFIX,amazon.co.jp,🚀 节点选择
- - DOMAIN-SUFFIX,amazon.com,🚀 节点选择
- - DOMAIN-SUFFIX,amazonaws.com,🚀 节点选择
- - IP-CIDR,13.32.0.0/15,🚀 节点选择,no-resolve
- - IP-CIDR,13.35.0.0/17,🚀 节点选择,no-resolve
- - IP-CIDR,18.184.0.0/15,🚀 节点选择,no-resolve
- - IP-CIDR,18.194.0.0/15,🚀 节点选择,no-resolve
- - IP-CIDR,18.208.0.0/13,🚀 节点选择,no-resolve
- - IP-CIDR,18.232.0.0/14,🚀 节点选择,no-resolve
- - IP-CIDR,52.58.0.0/15,🚀 节点选择,no-resolve
- - IP-CIDR,52.74.0.0/16,🚀 节点选择,no-resolve
- - IP-CIDR,52.77.0.0/16,🚀 节点选择,no-resolve
- - IP-CIDR,52.84.0.0/15,🚀 节点选择,no-resolve
- - IP-CIDR,52.200.0.0/13,🚀 节点选择,no-resolve
- - IP-CIDR,54.93.0.0/16,🚀 节点选择,no-resolve
- - IP-CIDR,54.156.0.0/14,🚀 节点选择,no-resolve
- - IP-CIDR,54.226.0.0/15,🚀 节点选择,no-resolve
- - IP-CIDR,54.230.156.0/22,🚀 节点选择,no-resolve
- - DOMAIN-KEYWORD,uk-live,🚀 节点选择
- - DOMAIN-SUFFIX,bbc.co,🚀 节点选择
- - DOMAIN-SUFFIX,bbc.com,🚀 节点选择
- - DOMAIN-SUFFIX,claude.ai,🚀 节点选择
- - DOMAIN-SUFFIX,anthropic.com,🚀 节点选择
- - DOMAIN-SUFFIX,apache.org,🚀 节点选择
- - DOMAIN-SUFFIX,docker.com,🚀 节点选择
- - DOMAIN-SUFFIX,docker.io,🚀 节点选择
- - DOMAIN-SUFFIX,elastic.co,🚀 节点选择
- - DOMAIN-SUFFIX,elastic.com,🚀 节点选择
- - DOMAIN-SUFFIX,gcr.io,🚀 节点选择
- - DOMAIN-SUFFIX,gitlab.com,🚀 节点选择
- - DOMAIN-SUFFIX,gitlab.io,🚀 节点选择
- - DOMAIN-SUFFIX,jitpack.io,🚀 节点选择
- - DOMAIN-SUFFIX,maven.org,🚀 节点选择
- - DOMAIN-SUFFIX,medium.com,🚀 节点选择
- - DOMAIN-SUFFIX,mvnrepository.com,🚀 节点选择
- - DOMAIN-SUFFIX,quay.io,🚀 节点选择
- - DOMAIN-SUFFIX,reddit.com,🚀 节点选择
- - DOMAIN-SUFFIX,redhat.com,🚀 节点选择
- - DOMAIN-SUFFIX,sonatype.org,🚀 节点选择
- - DOMAIN-SUFFIX,sourcegraph.com,🚀 节点选择
- - DOMAIN-SUFFIX,spring.io,🚀 节点选择
- - DOMAIN-SUFFIX,spring.net,🚀 节点选择
- - DOMAIN-SUFFIX,stackoverflow.com,🚀 节点选择
- - DOMAIN,d1q6f0aelx0por.cloudfront.net,🚀 节点选择
- - DOMAIN,d2wy8f7a9ursnm.cloudfront.net,🚀 节点选择
- - DOMAIN,d36jcksde1wxzq.cloudfront.net,🚀 节点选择
- - DOMAIN-SUFFIX,compose-spec.io,🚀 节点选择
- - DOMAIN-SUFFIX,docker.com,🚀 节点选择
- - DOMAIN-SUFFIX,docker.io,🚀 节点选择
- - DOMAIN-SUFFIX,dockerhub.com,🚀 节点选择
- - DOMAIN-SUFFIX,discord.co,🚀 节点选择
- - DOMAIN-SUFFIX,discord.com,🚀 节点选择
- - DOMAIN-SUFFIX,discord.gg,🚀 节点选择
- - DOMAIN-SUFFIX,discord.media,🚀 节点选择
- - DOMAIN-SUFFIX,discordapp.com,🚀 节点选择
- - DOMAIN-SUFFIX,discordapp.net,🚀 节点选择
- - DOMAIN-SUFFIX,facebook.com,🚀 节点选择
- - DOMAIN-SUFFIX,fb.com,🚀 节点选择
- - DOMAIN-SUFFIX,fb.me,🚀 节点选择
- - DOMAIN-SUFFIX,fbcdn.com,🚀 节点选择
- - DOMAIN-SUFFIX,fbcdn.net,🚀 节点选择
- - IP-CIDR,31.13.24.0/21,🚀 节点选择,no-resolve
- - IP-CIDR,31.13.64.0/18,🚀 节点选择,no-resolve
- - IP-CIDR,45.64.40.0/22,🚀 节点选择,no-resolve
- - IP-CIDR,66.220.144.0/20,🚀 节点选择,no-resolve
- - IP-CIDR,69.63.176.0/20,🚀 节点选择,no-resolve
- - IP-CIDR,69.171.224.0/19,🚀 节点选择,no-resolve
- - IP-CIDR,74.119.76.0/22,🚀 节点选择,no-resolve
- - IP-CIDR,103.4.96.0/22,🚀 节点选择,no-resolve
- - IP-CIDR,129.134.0.0/17,🚀 节点选择,no-resolve
- - IP-CIDR,157.240.0.0/17,🚀 节点选择,no-resolve
- - IP-CIDR,173.252.64.0/18,🚀 节点选择,no-resolve
- - IP-CIDR,179.60.192.0/22,🚀 节点选择,no-resolve
- - IP-CIDR,185.60.216.0/22,🚀 节点选择,no-resolve
- - IP-CIDR,204.15.20.0/22,🚀 节点选择,no-resolve
- - DOMAIN-SUFFIX,github.com,🚀 节点选择
- - DOMAIN-SUFFIX,github.io,🚀 节点选择
- - DOMAIN-SUFFIX,githubapp.com,🚀 节点选择
- - DOMAIN-SUFFIX,githubassets.com,🚀 节点选择
- - DOMAIN-SUFFIX,githubusercontent.com,🚀 节点选择
- - DOMAIN-SUFFIX,1e100.net,🚀 节点选择
- - DOMAIN-SUFFIX,2mdn.net,🚀 节点选择
- - DOMAIN-SUFFIX,app-measurement.net,🚀 节点选择
- - DOMAIN-SUFFIX,g.co,🚀 节点选择
- - DOMAIN-SUFFIX,ggpht.com,🚀 节点选择
- - DOMAIN-SUFFIX,goo.gl,🚀 节点选择
- - DOMAIN-SUFFIX,googleapis.cn,🚀 节点选择
- - DOMAIN-SUFFIX,googleapis.com,🚀 节点选择
- - DOMAIN-SUFFIX,gstatic.cn,🚀 节点选择
- - DOMAIN-SUFFIX,gstatic.com,🚀 节点选择
- - DOMAIN-SUFFIX,gvt0.com,🚀 节点选择
- - DOMAIN-SUFFIX,gvt1.com,🚀 节点选择
- - DOMAIN-SUFFIX,gvt2.com,🚀 节点选择
- - DOMAIN-SUFFIX,gvt3.com,🚀 节点选择
- - DOMAIN-SUFFIX,xn--ngstr-lra8j.com,🚀 节点选择
- - DOMAIN-SUFFIX,youtu.be,🚀 节点选择
- - DOMAIN-SUFFIX,youtube-nocookie.com,🚀 节点选择
- - DOMAIN-SUFFIX,youtube.com,🚀 节点选择
- - DOMAIN-SUFFIX,yt.be,🚀 节点选择
- - DOMAIN-SUFFIX,ytimg.com,🚀 节点选择
- - IP-CIDR,74.125.0.0/16,🚀 节点选择,no-resolve
- - IP-CIDR,173.194.0.0/16,🚀 节点选择,no-resolve
- - IP-CIDR,120.232.181.162/32,🚀 节点选择,no-resolve
- - IP-CIDR,120.241.147.226/32,🚀 节点选择,no-resolve
- - IP-CIDR,120.253.253.226/32,🚀 节点选择,no-resolve
- - IP-CIDR,120.253.255.162/32,🚀 节点选择,no-resolve
- - IP-CIDR,120.253.255.34/32,🚀 节点选择,no-resolve
- - IP-CIDR,120.253.255.98/32,🚀 节点选择,no-resolve
- - IP-CIDR,180.163.150.162/32,🚀 节点选择,no-resolve
- - IP-CIDR,180.163.150.34/32,🚀 节点选择,no-resolve
- - IP-CIDR,180.163.151.162/32,🚀 节点选择,no-resolve
- - IP-CIDR,180.163.151.34/32,🚀 节点选择,no-resolve
- - IP-CIDR,203.208.39.0/24,🚀 节点选择,no-resolve
- - IP-CIDR,203.208.40.0/24,🚀 节点选择,no-resolve
- - IP-CIDR,203.208.41.0/24,🚀 节点选择,no-resolve
- - IP-CIDR,203.208.43.0/24,🚀 节点选择,no-resolve
- - IP-CIDR,203.208.50.0/24,🚀 节点选择,no-resolve
- - IP-CIDR,220.181.174.162/32,🚀 节点选择,no-resolve
- - IP-CIDR,220.181.174.226/32,🚀 节点选择,no-resolve
- - IP-CIDR,220.181.174.34/32,🚀 节点选择,no-resolve
- - DOMAIN-SUFFIX,cdninstagram.com,🚀 节点选择
- - DOMAIN-SUFFIX,instagram.com,🚀 节点选择
- - DOMAIN-SUFFIX,instagr.am,🚀 节点选择
- - DOMAIN-SUFFIX,iwara.tv,🚀 节点选择
- - DOMAIN-SUFFIX,kakao.com,🚀 节点选择
- - DOMAIN-SUFFIX,kakao.co.kr,🚀 节点选择
- - DOMAIN-SUFFIX,kakaocdn.net,🚀 节点选择
- - IP-CIDR,1.201.0.0/24,🚀 节点选择,no-resolve
- - IP-CIDR,27.0.236.0/22,🚀 节点选择,no-resolve
- - IP-CIDR,103.27.148.0/22,🚀 节点选择,no-resolve
- - IP-CIDR,103.246.56.0/22,🚀 节点选择,no-resolve
- - IP-CIDR,110.76.140.0/22,🚀 节点选择,no-resolve
- - IP-CIDR,113.61.104.0/22,🚀 节点选择,no-resolve
- - DOMAIN-SUFFIX,lin.ee,🚀 节点选择
- - DOMAIN-SUFFIX,line-apps.com,🚀 节点选择
- - DOMAIN-SUFFIX,line-cdn.net,🚀 节点选择
- - DOMAIN-SUFFIX,line-scdn.net,🚀 节点选择
- - DOMAIN-SUFFIX,line.me,🚀 节点选择
- - DOMAIN-SUFFIX,line.naver.jp,🚀 节点选择
- - DOMAIN-SUFFIX,nhncorp.jp,🚀 节点选择
- - IP-CIDR,103.2.28.0/24,🚀 节点选择,no-resolve
- - IP-CIDR,103.2.30.0/23,🚀 节点选择,no-resolve
- - IP-CIDR,119.235.224.0/24,🚀 节点选择,no-resolve
- - IP-CIDR,119.235.232.0/24,🚀 节点选择,no-resolve
- - IP-CIDR,119.235.235.0/24,🚀 节点选择,no-resolve
- - IP-CIDR,119.235.236.0/23,🚀 节点选择,no-resolve
- - IP-CIDR,147.92.128.0/17,🚀 节点选择,no-resolve
- - IP-CIDR,203.104.128.0/19,🚀 节点选择,no-resolve
- - DOMAIN-SUFFIX,openai.com,🚀 节点选择
- - DOMAIN-SUFFIX,challenges.cloudflare.com,🚀 节点选择
- - DOMAIN-KEYWORD,1drv,🚀 节点选择
- - DOMAIN-KEYWORD,onedrive,🚀 节点选择
- - DOMAIN-KEYWORD,skydrive,🚀 节点选择
- - DOMAIN-SUFFIX,livefilestore.com,🚀 节点选择
- - DOMAIN-SUFFIX,oneclient.sfx.ms,🚀 节点选择
- - DOMAIN-SUFFIX,onedrive.com,🚀 节点选择
- - DOMAIN-SUFFIX,onedrive.live.com,🚀 节点选择
- - DOMAIN-SUFFIX,photos.live.com,🚀 节点选择
- - DOMAIN-SUFFIX,skydrive.wns.windows.com,🚀 节点选择
- - DOMAIN-SUFFIX,spoprod-a.akamaihd.net,🚀 节点选择
- - DOMAIN-SUFFIX,storage.live.com,🚀 节点选择
- - DOMAIN-SUFFIX,storage.msn.com,🚀 节点选择
- - DOMAIN-KEYWORD,porn,🚀 节点选择
- - DOMAIN-SUFFIX,8teenxxx.com,🚀 节点选择
- - DOMAIN-SUFFIX,ahcdn.com,🚀 节点选择
- - DOMAIN-SUFFIX,bcvcdn.com,🚀 节点选择
- - DOMAIN-SUFFIX,bongacams.com,🚀 节点选择
- - DOMAIN-SUFFIX,chaturbate.com,🚀 节点选择
- - DOMAIN-SUFFIX,dditscdn.com,🚀 节点选择
- - DOMAIN-SUFFIX,livejasmin.com,🚀 节点选择
- - DOMAIN-SUFFIX,phncdn.com,🚀 节点选择
- - DOMAIN-SUFFIX,phprcdn.com,🚀 节点选择
- - DOMAIN-SUFFIX,pornhub.com,🚀 节点选择
- - DOMAIN-SUFFIX,pornhubpremium.com,🚀 节点选择
- - DOMAIN-SUFFIX,rdtcdn.com,🚀 节点选择
- - DOMAIN-SUFFIX,redtube.com,🚀 节点选择
- - DOMAIN-SUFFIX,sb-cd.com,🚀 节点选择
- - DOMAIN-SUFFIX,spankbang.com,🚀 节点选择
- - DOMAIN-SUFFIX,t66y.com,🚀 节点选择
- - DOMAIN-SUFFIX,xhamster.com,🚀 节点选择
- - DOMAIN-SUFFIX,xnxx-cdn.com,🚀 节点选择
- - DOMAIN-SUFFIX,xnxx.com,🚀 节点选择
- - DOMAIN-SUFFIX,xvideos-cdn.com,🚀 节点选择
- - DOMAIN-SUFFIX,xvideos.com,🚀 节点选择
- - DOMAIN-SUFFIX,ypncdn.com,🚀 节点选择
- - DOMAIN-SUFFIX,pixiv.net,🚀 节点选择
- - DOMAIN-SUFFIX,pximg.net,🚀 节点选择
- - DOMAIN-SUFFIX,fanbox.cc,🚀 节点选择
- - DOMAIN-SUFFIX,amplitude.com,🚀 节点选择
- - DOMAIN-SUFFIX,firebaseio.com,🚀 节点选择
- - DOMAIN-SUFFIX,hockeyapp.net,🚀 节点选择
- - DOMAIN-SUFFIX,readdle.com,🚀 节点选择
- - DOMAIN-SUFFIX,smartmailcloud.com,🚀 节点选择
- - DOMAIN-SUFFIX,fanatical.com,🚀 节点选择
- - DOMAIN-SUFFIX,humblebundle.com,🚀 节点选择
- - DOMAIN-SUFFIX,underlords.com,🚀 节点选择
- - DOMAIN-SUFFIX,valvesoftware.com,🚀 节点选择
- - DOMAIN-SUFFIX,playartifact.com,🚀 节点选择
- - DOMAIN-SUFFIX,steam-chat.com,🚀 节点选择
- - DOMAIN-SUFFIX,steamcommunity.com,🚀 节点选择
- - DOMAIN-SUFFIX,steamgames.com,🚀 节点选择
- - DOMAIN-SUFFIX,steampowered.com,🚀 节点选择
- - DOMAIN-SUFFIX,steamserver.net,🚀 节点选择
- - DOMAIN-SUFFIX,steamstatic.com,🚀 节点选择
- - DOMAIN-SUFFIX,steamstat.us,🚀 节点选择
- - DOMAIN,steambroadcast.akamaized.net,🚀 节点选择
- - DOMAIN,steamcommunity-a.akamaihd.net,🚀 节点选择
- - DOMAIN,steamstore-a.akamaihd.net,🚀 节点选择
- - DOMAIN,steamusercontent-a.akamaihd.net,🚀 节点选择
- - DOMAIN,steamuserimages-a.akamaihd.net,🚀 节点选择
- - DOMAIN,steampipe.akamaized.net,🚀 节点选择
- - DOMAIN-SUFFIX,tap.io,🚀 节点选择
- - DOMAIN-SUFFIX,taptap.tw,🚀 节点选择
- - DOMAIN-SUFFIX,twitch.tv,🚀 节点选择
- - DOMAIN-SUFFIX,ttvnw.net,🚀 节点选择
- - DOMAIN-SUFFIX,jtvnw.net,🚀 节点选择
- - DOMAIN-KEYWORD,ttvnw,🚀 节点选择
- - DOMAIN-SUFFIX,t.co,🚀 节点选择
- - DOMAIN-SUFFIX,twimg.co,🚀 节点选择
- - DOMAIN-SUFFIX,twimg.com,🚀 节点选择
- - DOMAIN-SUFFIX,twimg.org,🚀 节点选择
- - DOMAIN-SUFFIX,t.me,🚀 节点选择
- - DOMAIN-SUFFIX,tdesktop.com,🚀 节点选择
- - DOMAIN-SUFFIX,telegra.ph,🚀 节点选择
- - DOMAIN-SUFFIX,telegram.me,🚀 节点选择
- - DOMAIN-SUFFIX,telegram.org,🚀 节点选择
- - DOMAIN-SUFFIX,telesco.pe,🚀 节点选择
- - IP-CIDR,91.108.0.0/16,🚀 节点选择,no-resolve
- - IP-CIDR,109.239.140.0/24,🚀 节点选择,no-resolve
- - IP-CIDR,149.154.160.0/20,🚀 节点选择,no-resolve
- - IP-CIDR6,2001:67c:4e8::/48,🚀 节点选择,no-resolve
- - IP-CIDR6,2001:b28:f23d::/48,🚀 节点选择,no-resolve
- - IP-CIDR6,2001:b28:f23f::/48,🚀 节点选择,no-resolve
- - DOMAIN-SUFFIX,terabox.com,🚀 节点选择
- - DOMAIN-SUFFIX,teraboxcdn.com,🚀 节点选择
- - IP-CIDR,18.194.0.0/15,🚀 节点选择,no-resolve
- - IP-CIDR,34.224.0.0/12,🚀 节点选择,no-resolve
- - IP-CIDR,54.242.0.0/15,🚀 节点选择,no-resolve
- - IP-CIDR,50.22.198.204/30,🚀 节点选择,no-resolve
- - IP-CIDR,208.43.122.128/27,🚀 节点选择,no-resolve
- - IP-CIDR,108.168.174.0/16,🚀 节点选择,no-resolve
- - IP-CIDR,173.192.231.32/27,🚀 节点选择,no-resolve
- - IP-CIDR,158.85.5.192/27,🚀 节点选择,no-resolve
- - IP-CIDR,174.37.243.0/16,🚀 节点选择,no-resolve
- - IP-CIDR,158.85.46.128/27,🚀 节点选择,no-resolve
- - IP-CIDR,173.192.222.160/27,🚀 节点选择,no-resolve
- - IP-CIDR,184.173.128.0/17,🚀 节点选择,no-resolve
- - IP-CIDR,158.85.224.160/27,🚀 节点选择,no-resolve
- - IP-CIDR,75.126.150.0/16,🚀 节点选择,no-resolve
- - IP-CIDR,69.171.235.0/16,🚀 节点选择,no-resolve
- - DOMAIN-SUFFIX,mediawiki.org,🚀 节点选择
- - DOMAIN-SUFFIX,wikibooks.org,🚀 节点选择
- - DOMAIN-SUFFIX,wikidata.org,🚀 节点选择
- - DOMAIN-SUFFIX,wikileaks.org,🚀 节点选择
- - DOMAIN-SUFFIX,wikimedia.org,🚀 节点选择
- - DOMAIN-SUFFIX,wikinews.org,🚀 节点选择
- - DOMAIN-SUFFIX,wikipedia.org,🚀 节点选择
- - DOMAIN-SUFFIX,wikiquote.org,🚀 节点选择
- - DOMAIN-SUFFIX,wikisource.org,🚀 节点选择
- - DOMAIN-SUFFIX,wikiversity.org,🚀 节点选择
- - DOMAIN-SUFFIX,wikivoyage.org,🚀 节点选择
- - DOMAIN-SUFFIX,wiktionary.org,🚀 节点选择
- - DOMAIN-SUFFIX,zoom.us,🚀 节点选择
- - DOMAIN-SUFFIX,zoomgov.com,🚀 节点选择
- - DOMAIN-SUFFIX,neulion.com,🚀 节点选择
- - DOMAIN-SUFFIX,icntv.xyz,🚀 节点选择
- - DOMAIN-SUFFIX,flzbcdn.xyz,🚀 节点选择
- - DOMAIN-SUFFIX,ocnttv.com,🚀 节点选择
- - DOMAIN-SUFFIX,vikacg.com,🚀 节点选择
- - DOMAIN-SUFFIX,picjs.xyz,🚀 节点选择
  - DOMAIN-SUFFIX,13th.tech,🎯 全球直连
  - DOMAIN-SUFFIX,423down.com,🎯 全球直连
  - DOMAIN-SUFFIX,bokecc.com,🎯 全球直连
