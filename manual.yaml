@@ -5,221 +5,237 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 亚太地区 V2CROSS.COM, server: 160.19.78.75, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: Nk9asglDzHzjktVzTkvhaA, udp: true}
-  - {name: 🇺🇸 美国 Amazon数据中心, server: series-a1.samanehha.co, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: W74XFALLLuw6m5IA, udp: true}
+  - {name: 🇺🇸 美国 Amazon EC2服务器, server: 3.64.175.36, port: 22222, type: trojan, password: telegram-id-privatevpns, sni: trojan.burgerip.co.uk, skip-cert-verify: false, udp: true}
   - {name: 🇮🇳 印度 V2CROSS.COM, server: 202.78.162.5, port: 443, type: vmess, uuid: 2ff97c6d-8557-42a4-b43f-19c77c5959ea, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: irsoft.sytes.net}}, udp: true}
-  - {name: 🇩🇪 德国 黑森州法兰克福Amazon数据中心, server: 35.158.229.80, port: 22222, type: trojan, password: telegram-id-privatevpns, sni: trojan.burgerip.co.uk, skip-cert-verify: false, udp: true}
-  - {name: 🇨🇳 广东省广州市荔湾区 /天河区电信, server: 219.135.227.209, port: 15007, type: ss, cipher: aes-256-gcm, password: KGPWD7ZZY2F0ZYPY, udp: true}
-  - {name: 🇺🇸 美国 V2CROSS.COM, server: 69.50.95.53, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: 🇨🇳 广东省广州市荔湾区 /天河区电信 2, server: 219.135.227.209, port: 16015, type: ss, cipher: aes-256-gcm, password: CVPPFA5LEN1NRWWO, udp: true}
-  - {name: 亚太地区 V2CROSS.COM 2, server: soonjp.soon.guru, port: 40003, type: ss, cipher: chacha20-ietf-poly1305, password: ab8b625c-efb8-45cd-b509-c7cceabe0cc6, udp: true}
-  - {name: 🇫🇷 法国 国际航空电讯集团公司(SITA), server: 57.155.31.98, port: 80, type: vmess, uuid: b831381d-6324-4d53-ad4f-8cda48b30812, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 🇺🇸 美国 V2CROSS.COM 2, server: 173.244.56.6, port: 443, type: ss, cipher: aes-128-gcm, password: shadowsocks, udp: true}
-  - {name: 🇯🇵 日本 东京都Amazon数据中心, server: 18.183.142.73, port: 443, type: trojan, password: !<str> 3648425794742788096, sni: fun-ostrich.treefrog761.one, skip-cert-verify: false, udp: true}
-  - {name: 🇫🇷 法国 法国计算机科学大学, server: irvideo.cfd, port: 443, type: vmess, uuid: e537f2f5-2a0c-4f59-92c9-832ca6433bf3, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /linkws, headers: {Host: irvideo.cfd}}, udp: true}
-  - {name: 🇮🇪 爱尔兰 都柏林Amazon数据中心, server: 54.217.234.52, port: 22222, type: trojan, password: telegram-id-privatevpns, sni: trojan.burgerip.co.uk, skip-cert-verify: false, udp: true}
-  - {name: 🇺🇸 美国 俄亥俄州都柏林Amazon数据中心, server: 3.19.25.7, port: 22222, type: trojan, password: telegram-id-directvpn, sni: trojan.burgerip.co.uk, skip-cert-verify: false, udp: true}
-  - {name: 🇷🇺 俄罗斯 V2CROSS.COM, server: 185.242.86.156, port: 54170, type: ss, cipher: chacha20-ietf-poly1305, password: 36ZCHeabUSfKjfQEvJ4HDV, udp: true}
-  - {name: 🇫🇷 法国 国际航空电讯集团公司(SITA) 2, server: 57.155.30.207, port: 80, type: vmess, uuid: b831381d-6324-4d53-ad4f-8cda48b30812, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 🇺🇸 美国 Amazon数据中心 2, server: 13.39.212.195, port: 22222, type: trojan, password: telegram-id-privatevpns, sni: trojan.burgerip.co.uk, skip-cert-verify: false, udp: true}
+  - {name: 🇺🇸 美国 V2CROSS.COM, server: 69.50.95.53, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: 🇮🇪 爱尔兰 都柏林Amazon数据中心, server: 52.51.68.212, port: 22222, type: trojan, password: telegram-id-directvpn, sni: trojan.burgerip.co.uk, skip-cert-verify: false, udp: true}
+  - {name: 🇮🇹 意大利 V2CROSS.COM, server: 212.102.53.197, port: 443, type: ss, cipher: aes-128-gcm, password: shadowsocks, udp: true}
+  - {name: 🇮🇪 爱尔兰 V2CROSS.COM, server: 13.79.98.64, port: 55939, type: ss, cipher: chacha20-ietf-poly1305, password: 49JPbl6SMH1hDoskOR6irG, udp: true}
+  - {name: 乌克兰 V2CROSS.COM, server: 94.131.97.22, port: 5139, type: ss, cipher: chacha20-ietf-poly1305, password: cN5RRTw7vYadEdRcdIduix, udp: true}
+  - {name: 🇨🇳 江苏省 移动, server: 36.151.192.239, port: 42395, type: trojan, password: DNUMdmnJ, skip-cert-verify: false, udp: true}
+  - {name: 🇮🇳 印度 V2CROSS.COM 2, server: 202.78.162.5, port: 443, type: vmess, uuid: 118287d2-e968-42e1-80d0-12fa2f5d38d6, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: sahand.serveminecraft.net}}, udp: true}
+  - {name: 🇷🇺 俄罗斯 V2CROSS.COM, server: 185.22.155.228, port: 23456, type: ss, cipher: aes-256-gcm, password: dongtaiwang.com, udp: true}
   - {name: 🇵🇱 波兰 V2CROSS.COM, server: 193.243.147.128, port: 40368, type: ss, cipher: aes-256-gcm, password: 7BcLdsO1WweoGD0X, udp: true}
-  - {name: 🇺🇸 美国 华盛顿州西雅图市亚马逊(Amazon)公司数据中心, server: 35.176.239.206, port: 22222, type: trojan, password: telegram-id-privatevpns, sni: trojan.burgerip.co.uk, skip-cert-verify: false, udp: true}
-  - {name: 🇺🇸 美国 V2CROSS.COM 3, server: 69.50.95.53, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 🇩🇪 德国 V2CROSS.COM, server: 194.76.18.129, port: 443, type: trojan, password: tg-fq521free, sni: torjan.xn--xhq44j.eu.org, skip-cert-verify: false, udp: true}
-  - {name: 🇮🇪 爱尔兰 都柏林Amazon数据中心 2, server: 52.51.68.212, port: 22222, type: trojan, password: telegram-id-directvpn, sni: trojan.burgerip.co.uk, skip-cert-verify: false, udp: true}
+  - {name: 🇺🇸 美国 V2CROSS.COM 2, server: 69.50.95.53, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: 🇮🇳 印度 V2CROSS.COM 3, server: 202.78.162.5, port: 443, type: vmess, uuid: 716eded6-2201-4dbd-9d63-1638c9e8e677, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: pendar.onthewifi.com}}, udp: true}
+  - {name: 🇺🇸 美国 V2CROSS.COM 3, server: 69.50.95.53, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
+  - {name: 🇺🇸 美国 Amazon数据中心, server: series-a2.samanehha.co, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: W74XFALLLuw6m5IA, udp: true}
+  - {name: 🇨🇦 加拿大 安大略省多伦多BunnyCDN节点, server: 38.111.114.114, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: 🇺🇸 美国 惠普HP, server: series-a2-me.varzesh360.co, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: Bog0ELmMM9DSxDdQ, udp: true}
+  - {name: 🇸🇬 新加坡 V2CROSS.COM, server: h.522226.xyz, port: 45800, type: trojan, password: xjN4xcuPGg55, skip-cert-verify: false, udp: true}
+  - {name: 🇫🇷 法国 法国计算机科学大学, server: 163.5.159.231, port: 443, type: vmess, uuid: e537f2f5-2a0c-4f59-92c9-832ca6433bf3, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /linkws, headers: {Host: irvideo.cfd}}, udp: true}
+  - {name: 🇺🇸 美国 V2CROSS.COM 4, server: 69.50.95.53, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: 🇺🇸 美国 Amazon数据中心 2, server: 18.171.33.15, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: mps3FwmDjLrWaOVg, udp: true}
+  - {name: 🇮🇪 爱尔兰 都柏林Amazon数据中心 2, server: 54.228.216.215, port: 22222, type: trojan, password: telegram-id-directvpn, sni: trojan.burgerip.co.uk, skip-cert-verify: false, udp: true}
+  - {name: 🇷🇴 罗马尼亚 V2CROSS.COM, server: 86.104.75.103, port: 49264, type: ss, cipher: chacha20-ietf-poly1305, password: LI4obOEIDLzDjd7xYlhhTJ, udp: true}
+  - {name: 🇨🇳 广东省广州市荔湾区 /天河区电信, server: 219.135.227.209, port: 15007, type: ss, cipher: aes-256-gcm, password: KGPWD7ZZY2F0ZYPY, udp: true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 亚太地区 V2CROSS.COM
-      - 🇺🇸 美国 Amazon数据中心
+      - 🇺🇸 美国 Amazon EC2服务器
       - 🇮🇳 印度 V2CROSS.COM
-      - 🇩🇪 德国 黑森州法兰克福Amazon数据中心
-      - 🇨🇳 广东省广州市荔湾区 /天河区电信
       - 🇺🇸 美国 V2CROSS.COM
-      - 🇨🇳 广东省广州市荔湾区 /天河区电信 2
-      - 亚太地区 V2CROSS.COM 2
-      - 🇫🇷 法国 国际航空电讯集团公司(SITA)
-      - 🇺🇸 美国 V2CROSS.COM 2
-      - 🇯🇵 日本 东京都Amazon数据中心
-      - 🇫🇷 法国 法国计算机科学大学
       - 🇮🇪 爱尔兰 都柏林Amazon数据中心
-      - 🇺🇸 美国 俄亥俄州都柏林Amazon数据中心
+      - 🇮🇹 意大利 V2CROSS.COM
+      - 🇮🇪 爱尔兰 V2CROSS.COM
+      - 乌克兰 V2CROSS.COM
+      - 🇨🇳 江苏省 移动
+      - 🇮🇳 印度 V2CROSS.COM 2
       - 🇷🇺 俄罗斯 V2CROSS.COM
-      - 🇫🇷 法国 国际航空电讯集团公司(SITA) 2
-      - 🇺🇸 美国 Amazon数据中心 2
       - 🇵🇱 波兰 V2CROSS.COM
-      - 🇺🇸 美国 华盛顿州西雅图市亚马逊(Amazon)公司数据中心
+      - 🇺🇸 美国 V2CROSS.COM 2
+      - 🇮🇳 印度 V2CROSS.COM 3
       - 🇺🇸 美国 V2CROSS.COM 3
-      - 🇩🇪 德国 V2CROSS.COM
+      - 🇺🇸 美国 Amazon数据中心
+      - 🇨🇦 加拿大 安大略省多伦多BunnyCDN节点
+      - 🇺🇸 美国 惠普HP
+      - 🇸🇬 新加坡 V2CROSS.COM
+      - 🇫🇷 法国 法国计算机科学大学
+      - 🇺🇸 美国 V2CROSS.COM 4
+      - 🇺🇸 美国 Amazon数据中心 2
       - 🇮🇪 爱尔兰 都柏林Amazon数据中心 2
+      - 🇷🇴 罗马尼亚 V2CROSS.COM
+      - 🇨🇳 广东省广州市荔湾区 /天河区电信
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 亚太地区 V2CROSS.COM
-      - 🇺🇸 美国 Amazon数据中心
+      - 🇺🇸 美国 Amazon EC2服务器
       - 🇮🇳 印度 V2CROSS.COM
-      - 🇩🇪 德国 黑森州法兰克福Amazon数据中心
-      - 🇨🇳 广东省广州市荔湾区 /天河区电信
       - 🇺🇸 美国 V2CROSS.COM
-      - 🇨🇳 广东省广州市荔湾区 /天河区电信 2
-      - 亚太地区 V2CROSS.COM 2
-      - 🇫🇷 法国 国际航空电讯集团公司(SITA)
-      - 🇺🇸 美国 V2CROSS.COM 2
-      - 🇯🇵 日本 东京都Amazon数据中心
-      - 🇫🇷 法国 法国计算机科学大学
       - 🇮🇪 爱尔兰 都柏林Amazon数据中心
-      - 🇺🇸 美国 俄亥俄州都柏林Amazon数据中心
+      - 🇮🇹 意大利 V2CROSS.COM
+      - 🇮🇪 爱尔兰 V2CROSS.COM
+      - 乌克兰 V2CROSS.COM
+      - 🇨🇳 江苏省 移动
+      - 🇮🇳 印度 V2CROSS.COM 2
       - 🇷🇺 俄罗斯 V2CROSS.COM
-      - 🇫🇷 法国 国际航空电讯集团公司(SITA) 2
-      - 🇺🇸 美国 Amazon数据中心 2
       - 🇵🇱 波兰 V2CROSS.COM
-      - 🇺🇸 美国 华盛顿州西雅图市亚马逊(Amazon)公司数据中心
+      - 🇺🇸 美国 V2CROSS.COM 2
+      - 🇮🇳 印度 V2CROSS.COM 3
       - 🇺🇸 美国 V2CROSS.COM 3
-      - 🇩🇪 德国 V2CROSS.COM
+      - 🇺🇸 美国 Amazon数据中心
+      - 🇨🇦 加拿大 安大略省多伦多BunnyCDN节点
+      - 🇺🇸 美国 惠普HP
+      - 🇸🇬 新加坡 V2CROSS.COM
+      - 🇫🇷 法国 法国计算机科学大学
+      - 🇺🇸 美国 V2CROSS.COM 4
+      - 🇺🇸 美国 Amazon数据中心 2
       - 🇮🇪 爱尔兰 都柏林Amazon数据中心 2
+      - 🇷🇴 罗马尼亚 V2CROSS.COM
+      - 🇨🇳 广东省广州市荔湾区 /天河区电信
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 亚太地区 V2CROSS.COM
-      - 🇺🇸 美国 Amazon数据中心
+      - 🇺🇸 美国 Amazon EC2服务器
       - 🇮🇳 印度 V2CROSS.COM
-      - 🇩🇪 德国 黑森州法兰克福Amazon数据中心
-      - 🇨🇳 广东省广州市荔湾区 /天河区电信
       - 🇺🇸 美国 V2CROSS.COM
-      - 🇨🇳 广东省广州市荔湾区 /天河区电信 2
-      - 亚太地区 V2CROSS.COM 2
-      - 🇫🇷 法国 国际航空电讯集团公司(SITA)
-      - 🇺🇸 美国 V2CROSS.COM 2
-      - 🇯🇵 日本 东京都Amazon数据中心
-      - 🇫🇷 法国 法国计算机科学大学
       - 🇮🇪 爱尔兰 都柏林Amazon数据中心
-      - 🇺🇸 美国 俄亥俄州都柏林Amazon数据中心
+      - 🇮🇹 意大利 V2CROSS.COM
+      - 🇮🇪 爱尔兰 V2CROSS.COM
+      - 乌克兰 V2CROSS.COM
+      - 🇨🇳 江苏省 移动
+      - 🇮🇳 印度 V2CROSS.COM 2
       - 🇷🇺 俄罗斯 V2CROSS.COM
-      - 🇫🇷 法国 国际航空电讯集团公司(SITA) 2
-      - 🇺🇸 美国 Amazon数据中心 2
       - 🇵🇱 波兰 V2CROSS.COM
-      - 🇺🇸 美国 华盛顿州西雅图市亚马逊(Amazon)公司数据中心
+      - 🇺🇸 美国 V2CROSS.COM 2
+      - 🇮🇳 印度 V2CROSS.COM 3
       - 🇺🇸 美国 V2CROSS.COM 3
-      - 🇩🇪 德国 V2CROSS.COM
+      - 🇺🇸 美国 Amazon数据中心
+      - 🇨🇦 加拿大 安大略省多伦多BunnyCDN节点
+      - 🇺🇸 美国 惠普HP
+      - 🇸🇬 新加坡 V2CROSS.COM
+      - 🇫🇷 法国 法国计算机科学大学
+      - 🇺🇸 美国 V2CROSS.COM 4
+      - 🇺🇸 美国 Amazon数据中心 2
       - 🇮🇪 爱尔兰 都柏林Amazon数据中心 2
+      - 🇷🇴 罗马尼亚 V2CROSS.COM
+      - 🇨🇳 广东省广州市荔湾区 /天河区电信
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 亚太地区 V2CROSS.COM
-      - 🇺🇸 美国 Amazon数据中心
+      - 🇺🇸 美国 Amazon EC2服务器
       - 🇮🇳 印度 V2CROSS.COM
-      - 🇩🇪 德国 黑森州法兰克福Amazon数据中心
-      - 🇨🇳 广东省广州市荔湾区 /天河区电信
       - 🇺🇸 美国 V2CROSS.COM
-      - 🇨🇳 广东省广州市荔湾区 /天河区电信 2
-      - 亚太地区 V2CROSS.COM 2
-      - 🇫🇷 法国 国际航空电讯集团公司(SITA)
-      - 🇺🇸 美国 V2CROSS.COM 2
-      - 🇯🇵 日本 东京都Amazon数据中心
-      - 🇫🇷 法国 法国计算机科学大学
       - 🇮🇪 爱尔兰 都柏林Amazon数据中心
-      - 🇺🇸 美国 俄亥俄州都柏林Amazon数据中心
+      - 🇮🇹 意大利 V2CROSS.COM
+      - 🇮🇪 爱尔兰 V2CROSS.COM
+      - 乌克兰 V2CROSS.COM
+      - 🇨🇳 江苏省 移动
+      - 🇮🇳 印度 V2CROSS.COM 2
       - 🇷🇺 俄罗斯 V2CROSS.COM
-      - 🇫🇷 法国 国际航空电讯集团公司(SITA) 2
-      - 🇺🇸 美国 Amazon数据中心 2
       - 🇵🇱 波兰 V2CROSS.COM
-      - 🇺🇸 美国 华盛顿州西雅图市亚马逊(Amazon)公司数据中心
+      - 🇺🇸 美国 V2CROSS.COM 2
+      - 🇮🇳 印度 V2CROSS.COM 3
       - 🇺🇸 美国 V2CROSS.COM 3
-      - 🇩🇪 德国 V2CROSS.COM
+      - 🇺🇸 美国 Amazon数据中心
+      - 🇨🇦 加拿大 安大略省多伦多BunnyCDN节点
+      - 🇺🇸 美国 惠普HP
+      - 🇸🇬 新加坡 V2CROSS.COM
+      - 🇫🇷 法国 法国计算机科学大学
+      - 🇺🇸 美国 V2CROSS.COM 4
+      - 🇺🇸 美国 Amazon数据中心 2
       - 🇮🇪 爱尔兰 都柏林Amazon数据中心 2
+      - 🇷🇴 罗马尼亚 V2CROSS.COM
+      - 🇨🇳 广东省广州市荔湾区 /天河区电信
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 亚太地区 V2CROSS.COM
-      - 🇺🇸 美国 Amazon数据中心
+      - 🇺🇸 美国 Amazon EC2服务器
       - 🇮🇳 印度 V2CROSS.COM
-      - 🇩🇪 德国 黑森州法兰克福Amazon数据中心
-      - 🇨🇳 广东省广州市荔湾区 /天河区电信
       - 🇺🇸 美国 V2CROSS.COM
-      - 🇨🇳 广东省广州市荔湾区 /天河区电信 2
-      - 亚太地区 V2CROSS.COM 2
-      - 🇫🇷 法国 国际航空电讯集团公司(SITA)
-      - 🇺🇸 美国 V2CROSS.COM 2
-      - 🇯🇵 日本 东京都Amazon数据中心
-      - 🇫🇷 法国 法国计算机科学大学
       - 🇮🇪 爱尔兰 都柏林Amazon数据中心
-      - 🇺🇸 美国 俄亥俄州都柏林Amazon数据中心
+      - 🇮🇹 意大利 V2CROSS.COM
+      - 🇮🇪 爱尔兰 V2CROSS.COM
+      - 乌克兰 V2CROSS.COM
+      - 🇨🇳 江苏省 移动
+      - 🇮🇳 印度 V2CROSS.COM 2
       - 🇷🇺 俄罗斯 V2CROSS.COM
-      - 🇫🇷 法国 国际航空电讯集团公司(SITA) 2
-      - 🇺🇸 美国 Amazon数据中心 2
       - 🇵🇱 波兰 V2CROSS.COM
-      - 🇺🇸 美国 华盛顿州西雅图市亚马逊(Amazon)公司数据中心
+      - 🇺🇸 美国 V2CROSS.COM 2
+      - 🇮🇳 印度 V2CROSS.COM 3
       - 🇺🇸 美国 V2CROSS.COM 3
-      - 🇩🇪 德国 V2CROSS.COM
+      - 🇺🇸 美国 Amazon数据中心
+      - 🇨🇦 加拿大 安大略省多伦多BunnyCDN节点
+      - 🇺🇸 美国 惠普HP
+      - 🇸🇬 新加坡 V2CROSS.COM
+      - 🇫🇷 法国 法国计算机科学大学
+      - 🇺🇸 美国 V2CROSS.COM 4
+      - 🇺🇸 美国 Amazon数据中心 2
       - 🇮🇪 爱尔兰 都柏林Amazon数据中心 2
+      - 🇷🇴 罗马尼亚 V2CROSS.COM
+      - 🇨🇳 广东省广州市荔湾区 /天河区电信
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 亚太地区 V2CROSS.COM
-      - 🇺🇸 美国 Amazon数据中心
+      - 🇺🇸 美国 Amazon EC2服务器
       - 🇮🇳 印度 V2CROSS.COM
-      - 🇩🇪 德国 黑森州法兰克福Amazon数据中心
-      - 🇨🇳 广东省广州市荔湾区 /天河区电信
       - 🇺🇸 美国 V2CROSS.COM
-      - 🇨🇳 广东省广州市荔湾区 /天河区电信 2
-      - 亚太地区 V2CROSS.COM 2
-      - 🇫🇷 法国 国际航空电讯集团公司(SITA)
-      - 🇺🇸 美国 V2CROSS.COM 2
-      - 🇯🇵 日本 东京都Amazon数据中心
-      - 🇫🇷 法国 法国计算机科学大学
       - 🇮🇪 爱尔兰 都柏林Amazon数据中心
-      - 🇺🇸 美国 俄亥俄州都柏林Amazon数据中心
+      - 🇮🇹 意大利 V2CROSS.COM
+      - 🇮🇪 爱尔兰 V2CROSS.COM
+      - 乌克兰 V2CROSS.COM
+      - 🇨🇳 江苏省 移动
+      - 🇮🇳 印度 V2CROSS.COM 2
       - 🇷🇺 俄罗斯 V2CROSS.COM
-      - 🇫🇷 法国 国际航空电讯集团公司(SITA) 2
-      - 🇺🇸 美国 Amazon数据中心 2
       - 🇵🇱 波兰 V2CROSS.COM
-      - 🇺🇸 美国 华盛顿州西雅图市亚马逊(Amazon)公司数据中心
+      - 🇺🇸 美国 V2CROSS.COM 2
+      - 🇮🇳 印度 V2CROSS.COM 3
       - 🇺🇸 美国 V2CROSS.COM 3
-      - 🇩🇪 德国 V2CROSS.COM
+      - 🇺🇸 美国 Amazon数据中心
+      - 🇨🇦 加拿大 安大略省多伦多BunnyCDN节点
+      - 🇺🇸 美国 惠普HP
+      - 🇸🇬 新加坡 V2CROSS.COM
+      - 🇫🇷 法国 法国计算机科学大学
+      - 🇺🇸 美国 V2CROSS.COM 4
+      - 🇺🇸 美国 Amazon数据中心 2
       - 🇮🇪 爱尔兰 都柏林Amazon数据中心 2
+      - 🇷🇴 罗马尼亚 V2CROSS.COM
+      - 🇨🇳 广东省广州市荔湾区 /天河区电信
   - name: 📢 谷歌FCM
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 亚太地区 V2CROSS.COM
-      - 🇺🇸 美国 Amazon数据中心
+      - 🇺🇸 美国 Amazon EC2服务器
       - 🇮🇳 印度 V2CROSS.COM
-      - 🇩🇪 德国 黑森州法兰克福Amazon数据中心
-      - 🇨🇳 广东省广州市荔湾区 /天河区电信
       - 🇺🇸 美国 V2CROSS.COM
-      - 🇨🇳 广东省广州市荔湾区 /天河区电信 2
-      - 亚太地区 V2CROSS.COM 2
-      - 🇫🇷 法国 国际航空电讯集团公司(SITA)
-      - 🇺🇸 美国 V2CROSS.COM 2
-      - 🇯🇵 日本 东京都Amazon数据中心
-      - 🇫🇷 法国 法国计算机科学大学
       - 🇮🇪 爱尔兰 都柏林Amazon数据中心
-      - 🇺🇸 美国 俄亥俄州都柏林Amazon数据中心
+      - 🇮🇹 意大利 V2CROSS.COM
+      - 🇮🇪 爱尔兰 V2CROSS.COM
+      - 乌克兰 V2CROSS.COM
+      - 🇨🇳 江苏省 移动
+      - 🇮🇳 印度 V2CROSS.COM 2
       - 🇷🇺 俄罗斯 V2CROSS.COM
-      - 🇫🇷 法国 国际航空电讯集团公司(SITA) 2
-      - 🇺🇸 美国 Amazon数据中心 2
       - 🇵🇱 波兰 V2CROSS.COM
-      - 🇺🇸 美国 华盛顿州西雅图市亚马逊(Amazon)公司数据中心
+      - 🇺🇸 美国 V2CROSS.COM 2
+      - 🇮🇳 印度 V2CROSS.COM 3
       - 🇺🇸 美国 V2CROSS.COM 3
-      - 🇩🇪 德国 V2CROSS.COM
+      - 🇺🇸 美国 Amazon数据中心
+      - 🇨🇦 加拿大 安大略省多伦多BunnyCDN节点
+      - 🇺🇸 美国 惠普HP
+      - 🇸🇬 新加坡 V2CROSS.COM
+      - 🇫🇷 法国 法国计算机科学大学
+      - 🇺🇸 美国 V2CROSS.COM 4
+      - 🇺🇸 美国 Amazon数据中心 2
       - 🇮🇪 爱尔兰 都柏林Amazon数据中心 2
+      - 🇷🇴 罗马尼亚 V2CROSS.COM
+      - 🇨🇳 广东省广州市荔湾区 /天河区电信
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -242,28 +258,30 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 亚太地区 V2CROSS.COM
-      - 🇺🇸 美国 Amazon数据中心
+      - 🇺🇸 美国 Amazon EC2服务器
       - 🇮🇳 印度 V2CROSS.COM
-      - 🇩🇪 德国 黑森州法兰克福Amazon数据中心
-      - 🇨🇳 广东省广州市荔湾区 /天河区电信
       - 🇺🇸 美国 V2CROSS.COM
-      - 🇨🇳 广东省广州市荔湾区 /天河区电信 2
-      - 亚太地区 V2CROSS.COM 2
-      - 🇫🇷 法国 国际航空电讯集团公司(SITA)
-      - 🇺🇸 美国 V2CROSS.COM 2
-      - 🇯🇵 日本 东京都Amazon数据中心
-      - 🇫🇷 法国 法国计算机科学大学
       - 🇮🇪 爱尔兰 都柏林Amazon数据中心
-      - 🇺🇸 美国 俄亥俄州都柏林Amazon数据中心
+      - 🇮🇹 意大利 V2CROSS.COM
+      - 🇮🇪 爱尔兰 V2CROSS.COM
+      - 乌克兰 V2CROSS.COM
+      - 🇨🇳 江苏省 移动
+      - 🇮🇳 印度 V2CROSS.COM 2
       - 🇷🇺 俄罗斯 V2CROSS.COM
-      - 🇫🇷 法国 国际航空电讯集团公司(SITA) 2
-      - 🇺🇸 美国 Amazon数据中心 2
       - 🇵🇱 波兰 V2CROSS.COM
-      - 🇺🇸 美国 华盛顿州西雅图市亚马逊(Amazon)公司数据中心
+      - 🇺🇸 美国 V2CROSS.COM 2
+      - 🇮🇳 印度 V2CROSS.COM 3
       - 🇺🇸 美国 V2CROSS.COM 3
-      - 🇩🇪 德国 V2CROSS.COM
+      - 🇺🇸 美国 Amazon数据中心
+      - 🇨🇦 加拿大 安大略省多伦多BunnyCDN节点
+      - 🇺🇸 美国 惠普HP
+      - 🇸🇬 新加坡 V2CROSS.COM
+      - 🇫🇷 法国 法国计算机科学大学
+      - 🇺🇸 美国 V2CROSS.COM 4
+      - 🇺🇸 美国 Amazon数据中心 2
       - 🇮🇪 爱尔兰 都柏林Amazon数据中心 2
+      - 🇷🇴 罗马尼亚 V2CROSS.COM
+      - 🇨🇳 广东省广州市荔湾区 /天河区电信
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
