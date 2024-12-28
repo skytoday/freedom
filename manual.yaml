@@ -5,277 +5,237 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 🇺🇸 美国 CloudFlare节点, server: ylks.zhuk.us.kg, port: 443, type: vmess, uuid: e8fa89a3-8e16-43dd-fd7c-1f4b04316186, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /ylks, headers: {Host: ylks.zhuk.us.kg}}, udp: true}
-  - {name: 🇨🇳 广东省广州市 移动, server: 183.233.187.157, port: 20001, type: ss, cipher: chacha20-ietf-poly1305, password: 99301d55-a41f-4919-986b-1435996533aa, udp: true}
-  - {name: 🇬🇷 希腊 V2CROSS.COM, server: 144.24.90.107, port: 443, type: vmess, uuid: e8fa89a3-8e16-43dd-fd7c-1f4b04316186, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /ylks, headers: {Host: ylks.zhuk.us.kg}}, udp: true}
-  - {name: 🇺🇸 美国 华盛顿Cogent通信公司, server: 38.110.1.105, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: 🇨🇿 捷克 V2CROSS.COM, server: 198.105.123.190, port: 46902, type: ss, cipher: chacha20-ietf-poly1305, password: 2UrSffeNABXGXXfNhoL6xBUnh1RzqMizrQ2s9QfC38P2YPuYPRTqW5zZg6jGisiNhkzM4SRjF6nzvFb18GPtESWoXWjhqyC8, udp: true}
-  - {name: 🇺🇸 美国 Fastly全球Anycast节点, server: gov.uk, port: 443, type: vmess, uuid: 77848824-93b7-4b89-ffd0-e91afff406ce, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /77848824, headers: {Host: zheshiscp.com}}, udp: true}
-  - {name: 🇯🇵 日本 阿里云, server: 47.91.18.127, port: 443, type: vmess, uuid: e8fa89a3-8e16-43dd-fd7c-1f4b04316186, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /ylks, headers: {Host: ylks.zhuk.us.kg}}, udp: true}
-  - {name: 🇫🇷 法国 法国计算机科学大学, server: 163.5.159.231, port: 443, type: vmess, uuid: e537f2f5-2a0c-4f59-92c9-832ca6433bf3, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /linkws, headers: {Host: irvideo.cfd}}, udp: true}
-  - {name: 🇺🇸 美国 Xerox, server: 13.51.128.154, port: 22222, type: trojan, password: telegram-id-privatevpns, sni: trojan.burgerip.co.uk, skip-cert-verify: false, udp: true}
-  - {name: 🇺🇸 美国 Amazon EC2服务器, server: 3.67.20.48, port: 22222, type: trojan, password: telegram-id-privatevpns, sni: trojan.burgerip.co.uk, skip-cert-verify: false, udp: true}
-  - {name: 🇩🇪 德国 V2CROSS.COM, server: 194.76.18.129, port: 443, type: trojan, password: tg-fq521free, sni: torjan.xn--xhq44j.eu.org, skip-cert-verify: false, udp: true}
-  - {name: 🇮🇪 爱尔兰 V2CROSS.COM, server: 13.79.98.64, port: 55939, type: ss, cipher: chacha20-ietf-poly1305, password: 49JPbl6SMH1hDoskOR6irG, udp: true}
-  - {name: 🇺🇸 美国 V2CROSS.COM, server: bz02.ssr.ee, port: 443, type: trojan, password: 9d0a75d2-f747-4afa-b43f-d208af9e8f9a, sni: bz02.ssr.ee, skip-cert-verify: false, udp: true}
-  - {name: 🇺🇸 美国 CloudFlare节点 2, server: 104.21.82.183, port: 8880, type: vmess, uuid: 5a7021e0-26b4-45d6-b175-fe551601ca97, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: server26.beheshtbaneh.com}}, udp: true}
-  - {name: 🇺🇸 美国 Fastly全球Anycast节点 2, server: 151.101.194.168, port: 80, type: vmess, uuid: beb7d098-48ba-4be8-a47a-758bf3c470b8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: amd.al}}, udp: true}
-  - {name: 🇺🇸 美国 华盛顿Cogent通信公司 2, server: 38.110.1.105, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 🇺🇸 美国 Fastly全球Anycast节点 3, server: 151.101.2.216, port: 80, type: vmess, uuid: 545485da-9ff4-48c5-ae94-45e6e4ee7d26, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /racevpn, headers: {Host: 6606.com}}, udp: true}
-  - {name: 🇦🇺 澳大利亚 V2CROSS.COM, server: 160.30.21.105, port: 443, type: trojan, password: 94d219c9-1afc-4d42-b090-8b3794764380, sni: std1.loadingip.com, skip-cert-verify: false, udp: true}
-  - {name: 🇺🇸 美国 Amazon数据中心, server: 44.215.250.9, port: 22222, type: trojan, password: telegram-id-directvpn, sni: trojan.burgerip.co.uk, skip-cert-verify: false, udp: true}
-  - {name: 🇨🇦 加拿大 魁北克省蒙特利尔Amazon数据中心, server: 99.79.151.157, port: 22222, type: trojan, password: telegram-id-directvpn, sni: trojan.burgerip.co.uk, skip-cert-verify: false, udp: true}
-  - {name: 🇺🇸 美国 华盛顿Cogent通信公司 3, server: 38.110.1.105, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: 🇬🇧 英国 伦敦Amazon数据中心, server: 35.179.23.7, port: 22222, type: trojan, password: telegram-id-privatevpns, sni: trojan.burgerip.co.uk, skip-cert-verify: false, udp: true}
-  - {name: 🇮🇹 意大利 V2CROSS.COM, server: 212.102.53.197, port: 443, type: ss, cipher: aes-128-gcm, password: shadowsocks, udp: true}
-  - {name: 🇺🇸 美国 华盛顿Cogent通信公司 4, server: 38.110.1.105, port: 9090, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 🇮🇪 爱尔兰都柏林 亚马逊云, server: 3.254.216.124, port: 22222, type: trojan, password: telegram-id-directvpn, sni: trojan.burgerip.co.uk, skip-cert-verify: false, udp: true}
+  - {name: 🇮🇷 伊朗 V2CROSS.COM, server: 185.29.223.164, port: 32718, type: vmess, uuid: c398fa1f-fac5-4d76-9452-f0aee44cbc66, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 🇺🇸 美国 华盛顿Cogent通信公司, server: 38.110.1.105, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: 🇮🇳 印度 V2CROSS.COM, server: 202.78.162.5, port: 443, type: vmess, uuid: 118287d2-e968-42e1-80d0-12fa2f5d38d6, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: sahand.serveminecraft.net}}, udp: true}
+  - {name: 广东省湛江市 移动, server: 120.198.71.214, port: 34493, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 🇺🇸 美国 华盛顿Cogent通信公司 2, server: 38.110.1.105, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: 🇨🇳 广东省广州市 移动, server: 183.236.51.23, port: 53002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 🇺🇸 美国 Amazon数据中心, server: 13.36.181.149, port: 22222, type: trojan, password: telegram-id-privatevpns, sni: trojan.burgerip.co.uk, skip-cert-verify: false, udp: true}
+  - {name: 🇺🇸 美国 加州, server: 216.24.57.30, port: 443, type: trojan, password: tg-fq521free, sni: torjan.xn--xhq44j.eu.org, skip-cert-verify: false, udp: true}
+  - {name: 🇮🇳 印度 V2CROSS.COM 2, server: 202.78.162.5, port: 443, type: vmess, uuid: 716eded6-2201-4dbd-9d63-1638c9e8e677, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: pendar.onthewifi.com}}, udp: true}
+  - {name: 🇨🇳 广东省广州市 移动 2, server: soonjp.soon.guru, port: 40003, type: ss, cipher: chacha20-ietf-poly1305, password: ab8b625c-efb8-45cd-b509-c7cceabe0cc6, udp: true}
+  - {name: 🇺🇸 美国 Sprint网络, server: 63.177.34.220, port: 22222, type: trojan, password: telegram-id-directvpn, sni: trojan.burgerip.co.uk, skip-cert-verify: false, udp: true}
+  - {name: 🇺🇸 美国 CloudFlare节点, server: 104.16.60.8, port: 8880, type: vmess, uuid: f584de15-2034-4170-a723-f48c2bae5e0f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /afrhms16v.bestxray.buzz/linkws, headers: {Host: 8shhebsj78wjisnbhsjvess-pond-6cc6.cerog91216.workers.dev}}, udp: true}
+  - {name: 🇺🇸 美国, server: 40.172.132.113, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: u17T3BvpYaaiuW2c, udp: true}
+  - {name: 🇺🇸 美国 CloudFlare节点 2, server: 104.16.60.8, port: 2095, type: vmess, uuid: 441da342-ce90-441e-bff9-d2ceb55e68ca, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /ivideos.sbs/linkws, headers: {Host: 8eh-band-d994.gijica5932.workers.dev}}, udp: true}
+  - {name: 🇺🇸 美国 V2CROSS.COM, server: 208.67.105.87, port: 42501, type: ss, cipher: chacha20-ietf-poly1305, password: nq96KftrZAj3LuFQESqmn44Mo5oCuo2cipoEsae25mrmHG2oJ4VT37scBfVBpN5DWtUELZutVhhXs8Le5B8fZ9hLn9ytwvbf, udp: true}
   - {name: 🇷🇺 俄罗斯 V2CROSS.COM, server: 185.22.155.228, port: 23456, type: ss, cipher: aes-256-gcm, password: dongtaiwang.com, udp: true}
-  - {name: 🇺🇸 美国 Amazon EC2服务器 2, server: 3.76.206.85, port: 443, type: vmess, uuid: e8fa89a3-8e16-43dd-fd7c-1f4b04316186, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /ylks, headers: {Host: ylks.zhuk.us.kg}}, udp: true}
-  - {name: 🇫🇷 法国 法国计算机科学大学 2, server: irvideo.cfd, port: 443, type: vmess, uuid: e537f2f5-2a0c-4f59-92c9-832ca6433bf3, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /linkws, headers: {Host: irvideo.cfd}}, udp: true}
-  - {name: 欧盟 V2CROSS.COM, server: 45.67.215.95, port: 443, type: trojan, password: tg-fq521free, sni: torjan.xn--xhq44j.eu.org, skip-cert-verify: false, udp: true}
+  - {name: 🇮🇪 爱尔兰 都柏林Amazon数据中心, server: 54.217.32.193, port: 22222, type: trojan, password: telegram-id-privatevpns, sni: trojan.burgerip.co.uk, skip-cert-verify: false, udp: true}
+  - {name: 🇺🇸 美国 Fastly全球Anycast节点, server: 151.101.194.133, port: 443, type: vmess, uuid: 545485da-9ff4-48c5-ae94-45e6e4ee7d26, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: mio.splashthat.com, network: ws, ws-opts: {path: /racevpn, headers: {Host: 6606.com}}, udp: true}
+  - {name: 🇨🇦 加拿大 魁北克省蒙特利尔Amazon数据中心, server: 99.79.151.157, port: 22222, type: trojan, password: telegram-id-directvpn, sni: trojan.burgerip.co.uk, skip-cert-verify: false, udp: true}
+  - {name: 🇬🇧 英国 伦敦Amazon数据中心, server: 35.179.23.7, port: 22222, type: trojan, password: telegram-id-privatevpns, sni: trojan.burgerip.co.uk, skip-cert-verify: false, udp: true}
+  - {name: 🇺🇸 美国 华盛顿Cogent通信公司 3, server: 38.110.1.105, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: 🇺🇸 美国 CloudFlare节点 3, server: 104.16.61.8, port: 8080, type: vmess, uuid: 441da342-ce90-441e-bff9-d2ceb55e68ca, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /ivideos.sbs/linkws, headers: {Host: vmess.taxar71054.workers.dev}}, udp: true}
+  - {name: 🇺🇸 美国 惠普HP, server: 15.157.81.48, port: 22222, type: trojan, password: telegram-id-directvpn, sni: trojan.burgerip.co.uk, skip-cert-verify: false, udp: true}
+  - {name: 🇫🇷 法国 巴黎Amazon数据中心, server: 15.188.234.37, port: 22222, type: trojan, password: telegram-id-privatevpns, sni: trojan.burgerip.co.uk, skip-cert-verify: false, udp: true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 🇺🇸 美国 CloudFlare节点
-      - 🇨🇳 广东省广州市 移动
-      - 🇬🇷 希腊 V2CROSS.COM
+      - 🇮🇷 伊朗 V2CROSS.COM
       - 🇺🇸 美国 华盛顿Cogent通信公司
-      - 🇨🇿 捷克 V2CROSS.COM
-      - 🇺🇸 美国 Fastly全球Anycast节点
-      - 🇯🇵 日本 阿里云
-      - 🇫🇷 法国 法国计算机科学大学
-      - 🇺🇸 美国 Xerox
-      - 🇺🇸 美国 Amazon EC2服务器
-      - 🇩🇪 德国 V2CROSS.COM
-      - 🇮🇪 爱尔兰 V2CROSS.COM
-      - 🇺🇸 美国 V2CROSS.COM
-      - 🇺🇸 美国 CloudFlare节点 2
-      - 🇺🇸 美国 Fastly全球Anycast节点 2
+      - 🇮🇳 印度 V2CROSS.COM
+      - 广东省湛江市 移动
       - 🇺🇸 美国 华盛顿Cogent通信公司 2
-      - 🇺🇸 美国 Fastly全球Anycast节点 3
-      - 🇦🇺 澳大利亚 V2CROSS.COM
+      - 🇨🇳 广东省广州市 移动
       - 🇺🇸 美国 Amazon数据中心
-      - 🇨🇦 加拿大 魁北克省蒙特利尔Amazon数据中心
-      - 🇺🇸 美国 华盛顿Cogent通信公司 3
-      - 🇬🇧 英国 伦敦Amazon数据中心
-      - 🇮🇹 意大利 V2CROSS.COM
-      - 🇺🇸 美国 华盛顿Cogent通信公司 4
-      - 🇮🇪 爱尔兰都柏林 亚马逊云
+      - 🇺🇸 美国 加州
+      - 🇮🇳 印度 V2CROSS.COM 2
+      - 🇨🇳 广东省广州市 移动 2
+      - 🇺🇸 美国 Sprint网络
+      - 🇺🇸 美国 CloudFlare节点
+      - 🇺🇸 美国
+      - 🇺🇸 美国 CloudFlare节点 2
+      - 🇺🇸 美国 V2CROSS.COM
       - 🇷🇺 俄罗斯 V2CROSS.COM
-      - 🇺🇸 美国 Amazon EC2服务器 2
-      - 🇫🇷 法国 法国计算机科学大学 2
-      - 欧盟 V2CROSS.COM
+      - 🇮🇪 爱尔兰 都柏林Amazon数据中心
+      - 🇺🇸 美国 Fastly全球Anycast节点
+      - 🇨🇦 加拿大 魁北克省蒙特利尔Amazon数据中心
+      - 🇬🇧 英国 伦敦Amazon数据中心
+      - 🇺🇸 美国 华盛顿Cogent通信公司 3
+      - 🇺🇸 美国 CloudFlare节点 3
+      - 🇺🇸 美国 惠普HP
+      - 🇫🇷 法国 巴黎Amazon数据中心
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇺🇸 美国 CloudFlare节点
-      - 🇨🇳 广东省广州市 移动
-      - 🇬🇷 希腊 V2CROSS.COM
+      - 🇮🇷 伊朗 V2CROSS.COM
       - 🇺🇸 美国 华盛顿Cogent通信公司
-      - 🇨🇿 捷克 V2CROSS.COM
-      - 🇺🇸 美国 Fastly全球Anycast节点
-      - 🇯🇵 日本 阿里云
-      - 🇫🇷 法国 法国计算机科学大学
-      - 🇺🇸 美国 Xerox
-      - 🇺🇸 美国 Amazon EC2服务器
-      - 🇩🇪 德国 V2CROSS.COM
-      - 🇮🇪 爱尔兰 V2CROSS.COM
-      - 🇺🇸 美国 V2CROSS.COM
-      - 🇺🇸 美国 CloudFlare节点 2
-      - 🇺🇸 美国 Fastly全球Anycast节点 2
+      - 🇮🇳 印度 V2CROSS.COM
+      - 广东省湛江市 移动
       - 🇺🇸 美国 华盛顿Cogent通信公司 2
-      - 🇺🇸 美国 Fastly全球Anycast节点 3
-      - 🇦🇺 澳大利亚 V2CROSS.COM
+      - 🇨🇳 广东省广州市 移动
       - 🇺🇸 美国 Amazon数据中心
-      - 🇨🇦 加拿大 魁北克省蒙特利尔Amazon数据中心
-      - 🇺🇸 美国 华盛顿Cogent通信公司 3
-      - 🇬🇧 英国 伦敦Amazon数据中心
-      - 🇮🇹 意大利 V2CROSS.COM
-      - 🇺🇸 美国 华盛顿Cogent通信公司 4
-      - 🇮🇪 爱尔兰都柏林 亚马逊云
+      - 🇺🇸 美国 加州
+      - 🇮🇳 印度 V2CROSS.COM 2
+      - 🇨🇳 广东省广州市 移动 2
+      - 🇺🇸 美国 Sprint网络
+      - 🇺🇸 美国 CloudFlare节点
+      - 🇺🇸 美国
+      - 🇺🇸 美国 CloudFlare节点 2
+      - 🇺🇸 美国 V2CROSS.COM
       - 🇷🇺 俄罗斯 V2CROSS.COM
-      - 🇺🇸 美国 Amazon EC2服务器 2
-      - 🇫🇷 法国 法国计算机科学大学 2
-      - 欧盟 V2CROSS.COM
+      - 🇮🇪 爱尔兰 都柏林Amazon数据中心
+      - 🇺🇸 美国 Fastly全球Anycast节点
+      - 🇨🇦 加拿大 魁北克省蒙特利尔Amazon数据中心
+      - 🇬🇧 英国 伦敦Amazon数据中心
+      - 🇺🇸 美国 华盛顿Cogent通信公司 3
+      - 🇺🇸 美国 CloudFlare节点 3
+      - 🇺🇸 美国 惠普HP
+      - 🇫🇷 法国 巴黎Amazon数据中心
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇺🇸 美国 CloudFlare节点
-      - 🇨🇳 广东省广州市 移动
-      - 🇬🇷 希腊 V2CROSS.COM
+      - 🇮🇷 伊朗 V2CROSS.COM
       - 🇺🇸 美国 华盛顿Cogent通信公司
-      - 🇨🇿 捷克 V2CROSS.COM
-      - 🇺🇸 美国 Fastly全球Anycast节点
-      - 🇯🇵 日本 阿里云
-      - 🇫🇷 法国 法国计算机科学大学
-      - 🇺🇸 美国 Xerox
-      - 🇺🇸 美国 Amazon EC2服务器
-      - 🇩🇪 德国 V2CROSS.COM
-      - 🇮🇪 爱尔兰 V2CROSS.COM
-      - 🇺🇸 美国 V2CROSS.COM
-      - 🇺🇸 美国 CloudFlare节点 2
-      - 🇺🇸 美国 Fastly全球Anycast节点 2
+      - 🇮🇳 印度 V2CROSS.COM
+      - 广东省湛江市 移动
       - 🇺🇸 美国 华盛顿Cogent通信公司 2
-      - 🇺🇸 美国 Fastly全球Anycast节点 3
-      - 🇦🇺 澳大利亚 V2CROSS.COM
+      - 🇨🇳 广东省广州市 移动
       - 🇺🇸 美国 Amazon数据中心
-      - 🇨🇦 加拿大 魁北克省蒙特利尔Amazon数据中心
-      - 🇺🇸 美国 华盛顿Cogent通信公司 3
-      - 🇬🇧 英国 伦敦Amazon数据中心
-      - 🇮🇹 意大利 V2CROSS.COM
-      - 🇺🇸 美国 华盛顿Cogent通信公司 4
-      - 🇮🇪 爱尔兰都柏林 亚马逊云
+      - 🇺🇸 美国 加州
+      - 🇮🇳 印度 V2CROSS.COM 2
+      - 🇨🇳 广东省广州市 移动 2
+      - 🇺🇸 美国 Sprint网络
+      - 🇺🇸 美国 CloudFlare节点
+      - 🇺🇸 美国
+      - 🇺🇸 美国 CloudFlare节点 2
+      - 🇺🇸 美国 V2CROSS.COM
       - 🇷🇺 俄罗斯 V2CROSS.COM
-      - 🇺🇸 美国 Amazon EC2服务器 2
-      - 🇫🇷 法国 法国计算机科学大学 2
-      - 欧盟 V2CROSS.COM
+      - 🇮🇪 爱尔兰 都柏林Amazon数据中心
+      - 🇺🇸 美国 Fastly全球Anycast节点
+      - 🇨🇦 加拿大 魁北克省蒙特利尔Amazon数据中心
+      - 🇬🇧 英国 伦敦Amazon数据中心
+      - 🇺🇸 美国 华盛顿Cogent通信公司 3
+      - 🇺🇸 美国 CloudFlare节点 3
+      - 🇺🇸 美国 惠普HP
+      - 🇫🇷 法国 巴黎Amazon数据中心
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇺🇸 美国 CloudFlare节点
-      - 🇨🇳 广东省广州市 移动
-      - 🇬🇷 希腊 V2CROSS.COM
+      - 🇮🇷 伊朗 V2CROSS.COM
       - 🇺🇸 美国 华盛顿Cogent通信公司
-      - 🇨🇿 捷克 V2CROSS.COM
-      - 🇺🇸 美国 Fastly全球Anycast节点
-      - 🇯🇵 日本 阿里云
-      - 🇫🇷 法国 法国计算机科学大学
-      - 🇺🇸 美国 Xerox
-      - 🇺🇸 美国 Amazon EC2服务器
-      - 🇩🇪 德国 V2CROSS.COM
-      - 🇮🇪 爱尔兰 V2CROSS.COM
-      - 🇺🇸 美国 V2CROSS.COM
-      - 🇺🇸 美国 CloudFlare节点 2
-      - 🇺🇸 美国 Fastly全球Anycast节点 2
+      - 🇮🇳 印度 V2CROSS.COM
+      - 广东省湛江市 移动
       - 🇺🇸 美国 华盛顿Cogent通信公司 2
-      - 🇺🇸 美国 Fastly全球Anycast节点 3
-      - 🇦🇺 澳大利亚 V2CROSS.COM
+      - 🇨🇳 广东省广州市 移动
       - 🇺🇸 美国 Amazon数据中心
-      - 🇨🇦 加拿大 魁北克省蒙特利尔Amazon数据中心
-      - 🇺🇸 美国 华盛顿Cogent通信公司 3
-      - 🇬🇧 英国 伦敦Amazon数据中心
-      - 🇮🇹 意大利 V2CROSS.COM
-      - 🇺🇸 美国 华盛顿Cogent通信公司 4
-      - 🇮🇪 爱尔兰都柏林 亚马逊云
+      - 🇺🇸 美国 加州
+      - 🇮🇳 印度 V2CROSS.COM 2
+      - 🇨🇳 广东省广州市 移动 2
+      - 🇺🇸 美国 Sprint网络
+      - 🇺🇸 美国 CloudFlare节点
+      - 🇺🇸 美国
+      - 🇺🇸 美国 CloudFlare节点 2
+      - 🇺🇸 美国 V2CROSS.COM
       - 🇷🇺 俄罗斯 V2CROSS.COM
-      - 🇺🇸 美国 Amazon EC2服务器 2
-      - 🇫🇷 法国 法国计算机科学大学 2
-      - 欧盟 V2CROSS.COM
+      - 🇮🇪 爱尔兰 都柏林Amazon数据中心
+      - 🇺🇸 美国 Fastly全球Anycast节点
+      - 🇨🇦 加拿大 魁北克省蒙特利尔Amazon数据中心
+      - 🇬🇧 英国 伦敦Amazon数据中心
+      - 🇺🇸 美国 华盛顿Cogent通信公司 3
+      - 🇺🇸 美国 CloudFlare节点 3
+      - 🇺🇸 美国 惠普HP
+      - 🇫🇷 法国 巴黎Amazon数据中心
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 🇺🇸 美国 CloudFlare节点
-      - 🇨🇳 广东省广州市 移动
-      - 🇬🇷 希腊 V2CROSS.COM
+      - 🇮🇷 伊朗 V2CROSS.COM
       - 🇺🇸 美国 华盛顿Cogent通信公司
-      - 🇨🇿 捷克 V2CROSS.COM
-      - 🇺🇸 美国 Fastly全球Anycast节点
-      - 🇯🇵 日本 阿里云
-      - 🇫🇷 法国 法国计算机科学大学
-      - 🇺🇸 美国 Xerox
-      - 🇺🇸 美国 Amazon EC2服务器
-      - 🇩🇪 德国 V2CROSS.COM
-      - 🇮🇪 爱尔兰 V2CROSS.COM
-      - 🇺🇸 美国 V2CROSS.COM
-      - 🇺🇸 美国 CloudFlare节点 2
-      - 🇺🇸 美国 Fastly全球Anycast节点 2
+      - 🇮🇳 印度 V2CROSS.COM
+      - 广东省湛江市 移动
       - 🇺🇸 美国 华盛顿Cogent通信公司 2
-      - 🇺🇸 美国 Fastly全球Anycast节点 3
-      - 🇦🇺 澳大利亚 V2CROSS.COM
+      - 🇨🇳 广东省广州市 移动
       - 🇺🇸 美国 Amazon数据中心
-      - 🇨🇦 加拿大 魁北克省蒙特利尔Amazon数据中心
-      - 🇺🇸 美国 华盛顿Cogent通信公司 3
-      - 🇬🇧 英国 伦敦Amazon数据中心
-      - 🇮🇹 意大利 V2CROSS.COM
-      - 🇺🇸 美国 华盛顿Cogent通信公司 4
-      - 🇮🇪 爱尔兰都柏林 亚马逊云
+      - 🇺🇸 美国 加州
+      - 🇮🇳 印度 V2CROSS.COM 2
+      - 🇨🇳 广东省广州市 移动 2
+      - 🇺🇸 美国 Sprint网络
+      - 🇺🇸 美国 CloudFlare节点
+      - 🇺🇸 美国
+      - 🇺🇸 美国 CloudFlare节点 2
+      - 🇺🇸 美国 V2CROSS.COM
       - 🇷🇺 俄罗斯 V2CROSS.COM
-      - 🇺🇸 美国 Amazon EC2服务器 2
-      - 🇫🇷 法国 法国计算机科学大学 2
-      - 欧盟 V2CROSS.COM
+      - 🇮🇪 爱尔兰 都柏林Amazon数据中心
+      - 🇺🇸 美国 Fastly全球Anycast节点
+      - 🇨🇦 加拿大 魁北克省蒙特利尔Amazon数据中心
+      - 🇬🇧 英国 伦敦Amazon数据中心
+      - 🇺🇸 美国 华盛顿Cogent通信公司 3
+      - 🇺🇸 美国 CloudFlare节点 3
+      - 🇺🇸 美国 惠普HP
+      - 🇫🇷 法国 巴黎Amazon数据中心
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇺🇸 美国 CloudFlare节点
-      - 🇨🇳 广东省广州市 移动
-      - 🇬🇷 希腊 V2CROSS.COM
+      - 🇮🇷 伊朗 V2CROSS.COM
       - 🇺🇸 美国 华盛顿Cogent通信公司
-      - 🇨🇿 捷克 V2CROSS.COM
-      - 🇺🇸 美国 Fastly全球Anycast节点
-      - 🇯🇵 日本 阿里云
-      - 🇫🇷 法国 法国计算机科学大学
-      - 🇺🇸 美国 Xerox
-      - 🇺🇸 美国 Amazon EC2服务器
-      - 🇩🇪 德国 V2CROSS.COM
-      - 🇮🇪 爱尔兰 V2CROSS.COM
-      - 🇺🇸 美国 V2CROSS.COM
-      - 🇺🇸 美国 CloudFlare节点 2
-      - 🇺🇸 美国 Fastly全球Anycast节点 2
+      - 🇮🇳 印度 V2CROSS.COM
+      - 广东省湛江市 移动
       - 🇺🇸 美国 华盛顿Cogent通信公司 2
-      - 🇺🇸 美国 Fastly全球Anycast节点 3
-      - 🇦🇺 澳大利亚 V2CROSS.COM
+      - 🇨🇳 广东省广州市 移动
       - 🇺🇸 美国 Amazon数据中心
-      - 🇨🇦 加拿大 魁北克省蒙特利尔Amazon数据中心
-      - 🇺🇸 美国 华盛顿Cogent通信公司 3
-      - 🇬🇧 英国 伦敦Amazon数据中心
-      - 🇮🇹 意大利 V2CROSS.COM
-      - 🇺🇸 美国 华盛顿Cogent通信公司 4
-      - 🇮🇪 爱尔兰都柏林 亚马逊云
+      - 🇺🇸 美国 加州
+      - 🇮🇳 印度 V2CROSS.COM 2
+      - 🇨🇳 广东省广州市 移动 2
+      - 🇺🇸 美国 Sprint网络
+      - 🇺🇸 美国 CloudFlare节点
+      - 🇺🇸 美国
+      - 🇺🇸 美国 CloudFlare节点 2
+      - 🇺🇸 美国 V2CROSS.COM
       - 🇷🇺 俄罗斯 V2CROSS.COM
-      - 🇺🇸 美国 Amazon EC2服务器 2
-      - 🇫🇷 法国 法国计算机科学大学 2
-      - 欧盟 V2CROSS.COM
+      - 🇮🇪 爱尔兰 都柏林Amazon数据中心
+      - 🇺🇸 美国 Fastly全球Anycast节点
+      - 🇨🇦 加拿大 魁北克省蒙特利尔Amazon数据中心
+      - 🇬🇧 英国 伦敦Amazon数据中心
+      - 🇺🇸 美国 华盛顿Cogent通信公司 3
+      - 🇺🇸 美国 CloudFlare节点 3
+      - 🇺🇸 美国 惠普HP
+      - 🇫🇷 法国 巴黎Amazon数据中心
   - name: 📢 谷歌FCM
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇺🇸 美国 CloudFlare节点
-      - 🇨🇳 广东省广州市 移动
-      - 🇬🇷 希腊 V2CROSS.COM
+      - 🇮🇷 伊朗 V2CROSS.COM
       - 🇺🇸 美国 华盛顿Cogent通信公司
-      - 🇨🇿 捷克 V2CROSS.COM
-      - 🇺🇸 美国 Fastly全球Anycast节点
-      - 🇯🇵 日本 阿里云
-      - 🇫🇷 法国 法国计算机科学大学
-      - 🇺🇸 美国 Xerox
-      - 🇺🇸 美国 Amazon EC2服务器
-      - 🇩🇪 德国 V2CROSS.COM
-      - 🇮🇪 爱尔兰 V2CROSS.COM
-      - 🇺🇸 美国 V2CROSS.COM
-      - 🇺🇸 美国 CloudFlare节点 2
-      - 🇺🇸 美国 Fastly全球Anycast节点 2
+      - 🇮🇳 印度 V2CROSS.COM
+      - 广东省湛江市 移动
       - 🇺🇸 美国 华盛顿Cogent通信公司 2
-      - 🇺🇸 美国 Fastly全球Anycast节点 3
-      - 🇦🇺 澳大利亚 V2CROSS.COM
+      - 🇨🇳 广东省广州市 移动
       - 🇺🇸 美国 Amazon数据中心
-      - 🇨🇦 加拿大 魁北克省蒙特利尔Amazon数据中心
-      - 🇺🇸 美国 华盛顿Cogent通信公司 3
-      - 🇬🇧 英国 伦敦Amazon数据中心
-      - 🇮🇹 意大利 V2CROSS.COM
-      - 🇺🇸 美国 华盛顿Cogent通信公司 4
-      - 🇮🇪 爱尔兰都柏林 亚马逊云
+      - 🇺🇸 美国 加州
+      - 🇮🇳 印度 V2CROSS.COM 2
+      - 🇨🇳 广东省广州市 移动 2
+      - 🇺🇸 美国 Sprint网络
+      - 🇺🇸 美国 CloudFlare节点
+      - 🇺🇸 美国
+      - 🇺🇸 美国 CloudFlare节点 2
+      - 🇺🇸 美国 V2CROSS.COM
       - 🇷🇺 俄罗斯 V2CROSS.COM
-      - 🇺🇸 美国 Amazon EC2服务器 2
-      - 🇫🇷 法国 法国计算机科学大学 2
-      - 欧盟 V2CROSS.COM
+      - 🇮🇪 爱尔兰 都柏林Amazon数据中心
+      - 🇺🇸 美国 Fastly全球Anycast节点
+      - 🇨🇦 加拿大 魁北克省蒙特利尔Amazon数据中心
+      - 🇬🇧 英国 伦敦Amazon数据中心
+      - 🇺🇸 美国 华盛顿Cogent通信公司 3
+      - 🇺🇸 美国 CloudFlare节点 3
+      - 🇺🇸 美国 惠普HP
+      - 🇫🇷 法国 巴黎Amazon数据中心
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -298,35 +258,30 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇺🇸 美国 CloudFlare节点
-      - 🇨🇳 广东省广州市 移动
-      - 🇬🇷 希腊 V2CROSS.COM
+      - 🇮🇷 伊朗 V2CROSS.COM
       - 🇺🇸 美国 华盛顿Cogent通信公司
-      - 🇨🇿 捷克 V2CROSS.COM
-      - 🇺🇸 美国 Fastly全球Anycast节点
-      - 🇯🇵 日本 阿里云
-      - 🇫🇷 法国 法国计算机科学大学
-      - 🇺🇸 美国 Xerox
-      - 🇺🇸 美国 Amazon EC2服务器
-      - 🇩🇪 德国 V2CROSS.COM
-      - 🇮🇪 爱尔兰 V2CROSS.COM
-      - 🇺🇸 美国 V2CROSS.COM
-      - 🇺🇸 美国 CloudFlare节点 2
-      - 🇺🇸 美国 Fastly全球Anycast节点 2
+      - 🇮🇳 印度 V2CROSS.COM
+      - 广东省湛江市 移动
       - 🇺🇸 美国 华盛顿Cogent通信公司 2
-      - 🇺🇸 美国 Fastly全球Anycast节点 3
-      - 🇦🇺 澳大利亚 V2CROSS.COM
+      - 🇨🇳 广东省广州市 移动
       - 🇺🇸 美国 Amazon数据中心
-      - 🇨🇦 加拿大 魁北克省蒙特利尔Amazon数据中心
-      - 🇺🇸 美国 华盛顿Cogent通信公司 3
-      - 🇬🇧 英国 伦敦Amazon数据中心
-      - 🇮🇹 意大利 V2CROSS.COM
-      - 🇺🇸 美国 华盛顿Cogent通信公司 4
-      - 🇮🇪 爱尔兰都柏林 亚马逊云
+      - 🇺🇸 美国 加州
+      - 🇮🇳 印度 V2CROSS.COM 2
+      - 🇨🇳 广东省广州市 移动 2
+      - 🇺🇸 美国 Sprint网络
+      - 🇺🇸 美国 CloudFlare节点
+      - 🇺🇸 美国
+      - 🇺🇸 美国 CloudFlare节点 2
+      - 🇺🇸 美国 V2CROSS.COM
       - 🇷🇺 俄罗斯 V2CROSS.COM
-      - 🇺🇸 美国 Amazon EC2服务器 2
-      - 🇫🇷 法国 法国计算机科学大学 2
-      - 欧盟 V2CROSS.COM
+      - 🇮🇪 爱尔兰 都柏林Amazon数据中心
+      - 🇺🇸 美国 Fastly全球Anycast节点
+      - 🇨🇦 加拿大 魁北克省蒙特利尔Amazon数据中心
+      - 🇬🇧 英国 伦敦Amazon数据中心
+      - 🇺🇸 美国 华盛顿Cogent通信公司 3
+      - 🇺🇸 美国 CloudFlare节点 3
+      - 🇺🇸 美国 惠普HP
+      - 🇫🇷 法国 巴黎Amazon数据中心
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
