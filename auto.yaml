@@ -5,119 +5,51 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 德国 黑森州法兰克福Amazon数据中心, server: 18.197.61.45, port: 22222, type: trojan, password: telegram-id-directvpn, sni: trojan.burgerip.co.uk, skip-cert-verify: true, udp: true}
-  - {name: 欧盟 V2CROSS.COM, server: 45.67.215.95, port: 443, type: trojan, password: tg-fq521free, sni: torjan.xn--xhq44j.eu.org, skip-cert-verify: true, udp: true}
-  - {name: 美国 Sprint网络, server: 63.177.118.185, port: 22222, type: trojan, password: telegram-id-privatevpns, sni: trojan.burgerip.co.uk, skip-cert-verify: true, udp: true}
-  - {name: 美国 Fastly全球Anycast节点, server: 151.101.2.216, port: 80, type: vmess, uuid: 545485da-9ff4-48c5-ae94-45e6e4ee7d26, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /racevpn, headers: {Host: 6606.com}}, udp: true}
-  - {name: 意大利 V2CROSS.COM, server: 212.102.53.194, port: 443, type: ss, cipher: aes-128-gcm, password: shadowsocks, udp: true}
-  - {name: 美国 Fastly全球Anycast节点 2, server: 151.101.2.168, port: 80, type: vmess, uuid: beb7d098-48ba-4be8-a47a-758bf3c470b8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: amd.al}}, udp: true}
-  - {name: 广东省广州市 移动, server: 183.236.51.23, port: 53002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 捷克 V2CROSS.COM, server: 198.105.123.190, port: 46902, type: ss, cipher: chacha20-ietf-poly1305, password: 2UrSffeNABXGXXfNhoL6xBUnh1RzqMizrQ2s9QfC38P2YPuYPRTqW5zZg6jGisiNhkzM4SRjF6nzvFb18GPtESWoXWjhqyC8, udp: true}
-  - {name: 美国 华盛顿Cogent通信公司, server: 38.174.190.75, port: 38007, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/251724052818}, udp: true}
-  - {name: 江苏省 移动, server: 36.150.215.196, port: 42395, type: trojan, password: lidnBTGb, skip-cert-verify: true, udp: true}
-  - {name: 丹麦 V2CROSS.COM, server: www.csgo.com, port: 443, type: vmess, uuid: 33f6d8b0-81f8-4fce-b3df-79dc8fd6d8c5, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: "/rongseven?ed=2048", headers: {Host: kr.cfyyds.filegear-sg.me}}, udp: true}
-  - {name: 美国 V2CROSS.COM, server: 199.232.214.133, port: 443, type: vmess, uuid: e5852393-ca52-4c90-a237-d63cbbb57f21, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: "/farcry?ed=2560", headers: {Host: loki.oracle}}, udp: true}
-  - {name: 阿尔巴尼亚 V2CROSS.COM, server: 109.104.154.4, port: 5555, type: ss, cipher: chacha20-ietf-poly1305, password: 2kZMZNoI2sgKPb6C-9IQ8w, udp: true}
-  - {name: 美国 CloudFlare节点, server: 104.16.61.8, port: 80, type: vmess, uuid: 6c168fcc-2231-4f3b-8c1e-f6391692df4a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hms02.fxiaomi.sbs/link, headers: {Host: range-shape-b3fuegu.bananok182.workers.dev}}, udp: true}
-  - {name: 广东省广州市 移动 2, server: 120.232.153.63, port: 40972, type: vmess, uuid: 770ee730-2450-4e3c-a6c6-3932bd32afbd, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美国 Fastly全球Anycast节点 3, server: 151.101.194.168, port: 80, type: vmess, uuid: beb7d098-48ba-4be8-a47a-758bf3c470b8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: amd.al}}, udp: true}
-  - {name: 欧盟 V2CROSS.COM 2, server: 45.87.175.188, port: 8080, type: ss, cipher: chacha20-ietf-poly1305, password: 4a2rfixophdjffa8KVA4Aa, udp: true}
-  - {name: 广东省江门市 移动, server: 120.234.102.229, port: 52908, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美国 V2CROSS.COM 2, server: 149.22.87.204, port: 443, type: ss, cipher: aes-128-gcm, password: shadowsocks, udp: true}
-  - {name: 美国 Fastly全球Anycast节点 4, server: mio.splashthat.com, port: 443, type: vmess, uuid: 545485da-9ff4-48c5-ae94-45e6e4ee7d26, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /racevpn, headers: {Host: 6606.com}}, udp: true}
-  - {name: 美国 V2CROSS.COM 3, server: 208.67.105.87, port: 42501, type: ss, cipher: chacha20-ietf-poly1305, password: nq96KftrZAj3LuFQESqmn44Mo5oCuo2cipoEsae25mrmHG2oJ4VT37scBfVBpN5DWtUELZutVhhXs8Le5B8fZ9hLn9ytwvbf, udp: true}
-  - {name: 美国 华盛顿Cogent通信公司 2, server: 38.174.190.80, port: 38007, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/102206282005}, udp: true}
-  - {name: 广东省 移动, server: 2.forlive.live, port: 61005, type: ss, cipher: chacha20-ietf-poly1305, password: 82fb692e-1c8b-3a65-ad83-23ad9deee111, udp: true}
-  - {name: 广东省广州市 移动 3, server: 183.236.51.23, port: 46602, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 广东省广州市 移动, server: 183.236.51.23, port: 51704, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 印度 V2CROSS.COM, server: 202.78.162.5, port: 443, type: vmess, uuid: 2ff97c6d-8557-42a4-b43f-19c77c5959ea, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: irsoft.sytes.net}}, udp: true}
+  - {name: 美国 Amazon数据中心, server: 13.37.115.92, port: 22222, type: trojan, password: telegram-id-privatevpns, sni: trojan.burgerip.co.uk, skip-cert-verify: true, udp: true}
+  - {name: 俄罗斯 V2CROSS.COM, server: 185.242.86.156, port: 54170, type: ss, cipher: chacha20-ietf-poly1305, password: 36ZCHeabUSfKjfQEvJ4HDV, udp: true}
+  - {name: 美国 Fastly全球Anycast节点, server: gov.uk, port: 443, type: vmess, uuid: 77848824-93b7-4b89-ffd0-e91afff406ce, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /77848824, headers: {Host: zheshiscp.com}}, udp: true}
+  - {name: 印度 V2CROSS.COM 2, server: 202.78.162.5, port: 443, type: vmess, uuid: 118287d2-e968-42e1-80d0-12fa2f5d38d6, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: sahand.serveminecraft.net}}, udp: true}
+  - {name: 美国 CloudFlare节点, server: server31.beheshtbaneh.com, port: 8880, type: vmess, uuid: 4154143c-bbba-47a4-9f79-c2ed087cbcc9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: server31.beheshtbaneh.com}}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 德国 黑森州法兰克福Amazon数据中心
-      - 欧盟 V2CROSS.COM
-      - 美国 Sprint网络
-      - 美国 Fastly全球Anycast节点
-      - 意大利 V2CROSS.COM
-      - 美国 Fastly全球Anycast节点 2
       - 广东省广州市 移动
-      - 捷克 V2CROSS.COM
-      - 美国 华盛顿Cogent通信公司
-      - 江苏省 移动
-      - 丹麦 V2CROSS.COM
-      - 美国 V2CROSS.COM
-      - 阿尔巴尼亚 V2CROSS.COM
+      - 印度 V2CROSS.COM
+      - 美国 Amazon数据中心
+      - 俄罗斯 V2CROSS.COM
+      - 美国 Fastly全球Anycast节点
+      - 印度 V2CROSS.COM 2
       - 美国 CloudFlare节点
-      - 广东省广州市 移动 2
-      - 美国 Fastly全球Anycast节点 3
-      - 欧盟 V2CROSS.COM 2
-      - 广东省江门市 移动
-      - 美国 V2CROSS.COM 2
-      - 美国 Fastly全球Anycast节点 4
-      - 美国 V2CROSS.COM 3
-      - 美国 华盛顿Cogent通信公司 2
-      - 广东省 移动
-      - 广东省广州市 移动 3
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 德国 黑森州法兰克福Amazon数据中心
-      - 欧盟 V2CROSS.COM
-      - 美国 Sprint网络
-      - 美国 Fastly全球Anycast节点
-      - 意大利 V2CROSS.COM
-      - 美国 Fastly全球Anycast节点 2
       - 广东省广州市 移动
-      - 捷克 V2CROSS.COM
-      - 美国 华盛顿Cogent通信公司
-      - 江苏省 移动
-      - 丹麦 V2CROSS.COM
-      - 美国 V2CROSS.COM
-      - 阿尔巴尼亚 V2CROSS.COM
+      - 印度 V2CROSS.COM
+      - 美国 Amazon数据中心
+      - 俄罗斯 V2CROSS.COM
+      - 美国 Fastly全球Anycast节点
+      - 印度 V2CROSS.COM 2
       - 美国 CloudFlare节点
-      - 广东省广州市 移动 2
-      - 美国 Fastly全球Anycast节点 3
-      - 欧盟 V2CROSS.COM 2
-      - 广东省江门市 移动
-      - 美国 V2CROSS.COM 2
-      - 美国 Fastly全球Anycast节点 4
-      - 美国 V2CROSS.COM 3
-      - 美国 华盛顿Cogent通信公司 2
-      - 广东省 移动
-      - 广东省广州市 移动 3
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 德国 黑森州法兰克福Amazon数据中心
-      - 欧盟 V2CROSS.COM
-      - 美国 Sprint网络
-      - 美国 Fastly全球Anycast节点
-      - 意大利 V2CROSS.COM
-      - 美国 Fastly全球Anycast节点 2
       - 广东省广州市 移动
-      - 捷克 V2CROSS.COM
-      - 美国 华盛顿Cogent通信公司
-      - 江苏省 移动
-      - 丹麦 V2CROSS.COM
-      - 美国 V2CROSS.COM
-      - 阿尔巴尼亚 V2CROSS.COM
+      - 印度 V2CROSS.COM
+      - 美国 Amazon数据中心
+      - 俄罗斯 V2CROSS.COM
+      - 美国 Fastly全球Anycast节点
+      - 印度 V2CROSS.COM 2
       - 美国 CloudFlare节点
-      - 广东省广州市 移动 2
-      - 美国 Fastly全球Anycast节点 3
-      - 欧盟 V2CROSS.COM 2
-      - 广东省江门市 移动
-      - 美国 V2CROSS.COM 2
-      - 美国 Fastly全球Anycast节点 4
-      - 美国 V2CROSS.COM 3
-      - 美国 华盛顿Cogent通信公司 2
-      - 广东省 移动
-      - 广东省广州市 移动 3
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -136,30 +68,13 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 德国 黑森州法兰克福Amazon数据中心
-      - 欧盟 V2CROSS.COM
-      - 美国 Sprint网络
-      - 美国 Fastly全球Anycast节点
-      - 意大利 V2CROSS.COM
-      - 美国 Fastly全球Anycast节点 2
       - 广东省广州市 移动
-      - 捷克 V2CROSS.COM
-      - 美国 华盛顿Cogent通信公司
-      - 江苏省 移动
-      - 丹麦 V2CROSS.COM
-      - 美国 V2CROSS.COM
-      - 阿尔巴尼亚 V2CROSS.COM
+      - 印度 V2CROSS.COM
+      - 美国 Amazon数据中心
+      - 俄罗斯 V2CROSS.COM
+      - 美国 Fastly全球Anycast节点
+      - 印度 V2CROSS.COM 2
       - 美国 CloudFlare节点
-      - 广东省广州市 移动 2
-      - 美国 Fastly全球Anycast节点 3
-      - 欧盟 V2CROSS.COM 2
-      - 广东省江门市 移动
-      - 美国 V2CROSS.COM 2
-      - 美国 Fastly全球Anycast节点 4
-      - 美国 V2CROSS.COM 3
-      - 美国 华盛顿Cogent通信公司 2
-      - 广东省 移动
-      - 广东省广州市 移动 3
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -170,89 +85,38 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 德国 黑森州法兰克福Amazon数据中心
-      - 欧盟 V2CROSS.COM
-      - 美国 Sprint网络
-      - 美国 Fastly全球Anycast节点
-      - 意大利 V2CROSS.COM
-      - 美国 Fastly全球Anycast节点 2
       - 广东省广州市 移动
-      - 捷克 V2CROSS.COM
-      - 美国 华盛顿Cogent通信公司
-      - 江苏省 移动
-      - 丹麦 V2CROSS.COM
-      - 美国 V2CROSS.COM
-      - 阿尔巴尼亚 V2CROSS.COM
+      - 印度 V2CROSS.COM
+      - 美国 Amazon数据中心
+      - 俄罗斯 V2CROSS.COM
+      - 美国 Fastly全球Anycast节点
+      - 印度 V2CROSS.COM 2
       - 美国 CloudFlare节点
-      - 广东省广州市 移动 2
-      - 美国 Fastly全球Anycast节点 3
-      - 欧盟 V2CROSS.COM 2
-      - 广东省江门市 移动
-      - 美国 V2CROSS.COM 2
-      - 美国 Fastly全球Anycast节点 4
-      - 美国 V2CROSS.COM 3
-      - 美国 华盛顿Cogent通信公司 2
-      - 广东省 移动
-      - 广东省广州市 移动 3
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 德国 黑森州法兰克福Amazon数据中心
-      - 欧盟 V2CROSS.COM
-      - 美国 Sprint网络
-      - 美国 Fastly全球Anycast节点
-      - 意大利 V2CROSS.COM
-      - 美国 Fastly全球Anycast节点 2
       - 广东省广州市 移动
-      - 捷克 V2CROSS.COM
-      - 美国 华盛顿Cogent通信公司
-      - 江苏省 移动
-      - 丹麦 V2CROSS.COM
-      - 美国 V2CROSS.COM
-      - 阿尔巴尼亚 V2CROSS.COM
+      - 印度 V2CROSS.COM
+      - 美国 Amazon数据中心
+      - 俄罗斯 V2CROSS.COM
+      - 美国 Fastly全球Anycast节点
+      - 印度 V2CROSS.COM 2
       - 美国 CloudFlare节点
-      - 广东省广州市 移动 2
-      - 美国 Fastly全球Anycast节点 3
-      - 欧盟 V2CROSS.COM 2
-      - 广东省江门市 移动
-      - 美国 V2CROSS.COM 2
-      - 美国 Fastly全球Anycast节点 4
-      - 美国 V2CROSS.COM 3
-      - 美国 华盛顿Cogent通信公司 2
-      - 广东省 移动
-      - 广东省广州市 移动 3
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 德国 黑森州法兰克福Amazon数据中心
-      - 欧盟 V2CROSS.COM
-      - 美国 Sprint网络
-      - 美国 Fastly全球Anycast节点
-      - 意大利 V2CROSS.COM
-      - 美国 Fastly全球Anycast节点 2
       - 广东省广州市 移动
-      - 捷克 V2CROSS.COM
-      - 美国 华盛顿Cogent通信公司
-      - 江苏省 移动
-      - 丹麦 V2CROSS.COM
-      - 美国 V2CROSS.COM
-      - 阿尔巴尼亚 V2CROSS.COM
+      - 印度 V2CROSS.COM
+      - 美国 Amazon数据中心
+      - 俄罗斯 V2CROSS.COM
+      - 美国 Fastly全球Anycast节点
+      - 印度 V2CROSS.COM 2
       - 美国 CloudFlare节点
-      - 广东省广州市 移动 2
-      - 美国 Fastly全球Anycast节点 3
-      - 欧盟 V2CROSS.COM 2
-      - 广东省江门市 移动
-      - 美国 V2CROSS.COM 2
-      - 美国 Fastly全球Anycast节点 4
-      - 美国 V2CROSS.COM 3
-      - 美国 华盛顿Cogent通信公司 2
-      - 广东省 移动
-      - 广东省广州市 移动 3
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -268,30 +132,13 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 德国 黑森州法兰克福Amazon数据中心
-      - 欧盟 V2CROSS.COM
-      - 美国 Sprint网络
-      - 美国 Fastly全球Anycast节点
-      - 意大利 V2CROSS.COM
-      - 美国 Fastly全球Anycast节点 2
       - 广东省广州市 移动
-      - 捷克 V2CROSS.COM
-      - 美国 华盛顿Cogent通信公司
-      - 江苏省 移动
-      - 丹麦 V2CROSS.COM
-      - 美国 V2CROSS.COM
-      - 阿尔巴尼亚 V2CROSS.COM
+      - 印度 V2CROSS.COM
+      - 美国 Amazon数据中心
+      - 俄罗斯 V2CROSS.COM
+      - 美国 Fastly全球Anycast节点
+      - 印度 V2CROSS.COM 2
       - 美国 CloudFlare节点
-      - 广东省广州市 移动 2
-      - 美国 Fastly全球Anycast节点 3
-      - 欧盟 V2CROSS.COM 2
-      - 广东省江门市 移动
-      - 美国 V2CROSS.COM 2
-      - 美国 Fastly全球Anycast节点 4
-      - 美国 V2CROSS.COM 3
-      - 美国 华盛顿Cogent通信公司 2
-      - 广东省 移动
-      - 广东省广州市 移动 3
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
