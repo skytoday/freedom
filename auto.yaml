@@ -5,123 +5,127 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
+  - {name: 广东省广州市 移动, server: s-g04.loveroise.com, port: 54030, type: ss, cipher: chacha20-ietf-poly1305, password: 09833a6f-4d46-426e-87fe-7793a5489f84, udp: true}
+  - {name: 美国 华盛顿Cogent通信公司, server: 38.110.1.46, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: 美国 V2CROSS.COM, server: 168.138.142.53, port: 443, type: trojan, password: 9d0a75d2-f747-4afa-b43f-d208af9e8f9a, sni: bz02.ssr.ee, skip-cert-verify: true, udp: true}
   - {name: 瑞典 斯德哥尔摩Amazon数据中心, server: 13.53.250.56, port: 22222, type: trojan, password: telegram-id-privatevpns, sni: trojan.burgerip.co.uk, skip-cert-verify: true, udp: true}
-  - {name: 爱尔兰 都柏林Amazon数据中心, server: 54.74.155.235, port: 22222, type: trojan, password: telegram-id-privatevpns, sni: trojan.burgerip.co.uk, skip-cert-verify: true, udp: true}
-  - {name: 欧盟 V2CROSS.COM, server: 45.67.215.95, port: 443, type: trojan, password: tg-fq521free, sni: torjan.xn--xhq44j.eu.org, skip-cert-verify: true, udp: true}
-  - {name: 广东省广州市 移动, server: 183.236.51.23, port: 51704, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 阿尔巴尼亚 V2CROSS.COM, server: 109.104.154.4, port: 5555, type: ss, cipher: chacha20-ietf-poly1305, password: 2kZMZNoI2sgKPb6C-9IQ8w, udp: true}
-  - {name: 美国 CloudFlare节点, server: 104.21.82.183, port: 8880, type: vmess, uuid: 5a7021e0-26b4-45d6-b175-fe551601ca97, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: server26.beheshtbaneh.com}}, udp: true}
-  - {name: 美国 华盛顿Cogent通信公司, server: 38.110.1.46, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: 美国, server: 40.172.144.56, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: u17T3BvpYaaiuW2c, udp: true}
+  - {name: 德国 黑森州法兰克福AMazon数据中心, server: 3.121.157.191, port: 22222, type: trojan, password: telegram-id-privatevpns, sni: trojan.burgerip.co.uk, skip-cert-verify: true, udp: true}
+  - {name: 美国 V2CROSS.COM 2, server: primer.ibilibi.li, port: 443, type: vmess, uuid: e5852393-ca52-4c90-a237-d63cbbb57f21, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: "/farcry?ed=2560", headers: {Host: loki.oracle}}, udp: true}
   - {name: 瑞典 斯德哥尔摩Amazon数据中心 2, server: 13.48.109.62, port: 22222, type: trojan, password: telegram-id-privatevpns, sni: trojan.burgerip.co.uk, skip-cert-verify: true, udp: true}
-  - {name: 印度 V2CROSS.COM, server: 202.78.162.5, port: 443, type: vmess, uuid: 2ff97c6d-8557-42a4-b43f-19c77c5959ea, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: irsoft.sytes.net}}, udp: true}
-  - {name: 美国 Fastly全球Anycast节点, server: gov.uk, port: 443, type: vmess, uuid: 77848824-93b7-4b89-ffd0-e91afff406ce, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /77848824, headers: {Host: zheshiscp.com}}, udp: true}
-  - {name: 美国 惠普公司, server: 15.236.232.54, port: 22222, type: trojan, password: telegram-id-privatevpns, sni: trojan.burgerip.co.uk, skip-cert-verify: true, udp: true}
-  - {name: 广东省湛江市 移动, server: 120.198.71.214, port: 34493, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 英国 Microsoft公司, server: 51.13.35.115, port: 20760, type: ss, cipher: chacha20-ietf-poly1305, password: SK8DG4IJFnDwuhy35hOWUj, udp: true}
-  - {name: 美国 Amazon数据中心, server: 18.198.190.11, port: 22222, type: trojan, password: telegram-id-privatevpns, sni: trojan.burgerip.co.uk, skip-cert-verify: true, udp: true}
-  - {name: 美国 V2CROSS.COM, server: 199.232.214.133, port: 443, type: vmess, uuid: e5852393-ca52-4c90-a237-d63cbbb57f21, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: "/farcry?ed=2560", headers: {Host: loki.oracle}}, udp: true}
-  - {name: 美国 华盛顿Cogent通信公司 2, server: 38.110.1.105, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: 法国 法国计算机科学大学, server: irvideo.cfd, port: 443, type: vmess, uuid: e537f2f5-2a0c-4f59-92c9-832ca6433bf3, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /linkws, headers: {Host: irvideo.cfd}}, udp: true}
-  - {name: 美国 华盛顿Cogent通信公司 3, server: 38.110.1.46, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: 美国 内华达州拉斯维加斯BuyVM数据中心, server: u2.huvicloud.com, port: 443, type: vmess, uuid: f07b9711-a6a4-4128-807d-fdb40dcaa488, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /f07b9711-a6a4-4128-807d-fdb40dcaa488, headers: {Host: u2.huvicloud.com}}, udp: true}
-  - {name: 北美地区 V2CROSS.COM, server: 198.62.62.67, port: 443, type: trojan, password: tg-fq521free, sni: torjan.xn--xhq44j.eu.org, skip-cert-verify: true, udp: true}
-  - {name: 美国 V2CROSS.COM 2, server: 199.180.101.29, port: 38004, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: www.70778598.xyz}}, udp: true}
-  - {name: 爱尔兰 都柏林Amazon数据中心 2, server: 52.18.181.33, port: 22222, type: trojan, password: telegram-id-directvpn, sni: trojan.burgerip.co.uk, skip-cert-verify: true, udp: true}
-  - {name: 美国 麻省理工学院, server: series-a2.varzesh360.co, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: mps3FwmDjLrWaOVg, udp: true}
-  - {name: 美国 麻省理工学院 2, server: series-a1.samanehha.co, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: W74XFALLLuw6m5IA, udp: true}
-  - {name: 美国 华盛顿Cogent通信公司 4, server: 38.110.1.105, port: 9090, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: 荷兰 V2CROSS.COM, server: 132.226.229.16, port: 23451, type: vmess, uuid: 01f75e34-5063-4852-bc76-2f7635baf382, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 美国 华盛顿Cogent通信公司 2, server: 38.110.1.46, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: 荷兰 V2CROSS.COM 2, server: 145.223.100.85, port: 52221, type: ss, cipher: chacha20-ietf-poly1305, password: idJTwZjM2vUUqCyRdvBsII, udp: true}
+  - {name: 美国 惠普公司, server: 15.236.222.142, port: 22222, type: trojan, password: telegram-id-privatevpns, sni: trojan.burgerip.co.uk, skip-cert-verify: true, udp: true}
+  - {name: 美国 Amazon数据中心, server: 13.37.159.235, port: 22222, type: trojan, password: telegram-id-privatevpns, sni: trojan.burgerip.co.uk, skip-cert-verify: true, udp: true}
+  - {name: 广东省广州市 移动 2, server: 183.236.51.23, port: 51704, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 捷克 V2CROSS.COM, server: 198.105.123.190, port: 46902, type: ss, cipher: chacha20-ietf-poly1305, password: 2UrSffeNABXGXXfNhoL6xBUnh1RzqMizrQ2s9QfC38P2YPuYPRTqW5zZg6jGisiNhkzM4SRjF6nzvFb18GPtESWoXWjhqyC8, udp: true}
+  - {name: 印度 V2CROSS.COM, server: 202.78.162.5, port: 443, type: vmess, uuid: 118287d2-e968-42e1-80d0-12fa2f5d38d6, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: sahand.serveminecraft.net}}, udp: true}
+  - {name: 广东省广州市 移动 3, server: 183.236.51.23, port: 53002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 芬兰 赫尔辛基Hetzner数据中心, server: 95.216.202.137, port: 19304, type: ss, cipher: 2022-blake3-aes-256-gcm, password: 0RE9wxKCxco4hvwYpDdSmWdcl2FRs6jJQNezUyFA1u8=:Xf5trxObRuzLIWTI7xiRPb2RY6yjWSEy36OOWr0iXQk=, udp: true}
+  - {name: 广东省江门市 移动, server: 120.234.102.229, port: 52908, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 爱尔兰都柏林 亚马逊云, server: 3.248.98.229, port: 22222, type: trojan, password: telegram-id-privatevpns, sni: trojan.burgerip.co.uk, skip-cert-verify: true, udp: true}
+  - {name: 美国 麻省理工学院, server: 18.133.34.26, port: 22222, type: trojan, password: telegram-id-privatevpns, sni: trojan.burgerip.co.uk, skip-cert-verify: true, udp: true}
+  - {name: 俄罗斯 V2CROSS.COM, server: 185.242.86.156, port: 54170, type: ss, cipher: chacha20-ietf-poly1305, password: 36ZCHeabUSfKjfQEvJ4HDV, udp: true}
+  - {name: 美国 CloudFlare节点, server: server31.beheshtbaneh.com, port: 8880, type: vmess, uuid: 4154143c-bbba-47a4-9f79-c2ed087cbcc9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: server31.beheshtbaneh.com}}, udp: true}
+  - {name: 爱尔兰 都柏林Amazon数据中心, server: 52.18.181.33, port: 22222, type: trojan, password: telegram-id-directvpn, sni: trojan.burgerip.co.uk, skip-cert-verify: true, udp: true}
+  - {name: 阿尔巴尼亚 V2CROSS.COM, server: 109.104.154.4, port: 5555, type: ss, cipher: chacha20-ietf-poly1305, password: 2kZMZNoI2sgKPb6C-9IQ8w, udp: true}
+  - {name: 德国 黑森州法兰克福Amazon数据中心, server: 3.127.100.2, port: 22222, type: trojan, password: telegram-id-directvpn, sni: trojan.burgerip.co.uk, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 瑞典 斯德哥尔摩Amazon数据中心
-      - 爱尔兰 都柏林Amazon数据中心
-      - 欧盟 V2CROSS.COM
       - 广东省广州市 移动
-      - 阿尔巴尼亚 V2CROSS.COM
-      - 美国 CloudFlare节点
       - 美国 华盛顿Cogent通信公司
-      - 瑞典 斯德哥尔摩Amazon数据中心 2
-      - 印度 V2CROSS.COM
-      - 美国 Fastly全球Anycast节点
-      - 美国 惠普公司
-      - 广东省湛江市 移动
-      - 英国 Microsoft公司
-      - 美国 Amazon数据中心
       - 美国 V2CROSS.COM
-      - 美国 华盛顿Cogent通信公司 2
-      - 法国 法国计算机科学大学
-      - 美国 华盛顿Cogent通信公司 3
-      - 美国 内华达州拉斯维加斯BuyVM数据中心
-      - 北美地区 V2CROSS.COM
+      - 瑞典 斯德哥尔摩Amazon数据中心
+      - 美国
+      - 德国 黑森州法兰克福AMazon数据中心
       - 美国 V2CROSS.COM 2
-      - 爱尔兰 都柏林Amazon数据中心 2
+      - 瑞典 斯德哥尔摩Amazon数据中心 2
+      - 荷兰 V2CROSS.COM
+      - 美国 华盛顿Cogent通信公司 2
+      - 荷兰 V2CROSS.COM 2
+      - 美国 惠普公司
+      - 美国 Amazon数据中心
+      - 广东省广州市 移动 2
+      - 捷克 V2CROSS.COM
+      - 印度 V2CROSS.COM
+      - 广东省广州市 移动 3
+      - 芬兰 赫尔辛基Hetzner数据中心
+      - 广东省江门市 移动
+      - 爱尔兰都柏林 亚马逊云
       - 美国 麻省理工学院
-      - 美国 麻省理工学院 2
-      - 美国 华盛顿Cogent通信公司 4
+      - 俄罗斯 V2CROSS.COM
+      - 美国 CloudFlare节点
+      - 爱尔兰 都柏林Amazon数据中心
+      - 阿尔巴尼亚 V2CROSS.COM
+      - 德国 黑森州法兰克福Amazon数据中心
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 瑞典 斯德哥尔摩Amazon数据中心
-      - 爱尔兰 都柏林Amazon数据中心
-      - 欧盟 V2CROSS.COM
       - 广东省广州市 移动
-      - 阿尔巴尼亚 V2CROSS.COM
-      - 美国 CloudFlare节点
       - 美国 华盛顿Cogent通信公司
-      - 瑞典 斯德哥尔摩Amazon数据中心 2
-      - 印度 V2CROSS.COM
-      - 美国 Fastly全球Anycast节点
-      - 美国 惠普公司
-      - 广东省湛江市 移动
-      - 英国 Microsoft公司
-      - 美国 Amazon数据中心
       - 美国 V2CROSS.COM
-      - 美国 华盛顿Cogent通信公司 2
-      - 法国 法国计算机科学大学
-      - 美国 华盛顿Cogent通信公司 3
-      - 美国 内华达州拉斯维加斯BuyVM数据中心
-      - 北美地区 V2CROSS.COM
+      - 瑞典 斯德哥尔摩Amazon数据中心
+      - 美国
+      - 德国 黑森州法兰克福AMazon数据中心
       - 美国 V2CROSS.COM 2
-      - 爱尔兰 都柏林Amazon数据中心 2
+      - 瑞典 斯德哥尔摩Amazon数据中心 2
+      - 荷兰 V2CROSS.COM
+      - 美国 华盛顿Cogent通信公司 2
+      - 荷兰 V2CROSS.COM 2
+      - 美国 惠普公司
+      - 美国 Amazon数据中心
+      - 广东省广州市 移动 2
+      - 捷克 V2CROSS.COM
+      - 印度 V2CROSS.COM
+      - 广东省广州市 移动 3
+      - 芬兰 赫尔辛基Hetzner数据中心
+      - 广东省江门市 移动
+      - 爱尔兰都柏林 亚马逊云
       - 美国 麻省理工学院
-      - 美国 麻省理工学院 2
-      - 美国 华盛顿Cogent通信公司 4
+      - 俄罗斯 V2CROSS.COM
+      - 美国 CloudFlare节点
+      - 爱尔兰 都柏林Amazon数据中心
+      - 阿尔巴尼亚 V2CROSS.COM
+      - 德国 黑森州法兰克福Amazon数据中心
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 瑞典 斯德哥尔摩Amazon数据中心
-      - 爱尔兰 都柏林Amazon数据中心
-      - 欧盟 V2CROSS.COM
       - 广东省广州市 移动
-      - 阿尔巴尼亚 V2CROSS.COM
-      - 美国 CloudFlare节点
       - 美国 华盛顿Cogent通信公司
-      - 瑞典 斯德哥尔摩Amazon数据中心 2
-      - 印度 V2CROSS.COM
-      - 美国 Fastly全球Anycast节点
-      - 美国 惠普公司
-      - 广东省湛江市 移动
-      - 英国 Microsoft公司
-      - 美国 Amazon数据中心
       - 美国 V2CROSS.COM
-      - 美国 华盛顿Cogent通信公司 2
-      - 法国 法国计算机科学大学
-      - 美国 华盛顿Cogent通信公司 3
-      - 美国 内华达州拉斯维加斯BuyVM数据中心
-      - 北美地区 V2CROSS.COM
+      - 瑞典 斯德哥尔摩Amazon数据中心
+      - 美国
+      - 德国 黑森州法兰克福AMazon数据中心
       - 美国 V2CROSS.COM 2
-      - 爱尔兰 都柏林Amazon数据中心 2
+      - 瑞典 斯德哥尔摩Amazon数据中心 2
+      - 荷兰 V2CROSS.COM
+      - 美国 华盛顿Cogent通信公司 2
+      - 荷兰 V2CROSS.COM 2
+      - 美国 惠普公司
+      - 美国 Amazon数据中心
+      - 广东省广州市 移动 2
+      - 捷克 V2CROSS.COM
+      - 印度 V2CROSS.COM
+      - 广东省广州市 移动 3
+      - 芬兰 赫尔辛基Hetzner数据中心
+      - 广东省江门市 移动
+      - 爱尔兰都柏林 亚马逊云
       - 美国 麻省理工学院
-      - 美国 麻省理工学院 2
-      - 美国 华盛顿Cogent通信公司 4
+      - 俄罗斯 V2CROSS.COM
+      - 美国 CloudFlare节点
+      - 爱尔兰 都柏林Amazon数据中心
+      - 阿尔巴尼亚 V2CROSS.COM
+      - 德国 黑森州法兰克福Amazon数据中心
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -140,31 +144,32 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 瑞典 斯德哥尔摩Amazon数据中心
-      - 爱尔兰 都柏林Amazon数据中心
-      - 欧盟 V2CROSS.COM
       - 广东省广州市 移动
-      - 阿尔巴尼亚 V2CROSS.COM
-      - 美国 CloudFlare节点
       - 美国 华盛顿Cogent通信公司
-      - 瑞典 斯德哥尔摩Amazon数据中心 2
-      - 印度 V2CROSS.COM
-      - 美国 Fastly全球Anycast节点
-      - 美国 惠普公司
-      - 广东省湛江市 移动
-      - 英国 Microsoft公司
-      - 美国 Amazon数据中心
       - 美国 V2CROSS.COM
-      - 美国 华盛顿Cogent通信公司 2
-      - 法国 法国计算机科学大学
-      - 美国 华盛顿Cogent通信公司 3
-      - 美国 内华达州拉斯维加斯BuyVM数据中心
-      - 北美地区 V2CROSS.COM
+      - 瑞典 斯德哥尔摩Amazon数据中心
+      - 美国
+      - 德国 黑森州法兰克福AMazon数据中心
       - 美国 V2CROSS.COM 2
-      - 爱尔兰 都柏林Amazon数据中心 2
+      - 瑞典 斯德哥尔摩Amazon数据中心 2
+      - 荷兰 V2CROSS.COM
+      - 美国 华盛顿Cogent通信公司 2
+      - 荷兰 V2CROSS.COM 2
+      - 美国 惠普公司
+      - 美国 Amazon数据中心
+      - 广东省广州市 移动 2
+      - 捷克 V2CROSS.COM
+      - 印度 V2CROSS.COM
+      - 广东省广州市 移动 3
+      - 芬兰 赫尔辛基Hetzner数据中心
+      - 广东省江门市 移动
+      - 爱尔兰都柏林 亚马逊云
       - 美国 麻省理工学院
-      - 美国 麻省理工学院 2
-      - 美国 华盛顿Cogent通信公司 4
+      - 俄罗斯 V2CROSS.COM
+      - 美国 CloudFlare节点
+      - 爱尔兰 都柏林Amazon数据中心
+      - 阿尔巴尼亚 V2CROSS.COM
+      - 德国 黑森州法兰克福Amazon数据中心
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -175,92 +180,95 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 瑞典 斯德哥尔摩Amazon数据中心
-      - 爱尔兰 都柏林Amazon数据中心
-      - 欧盟 V2CROSS.COM
       - 广东省广州市 移动
-      - 阿尔巴尼亚 V2CROSS.COM
-      - 美国 CloudFlare节点
       - 美国 华盛顿Cogent通信公司
-      - 瑞典 斯德哥尔摩Amazon数据中心 2
-      - 印度 V2CROSS.COM
-      - 美国 Fastly全球Anycast节点
-      - 美国 惠普公司
-      - 广东省湛江市 移动
-      - 英国 Microsoft公司
-      - 美国 Amazon数据中心
       - 美国 V2CROSS.COM
-      - 美国 华盛顿Cogent通信公司 2
-      - 法国 法国计算机科学大学
-      - 美国 华盛顿Cogent通信公司 3
-      - 美国 内华达州拉斯维加斯BuyVM数据中心
-      - 北美地区 V2CROSS.COM
+      - 瑞典 斯德哥尔摩Amazon数据中心
+      - 美国
+      - 德国 黑森州法兰克福AMazon数据中心
       - 美国 V2CROSS.COM 2
-      - 爱尔兰 都柏林Amazon数据中心 2
+      - 瑞典 斯德哥尔摩Amazon数据中心 2
+      - 荷兰 V2CROSS.COM
+      - 美国 华盛顿Cogent通信公司 2
+      - 荷兰 V2CROSS.COM 2
+      - 美国 惠普公司
+      - 美国 Amazon数据中心
+      - 广东省广州市 移动 2
+      - 捷克 V2CROSS.COM
+      - 印度 V2CROSS.COM
+      - 广东省广州市 移动 3
+      - 芬兰 赫尔辛基Hetzner数据中心
+      - 广东省江门市 移动
+      - 爱尔兰都柏林 亚马逊云
       - 美国 麻省理工学院
-      - 美国 麻省理工学院 2
-      - 美国 华盛顿Cogent通信公司 4
+      - 俄罗斯 V2CROSS.COM
+      - 美国 CloudFlare节点
+      - 爱尔兰 都柏林Amazon数据中心
+      - 阿尔巴尼亚 V2CROSS.COM
+      - 德国 黑森州法兰克福Amazon数据中心
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 瑞典 斯德哥尔摩Amazon数据中心
-      - 爱尔兰 都柏林Amazon数据中心
-      - 欧盟 V2CROSS.COM
       - 广东省广州市 移动
-      - 阿尔巴尼亚 V2CROSS.COM
-      - 美国 CloudFlare节点
       - 美国 华盛顿Cogent通信公司
-      - 瑞典 斯德哥尔摩Amazon数据中心 2
-      - 印度 V2CROSS.COM
-      - 美国 Fastly全球Anycast节点
-      - 美国 惠普公司
-      - 广东省湛江市 移动
-      - 英国 Microsoft公司
-      - 美国 Amazon数据中心
       - 美国 V2CROSS.COM
-      - 美国 华盛顿Cogent通信公司 2
-      - 法国 法国计算机科学大学
-      - 美国 华盛顿Cogent通信公司 3
-      - 美国 内华达州拉斯维加斯BuyVM数据中心
-      - 北美地区 V2CROSS.COM
+      - 瑞典 斯德哥尔摩Amazon数据中心
+      - 美国
+      - 德国 黑森州法兰克福AMazon数据中心
       - 美国 V2CROSS.COM 2
-      - 爱尔兰 都柏林Amazon数据中心 2
+      - 瑞典 斯德哥尔摩Amazon数据中心 2
+      - 荷兰 V2CROSS.COM
+      - 美国 华盛顿Cogent通信公司 2
+      - 荷兰 V2CROSS.COM 2
+      - 美国 惠普公司
+      - 美国 Amazon数据中心
+      - 广东省广州市 移动 2
+      - 捷克 V2CROSS.COM
+      - 印度 V2CROSS.COM
+      - 广东省广州市 移动 3
+      - 芬兰 赫尔辛基Hetzner数据中心
+      - 广东省江门市 移动
+      - 爱尔兰都柏林 亚马逊云
       - 美国 麻省理工学院
-      - 美国 麻省理工学院 2
-      - 美国 华盛顿Cogent通信公司 4
+      - 俄罗斯 V2CROSS.COM
+      - 美国 CloudFlare节点
+      - 爱尔兰 都柏林Amazon数据中心
+      - 阿尔巴尼亚 V2CROSS.COM
+      - 德国 黑森州法兰克福Amazon数据中心
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 瑞典 斯德哥尔摩Amazon数据中心
-      - 爱尔兰 都柏林Amazon数据中心
-      - 欧盟 V2CROSS.COM
       - 广东省广州市 移动
-      - 阿尔巴尼亚 V2CROSS.COM
-      - 美国 CloudFlare节点
       - 美国 华盛顿Cogent通信公司
-      - 瑞典 斯德哥尔摩Amazon数据中心 2
-      - 印度 V2CROSS.COM
-      - 美国 Fastly全球Anycast节点
-      - 美国 惠普公司
-      - 广东省湛江市 移动
-      - 英国 Microsoft公司
-      - 美国 Amazon数据中心
       - 美国 V2CROSS.COM
-      - 美国 华盛顿Cogent通信公司 2
-      - 法国 法国计算机科学大学
-      - 美国 华盛顿Cogent通信公司 3
-      - 美国 内华达州拉斯维加斯BuyVM数据中心
-      - 北美地区 V2CROSS.COM
+      - 瑞典 斯德哥尔摩Amazon数据中心
+      - 美国
+      - 德国 黑森州法兰克福AMazon数据中心
       - 美国 V2CROSS.COM 2
-      - 爱尔兰 都柏林Amazon数据中心 2
+      - 瑞典 斯德哥尔摩Amazon数据中心 2
+      - 荷兰 V2CROSS.COM
+      - 美国 华盛顿Cogent通信公司 2
+      - 荷兰 V2CROSS.COM 2
+      - 美国 惠普公司
+      - 美国 Amazon数据中心
+      - 广东省广州市 移动 2
+      - 捷克 V2CROSS.COM
+      - 印度 V2CROSS.COM
+      - 广东省广州市 移动 3
+      - 芬兰 赫尔辛基Hetzner数据中心
+      - 广东省江门市 移动
+      - 爱尔兰都柏林 亚马逊云
       - 美国 麻省理工学院
-      - 美国 麻省理工学院 2
-      - 美国 华盛顿Cogent通信公司 4
+      - 俄罗斯 V2CROSS.COM
+      - 美国 CloudFlare节点
+      - 爱尔兰 都柏林Amazon数据中心
+      - 阿尔巴尼亚 V2CROSS.COM
+      - 德国 黑森州法兰克福Amazon数据中心
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -276,31 +284,32 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 瑞典 斯德哥尔摩Amazon数据中心
-      - 爱尔兰 都柏林Amazon数据中心
-      - 欧盟 V2CROSS.COM
       - 广东省广州市 移动
-      - 阿尔巴尼亚 V2CROSS.COM
-      - 美国 CloudFlare节点
       - 美国 华盛顿Cogent通信公司
-      - 瑞典 斯德哥尔摩Amazon数据中心 2
-      - 印度 V2CROSS.COM
-      - 美国 Fastly全球Anycast节点
-      - 美国 惠普公司
-      - 广东省湛江市 移动
-      - 英国 Microsoft公司
-      - 美国 Amazon数据中心
       - 美国 V2CROSS.COM
-      - 美国 华盛顿Cogent通信公司 2
-      - 法国 法国计算机科学大学
-      - 美国 华盛顿Cogent通信公司 3
-      - 美国 内华达州拉斯维加斯BuyVM数据中心
-      - 北美地区 V2CROSS.COM
+      - 瑞典 斯德哥尔摩Amazon数据中心
+      - 美国
+      - 德国 黑森州法兰克福AMazon数据中心
       - 美国 V2CROSS.COM 2
-      - 爱尔兰 都柏林Amazon数据中心 2
+      - 瑞典 斯德哥尔摩Amazon数据中心 2
+      - 荷兰 V2CROSS.COM
+      - 美国 华盛顿Cogent通信公司 2
+      - 荷兰 V2CROSS.COM 2
+      - 美国 惠普公司
+      - 美国 Amazon数据中心
+      - 广东省广州市 移动 2
+      - 捷克 V2CROSS.COM
+      - 印度 V2CROSS.COM
+      - 广东省广州市 移动 3
+      - 芬兰 赫尔辛基Hetzner数据中心
+      - 广东省江门市 移动
+      - 爱尔兰都柏林 亚马逊云
       - 美国 麻省理工学院
-      - 美国 麻省理工学院 2
-      - 美国 华盛顿Cogent通信公司 4
+      - 俄罗斯 V2CROSS.COM
+      - 美国 CloudFlare节点
+      - 爱尔兰 都柏林Amazon数据中心
+      - 阿尔巴尼亚 V2CROSS.COM
+      - 德国 黑森州法兰克福Amazon数据中心
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
