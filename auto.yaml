@@ -5,155 +5,99 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 美国 华盛顿Cogent通信公司, server: 38.75.136.21, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 俄罗斯 V2CROSS.COM, server: fitting-ox.boa152.lol, port: 443, type: trojan, password: !<str> 3723507166611775488, sni: fitting-ox.boa152.lol, skip-cert-verify: true, udp: true}
-  - {name: 美国 华盛顿Cogent通信公司 2, server: 38.75.136.21, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: 匈牙利 V2CROSS.COM, server: 109.61.16.83, port: 443, type: trojan, password: !<str> 3723507166611775488, sni: profound-elk.boa152.lol, skip-cert-verify: true, udp: true}
-  - {name: 捷克 V2CROSS.COM, server: 185.190.250.103, port: 57328, type: ss, cipher: chacha20-ietf-poly1305, password: xzlOqy2v6vJ0XvFTN8zIBH, udp: true}
-  - {name: 广东省广州市 移动, server: 183.236.51.23, port: 52112, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 广东省广州市 移动 2, server: 183.236.51.23, port: 51704, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美国 Amazon数据中心, server: 18.170.179.230, port: 22222, type: trojan, password: telegram-id-privatevpns, sni: trojan.burgerip.co.uk, skip-cert-verify: true, udp: true}
-  - {name: 韩国 首尔Oracle云计算数据中心, server: 132.145.94.80, port: 443, type: trojan, password: e8105dfd24414268b6c7652c63731097, sni: yournextcareerstep.online, skip-cert-verify: true, udp: true}
-  - {name: 美国 V2CROSS.COM, server: 199.232.214.133, port: 443, type: vmess, uuid: e5852393-ca52-4c90-a237-d63cbbb57f21, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: "/farcry?ed=2560", headers: {Host: loki.oracle}}, udp: true}
-  - {name: 美国 V2CROSS.COM 2, server: primer.ibilibi.li, port: 443, type: vmess, uuid: e5852393-ca52-4c90-a237-d63cbbb57f21, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: "/farcry?ed=2560", headers: {Host: loki.oracle}}, udp: true}
-  - {name: 美国 华盛顿Cogent通信公司 3, server: 38.75.136.21, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: 广东省广州市 移动, server: 183.236.51.23, port: 56601, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国 CloudFlare节点, server: cf-vod.nimo.tv, port: 80, type: vmess, uuid: 4ffc214f-6e89-4097-a791-a5cb22bd9319, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /vmessws, headers: {Host: ovh.reonolimits.my.id}}, udp: true}
+  - {name: 美国 Fastly全球Anycast节点, server: gov.uk, port: 443, type: vmess, uuid: 77848824-93b7-4b89-ffd0-e91afff406ce, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /77848824, headers: {Host: zheshiscp.com}}, udp: true}
+  - {name: 匈牙利 V2CROSS.COM, server: profound-elk.boa152.lol, port: 443, type: trojan, password: !<str> 3723507166611775488, sni: profound-elk.boa152.lol, skip-cert-verify: true, udp: true}
+  - {name: 美国 CloudFlare节点 2, server: 104.21.82.183, port: 8880, type: vmess, uuid: 5a7021e0-26b4-45d6-b175-fe551601ca97, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: server26.beheshtbaneh.com}}, udp: true}
+  - {name: 美国 CloudFlare节点 3, server: 104.16.68.38, port: 2082, type: vmess, uuid: 6c168fcc-2231-4f3b-8c1e-f6391692df4a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hms02.fxiaomi.sbs/link, headers: {Host: 38hhuiet-glitter-ee01.lijeyet360.workers.dev}}, udp: true}
+  - {name: 美国 Amazon EC2服务器, server: 3.97.189.56, port: 22222, type: trojan, password: telegram-id-directvpn, sni: trojan.burgerip.co.uk, skip-cert-verify: true, udp: true}
+  - {name: 法国 法国计算机科学大学, server: 163.5.159.231, port: 443, type: vmess, uuid: e537f2f5-2a0c-4f59-92c9-832ca6433bf3, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /linkws, headers: {Host: irvideo.cfd}}, udp: true}
+  - {name: 广东省湛江市 移动, server: 120.198.71.214, port: 34493, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 俄罗斯 V2CROSS.COM, server: 185.22.155.228, port: 23456, type: ss, cipher: aes-256-gcm, password: dongtaiwang.com, udp: true}
+  - {name: 澳大利亚 V2CROSS.COM, server: 160.30.21.105, port: 443, type: trojan, password: 94d219c9-1afc-4d42-b090-8b3794764380, sni: std1.loadingip.com, skip-cert-verify: true, udp: true}
   - {name: 法国 巴黎Amazon数据中心, server: 15.188.226.71, port: 22222, type: trojan, password: telegram-id-privatevpns, sni: trojan.burgerip.co.uk, skip-cert-verify: true, udp: true}
-  - {name: 俄罗斯 Rubtsovsk Branch of Altai State University, server: 212.192.12.70, port: 28320, type: vmess, uuid: 74b1c671-ad18-4a10-8e01-7dec7394b570, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: 美国 Amazon数据中心 2, server: 13.43.174.47, port: 22222, type: trojan, password: telegram-id-privatevpns, sni: trojan.burgerip.co.uk, skip-cert-verify: true, udp: true}
-  - {name: 英国 伦敦Amazon数据中心, server: 3.10.136.248, port: 22222, type: trojan, password: telegram-id-directvpn, sni: trojan.burgerip.co.uk, skip-cert-verify: true, udp: true}
-  - {name: 美国 华盛顿Cogent通信公司 4, server: 38.110.1.46, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: 美国 Akamai科技公司CDN网络节点, server: 172.233.89.6, port: 31808, type: vmess, uuid: 984a9012-3d26-4bbb-98bd-6327b0e2a5a2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 俄罗斯 V2CROSS.COM 2, server: 77.105.147.212, port: 55098, type: ss, cipher: chacha20-ietf-poly1305, password: NChVdloynewtqS0847jui6PQejHLO3gUuw1tnUmYVPI=, udp: true}
-  - {name: 广东省广州市 移动 3, server: 183.236.51.23, port: 53002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 波兰 V2CROSS.COM, server: 193.243.147.128, port: 40368, type: ss, cipher: aes-256-gcm, password: 7BcLdsO1WweoGD0X, udp: true}
-  - {name: 法国 国际航空电讯集团公司(SITA), server: 57.129.25.25, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /linkvws, headers: {Host: f.khilei.com}}, udp: true}
-  - {name: 美国 内华达州克拉克县亨德森市Enzu股份有限公司, server: 23.88.37.31, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: LuxyNetBot, udp: true}
-  - {name: 德国 黑森州法兰克福Amazon数据中心, server: 52.58.149.106, port: 22222, type: trojan, password: telegram-id-privatevpns, sni: trojan.burgerip.co.uk, skip-cert-verify: true, udp: true}
-  - {name: 匈牙利 V2CROSS.COM 2, server: 62.112.221.46, port: 443, type: trojan, password: !<str> 3723507166611775488, sni: boss-hound.boa152.lol, skip-cert-verify: true, udp: true}
-  - {name: 美国 华盛顿Cogent通信公司 5, server: 38.75.136.21, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: 美国 弗吉尼亚州阿什本Amazon数据中心, server: 34.206.190.76, port: 22222, type: trojan, password: telegram-id-directvpn, sni: trojan.burgerip.co.uk, skip-cert-verify: true, udp: true}
-  - {name: 美国 华盛顿Cogent通信公司 6, server: 38.75.136.21, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: 美国 CloudFlare节点, server: www.darkroom.lol, port: 8080, type: vmess, uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: www.darkroom.lol}}, udp: true}
-  - {name: 美国 内华达州克拉克县亨德森市Enzu股份有限公司 2, server: apple.slumbo.com, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: LuxyNetBot, udp: true}
-  - {name: 保加利亚 V2CROSS.COM, server: concrete-buzzard.boa152.lol, port: 443, type: trojan, password: !<str> 3723507166611775488, sni: concrete-buzzard.boa152.lol, skip-cert-verify: true, udp: true}
-  - {name: 美国 CloudFlare节点 2, server: 172.67.207.57, port: 443, type: trojan, password: yaml777, sni: yaml7.ggff.net, skip-cert-verify: true, udp: true}
-  - {name: 美国 Xerox, server: 13.61.137.105, port: 22222, type: trojan, password: telegram-id-privatevpns, sni: trojan.burgerip.co.uk, skip-cert-verify: true, udp: true}
+  - {name: 伊朗 V2CROSS.COM, server: 92.242.220.22, port: 37885, type: vmess, uuid: 8dee19ab-50ce-4d06-be42-5e53c8989ccc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 俄罗斯 V2CROSS.COM 2, server: fitting-ox.boa152.lol, port: 443, type: trojan, password: !<str> 3723507166611775488, sni: fitting-ox.boa152.lol, skip-cert-verify: true, udp: true}
+  - {name: 海南省 移动(全省通用), server: cm1.awslcn.info, port: 25230, type: vmess, uuid: 243eab52-9ac1-405c-887c-eb112c0985b8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: cm1.awslcn.info}}, udp: true}
+  - {name: 印度 V2CROSS.COM, server: 202.78.162.5, port: 443, type: vmess, uuid: 118287d2-e968-42e1-80d0-12fa2f5d38d6, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: sahand.serveminecraft.net}}, udp: true}
+  - {name: 韩国 首尔Oracle云计算数据中心, server: 132.145.94.80, port: 443, type: trojan, password: e8105dfd24414268b6c7652c63731097, sni: yournextcareerstep.online, skip-cert-verify: true, udp: true}
+  - {name: 美国 内华达州克拉克县亨德森市Enzu股份有限公司, server: apple.slumbo.com, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: LuxyNetBot, udp: true}
+  - {name: 美国 Amazon数据中心, server: 13.43.174.47, port: 22222, type: trojan, password: telegram-id-privatevpns, sni: trojan.burgerip.co.uk, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 美国 华盛顿Cogent通信公司
-      - 俄罗斯 V2CROSS.COM
-      - 美国 华盛顿Cogent通信公司 2
-      - 匈牙利 V2CROSS.COM
-      - 捷克 V2CROSS.COM
       - 广东省广州市 移动
-      - 广东省广州市 移动 2
-      - 美国 Amazon数据中心
-      - 韩国 首尔Oracle云计算数据中心
-      - 美国 V2CROSS.COM
-      - 美国 V2CROSS.COM 2
-      - 美国 华盛顿Cogent通信公司 3
-      - 法国 巴黎Amazon数据中心
-      - 俄罗斯 Rubtsovsk Branch of Altai State University
-      - 美国 Amazon数据中心 2
-      - 英国 伦敦Amazon数据中心
-      - 美国 华盛顿Cogent通信公司 4
-      - 美国 Akamai科技公司CDN网络节点
-      - 俄罗斯 V2CROSS.COM 2
-      - 广东省广州市 移动 3
-      - 波兰 V2CROSS.COM
-      - 法国 国际航空电讯集团公司(SITA)
-      - 美国 内华达州克拉克县亨德森市Enzu股份有限公司
-      - 德国 黑森州法兰克福Amazon数据中心
-      - 匈牙利 V2CROSS.COM 2
-      - 美国 华盛顿Cogent通信公司 5
-      - 美国 弗吉尼亚州阿什本Amazon数据中心
-      - 美国 华盛顿Cogent通信公司 6
       - 美国 CloudFlare节点
-      - 美国 内华达州克拉克县亨德森市Enzu股份有限公司 2
-      - 保加利亚 V2CROSS.COM
+      - 美国 Fastly全球Anycast节点
+      - 匈牙利 V2CROSS.COM
       - 美国 CloudFlare节点 2
-      - 美国 Xerox
+      - 美国 CloudFlare节点 3
+      - 美国 Amazon EC2服务器
+      - 法国 法国计算机科学大学
+      - 广东省湛江市 移动
+      - 俄罗斯 V2CROSS.COM
+      - 澳大利亚 V2CROSS.COM
+      - 法国 巴黎Amazon数据中心
+      - 伊朗 V2CROSS.COM
+      - 俄罗斯 V2CROSS.COM 2
+      - 海南省 移动(全省通用)
+      - 印度 V2CROSS.COM
+      - 韩国 首尔Oracle云计算数据中心
+      - 美国 内华达州克拉克县亨德森市Enzu股份有限公司
+      - 美国 Amazon数据中心
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 美国 华盛顿Cogent通信公司
-      - 俄罗斯 V2CROSS.COM
-      - 美国 华盛顿Cogent通信公司 2
-      - 匈牙利 V2CROSS.COM
-      - 捷克 V2CROSS.COM
       - 广东省广州市 移动
-      - 广东省广州市 移动 2
-      - 美国 Amazon数据中心
-      - 韩国 首尔Oracle云计算数据中心
-      - 美国 V2CROSS.COM
-      - 美国 V2CROSS.COM 2
-      - 美国 华盛顿Cogent通信公司 3
-      - 法国 巴黎Amazon数据中心
-      - 俄罗斯 Rubtsovsk Branch of Altai State University
-      - 美国 Amazon数据中心 2
-      - 英国 伦敦Amazon数据中心
-      - 美国 华盛顿Cogent通信公司 4
-      - 美国 Akamai科技公司CDN网络节点
-      - 俄罗斯 V2CROSS.COM 2
-      - 广东省广州市 移动 3
-      - 波兰 V2CROSS.COM
-      - 法国 国际航空电讯集团公司(SITA)
-      - 美国 内华达州克拉克县亨德森市Enzu股份有限公司
-      - 德国 黑森州法兰克福Amazon数据中心
-      - 匈牙利 V2CROSS.COM 2
-      - 美国 华盛顿Cogent通信公司 5
-      - 美国 弗吉尼亚州阿什本Amazon数据中心
-      - 美国 华盛顿Cogent通信公司 6
       - 美国 CloudFlare节点
-      - 美国 内华达州克拉克县亨德森市Enzu股份有限公司 2
-      - 保加利亚 V2CROSS.COM
+      - 美国 Fastly全球Anycast节点
+      - 匈牙利 V2CROSS.COM
       - 美国 CloudFlare节点 2
-      - 美国 Xerox
+      - 美国 CloudFlare节点 3
+      - 美国 Amazon EC2服务器
+      - 法国 法国计算机科学大学
+      - 广东省湛江市 移动
+      - 俄罗斯 V2CROSS.COM
+      - 澳大利亚 V2CROSS.COM
+      - 法国 巴黎Amazon数据中心
+      - 伊朗 V2CROSS.COM
+      - 俄罗斯 V2CROSS.COM 2
+      - 海南省 移动(全省通用)
+      - 印度 V2CROSS.COM
+      - 韩国 首尔Oracle云计算数据中心
+      - 美国 内华达州克拉克县亨德森市Enzu股份有限公司
+      - 美国 Amazon数据中心
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 美国 华盛顿Cogent通信公司
-      - 俄罗斯 V2CROSS.COM
-      - 美国 华盛顿Cogent通信公司 2
-      - 匈牙利 V2CROSS.COM
-      - 捷克 V2CROSS.COM
       - 广东省广州市 移动
-      - 广东省广州市 移动 2
-      - 美国 Amazon数据中心
-      - 韩国 首尔Oracle云计算数据中心
-      - 美国 V2CROSS.COM
-      - 美国 V2CROSS.COM 2
-      - 美国 华盛顿Cogent通信公司 3
-      - 法国 巴黎Amazon数据中心
-      - 俄罗斯 Rubtsovsk Branch of Altai State University
-      - 美国 Amazon数据中心 2
-      - 英国 伦敦Amazon数据中心
-      - 美国 华盛顿Cogent通信公司 4
-      - 美国 Akamai科技公司CDN网络节点
-      - 俄罗斯 V2CROSS.COM 2
-      - 广东省广州市 移动 3
-      - 波兰 V2CROSS.COM
-      - 法国 国际航空电讯集团公司(SITA)
-      - 美国 内华达州克拉克县亨德森市Enzu股份有限公司
-      - 德国 黑森州法兰克福Amazon数据中心
-      - 匈牙利 V2CROSS.COM 2
-      - 美国 华盛顿Cogent通信公司 5
-      - 美国 弗吉尼亚州阿什本Amazon数据中心
-      - 美国 华盛顿Cogent通信公司 6
       - 美国 CloudFlare节点
-      - 美国 内华达州克拉克县亨德森市Enzu股份有限公司 2
-      - 保加利亚 V2CROSS.COM
+      - 美国 Fastly全球Anycast节点
+      - 匈牙利 V2CROSS.COM
       - 美国 CloudFlare节点 2
-      - 美国 Xerox
+      - 美国 CloudFlare节点 3
+      - 美国 Amazon EC2服务器
+      - 法国 法国计算机科学大学
+      - 广东省湛江市 移动
+      - 俄罗斯 V2CROSS.COM
+      - 澳大利亚 V2CROSS.COM
+      - 法国 巴黎Amazon数据中心
+      - 伊朗 V2CROSS.COM
+      - 俄罗斯 V2CROSS.COM 2
+      - 海南省 移动(全省通用)
+      - 印度 V2CROSS.COM
+      - 韩国 首尔Oracle云计算数据中心
+      - 美国 内华达州克拉克县亨德森市Enzu股份有限公司
+      - 美国 Amazon数据中心
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -172,39 +116,25 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 美国 华盛顿Cogent通信公司
-      - 俄罗斯 V2CROSS.COM
-      - 美国 华盛顿Cogent通信公司 2
-      - 匈牙利 V2CROSS.COM
-      - 捷克 V2CROSS.COM
       - 广东省广州市 移动
-      - 广东省广州市 移动 2
-      - 美国 Amazon数据中心
-      - 韩国 首尔Oracle云计算数据中心
-      - 美国 V2CROSS.COM
-      - 美国 V2CROSS.COM 2
-      - 美国 华盛顿Cogent通信公司 3
-      - 法国 巴黎Amazon数据中心
-      - 俄罗斯 Rubtsovsk Branch of Altai State University
-      - 美国 Amazon数据中心 2
-      - 英国 伦敦Amazon数据中心
-      - 美国 华盛顿Cogent通信公司 4
-      - 美国 Akamai科技公司CDN网络节点
-      - 俄罗斯 V2CROSS.COM 2
-      - 广东省广州市 移动 3
-      - 波兰 V2CROSS.COM
-      - 法国 国际航空电讯集团公司(SITA)
-      - 美国 内华达州克拉克县亨德森市Enzu股份有限公司
-      - 德国 黑森州法兰克福Amazon数据中心
-      - 匈牙利 V2CROSS.COM 2
-      - 美国 华盛顿Cogent通信公司 5
-      - 美国 弗吉尼亚州阿什本Amazon数据中心
-      - 美国 华盛顿Cogent通信公司 6
       - 美国 CloudFlare节点
-      - 美国 内华达州克拉克县亨德森市Enzu股份有限公司 2
-      - 保加利亚 V2CROSS.COM
+      - 美国 Fastly全球Anycast节点
+      - 匈牙利 V2CROSS.COM
       - 美国 CloudFlare节点 2
-      - 美国 Xerox
+      - 美国 CloudFlare节点 3
+      - 美国 Amazon EC2服务器
+      - 法国 法国计算机科学大学
+      - 广东省湛江市 移动
+      - 俄罗斯 V2CROSS.COM
+      - 澳大利亚 V2CROSS.COM
+      - 法国 巴黎Amazon数据中心
+      - 伊朗 V2CROSS.COM
+      - 俄罗斯 V2CROSS.COM 2
+      - 海南省 移动(全省通用)
+      - 印度 V2CROSS.COM
+      - 韩国 首尔Oracle云计算数据中心
+      - 美国 内华达州克拉克县亨德森市Enzu股份有限公司
+      - 美国 Amazon数据中心
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -215,116 +145,74 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 美国 华盛顿Cogent通信公司
-      - 俄罗斯 V2CROSS.COM
-      - 美国 华盛顿Cogent通信公司 2
-      - 匈牙利 V2CROSS.COM
-      - 捷克 V2CROSS.COM
       - 广东省广州市 移动
-      - 广东省广州市 移动 2
-      - 美国 Amazon数据中心
-      - 韩国 首尔Oracle云计算数据中心
-      - 美国 V2CROSS.COM
-      - 美国 V2CROSS.COM 2
-      - 美国 华盛顿Cogent通信公司 3
-      - 法国 巴黎Amazon数据中心
-      - 俄罗斯 Rubtsovsk Branch of Altai State University
-      - 美国 Amazon数据中心 2
-      - 英国 伦敦Amazon数据中心
-      - 美国 华盛顿Cogent通信公司 4
-      - 美国 Akamai科技公司CDN网络节点
-      - 俄罗斯 V2CROSS.COM 2
-      - 广东省广州市 移动 3
-      - 波兰 V2CROSS.COM
-      - 法国 国际航空电讯集团公司(SITA)
-      - 美国 内华达州克拉克县亨德森市Enzu股份有限公司
-      - 德国 黑森州法兰克福Amazon数据中心
-      - 匈牙利 V2CROSS.COM 2
-      - 美国 华盛顿Cogent通信公司 5
-      - 美国 弗吉尼亚州阿什本Amazon数据中心
-      - 美国 华盛顿Cogent通信公司 6
       - 美国 CloudFlare节点
-      - 美国 内华达州克拉克县亨德森市Enzu股份有限公司 2
-      - 保加利亚 V2CROSS.COM
+      - 美国 Fastly全球Anycast节点
+      - 匈牙利 V2CROSS.COM
       - 美国 CloudFlare节点 2
-      - 美国 Xerox
+      - 美国 CloudFlare节点 3
+      - 美国 Amazon EC2服务器
+      - 法国 法国计算机科学大学
+      - 广东省湛江市 移动
+      - 俄罗斯 V2CROSS.COM
+      - 澳大利亚 V2CROSS.COM
+      - 法国 巴黎Amazon数据中心
+      - 伊朗 V2CROSS.COM
+      - 俄罗斯 V2CROSS.COM 2
+      - 海南省 移动(全省通用)
+      - 印度 V2CROSS.COM
+      - 韩国 首尔Oracle云计算数据中心
+      - 美国 内华达州克拉克县亨德森市Enzu股份有限公司
+      - 美国 Amazon数据中心
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 美国 华盛顿Cogent通信公司
-      - 俄罗斯 V2CROSS.COM
-      - 美国 华盛顿Cogent通信公司 2
-      - 匈牙利 V2CROSS.COM
-      - 捷克 V2CROSS.COM
       - 广东省广州市 移动
-      - 广东省广州市 移动 2
-      - 美国 Amazon数据中心
-      - 韩国 首尔Oracle云计算数据中心
-      - 美国 V2CROSS.COM
-      - 美国 V2CROSS.COM 2
-      - 美国 华盛顿Cogent通信公司 3
-      - 法国 巴黎Amazon数据中心
-      - 俄罗斯 Rubtsovsk Branch of Altai State University
-      - 美国 Amazon数据中心 2
-      - 英国 伦敦Amazon数据中心
-      - 美国 华盛顿Cogent通信公司 4
-      - 美国 Akamai科技公司CDN网络节点
-      - 俄罗斯 V2CROSS.COM 2
-      - 广东省广州市 移动 3
-      - 波兰 V2CROSS.COM
-      - 法国 国际航空电讯集团公司(SITA)
-      - 美国 内华达州克拉克县亨德森市Enzu股份有限公司
-      - 德国 黑森州法兰克福Amazon数据中心
-      - 匈牙利 V2CROSS.COM 2
-      - 美国 华盛顿Cogent通信公司 5
-      - 美国 弗吉尼亚州阿什本Amazon数据中心
-      - 美国 华盛顿Cogent通信公司 6
       - 美国 CloudFlare节点
-      - 美国 内华达州克拉克县亨德森市Enzu股份有限公司 2
-      - 保加利亚 V2CROSS.COM
+      - 美国 Fastly全球Anycast节点
+      - 匈牙利 V2CROSS.COM
       - 美国 CloudFlare节点 2
-      - 美国 Xerox
+      - 美国 CloudFlare节点 3
+      - 美国 Amazon EC2服务器
+      - 法国 法国计算机科学大学
+      - 广东省湛江市 移动
+      - 俄罗斯 V2CROSS.COM
+      - 澳大利亚 V2CROSS.COM
+      - 法国 巴黎Amazon数据中心
+      - 伊朗 V2CROSS.COM
+      - 俄罗斯 V2CROSS.COM 2
+      - 海南省 移动(全省通用)
+      - 印度 V2CROSS.COM
+      - 韩国 首尔Oracle云计算数据中心
+      - 美国 内华达州克拉克县亨德森市Enzu股份有限公司
+      - 美国 Amazon数据中心
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 美国 华盛顿Cogent通信公司
-      - 俄罗斯 V2CROSS.COM
-      - 美国 华盛顿Cogent通信公司 2
-      - 匈牙利 V2CROSS.COM
-      - 捷克 V2CROSS.COM
       - 广东省广州市 移动
-      - 广东省广州市 移动 2
-      - 美国 Amazon数据中心
-      - 韩国 首尔Oracle云计算数据中心
-      - 美国 V2CROSS.COM
-      - 美国 V2CROSS.COM 2
-      - 美国 华盛顿Cogent通信公司 3
-      - 法国 巴黎Amazon数据中心
-      - 俄罗斯 Rubtsovsk Branch of Altai State University
-      - 美国 Amazon数据中心 2
-      - 英国 伦敦Amazon数据中心
-      - 美国 华盛顿Cogent通信公司 4
-      - 美国 Akamai科技公司CDN网络节点
-      - 俄罗斯 V2CROSS.COM 2
-      - 广东省广州市 移动 3
-      - 波兰 V2CROSS.COM
-      - 法国 国际航空电讯集团公司(SITA)
-      - 美国 内华达州克拉克县亨德森市Enzu股份有限公司
-      - 德国 黑森州法兰克福Amazon数据中心
-      - 匈牙利 V2CROSS.COM 2
-      - 美国 华盛顿Cogent通信公司 5
-      - 美国 弗吉尼亚州阿什本Amazon数据中心
-      - 美国 华盛顿Cogent通信公司 6
       - 美国 CloudFlare节点
-      - 美国 内华达州克拉克县亨德森市Enzu股份有限公司 2
-      - 保加利亚 V2CROSS.COM
+      - 美国 Fastly全球Anycast节点
+      - 匈牙利 V2CROSS.COM
       - 美国 CloudFlare节点 2
-      - 美国 Xerox
+      - 美国 CloudFlare节点 3
+      - 美国 Amazon EC2服务器
+      - 法国 法国计算机科学大学
+      - 广东省湛江市 移动
+      - 俄罗斯 V2CROSS.COM
+      - 澳大利亚 V2CROSS.COM
+      - 法国 巴黎Amazon数据中心
+      - 伊朗 V2CROSS.COM
+      - 俄罗斯 V2CROSS.COM 2
+      - 海南省 移动(全省通用)
+      - 印度 V2CROSS.COM
+      - 韩国 首尔Oracle云计算数据中心
+      - 美国 内华达州克拉克县亨德森市Enzu股份有限公司
+      - 美国 Amazon数据中心
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -340,39 +228,25 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 美国 华盛顿Cogent通信公司
-      - 俄罗斯 V2CROSS.COM
-      - 美国 华盛顿Cogent通信公司 2
-      - 匈牙利 V2CROSS.COM
-      - 捷克 V2CROSS.COM
       - 广东省广州市 移动
-      - 广东省广州市 移动 2
-      - 美国 Amazon数据中心
-      - 韩国 首尔Oracle云计算数据中心
-      - 美国 V2CROSS.COM
-      - 美国 V2CROSS.COM 2
-      - 美国 华盛顿Cogent通信公司 3
-      - 法国 巴黎Amazon数据中心
-      - 俄罗斯 Rubtsovsk Branch of Altai State University
-      - 美国 Amazon数据中心 2
-      - 英国 伦敦Amazon数据中心
-      - 美国 华盛顿Cogent通信公司 4
-      - 美国 Akamai科技公司CDN网络节点
-      - 俄罗斯 V2CROSS.COM 2
-      - 广东省广州市 移动 3
-      - 波兰 V2CROSS.COM
-      - 法国 国际航空电讯集团公司(SITA)
-      - 美国 内华达州克拉克县亨德森市Enzu股份有限公司
-      - 德国 黑森州法兰克福Amazon数据中心
-      - 匈牙利 V2CROSS.COM 2
-      - 美国 华盛顿Cogent通信公司 5
-      - 美国 弗吉尼亚州阿什本Amazon数据中心
-      - 美国 华盛顿Cogent通信公司 6
       - 美国 CloudFlare节点
-      - 美国 内华达州克拉克县亨德森市Enzu股份有限公司 2
-      - 保加利亚 V2CROSS.COM
+      - 美国 Fastly全球Anycast节点
+      - 匈牙利 V2CROSS.COM
       - 美国 CloudFlare节点 2
-      - 美国 Xerox
+      - 美国 CloudFlare节点 3
+      - 美国 Amazon EC2服务器
+      - 法国 法国计算机科学大学
+      - 广东省湛江市 移动
+      - 俄罗斯 V2CROSS.COM
+      - 澳大利亚 V2CROSS.COM
+      - 法国 巴黎Amazon数据中心
+      - 伊朗 V2CROSS.COM
+      - 俄罗斯 V2CROSS.COM 2
+      - 海南省 移动(全省通用)
+      - 印度 V2CROSS.COM
+      - 韩国 首尔Oracle云计算数据中心
+      - 美国 内华达州克拉克县亨德森市Enzu股份有限公司
+      - 美国 Amazon数据中心
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
