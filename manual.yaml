@@ -5,229 +5,253 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 🇺🇸 美国 Xerox, server: 13.61.255.102, port: 22222, type: trojan, password: telegram-id-privatevpns, sni: trojan.burgerip.co.uk, skip-cert-verify: false, udp: true}
-  - {name: 亚太地区 V2CROSS.COM, server: sgp.fastsoonlink.com, port: 40005, type: ss, cipher: chacha20-ietf-poly1305, password: 3FB23A19-9424-40C7-9139-3540228283FA, udp: true}
-  - {name: 🇰🇷 韩国 KT电信, server: service.ouluyun9803.com, port: 26667, type: ss, cipher: chacha20-ietf-poly1305, password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2, udp: true}
-  - {name: 亚太地区 V2CROSS.COM 2, server: 36.50.135.142, port: 443, type: trojan, password: 94d219c9-1afc-4d42-b090-8b3794764380, sni: bs1.loadingip.com, skip-cert-verify: false, udp: true}
-  - {name: 🇷🇺 俄罗斯 V2CROSS.COM, server: 185.242.86.156, port: 54170, type: ss, cipher: chacha20-ietf-poly1305, password: 36ZCHeabUSfKjfQEvJ4HDV, udp: true}
-  - {name: 🇺🇸 美国 Fastly全球Anycast节点, server: 151.101.130.133, port: 80, type: vmess, uuid: ca387597-d79e-48c2-89a7-e2dc66a88a70, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/racevpn?telegram-", headers: {Host: telegram-isvvpn.ir}}, udp: true}
-  - {name: 🇺🇸 美国 CloudFlare节点, server: s1.db-link02.top, port: 2086, type: vmess, uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /dabai.in172.64.9.208, headers: {Host: 100-223-71-166.s1.db-link02.top}}, udp: true}
-  - {name: 🇯🇵 日本东京 Amazon数据中心, server: vn.mjt000.com, port: 443, type: trojan, password: 6557bf4a-852b-4a69-ad35-d53293386a13, sni: vn.mjt000.com, skip-cert-verify: false, udp: true}
-  - {name: 🇮🇪 爱尔兰 都柏林Amazon数据中心, server: 52.16.243.73, port: 22222, type: trojan, password: telegram-id-directvpn, sni: trojan.burgerip.co.uk, skip-cert-verify: false, udp: true}
-  - {name: 🇬🇧 英国 V2CROSS.COM, server: 77.239.99.180, port: 34775, type: ss, cipher: chacha20-ietf-poly1305, password: nHDhqhjSzmrCNUeRalyPwQ, udp: true}
-  - {name: 🇺🇸 美国 CloudFlare节点 2, server: s2.db-link01.top, port: 2095, type: vmess, uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /dabai.in104.21.133.12, headers: {Host: 100-130-136-50.s2.db-link01.top}}, udp: true}
-  - {name: 🇷🇺 俄罗斯 V2CROSS.COM 2, server: is3.opensocks.site, port: 8388, type: ss, cipher: chacha20-ietf-poly1305, password: NjBlZDlk, udp: true}
-  - {name: 🇺🇸 美国 CloudFlare节点 3, server: visa.com, port: 443, type: vmess, uuid: 3e125fac-2e5e-44f4-bd5b-5de5712fdbff, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: hanguo.daluquan.top}}, udp: true}
-  - {name: 🇺🇸 美国 CloudFlare节点 4, server: s1.db-link01.top, port: 2082, type: vmess, uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: 100-39-195-198.s1.db-link01.top}}, udp: true}
-  - {name: 🇺🇸 美国 Amazon EC2服务器, server: 3.140.166.35, port: 22222, type: trojan, password: telegram-id-directvpn, sni: trojan.burgerip.co.uk, skip-cert-verify: false, udp: true}
-  - {name: 🇺🇸 美国 弗吉尼亚州阿什本Amazon数据中心, server: 34.239.62.224, port: 22222, type: trojan, password: telegram-id-directvpn, sni: trojan.burgerip.co.uk, skip-cert-verify: false, udp: true}
-  - {name: 🇩🇪 德国 黑森州法兰克福AMazon数据中心, server: 3.122.174.190, port: 22222, type: trojan, password: telegram-id-privatevpns, sni: trojan.burgerip.co.uk, skip-cert-verify: false, udp: true}
-  - {name: 🇪🇸 西班牙 V2CROSS.COM, server: 150.241.97.212, port: 1601, type: ss, cipher: chacha20-ietf-poly1305, password: yhDWDX3XM7yLFr1YWB7QOe, udp: true}
-  - {name: 🇩🇪 德国 V2CROSS.COM, server: 213.136.83.240, port: 18400, type: vmess, uuid: bc97f674-c578-4940-9234-0a1da46041b0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/vmess-argo?ed=2048"}, udp: true}
-  - {name: 🇺🇸 美国 CloudFlare节点 5, server: 104.17.213.241, port: 80, type: vmess, uuid: e6543319-0574-42ac-b778-1c4325d626f5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: chunchuan.kejixiaoqi666.store}}, udp: true}
-  - {name: 🇺🇸 美国 CloudFlare节点 6, server: s1.cn-db.top, port: 2086, type: vmess, uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /dabai.in104.24.181.189, headers: {Host: 100-47-154-9.s1.cn-db.top}}, udp: true}
-  - {name: 🇺🇸 美国 V2CROSS.COM, server: 45.144.48.128, port: 8443, type: vmess, uuid: a4850481-9b95-430f-9b2d-192d2410b4f4, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /vmess/}, udp: true}
-  - {name: 🇵🇱 波兰 V2CROSS.COM, server: 193.243.147.128, port: 40368, type: ss, cipher: aes-256-gcm, password: 7BcLdsO1WweoGD0X, udp: true}
+  - {name: 亚太地区 V2CROSS.COM, server: 103.211.32.109, port: 443, type: trojan, password: 3bcd9e33-8377-4b32-af33-217158577ff3, sni: kdlsupport.zendesk.com, skip-cert-verify: false, udp: true}
+  - {name: 🇬🇧 英国 V2CROSS.COM, server: 185.121.134.12, port: 20315, type: vmess, uuid: e1cae0cf-536b-4931-acf3-ca778beb7916, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 🇺🇸 美国 CloudFlare节点, server: jp.cowvpn.org, port: 443, type: vmess, uuid: 11a805f2-41a7-4cd8-8406-0470c3cde0d3, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /cctv13/vmess_jpcf, headers: {Host: jpcf.cowvpn.org}}, udp: true}
+  - {name: 🇺🇸 美国 圣斯考拉斯蒂卡大学, server: 143.110.246.228, port: 443, type: trojan, password: 3bcd9e33-8377-4b32-af33-217158577ff3, sni: kdlsupport.zendesk.com, skip-cert-verify: false, udp: true}
+  - {name: 🇺🇸 美国 CloudFlare节点 2, server: s5.db-link02.top, port: 80, type: vmess, uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /dabai.in104.18.75.85, headers: {Host: 100-235-225-209.s5.db-link02.top}}, udp: true}
+  - {name: 🇯🇵 日本 东京, server: 103.120.14.39, port: 443, type: trojan, password: 3bcd9e33-8377-4b32-af33-217158577ff3, sni: kdlsupport.zendesk.com, skip-cert-verify: false, udp: true}
+  - {name: 🇯🇵 日本 V2CROSS.COM, server: 160.22.16.6, port: 40021, type: ss, cipher: chacha20-ietf-poly1305, password: 65abdb1c-1cdf-4630-a32b-8ae566b48c00, udp: true}
+  - {name: 🇺🇸 美国 CloudFlare节点 3, server: s1.db-link02.top, port: 8080, type: vmess, uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /dabai.in104.21.151.202, headers: {Host: 100-213-61-102.s1.db-link02.top}}, udp: true}
+  - {name: 🇺🇸 美国 CloudFlare节点 4, server: hk1.899994.xyz, port: 443, type: vmess, uuid: a0605527-28e4-449c-80ee-5642cc16a8af, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /index, headers: {Host: hk1.899994.xyz}}, udp: true}
+  - {name: 🇺🇸 美国 CloudFlare节点 5, server: s5.db-link02.top, port: 2095, type: vmess, uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /dabai.in172.67.11.171, headers: {Host: 100-26-239-98.s5.db-link02.top}}, udp: true}
+  - {name: 🇺🇸 美国 CloudFlare节点 6, server: 104.19.48.236, port: 80, type: vmess, uuid: e6543319-0574-42ac-b778-1c4325d626f5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: chunchuan.kejixiaoqi666.store}}, udp: true}
+  - {name: 🇺🇸 美国 CloudFlare节点 7, server: s5.db-link01.top, port: 2095, type: vmess, uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /dabai.in104.24.108.89, headers: {Host: 100-170-6-223.s5.db-link01.top}}, udp: true}
+  - {name: 🇺🇸 美国 CloudFlare节点 8, server: 104.21.64.1, port: 8443, type: vmess, uuid: a0605527-28e4-449c-80ee-5642cc16a8af, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /index, headers: {Host: nl.899994.xyz}}, udp: true}
+  - {name: 🇧🇪 比利时 V2CROSS.COM, server: 192.71.249.146, port: 990, type: ss, cipher: chacha20-ietf-poly1305, password: f8f7aCzcPKbsF8p3, udp: true}
+  - {name: 亚太地区 V2CROSS.COM 2, server: th.fastsoonlink.com, port: 40009, type: ss, cipher: chacha20-ietf-poly1305, password: 65abdb1c-1cdf-4630-a32b-8ae566b48c00, udp: true}
+  - {name: 亚太地区 V2CROSS.COM 3, server: 103.211.32.112, port: 443, type: trojan, password: 3bcd9e33-8377-4b32-af33-217158577ff3, sni: kdlsupport.zendesk.com, skip-cert-verify: false, udp: true}
+  - {name: 🇭🇺 匈牙利 V2CROSS.COM, server: grown-mackerel.shiner427.skin, port: 443, type: trojan, password: !<str> 65086441068973800, skip-cert-verify: false, udp: true}
+  - {name: 🇭🇰 香港 特别行政区, server: 154.90.63.193, port: 990, type: ss, cipher: chacha20-ietf-poly1305, password: f8f7aCzcPKbsF8p3, udp: true}
+  - {name: 🇨🇳 广东省广州市白云区 电信, server: 219.135.231.205, port: 21019, type: trojan, password: 20a84ebf-9341-4f5f-8245-3975e2fdeee5, skip-cert-verify: false, udp: true}
+  - {name: 🇮🇷 伊朗 V2CROSS.COM, server: 31.58.142.221, port: 8967, type: vmess, uuid: 7d29f1ca-647b-4b4e-b9c8-6beab7133535, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /BONRyKGhDE, headers: {Host: neo.nicme.me}}, udp: true}
+  - {name: 🇺🇸 美国 加利福尼亚州圣何塞PEG TECH, server: 142.4.108.135, port: 38007, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /path/1720963559796}, udp: true}
+  - {name: 🇺🇸 美国 赛基诺州立大学, server: 155.138.208.122, port: 8881, type: vmess, uuid: db5afae4-ac23-41a6-8378-f307a9a47436, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 🇺🇸 美国 CloudFlare节点 9, server: s2.db-link01.top, port: 2095, type: vmess, uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /dabai.in104.21.133.12, headers: {Host: 100-130-136-50.s2.db-link01.top}}, udp: true}
+  - {name: 🇺🇸 美国 V2CROSS.COM, server: 68.183.212.103, port: 443, type: trojan, password: 3bcd9e33-8377-4b32-af33-217158577ff3, sni: kdlsupport.zendesk.com, skip-cert-verify: false, udp: true}
+  - {name: 亚太地区 V2CROSS.COM 4, server: pr.fastsoonlink.com, port: 40030, type: ss, cipher: chacha20-ietf-poly1305, password: 65abdb1c-1cdf-4630-a32b-8ae566b48c00, udp: true}
+  - {name: 🇺🇸 美国 CloudFlare节点 10, server: nl.899994.xyz, port: 8443, type: vmess, uuid: a0605527-28e4-449c-80ee-5642cc16a8af, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /index, headers: {Host: nl.899994.xyz}}, udp: true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 🇺🇸 美国 Xerox
       - 亚太地区 V2CROSS.COM
-      - 🇰🇷 韩国 KT电信
-      - 亚太地区 V2CROSS.COM 2
-      - 🇷🇺 俄罗斯 V2CROSS.COM
-      - 🇺🇸 美国 Fastly全球Anycast节点
-      - 🇺🇸 美国 CloudFlare节点
-      - 🇯🇵 日本东京 Amazon数据中心
-      - 🇮🇪 爱尔兰 都柏林Amazon数据中心
       - 🇬🇧 英国 V2CROSS.COM
+      - 🇺🇸 美国 CloudFlare节点
+      - 🇺🇸 美国 圣斯考拉斯蒂卡大学
       - 🇺🇸 美国 CloudFlare节点 2
-      - 🇷🇺 俄罗斯 V2CROSS.COM 2
+      - 🇯🇵 日本 东京
+      - 🇯🇵 日本 V2CROSS.COM
       - 🇺🇸 美国 CloudFlare节点 3
       - 🇺🇸 美国 CloudFlare节点 4
-      - 🇺🇸 美国 Amazon EC2服务器
-      - 🇺🇸 美国 弗吉尼亚州阿什本Amazon数据中心
-      - 🇩🇪 德国 黑森州法兰克福AMazon数据中心
-      - 🇪🇸 西班牙 V2CROSS.COM
-      - 🇩🇪 德国 V2CROSS.COM
       - 🇺🇸 美国 CloudFlare节点 5
       - 🇺🇸 美国 CloudFlare节点 6
+      - 🇺🇸 美国 CloudFlare节点 7
+      - 🇺🇸 美国 CloudFlare节点 8
+      - 🇧🇪 比利时 V2CROSS.COM
+      - 亚太地区 V2CROSS.COM 2
+      - 亚太地区 V2CROSS.COM 3
+      - 🇭🇺 匈牙利 V2CROSS.COM
+      - 🇭🇰 香港 特别行政区
+      - 🇨🇳 广东省广州市白云区 电信
+      - 🇮🇷 伊朗 V2CROSS.COM
+      - 🇺🇸 美国 加利福尼亚州圣何塞PEG TECH
+      - 🇺🇸 美国 赛基诺州立大学
+      - 🇺🇸 美国 CloudFlare节点 9
       - 🇺🇸 美国 V2CROSS.COM
-      - 🇵🇱 波兰 V2CROSS.COM
+      - 亚太地区 V2CROSS.COM 4
+      - 🇺🇸 美国 CloudFlare节点 10
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇺🇸 美国 Xerox
       - 亚太地区 V2CROSS.COM
-      - 🇰🇷 韩国 KT电信
-      - 亚太地区 V2CROSS.COM 2
-      - 🇷🇺 俄罗斯 V2CROSS.COM
-      - 🇺🇸 美国 Fastly全球Anycast节点
-      - 🇺🇸 美国 CloudFlare节点
-      - 🇯🇵 日本东京 Amazon数据中心
-      - 🇮🇪 爱尔兰 都柏林Amazon数据中心
       - 🇬🇧 英国 V2CROSS.COM
+      - 🇺🇸 美国 CloudFlare节点
+      - 🇺🇸 美国 圣斯考拉斯蒂卡大学
       - 🇺🇸 美国 CloudFlare节点 2
-      - 🇷🇺 俄罗斯 V2CROSS.COM 2
+      - 🇯🇵 日本 东京
+      - 🇯🇵 日本 V2CROSS.COM
       - 🇺🇸 美国 CloudFlare节点 3
       - 🇺🇸 美国 CloudFlare节点 4
-      - 🇺🇸 美国 Amazon EC2服务器
-      - 🇺🇸 美国 弗吉尼亚州阿什本Amazon数据中心
-      - 🇩🇪 德国 黑森州法兰克福AMazon数据中心
-      - 🇪🇸 西班牙 V2CROSS.COM
-      - 🇩🇪 德国 V2CROSS.COM
       - 🇺🇸 美国 CloudFlare节点 5
       - 🇺🇸 美国 CloudFlare节点 6
+      - 🇺🇸 美国 CloudFlare节点 7
+      - 🇺🇸 美国 CloudFlare节点 8
+      - 🇧🇪 比利时 V2CROSS.COM
+      - 亚太地区 V2CROSS.COM 2
+      - 亚太地区 V2CROSS.COM 3
+      - 🇭🇺 匈牙利 V2CROSS.COM
+      - 🇭🇰 香港 特别行政区
+      - 🇨🇳 广东省广州市白云区 电信
+      - 🇮🇷 伊朗 V2CROSS.COM
+      - 🇺🇸 美国 加利福尼亚州圣何塞PEG TECH
+      - 🇺🇸 美国 赛基诺州立大学
+      - 🇺🇸 美国 CloudFlare节点 9
       - 🇺🇸 美国 V2CROSS.COM
-      - 🇵🇱 波兰 V2CROSS.COM
+      - 亚太地区 V2CROSS.COM 4
+      - 🇺🇸 美国 CloudFlare节点 10
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇺🇸 美国 Xerox
       - 亚太地区 V2CROSS.COM
-      - 🇰🇷 韩国 KT电信
-      - 亚太地区 V2CROSS.COM 2
-      - 🇷🇺 俄罗斯 V2CROSS.COM
-      - 🇺🇸 美国 Fastly全球Anycast节点
-      - 🇺🇸 美国 CloudFlare节点
-      - 🇯🇵 日本东京 Amazon数据中心
-      - 🇮🇪 爱尔兰 都柏林Amazon数据中心
       - 🇬🇧 英国 V2CROSS.COM
+      - 🇺🇸 美国 CloudFlare节点
+      - 🇺🇸 美国 圣斯考拉斯蒂卡大学
       - 🇺🇸 美国 CloudFlare节点 2
-      - 🇷🇺 俄罗斯 V2CROSS.COM 2
+      - 🇯🇵 日本 东京
+      - 🇯🇵 日本 V2CROSS.COM
       - 🇺🇸 美国 CloudFlare节点 3
       - 🇺🇸 美国 CloudFlare节点 4
-      - 🇺🇸 美国 Amazon EC2服务器
-      - 🇺🇸 美国 弗吉尼亚州阿什本Amazon数据中心
-      - 🇩🇪 德国 黑森州法兰克福AMazon数据中心
-      - 🇪🇸 西班牙 V2CROSS.COM
-      - 🇩🇪 德国 V2CROSS.COM
       - 🇺🇸 美国 CloudFlare节点 5
       - 🇺🇸 美国 CloudFlare节点 6
+      - 🇺🇸 美国 CloudFlare节点 7
+      - 🇺🇸 美国 CloudFlare节点 8
+      - 🇧🇪 比利时 V2CROSS.COM
+      - 亚太地区 V2CROSS.COM 2
+      - 亚太地区 V2CROSS.COM 3
+      - 🇭🇺 匈牙利 V2CROSS.COM
+      - 🇭🇰 香港 特别行政区
+      - 🇨🇳 广东省广州市白云区 电信
+      - 🇮🇷 伊朗 V2CROSS.COM
+      - 🇺🇸 美国 加利福尼亚州圣何塞PEG TECH
+      - 🇺🇸 美国 赛基诺州立大学
+      - 🇺🇸 美国 CloudFlare节点 9
       - 🇺🇸 美国 V2CROSS.COM
-      - 🇵🇱 波兰 V2CROSS.COM
+      - 亚太地区 V2CROSS.COM 4
+      - 🇺🇸 美国 CloudFlare节点 10
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇺🇸 美国 Xerox
       - 亚太地区 V2CROSS.COM
-      - 🇰🇷 韩国 KT电信
-      - 亚太地区 V2CROSS.COM 2
-      - 🇷🇺 俄罗斯 V2CROSS.COM
-      - 🇺🇸 美国 Fastly全球Anycast节点
-      - 🇺🇸 美国 CloudFlare节点
-      - 🇯🇵 日本东京 Amazon数据中心
-      - 🇮🇪 爱尔兰 都柏林Amazon数据中心
       - 🇬🇧 英国 V2CROSS.COM
+      - 🇺🇸 美国 CloudFlare节点
+      - 🇺🇸 美国 圣斯考拉斯蒂卡大学
       - 🇺🇸 美国 CloudFlare节点 2
-      - 🇷🇺 俄罗斯 V2CROSS.COM 2
+      - 🇯🇵 日本 东京
+      - 🇯🇵 日本 V2CROSS.COM
       - 🇺🇸 美国 CloudFlare节点 3
       - 🇺🇸 美国 CloudFlare节点 4
-      - 🇺🇸 美国 Amazon EC2服务器
-      - 🇺🇸 美国 弗吉尼亚州阿什本Amazon数据中心
-      - 🇩🇪 德国 黑森州法兰克福AMazon数据中心
-      - 🇪🇸 西班牙 V2CROSS.COM
-      - 🇩🇪 德国 V2CROSS.COM
       - 🇺🇸 美国 CloudFlare节点 5
       - 🇺🇸 美国 CloudFlare节点 6
+      - 🇺🇸 美国 CloudFlare节点 7
+      - 🇺🇸 美国 CloudFlare节点 8
+      - 🇧🇪 比利时 V2CROSS.COM
+      - 亚太地区 V2CROSS.COM 2
+      - 亚太地区 V2CROSS.COM 3
+      - 🇭🇺 匈牙利 V2CROSS.COM
+      - 🇭🇰 香港 特别行政区
+      - 🇨🇳 广东省广州市白云区 电信
+      - 🇮🇷 伊朗 V2CROSS.COM
+      - 🇺🇸 美国 加利福尼亚州圣何塞PEG TECH
+      - 🇺🇸 美国 赛基诺州立大学
+      - 🇺🇸 美国 CloudFlare节点 9
       - 🇺🇸 美国 V2CROSS.COM
-      - 🇵🇱 波兰 V2CROSS.COM
+      - 亚太地区 V2CROSS.COM 4
+      - 🇺🇸 美国 CloudFlare节点 10
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 🇺🇸 美国 Xerox
       - 亚太地区 V2CROSS.COM
-      - 🇰🇷 韩国 KT电信
-      - 亚太地区 V2CROSS.COM 2
-      - 🇷🇺 俄罗斯 V2CROSS.COM
-      - 🇺🇸 美国 Fastly全球Anycast节点
-      - 🇺🇸 美国 CloudFlare节点
-      - 🇯🇵 日本东京 Amazon数据中心
-      - 🇮🇪 爱尔兰 都柏林Amazon数据中心
       - 🇬🇧 英国 V2CROSS.COM
+      - 🇺🇸 美国 CloudFlare节点
+      - 🇺🇸 美国 圣斯考拉斯蒂卡大学
       - 🇺🇸 美国 CloudFlare节点 2
-      - 🇷🇺 俄罗斯 V2CROSS.COM 2
+      - 🇯🇵 日本 东京
+      - 🇯🇵 日本 V2CROSS.COM
       - 🇺🇸 美国 CloudFlare节点 3
       - 🇺🇸 美国 CloudFlare节点 4
-      - 🇺🇸 美国 Amazon EC2服务器
-      - 🇺🇸 美国 弗吉尼亚州阿什本Amazon数据中心
-      - 🇩🇪 德国 黑森州法兰克福AMazon数据中心
-      - 🇪🇸 西班牙 V2CROSS.COM
-      - 🇩🇪 德国 V2CROSS.COM
       - 🇺🇸 美国 CloudFlare节点 5
       - 🇺🇸 美国 CloudFlare节点 6
+      - 🇺🇸 美国 CloudFlare节点 7
+      - 🇺🇸 美国 CloudFlare节点 8
+      - 🇧🇪 比利时 V2CROSS.COM
+      - 亚太地区 V2CROSS.COM 2
+      - 亚太地区 V2CROSS.COM 3
+      - 🇭🇺 匈牙利 V2CROSS.COM
+      - 🇭🇰 香港 特别行政区
+      - 🇨🇳 广东省广州市白云区 电信
+      - 🇮🇷 伊朗 V2CROSS.COM
+      - 🇺🇸 美国 加利福尼亚州圣何塞PEG TECH
+      - 🇺🇸 美国 赛基诺州立大学
+      - 🇺🇸 美国 CloudFlare节点 9
       - 🇺🇸 美国 V2CROSS.COM
-      - 🇵🇱 波兰 V2CROSS.COM
+      - 亚太地区 V2CROSS.COM 4
+      - 🇺🇸 美国 CloudFlare节点 10
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇺🇸 美国 Xerox
       - 亚太地区 V2CROSS.COM
-      - 🇰🇷 韩国 KT电信
-      - 亚太地区 V2CROSS.COM 2
-      - 🇷🇺 俄罗斯 V2CROSS.COM
-      - 🇺🇸 美国 Fastly全球Anycast节点
-      - 🇺🇸 美国 CloudFlare节点
-      - 🇯🇵 日本东京 Amazon数据中心
-      - 🇮🇪 爱尔兰 都柏林Amazon数据中心
       - 🇬🇧 英国 V2CROSS.COM
+      - 🇺🇸 美国 CloudFlare节点
+      - 🇺🇸 美国 圣斯考拉斯蒂卡大学
       - 🇺🇸 美国 CloudFlare节点 2
-      - 🇷🇺 俄罗斯 V2CROSS.COM 2
+      - 🇯🇵 日本 东京
+      - 🇯🇵 日本 V2CROSS.COM
       - 🇺🇸 美国 CloudFlare节点 3
       - 🇺🇸 美国 CloudFlare节点 4
-      - 🇺🇸 美国 Amazon EC2服务器
-      - 🇺🇸 美国 弗吉尼亚州阿什本Amazon数据中心
-      - 🇩🇪 德国 黑森州法兰克福AMazon数据中心
-      - 🇪🇸 西班牙 V2CROSS.COM
-      - 🇩🇪 德国 V2CROSS.COM
       - 🇺🇸 美国 CloudFlare节点 5
       - 🇺🇸 美国 CloudFlare节点 6
+      - 🇺🇸 美国 CloudFlare节点 7
+      - 🇺🇸 美国 CloudFlare节点 8
+      - 🇧🇪 比利时 V2CROSS.COM
+      - 亚太地区 V2CROSS.COM 2
+      - 亚太地区 V2CROSS.COM 3
+      - 🇭🇺 匈牙利 V2CROSS.COM
+      - 🇭🇰 香港 特别行政区
+      - 🇨🇳 广东省广州市白云区 电信
+      - 🇮🇷 伊朗 V2CROSS.COM
+      - 🇺🇸 美国 加利福尼亚州圣何塞PEG TECH
+      - 🇺🇸 美国 赛基诺州立大学
+      - 🇺🇸 美国 CloudFlare节点 9
       - 🇺🇸 美国 V2CROSS.COM
-      - 🇵🇱 波兰 V2CROSS.COM
+      - 亚太地区 V2CROSS.COM 4
+      - 🇺🇸 美国 CloudFlare节点 10
   - name: 📢 谷歌FCM
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇺🇸 美国 Xerox
       - 亚太地区 V2CROSS.COM
-      - 🇰🇷 韩国 KT电信
-      - 亚太地区 V2CROSS.COM 2
-      - 🇷🇺 俄罗斯 V2CROSS.COM
-      - 🇺🇸 美国 Fastly全球Anycast节点
-      - 🇺🇸 美国 CloudFlare节点
-      - 🇯🇵 日本东京 Amazon数据中心
-      - 🇮🇪 爱尔兰 都柏林Amazon数据中心
       - 🇬🇧 英国 V2CROSS.COM
+      - 🇺🇸 美国 CloudFlare节点
+      - 🇺🇸 美国 圣斯考拉斯蒂卡大学
       - 🇺🇸 美国 CloudFlare节点 2
-      - 🇷🇺 俄罗斯 V2CROSS.COM 2
+      - 🇯🇵 日本 东京
+      - 🇯🇵 日本 V2CROSS.COM
       - 🇺🇸 美国 CloudFlare节点 3
       - 🇺🇸 美国 CloudFlare节点 4
-      - 🇺🇸 美国 Amazon EC2服务器
-      - 🇺🇸 美国 弗吉尼亚州阿什本Amazon数据中心
-      - 🇩🇪 德国 黑森州法兰克福AMazon数据中心
-      - 🇪🇸 西班牙 V2CROSS.COM
-      - 🇩🇪 德国 V2CROSS.COM
       - 🇺🇸 美国 CloudFlare节点 5
       - 🇺🇸 美国 CloudFlare节点 6
+      - 🇺🇸 美国 CloudFlare节点 7
+      - 🇺🇸 美国 CloudFlare节点 8
+      - 🇧🇪 比利时 V2CROSS.COM
+      - 亚太地区 V2CROSS.COM 2
+      - 亚太地区 V2CROSS.COM 3
+      - 🇭🇺 匈牙利 V2CROSS.COM
+      - 🇭🇰 香港 特别行政区
+      - 🇨🇳 广东省广州市白云区 电信
+      - 🇮🇷 伊朗 V2CROSS.COM
+      - 🇺🇸 美国 加利福尼亚州圣何塞PEG TECH
+      - 🇺🇸 美国 赛基诺州立大学
+      - 🇺🇸 美国 CloudFlare节点 9
       - 🇺🇸 美国 V2CROSS.COM
-      - 🇵🇱 波兰 V2CROSS.COM
+      - 亚太地区 V2CROSS.COM 4
+      - 🇺🇸 美国 CloudFlare节点 10
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -250,29 +274,32 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇺🇸 美国 Xerox
       - 亚太地区 V2CROSS.COM
-      - 🇰🇷 韩国 KT电信
-      - 亚太地区 V2CROSS.COM 2
-      - 🇷🇺 俄罗斯 V2CROSS.COM
-      - 🇺🇸 美国 Fastly全球Anycast节点
-      - 🇺🇸 美国 CloudFlare节点
-      - 🇯🇵 日本东京 Amazon数据中心
-      - 🇮🇪 爱尔兰 都柏林Amazon数据中心
       - 🇬🇧 英国 V2CROSS.COM
+      - 🇺🇸 美国 CloudFlare节点
+      - 🇺🇸 美国 圣斯考拉斯蒂卡大学
       - 🇺🇸 美国 CloudFlare节点 2
-      - 🇷🇺 俄罗斯 V2CROSS.COM 2
+      - 🇯🇵 日本 东京
+      - 🇯🇵 日本 V2CROSS.COM
       - 🇺🇸 美国 CloudFlare节点 3
       - 🇺🇸 美国 CloudFlare节点 4
-      - 🇺🇸 美国 Amazon EC2服务器
-      - 🇺🇸 美国 弗吉尼亚州阿什本Amazon数据中心
-      - 🇩🇪 德国 黑森州法兰克福AMazon数据中心
-      - 🇪🇸 西班牙 V2CROSS.COM
-      - 🇩🇪 德国 V2CROSS.COM
       - 🇺🇸 美国 CloudFlare节点 5
       - 🇺🇸 美国 CloudFlare节点 6
+      - 🇺🇸 美国 CloudFlare节点 7
+      - 🇺🇸 美国 CloudFlare节点 8
+      - 🇧🇪 比利时 V2CROSS.COM
+      - 亚太地区 V2CROSS.COM 2
+      - 亚太地区 V2CROSS.COM 3
+      - 🇭🇺 匈牙利 V2CROSS.COM
+      - 🇭🇰 香港 特别行政区
+      - 🇨🇳 广东省广州市白云区 电信
+      - 🇮🇷 伊朗 V2CROSS.COM
+      - 🇺🇸 美国 加利福尼亚州圣何塞PEG TECH
+      - 🇺🇸 美国 赛基诺州立大学
+      - 🇺🇸 美国 CloudFlare节点 9
       - 🇺🇸 美国 V2CROSS.COM
-      - 🇵🇱 波兰 V2CROSS.COM
+      - 亚太地区 V2CROSS.COM 4
+      - 🇺🇸 美国 CloudFlare节点 10
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
