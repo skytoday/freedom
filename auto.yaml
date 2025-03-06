@@ -5,34 +5,32 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 广东省广州市 移动, server: free.2apzhfa.xyz, port: 31611, type: ss, cipher: chacha20-ietf-poly1305, password: 2e2e3880-3b61-4b1d-bc0a-55ebe118620b, udp: true}
-  - {name: 广东省东莞市 电信IDC业务段, server: ti3hyra4.slashdevslashnetslashtun.net, port: 21001, type: ss, cipher: aes-256-gcm, password: Y2U58S90E3GST1AQ, udp: true}
-  - {name: 美国 Nokia, server: 192.9.132.79, port: 443, type: trojan, password: 696cfe79, sni: sje.5216818.xyz, skip-cert-verify: true, udp: true}
-  - {name: 美国 Nokia 2, server: sje.5216818.xyz, port: 443, type: trojan, password: 696cfe79, skip-cert-verify: true, udp: true}
-  - {name: 广东省广州市 移动 2, server: free.2weradf.xyz, port: 36341, type: ss, cipher: chacha20-ietf-poly1305, password: 859553af-b15c-4c75-9a05-9d46a70b6513, udp: true}
-  - {name: 广东省广州市 移动 3, server: free.2apzhfa.xyz, port: 31171, type: ss, cipher: chacha20-ietf-poly1305, password: 2e2e3880-3b61-4b1d-bc0a-55ebe118620b, udp: true}
-  - {name: 广东省广州市 移动 4, server: free.2weradf.xyz, port: 36243, type: ss, cipher: chacha20-ietf-poly1305, password: 859553af-b15c-4c75-9a05-9d46a70b6513, udp: true}
-  - {name: 美国 华盛顿Cogent通信公司, server: 38.114.114.77, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: 瑞典 斯德哥尔摩Amazon数据中心, server: 13.49.45.134, port: 22222, type: trojan, password: telegram-id-privatevpns, sni: trojan.burgerip.co.uk, skip-cert-verify: true, udp: true}
-  - {name: 美国 CloudFlare节点, server: 104.16.155.10, port: 2095, type: vmess, uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /dabai.in104.20.27.115, headers: {Host: 100-209-47-141.s2.db-link02.top}}, udp: true}
-  - {name: 广东省东莞市 电信IDC业务段 2, server: ti3hyra4.slashdevslashnetslashtun.net, port: 15006, type: ss, cipher: aes-256-gcm, password: RBN1UNGVPF1BQXPK, udp: true}
-  - {name: 广东省广州市 移动 5, server: free.2weradf.xyz, port: 36211, type: ss, cipher: chacha20-ietf-poly1305, password: 859553af-b15c-4c75-9a05-9d46a70b6513, udp: true}
-  - {name: 美国 CloudFlare节点 2, server: s5.db-link02.top, port: 8880, type: vmess, uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /dabai.in104.19.220.104, headers: {Host: 100-85-25-119.s5.db-link02.top}}, udp: true}
-  - {name: 广东省广州市 移动 6, server: free.2apzhfa.xyz, port: 31313, type: ss, cipher: chacha20-ietf-poly1305, password: 2e2e3880-3b61-4b1d-bc0a-55ebe118620b, udp: true}
-  - {name: 美国 CloudFlare节点 3, server: s2.db-link02.top, port: 2052, type: vmess, uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /dabai.in172.64.6.224, headers: {Host: 100-34-100-44.s2.db-link02.top}}, udp: true}
-  - {name: 美国 CloudFlare节点 4, server: s4.db-link02.top, port: 8880, type: vmess, uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /dabai.in104.25.239.131, headers: {Host: 100-128-12-180.s4.db-link02.top}}, udp: true}
-  - {name: 广东省广州市 移动 7, server: free.2apzhfa.xyz, port: 31641, type: ss, cipher: chacha20-ietf-poly1305, password: 2e2e3880-3b61-4b1d-bc0a-55ebe118620b, udp: true}
-  - {name: 广东省东莞市 电信IDC业务段 3, server: qh62onjn.slashdevslashnetslashtun.net, port: 15011, type: ss, cipher: aes-256-gcm, password: TCEL1H0XD7TWAKI0, udp: true}
-  - {name: 德国 黑森州法兰克福Amazon数据中心, server: 3.124.150.215, port: 22222, type: trojan, password: telegram-id-privatevpns, sni: trojan.burgerip.co.uk, skip-cert-verify: true, udp: true}
-  - {name: 美国 CloudFlare节点 5, server: s2.cn-db.top, port: 2086, type: vmess, uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /dabai.in104.18.128.173, headers: {Host: 100-28-190-253.s2.cn-db.top}}, udp: true}
-  - {name: 美国 麻省理工学院, server: 18.134.89.164, port: 22222, type: trojan, password: telegram-id-privatevpns, sni: trojan.burgerip.co.uk, skip-cert-verify: true, udp: true}
-  - {name: 美国 CloudFlare节点 6, server: s4.db-link02.top, port: 2086, type: vmess, uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /dabai.in104.17.119.148, headers: {Host: 100-215-157-195.s4.db-link02.top}}, udp: true}
+  - {name: 广东省广州市 移动, server: free.2weradf.xyz, port: 36175, type: ss, cipher: chacha20-ietf-poly1305, password: 3e7032f0-e0d5-4f83-b7f3-229603dcfdee, udp: true}
+  - {name: 希腊 V2CROSS.COM, server: 31.22.116.136, port: 8443, type: vmess, uuid: e88b85c6-93b4-47f6-b3fb-2c55dcb1289f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /dyajvws, headers: {Host: lax2.ibgfw.top}}, udp: true}
+  - {name: 美国 CloudFlare节点, server: 104.16.155.10, port: 2052, type: vmess, uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /dabai.in104.25.175.137, headers: {Host: 100-102-247-92.s1.db-link02.top}}, udp: true}
+  - {name: 美国 CloudFlare节点 2, server: s1.cn-db.top, port: 80, type: vmess, uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /dabai.in172.64.34.18, headers: {Host: 100-215-151-174.s1.cn-db.top}}, udp: true}
   - {name: 波兰 V2CROSS.COM, server: 193.243.147.128, port: 40368, type: ss, cipher: aes-256-gcm, password: 7BcLdsO1WweoGD0X, udp: true}
-  - {name: 美国 CloudFlare节点 7, server: s2.db-link01.top, port: 2095, type: vmess, uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 100-130-136-50.s2.db-link01.top}}, udp: true}
-  - {name: 广东省广州市 移动 8, server: free.2apzhfa.xyz, port: 31143, type: ss, cipher: chacha20-ietf-poly1305, password: 2e2e3880-3b61-4b1d-bc0a-55ebe118620b, udp: true}
-  - {name: 美国 Amazon EC2服务器, server: 3.78.108.122, port: 22222, type: trojan, password: telegram-id-privatevpns, sni: trojan.burgerip.co.uk, skip-cert-verify: true, udp: true}
-  - {name: 爱尔兰 都柏林Amazon数据中心, server: 34.250.74.151, port: 22222, type: trojan, password: telegram-id-directvpn, sni: trojan.burgerip.co.uk, skip-cert-verify: true, udp: true}
-  - {name: 美国 CloudFlare节点 8, server: 104.21.75.193, port: 443, type: trojan, password: bpb-trojan, sni: bpb-hd.aaronchin.xyz, skip-cert-verify: true, udp: true}
+  - {name: 美国 CloudFlare节点 3, server: 104.25.165.83, port: 8443, type: trojan, password: !<str> 123456, sni: top-azx.pages.dev, skip-cert-verify: true, udp: true}
+  - {name: 美国 Nokia, server: sje.5216818.xyz, port: 443, type: trojan, password: 696cfe79, skip-cert-verify: true, udp: true}
+  - {name: 瑞典 V2CROSS.COM, server: www.aetv.com, port: 80, type: vmess, uuid: 7dc78582-88a8-4b4c-9e3e-50831d672766, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/XESALISTHEBEST?ed=2048", headers: {Host: amd.al}}, udp: true}
+  - {name: 浙江省台州市 台州世通网络, server: hk.fastsoonlink.com, port: 40000, type: ss, cipher: chacha20-ietf-poly1305, password: 3FB23A19-9424-40C7-9139-3540228283FA, udp: true}
+  - {name: 广东省广州市 移动 2, server: free.2weradf.xyz, port: 36313, type: ss, cipher: chacha20-ietf-poly1305, password: 3e7032f0-e0d5-4f83-b7f3-229603dcfdee, udp: true}
+  - {name: 美国 CloudFlare节点 4, server: s5.db-link02.top, port: 8080, type: vmess, uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 100-149-191-2.s5.db-link02.top}}, udp: true}
+  - {name: 广东省广州市 移动 3, server: free.2weradf.xyz, port: 36171, type: ss, cipher: chacha20-ietf-poly1305, password: 3e7032f0-e0d5-4f83-b7f3-229603dcfdee, udp: true}
+  - {name: 广东省东莞市 电信IDC业务段, server: 8tv68qhq.slashdevslashnetslashtun.net, port: 15005, type: ss, cipher: aes-256-gcm, password: LZQ0R9BL69GCC6FS, udp: true}
+  - {name: 美国 Amazon数据中心, server: 13.39.217.246, port: 22222, type: trojan, password: telegram-id-directvpn, sni: trojan.burgerip.co.uk, skip-cert-verify: true, udp: true}
+  - {name: 美国 CloudFlare节点 5, server: s5.db-link02.top, port: 8880, type: vmess, uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /dabai.in104.19.220.104, headers: {Host: 100-85-25-119.s5.db-link02.top}}, udp: true}
+  - {name: 广东省湛江市 移动, server: 120.198.71.219, port: 42055, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 北美地区 V2CROSS.COM, server: 23.154.136.132, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: 广东省广州市 移动 4, server: 120.232.153.41, port: 32077, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 立陶宛 V2CROSS.COM, server: 89.117.112.235, port: 8443, type: vmess, uuid: 191babc5-2aaf-4fe5-a563-f14244aefb4e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /xrenvws, headers: {Host: lax1.ibgfw.top}}, udp: true}
+  - {name: 广东省广州市 移动 5, server: 183.236.51.38, port: 42120, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 印度 V2CROSS.COM, server: 202.78.162.5, port: 443, type: vmess, uuid: 2ff97c6d-8557-42a4-b43f-19c77c5959ea, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: irsoft.sytes.net}}, udp: true}
+  - {name: 美国 CloudFlare节点 6, server: s1.db-link02.top, port: 8080, type: vmess, uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /dabai.in104.21.151.202, headers: {Host: 100-213-61-102.s1.db-link02.top}}, udp: true}
+  - {name: 广东省广州市 移动 6, server: 183.236.51.38, port: 53902, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 广东省广州市 移动 7, server: free.2weradf.xyz, port: 36213, type: ss, cipher: chacha20-ietf-poly1305, password: 3e7032f0-e0d5-4f83-b7f3-229603dcfdee, udp: true}
+  - {name: 美国 CloudFlare节点 7, server: 104.19.137.253, port: 80, type: vmess, uuid: 4bf074f4-7e9c-4e4b-a10d-156e26199729, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: us03s.5d8ecf82.cfd}}, udp: true}
+  - {name: 广东省东莞市 电信IDC业务段 2, server: ti3hyra4.slashdevslashnetslashtun.net, port: 18002, type: ss, cipher: aes-256-gcm, password: 84HMRAWILKB49QUZ, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
@@ -40,66 +38,62 @@ proxy-groups:
       - ♻️ 自动选择
       - 🎯 全球直连
       - 广东省广州市 移动
-      - 广东省东莞市 电信IDC业务段
-      - 美国 Nokia
-      - 美国 Nokia 2
-      - 广东省广州市 移动 2
-      - 广东省广州市 移动 3
-      - 广东省广州市 移动 4
-      - 美国 华盛顿Cogent通信公司
-      - 瑞典 斯德哥尔摩Amazon数据中心
+      - 希腊 V2CROSS.COM
       - 美国 CloudFlare节点
-      - 广东省东莞市 电信IDC业务段 2
-      - 广东省广州市 移动 5
       - 美国 CloudFlare节点 2
-      - 广东省广州市 移动 6
-      - 美国 CloudFlare节点 3
-      - 美国 CloudFlare节点 4
-      - 广东省广州市 移动 7
-      - 广东省东莞市 电信IDC业务段 3
-      - 德国 黑森州法兰克福Amazon数据中心
-      - 美国 CloudFlare节点 5
-      - 美国 麻省理工学院
-      - 美国 CloudFlare节点 6
       - 波兰 V2CROSS.COM
+      - 美国 CloudFlare节点 3
+      - 美国 Nokia
+      - 瑞典 V2CROSS.COM
+      - 浙江省台州市 台州世通网络
+      - 广东省广州市 移动 2
+      - 美国 CloudFlare节点 4
+      - 广东省广州市 移动 3
+      - 广东省东莞市 电信IDC业务段
+      - 美国 Amazon数据中心
+      - 美国 CloudFlare节点 5
+      - 广东省湛江市 移动
+      - 北美地区 V2CROSS.COM
+      - 广东省广州市 移动 4
+      - 立陶宛 V2CROSS.COM
+      - 广东省广州市 移动 5
+      - 印度 V2CROSS.COM
+      - 美国 CloudFlare节点 6
+      - 广东省广州市 移动 6
+      - 广东省广州市 移动 7
       - 美国 CloudFlare节点 7
-      - 广东省广州市 移动 8
-      - 美国 Amazon EC2服务器
-      - 爱尔兰 都柏林Amazon数据中心
-      - 美国 CloudFlare节点 8
+      - 广东省东莞市 电信IDC业务段 2
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
       - 广东省广州市 移动
-      - 广东省东莞市 电信IDC业务段
-      - 美国 Nokia
-      - 美国 Nokia 2
-      - 广东省广州市 移动 2
-      - 广东省广州市 移动 3
-      - 广东省广州市 移动 4
-      - 美国 华盛顿Cogent通信公司
-      - 瑞典 斯德哥尔摩Amazon数据中心
+      - 希腊 V2CROSS.COM
       - 美国 CloudFlare节点
-      - 广东省东莞市 电信IDC业务段 2
-      - 广东省广州市 移动 5
       - 美国 CloudFlare节点 2
-      - 广东省广州市 移动 6
-      - 美国 CloudFlare节点 3
-      - 美国 CloudFlare节点 4
-      - 广东省广州市 移动 7
-      - 广东省东莞市 电信IDC业务段 3
-      - 德国 黑森州法兰克福Amazon数据中心
-      - 美国 CloudFlare节点 5
-      - 美国 麻省理工学院
-      - 美国 CloudFlare节点 6
       - 波兰 V2CROSS.COM
+      - 美国 CloudFlare节点 3
+      - 美国 Nokia
+      - 瑞典 V2CROSS.COM
+      - 浙江省台州市 台州世通网络
+      - 广东省广州市 移动 2
+      - 美国 CloudFlare节点 4
+      - 广东省广州市 移动 3
+      - 广东省东莞市 电信IDC业务段
+      - 美国 Amazon数据中心
+      - 美国 CloudFlare节点 5
+      - 广东省湛江市 移动
+      - 北美地区 V2CROSS.COM
+      - 广东省广州市 移动 4
+      - 立陶宛 V2CROSS.COM
+      - 广东省广州市 移动 5
+      - 印度 V2CROSS.COM
+      - 美国 CloudFlare节点 6
+      - 广东省广州市 移动 6
+      - 广东省广州市 移动 7
       - 美国 CloudFlare节点 7
-      - 广东省广州市 移动 8
-      - 美国 Amazon EC2服务器
-      - 爱尔兰 都柏林Amazon数据中心
-      - 美国 CloudFlare节点 8
+      - 广东省东莞市 电信IDC业务段 2
   - name: 🎥 NETFLIX
     type: select
     proxies:
@@ -107,33 +101,31 @@ proxy-groups:
       - ♻️ 自动选择
       - 🎯 全球直连
       - 广东省广州市 移动
-      - 广东省东莞市 电信IDC业务段
-      - 美国 Nokia
-      - 美国 Nokia 2
-      - 广东省广州市 移动 2
-      - 广东省广州市 移动 3
-      - 广东省广州市 移动 4
-      - 美国 华盛顿Cogent通信公司
-      - 瑞典 斯德哥尔摩Amazon数据中心
+      - 希腊 V2CROSS.COM
       - 美国 CloudFlare节点
-      - 广东省东莞市 电信IDC业务段 2
-      - 广东省广州市 移动 5
       - 美国 CloudFlare节点 2
-      - 广东省广州市 移动 6
-      - 美国 CloudFlare节点 3
-      - 美国 CloudFlare节点 4
-      - 广东省广州市 移动 7
-      - 广东省东莞市 电信IDC业务段 3
-      - 德国 黑森州法兰克福Amazon数据中心
-      - 美国 CloudFlare节点 5
-      - 美国 麻省理工学院
-      - 美国 CloudFlare节点 6
       - 波兰 V2CROSS.COM
+      - 美国 CloudFlare节点 3
+      - 美国 Nokia
+      - 瑞典 V2CROSS.COM
+      - 浙江省台州市 台州世通网络
+      - 广东省广州市 移动 2
+      - 美国 CloudFlare节点 4
+      - 广东省广州市 移动 3
+      - 广东省东莞市 电信IDC业务段
+      - 美国 Amazon数据中心
+      - 美国 CloudFlare节点 5
+      - 广东省湛江市 移动
+      - 北美地区 V2CROSS.COM
+      - 广东省广州市 移动 4
+      - 立陶宛 V2CROSS.COM
+      - 广东省广州市 移动 5
+      - 印度 V2CROSS.COM
+      - 美国 CloudFlare节点 6
+      - 广东省广州市 移动 6
+      - 广东省广州市 移动 7
       - 美国 CloudFlare节点 7
-      - 广东省广州市 移动 8
-      - 美国 Amazon EC2服务器
-      - 爱尔兰 都柏林Amazon数据中心
-      - 美国 CloudFlare节点 8
+      - 广东省东莞市 电信IDC业务段 2
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -153,37 +145,36 @@ proxy-groups:
       - ♻️ 自动选择
       - 🎯 全球直连
       - 广东省广州市 移动
-      - 广东省东莞市 电信IDC业务段
-      - 美国 Nokia
-      - 美国 Nokia 2
-      - 广东省广州市 移动 2
-      - 广东省广州市 移动 3
-      - 广东省广州市 移动 4
-      - 美国 华盛顿Cogent通信公司
-      - 瑞典 斯德哥尔摩Amazon数据中心
+      - 希腊 V2CROSS.COM
       - 美国 CloudFlare节点
-      - 广东省东莞市 电信IDC业务段 2
-      - 广东省广州市 移动 5
       - 美国 CloudFlare节点 2
-      - 广东省广州市 移动 6
-      - 美国 CloudFlare节点 3
-      - 美国 CloudFlare节点 4
-      - 广东省广州市 移动 7
-      - 广东省东莞市 电信IDC业务段 3
-      - 德国 黑森州法兰克福Amazon数据中心
-      - 美国 CloudFlare节点 5
-      - 美国 麻省理工学院
-      - 美国 CloudFlare节点 6
       - 波兰 V2CROSS.COM
+      - 美国 CloudFlare节点 3
+      - 美国 Nokia
+      - 瑞典 V2CROSS.COM
+      - 浙江省台州市 台州世通网络
+      - 广东省广州市 移动 2
+      - 美国 CloudFlare节点 4
+      - 广东省广州市 移动 3
+      - 广东省东莞市 电信IDC业务段
+      - 美国 Amazon数据中心
+      - 美国 CloudFlare节点 5
+      - 广东省湛江市 移动
+      - 北美地区 V2CROSS.COM
+      - 广东省广州市 移动 4
+      - 立陶宛 V2CROSS.COM
+      - 广东省广州市 移动 5
+      - 印度 V2CROSS.COM
+      - 美国 CloudFlare节点 6
+      - 广东省广州市 移动 6
+      - 广东省广州市 移动 7
       - 美国 CloudFlare节点 7
-      - 广东省广州市 移动 8
-      - 美国 Amazon EC2服务器
-      - 爱尔兰 都柏林Amazon数据中心
-      - 美国 CloudFlare节点 8
+      - 广东省东莞市 电信IDC业务段 2
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
+      - 浙江省台州市 台州世通网络
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
@@ -191,66 +182,62 @@ proxy-groups:
       - 🎯 全球直连
       - 🔰 节点选择
       - 广东省广州市 移动
-      - 广东省东莞市 电信IDC业务段
-      - 美国 Nokia
-      - 美国 Nokia 2
-      - 广东省广州市 移动 2
-      - 广东省广州市 移动 3
-      - 广东省广州市 移动 4
-      - 美国 华盛顿Cogent通信公司
-      - 瑞典 斯德哥尔摩Amazon数据中心
+      - 希腊 V2CROSS.COM
       - 美国 CloudFlare节点
-      - 广东省东莞市 电信IDC业务段 2
-      - 广东省广州市 移动 5
       - 美国 CloudFlare节点 2
-      - 广东省广州市 移动 6
-      - 美国 CloudFlare节点 3
-      - 美国 CloudFlare节点 4
-      - 广东省广州市 移动 7
-      - 广东省东莞市 电信IDC业务段 3
-      - 德国 黑森州法兰克福Amazon数据中心
-      - 美国 CloudFlare节点 5
-      - 美国 麻省理工学院
-      - 美国 CloudFlare节点 6
       - 波兰 V2CROSS.COM
+      - 美国 CloudFlare节点 3
+      - 美国 Nokia
+      - 瑞典 V2CROSS.COM
+      - 浙江省台州市 台州世通网络
+      - 广东省广州市 移动 2
+      - 美国 CloudFlare节点 4
+      - 广东省广州市 移动 3
+      - 广东省东莞市 电信IDC业务段
+      - 美国 Amazon数据中心
+      - 美国 CloudFlare节点 5
+      - 广东省湛江市 移动
+      - 北美地区 V2CROSS.COM
+      - 广东省广州市 移动 4
+      - 立陶宛 V2CROSS.COM
+      - 广东省广州市 移动 5
+      - 印度 V2CROSS.COM
+      - 美国 CloudFlare节点 6
+      - 广东省广州市 移动 6
+      - 广东省广州市 移动 7
       - 美国 CloudFlare节点 7
-      - 广东省广州市 移动 8
-      - 美国 Amazon EC2服务器
-      - 爱尔兰 都柏林Amazon数据中心
-      - 美国 CloudFlare节点 8
+      - 广东省东莞市 电信IDC业务段 2
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - 广东省广州市 移动
-      - 广东省东莞市 电信IDC业务段
-      - 美国 Nokia
-      - 美国 Nokia 2
-      - 广东省广州市 移动 2
-      - 广东省广州市 移动 3
-      - 广东省广州市 移动 4
-      - 美国 华盛顿Cogent通信公司
-      - 瑞典 斯德哥尔摩Amazon数据中心
+      - 希腊 V2CROSS.COM
       - 美国 CloudFlare节点
-      - 广东省东莞市 电信IDC业务段 2
-      - 广东省广州市 移动 5
       - 美国 CloudFlare节点 2
-      - 广东省广州市 移动 6
-      - 美国 CloudFlare节点 3
-      - 美国 CloudFlare节点 4
-      - 广东省广州市 移动 7
-      - 广东省东莞市 电信IDC业务段 3
-      - 德国 黑森州法兰克福Amazon数据中心
-      - 美国 CloudFlare节点 5
-      - 美国 麻省理工学院
-      - 美国 CloudFlare节点 6
       - 波兰 V2CROSS.COM
+      - 美国 CloudFlare节点 3
+      - 美国 Nokia
+      - 瑞典 V2CROSS.COM
+      - 浙江省台州市 台州世通网络
+      - 广东省广州市 移动 2
+      - 美国 CloudFlare节点 4
+      - 广东省广州市 移动 3
+      - 广东省东莞市 电信IDC业务段
+      - 美国 Amazon数据中心
+      - 美国 CloudFlare节点 5
+      - 广东省湛江市 移动
+      - 北美地区 V2CROSS.COM
+      - 广东省广州市 移动 4
+      - 立陶宛 V2CROSS.COM
+      - 广东省广州市 移动 5
+      - 印度 V2CROSS.COM
+      - 美国 CloudFlare节点 6
+      - 广东省广州市 移动 6
+      - 广东省广州市 移动 7
       - 美国 CloudFlare节点 7
-      - 广东省广州市 移动 8
-      - 美国 Amazon EC2服务器
-      - 爱尔兰 都柏林Amazon数据中心
-      - 美国 CloudFlare节点 8
+      - 广东省东莞市 电信IDC业务段 2
   - name: 🍎 苹果服务
     type: select
     proxies:
@@ -258,33 +245,31 @@ proxy-groups:
       - 🎯 全球直连
       - ♻️ 自动选择
       - 广东省广州市 移动
-      - 广东省东莞市 电信IDC业务段
-      - 美国 Nokia
-      - 美国 Nokia 2
-      - 广东省广州市 移动 2
-      - 广东省广州市 移动 3
-      - 广东省广州市 移动 4
-      - 美国 华盛顿Cogent通信公司
-      - 瑞典 斯德哥尔摩Amazon数据中心
+      - 希腊 V2CROSS.COM
       - 美国 CloudFlare节点
-      - 广东省东莞市 电信IDC业务段 2
-      - 广东省广州市 移动 5
       - 美国 CloudFlare节点 2
-      - 广东省广州市 移动 6
-      - 美国 CloudFlare节点 3
-      - 美国 CloudFlare节点 4
-      - 广东省广州市 移动 7
-      - 广东省东莞市 电信IDC业务段 3
-      - 德国 黑森州法兰克福Amazon数据中心
-      - 美国 CloudFlare节点 5
-      - 美国 麻省理工学院
-      - 美国 CloudFlare节点 6
       - 波兰 V2CROSS.COM
+      - 美国 CloudFlare节点 3
+      - 美国 Nokia
+      - 瑞典 V2CROSS.COM
+      - 浙江省台州市 台州世通网络
+      - 广东省广州市 移动 2
+      - 美国 CloudFlare节点 4
+      - 广东省广州市 移动 3
+      - 广东省东莞市 电信IDC业务段
+      - 美国 Amazon数据中心
+      - 美国 CloudFlare节点 5
+      - 广东省湛江市 移动
+      - 北美地区 V2CROSS.COM
+      - 广东省广州市 移动 4
+      - 立陶宛 V2CROSS.COM
+      - 广东省广州市 移动 5
+      - 印度 V2CROSS.COM
+      - 美国 CloudFlare节点 6
+      - 广东省广州市 移动 6
+      - 广东省广州市 移动 7
       - 美国 CloudFlare节点 7
-      - 广东省广州市 移动 8
-      - 美国 Amazon EC2服务器
-      - 爱尔兰 都柏林Amazon数据中心
-      - 美国 CloudFlare节点 8
+      - 广东省东莞市 电信IDC业务段 2
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -301,33 +286,31 @@ proxy-groups:
       - 🎯 全球直连
       - ♻️ 自动选择
       - 广东省广州市 移动
-      - 广东省东莞市 电信IDC业务段
-      - 美国 Nokia
-      - 美国 Nokia 2
-      - 广东省广州市 移动 2
-      - 广东省广州市 移动 3
-      - 广东省广州市 移动 4
-      - 美国 华盛顿Cogent通信公司
-      - 瑞典 斯德哥尔摩Amazon数据中心
+      - 希腊 V2CROSS.COM
       - 美国 CloudFlare节点
-      - 广东省东莞市 电信IDC业务段 2
-      - 广东省广州市 移动 5
       - 美国 CloudFlare节点 2
-      - 广东省广州市 移动 6
-      - 美国 CloudFlare节点 3
-      - 美国 CloudFlare节点 4
-      - 广东省广州市 移动 7
-      - 广东省东莞市 电信IDC业务段 3
-      - 德国 黑森州法兰克福Amazon数据中心
-      - 美国 CloudFlare节点 5
-      - 美国 麻省理工学院
-      - 美国 CloudFlare节点 6
       - 波兰 V2CROSS.COM
+      - 美国 CloudFlare节点 3
+      - 美国 Nokia
+      - 瑞典 V2CROSS.COM
+      - 浙江省台州市 台州世通网络
+      - 广东省广州市 移动 2
+      - 美国 CloudFlare节点 4
+      - 广东省广州市 移动 3
+      - 广东省东莞市 电信IDC业务段
+      - 美国 Amazon数据中心
+      - 美国 CloudFlare节点 5
+      - 广东省湛江市 移动
+      - 北美地区 V2CROSS.COM
+      - 广东省广州市 移动 4
+      - 立陶宛 V2CROSS.COM
+      - 广东省广州市 移动 5
+      - 印度 V2CROSS.COM
+      - 美国 CloudFlare节点 6
+      - 广东省广州市 移动 6
+      - 广东省广州市 移动 7
       - 美国 CloudFlare节点 7
-      - 广东省广州市 移动 8
-      - 美国 Amazon EC2服务器
-      - 爱尔兰 都柏林Amazon数据中心
-      - 美国 CloudFlare节点 8
+      - 广东省东莞市 电信IDC业务段 2
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
