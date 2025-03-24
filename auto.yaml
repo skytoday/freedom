@@ -5,71 +5,63 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 广东省广州市 移动, server: 183.232.229.164, port: 11002, type: ss, cipher: chacha20-ietf-poly1305, password: ee19fceb-cedc-4832-b460-fccf24fdc8be, udp: true}
-  - {name: 美国 V2CROSS.COM, server: 45.146.232.172, port: 42881, type: trojan, password: 0979046d-90cc-4f58-9595-75ba19550d1c, sni: q08m.vgraxiw73s.hasyaf.cn, skip-cert-verify: true, udp: true}
-  - {name: 广东省广州市 移动 2, server: 183.236.51.38, port: 59554, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美国 V2CROSS.COM 2, server: 45.146.232.173, port: 42881, type: trojan, password: 0979046d-90cc-4f58-9595-75ba19550d1c, sni: q08m.vgraxiw73s.hasyaf.cn, skip-cert-verify: true, udp: true}
-  - {name: 北美地区 V2CROSS.COM, server: 23.185.248.11, port: 17001, type: ss, cipher: aes-256-gcm, password: 0C8XQRGKD622MR0Y, udp: true}
-  - {name: 美国 惠普HP, server: 15.204.58.214, port: 443, type: trojan, password: 33fe5d7f-c9c1-4fd3-a2db-d0f3db6e5fba, sni: tro-us02.gproxy.gratis, skip-cert-verify: true, udp: true}
-  - {name: 美国 V2CROSS.COM 3, server: 207.90.238.136, port: 20022, type: vmess, uuid: d64fd5d9-ac44-43fe-b90a-87798dc491ea, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: 上海市青浦区 电信, server: 61.172.235.22, port: 11001, type: ss, cipher: chacha20-ietf-poly1305, password: ee19fceb-cedc-4832-b460-fccf24fdc8be, udp: true}
-  - {name: 广东省广州市 电信, server: aafrtpfxr.sgl02i9zjfegelp.5xfsur8v62.gosdk.xyz, port: 42881, type: trojan, password: 0979046d-90cc-4f58-9595-75ba19550d1c, sni: q08m.vgraxiw73s.hasyaf.cn, skip-cert-verify: true, udp: true}
-  - {name: 西班牙 V2CROSS.COM, server: 185.238.228.41, port: 8443, type: vmess, uuid: 191babc5-2aaf-4fe5-a563-f14244aefb4e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /xrenvws, headers: {Host: lax1.ibgfw.top}}, udp: true}
-  - {name: 广东省广州市 移动 3, server: 120.232.153.63, port: 40102, type: vmess, uuid: 770ee730-2450-4e3c-a6c6-3932bd32afbd, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 台湾省新北市 是方电讯, server: 150.116.11.9, port: 21005, type: ss, cipher: aes-256-gcm, password: YY1SVLAEC2CXXGRW, udp: true}
+  - {name: 保加利亚 V2CROSS.COM, server: 185.184.70.90, port: 2082, type: vmess, uuid: 7e84b5b9-e9fe-4dbe-906d-4abd67c09376, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: 7e84b5b9-e9fe-4dbe-906d-4abd67c09376-vm, headers: {Host: www.bing.com}}, udp: true}
+  - {name: 广东省广州市 移动, server: 120.232.153.63, port: 40102, type: vmess, uuid: 770ee730-2450-4e3c-a6c6-3932bd32afbd, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 德国 黑森州法兰克福Amazon数据中心, server: 52.57.189.163, port: 22222, type: trojan, password: telegram-id-privatevpns, sni: trojan.burgerip.co.uk, skip-cert-verify: true, udp: true}
+  - {name: 俄罗斯 Rubtsovsk Branch of Altai State University, server: 212.192.12.56, port: 21027, type: vmess, uuid: e98c144b-4890-40b0-87d9-c2e545882740, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 江苏省 移动, server: zf1.10101251.xyz, port: 41705, type: ss, cipher: aes-256-gcm, password: 4bccdfb7-f45b-44bb-9cd3-fb6f8fc8072f, udp: true}
+  - {name: 美国 CloudFlare节点, server: 104.21.69.41, port: 443, type: trojan, password: 6040a753-e35b-4384-8713-96f3c639b621, sni: kju84.890602.XYZ, skip-cert-verify: true, udp: true}
+  - {name: 加拿大 汉博大学, server: 142.214.153.82, port: 30606, type: vmess, uuid: 4012915a-0190-4cbd-ba2c-3f751c66f127, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 广东省广州市 移动 2, server: 120.232.153.40, port: 51182, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国 CloudFlare节点 2, server: 104.21.21.226, port: 443, type: trojan, password: 6040a753-e35b-4384-8713-96f3c639b621, sni: uK803.890689.Xyz, skip-cert-verify: true, udp: true}
+  - {name: 美国 CloudFlare节点 3, server: 104.21.15.33, port: 2053, type: vmess, uuid: c90932c0-a640-4113-a1d6-14812e4c64d1, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: support.sabapardaziran.ir, network: ws, ws-opts: {path: /@M3HDIO1, headers: {Host: support.sabapardaziran.ir}}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
+      - 保加利亚 V2CROSS.COM
       - 广东省广州市 移动
-      - 美国 V2CROSS.COM
+      - 德国 黑森州法兰克福Amazon数据中心
+      - 俄罗斯 Rubtsovsk Branch of Altai State University
+      - 江苏省 移动
+      - 美国 CloudFlare节点
+      - 加拿大 汉博大学
       - 广东省广州市 移动 2
-      - 美国 V2CROSS.COM 2
-      - 北美地区 V2CROSS.COM
-      - 美国 惠普HP
-      - 美国 V2CROSS.COM 3
-      - 上海市青浦区 电信
-      - 广东省广州市 电信
-      - 西班牙 V2CROSS.COM
-      - 广东省广州市 移动 3
-      - 台湾省新北市 是方电讯
+      - 美国 CloudFlare节点 2
+      - 美国 CloudFlare节点 3
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
+      - 保加利亚 V2CROSS.COM
       - 广东省广州市 移动
-      - 美国 V2CROSS.COM
+      - 德国 黑森州法兰克福Amazon数据中心
+      - 俄罗斯 Rubtsovsk Branch of Altai State University
+      - 江苏省 移动
+      - 美国 CloudFlare节点
+      - 加拿大 汉博大学
       - 广东省广州市 移动 2
-      - 美国 V2CROSS.COM 2
-      - 北美地区 V2CROSS.COM
-      - 美国 惠普HP
-      - 美国 V2CROSS.COM 3
-      - 上海市青浦区 电信
-      - 广东省广州市 电信
-      - 西班牙 V2CROSS.COM
-      - 广东省广州市 移动 3
-      - 台湾省新北市 是方电讯
+      - 美国 CloudFlare节点 2
+      - 美国 CloudFlare节点 3
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
+      - 保加利亚 V2CROSS.COM
       - 广东省广州市 移动
-      - 美国 V2CROSS.COM
+      - 德国 黑森州法兰克福Amazon数据中心
+      - 俄罗斯 Rubtsovsk Branch of Altai State University
+      - 江苏省 移动
+      - 美国 CloudFlare节点
+      - 加拿大 汉博大学
       - 广东省广州市 移动 2
-      - 美国 V2CROSS.COM 2
-      - 北美地区 V2CROSS.COM
-      - 美国 惠普HP
-      - 美国 V2CROSS.COM 3
-      - 上海市青浦区 电信
-      - 广东省广州市 电信
-      - 西班牙 V2CROSS.COM
-      - 广东省广州市 移动 3
-      - 台湾省新北市 是方电讯
+      - 美国 CloudFlare节点 2
+      - 美国 CloudFlare节点 3
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -88,76 +80,67 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
+      - 保加利亚 V2CROSS.COM
       - 广东省广州市 移动
-      - 美国 V2CROSS.COM
+      - 德国 黑森州法兰克福Amazon数据中心
+      - 俄罗斯 Rubtsovsk Branch of Altai State University
+      - 江苏省 移动
+      - 美国 CloudFlare节点
+      - 加拿大 汉博大学
       - 广东省广州市 移动 2
-      - 美国 V2CROSS.COM 2
-      - 北美地区 V2CROSS.COM
-      - 美国 惠普HP
-      - 美国 V2CROSS.COM 3
-      - 上海市青浦区 电信
-      - 广东省广州市 电信
-      - 西班牙 V2CROSS.COM
-      - 广东省广州市 移动 3
-      - 台湾省新北市 是方电讯
+      - 美国 CloudFlare节点 2
+      - 美国 CloudFlare节点 3
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 台湾省新北市 是方电讯
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
+      - 保加利亚 V2CROSS.COM
       - 广东省广州市 移动
-      - 美国 V2CROSS.COM
+      - 德国 黑森州法兰克福Amazon数据中心
+      - 俄罗斯 Rubtsovsk Branch of Altai State University
+      - 江苏省 移动
+      - 美国 CloudFlare节点
+      - 加拿大 汉博大学
       - 广东省广州市 移动 2
-      - 美国 V2CROSS.COM 2
-      - 北美地区 V2CROSS.COM
-      - 美国 惠普HP
-      - 美国 V2CROSS.COM 3
-      - 上海市青浦区 电信
-      - 广东省广州市 电信
-      - 西班牙 V2CROSS.COM
-      - 广东省广州市 移动 3
-      - 台湾省新北市 是方电讯
+      - 美国 CloudFlare节点 2
+      - 美国 CloudFlare节点 3
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
+      - 保加利亚 V2CROSS.COM
       - 广东省广州市 移动
-      - 美国 V2CROSS.COM
+      - 德国 黑森州法兰克福Amazon数据中心
+      - 俄罗斯 Rubtsovsk Branch of Altai State University
+      - 江苏省 移动
+      - 美国 CloudFlare节点
+      - 加拿大 汉博大学
       - 广东省广州市 移动 2
-      - 美国 V2CROSS.COM 2
-      - 北美地区 V2CROSS.COM
-      - 美国 惠普HP
-      - 美国 V2CROSS.COM 3
-      - 上海市青浦区 电信
-      - 广东省广州市 电信
-      - 西班牙 V2CROSS.COM
-      - 广东省广州市 移动 3
-      - 台湾省新北市 是方电讯
+      - 美国 CloudFlare节点 2
+      - 美国 CloudFlare节点 3
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - 保加利亚 V2CROSS.COM
       - 广东省广州市 移动
-      - 美国 V2CROSS.COM
+      - 德国 黑森州法兰克福Amazon数据中心
+      - 俄罗斯 Rubtsovsk Branch of Altai State University
+      - 江苏省 移动
+      - 美国 CloudFlare节点
+      - 加拿大 汉博大学
       - 广东省广州市 移动 2
-      - 美国 V2CROSS.COM 2
-      - 北美地区 V2CROSS.COM
-      - 美国 惠普HP
-      - 美国 V2CROSS.COM 3
-      - 上海市青浦区 电信
-      - 广东省广州市 电信
-      - 西班牙 V2CROSS.COM
-      - 广东省广州市 移动 3
-      - 台湾省新北市 是方电讯
+      - 美国 CloudFlare节点 2
+      - 美国 CloudFlare节点 3
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -173,18 +156,16 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - 保加利亚 V2CROSS.COM
       - 广东省广州市 移动
-      - 美国 V2CROSS.COM
+      - 德国 黑森州法兰克福Amazon数据中心
+      - 俄罗斯 Rubtsovsk Branch of Altai State University
+      - 江苏省 移动
+      - 美国 CloudFlare节点
+      - 加拿大 汉博大学
       - 广东省广州市 移动 2
-      - 美国 V2CROSS.COM 2
-      - 北美地区 V2CROSS.COM
-      - 美国 惠普HP
-      - 美国 V2CROSS.COM 3
-      - 上海市青浦区 电信
-      - 广东省广州市 电信
-      - 西班牙 V2CROSS.COM
-      - 广东省广州市 移动 3
-      - 台湾省新北市 是方电讯
+      - 美国 CloudFlare节点 2
+      - 美国 CloudFlare节点 3
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
