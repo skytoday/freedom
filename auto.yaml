@@ -5,179 +5,127 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 广东省 联通, server: 7daa6f3a-sux8g0-tavf3m-18imv.cu.plebai.net, port: 5228, type: vmess, uuid: 9a846cd4-7a86-11ed-a8bf-f23c91cfbbc9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美国 华盛顿Cogent通信公司, server: 38.114.114.108, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: 江苏省南京市 移动, server: tk.hzlt.tkddns.xyz, port: 22642, type: vmess, uuid: 98e96c9f-4bb3-39d4-9a2c-fac04257f7c7, alterId: 2, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: zxjp-b.tkong.cc}}, udp: true}
-  - {name: 美国 CloudFlare节点, server: 172.67.228.218, port: 80, type: vmess, uuid: bd9c1aea-240a-463a-83ee-e7b3a6a4ac7a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /s15.html, headers: {Host: 696740264725002025041119231476180.s15.chibaba.filegear-sg.me}}, udp: true}
-  - {name: 广东省 联通 2, server: a0bc30e2-sux8g0-sv74ec-1t7c2.cu.plebai.net, port: 5228, type: vmess, uuid: a087871c-d185-11ef-bdb9-f23c91cfbbc9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 欧盟 V2CROSS.COM, server: 45.87.175.154, port: 8080, type: ss, cipher: chacha20-ietf-poly1305, password: cvII85TrW6n0OGyfpHVS1u, udp: true}
-  - {name: 广东省广州市 移动, server: 120.232.153.41, port: 46597, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 海南省 移动(全省通用), server: hk02.x.quickcht3.club, port: 52612, type: ss, cipher: chacha20-ietf-poly1305, password: 2be0c954-4291-45ea-b47d-ca713180550b, udp: true}
-  - {name: 美国 CloudFlare节点 2, server: 1743919941.tencentapp.cn, port: 2053, type: vmess, uuid: 3bb3c730-e107-49c5-a0b2-b576d1b26a5e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 1743919978.speed.sccapv.cccp.freefly.pp.ua}}, udp: true}
-  - {name: 美国 华盛顿Cogent通信公司 2, server: 38.110.1.146, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: 广东省广州市 电信, server: 59.42.247.189, port: 8004, type: vmess, uuid: 87519551-3ffa-4387-b517-dd0e223e00ef, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /nmkj, headers: {Host: www.bing.com}}, udp: true}
-  - {name: 广东省广州市 移动 2, server: 183.236.51.38, port: 43121, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 上海市徐汇区 联通漕河泾数据中心, server: 112.65.92.20, port: 45402, type: vmess, uuid: 469e0b31-30c3-4dab-800d-711232634ce1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美国 CloudFlare节点 3, server: 1p.890689.xyz, port: 443, type: trojan, password: a8fce442-ae9a-4cc1-a0cc-20308ff0a0db, sni: 1P.890689.xyZ, skip-cert-verify: true, udp: true}
-  - {name: 巴西圣保罗 CloudFlare节点, server: 188.114.96.2, port: 443, type: vmess, uuid: edbb1059-1633-4271-b66e-ed4fba47a1bf, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /linkws, headers: {Host: linde06.indiavideo.sbs}}, udp: true}
-  - {name: 克罗地亚 V2CROSS.COM, server: 89.18.58.104, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 广东省 联通 3, server: 74f77c00-sutj40-t5qufl-8n27.cu.plebai.net, port: 5229, type: vmess, uuid: 5dc6fa05-a601-aba6-7761-ecde22d2b0fc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美国 CloudFlare节点 4, server: us01.sh-cloudflare.sbs, port: 8443, type: vmess, uuid: 914584ee-3515-46ac-a09d-4677a2e9dc9a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: us01.sh-cloudflare.sbs}}, udp: true}
-  - {name: 新加坡 Microsoft数据中心, server: 20.191.138.47, port: 443, type: trojan, password: dQUWbcwECl, sni: automq4-proxy.automq-sg.com, skip-cert-verify: true, udp: true}
-  - {name: 广东省汕头市 移动, server: f108c201-sv2sg0-t1u9f2-mdk9.cm5.p5pv.com, port: 17234, type: vmess, uuid: b235e3d0-50ee-11eb-a8bf-f23c91cfbbc9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 北美地区 V2CROSS.COM, server: 23.150.248.199, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: 广东省湛江市 移动, server: 120.198.71.216, port: 35001, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 英国 V2CROSS.COM, server: 46.250.237.48, port: 16369, type: vmess, uuid: 11aa4614-bb63-45fe-9d4b-f3b215c639e5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 广东省湛江市 移动 2, server: 120.198.71.219, port: 44015, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 广东省 联通 4, server: 0ecc8d37-sux8g0-swbudg-1mzwj.cu.plebai.net, port: 5229, type: vmess, uuid: a203d80e-10fe-11ef-88a6-f23c9164ca5d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 欧盟 V2CROSS.COM 2, server: 45.12.138.82, port: 54757, type: vmess, uuid: cde9f074-c930-4aa3-a558-46bbc9d0a5a1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 广东省汕头市 移动 2, server: 81f6bf37-sutj40-svgpxu-y2gs.cm5.p5pv.com, port: 17233, type: vmess, uuid: b806b388-5f97-11ee-8014-f23c913c8d2b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 乌克兰 V2CROSS.COM, server: 95.164.16.152, port: 12240, type: ss, cipher: chacha20-ietf-poly1305, password: zqNBkZNoXgqtiD0wo49QdY, udp: true}
-  - {name: 克罗地亚 V2CROSS.COM 2, server: 89.18.58.63, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 欧盟 V2CROSS.COM 3, server: 45.87.175.166, port: 8080, type: ss, cipher: chacha20-ietf-poly1305, password: QCXDxuDlTTMD7jtgHUjIoj, udp: true}
-  - {name: 美国 CloudFlare节点 5, server: 104.21.82.183, port: 8880, type: vmess, uuid: 5a7021e0-26b4-45d6-b175-fe551601ca97, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: server26.beheshtbaneh.com}}, udp: true}
-  - {name: 广东省汕头市 移动 3, server: 2b6fa9f9-sum4g0-sv6oiy-1p1b.cm5.p5pv.com, port: 17232, type: vmess, uuid: 279b8588-616b-11ed-a8bf-f23c91cfbbc9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美国 华盛顿Cogent通信公司 3, server: 38.110.1.146, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: 美国 华盛顿Cogent通信公司 4, server: 38.110.1.146, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: 美国 CloudFlare节点 6, server: dingzhiyx1.sgjc.xyz, port: 8080, type: vmess, uuid: 2e235b81-70ad-45c0-959c-7591fa078836, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: dingzhiadly.sgjc.xyz}}, udp: true}
-  - {name: 美国 CloudFlare节点 7, server: hk2.lrzdx.uk, port: 443, type: vmess, uuid: db69d5bc-d36c-4903-f471-74b98c5cefe5, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /register, headers: {Host: hk2.lrzdx.uk}}, udp: true}
-  - {name: 香港 特别行政区, server: 154.90.63.193, port: 990, type: ss, cipher: chacha20-ietf-poly1305, password: f8f7aCzcPKbsF8p3, udp: true}
-  - {name: 美国 CloudFlare节点 8, server: US7-02.890624.Xyz, port: 443, type: vmess, uuid: 4d04b30c-ef7b-4a07-8f9e-f581ec171f8a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /bua2hMcbA8wMzbGFtV, headers: {Host: US7-02.890624.Xyz}}, udp: true}
-  - {name: 江苏省 移动, server: fadawtawd.zhangwei.li, port: 46005, type: vmess, uuid: 4c5a8a75-7d65-40a9-8c3b-a67abae08534, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /zh-cn, headers: {Host: fadawtawd.zhangwei.li}}, udp: true}
+  - {name: 美国 CloudFlare节点, server: 172.66.47.42, port: 2053, type: trojan, password: T%40_WvT8Ho%40LW%25w_%2C, sni: NOp-55q.pAgEs.dEv, skip-cert-verify: true, udp: true}
+  - {name: 法国 巴黎Amazon数据中心, server: 15.188.97.254, port: 22222, type: trojan, password: telegram-id-vlessconfig, sni: trojan.burgerip.co.uk, skip-cert-verify: true, udp: true}
+  - {name: 山东省 电信, server: dxv4.pai50288.uk, port: 14100, type: vmess, uuid: f6866b0b-f946-4a03-8df0-c7e0016b55ad, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 广东省汕头市 移动, server: 09804b8f-suz340-sx19e8-gacy.cm5.p5pv.com, port: 17231, type: vmess, uuid: 20f87b02-0eaa-11eb-8684-f23c913c8d2b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国 CloudFlare节点 2, server: 104.18.119.222, port: 2096, type: vmess, uuid: 3bb3c730-e107-49c5-a0b2-b576d1b26a5e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 1743256978.speed.adl.cccp.freefly.pp.ua}}, udp: true}
+  - {name: 广东省汕头市 移动 2, server: 87ab6ec1-sux8g0-susn3i-1lkt0.cm5.p5pv.com, port: 17235, type: vmess, uuid: cd1b0ae0-4010-11ee-953a-f23c9164ca5d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 广东省广州市 移动, server: 120.232.153.40, port: 59082, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 广东省 联通, server: 2e93912d-sutj40-sutgau-1r62f.cu.plebai.net, port: 5229, type: vmess, uuid: 154b0bf8-f9a7-11ee-a218-f23c91cfbbc9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国 CloudFlare节点 3, server: 104.21.21.190, port: 443, type: trojan, password: 0cda5f7e-cc55-4ff2-8ad8-268b9b99dd01, sni: Us6-08.890606.xYZ, skip-cert-verify: true, udp: true}
+  - {name: 广东省汕头市 移动 3, server: 9e083647-sv2sg0-t35mzx-1pp0x.cm5.p5pv.com, port: 17231, type: vmess, uuid: 7734370a-8480-11ee-ab76-f23c91cfbbc9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 广东省湛江市 移动, server: 120.198.71.216, port: 50082, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 广东省广州市 移动 2, server: 120.232.153.41, port: 46597, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 捷克 V2CROSS.COM, server: 185.189.32.179, port: 22702, type: vmess, uuid: 483a1cce-af9b-4416-d7c6-10b9b63be66f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 印度 V2CROSS.COM, server: 202.78.162.5, port: 443, type: vmess, uuid: 118287d2-e968-42e1-80d0-12fa2f5d38d6, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: sahand.serveminecraft.net}}, udp: true}
+  - {name: 美国 CloudFlare节点 4, server: 104.21.15.232, port: 443, type: trojan, password: 2fec7227-9abe-46f2-af18-78302b836c45, sni: 3r.2030.pp.ua, skip-cert-verify: true, udp: true}
+  - {name: 俄罗斯 V2CROSS.COM, server: 185.242.86.156, port: 54170, type: ss, cipher: chacha20-ietf-poly1305, password: 36ZCHeabUSfKjfQEvJ4HDV, udp: true}
+  - {name: 美国 CloudFlare节点 5, server: 104.16.83.176, port: 443, type: trojan, password: Ng35283528, sni: c2.validbv3528.eu.org, skip-cert-verify: true, udp: true}
+  - {name: 北美地区 V2CROSS.COM, server: 23.150.248.199, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: 美国 CloudFlare节点 6, server: 104.21.48.1, port: 8443, type: vmess, uuid: 914584ee-3515-46ac-a09d-4677a2e9dc9a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: us01.sh-cloudflare.sbs}}, udp: true}
+  - {name: 香港 腾讯云, server: 43.154.34.74, port: 1935, type: vmess, uuid: 2e5bfd4a-0852-4df4-b9e7-9b6f207113b4, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /vmess-argo, headers: {Host: djdjjrjjrhk.lzj520hxw.dpdns.org}}, udp: true}
+  - {name: 广东省湛江市 移动 2, server: 120.198.71.219, port: 42355, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 北京市 移动, server: fadawtawd.zhangwei.li, port: 46005, type: vmess, uuid: 4c5a8a75-7d65-40a9-8c3b-a67abae08534, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /zh-cn, headers: {Host: fadawtawd.zhangwei.li}}, udp: true}
+  - {name: 克罗地亚 V2CROSS.COM, server: 89.18.58.63, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国 CloudFlare节点 7, server: 172.67.208.155, port: 443, type: trojan, password: 2fec7227-9abe-46f2-af18-78302b836c45, sni: 3r.2030.pp.ua, skip-cert-verify: true, udp: true}
+  - {name: 俄罗斯 克拉斯诺亚尔斯克G-Core Lab, server: 5.189.201.250, port: 31348, type: ss, cipher: chacha20-ietf-poly1305, password: RiPuKJJl18ZgvLpTjWxBwSfKiPkt9gzFKyxGCY8eHtOcDb2X, udp: true}
+  - {name: 山东省青岛市 联通, server: gysz0000.dynu.net, port: 38340, type: trojan, password: VMhGp5wEIyCDf90T, sni: gysz0000.dynu.net, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 广东省 联通
-      - 美国 华盛顿Cogent通信公司
-      - 江苏省南京市 移动
       - 美国 CloudFlare节点
-      - 广东省 联通 2
-      - 欧盟 V2CROSS.COM
-      - 广东省广州市 移动
-      - 海南省 移动(全省通用)
-      - 美国 CloudFlare节点 2
-      - 美国 华盛顿Cogent通信公司 2
-      - 广东省广州市 电信
-      - 广东省广州市 移动 2
-      - 上海市徐汇区 联通漕河泾数据中心
-      - 美国 CloudFlare节点 3
-      - 巴西圣保罗 CloudFlare节点
-      - 克罗地亚 V2CROSS.COM
-      - 广东省 联通 3
-      - 美国 CloudFlare节点 4
-      - 新加坡 Microsoft数据中心
+      - 法国 巴黎Amazon数据中心
+      - 山东省 电信
       - 广东省汕头市 移动
-      - 北美地区 V2CROSS.COM
-      - 广东省湛江市 移动
-      - 英国 V2CROSS.COM
-      - 广东省湛江市 移动 2
-      - 广东省 联通 4
-      - 欧盟 V2CROSS.COM 2
+      - 美国 CloudFlare节点 2
       - 广东省汕头市 移动 2
-      - 乌克兰 V2CROSS.COM
-      - 克罗地亚 V2CROSS.COM 2
-      - 欧盟 V2CROSS.COM 3
-      - 美国 CloudFlare节点 5
+      - 广东省广州市 移动
+      - 广东省 联通
+      - 美国 CloudFlare节点 3
       - 广东省汕头市 移动 3
-      - 美国 华盛顿Cogent通信公司 3
-      - 美国 华盛顿Cogent通信公司 4
+      - 广东省湛江市 移动
+      - 广东省广州市 移动 2
+      - 捷克 V2CROSS.COM
+      - 印度 V2CROSS.COM
+      - 美国 CloudFlare节点 4
+      - 俄罗斯 V2CROSS.COM
+      - 美国 CloudFlare节点 5
+      - 北美地区 V2CROSS.COM
       - 美国 CloudFlare节点 6
+      - 香港 腾讯云
+      - 广东省湛江市 移动 2
+      - 北京市 移动
+      - 克罗地亚 V2CROSS.COM
       - 美国 CloudFlare节点 7
-      - 香港 特别行政区
-      - 美国 CloudFlare节点 8
-      - 江苏省 移动
+      - 俄罗斯 克拉斯诺亚尔斯克G-Core Lab
+      - 山东省青岛市 联通
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 广东省 联通
-      - 美国 华盛顿Cogent通信公司
-      - 江苏省南京市 移动
       - 美国 CloudFlare节点
-      - 广东省 联通 2
-      - 欧盟 V2CROSS.COM
-      - 广东省广州市 移动
-      - 海南省 移动(全省通用)
-      - 美国 CloudFlare节点 2
-      - 美国 华盛顿Cogent通信公司 2
-      - 广东省广州市 电信
-      - 广东省广州市 移动 2
-      - 上海市徐汇区 联通漕河泾数据中心
-      - 美国 CloudFlare节点 3
-      - 巴西圣保罗 CloudFlare节点
-      - 克罗地亚 V2CROSS.COM
-      - 广东省 联通 3
-      - 美国 CloudFlare节点 4
-      - 新加坡 Microsoft数据中心
+      - 法国 巴黎Amazon数据中心
+      - 山东省 电信
       - 广东省汕头市 移动
-      - 北美地区 V2CROSS.COM
-      - 广东省湛江市 移动
-      - 英国 V2CROSS.COM
-      - 广东省湛江市 移动 2
-      - 广东省 联通 4
-      - 欧盟 V2CROSS.COM 2
+      - 美国 CloudFlare节点 2
       - 广东省汕头市 移动 2
-      - 乌克兰 V2CROSS.COM
-      - 克罗地亚 V2CROSS.COM 2
-      - 欧盟 V2CROSS.COM 3
-      - 美国 CloudFlare节点 5
+      - 广东省广州市 移动
+      - 广东省 联通
+      - 美国 CloudFlare节点 3
       - 广东省汕头市 移动 3
-      - 美国 华盛顿Cogent通信公司 3
-      - 美国 华盛顿Cogent通信公司 4
+      - 广东省湛江市 移动
+      - 广东省广州市 移动 2
+      - 捷克 V2CROSS.COM
+      - 印度 V2CROSS.COM
+      - 美国 CloudFlare节点 4
+      - 俄罗斯 V2CROSS.COM
+      - 美国 CloudFlare节点 5
+      - 北美地区 V2CROSS.COM
       - 美国 CloudFlare节点 6
+      - 香港 腾讯云
+      - 广东省湛江市 移动 2
+      - 北京市 移动
+      - 克罗地亚 V2CROSS.COM
       - 美国 CloudFlare节点 7
-      - 香港 特别行政区
-      - 美国 CloudFlare节点 8
-      - 江苏省 移动
+      - 俄罗斯 克拉斯诺亚尔斯克G-Core Lab
+      - 山东省青岛市 联通
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 广东省 联通
-      - 美国 华盛顿Cogent通信公司
-      - 江苏省南京市 移动
       - 美国 CloudFlare节点
-      - 广东省 联通 2
-      - 欧盟 V2CROSS.COM
-      - 广东省广州市 移动
-      - 海南省 移动(全省通用)
-      - 美国 CloudFlare节点 2
-      - 美国 华盛顿Cogent通信公司 2
-      - 广东省广州市 电信
-      - 广东省广州市 移动 2
-      - 上海市徐汇区 联通漕河泾数据中心
-      - 美国 CloudFlare节点 3
-      - 巴西圣保罗 CloudFlare节点
-      - 克罗地亚 V2CROSS.COM
-      - 广东省 联通 3
-      - 美国 CloudFlare节点 4
-      - 新加坡 Microsoft数据中心
+      - 法国 巴黎Amazon数据中心
+      - 山东省 电信
       - 广东省汕头市 移动
-      - 北美地区 V2CROSS.COM
-      - 广东省湛江市 移动
-      - 英国 V2CROSS.COM
-      - 广东省湛江市 移动 2
-      - 广东省 联通 4
-      - 欧盟 V2CROSS.COM 2
+      - 美国 CloudFlare节点 2
       - 广东省汕头市 移动 2
-      - 乌克兰 V2CROSS.COM
-      - 克罗地亚 V2CROSS.COM 2
-      - 欧盟 V2CROSS.COM 3
-      - 美国 CloudFlare节点 5
+      - 广东省广州市 移动
+      - 广东省 联通
+      - 美国 CloudFlare节点 3
       - 广东省汕头市 移动 3
-      - 美国 华盛顿Cogent通信公司 3
-      - 美国 华盛顿Cogent通信公司 4
+      - 广东省湛江市 移动
+      - 广东省广州市 移动 2
+      - 捷克 V2CROSS.COM
+      - 印度 V2CROSS.COM
+      - 美国 CloudFlare节点 4
+      - 俄罗斯 V2CROSS.COM
+      - 美国 CloudFlare节点 5
+      - 北美地区 V2CROSS.COM
       - 美国 CloudFlare节点 6
+      - 香港 腾讯云
+      - 广东省湛江市 移动 2
+      - 北京市 移动
+      - 克罗地亚 V2CROSS.COM
       - 美国 CloudFlare节点 7
-      - 香港 特别行政区
-      - 美国 CloudFlare节点 8
-      - 江苏省 移动
+      - 俄罗斯 克拉斯诺亚尔斯克G-Core Lab
+      - 山东省青岛市 联通
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -196,184 +144,132 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 广东省 联通
-      - 美国 华盛顿Cogent通信公司
-      - 江苏省南京市 移动
       - 美国 CloudFlare节点
-      - 广东省 联通 2
-      - 欧盟 V2CROSS.COM
-      - 广东省广州市 移动
-      - 海南省 移动(全省通用)
-      - 美国 CloudFlare节点 2
-      - 美国 华盛顿Cogent通信公司 2
-      - 广东省广州市 电信
-      - 广东省广州市 移动 2
-      - 上海市徐汇区 联通漕河泾数据中心
-      - 美国 CloudFlare节点 3
-      - 巴西圣保罗 CloudFlare节点
-      - 克罗地亚 V2CROSS.COM
-      - 广东省 联通 3
-      - 美国 CloudFlare节点 4
-      - 新加坡 Microsoft数据中心
+      - 法国 巴黎Amazon数据中心
+      - 山东省 电信
       - 广东省汕头市 移动
-      - 北美地区 V2CROSS.COM
-      - 广东省湛江市 移动
-      - 英国 V2CROSS.COM
-      - 广东省湛江市 移动 2
-      - 广东省 联通 4
-      - 欧盟 V2CROSS.COM 2
+      - 美国 CloudFlare节点 2
       - 广东省汕头市 移动 2
-      - 乌克兰 V2CROSS.COM
-      - 克罗地亚 V2CROSS.COM 2
-      - 欧盟 V2CROSS.COM 3
-      - 美国 CloudFlare节点 5
+      - 广东省广州市 移动
+      - 广东省 联通
+      - 美国 CloudFlare节点 3
       - 广东省汕头市 移动 3
-      - 美国 华盛顿Cogent通信公司 3
-      - 美国 华盛顿Cogent通信公司 4
+      - 广东省湛江市 移动
+      - 广东省广州市 移动 2
+      - 捷克 V2CROSS.COM
+      - 印度 V2CROSS.COM
+      - 美国 CloudFlare节点 4
+      - 俄罗斯 V2CROSS.COM
+      - 美国 CloudFlare节点 5
+      - 北美地区 V2CROSS.COM
       - 美国 CloudFlare节点 6
+      - 香港 腾讯云
+      - 广东省湛江市 移动 2
+      - 北京市 移动
+      - 克罗地亚 V2CROSS.COM
       - 美国 CloudFlare节点 7
-      - 香港 特别行政区
-      - 美国 CloudFlare节点 8
-      - 江苏省 移动
+      - 俄罗斯 克拉斯诺亚尔斯克G-Core Lab
+      - 山东省青岛市 联通
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 香港 特别行政区
+      - 香港 腾讯云
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 广东省 联通
-      - 美国 华盛顿Cogent通信公司
-      - 江苏省南京市 移动
       - 美国 CloudFlare节点
-      - 广东省 联通 2
-      - 欧盟 V2CROSS.COM
-      - 广东省广州市 移动
-      - 海南省 移动(全省通用)
-      - 美国 CloudFlare节点 2
-      - 美国 华盛顿Cogent通信公司 2
-      - 广东省广州市 电信
-      - 广东省广州市 移动 2
-      - 上海市徐汇区 联通漕河泾数据中心
-      - 美国 CloudFlare节点 3
-      - 巴西圣保罗 CloudFlare节点
-      - 克罗地亚 V2CROSS.COM
-      - 广东省 联通 3
-      - 美国 CloudFlare节点 4
-      - 新加坡 Microsoft数据中心
+      - 法国 巴黎Amazon数据中心
+      - 山东省 电信
       - 广东省汕头市 移动
-      - 北美地区 V2CROSS.COM
-      - 广东省湛江市 移动
-      - 英国 V2CROSS.COM
-      - 广东省湛江市 移动 2
-      - 广东省 联通 4
-      - 欧盟 V2CROSS.COM 2
+      - 美国 CloudFlare节点 2
       - 广东省汕头市 移动 2
-      - 乌克兰 V2CROSS.COM
-      - 克罗地亚 V2CROSS.COM 2
-      - 欧盟 V2CROSS.COM 3
-      - 美国 CloudFlare节点 5
+      - 广东省广州市 移动
+      - 广东省 联通
+      - 美国 CloudFlare节点 3
       - 广东省汕头市 移动 3
-      - 美国 华盛顿Cogent通信公司 3
-      - 美国 华盛顿Cogent通信公司 4
+      - 广东省湛江市 移动
+      - 广东省广州市 移动 2
+      - 捷克 V2CROSS.COM
+      - 印度 V2CROSS.COM
+      - 美国 CloudFlare节点 4
+      - 俄罗斯 V2CROSS.COM
+      - 美国 CloudFlare节点 5
+      - 北美地区 V2CROSS.COM
       - 美国 CloudFlare节点 6
+      - 香港 腾讯云
+      - 广东省湛江市 移动 2
+      - 北京市 移动
+      - 克罗地亚 V2CROSS.COM
       - 美国 CloudFlare节点 7
-      - 香港 特别行政区
-      - 美国 CloudFlare节点 8
-      - 江苏省 移动
+      - 俄罗斯 克拉斯诺亚尔斯克G-Core Lab
+      - 山东省青岛市 联通
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 广东省 联通
-      - 美国 华盛顿Cogent通信公司
-      - 江苏省南京市 移动
       - 美国 CloudFlare节点
-      - 广东省 联通 2
-      - 欧盟 V2CROSS.COM
-      - 广东省广州市 移动
-      - 海南省 移动(全省通用)
-      - 美国 CloudFlare节点 2
-      - 美国 华盛顿Cogent通信公司 2
-      - 广东省广州市 电信
-      - 广东省广州市 移动 2
-      - 上海市徐汇区 联通漕河泾数据中心
-      - 美国 CloudFlare节点 3
-      - 巴西圣保罗 CloudFlare节点
-      - 克罗地亚 V2CROSS.COM
-      - 广东省 联通 3
-      - 美国 CloudFlare节点 4
-      - 新加坡 Microsoft数据中心
+      - 法国 巴黎Amazon数据中心
+      - 山东省 电信
       - 广东省汕头市 移动
-      - 北美地区 V2CROSS.COM
-      - 广东省湛江市 移动
-      - 英国 V2CROSS.COM
-      - 广东省湛江市 移动 2
-      - 广东省 联通 4
-      - 欧盟 V2CROSS.COM 2
+      - 美国 CloudFlare节点 2
       - 广东省汕头市 移动 2
-      - 乌克兰 V2CROSS.COM
-      - 克罗地亚 V2CROSS.COM 2
-      - 欧盟 V2CROSS.COM 3
-      - 美国 CloudFlare节点 5
+      - 广东省广州市 移动
+      - 广东省 联通
+      - 美国 CloudFlare节点 3
       - 广东省汕头市 移动 3
-      - 美国 华盛顿Cogent通信公司 3
-      - 美国 华盛顿Cogent通信公司 4
+      - 广东省湛江市 移动
+      - 广东省广州市 移动 2
+      - 捷克 V2CROSS.COM
+      - 印度 V2CROSS.COM
+      - 美国 CloudFlare节点 4
+      - 俄罗斯 V2CROSS.COM
+      - 美国 CloudFlare节点 5
+      - 北美地区 V2CROSS.COM
       - 美国 CloudFlare节点 6
+      - 香港 腾讯云
+      - 广东省湛江市 移动 2
+      - 北京市 移动
+      - 克罗地亚 V2CROSS.COM
       - 美国 CloudFlare节点 7
-      - 香港 特别行政区
-      - 美国 CloudFlare节点 8
-      - 江苏省 移动
+      - 俄罗斯 克拉斯诺亚尔斯克G-Core Lab
+      - 山东省青岛市 联通
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 广东省 联通
-      - 美国 华盛顿Cogent通信公司
-      - 江苏省南京市 移动
       - 美国 CloudFlare节点
-      - 广东省 联通 2
-      - 欧盟 V2CROSS.COM
-      - 广东省广州市 移动
-      - 海南省 移动(全省通用)
-      - 美国 CloudFlare节点 2
-      - 美国 华盛顿Cogent通信公司 2
-      - 广东省广州市 电信
-      - 广东省广州市 移动 2
-      - 上海市徐汇区 联通漕河泾数据中心
-      - 美国 CloudFlare节点 3
-      - 巴西圣保罗 CloudFlare节点
-      - 克罗地亚 V2CROSS.COM
-      - 广东省 联通 3
-      - 美国 CloudFlare节点 4
-      - 新加坡 Microsoft数据中心
+      - 法国 巴黎Amazon数据中心
+      - 山东省 电信
       - 广东省汕头市 移动
-      - 北美地区 V2CROSS.COM
-      - 广东省湛江市 移动
-      - 英国 V2CROSS.COM
-      - 广东省湛江市 移动 2
-      - 广东省 联通 4
-      - 欧盟 V2CROSS.COM 2
+      - 美国 CloudFlare节点 2
       - 广东省汕头市 移动 2
-      - 乌克兰 V2CROSS.COM
-      - 克罗地亚 V2CROSS.COM 2
-      - 欧盟 V2CROSS.COM 3
-      - 美国 CloudFlare节点 5
+      - 广东省广州市 移动
+      - 广东省 联通
+      - 美国 CloudFlare节点 3
       - 广东省汕头市 移动 3
-      - 美国 华盛顿Cogent通信公司 3
-      - 美国 华盛顿Cogent通信公司 4
+      - 广东省湛江市 移动
+      - 广东省广州市 移动 2
+      - 捷克 V2CROSS.COM
+      - 印度 V2CROSS.COM
+      - 美国 CloudFlare节点 4
+      - 俄罗斯 V2CROSS.COM
+      - 美国 CloudFlare节点 5
+      - 北美地区 V2CROSS.COM
       - 美国 CloudFlare节点 6
+      - 香港 腾讯云
+      - 广东省湛江市 移动 2
+      - 北京市 移动
+      - 克罗地亚 V2CROSS.COM
       - 美国 CloudFlare节点 7
-      - 香港 特别行政区
-      - 美国 CloudFlare节点 8
-      - 江苏省 移动
+      - 俄罗斯 克拉斯诺亚尔斯克G-Core Lab
+      - 山东省青岛市 联通
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -389,45 +285,32 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 广东省 联通
-      - 美国 华盛顿Cogent通信公司
-      - 江苏省南京市 移动
       - 美国 CloudFlare节点
-      - 广东省 联通 2
-      - 欧盟 V2CROSS.COM
-      - 广东省广州市 移动
-      - 海南省 移动(全省通用)
-      - 美国 CloudFlare节点 2
-      - 美国 华盛顿Cogent通信公司 2
-      - 广东省广州市 电信
-      - 广东省广州市 移动 2
-      - 上海市徐汇区 联通漕河泾数据中心
-      - 美国 CloudFlare节点 3
-      - 巴西圣保罗 CloudFlare节点
-      - 克罗地亚 V2CROSS.COM
-      - 广东省 联通 3
-      - 美国 CloudFlare节点 4
-      - 新加坡 Microsoft数据中心
+      - 法国 巴黎Amazon数据中心
+      - 山东省 电信
       - 广东省汕头市 移动
-      - 北美地区 V2CROSS.COM
-      - 广东省湛江市 移动
-      - 英国 V2CROSS.COM
-      - 广东省湛江市 移动 2
-      - 广东省 联通 4
-      - 欧盟 V2CROSS.COM 2
+      - 美国 CloudFlare节点 2
       - 广东省汕头市 移动 2
-      - 乌克兰 V2CROSS.COM
-      - 克罗地亚 V2CROSS.COM 2
-      - 欧盟 V2CROSS.COM 3
-      - 美国 CloudFlare节点 5
+      - 广东省广州市 移动
+      - 广东省 联通
+      - 美国 CloudFlare节点 3
       - 广东省汕头市 移动 3
-      - 美国 华盛顿Cogent通信公司 3
-      - 美国 华盛顿Cogent通信公司 4
+      - 广东省湛江市 移动
+      - 广东省广州市 移动 2
+      - 捷克 V2CROSS.COM
+      - 印度 V2CROSS.COM
+      - 美国 CloudFlare节点 4
+      - 俄罗斯 V2CROSS.COM
+      - 美国 CloudFlare节点 5
+      - 北美地区 V2CROSS.COM
       - 美国 CloudFlare节点 6
+      - 香港 腾讯云
+      - 广东省湛江市 移动 2
+      - 北京市 移动
+      - 克罗地亚 V2CROSS.COM
       - 美国 CloudFlare节点 7
-      - 香港 特别行政区
-      - 美国 CloudFlare节点 8
-      - 江苏省 移动
+      - 俄罗斯 克拉斯诺亚尔斯克G-Core Lab
+      - 山东省青岛市 联通
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
