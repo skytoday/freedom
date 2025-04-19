@@ -5,237 +5,269 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 广东省 联通, server: 3b6ec92e-sux8g0-swffb5-1s6xm.cu.plebai.net, port: 5228, type: vmess, uuid: 2b634c80-fd7e-11ef-9f25-f23c9164ca5d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 🇪🇸 西班牙 V2CROSS.COM, server: 150.241.78.252, port: 2025, type: trojan, password: vpn, skip-cert-verify: false, udp: true}
-  - {name: 广东省 联通 2, server: a0bc30e2-sux8g0-sv74ec-1t7c2.cu.plebai.net, port: 5228, type: vmess, uuid: a087871c-d185-11ef-bdb9-f23c91cfbbc9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 广东省汕头市 移动, server: c1be5110-sv2sg0-td6bp2-1h5ry.cm5.p5pv.com, port: 17235, type: vmess, uuid: 545ff4da-9571-11ec-a8bf-f23c91cfbbc9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 山东省 电信, server: 144.255.36.254, port: 14100, type: vmess, uuid: f6866b0b-f946-4a03-8df0-c7e0016b55ad, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 海南省 移动(全省通用), server: hk01.x.quickcht3.club, port: 52611, type: ss, cipher: chacha20-ietf-poly1305, password: 2be0c954-4291-45ea-b47d-ca713180550b, udp: true}
-  - {name: 广东省汕头市 移动 2, server: a7262f64-sux8g0-sxxt3o-15z76.cm5.p5pv.com, port: 17234, type: vmess, uuid: 54cef7fa-90ad-11eb-a8bf-f23c91cfbbc9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 广东省汕头市 移动 3, server: 2b6fa9f9-sum4g0-sv6oiy-1p1b.cm5.p5pv.com, port: 17232, type: vmess, uuid: 279b8588-616b-11ed-a8bf-f23c91cfbbc9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 🇨🇿 捷克 V2CROSS.COM, server: 185.189.32.179, port: 22702, type: vmess, uuid: 483a1cce-af9b-4416-d7c6-10b9b63be66f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 广东省湛江市 移动, server: 120.198.71.216, port: 35001, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 海南省 移动(全省通用) 2, server: hk02.x.quickcht3.club, port: 52612, type: ss, cipher: chacha20-ietf-poly1305, password: 2be0c954-4291-45ea-b47d-ca713180550b, udp: true}
-  - {name: 🇭🇷 克罗地亚 V2CROSS.COM, server: 89.18.58.63, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 🇷🇺 俄罗斯 莫斯科JustHost, server: 45.147.201.231, port: 20013, type: vmess, uuid: 258c0272-d9b0-4cc9-9735-989d72096c91, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: 🇧🇷 巴西圣保罗 CloudFlare节点, server: 188.114.96.5, port: 443, type: vmess, uuid: edbb1059-1633-4271-b66e-ed4fba47a1bf, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /linkws, headers: {Host: linde06.indiavideo.sbs}}, udp: true}
-  - {name: 广东省 联通 3, server: 74f77c00-sutj40-t5qufl-8n27.cu.plebai.net, port: 5229, type: vmess, uuid: 5dc6fa05-a601-aba6-7761-ecde22d2b0fc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 🇺🇸 美国 CloudFlare节点, server: 172.67.136.233, port: 443, type: vmess, uuid: 3f638f34-8dba-4186-bc43-2716a7ddd4be, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /link, headers: {Host: az05.beyondy.cfd}}, udp: true}
   - {name: 🇺🇸 美国 Fastly全球Anycast节点, server: gov.uk, port: 443, type: vmess, uuid: 77848824-93b7-4b89-ffd0-e91afff406ce, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /77848824, headers: {Host: zheshiscp.com}}, udp: true}
-  - {name: 🇨🇷 哥斯达黎加 V2CROSS.COM, server: 144.22.197.150, port: 7705, type: ss, cipher: aes-256-gcm, password: a869ba7e-e46c-46bf-9d0a-2a4ddecc0627, udp: true}
-  - {name: 🇨🇳 广东省广州市 移动, server: 120.232.153.40, port: 59082, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 🇨🇳 山东省青岛市 联通, server: gysz0000.dynu.net, port: 38340, type: trojan, password: VMhGp5wEIyCDf90T, sni: gysz0000.dynu.net, skip-cert-verify: false, udp: true}
-  - {name: 🇭🇰 香港 特别行政区, server: 154.90.63.193, port: 990, type: ss, cipher: chacha20-ietf-poly1305, password: f8f7aCzcPKbsF8p3, udp: true}
-  - {name: 🇺🇸 美国 CloudFlare节点, server: 1744007541.tencentapp.cn, port: 8443, type: vmess, uuid: 381cb6d1-6ad4-4909-8494-b8d786cf78ce, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: 1744007578.speed.adl.cccp.freefly.pp.ua}}, udp: true}
-  - {name: 广东省汕头市 移动 4, server: 00fd0574-sux8g0-sv07nd-jtx1.cm5.p5pv.com, port: 17235, type: vmess, uuid: 947dde8e-bcf5-11ef-af4a-f23c91cfbbc9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 🇷🇺 俄罗斯 克拉斯诺亚尔斯克G-Core Lab, server: 5.189.201.250, port: 31348, type: ss, cipher: chacha20-ietf-poly1305, password: RiPuKJJl18ZgvLpTjWxBwSfKiPkt9gzFKyxGCY8eHtOcDb2X, udp: true}
-  - {name: 🇺🇸 美国 CloudFlare节点 2, server: 104.21.16.1, port: 2096, type: vmess, uuid: b3928f8d-ea81-4d75-bcec-4016a072adff, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: de01.sh-cloudflare.sbs}}, udp: true}
+  - {name: 湖南省怀化市 电信, server: hk02.x.quickcht3.club, port: 52612, type: ss, cipher: chacha20-ietf-poly1305, password: 2be0c954-4291-45ea-b47d-ca713180550b, udp: true}
+  - {name: 🇨🇳 广东省广州市 移动, server: 120.232.153.40, port: 57852, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 🇺🇸 美国 CloudFlare节点 2, server: 172.67.71.217, port: 443, type: vmess, uuid: 9072d339-3885-4fe1-b0bc-29fa7505410e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /fixedfloati.cfd/linkwsd, headers: {Host: 1t3chx0.zed23.web1337.net}}, udp: true}
+  - {name: 广东省汕头市 移动, server: c1be5110-sv2sg0-td6bp2-1h5ry.cm5.p5pv.com, port: 17235, type: vmess, uuid: 545ff4da-9571-11ec-a8bf-f23c91cfbbc9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 广东省汕头市 移动 2, server: f108c201-sv2sg0-t1u9f2-mdk9.cm5.p5pv.com, port: 17234, type: vmess, uuid: b235e3d0-50ee-11eb-a8bf-f23c91cfbbc9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 🇭🇷 克罗地亚 V2CROSS.COM, server: 89.18.58.104, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 🇺🇸 美国 CloudFlare节点 3, server: 172.66.45.2, port: 443, type: trojan, password: auto, sni: dcf741e8.epeius-2gy.pages.dev, skip-cert-verify: false, udp: true}
+  - {name: 广东省汕头市 移动 3, server: 0496335c-sux8g0-swbudg-1mzwj.cm5.p5pv.com, port: 17231, type: vmess, uuid: a203d80e-10fe-11ef-88a6-f23c9164ca5d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 🇭🇷 克罗地亚 V2CROSS.COM 2, server: 89.18.58.63, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 🇺🇸 美国 CloudFlare节点 4, server: de01.sh-cloudflare.sbs, port: 2096, type: vmess, uuid: 1e2e8430-9c0e-4394-a9ea-4d845e978757, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: de01.sh-cloudflare.sbs}}, udp: true}
+  - {name: 🇨🇳 广东省广州市 移动 2, server: 120.232.153.40, port: 59082, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 🇪🇸 西班牙 V2CROSS.COM, server: 150.241.78.252, port: 2025, type: trojan, password: vpn, skip-cert-verify: false, udp: true}
+  - {name: 🇺🇸 美国 CloudFlare节点 5, server: Us7-01.890624.xyz, port: 443, type: vmess, uuid: 4d04b30c-ef7b-4a07-8f9e-f581ec171f8a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /bua2hMcbA8wMzbGFtV, headers: {Host: Us7-01.890624.xyz}}, udp: true}
+  - {name: 🇨🇳 广东省广州市 移动 3, server: 120.232.153.41, port: 44491, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 🇺🇸 美国 CloudFlare节点 6, server: US7-01.890624.XyZ, port: 443, type: vmess, uuid: 4d04b30c-ef7b-4a07-8f9e-f581ec171f8a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /bua2hMcbA8wMzbGFtV, headers: {Host: us7-01.890624.xyz}}, udp: true}
+  - {name: 🇷🇺 俄罗斯 V2CROSS.COM, server: 185.242.86.156, port: 54170, type: ss, cipher: chacha20-ietf-poly1305, password: 36ZCHeabUSfKjfQEvJ4HDV, udp: true}
+  - {name: 海南省 移动(全省通用), server: 111.29.57.125, port: 52612, type: ss, cipher: chacha20-ietf-poly1305, password: 2be0c954-4291-45ea-b47d-ca713180550b, udp: true}
+  - {name: 🇷🇺 俄罗斯 Rubtsovsk Branch of Altai State University, server: 212.192.12.154, port: 23017, type: vmess, uuid: 7d24c37d-f5de-4267-8b0e-dec5b8983549, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 🇮🇳 印度 V2CROSS.COM, server: 202.78.162.5, port: 443, type: vmess, uuid: 118287d2-e968-42e1-80d0-12fa2f5d38d6, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: sahand.serveminecraft.net}}, udp: true}
+  - {name: 🇨🇳 浙江省宁波市 移动, server: 120.199.83.240, port: 45260, type: vmess, uuid: 469e0b31-30c3-4dab-800d-711232634ce1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 吉林省 移动(全省通用), server: v25.heduian.link, port: 30825, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /oooo, headers: {Host: v25.heduian.link}}, udp: true}
+  - {name: 🇺🇸 美国 CloudFlare节点 7, server: 172.67.200.11, port: 443, type: trojan, password: 0cda5f7e-cc55-4ff2-8ad8-268b9b99dd01, sni: Us6-08.890606.xYZ, skip-cert-verify: false, udp: true}
+  - {name: 🇨🇳 广东省广州市 移动 4, server: 183.236.51.38, port: 41902, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 🇺🇸 美国 Amazon EC2服务器, server: 3.65.165.166, port: 22222, type: trojan, password: telegram-id-privatevpns, sni: trojan.burgerip.co.uk, skip-cert-verify: false, udp: true}
+  - {name: 🇺🇸 美国 CloudFlare节点 8, server: 172.66.44.230, port: 8443, type: trojan, password: 8r%3C%5B9%27l6hAO%238ZQi, sni: Koma-YT.PAGeS.Dev, skip-cert-verify: false, udp: true}
+  - {name: 🇺🇸 美国 CloudFlare节点 9, server: 141.101.120.5, port: 8443, type: vmess, uuid: 3bb3c730-e107-49c5-a0b2-b576d1b26a5e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: 1743919978.speed.laxha.cccp.freefly.pp.ua}}, udp: true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 广东省 联通
-      - 🇪🇸 西班牙 V2CROSS.COM
-      - 广东省 联通 2
-      - 广东省汕头市 移动
-      - 山东省 电信
-      - 海南省 移动(全省通用)
-      - 广东省汕头市 移动 2
-      - 广东省汕头市 移动 3
-      - 🇨🇿 捷克 V2CROSS.COM
-      - 广东省湛江市 移动
-      - 海南省 移动(全省通用) 2
-      - 🇭🇷 克罗地亚 V2CROSS.COM
-      - 🇷🇺 俄罗斯 莫斯科JustHost
-      - 🇧🇷 巴西圣保罗 CloudFlare节点
-      - 广东省 联通 3
-      - 🇺🇸 美国 Fastly全球Anycast节点
-      - 🇨🇷 哥斯达黎加 V2CROSS.COM
-      - 🇨🇳 广东省广州市 移动
-      - 🇨🇳 山东省青岛市 联通
-      - 🇭🇰 香港 特别行政区
       - 🇺🇸 美国 CloudFlare节点
-      - 广东省汕头市 移动 4
-      - 🇷🇺 俄罗斯 克拉斯诺亚尔斯克G-Core Lab
+      - 🇺🇸 美国 Fastly全球Anycast节点
+      - 湖南省怀化市 电信
+      - 🇨🇳 广东省广州市 移动
       - 🇺🇸 美国 CloudFlare节点 2
+      - 广东省汕头市 移动
+      - 广东省汕头市 移动 2
+      - 🇭🇷 克罗地亚 V2CROSS.COM
+      - 🇺🇸 美国 CloudFlare节点 3
+      - 广东省汕头市 移动 3
+      - 🇭🇷 克罗地亚 V2CROSS.COM 2
+      - 🇺🇸 美国 CloudFlare节点 4
+      - 🇨🇳 广东省广州市 移动 2
+      - 🇪🇸 西班牙 V2CROSS.COM
+      - 🇺🇸 美国 CloudFlare节点 5
+      - 🇨🇳 广东省广州市 移动 3
+      - 🇺🇸 美国 CloudFlare节点 6
+      - 🇷🇺 俄罗斯 V2CROSS.COM
+      - 海南省 移动(全省通用)
+      - 🇷🇺 俄罗斯 Rubtsovsk Branch of Altai State University
+      - 🇮🇳 印度 V2CROSS.COM
+      - 🇨🇳 浙江省宁波市 移动
+      - 吉林省 移动(全省通用)
+      - 🇺🇸 美国 CloudFlare节点 7
+      - 🇨🇳 广东省广州市 移动 4
+      - 🇺🇸 美国 Amazon EC2服务器
+      - 🇺🇸 美国 CloudFlare节点 8
+      - 🇺🇸 美国 CloudFlare节点 9
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 广东省 联通
-      - 🇪🇸 西班牙 V2CROSS.COM
-      - 广东省 联通 2
-      - 广东省汕头市 移动
-      - 山东省 电信
-      - 海南省 移动(全省通用)
-      - 广东省汕头市 移动 2
-      - 广东省汕头市 移动 3
-      - 🇨🇿 捷克 V2CROSS.COM
-      - 广东省湛江市 移动
-      - 海南省 移动(全省通用) 2
-      - 🇭🇷 克罗地亚 V2CROSS.COM
-      - 🇷🇺 俄罗斯 莫斯科JustHost
-      - 🇧🇷 巴西圣保罗 CloudFlare节点
-      - 广东省 联通 3
-      - 🇺🇸 美国 Fastly全球Anycast节点
-      - 🇨🇷 哥斯达黎加 V2CROSS.COM
-      - 🇨🇳 广东省广州市 移动
-      - 🇨🇳 山东省青岛市 联通
-      - 🇭🇰 香港 特别行政区
       - 🇺🇸 美国 CloudFlare节点
-      - 广东省汕头市 移动 4
-      - 🇷🇺 俄罗斯 克拉斯诺亚尔斯克G-Core Lab
+      - 🇺🇸 美国 Fastly全球Anycast节点
+      - 湖南省怀化市 电信
+      - 🇨🇳 广东省广州市 移动
       - 🇺🇸 美国 CloudFlare节点 2
+      - 广东省汕头市 移动
+      - 广东省汕头市 移动 2
+      - 🇭🇷 克罗地亚 V2CROSS.COM
+      - 🇺🇸 美国 CloudFlare节点 3
+      - 广东省汕头市 移动 3
+      - 🇭🇷 克罗地亚 V2CROSS.COM 2
+      - 🇺🇸 美国 CloudFlare节点 4
+      - 🇨🇳 广东省广州市 移动 2
+      - 🇪🇸 西班牙 V2CROSS.COM
+      - 🇺🇸 美国 CloudFlare节点 5
+      - 🇨🇳 广东省广州市 移动 3
+      - 🇺🇸 美国 CloudFlare节点 6
+      - 🇷🇺 俄罗斯 V2CROSS.COM
+      - 海南省 移动(全省通用)
+      - 🇷🇺 俄罗斯 Rubtsovsk Branch of Altai State University
+      - 🇮🇳 印度 V2CROSS.COM
+      - 🇨🇳 浙江省宁波市 移动
+      - 吉林省 移动(全省通用)
+      - 🇺🇸 美国 CloudFlare节点 7
+      - 🇨🇳 广东省广州市 移动 4
+      - 🇺🇸 美国 Amazon EC2服务器
+      - 🇺🇸 美国 CloudFlare节点 8
+      - 🇺🇸 美国 CloudFlare节点 9
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 广东省 联通
-      - 🇪🇸 西班牙 V2CROSS.COM
-      - 广东省 联通 2
-      - 广东省汕头市 移动
-      - 山东省 电信
-      - 海南省 移动(全省通用)
-      - 广东省汕头市 移动 2
-      - 广东省汕头市 移动 3
-      - 🇨🇿 捷克 V2CROSS.COM
-      - 广东省湛江市 移动
-      - 海南省 移动(全省通用) 2
-      - 🇭🇷 克罗地亚 V2CROSS.COM
-      - 🇷🇺 俄罗斯 莫斯科JustHost
-      - 🇧🇷 巴西圣保罗 CloudFlare节点
-      - 广东省 联通 3
-      - 🇺🇸 美国 Fastly全球Anycast节点
-      - 🇨🇷 哥斯达黎加 V2CROSS.COM
-      - 🇨🇳 广东省广州市 移动
-      - 🇨🇳 山东省青岛市 联通
-      - 🇭🇰 香港 特别行政区
       - 🇺🇸 美国 CloudFlare节点
-      - 广东省汕头市 移动 4
-      - 🇷🇺 俄罗斯 克拉斯诺亚尔斯克G-Core Lab
+      - 🇺🇸 美国 Fastly全球Anycast节点
+      - 湖南省怀化市 电信
+      - 🇨🇳 广东省广州市 移动
       - 🇺🇸 美国 CloudFlare节点 2
+      - 广东省汕头市 移动
+      - 广东省汕头市 移动 2
+      - 🇭🇷 克罗地亚 V2CROSS.COM
+      - 🇺🇸 美国 CloudFlare节点 3
+      - 广东省汕头市 移动 3
+      - 🇭🇷 克罗地亚 V2CROSS.COM 2
+      - 🇺🇸 美国 CloudFlare节点 4
+      - 🇨🇳 广东省广州市 移动 2
+      - 🇪🇸 西班牙 V2CROSS.COM
+      - 🇺🇸 美国 CloudFlare节点 5
+      - 🇨🇳 广东省广州市 移动 3
+      - 🇺🇸 美国 CloudFlare节点 6
+      - 🇷🇺 俄罗斯 V2CROSS.COM
+      - 海南省 移动(全省通用)
+      - 🇷🇺 俄罗斯 Rubtsovsk Branch of Altai State University
+      - 🇮🇳 印度 V2CROSS.COM
+      - 🇨🇳 浙江省宁波市 移动
+      - 吉林省 移动(全省通用)
+      - 🇺🇸 美国 CloudFlare节点 7
+      - 🇨🇳 广东省广州市 移动 4
+      - 🇺🇸 美国 Amazon EC2服务器
+      - 🇺🇸 美国 CloudFlare节点 8
+      - 🇺🇸 美国 CloudFlare节点 9
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 广东省 联通
-      - 🇪🇸 西班牙 V2CROSS.COM
-      - 广东省 联通 2
-      - 广东省汕头市 移动
-      - 山东省 电信
-      - 海南省 移动(全省通用)
-      - 广东省汕头市 移动 2
-      - 广东省汕头市 移动 3
-      - 🇨🇿 捷克 V2CROSS.COM
-      - 广东省湛江市 移动
-      - 海南省 移动(全省通用) 2
-      - 🇭🇷 克罗地亚 V2CROSS.COM
-      - 🇷🇺 俄罗斯 莫斯科JustHost
-      - 🇧🇷 巴西圣保罗 CloudFlare节点
-      - 广东省 联通 3
-      - 🇺🇸 美国 Fastly全球Anycast节点
-      - 🇨🇷 哥斯达黎加 V2CROSS.COM
-      - 🇨🇳 广东省广州市 移动
-      - 🇨🇳 山东省青岛市 联通
-      - 🇭🇰 香港 特别行政区
       - 🇺🇸 美国 CloudFlare节点
-      - 广东省汕头市 移动 4
-      - 🇷🇺 俄罗斯 克拉斯诺亚尔斯克G-Core Lab
+      - 🇺🇸 美国 Fastly全球Anycast节点
+      - 湖南省怀化市 电信
+      - 🇨🇳 广东省广州市 移动
       - 🇺🇸 美国 CloudFlare节点 2
+      - 广东省汕头市 移动
+      - 广东省汕头市 移动 2
+      - 🇭🇷 克罗地亚 V2CROSS.COM
+      - 🇺🇸 美国 CloudFlare节点 3
+      - 广东省汕头市 移动 3
+      - 🇭🇷 克罗地亚 V2CROSS.COM 2
+      - 🇺🇸 美国 CloudFlare节点 4
+      - 🇨🇳 广东省广州市 移动 2
+      - 🇪🇸 西班牙 V2CROSS.COM
+      - 🇺🇸 美国 CloudFlare节点 5
+      - 🇨🇳 广东省广州市 移动 3
+      - 🇺🇸 美国 CloudFlare节点 6
+      - 🇷🇺 俄罗斯 V2CROSS.COM
+      - 海南省 移动(全省通用)
+      - 🇷🇺 俄罗斯 Rubtsovsk Branch of Altai State University
+      - 🇮🇳 印度 V2CROSS.COM
+      - 🇨🇳 浙江省宁波市 移动
+      - 吉林省 移动(全省通用)
+      - 🇺🇸 美国 CloudFlare节点 7
+      - 🇨🇳 广东省广州市 移动 4
+      - 🇺🇸 美国 Amazon EC2服务器
+      - 🇺🇸 美国 CloudFlare节点 8
+      - 🇺🇸 美国 CloudFlare节点 9
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 广东省 联通
-      - 🇪🇸 西班牙 V2CROSS.COM
-      - 广东省 联通 2
-      - 广东省汕头市 移动
-      - 山东省 电信
-      - 海南省 移动(全省通用)
-      - 广东省汕头市 移动 2
-      - 广东省汕头市 移动 3
-      - 🇨🇿 捷克 V2CROSS.COM
-      - 广东省湛江市 移动
-      - 海南省 移动(全省通用) 2
-      - 🇭🇷 克罗地亚 V2CROSS.COM
-      - 🇷🇺 俄罗斯 莫斯科JustHost
-      - 🇧🇷 巴西圣保罗 CloudFlare节点
-      - 广东省 联通 3
-      - 🇺🇸 美国 Fastly全球Anycast节点
-      - 🇨🇷 哥斯达黎加 V2CROSS.COM
-      - 🇨🇳 广东省广州市 移动
-      - 🇨🇳 山东省青岛市 联通
-      - 🇭🇰 香港 特别行政区
       - 🇺🇸 美国 CloudFlare节点
-      - 广东省汕头市 移动 4
-      - 🇷🇺 俄罗斯 克拉斯诺亚尔斯克G-Core Lab
+      - 🇺🇸 美国 Fastly全球Anycast节点
+      - 湖南省怀化市 电信
+      - 🇨🇳 广东省广州市 移动
       - 🇺🇸 美国 CloudFlare节点 2
+      - 广东省汕头市 移动
+      - 广东省汕头市 移动 2
+      - 🇭🇷 克罗地亚 V2CROSS.COM
+      - 🇺🇸 美国 CloudFlare节点 3
+      - 广东省汕头市 移动 3
+      - 🇭🇷 克罗地亚 V2CROSS.COM 2
+      - 🇺🇸 美国 CloudFlare节点 4
+      - 🇨🇳 广东省广州市 移动 2
+      - 🇪🇸 西班牙 V2CROSS.COM
+      - 🇺🇸 美国 CloudFlare节点 5
+      - 🇨🇳 广东省广州市 移动 3
+      - 🇺🇸 美国 CloudFlare节点 6
+      - 🇷🇺 俄罗斯 V2CROSS.COM
+      - 海南省 移动(全省通用)
+      - 🇷🇺 俄罗斯 Rubtsovsk Branch of Altai State University
+      - 🇮🇳 印度 V2CROSS.COM
+      - 🇨🇳 浙江省宁波市 移动
+      - 吉林省 移动(全省通用)
+      - 🇺🇸 美国 CloudFlare节点 7
+      - 🇨🇳 广东省广州市 移动 4
+      - 🇺🇸 美国 Amazon EC2服务器
+      - 🇺🇸 美国 CloudFlare节点 8
+      - 🇺🇸 美国 CloudFlare节点 9
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 广东省 联通
-      - 🇪🇸 西班牙 V2CROSS.COM
-      - 广东省 联通 2
-      - 广东省汕头市 移动
-      - 山东省 电信
-      - 海南省 移动(全省通用)
-      - 广东省汕头市 移动 2
-      - 广东省汕头市 移动 3
-      - 🇨🇿 捷克 V2CROSS.COM
-      - 广东省湛江市 移动
-      - 海南省 移动(全省通用) 2
-      - 🇭🇷 克罗地亚 V2CROSS.COM
-      - 🇷🇺 俄罗斯 莫斯科JustHost
-      - 🇧🇷 巴西圣保罗 CloudFlare节点
-      - 广东省 联通 3
-      - 🇺🇸 美国 Fastly全球Anycast节点
-      - 🇨🇷 哥斯达黎加 V2CROSS.COM
-      - 🇨🇳 广东省广州市 移动
-      - 🇨🇳 山东省青岛市 联通
-      - 🇭🇰 香港 特别行政区
       - 🇺🇸 美国 CloudFlare节点
-      - 广东省汕头市 移动 4
-      - 🇷🇺 俄罗斯 克拉斯诺亚尔斯克G-Core Lab
+      - 🇺🇸 美国 Fastly全球Anycast节点
+      - 湖南省怀化市 电信
+      - 🇨🇳 广东省广州市 移动
       - 🇺🇸 美国 CloudFlare节点 2
+      - 广东省汕头市 移动
+      - 广东省汕头市 移动 2
+      - 🇭🇷 克罗地亚 V2CROSS.COM
+      - 🇺🇸 美国 CloudFlare节点 3
+      - 广东省汕头市 移动 3
+      - 🇭🇷 克罗地亚 V2CROSS.COM 2
+      - 🇺🇸 美国 CloudFlare节点 4
+      - 🇨🇳 广东省广州市 移动 2
+      - 🇪🇸 西班牙 V2CROSS.COM
+      - 🇺🇸 美国 CloudFlare节点 5
+      - 🇨🇳 广东省广州市 移动 3
+      - 🇺🇸 美国 CloudFlare节点 6
+      - 🇷🇺 俄罗斯 V2CROSS.COM
+      - 海南省 移动(全省通用)
+      - 🇷🇺 俄罗斯 Rubtsovsk Branch of Altai State University
+      - 🇮🇳 印度 V2CROSS.COM
+      - 🇨🇳 浙江省宁波市 移动
+      - 吉林省 移动(全省通用)
+      - 🇺🇸 美国 CloudFlare节点 7
+      - 🇨🇳 广东省广州市 移动 4
+      - 🇺🇸 美国 Amazon EC2服务器
+      - 🇺🇸 美国 CloudFlare节点 8
+      - 🇺🇸 美国 CloudFlare节点 9
   - name: 📢 谷歌FCM
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 广东省 联通
-      - 🇪🇸 西班牙 V2CROSS.COM
-      - 广东省 联通 2
-      - 广东省汕头市 移动
-      - 山东省 电信
-      - 海南省 移动(全省通用)
-      - 广东省汕头市 移动 2
-      - 广东省汕头市 移动 3
-      - 🇨🇿 捷克 V2CROSS.COM
-      - 广东省湛江市 移动
-      - 海南省 移动(全省通用) 2
-      - 🇭🇷 克罗地亚 V2CROSS.COM
-      - 🇷🇺 俄罗斯 莫斯科JustHost
-      - 🇧🇷 巴西圣保罗 CloudFlare节点
-      - 广东省 联通 3
-      - 🇺🇸 美国 Fastly全球Anycast节点
-      - 🇨🇷 哥斯达黎加 V2CROSS.COM
-      - 🇨🇳 广东省广州市 移动
-      - 🇨🇳 山东省青岛市 联通
-      - 🇭🇰 香港 特别行政区
       - 🇺🇸 美国 CloudFlare节点
-      - 广东省汕头市 移动 4
-      - 🇷🇺 俄罗斯 克拉斯诺亚尔斯克G-Core Lab
+      - 🇺🇸 美国 Fastly全球Anycast节点
+      - 湖南省怀化市 电信
+      - 🇨🇳 广东省广州市 移动
       - 🇺🇸 美国 CloudFlare节点 2
+      - 广东省汕头市 移动
+      - 广东省汕头市 移动 2
+      - 🇭🇷 克罗地亚 V2CROSS.COM
+      - 🇺🇸 美国 CloudFlare节点 3
+      - 广东省汕头市 移动 3
+      - 🇭🇷 克罗地亚 V2CROSS.COM 2
+      - 🇺🇸 美国 CloudFlare节点 4
+      - 🇨🇳 广东省广州市 移动 2
+      - 🇪🇸 西班牙 V2CROSS.COM
+      - 🇺🇸 美国 CloudFlare节点 5
+      - 🇨🇳 广东省广州市 移动 3
+      - 🇺🇸 美国 CloudFlare节点 6
+      - 🇷🇺 俄罗斯 V2CROSS.COM
+      - 海南省 移动(全省通用)
+      - 🇷🇺 俄罗斯 Rubtsovsk Branch of Altai State University
+      - 🇮🇳 印度 V2CROSS.COM
+      - 🇨🇳 浙江省宁波市 移动
+      - 吉林省 移动(全省通用)
+      - 🇺🇸 美国 CloudFlare节点 7
+      - 🇨🇳 广东省广州市 移动 4
+      - 🇺🇸 美国 Amazon EC2服务器
+      - 🇺🇸 美国 CloudFlare节点 8
+      - 🇺🇸 美国 CloudFlare节点 9
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -258,30 +290,34 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 广东省 联通
-      - 🇪🇸 西班牙 V2CROSS.COM
-      - 广东省 联通 2
-      - 广东省汕头市 移动
-      - 山东省 电信
-      - 海南省 移动(全省通用)
-      - 广东省汕头市 移动 2
-      - 广东省汕头市 移动 3
-      - 🇨🇿 捷克 V2CROSS.COM
-      - 广东省湛江市 移动
-      - 海南省 移动(全省通用) 2
-      - 🇭🇷 克罗地亚 V2CROSS.COM
-      - 🇷🇺 俄罗斯 莫斯科JustHost
-      - 🇧🇷 巴西圣保罗 CloudFlare节点
-      - 广东省 联通 3
-      - 🇺🇸 美国 Fastly全球Anycast节点
-      - 🇨🇷 哥斯达黎加 V2CROSS.COM
-      - 🇨🇳 广东省广州市 移动
-      - 🇨🇳 山东省青岛市 联通
-      - 🇭🇰 香港 特别行政区
       - 🇺🇸 美国 CloudFlare节点
-      - 广东省汕头市 移动 4
-      - 🇷🇺 俄罗斯 克拉斯诺亚尔斯克G-Core Lab
+      - 🇺🇸 美国 Fastly全球Anycast节点
+      - 湖南省怀化市 电信
+      - 🇨🇳 广东省广州市 移动
       - 🇺🇸 美国 CloudFlare节点 2
+      - 广东省汕头市 移动
+      - 广东省汕头市 移动 2
+      - 🇭🇷 克罗地亚 V2CROSS.COM
+      - 🇺🇸 美国 CloudFlare节点 3
+      - 广东省汕头市 移动 3
+      - 🇭🇷 克罗地亚 V2CROSS.COM 2
+      - 🇺🇸 美国 CloudFlare节点 4
+      - 🇨🇳 广东省广州市 移动 2
+      - 🇪🇸 西班牙 V2CROSS.COM
+      - 🇺🇸 美国 CloudFlare节点 5
+      - 🇨🇳 广东省广州市 移动 3
+      - 🇺🇸 美国 CloudFlare节点 6
+      - 🇷🇺 俄罗斯 V2CROSS.COM
+      - 海南省 移动(全省通用)
+      - 🇷🇺 俄罗斯 Rubtsovsk Branch of Altai State University
+      - 🇮🇳 印度 V2CROSS.COM
+      - 🇨🇳 浙江省宁波市 移动
+      - 吉林省 移动(全省通用)
+      - 🇺🇸 美国 CloudFlare节点 7
+      - 🇨🇳 广东省广州市 移动 4
+      - 🇺🇸 美国 Amazon EC2服务器
+      - 🇺🇸 美国 CloudFlare节点 8
+      - 🇺🇸 美国 CloudFlare节点 9
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
@@ -318,6 +354,24 @@ rules:
  - DOMAIN-SUFFIX,zte.home,🎯 全球直连
  - DOMAIN-SUFFIX,tplogin.cn,🎯 全球直连
  - DOMAIN-SUFFIX,wifi.cmcc,🎯 全球直连
+ - DOMAIN-SUFFIX,ol.epicgames.com,🎯 全球直连
+ - DOMAIN-SUFFIX,dizhensubao.getui.com,🎯 全球直连
+ - DOMAIN,dl.google.com,🎯 全球直连
+ - DOMAIN-SUFFIX,googletraveladservices.com,🎯 全球直连
+ - DOMAIN-SUFFIX,tracking-protection.cdn.mozilla.net,🎯 全球直连
+ - DOMAIN,origin-a.akamaihd.net,🎯 全球直连
+ - DOMAIN,fairplay.l.qq.com,🎯 全球直连
+ - DOMAIN,livew.l.qq.com,🎯 全球直连
+ - DOMAIN,vd.l.qq.com,🎯 全球直连
+ - DOMAIN,errlog.umeng.com,🎯 全球直连
+ - DOMAIN,msg.umeng.com,🎯 全球直连
+ - DOMAIN,msg.umengcloud.com,🎯 全球直连
+ - DOMAIN,tracking.miui.com,🎯 全球直连
+ - DOMAIN,app.adjust.com,🎯 全球直连
+ - DOMAIN,bdtj.tagtic.cn,🎯 全球直连
+ - DOMAIN,rewards.hypixel.net,🎯 全球直连
+ - DOMAIN-SUFFIX,koodomobile.com,🎯 全球直连
+ - DOMAIN-SUFFIX,koodomobile.ca,🎯 全球直连
  - DOMAIN-KEYWORD,admarvel,🛑 全球拦截
  - DOMAIN-KEYWORD,admaster,🛑 全球拦截
  - DOMAIN-KEYWORD,adsage,🛑 全球拦截
@@ -1930,6 +1984,41 @@ rules:
  - DOMAIN-SUFFIX,tralog.ganji.com,🍃 应用净化
  - DOMAIN-SUFFIX,up.qingdaonews.com,🍃 应用净化
  - DOMAIN-SUFFIX,vaserviece.10jqka.com.cn,🍃 应用净化
+ - DOMAIN,alt1-mtalk.google.com,📢 谷歌FCM
+ - DOMAIN,alt2-mtalk.google.com,📢 谷歌FCM
+ - DOMAIN,alt3-mtalk.google.com,📢 谷歌FCM
+ - DOMAIN,alt4-mtalk.google.com,📢 谷歌FCM
+ - DOMAIN,alt5-mtalk.google.com,📢 谷歌FCM
+ - DOMAIN,alt6-mtalk.google.com,📢 谷歌FCM
+ - DOMAIN,alt7-mtalk.google.com,📢 谷歌FCM
+ - DOMAIN,alt8-mtalk.google.com,📢 谷歌FCM
+ - DOMAIN,mtalk.google.com,📢 谷歌FCM
+ - IP-CIDR,64.233.177.188/32,📢 谷歌FCM,no-resolve
+ - IP-CIDR,64.233.186.188/32,📢 谷歌FCM,no-resolve
+ - IP-CIDR,64.233.187.188/32,📢 谷歌FCM,no-resolve
+ - IP-CIDR,64.233.188.188/32,📢 谷歌FCM,no-resolve
+ - IP-CIDR,64.233.189.188/32,📢 谷歌FCM,no-resolve
+ - IP-CIDR,74.125.23.188/32,📢 谷歌FCM,no-resolve
+ - IP-CIDR,74.125.24.188/32,📢 谷歌FCM,no-resolve
+ - IP-CIDR,74.125.28.188/32,📢 谷歌FCM,no-resolve
+ - IP-CIDR,74.125.127.188/32,📢 谷歌FCM,no-resolve
+ - IP-CIDR,74.125.137.188/32,📢 谷歌FCM,no-resolve
+ - IP-CIDR,74.125.203.188/32,📢 谷歌FCM,no-resolve
+ - IP-CIDR,74.125.204.188/32,📢 谷歌FCM,no-resolve
+ - IP-CIDR,74.125.206.188/32,📢 谷歌FCM,no-resolve
+ - IP-CIDR,108.177.125.188/32,📢 谷歌FCM,no-resolve
+ - IP-CIDR,142.250.4.188/32,📢 谷歌FCM,no-resolve
+ - IP-CIDR,142.250.10.188/32,📢 谷歌FCM,no-resolve
+ - IP-CIDR,142.250.31.188/32,📢 谷歌FCM,no-resolve
+ - IP-CIDR,142.250.96.188/32,📢 谷歌FCM,no-resolve
+ - IP-CIDR,172.217.194.188/32,📢 谷歌FCM,no-resolve
+ - IP-CIDR,172.217.218.188/32,📢 谷歌FCM,no-resolve
+ - IP-CIDR,172.217.219.188/32,📢 谷歌FCM,no-resolve
+ - IP-CIDR,172.253.63.188/32,📢 谷歌FCM,no-resolve
+ - IP-CIDR,172.253.122.188/32,📢 谷歌FCM,no-resolve
+ - IP-CIDR,173.194.175.188/32,📢 谷歌FCM,no-resolve
+ - IP-CIDR,173.194.218.188/32,📢 谷歌FCM,no-resolve
+ - IP-CIDR,209.85.233.188/32,📢 谷歌FCM,no-resolve
  - DOMAIN-SUFFIX,265.com,🎯 全球直连
  - DOMAIN-SUFFIX,2mdn.net,🎯 全球直连
  - DOMAIN-SUFFIX,alt1-mtalk.google.com,🎯 全球直连
@@ -1959,6 +2048,918 @@ rules:
  - DOMAIN-SUFFIX,tools.google.com,🎯 全球直连
  - DOMAIN-SUFFIX,tools.l.google.com,🎯 全球直连
  - DOMAIN-SUFFIX,www-googletagmanager.l.google.com,🎯 全球直连
+ - DOMAIN-KEYWORD,1drv,Ⓜ️ 微软服务
+ - DOMAIN-KEYWORD,microsoft,Ⓜ️ 微软服务
+ - DOMAIN-SUFFIX,aadrm.com,Ⓜ️ 微软服务
+ - DOMAIN-SUFFIX,acompli.com,Ⓜ️ 微软服务
+ - DOMAIN-SUFFIX,acompli.net,Ⓜ️ 微软服务
+ - DOMAIN-SUFFIX,aka.ms,Ⓜ️ 微软服务
+ - DOMAIN-SUFFIX,akadns.net,Ⓜ️ 微软服务
+ - DOMAIN-SUFFIX,aspnetcdn.com,Ⓜ️ 微软服务
+ - DOMAIN-SUFFIX,assets-yammer.com,Ⓜ️ 微软服务
+ - DOMAIN-SUFFIX,azure.com,Ⓜ️ 微软服务
+ - DOMAIN-SUFFIX,azure.net,Ⓜ️ 微软服务
+ - DOMAIN-SUFFIX,azureedge.net,Ⓜ️ 微软服务
+ - DOMAIN-SUFFIX,azureiotcentral.com,Ⓜ️ 微软服务
+ - DOMAIN-SUFFIX,azurerms.com,Ⓜ️ 微软服务
+ - DOMAIN-SUFFIX,bing.com,Ⓜ️ 微软服务
+ - DOMAIN-SUFFIX,bing.net,Ⓜ️ 微软服务
+ - DOMAIN-SUFFIX,bingapis.com,Ⓜ️ 微软服务
+ - DOMAIN-SUFFIX,cloudapp.net,Ⓜ️ 微软服务
+ - DOMAIN-SUFFIX,cloudappsecurity.com,Ⓜ️ 微软服务
+ - DOMAIN-SUFFIX,edgesuite.net,Ⓜ️ 微软服务
+ - DOMAIN-SUFFIX,gfx.ms,Ⓜ️ 微软服务
+ - DOMAIN-SUFFIX,hotmail.com,Ⓜ️ 微软服务
+ - DOMAIN-SUFFIX,live.com,Ⓜ️ 微软服务
+ - DOMAIN-SUFFIX,live.net,Ⓜ️ 微软服务
+ - DOMAIN-SUFFIX,lync.com,Ⓜ️ 微软服务
+ - DOMAIN-SUFFIX,msappproxy.net,Ⓜ️ 微软服务
+ - DOMAIN-SUFFIX,msauth.net,Ⓜ️ 微软服务
+ - DOMAIN-SUFFIX,msauthimages.net,Ⓜ️ 微软服务
+ - DOMAIN-SUFFIX,msecnd.net,Ⓜ️ 微软服务
+ - DOMAIN-SUFFIX,msedge.net,Ⓜ️ 微软服务
+ - DOMAIN-SUFFIX,msft.net,Ⓜ️ 微软服务
+ - DOMAIN-SUFFIX,msftauth.net,Ⓜ️ 微软服务
+ - DOMAIN-SUFFIX,msftauthimages.net,Ⓜ️ 微软服务
+ - DOMAIN-SUFFIX,msftidentity.com,Ⓜ️ 微软服务
+ - DOMAIN-SUFFIX,msidentity.com,Ⓜ️ 微软服务
+ - DOMAIN-SUFFIX,msn.cn,Ⓜ️ 微软服务
+ - DOMAIN-SUFFIX,msn.com,Ⓜ️ 微软服务
+ - DOMAIN-SUFFIX,msocdn.com,Ⓜ️ 微软服务
+ - DOMAIN-SUFFIX,msocsp.com,Ⓜ️ 微软服务
+ - DOMAIN-SUFFIX,mstea.ms,Ⓜ️ 微软服务
+ - DOMAIN-SUFFIX,o365weve.com,Ⓜ️ 微软服务
+ - DOMAIN-SUFFIX,oaspapps.com,Ⓜ️ 微软服务
+ - DOMAIN-SUFFIX,office.com,Ⓜ️ 微软服务
+ - DOMAIN-SUFFIX,office.net,Ⓜ️ 微软服务
+ - DOMAIN-SUFFIX,office365.com,Ⓜ️ 微软服务
+ - DOMAIN-SUFFIX,officeppe.net,Ⓜ️ 微软服务
+ - DOMAIN-SUFFIX,omniroot.com,Ⓜ️ 微软服务
+ - DOMAIN-SUFFIX,onedrive.com,Ⓜ️ 微软服务
+ - DOMAIN-SUFFIX,onenote.com,Ⓜ️ 微软服务
+ - DOMAIN-SUFFIX,onenote.net,Ⓜ️ 微软服务
+ - DOMAIN-SUFFIX,onestore.ms,Ⓜ️ 微软服务
+ - DOMAIN-SUFFIX,outlook.com,Ⓜ️ 微软服务
+ - DOMAIN-SUFFIX,outlookmobile.com,Ⓜ️ 微软服务
+ - DOMAIN-SUFFIX,phonefactor.net,Ⓜ️ 微软服务
+ - DOMAIN-SUFFIX,public-trust.com,Ⓜ️ 微软服务
+ - DOMAIN-SUFFIX,sfbassets.com,Ⓜ️ 微软服务
+ - DOMAIN-SUFFIX,sfx.ms,Ⓜ️ 微软服务
+ - DOMAIN-SUFFIX,sharepoint.com,Ⓜ️ 微软服务
+ - DOMAIN-SUFFIX,sharepointonline.com,Ⓜ️ 微软服务
+ - DOMAIN-SUFFIX,skype.com,Ⓜ️ 微软服务
+ - DOMAIN-SUFFIX,skypeassets.com,Ⓜ️ 微软服务
+ - DOMAIN-SUFFIX,skypeforbusiness.com,Ⓜ️ 微软服务
+ - DOMAIN-SUFFIX,staffhub.ms,Ⓜ️ 微软服务
+ - DOMAIN-SUFFIX,svc.ms,Ⓜ️ 微软服务
+ - DOMAIN-SUFFIX,sway-cdn.com,Ⓜ️ 微软服务
+ - DOMAIN-SUFFIX,sway-extensions.com,Ⓜ️ 微软服务
+ - DOMAIN-SUFFIX,sway.com,Ⓜ️ 微软服务
+ - DOMAIN-SUFFIX,trafficmanager.net,Ⓜ️ 微软服务
+ - DOMAIN-SUFFIX,uservoice.com,Ⓜ️ 微软服务
+ - DOMAIN-SUFFIX,virtualearth.net,Ⓜ️ 微软服务
+ - DOMAIN-SUFFIX,visualstudio.com,Ⓜ️ 微软服务
+ - DOMAIN-SUFFIX,windows-ppe.net,Ⓜ️ 微软服务
+ - DOMAIN-SUFFIX,windows.com,Ⓜ️ 微软服务
+ - DOMAIN-SUFFIX,windows.net,Ⓜ️ 微软服务
+ - DOMAIN-SUFFIX,windowsazure.com,Ⓜ️ 微软服务
+ - DOMAIN-SUFFIX,windowsupdate.com,Ⓜ️ 微软服务
+ - DOMAIN-SUFFIX,wunderlist.com,Ⓜ️ 微软服务
+ - DOMAIN-SUFFIX,yammer.com,Ⓜ️ 微软服务
+ - DOMAIN-SUFFIX,yammerusercontent.com,Ⓜ️ 微软服务
+ - DOMAIN,apple.comscoreresearch.com,🍎 苹果服务
+ - DOMAIN-SUFFIX,aaplimg.com,🍎 苹果服务
+ - DOMAIN-SUFFIX,akadns.net,🍎 苹果服务
+ - DOMAIN-SUFFIX,apple-cloudkit.com,🍎 苹果服务
+ - DOMAIN-SUFFIX,apple-dns.net,🍎 苹果服务
+ - DOMAIN-SUFFIX,apple-mapkit.com,🍎 苹果服务
+ - DOMAIN-SUFFIX,apple.co,🍎 苹果服务
+ - DOMAIN-SUFFIX,apple.com,🍎 苹果服务
+ - DOMAIN-SUFFIX,apple.com.cn,🍎 苹果服务
+ - DOMAIN-SUFFIX,apple.news,🍎 苹果服务
+ - DOMAIN-SUFFIX,appstore.com,🍎 苹果服务
+ - DOMAIN-SUFFIX,cdn-apple.com,🍎 苹果服务
+ - DOMAIN-SUFFIX,crashlytics.com,🍎 苹果服务
+ - DOMAIN-SUFFIX,icloud-content.com,🍎 苹果服务
+ - DOMAIN-SUFFIX,icloud.com,🍎 苹果服务
+ - DOMAIN-SUFFIX,icloud.com.cn,🍎 苹果服务
+ - DOMAIN-SUFFIX,itunes.com,🍎 苹果服务
+ - DOMAIN-SUFFIX,me.com,🍎 苹果服务
+ - DOMAIN-SUFFIX,mzstatic.com,🍎 苹果服务
+ - IP-CIDR,17.0.0.0/8,🍎 苹果服务,no-resolve
+ - IP-CIDR,63.92.224.0/19,🍎 苹果服务,no-resolve
+ - IP-CIDR,65.199.22.0/23,🍎 苹果服务,no-resolve
+ - IP-CIDR,139.178.128.0/18,🍎 苹果服务,no-resolve
+ - IP-CIDR,144.178.0.0/19,🍎 苹果服务,no-resolve
+ - IP-CIDR,144.178.36.0/22,🍎 苹果服务,no-resolve
+ - IP-CIDR,144.178.48.0/20,🍎 苹果服务,no-resolve
+ - IP-CIDR,192.35.50.0/24,🍎 苹果服务,no-resolve
+ - IP-CIDR,198.183.17.0/24,🍎 苹果服务,no-resolve
+ - IP-CIDR,205.180.175.0/24,🍎 苹果服务,no-resolve
+ - DOMAIN-SUFFIX,t.me,📲 电报信息
+ - DOMAIN-SUFFIX,tdesktop.com,📲 电报信息
+ - DOMAIN-SUFFIX,telegra.ph,📲 电报信息
+ - DOMAIN-SUFFIX,telegram.me,📲 电报信息
+ - DOMAIN-SUFFIX,telegram.org,📲 电报信息
+ - DOMAIN-SUFFIX,telesco.pe,📲 电报信息
+ - IP-CIDR,91.108.0.0/16,📲 电报信息,no-resolve
+ - IP-CIDR,95.161.64.0/20,📲 电报信息,no-resolve
+ - IP-CIDR,109.239.140.0/24,📲 电报信息,no-resolve
+ - IP-CIDR,149.154.160.0/20,📲 电报信息,no-resolve
+ - IP-CIDR6,2001:67c:4e8::/48,📲 电报信息,no-resolve
+ - IP-CIDR6,2001:b28:f23d::/48,📲 电报信息,no-resolve
+ - IP-CIDR6,2001:b28:f23f::/48,📲 电报信息,no-resolve
+ - DOMAIN-SUFFIX,edgedatg.com,🌍 国外媒体
+ - DOMAIN-SUFFIX,go.com,🌍 国外媒体
+ - DOMAIN-KEYWORD,anthropic,🌍 国外媒体
+ - DOMAIN-KEYWORD,claude,🌍 国外媒体
+ - DOMAIN-KEYWORD,openai,🌍 国外媒体
+ - DOMAIN,ai.google.dev,🌍 国外媒体
+ - DOMAIN,api.githubcopilot.com,🌍 国外媒体
+ - DOMAIN,api.groq.com,🌍 国外媒体
+ - DOMAIN,api.together.xyz,🌍 国外媒体
+ - DOMAIN,bard.google.com,🌍 国外媒体
+ - DOMAIN,console.groq.com,🌍 国外媒体
+ - DOMAIN,copilot-proxy.githubusercontent.com,🌍 国外媒体
+ - DOMAIN,gemini.google.com,🌍 国外媒体
+ - DOMAIN,generativelanguage.googleapis.com,🌍 国外媒体
+ - DOMAIN,sydney.bing.com,🌍 国外媒体
+ - DOMAIN-SUFFIX,ai.azure.com,🌍 国外媒体
+ - DOMAIN-SUFFIX,anthropic.com,🌍 国外媒体
+ - DOMAIN-SUFFIX,auth0.com,🌍 国外媒体
+ - DOMAIN-SUFFIX,bard.google.com,🌍 国外媒体
+ - DOMAIN-SUFFIX,chatgpt.com,🌍 国外媒体
+ - DOMAIN-SUFFIX,claude.ai,🌍 国外媒体
+ - DOMAIN-SUFFIX,client-api.arkoselabs.com,🌍 国外媒体
+ - DOMAIN-SUFFIX,copilot.cloud.microsoft,🌍 国外媒体
+ - DOMAIN-SUFFIX,copilot.microsoft.com,🌍 国外媒体
+ - DOMAIN-SUFFIX,events.statsigapi.net,🌍 国外媒体
+ - DOMAIN-SUFFIX,featuregates.org,🌍 国外媒体
+ - DOMAIN-SUFFIX,gemini.google.com,🌍 国外媒体
+ - DOMAIN-SUFFIX,grazie.ai,🌍 国外媒体
+ - DOMAIN-SUFFIX,grazie.aws.intellij.net,🌍 国外媒体
+ - DOMAIN-SUFFIX,identrust.com,🌍 国外媒体
+ - DOMAIN-SUFFIX,intercom.io,🌍 国外媒体
+ - DOMAIN-SUFFIX,intercomcdn.com,🌍 国外媒体
+ - DOMAIN-SUFFIX,makersuite.google.com,🌍 国外媒体
+ - DOMAIN-SUFFIX,meta.ai,🌍 国外媒体
+ - DOMAIN-SUFFIX,mistral.ai,🌍 国外媒体
+ - DOMAIN-SUFFIX,oaistatic.com,🌍 国外媒体
+ - DOMAIN-SUFFIX,oaiusercontent.com,🌍 国外媒体
+ - DOMAIN-SUFFIX,openai.com,🌍 国外媒体
+ - DOMAIN-SUFFIX,openaiapi-site.azureedge.net,🌍 国外媒体
+ - DOMAIN-SUFFIX,perplexity.ai,🌍 国外媒体
+ - DOMAIN-SUFFIX,sora.com,🌍 国外媒体
+ - DOMAIN-KEYWORD,abematv.akamaized.net,🌍 国外媒体
+ - DOMAIN-SUFFIX,abema.io,🌍 国外媒体
+ - DOMAIN-SUFFIX,abema.tv,🌍 国外媒体
+ - DOMAIN-SUFFIX,ameba.jp,🌍 国外媒体
+ - DOMAIN-SUFFIX,hayabusa.io,🌍 国外媒体
+ - DOMAIN-SUFFIX,c4assets.com,🌍 国外媒体
+ - DOMAIN-SUFFIX,channel4.com,🌍 国外媒体
+ - DOMAIN-KEYWORD,avoddashs,🌍 国外媒体
+ - DOMAIN,atv-ps.amazon.com,🌍 国外媒体
+ - DOMAIN,avodmp4s3ww-a.akamaihd.net,🌍 国外媒体
+ - DOMAIN,d1v5ir2lpwr8os.cloudfront.net,🌍 国外媒体
+ - DOMAIN,d1xfray82862hr.cloudfront.net,🌍 国外媒体
+ - DOMAIN,d22qjgkvxw22r6.cloudfront.net,🌍 国外媒体
+ - DOMAIN,d25xi40x97liuc.cloudfront.net,🌍 国外媒体
+ - DOMAIN,d27xxe7juh1us6.cloudfront.net,🌍 国外媒体
+ - DOMAIN,d3196yreox78o9.cloudfront.net,🌍 国外媒体
+ - DOMAIN,dmqdd6hw24ucf.cloudfront.net,🌍 国外媒体
+ - DOMAIN,ktpx.amazon.com,🌍 国外媒体
+ - DOMAIN-SUFFIX,aboutamazon.com,🌍 国外媒体
+ - DOMAIN-SUFFIX,aiv-cdn.net,🌍 国外媒体
+ - DOMAIN-SUFFIX,aiv-delivery.net,🌍 国外媒体
+ - DOMAIN-SUFFIX,amazon.jobs,🌍 国外媒体
+ - DOMAIN-SUFFIX,amazontools.com,🌍 国外媒体
+ - DOMAIN-SUFFIX,amazontours.com,🌍 国外媒体
+ - DOMAIN-SUFFIX,amazonuniversity.jobs,🌍 国外媒体
+ - DOMAIN-SUFFIX,amazonvideo.com,🌍 国外媒体
+ - DOMAIN-SUFFIX,media-amazon.com,🌍 国外媒体
+ - DOMAIN-SUFFIX,pv-cdn.net,🌍 国外媒体
+ - DOMAIN-SUFFIX,seattlespheres.com,🌍 国外媒体
+ - DOMAIN,gspe1-ssl.ls.apple.com,🌍 国外媒体
+ - DOMAIN,np-edge.itunes.apple.com,🌍 国外媒体
+ - DOMAIN,play-edge.itunes.apple.com,🌍 国外媒体
+ - DOMAIN-SUFFIX,tv.apple.com,🌍 国外媒体
+ - DOMAIN-KEYWORD,bbcfmt,🌍 国外媒体
+ - DOMAIN-KEYWORD,uk-live,🌍 国外媒体
+ - DOMAIN,aod-dash-uk-live.akamaized.net,🌍 国外媒体
+ - DOMAIN,aod-hls-uk-live.akamaized.net,🌍 国外媒体
+ - DOMAIN,vod-dash-uk-live.akamaized.net,🌍 国外媒体
+ - DOMAIN,vod-thumb-uk-live.akamaized.net,🌍 国外媒体
+ - DOMAIN-SUFFIX,bbc.co,🌍 国外媒体
+ - DOMAIN-SUFFIX,bbc.co.uk,🌍 国外媒体
+ - DOMAIN-SUFFIX,bbc.com,🌍 国外媒体
+ - DOMAIN-SUFFIX,bbc.net.uk,🌍 国外媒体
+ - DOMAIN-SUFFIX,bbcfmt.hs.llnwd.net,🌍 国外媒体
+ - DOMAIN-SUFFIX,bbci.co,🌍 国外媒体
+ - DOMAIN-SUFFIX,bbci.co.uk,🌍 国外媒体
+ - DOMAIN-SUFFIX,bidi.net.uk,🌍 国外媒体
+ - DOMAIN,bahamut.akamaized.net,🌍 国外媒体
+ - DOMAIN,gamer-cds.cdn.hinet.net,🌍 国外媒体
+ - DOMAIN,gamer2-cds.cdn.hinet.net,🌍 国外媒体
+ - DOMAIN-SUFFIX,bahamut.com.tw,🌍 国外媒体
+ - DOMAIN-SUFFIX,gamer.com.tw,🌍 国外媒体
+ - DOMAIN-KEYWORD,voddazn,🌍 国外媒体
+ - DOMAIN,d151l6v8er5bdm.cloudfront.net,🌍 国外媒体
+ - DOMAIN-SUFFIX,d151l6v8er5bdm.cloudfront.net,🌍 国外媒体
+ - DOMAIN-SUFFIX,d1sgwhnao7452x.cloudfront.net,🌍 国外媒体
+ - DOMAIN-SUFFIX,dazn-api.com,🌍 国外媒体
+ - DOMAIN-SUFFIX,dazn.com,🌍 国外媒体
+ - DOMAIN-SUFFIX,dazndn.com,🌍 国外媒体
+ - DOMAIN-SUFFIX,dcblivedazn.akamaized.net,🌍 国外媒体
+ - DOMAIN-SUFFIX,indazn.com,🌍 国外媒体
+ - DOMAIN-SUFFIX,indaznlab.com,🌍 国外媒体
+ - DOMAIN-SUFFIX,sentry.io,🌍 国外媒体
+ - DOMAIN-SUFFIX,deezer.com,🌍 国外媒体
+ - DOMAIN-SUFFIX,dzcdn.net,🌍 国外媒体
+ - DOMAIN-SUFFIX,disco-api.com,🌍 国外媒体
+ - DOMAIN-SUFFIX,discovery.com,🌍 国外媒体
+ - DOMAIN-SUFFIX,uplynk.com,🌍 国外媒体
+ - DOMAIN,cdn.registerdisney.go.com,🌍 国外媒体
+ - DOMAIN-SUFFIX,adobedtm.com,🌍 国外媒体
+ - DOMAIN-SUFFIX,bam.nr-data.net,🌍 国外媒体
+ - DOMAIN-SUFFIX,bamgrid.com,🌍 国外媒体
+ - DOMAIN-SUFFIX,braze.com,🌍 国外媒体
+ - DOMAIN-SUFFIX,cdn.optimizely.com,🌍 国外媒体
+ - DOMAIN-SUFFIX,cdn.registerdisney.go.com,🌍 国外媒体
+ - DOMAIN-SUFFIX,cws.conviva.com,🌍 国外媒体
+ - DOMAIN-SUFFIX,d9.flashtalking.com,🌍 国外媒体
+ - DOMAIN-SUFFIX,disney-plus.net,🌍 国外媒体
+ - DOMAIN-SUFFIX,disney-portal.my.onetrust.com,🌍 国外媒体
+ - DOMAIN-SUFFIX,disney.demdex.net,🌍 国外媒体
+ - DOMAIN-SUFFIX,disney.my.sentry.io,🌍 国外媒体
+ - DOMAIN-SUFFIX,disneyplus.bn5x.net,🌍 国外媒体
+ - DOMAIN-SUFFIX,disneyplus.com,🌍 国外媒体
+ - DOMAIN-SUFFIX,disneyplus.com.ssl.sc.omtrdc.net,🌍 国外媒体
+ - DOMAIN-SUFFIX,disneystreaming.com,🌍 国外媒体
+ - DOMAIN-SUFFIX,dssott.com,🌍 国外媒体
+ - DOMAIN-SUFFIX,execute-api.us-east-1.amazonaws.com,🌍 国外媒体
+ - DOMAIN-SUFFIX,js-agent.newrelic.com,🌍 国外媒体
+ - DOMAIN,bcbolt446c5271-a.akamaihd.net,🌍 国外媒体
+ - DOMAIN,content.jwplatform.com,🌍 国外媒体
+ - DOMAIN,edge.api.brightcove.com,🌍 国外媒体
+ - DOMAIN,videos-f.jwpsrv.com,🌍 国外媒体
+ - DOMAIN-SUFFIX,encoretvb.com,🌍 国外媒体
+ - DOMAIN-SUFFIX,fox.com,🌍 国外媒体
+ - DOMAIN-SUFFIX,foxdcg.com,🌍 国外媒体
+ - DOMAIN-SUFFIX,uplynk.com,🌍 国外媒体
+ - DOMAIN-SUFFIX,hbo.com,🌍 国外媒体
+ - DOMAIN-SUFFIX,hbogo.com,🌍 国外媒体
+ - DOMAIN-SUFFIX,hbomax.com,🌍 国外媒体
+ - DOMAIN-SUFFIX,hbomaxcdn.com,🌍 国外媒体
+ - DOMAIN-SUFFIX,hbonow.com,🌍 国外媒体
+ - DOMAIN-KEYWORD,hbogoasia,🌍 国外媒体
+ - DOMAIN,44wilhpljf.execute-api.ap-southeast-1.amazonaws.com,🌍 国外媒体
+ - DOMAIN,bcbolthboa-a.akamaihd.net,🌍 国外媒体
+ - DOMAIN,cf-images.ap-southeast-1.prod.boltdns.net,🌍 国外媒体
+ - DOMAIN,dai3fd1oh325y.cloudfront.net,🌍 国外媒体
+ - DOMAIN,hboasia1-i.akamaihd.net,🌍 国外媒体
+ - DOMAIN,hboasia2-i.akamaihd.net,🌍 国外媒体
+ - DOMAIN,hboasia3-i.akamaihd.net,🌍 国外媒体
+ - DOMAIN,hboasia4-i.akamaihd.net,🌍 国外媒体
+ - DOMAIN,hboasia5-i.akamaihd.net,🌍 国外媒体
+ - DOMAIN,hboasialive.akamaized.net,🌍 国外媒体
+ - DOMAIN,hbogoprod-vod.akamaized.net,🌍 国外媒体
+ - DOMAIN,hbolb.onwardsmg.com,🌍 国外媒体
+ - DOMAIN,hbounify-prod.evergent.com,🌍 国外媒体
+ - DOMAIN,players.brightcove.net,🌍 国外媒体
+ - DOMAIN,s3-ap-southeast-1.amazonaws.com,🌍 国外媒体
+ - DOMAIN-SUFFIX,hboasia.com,🌍 国外媒体
+ - DOMAIN-SUFFIX,hbogoasia.com,🌍 国外媒体
+ - DOMAIN-SUFFIX,hbogoasia.hk,🌍 国外媒体
+ - DOMAIN-SUFFIX,5itv.tv,🌍 国外媒体
+ - DOMAIN-SUFFIX,ocnttv.com,🌍 国外媒体
+ - DOMAIN-SUFFIX,cws-hulu.conviva.com,🌍 国外媒体
+ - DOMAIN-SUFFIX,hulu.com,🌍 国外媒体
+ - DOMAIN-SUFFIX,hulu.hb.omtrdc.net,🌍 国外媒体
+ - DOMAIN-SUFFIX,hulu.sc.omtrdc.net,🌍 国外媒体
+ - DOMAIN-SUFFIX,huluad.com,🌍 国外媒体
+ - DOMAIN-SUFFIX,huluim.com,🌍 国外媒体
+ - DOMAIN-SUFFIX,hulustream.com,🌍 国外媒体
+ - DOMAIN-SUFFIX,happyon.jp,🌍 国外媒体
+ - DOMAIN-SUFFIX,hjholdings.jp,🌍 国外媒体
+ - DOMAIN-SUFFIX,hulu.jp,🌍 国外媒体
+ - DOMAIN-SUFFIX,prod.hjholdings.tv,🌍 国外媒体
+ - DOMAIN-SUFFIX,streaks.jp,🌍 国外媒体
+ - DOMAIN-SUFFIX,yb.uncn.jp,🌍 国外媒体
+ - DOMAIN,itvpnpmobile-a.akamaihd.net,🌍 国外媒体
+ - DOMAIN-SUFFIX,itv.com,🌍 国外媒体
+ - DOMAIN-SUFFIX,itvstatic.com,🌍 国外媒体
+ - DOMAIN-SUFFIX,iwara.tv,🌍 国外媒体
+ - DOMAIN-KEYWORD,jooxweb-api,🌍 国外媒体
+ - DOMAIN-SUFFIX,joox.com,🌍 国外媒体
+ - DOMAIN-KEYWORD,japonx,🌍 国外媒体
+ - DOMAIN-KEYWORD,japronx,🌍 国外媒体
+ - DOMAIN-SUFFIX,japonx.com,🌍 国外媒体
+ - DOMAIN-SUFFIX,japonx.net,🌍 国外媒体
+ - DOMAIN-SUFFIX,japonx.tv,🌍 国外媒体
+ - DOMAIN-SUFFIX,japonx.vip,🌍 国外媒体
+ - DOMAIN-SUFFIX,japronx.com,🌍 国外媒体
+ - DOMAIN-SUFFIX,japronx.net,🌍 国外媒体
+ - DOMAIN-SUFFIX,japronx.tv,🌍 国外媒体
+ - DOMAIN-SUFFIX,japronx.vip,🌍 国外媒体
+ - DOMAIN-SUFFIX,kfs.io,🌍 国外媒体
+ - DOMAIN-SUFFIX,kkbox.com,🌍 国外媒体
+ - DOMAIN-SUFFIX,kkbox.com.tw,🌍 国外媒体
+ - DOMAIN,kktv-theater.kk.stream,🌍 国外媒体
+ - DOMAIN,theater-kktv.cdn.hinet.net,🌍 国外媒体
+ - DOMAIN-SUFFIX,kktv.com.tw,🌍 国外媒体
+ - DOMAIN-SUFFIX,kktv.me,🌍 国外媒体
+ - DOMAIN,litvfreemobile-hichannel.cdn.hinet.net,🌍 国外媒体
+ - DOMAIN-SUFFIX,litv.tv,🌍 国外媒体
+ - DOMAIN,d3c7rimkq79yfu.cloudfront.net,🌍 国外媒体
+ - DOMAIN-SUFFIX,d3c7rimkq79yfu.cloudfront.net,🌍 国外媒体
+ - DOMAIN-SUFFIX,linetv.tw,🌍 国外媒体
+ - DOMAIN-SUFFIX,profile.line-scdn.net,🌍 国外媒体
+ - DOMAIN,d349g9zuie06uo.cloudfront.net,🌍 国外媒体
+ - DOMAIN-SUFFIX,channel5.com,🌍 国外媒体
+ - DOMAIN-SUFFIX,my5.tv,🌍 国外媒体
+ - DOMAIN-KEYWORD,nowtv100,🌍 国外媒体
+ - DOMAIN-KEYWORD,rthklive,🌍 国外媒体
+ - DOMAIN,mytvsuperlimited.hb.omtrdc.net,🌍 国外媒体
+ - DOMAIN,mytvsuperlimited.sc.omtrdc.net,🌍 国外媒体
+ - DOMAIN-SUFFIX,mytvsuper.com,🌍 国外媒体
+ - DOMAIN-SUFFIX,tvb.com,🌍 国外媒体
+ - DOMAIN-KEYWORD,apiproxy-device-prod-nlb-,🌍 国外媒体
+ - DOMAIN-KEYWORD,dualstack.apiproxy-,🌍 国外媒体
+ - DOMAIN-KEYWORD,netflixdnstest,🌍 国外媒体
+ - DOMAIN,netflix.com.edgesuite.net,🌍 国外媒体
+ - DOMAIN-SUFFIX,fast.com,🌍 国外媒体
+ - DOMAIN-SUFFIX,netflix.com,🌍 国外媒体
+ - DOMAIN-SUFFIX,netflix.net,🌍 国外媒体
+ - DOMAIN-SUFFIX,netflixdnstest0.com,🌍 国外媒体
+ - DOMAIN-SUFFIX,netflixdnstest1.com,🌍 国外媒体
+ - DOMAIN-SUFFIX,netflixdnstest2.com,🌍 国外媒体
+ - DOMAIN-SUFFIX,netflixdnstest3.com,🌍 国外媒体
+ - DOMAIN-SUFFIX,netflixdnstest4.com,🌍 国外媒体
+ - DOMAIN-SUFFIX,netflixdnstest5.com,🌍 国外媒体
+ - DOMAIN-SUFFIX,netflixdnstest6.com,🌍 国外媒体
+ - DOMAIN-SUFFIX,netflixdnstest7.com,🌍 国外媒体
+ - DOMAIN-SUFFIX,netflixdnstest8.com,🌍 国外媒体
+ - DOMAIN-SUFFIX,netflixdnstest9.com,🌍 国外媒体
+ - DOMAIN-SUFFIX,nflxext.com,🌍 国外媒体
+ - DOMAIN-SUFFIX,nflximg.com,🌍 国外媒体
+ - DOMAIN-SUFFIX,nflximg.net,🌍 国外媒体
+ - DOMAIN-SUFFIX,nflxso.net,🌍 国外媒体
+ - DOMAIN-SUFFIX,nflxvideo.net,🌍 国外媒体
+ - IP-CIDR,8.41.4.0/24,🌍 国外媒体,no-resolve
+ - IP-CIDR,23.246.0.0/18,🌍 国外媒体,no-resolve
+ - IP-CIDR,37.77.184.0/21,🌍 国外媒体,no-resolve
+ - IP-CIDR,38.72.126.0/24,🌍 国外媒体,no-resolve
+ - IP-CIDR,45.57.0.0/17,🌍 国外媒体,no-resolve
+ - IP-CIDR,64.120.128.0/17,🌍 国外媒体,no-resolve
+ - IP-CIDR,66.197.128.0/17,🌍 国外媒体,no-resolve
+ - IP-CIDR,69.53.224.0/19,🌍 国外媒体,no-resolve
+ - IP-CIDR,103.87.204.0/22,🌍 国外媒体,no-resolve
+ - IP-CIDR,108.175.32.0/20,🌍 国外媒体,no-resolve
+ - IP-CIDR,185.2.220.0/22,🌍 国外媒体,no-resolve
+ - IP-CIDR,185.9.188.0/22,🌍 国外媒体,no-resolve
+ - IP-CIDR,192.173.64.0/18,🌍 国外媒体,no-resolve
+ - IP-CIDR,198.38.96.0/19,🌍 国外媒体,no-resolve
+ - IP-CIDR,198.45.48.0/20,🌍 国外媒体,no-resolve
+ - IP-CIDR,203.75.84.0/24,🌍 国外媒体,no-resolve
+ - IP-CIDR,207.45.72.0/22,🌍 国外媒体,no-resolve
+ - IP-CIDR,208.75.76.0/22,🌍 国外媒体,no-resolve
+ - DOMAIN-SUFFIX,dmc.nico,🌍 国外媒体
+ - DOMAIN-SUFFIX,nicovideo.jp,🌍 国外媒体
+ - DOMAIN-SUFFIX,nimg.jp,🌍 国外媒体
+ - DOMAIN-KEYWORD,nivod,🌍 国外媒体
+ - DOMAIN-SUFFIX,biggggg.com,🌍 国外媒体
+ - DOMAIN-SUFFIX,mudvod.tv,🌍 国外媒体
+ - DOMAIN-SUFFIX,nbys.tv,🌍 国外媒体
+ - DOMAIN-SUFFIX,nbys1.tv,🌍 国外媒体
+ - DOMAIN-SUFFIX,nbyy.tv,🌍 国外媒体
+ - DOMAIN-SUFFIX,newpppp.com,🌍 国外媒体
+ - DOMAIN-SUFFIX,nivod.tv,🌍 国外媒体
+ - DOMAIN-SUFFIX,nivodi.tv,🌍 国外媒体
+ - DOMAIN-SUFFIX,nivodz.com,🌍 国外媒体
+ - DOMAIN-SUFFIX,vod360.net,🌍 国外媒体
+ - DOMAIN-KEYWORD,olevod,🌍 国外媒体
+ - DOMAIN-SUFFIX,haiwaikan.com,🌍 国外媒体
+ - DOMAIN-SUFFIX,iole.tv,🌍 国外媒体
+ - DOMAIN-SUFFIX,olehd.com,🌍 国外媒体
+ - DOMAIN-SUFFIX,olelive.com,🌍 国外媒体
+ - DOMAIN-SUFFIX,olevod.com,🌍 国外媒体
+ - DOMAIN-SUFFIX,olevod.io,🌍 国外媒体
+ - DOMAIN-SUFFIX,olevod.tv,🌍 国外媒体
+ - DOMAIN-SUFFIX,olevodtv.com,🌍 国外媒体
+ - DOMAIN-KEYWORD,openai,🌍 国外媒体
+ - DOMAIN-SUFFIX,auth0.com,🌍 国外媒体
+ - DOMAIN-SUFFIX,challenges.cloudflare.com,🌍 国外媒体
+ - DOMAIN-SUFFIX,chatgpt.com,🌍 国外媒体
+ - DOMAIN-SUFFIX,client-api.arkoselabs.com,🌍 国外媒体
+ - DOMAIN-SUFFIX,events.statsigapi.net,🌍 国外媒体
+ - DOMAIN-SUFFIX,featuregates.org,🌍 国外媒体
+ - DOMAIN-SUFFIX,identrust.com,🌍 国外媒体
+ - DOMAIN-SUFFIX,intercom.io,🌍 国外媒体
+ - DOMAIN-SUFFIX,intercomcdn.com,🌍 国外媒体
+ - DOMAIN-SUFFIX,oaistatic.com,🌍 国外媒体
+ - DOMAIN-SUFFIX,oaiusercontent.com,🌍 国外媒体
+ - DOMAIN-SUFFIX,openai.com,🌍 国外媒体
+ - DOMAIN-SUFFIX,openaiapi-site.azureedge.net,🌍 国外媒体
+ - DOMAIN-SUFFIX,sentry.io,🌍 国外媒体
+ - DOMAIN-SUFFIX,stripe.com,🌍 国外媒体
+ - DOMAIN-SUFFIX,pbs.org,🌍 国外媒体
+ - DOMAIN-SUFFIX,pandora.com,🌍 国外媒体
+ - DOMAIN-SUFFIX,phncdn.com,🌍 国外媒体
+ - DOMAIN-SUFFIX,phprcdn.com,🌍 国外媒体
+ - DOMAIN-SUFFIX,pornhub.com,🌍 国外媒体
+ - DOMAIN-SUFFIX,pornhubpremium.com,🌍 国外媒体
+ - DOMAIN-SUFFIX,qobuz.com,🌍 国外媒体
+ - DOMAIN-SUFFIX,p-cdn.us,🌍 国外媒体
+ - DOMAIN-SUFFIX,sndcdn.com,🌍 国外媒体
+ - DOMAIN-SUFFIX,soundcloud.com,🌍 国外媒体
+ - DOMAIN-KEYWORD,-spotify-,🌍 国外媒体
+ - DOMAIN-KEYWORD,spotify.com,🌍 国外媒体
+ - DOMAIN-SUFFIX,pscdn.co,🌍 国外媒体
+ - DOMAIN-SUFFIX,scdn.co,🌍 国外媒体
+ - DOMAIN-SUFFIX,spoti.fi,🌍 国外媒体
+ - DOMAIN-SUFFIX,spotify.com,🌍 国外媒体
+ - DOMAIN-SUFFIX,spotifycdn.com,🌍 国外媒体
+ - DOMAIN-SUFFIX,spotifycdn.net,🌍 国外媒体
+ - DOMAIN-SUFFIX,tidal-cms.s3.amazonaws.com,🌍 国外媒体
+ - DOMAIN-SUFFIX,tidal.com,🌍 国外媒体
+ - DOMAIN-SUFFIX,tidalhifi.com,🌍 国外媒体
+ - DOMAIN,hamifans.emome.net,🌍 国外媒体
+ - DOMAIN-SUFFIX,skyking.com.tw,🌍 国外媒体
+ - DOMAIN-KEYWORD,tiktokcdn,🌍 国外媒体
+ - DOMAIN-SUFFIX,byteoversea.com,🌍 国外媒体
+ - DOMAIN-SUFFIX,ibytedtos.com,🌍 国外媒体
+ - DOMAIN-SUFFIX,ipstatp.com,🌍 国外媒体
+ - DOMAIN-SUFFIX,muscdn.com,🌍 国外媒体
+ - DOMAIN-SUFFIX,musical.ly,🌍 国外媒体
+ - DOMAIN-SUFFIX,tik-tokapi.com,🌍 国外媒体
+ - DOMAIN-SUFFIX,tiktok.com,🌍 国外媒体
+ - DOMAIN-SUFFIX,tiktokcdn.com,🌍 国外媒体
+ - DOMAIN-SUFFIX,tiktokv.com,🌍 国外媒体
+ - DOMAIN-KEYWORD,ttvnw,🌍 国外媒体
+ - DOMAIN-SUFFIX,ext-twitch.tv,🌍 国外媒体
+ - DOMAIN-SUFFIX,jtvnw.net,🌍 国外媒体
+ - DOMAIN-SUFFIX,ttvnw.net,🌍 国外媒体
+ - DOMAIN-SUFFIX,twitch-ext.rootonline.de,🌍 国外媒体
+ - DOMAIN-SUFFIX,twitch.tv,🌍 国外媒体
+ - DOMAIN-SUFFIX,twitchcdn.net,🌍 国外媒体
+ - PROCESS-NAME,com.viu.pad,🌍 国外媒体
+ - PROCESS-NAME,com.viu.phone,🌍 国外媒体
+ - PROCESS-NAME,com.vuclip.viu,🌍 国外媒体
+ - DOMAIN,api.viu.now.com,🌍 国外媒体
+ - DOMAIN,d1k2us671qcoau.cloudfront.net,🌍 国外媒体
+ - DOMAIN,d2anahhhmp1ffz.cloudfront.net,🌍 国外媒体
+ - DOMAIN,dfp6rglgjqszk.cloudfront.net,🌍 国外媒体
+ - DOMAIN-SUFFIX,cognito-identity.us-east-1.amazonaws.com,🌍 国外媒体
+ - DOMAIN-SUFFIX,d1k2us671qcoau.cloudfront.net,🌍 国外媒体
+ - DOMAIN-SUFFIX,d2anahhhmp1ffz.cloudfront.net,🌍 国外媒体
+ - DOMAIN-SUFFIX,dfp6rglgjqszk.cloudfront.net,🌍 国外媒体
+ - DOMAIN-SUFFIX,mobileanalytics.us-east-1.amazonaws.com,🌍 国外媒体
+ - DOMAIN-SUFFIX,viu.com,🌍 国外媒体
+ - DOMAIN-SUFFIX,viu.now.com,🌍 国外媒体
+ - DOMAIN-SUFFIX,viu.tv,🌍 国外媒体
+ - DOMAIN-KEYWORD,youtube,🌍 国外媒体
+ - DOMAIN,youtubei.googleapis.com,🌍 国外媒体
+ - DOMAIN,yt3.ggpht.com,🌍 国外媒体
+ - DOMAIN-SUFFIX,googlevideo.com,🌍 国外媒体
+ - DOMAIN-SUFFIX,gvt2.com,🌍 国外媒体
+ - DOMAIN-SUFFIX,withyoutube.com,🌍 国外媒体
+ - DOMAIN-SUFFIX,youtu.be,🌍 国外媒体
+ - DOMAIN-SUFFIX,youtube-nocookie.com,🌍 国外媒体
+ - DOMAIN-SUFFIX,youtube.com,🌍 国外媒体
+ - DOMAIN-SUFFIX,youtubeeducation.com,🌍 国外媒体
+ - DOMAIN-SUFFIX,youtubegaming.com,🌍 国外媒体
+ - DOMAIN-SUFFIX,youtubekids.com,🌍 国外媒体
+ - DOMAIN-SUFFIX,yt.be,🌍 国外媒体
+ - DOMAIN-SUFFIX,ytimg.com,🌍 国外媒体
+ - DOMAIN,music.youtube.com,🌍 国外媒体
+ - DOMAIN-SUFFIX,1password.com,🚀 节点选择
+ - DOMAIN-SUFFIX,adguard.org,🚀 节点选择
+ - DOMAIN-SUFFIX,bit.no.com,🚀 节点选择
+ - DOMAIN-SUFFIX,btlibrary.me,🚀 节点选择
+ - DOMAIN-SUFFIX,cloudcone.com,🚀 节点选择
+ - DOMAIN-SUFFIX,dubox.com,🚀 节点选择
+ - DOMAIN-SUFFIX,gameloft.com,🚀 节点选择
+ - DOMAIN-SUFFIX,garena.com,🚀 节点选择
+ - DOMAIN-SUFFIX,hoyolab.com,🚀 节点选择
+ - DOMAIN-SUFFIX,inoreader.com,🚀 节点选择
+ - DOMAIN-SUFFIX,ip138.com,🚀 节点选择
+ - DOMAIN-SUFFIX,linkedin.com,🚀 节点选择
+ - DOMAIN-SUFFIX,myteamspeak.com,🚀 节点选择
+ - DOMAIN-SUFFIX,notion.so,🚀 节点选择
+ - DOMAIN-SUFFIX,ping.pe,🚀 节点选择
+ - DOMAIN-SUFFIX,reddit.com,🚀 节点选择
+ - DOMAIN-SUFFIX,teddysun.com,🚀 节点选择
+ - DOMAIN-SUFFIX,tumbex.com,🚀 节点选择
+ - DOMAIN-SUFFIX,twdvd.com,🚀 节点选择
+ - DOMAIN-SUFFIX,unsplash.com,🚀 节点选择
+ - DOMAIN-SUFFIX,buzzsprout.com,🚀 节点选择
+ - DOMAIN-SUFFIX,eu,🚀 节点选择
+ - DOMAIN-SUFFIX,hk,🚀 节点选择
+ - DOMAIN-SUFFIX,jp,🚀 节点选择
+ - DOMAIN-SUFFIX,kr,🚀 节点选择
+ - DOMAIN-SUFFIX,sg,🚀 节点选择
+ - DOMAIN-SUFFIX,tw,🚀 节点选择
+ - DOMAIN-SUFFIX,uk,🚀 节点选择
+ - DOMAIN-KEYWORD,1e100,🚀 节点选择
+ - DOMAIN-KEYWORD,abema,🚀 节点选择
+ - DOMAIN-KEYWORD,appledaily,🚀 节点选择
+ - DOMAIN-KEYWORD,avtb,🚀 节点选择
+ - DOMAIN-KEYWORD,beetalk,🚀 节点选择
+ - DOMAIN-KEYWORD,blogspot,🚀 节点选择
+ - DOMAIN-KEYWORD,dropbox,🚀 节点选择
+ - DOMAIN-KEYWORD,facebook,🚀 节点选择
+ - DOMAIN-KEYWORD,fbcdn,🚀 节点选择
+ - DOMAIN-KEYWORD,github,🚀 节点选择
+ - DOMAIN-KEYWORD,gmail,🚀 节点选择
+ - DOMAIN-KEYWORD,google,🚀 节点选择
+ - DOMAIN-KEYWORD,instagram,🚀 节点选择
+ - DOMAIN-KEYWORD,porn,🚀 节点选择
+ - DOMAIN-KEYWORD,sci-hub,🚀 节点选择
+ - DOMAIN-KEYWORD,spotify,🚀 节点选择
+ - DOMAIN-KEYWORD,telegram,🚀 节点选择
+ - DOMAIN-KEYWORD,twitter,🚀 节点选择
+ - DOMAIN-KEYWORD,whatsapp,🚀 节点选择
+ - DOMAIN-KEYWORD,youtube,🚀 节点选择
+ - DOMAIN-SUFFIX,4sqi.net,🚀 节点选择
+ - DOMAIN-SUFFIX,a248.e.akamai.net,🚀 节点选择
+ - DOMAIN-SUFFIX,adobedtm.com,🚀 节点选择
+ - DOMAIN-SUFFIX,ampproject.org,🚀 节点选择
+ - DOMAIN-SUFFIX,android.com,🚀 节点选择
+ - DOMAIN-SUFFIX,aolcdn.com,🚀 节点选择
+ - DOMAIN-SUFFIX,apkmirror.com,🚀 节点选择
+ - DOMAIN-SUFFIX,apkpure.com,🚀 节点选择
+ - DOMAIN-SUFFIX,app-measurement.com,🚀 节点选择
+ - DOMAIN-SUFFIX,appspot.com,🚀 节点选择
+ - DOMAIN-SUFFIX,archive.org,🚀 节点选择
+ - DOMAIN-SUFFIX,armorgames.com,🚀 节点选择
+ - DOMAIN-SUFFIX,aspnetcdn.com,🚀 节点选择
+ - DOMAIN-SUFFIX,awsstatic.com,🚀 节点选择
+ - DOMAIN-SUFFIX,azureedge.net,🚀 节点选择
+ - DOMAIN-SUFFIX,azurewebsites.net,🚀 节点选择
+ - DOMAIN-SUFFIX,bandwagonhost.com,🚀 节点选择
+ - DOMAIN-SUFFIX,bing.com,🚀 节点选择
+ - DOMAIN-SUFFIX,bkrtx.com,🚀 节点选择
+ - DOMAIN-SUFFIX,blogcdn.com,🚀 节点选择
+ - DOMAIN-SUFFIX,blogger.com,🚀 节点选择
+ - DOMAIN-SUFFIX,blogsmithmedia.com,🚀 节点选择
+ - DOMAIN-SUFFIX,blogspot.com,🚀 节点选择
+ - DOMAIN-SUFFIX,blogspot.hk,🚀 节点选择
+ - DOMAIN-SUFFIX,blogspot.jp,🚀 节点选择
+ - DOMAIN-SUFFIX,bloomberg.cn,🚀 节点选择
+ - DOMAIN-SUFFIX,bloomberg.com,🚀 节点选择
+ - DOMAIN-SUFFIX,box.com,🚀 节点选择
+ - DOMAIN-SUFFIX,cachefly.net,🚀 节点选择
+ - DOMAIN-SUFFIX,cdnst.net,🚀 节点选择
+ - DOMAIN-SUFFIX,cloudfront.net,🚀 节点选择
+ - DOMAIN-SUFFIX,comodoca.com,🚀 节点选择
+ - DOMAIN-SUFFIX,daum.net,🚀 节点选择
+ - DOMAIN-SUFFIX,deskconnect.com,🚀 节点选择
+ - DOMAIN-SUFFIX,disqus.com,🚀 节点选择
+ - DOMAIN-SUFFIX,disquscdn.com,🚀 节点选择
+ - DOMAIN-SUFFIX,dropbox.com,🚀 节点选择
+ - DOMAIN-SUFFIX,dropboxapi.com,🚀 节点选择
+ - DOMAIN-SUFFIX,dropboxstatic.com,🚀 节点选择
+ - DOMAIN-SUFFIX,dropboxusercontent.com,🚀 节点选择
+ - DOMAIN-SUFFIX,duckduckgo.com,🚀 节点选择
+ - DOMAIN-SUFFIX,edgecastcdn.net,🚀 节点选择
+ - DOMAIN-SUFFIX,edgekey.net,🚀 节点选择
+ - DOMAIN-SUFFIX,edgesuite.net,🚀 节点选择
+ - DOMAIN-SUFFIX,eurekavpt.com,🚀 节点选择
+ - DOMAIN-SUFFIX,fastmail.com,🚀 节点选择
+ - DOMAIN-SUFFIX,firebaseio.com,🚀 节点选择
+ - DOMAIN-SUFFIX,flickr.com,🚀 节点选择
+ - DOMAIN-SUFFIX,flipboard.com,🚀 节点选择
+ - DOMAIN-SUFFIX,gfx.ms,🚀 节点选择
+ - DOMAIN-SUFFIX,gongm.in,🚀 节点选择
+ - DOMAIN-SUFFIX,hulu.com,🚀 节点选择
+ - DOMAIN-SUFFIX,id.heroku.com,🚀 节点选择
+ - DOMAIN-SUFFIX,io.io,🚀 节点选择
+ - DOMAIN-SUFFIX,issuu.com,🚀 节点选择
+ - DOMAIN-SUFFIX,ixquick.com,🚀 节点选择
+ - DOMAIN-SUFFIX,jtvnw.net,🚀 节点选择
+ - DOMAIN-SUFFIX,kat.cr,🚀 节点选择
+ - DOMAIN-SUFFIX,kik.com,🚀 节点选择
+ - DOMAIN-SUFFIX,kobo.com,🚀 节点选择
+ - DOMAIN-SUFFIX,kobobooks.com,🚀 节点选择
+ - DOMAIN-SUFFIX,licdn.com,🚀 节点选择
+ - DOMAIN-SUFFIX,live.net,🚀 节点选择
+ - DOMAIN-SUFFIX,livefilestore.com,🚀 节点选择
+ - DOMAIN-SUFFIX,llnwd.net,🚀 节点选择
+ - DOMAIN-SUFFIX,macrumors.com,🚀 节点选择
+ - DOMAIN-SUFFIX,medium.com,🚀 节点选择
+ - DOMAIN-SUFFIX,mega.nz,🚀 节点选择
+ - DOMAIN-SUFFIX,megaupload.com,🚀 节点选择
+ - DOMAIN-SUFFIX,messenger.com,🚀 节点选择
+ - DOMAIN-SUFFIX,netdna-cdn.com,🚀 节点选择
+ - DOMAIN-SUFFIX,nintendo.net,🚀 节点选择
+ - DOMAIN-SUFFIX,nsstatic.net,🚀 节点选择
+ - DOMAIN-SUFFIX,nytstyle.com,🚀 节点选择
+ - DOMAIN-SUFFIX,overcast.fm,🚀 节点选择
+ - DOMAIN-SUFFIX,openvpn.net,🚀 节点选择
+ - DOMAIN-SUFFIX,periscope.tv,🚀 节点选择
+ - DOMAIN-SUFFIX,pinimg.com,🚀 节点选择
+ - DOMAIN-SUFFIX,pinterest.com,🚀 节点选择
+ - DOMAIN-SUFFIX,potato.im,🚀 节点选择
+ - DOMAIN-SUFFIX,prfct.co,🚀 节点选择
+ - DOMAIN-SUFFIX,pscp.tv,🚀 节点选择
+ - DOMAIN-SUFFIX,quora.com,🚀 节点选择
+ - DOMAIN-SUFFIX,resilio.com,🚀 节点选择
+ - DOMAIN-SUFFIX,sfx.ms,🚀 节点选择
+ - DOMAIN-SUFFIX,shadowsocks.org,🚀 节点选择
+ - DOMAIN-SUFFIX,slack-edge.com,🚀 节点选择
+ - DOMAIN-SUFFIX,smartdnsproxy.com,🚀 节点选择
+ - DOMAIN-SUFFIX,sndcdn.com,🚀 节点选择
+ - DOMAIN-SUFFIX,soundcloud.com,🚀 节点选择
+ - DOMAIN-SUFFIX,startpage.com,🚀 节点选择
+ - DOMAIN-SUFFIX,staticflickr.com,🚀 节点选择
+ - DOMAIN-SUFFIX,symauth.com,🚀 节点选择
+ - DOMAIN-SUFFIX,symcb.com,🚀 节点选择
+ - DOMAIN-SUFFIX,symcd.com,🚀 节点选择
+ - DOMAIN-SUFFIX,textnow.com,🚀 节点选择
+ - DOMAIN-SUFFIX,textnow.me,🚀 节点选择
+ - DOMAIN-SUFFIX,thefacebook.com,🚀 节点选择
+ - DOMAIN-SUFFIX,thepiratebay.org,🚀 节点选择
+ - DOMAIN-SUFFIX,torproject.org,🚀 节点选择
+ - DOMAIN-SUFFIX,trustasiassl.com,🚀 节点选择
+ - DOMAIN-SUFFIX,tumblr.co,🚀 节点选择
+ - DOMAIN-SUFFIX,tumblr.com,🚀 节点选择
+ - DOMAIN-SUFFIX,tvb.com,🚀 节点选择
+ - DOMAIN-SUFFIX,txmblr.com,🚀 节点选择
+ - DOMAIN-SUFFIX,v2ex.com,🚀 节点选择
+ - DOMAIN-SUFFIX,vimeo.com,🚀 节点选择
+ - DOMAIN-SUFFIX,vine.co,🚀 节点选择
+ - DOMAIN-SUFFIX,vox-cdn.com,🚀 节点选择
+ - DOMAIN-SUFFIX,amazon.co.jp,🚀 节点选择
+ - DOMAIN-SUFFIX,amazon.com,🚀 节点选择
+ - DOMAIN-SUFFIX,amazonaws.com,🚀 节点选择
+ - IP-CIDR,13.32.0.0/15,🚀 节点选择,no-resolve
+ - IP-CIDR,13.35.0.0/17,🚀 节点选择,no-resolve
+ - IP-CIDR,18.184.0.0/15,🚀 节点选择,no-resolve
+ - IP-CIDR,18.194.0.0/15,🚀 节点选择,no-resolve
+ - IP-CIDR,18.208.0.0/13,🚀 节点选择,no-resolve
+ - IP-CIDR,18.232.0.0/14,🚀 节点选择,no-resolve
+ - IP-CIDR,52.58.0.0/15,🚀 节点选择,no-resolve
+ - IP-CIDR,52.74.0.0/16,🚀 节点选择,no-resolve
+ - IP-CIDR,52.77.0.0/16,🚀 节点选择,no-resolve
+ - IP-CIDR,52.84.0.0/15,🚀 节点选择,no-resolve
+ - IP-CIDR,52.200.0.0/13,🚀 节点选择,no-resolve
+ - IP-CIDR,54.93.0.0/16,🚀 节点选择,no-resolve
+ - IP-CIDR,54.156.0.0/14,🚀 节点选择,no-resolve
+ - IP-CIDR,54.226.0.0/15,🚀 节点选择,no-resolve
+ - IP-CIDR,54.230.156.0/22,🚀 节点选择,no-resolve
+ - DOMAIN-KEYWORD,uk-live,🚀 节点选择
+ - DOMAIN-SUFFIX,bbc.co,🚀 节点选择
+ - DOMAIN-SUFFIX,bbc.com,🚀 节点选择
+ - DOMAIN-SUFFIX,claude.ai,🚀 节点选择
+ - DOMAIN-SUFFIX,anthropic.com,🚀 节点选择
+ - DOMAIN-SUFFIX,apache.org,🚀 节点选择
+ - DOMAIN-SUFFIX,docker.com,🚀 节点选择
+ - DOMAIN-SUFFIX,docker.io,🚀 节点选择
+ - DOMAIN-SUFFIX,elastic.co,🚀 节点选择
+ - DOMAIN-SUFFIX,elastic.com,🚀 节点选择
+ - DOMAIN-SUFFIX,gcr.io,🚀 节点选择
+ - DOMAIN-SUFFIX,gitlab.com,🚀 节点选择
+ - DOMAIN-SUFFIX,gitlab.io,🚀 节点选择
+ - DOMAIN-SUFFIX,jitpack.io,🚀 节点选择
+ - DOMAIN-SUFFIX,maven.org,🚀 节点选择
+ - DOMAIN-SUFFIX,medium.com,🚀 节点选择
+ - DOMAIN-SUFFIX,mvnrepository.com,🚀 节点选择
+ - DOMAIN-SUFFIX,quay.io,🚀 节点选择
+ - DOMAIN-SUFFIX,reddit.com,🚀 节点选择
+ - DOMAIN-SUFFIX,redhat.com,🚀 节点选择
+ - DOMAIN-SUFFIX,sonatype.org,🚀 节点选择
+ - DOMAIN-SUFFIX,sourcegraph.com,🚀 节点选择
+ - DOMAIN-SUFFIX,spring.io,🚀 节点选择
+ - DOMAIN-SUFFIX,spring.net,🚀 节点选择
+ - DOMAIN-SUFFIX,stackoverflow.com,🚀 节点选择
+ - DOMAIN,d1q6f0aelx0por.cloudfront.net,🚀 节点选择
+ - DOMAIN,d2wy8f7a9ursnm.cloudfront.net,🚀 节点选择
+ - DOMAIN,d36jcksde1wxzq.cloudfront.net,🚀 节点选择
+ - DOMAIN-SUFFIX,compose-spec.io,🚀 节点选择
+ - DOMAIN-SUFFIX,docker.com,🚀 节点选择
+ - DOMAIN-SUFFIX,docker.io,🚀 节点选择
+ - DOMAIN-SUFFIX,dockerhub.com,🚀 节点选择
+ - DOMAIN-SUFFIX,discord.co,🚀 节点选择
+ - DOMAIN-SUFFIX,discord.com,🚀 节点选择
+ - DOMAIN-SUFFIX,discord.gg,🚀 节点选择
+ - DOMAIN-SUFFIX,discord.media,🚀 节点选择
+ - DOMAIN-SUFFIX,discordapp.com,🚀 节点选择
+ - DOMAIN-SUFFIX,discordapp.net,🚀 节点选择
+ - DOMAIN-SUFFIX,facebook.com,🚀 节点选择
+ - DOMAIN-SUFFIX,fb.com,🚀 节点选择
+ - DOMAIN-SUFFIX,fb.me,🚀 节点选择
+ - DOMAIN-SUFFIX,fbcdn.com,🚀 节点选择
+ - DOMAIN-SUFFIX,fbcdn.net,🚀 节点选择
+ - IP-CIDR,31.13.24.0/21,🚀 节点选择,no-resolve
+ - IP-CIDR,31.13.64.0/18,🚀 节点选择,no-resolve
+ - IP-CIDR,45.64.40.0/22,🚀 节点选择,no-resolve
+ - IP-CIDR,66.220.144.0/20,🚀 节点选择,no-resolve
+ - IP-CIDR,69.63.176.0/20,🚀 节点选择,no-resolve
+ - IP-CIDR,69.171.224.0/19,🚀 节点选择,no-resolve
+ - IP-CIDR,74.119.76.0/22,🚀 节点选择,no-resolve
+ - IP-CIDR,103.4.96.0/22,🚀 节点选择,no-resolve
+ - IP-CIDR,129.134.0.0/17,🚀 节点选择,no-resolve
+ - IP-CIDR,157.240.0.0/17,🚀 节点选择,no-resolve
+ - IP-CIDR,173.252.64.0/18,🚀 节点选择,no-resolve
+ - IP-CIDR,179.60.192.0/22,🚀 节点选择,no-resolve
+ - IP-CIDR,185.60.216.0/22,🚀 节点选择,no-resolve
+ - IP-CIDR,204.15.20.0/22,🚀 节点选择,no-resolve
+ - DOMAIN-SUFFIX,github.com,🚀 节点选择
+ - DOMAIN-SUFFIX,github.io,🚀 节点选择
+ - DOMAIN-SUFFIX,githubapp.com,🚀 节点选择
+ - DOMAIN-SUFFIX,githubassets.com,🚀 节点选择
+ - DOMAIN-SUFFIX,githubusercontent.com,🚀 节点选择
+ - DOMAIN-SUFFIX,1e100.net,🚀 节点选择
+ - DOMAIN-SUFFIX,2mdn.net,🚀 节点选择
+ - DOMAIN-SUFFIX,app-measurement.net,🚀 节点选择
+ - DOMAIN-SUFFIX,g.co,🚀 节点选择
+ - DOMAIN-SUFFIX,ggpht.com,🚀 节点选择
+ - DOMAIN-SUFFIX,goo.gl,🚀 节点选择
+ - DOMAIN-SUFFIX,googleapis.cn,🚀 节点选择
+ - DOMAIN-SUFFIX,googleapis.com,🚀 节点选择
+ - DOMAIN-SUFFIX,gstatic.cn,🚀 节点选择
+ - DOMAIN-SUFFIX,gstatic.com,🚀 节点选择
+ - DOMAIN-SUFFIX,gvt0.com,🚀 节点选择
+ - DOMAIN-SUFFIX,gvt1.com,🚀 节点选择
+ - DOMAIN-SUFFIX,gvt2.com,🚀 节点选择
+ - DOMAIN-SUFFIX,gvt3.com,🚀 节点选择
+ - DOMAIN-SUFFIX,xn--ngstr-lra8j.com,🚀 节点选择
+ - DOMAIN-SUFFIX,youtu.be,🚀 节点选择
+ - DOMAIN-SUFFIX,youtube-nocookie.com,🚀 节点选择
+ - DOMAIN-SUFFIX,youtube.com,🚀 节点选择
+ - DOMAIN-SUFFIX,yt.be,🚀 节点选择
+ - DOMAIN-SUFFIX,ytimg.com,🚀 节点选择
+ - IP-CIDR,74.125.0.0/16,🚀 节点选择,no-resolve
+ - IP-CIDR,173.194.0.0/16,🚀 节点选择,no-resolve
+ - IP-CIDR,120.232.181.162/32,🚀 节点选择,no-resolve
+ - IP-CIDR,120.241.147.226/32,🚀 节点选择,no-resolve
+ - IP-CIDR,120.253.253.226/32,🚀 节点选择,no-resolve
+ - IP-CIDR,120.253.255.162/32,🚀 节点选择,no-resolve
+ - IP-CIDR,120.253.255.34/32,🚀 节点选择,no-resolve
+ - IP-CIDR,120.253.255.98/32,🚀 节点选择,no-resolve
+ - IP-CIDR,180.163.150.162/32,🚀 节点选择,no-resolve
+ - IP-CIDR,180.163.150.34/32,🚀 节点选择,no-resolve
+ - IP-CIDR,180.163.151.162/32,🚀 节点选择,no-resolve
+ - IP-CIDR,180.163.151.34/32,🚀 节点选择,no-resolve
+ - IP-CIDR,203.208.39.0/24,🚀 节点选择,no-resolve
+ - IP-CIDR,203.208.40.0/24,🚀 节点选择,no-resolve
+ - IP-CIDR,203.208.41.0/24,🚀 节点选择,no-resolve
+ - IP-CIDR,203.208.43.0/24,🚀 节点选择,no-resolve
+ - IP-CIDR,203.208.50.0/24,🚀 节点选择,no-resolve
+ - IP-CIDR,220.181.174.162/32,🚀 节点选择,no-resolve
+ - IP-CIDR,220.181.174.226/32,🚀 节点选择,no-resolve
+ - IP-CIDR,220.181.174.34/32,🚀 节点选择,no-resolve
+ - DOMAIN-SUFFIX,cdninstagram.com,🚀 节点选择
+ - DOMAIN-SUFFIX,instagram.com,🚀 节点选择
+ - DOMAIN-SUFFIX,instagr.am,🚀 节点选择
+ - DOMAIN-SUFFIX,iwara.tv,🚀 节点选择
+ - DOMAIN-SUFFIX,kakao.com,🚀 节点选择
+ - DOMAIN-SUFFIX,kakao.co.kr,🚀 节点选择
+ - DOMAIN-SUFFIX,kakaocdn.net,🚀 节点选择
+ - IP-CIDR,1.201.0.0/24,🚀 节点选择,no-resolve
+ - IP-CIDR,27.0.236.0/22,🚀 节点选择,no-resolve
+ - IP-CIDR,103.27.148.0/22,🚀 节点选择,no-resolve
+ - IP-CIDR,103.246.56.0/22,🚀 节点选择,no-resolve
+ - IP-CIDR,110.76.140.0/22,🚀 节点选择,no-resolve
+ - IP-CIDR,113.61.104.0/22,🚀 节点选择,no-resolve
+ - DOMAIN-SUFFIX,lin.ee,🚀 节点选择
+ - DOMAIN-SUFFIX,line-apps.com,🚀 节点选择
+ - DOMAIN-SUFFIX,line-cdn.net,🚀 节点选择
+ - DOMAIN-SUFFIX,line-scdn.net,🚀 节点选择
+ - DOMAIN-SUFFIX,line.me,🚀 节点选择
+ - DOMAIN-SUFFIX,line.naver.jp,🚀 节点选择
+ - DOMAIN-SUFFIX,nhncorp.jp,🚀 节点选择
+ - IP-CIDR,103.2.28.0/24,🚀 节点选择,no-resolve
+ - IP-CIDR,103.2.30.0/23,🚀 节点选择,no-resolve
+ - IP-CIDR,119.235.224.0/24,🚀 节点选择,no-resolve
+ - IP-CIDR,119.235.232.0/24,🚀 节点选择,no-resolve
+ - IP-CIDR,119.235.235.0/24,🚀 节点选择,no-resolve
+ - IP-CIDR,119.235.236.0/23,🚀 节点选择,no-resolve
+ - IP-CIDR,147.92.128.0/17,🚀 节点选择,no-resolve
+ - IP-CIDR,203.104.128.0/19,🚀 节点选择,no-resolve
+ - DOMAIN-SUFFIX,openai.com,🚀 节点选择
+ - DOMAIN-SUFFIX,challenges.cloudflare.com,🚀 节点选择
+ - DOMAIN-KEYWORD,1drv,🚀 节点选择
+ - DOMAIN-KEYWORD,onedrive,🚀 节点选择
+ - DOMAIN-KEYWORD,skydrive,🚀 节点选择
+ - DOMAIN-SUFFIX,livefilestore.com,🚀 节点选择
+ - DOMAIN-SUFFIX,oneclient.sfx.ms,🚀 节点选择
+ - DOMAIN-SUFFIX,onedrive.com,🚀 节点选择
+ - DOMAIN-SUFFIX,onedrive.live.com,🚀 节点选择
+ - DOMAIN-SUFFIX,photos.live.com,🚀 节点选择
+ - DOMAIN-SUFFIX,skydrive.wns.windows.com,🚀 节点选择
+ - DOMAIN-SUFFIX,spoprod-a.akamaihd.net,🚀 节点选择
+ - DOMAIN-SUFFIX,storage.live.com,🚀 节点选择
+ - DOMAIN-SUFFIX,storage.msn.com,🚀 节点选择
+ - DOMAIN-KEYWORD,porn,🚀 节点选择
+ - DOMAIN-SUFFIX,8teenxxx.com,🚀 节点选择
+ - DOMAIN-SUFFIX,ahcdn.com,🚀 节点选择
+ - DOMAIN-SUFFIX,bcvcdn.com,🚀 节点选择
+ - DOMAIN-SUFFIX,bongacams.com,🚀 节点选择
+ - DOMAIN-SUFFIX,chaturbate.com,🚀 节点选择
+ - DOMAIN-SUFFIX,dditscdn.com,🚀 节点选择
+ - DOMAIN-SUFFIX,livejasmin.com,🚀 节点选择
+ - DOMAIN-SUFFIX,phncdn.com,🚀 节点选择
+ - DOMAIN-SUFFIX,phprcdn.com,🚀 节点选择
+ - DOMAIN-SUFFIX,pornhub.com,🚀 节点选择
+ - DOMAIN-SUFFIX,pornhubpremium.com,🚀 节点选择
+ - DOMAIN-SUFFIX,rdtcdn.com,🚀 节点选择
+ - DOMAIN-SUFFIX,redtube.com,🚀 节点选择
+ - DOMAIN-SUFFIX,sb-cd.com,🚀 节点选择
+ - DOMAIN-SUFFIX,spankbang.com,🚀 节点选择
+ - DOMAIN-SUFFIX,t66y.com,🚀 节点选择
+ - DOMAIN-SUFFIX,xhamster.com,🚀 节点选择
+ - DOMAIN-SUFFIX,xnxx-cdn.com,🚀 节点选择
+ - DOMAIN-SUFFIX,xnxx.com,🚀 节点选择
+ - DOMAIN-SUFFIX,xvideos-cdn.com,🚀 节点选择
+ - DOMAIN-SUFFIX,xvideos.com,🚀 节点选择
+ - DOMAIN-SUFFIX,ypncdn.com,🚀 节点选择
+ - DOMAIN-SUFFIX,pixiv.net,🚀 节点选择
+ - DOMAIN-SUFFIX,pximg.net,🚀 节点选择
+ - DOMAIN-SUFFIX,fanbox.cc,🚀 节点选择
+ - DOMAIN-SUFFIX,amplitude.com,🚀 节点选择
+ - DOMAIN-SUFFIX,firebaseio.com,🚀 节点选择
+ - DOMAIN-SUFFIX,hockeyapp.net,🚀 节点选择
+ - DOMAIN-SUFFIX,readdle.com,🚀 节点选择
+ - DOMAIN-SUFFIX,smartmailcloud.com,🚀 节点选择
+ - DOMAIN-SUFFIX,fanatical.com,🚀 节点选择
+ - DOMAIN-SUFFIX,humblebundle.com,🚀 节点选择
+ - DOMAIN-SUFFIX,underlords.com,🚀 节点选择
+ - DOMAIN-SUFFIX,valvesoftware.com,🚀 节点选择
+ - DOMAIN-SUFFIX,playartifact.com,🚀 节点选择
+ - DOMAIN-SUFFIX,steam-chat.com,🚀 节点选择
+ - DOMAIN-SUFFIX,steamcommunity.com,🚀 节点选择
+ - DOMAIN-SUFFIX,steamgames.com,🚀 节点选择
+ - DOMAIN-SUFFIX,steampowered.com,🚀 节点选择
+ - DOMAIN-SUFFIX,steamserver.net,🚀 节点选择
+ - DOMAIN-SUFFIX,steamstatic.com,🚀 节点选择
+ - DOMAIN-SUFFIX,steamstat.us,🚀 节点选择
+ - DOMAIN,steambroadcast.akamaized.net,🚀 节点选择
+ - DOMAIN,steamcommunity-a.akamaihd.net,🚀 节点选择
+ - DOMAIN,steamstore-a.akamaihd.net,🚀 节点选择
+ - DOMAIN,steamusercontent-a.akamaihd.net,🚀 节点选择
+ - DOMAIN,steamuserimages-a.akamaihd.net,🚀 节点选择
+ - DOMAIN,steampipe.akamaized.net,🚀 节点选择
+ - DOMAIN-SUFFIX,tap.io,🚀 节点选择
+ - DOMAIN-SUFFIX,taptap.tw,🚀 节点选择
+ - DOMAIN-SUFFIX,twitch.tv,🚀 节点选择
+ - DOMAIN-SUFFIX,ttvnw.net,🚀 节点选择
+ - DOMAIN-SUFFIX,jtvnw.net,🚀 节点选择
+ - DOMAIN-KEYWORD,ttvnw,🚀 节点选择
+ - DOMAIN-SUFFIX,t.co,🚀 节点选择
+ - DOMAIN-SUFFIX,twimg.co,🚀 节点选择
+ - DOMAIN-SUFFIX,twimg.com,🚀 节点选择
+ - DOMAIN-SUFFIX,twimg.org,🚀 节点选择
+ - DOMAIN-SUFFIX,x.com,🚀 节点选择
+ - DOMAIN-SUFFIX,t.me,🚀 节点选择
+ - DOMAIN-SUFFIX,tdesktop.com,🚀 节点选择
+ - DOMAIN-SUFFIX,telegra.ph,🚀 节点选择
+ - DOMAIN-SUFFIX,telegram.me,🚀 节点选择
+ - DOMAIN-SUFFIX,telegram.org,🚀 节点选择
+ - DOMAIN-SUFFIX,telesco.pe,🚀 节点选择
+ - IP-CIDR,91.108.0.0/16,🚀 节点选择,no-resolve
+ - IP-CIDR,109.239.140.0/24,🚀 节点选择,no-resolve
+ - IP-CIDR,149.154.160.0/20,🚀 节点选择,no-resolve
+ - IP-CIDR6,2001:67c:4e8::/48,🚀 节点选择,no-resolve
+ - IP-CIDR6,2001:b28:f23d::/48,🚀 节点选择,no-resolve
+ - IP-CIDR6,2001:b28:f23f::/48,🚀 节点选择,no-resolve
+ - DOMAIN-SUFFIX,terabox.com,🚀 节点选择
+ - DOMAIN-SUFFIX,teraboxcdn.com,🚀 节点选择
+ - IP-CIDR,18.194.0.0/15,🚀 节点选择,no-resolve
+ - IP-CIDR,34.224.0.0/12,🚀 节点选择,no-resolve
+ - IP-CIDR,54.242.0.0/15,🚀 节点选择,no-resolve
+ - IP-CIDR,50.22.198.204/30,🚀 节点选择,no-resolve
+ - IP-CIDR,208.43.122.128/27,🚀 节点选择,no-resolve
+ - IP-CIDR,108.168.174.0/16,🚀 节点选择,no-resolve
+ - IP-CIDR,173.192.231.32/27,🚀 节点选择,no-resolve
+ - IP-CIDR,158.85.5.192/27,🚀 节点选择,no-resolve
+ - IP-CIDR,174.37.243.0/16,🚀 节点选择,no-resolve
+ - IP-CIDR,158.85.46.128/27,🚀 节点选择,no-resolve
+ - IP-CIDR,173.192.222.160/27,🚀 节点选择,no-resolve
+ - IP-CIDR,184.173.128.0/17,🚀 节点选择,no-resolve
+ - IP-CIDR,158.85.224.160/27,🚀 节点选择,no-resolve
+ - IP-CIDR,75.126.150.0/16,🚀 节点选择,no-resolve
+ - IP-CIDR,69.171.235.0/16,🚀 节点选择,no-resolve
+ - DOMAIN-SUFFIX,mediawiki.org,🚀 节点选择
+ - DOMAIN-SUFFIX,wikibooks.org,🚀 节点选择
+ - DOMAIN-SUFFIX,wikidata.org,🚀 节点选择
+ - DOMAIN-SUFFIX,wikileaks.org,🚀 节点选择
+ - DOMAIN-SUFFIX,wikimedia.org,🚀 节点选择
+ - DOMAIN-SUFFIX,wikinews.org,🚀 节点选择
+ - DOMAIN-SUFFIX,wikipedia.org,🚀 节点选择
+ - DOMAIN-SUFFIX,wikiquote.org,🚀 节点选择
+ - DOMAIN-SUFFIX,wikisource.org,🚀 节点选择
+ - DOMAIN-SUFFIX,wikiversity.org,🚀 节点选择
+ - DOMAIN-SUFFIX,wikivoyage.org,🚀 节点选择
+ - DOMAIN-SUFFIX,wiktionary.org,🚀 节点选择
+ - DOMAIN-SUFFIX,zoom.us,🚀 节点选择
+ - DOMAIN-SUFFIX,zoomgov.com,🚀 节点选择
+ - DOMAIN-SUFFIX,neulion.com,🚀 节点选择
+ - DOMAIN-SUFFIX,icntv.xyz,🚀 节点选择
+ - DOMAIN-SUFFIX,flzbcdn.xyz,🚀 节点选择
+ - DOMAIN-SUFFIX,ocnttv.com,🚀 节点选择
+ - DOMAIN-SUFFIX,vikacg.com,🚀 节点选择
+ - DOMAIN-SUFFIX,picjs.xyz,🚀 节点选择
  - DOMAIN-SUFFIX,13th.tech,🎯 全球直连
  - DOMAIN-SUFFIX,423down.com,🎯 全球直连
  - DOMAIN-SUFFIX,bokecc.com,🎯 全球直连
@@ -2589,5 +3590,213 @@ rules:
  - DOMAIN-SUFFIX,zhuihd.com,🎯 全球直连
  - DOMAIN-SUFFIX,cmbchina.com,🎯 全球直连
  - DOMAIN-SUFFIX,95516.com,🎯 全球直连
+ - IP-CIDR,8.128.0.0/10,🎯 全球直连,no-resolve
+ - IP-CIDR,8.209.32.0/22,🎯 全球直连,no-resolve
+ - IP-CIDR,8.209.40.0/21,🎯 全球直连,no-resolve
+ - IP-CIDR,8.209.48.0/20,🎯 全球直连,no-resolve
+ - IP-CIDR,8.210.0.0/16,🎯 全球直连,no-resolve
+ - IP-CIDR,8.211.64.0/18,🎯 全球直连,no-resolve
+ - IP-CIDR,8.211.128.0/20,🎯 全球直连,no-resolve
+ - IP-CIDR,8.211.144.0/21,🎯 全球直连,no-resolve
+ - IP-CIDR,8.211.152.0/22,🎯 全球直连,no-resolve
+ - IP-CIDR,8.211.208.0/20,🎯 全球直连,no-resolve
+ - IP-CIDR,8.211.224.0/19,🎯 全球直连,no-resolve
+ - IP-CIDR,8.212.0.0/14,🎯 全球直连,no-resolve
+ - IP-CIDR,8.216.0.0/13,🎯 全球直连,no-resolve
+ - IP-CIDR,14.1.112.0/22,🎯 全球直连,no-resolve
+ - IP-CIDR,45.112.212.0/22,🎯 全球直连,no-resolve
+ - IP-CIDR,47.52.0.0/16,🎯 全球直连,no-resolve
+ - IP-CIDR,47.56.0.0/15,🎯 全球直连,no-resolve
+ - IP-CIDR,47.75.0.0/16,🎯 全球直连,no-resolve
+ - IP-CIDR,47.89.0.0/18,🎯 全球直连,no-resolve
+ - IP-CIDR,47.89.64.0/24,🎯 全球直连,no-resolve
+ - IP-CIDR,47.89.82.0/23,🎯 全球直连,no-resolve
+ - IP-CIDR,47.89.91.0/24,🎯 全球直连,no-resolve
+ - IP-CIDR,47.89.100.0/23,🎯 全球直连,no-resolve
+ - IP-CIDR,47.90.0.0/17,🎯 全球直连,no-resolve
+ - IP-CIDR,47.91.128.0/17,🎯 全球直连,no-resolve
+ - IP-CIDR,47.92.0.0/14,🎯 全球直连,no-resolve
+ - IP-CIDR,47.240.0.0/16,🎯 全球直连,no-resolve
+ - IP-CIDR,47.242.0.0/15,🎯 全球直连,no-resolve
+ - IP-CIDR,47.244.0.0/16,🎯 全球直连,no-resolve
+ - IP-CIDR,47.246.5.0/24,🎯 全球直连,no-resolve
+ - IP-CIDR,47.246.16.0/24,🎯 全球直连,no-resolve
+ - IP-CIDR,47.246.60.0/23,🎯 全球直连,no-resolve
+ - IP-CIDR,47.246.65.0/24,🎯 全球直连,no-resolve
+ - IP-CIDR,59.82.0.0/20,🎯 全球直连,no-resolve
+ - IP-CIDR,59.82.240.0/21,🎯 全球直连,no-resolve
+ - IP-CIDR,59.82.248.0/22,🎯 全球直连,no-resolve
+ - IP-CIDR,103.52.76.0/22,🎯 全球直连,no-resolve
+ - IP-CIDR,103.206.40.0/22,🎯 全球直连,no-resolve
+ - IP-CIDR,110.76.21.0/24,🎯 全球直连,no-resolve
+ - IP-CIDR,110.76.23.0/24,🎯 全球直连,no-resolve
+ - IP-CIDR,112.125.0.0/17,🎯 全球直连,no-resolve
+ - IP-CIDR,116.251.79.0/24,🎯 全球直连,no-resolve
+ - IP-CIDR,116.251.80.0/22,🎯 全球直连,no-resolve
+ - IP-CIDR,116.251.84.0/24,🎯 全球直连,no-resolve
+ - IP-CIDR,116.251.88.0/22,🎯 全球直连,no-resolve
+ - IP-CIDR,116.251.93.0/24,🎯 全球直连,no-resolve
+ - IP-CIDR,116.251.94.0/23,🎯 全球直连,no-resolve
+ - IP-CIDR,116.251.102.0/23,🎯 全球直连,no-resolve
+ - IP-CIDR,116.251.104.0/21,🎯 全球直连,no-resolve
+ - IP-CIDR,116.251.112.0/21,🎯 全球直连,no-resolve
+ - IP-CIDR,116.251.124.0/22,🎯 全球直连,no-resolve
+ - IP-CIDR,119.38.208.0/20,🎯 全球直连,no-resolve
+ - IP-CIDR,119.38.224.0/20,🎯 全球直连,no-resolve
+ - IP-CIDR,119.42.224.0/20,🎯 全球直连,no-resolve
+ - IP-CIDR,140.205.1.0/24,🎯 全球直连,no-resolve
+ - IP-CIDR,140.205.122.0/24,🎯 全球直连,no-resolve
+ - IP-CIDR,149.129.64.0/18,🎯 全球直连,no-resolve
+ - IP-CIDR,163.181.32.0/22,🎯 全球直连,no-resolve
+ - IP-CIDR,163.181.40.0/24,🎯 全球直连,no-resolve
+ - IP-CIDR,170.33.0.0/22,🎯 全球直连,no-resolve
+ - IP-CIDR,198.11.141.0/24,🎯 全球直连,no-resolve
+ - IP-CIDR,198.11.184.0/21,🎯 全球直连,no-resolve
+ - IP-CIDR,205.204.104.0/23,🎯 全球直连,no-resolve
+ - IP-CIDR,205.204.117.0/24,🎯 全球直连,no-resolve
+ - IP-CIDR,205.204.122.0/23,🎯 全球直连,no-resolve
+ - IP-CIDR,205.204.124.0/22,🎯 全球直连,no-resolve
+ - IP-CIDR,45.40.192.0/19,🎯 全球直连,no-resolve
+ - IP-CIDR,49.51.56.0/22,🎯 全球直连,no-resolve
+ - IP-CIDR,49.51.60.0/23,🎯 全球直连,no-resolve
+ - IP-CIDR,49.51.110.0/23,🎯 全球直连,no-resolve
+ - IP-CIDR,49.51.112.0/20,🎯 全球直连,no-resolve
+ - IP-CIDR,62.234.0.0/16,🎯 全球直连,no-resolve
+ - IP-CIDR,94.191.0.0/17,🎯 全球直连,no-resolve
+ - IP-CIDR,103.7.28.0/22,🎯 全球直连,no-resolve
+ - IP-CIDR,109.244.0.0/16,🎯 全球直连,no-resolve
+ - IP-CIDR,111.30.128.0/21,🎯 全球直连,no-resolve
+ - IP-CIDR,111.30.136.0/24,🎯 全球直连,no-resolve
+ - IP-CIDR,111.30.139.0/24,🎯 全球直连,no-resolve
+ - IP-CIDR,111.30.140.0/23,🎯 全球直连,no-resolve
+ - IP-CIDR,115.159.0.0/16,🎯 全球直连,no-resolve
+ - IP-CIDR,119.28.0.0/18,🎯 全球直连,no-resolve
+ - IP-CIDR,119.28.64.0/19,🎯 全球直连,no-resolve
+ - IP-CIDR,119.28.124.0/23,🎯 全球直连,no-resolve
+ - IP-CIDR,119.28.128.0/20,🎯 全球直连,no-resolve
+ - IP-CIDR,119.28.164.0/22,🎯 全球直连,no-resolve
+ - IP-CIDR,119.28.168.0/21,🎯 全球直连,no-resolve
+ - IP-CIDR,119.28.176.0/20,🎯 全球直连,no-resolve
+ - IP-CIDR,119.28.192.0/19,🎯 全球直连,no-resolve
+ - IP-CIDR,119.28.224.0/21,🎯 全球直连,no-resolve
+ - IP-CIDR,119.29.0.0/16,🎯 全球直连,no-resolve
+ - IP-CIDR,121.51.0.0/16,🎯 全球直连,no-resolve
+ - IP-CIDR,129.28.0.0/16,🎯 全球直连,no-resolve
+ - IP-CIDR,129.204.0.0/16,🎯 全球直连,no-resolve
+ - IP-CIDR,129.211.0.0/16,🎯 全球直连,no-resolve
+ - IP-CIDR,132.232.0.0/16,🎯 全球直连,no-resolve
+ - IP-CIDR,134.175.0.0/16,🎯 全球直连,no-resolve
+ - IP-CIDR,146.56.192.0/18,🎯 全球直连,no-resolve
+ - IP-CIDR,150.109.32.0/19,🎯 全球直连,no-resolve
+ - IP-CIDR,150.109.64.0/20,🎯 全球直连,no-resolve
+ - IP-CIDR,150.109.96.0/19,🎯 全球直连,no-resolve
+ - IP-CIDR,152.136.0.0/16,🎯 全球直连,no-resolve
+ - IP-CIDR,162.14.0.0/16,🎯 全球直连,no-resolve
+ - IP-CIDR,182.254.0.0/16,🎯 全球直连,no-resolve
+ - IP-CIDR,188.131.128.0/17,🎯 全球直连,no-resolve
+ - IP-CIDR,203.195.128.0/17,🎯 全球直连,no-resolve
+ - IP-CIDR,203.205.128.0/20,🎯 全球直连,no-resolve
+ - IP-CIDR,203.205.144.0/21,🎯 全球直连,no-resolve
+ - IP-CIDR,203.205.158.0/24,🎯 全球直连,no-resolve
+ - IP-CIDR,203.205.180.0/22,🎯 全球直连,no-resolve
+ - IP-CIDR,203.205.208.0/22,🎯 全球直连,no-resolve
+ - IP-CIDR,203.205.212.0/23,🎯 全球直连,no-resolve
+ - IP-CIDR,203.205.218.0/23,🎯 全球直连,no-resolve
+ - IP-CIDR,203.205.220.0/22,🎯 全球直连,no-resolve
+ - IP-CIDR,203.205.248.0/21,🎯 全球直连,no-resolve
+ - IP-CIDR,212.64.0.0/17,🎯 全球直连,no-resolve
+ - IP-CIDR,212.129.128.0/17,🎯 全球直连,no-resolve
+ - IP-CIDR,45.113.194.0/23,🎯 全球直连,no-resolve
+ - IP-CIDR,63.243.252.0/24,🎯 全球直连,no-resolve
+ - IP-CIDR,103.235.44.0/22,🎯 全球直连,no-resolve
+ - IP-CIDR,106.12.0.0/15,🎯 全球直连,no-resolve
+ - IP-CIDR,114.28.224.0/20,🎯 全球直连,no-resolve
+ - IP-CIDR,180.76.0.0/16,🎯 全球直连,no-resolve
+ - IP-CIDR,182.61.0.0/16,🎯 全球直连,no-resolve
+ - IP-CIDR,185.10.105.0/24,🎯 全球直连,no-resolve
+ - IP-CIDR,202.46.48.0/20,🎯 全球直连,no-resolve
+ - IP-CIDR,203.90.238.0/24,🎯 全球直连,no-resolve
+ - IP-CIDR,43.254.0.0/22,🎯 全球直连,no-resolve
+ - IP-CIDR,45.249.212.0/22,🎯 全球直连,no-resolve
+ - IP-CIDR,49.4.0.0/17,🎯 全球直连,no-resolve
+ - IP-CIDR,103.31.200.0/22,🎯 全球直连,no-resolve
+ - IP-CIDR,103.218.216.0/22,🎯 全球直连,no-resolve
+ - IP-CIDR,114.115.128.0/17,🎯 全球直连,no-resolve
+ - IP-CIDR,114.116.0.0/16,🎯 全球直连,no-resolve
+ - IP-CIDR,116.63.128.0/18,🎯 全球直连,no-resolve
+ - IP-CIDR,116.66.184.0/22,🎯 全球直连,no-resolve
+ - IP-CIDR,117.78.0.0/18,🎯 全球直连,no-resolve
+ - IP-CIDR,119.3.0.0/16,🎯 全球直连,no-resolve
+ - IP-CIDR,119.8.32.0/19,🎯 全球直连,no-resolve
+ - IP-CIDR,121.36.0.0/17,🎯 全球直连,no-resolve
+ - IP-CIDR,121.36.128.0/18,🎯 全球直连,no-resolve
+ - IP-CIDR,121.37.0.0/17,🎯 全球直连,no-resolve
+ - IP-CIDR,122.112.128.0/17,🎯 全球直连,no-resolve
+ - IP-CIDR,139.9.0.0/18,🎯 全球直连,no-resolve
+ - IP-CIDR,139.9.64.0/19,🎯 全球直连,no-resolve
+ - IP-CIDR,139.9.100.0/22,🎯 全球直连,no-resolve
+ - IP-CIDR,139.9.104.0/21,🎯 全球直连,no-resolve
+ - IP-CIDR,139.9.112.0/20,🎯 全球直连,no-resolve
+ - IP-CIDR,139.9.128.0/18,🎯 全球直连,no-resolve
+ - IP-CIDR,139.9.192.0/19,🎯 全球直连,no-resolve
+ - IP-CIDR,139.9.224.0/20,🎯 全球直连,no-resolve
+ - IP-CIDR,139.9.240.0/21,🎯 全球直连,no-resolve
+ - IP-CIDR,139.9.248.0/22,🎯 全球直连,no-resolve
+ - IP-CIDR,139.159.128.0/19,🎯 全球直连,no-resolve
+ - IP-CIDR,139.159.160.0/22,🎯 全球直连,no-resolve
+ - IP-CIDR,139.159.164.0/23,🎯 全球直连,no-resolve
+ - IP-CIDR,139.159.168.0/21,🎯 全球直连,no-resolve
+ - IP-CIDR,139.159.176.0/20,🎯 全球直连,no-resolve
+ - IP-CIDR,139.159.192.0/18,🎯 全球直连,no-resolve
+ - IP-CIDR,159.138.0.0/18,🎯 全球直连,no-resolve
+ - IP-CIDR,159.138.64.0/21,🎯 全球直连,no-resolve
+ - IP-CIDR,159.138.79.0/24,🎯 全球直连,no-resolve
+ - IP-CIDR,159.138.80.0/20,🎯 全球直连,no-resolve
+ - IP-CIDR,159.138.96.0/20,🎯 全球直连,no-resolve
+ - IP-CIDR,159.138.112.0/21,🎯 全球直连,no-resolve
+ - IP-CIDR,159.138.125.0/24,🎯 全球直连,no-resolve
+ - IP-CIDR,159.138.128.0/19,🎯 全球直连,no-resolve
+ - IP-CIDR,42.186.0.0/16,🎯 全球直连,no-resolve
+ - IP-CIDR,45.127.128.0/22,🎯 全球直连,no-resolve
+ - IP-CIDR,45.195.24.0/24,🎯 全球直连,no-resolve
+ - IP-CIDR,45.253.132.0/22,🎯 全球直连,no-resolve
+ - IP-CIDR,45.253.240.0/22,🎯 全球直连,no-resolve
+ - IP-CIDR,45.254.48.0/23,🎯 全球直连,no-resolve
+ - IP-CIDR,59.111.0.0/20,🎯 全球直连,no-resolve
+ - IP-CIDR,59.111.128.0/17,🎯 全球直连,no-resolve
+ - IP-CIDR,103.71.120.0/21,🎯 全球直连,no-resolve
+ - IP-CIDR,103.71.128.0/22,🎯 全球直连,no-resolve
+ - IP-CIDR,103.71.196.0/22,🎯 全球直连,no-resolve
+ - IP-CIDR,103.71.200.0/22,🎯 全球直连,no-resolve
+ - IP-CIDR,103.72.12.0/22,🎯 全球直连,no-resolve
+ - IP-CIDR,103.72.18.0/23,🎯 全球直连,no-resolve
+ - IP-CIDR,103.72.24.0/22,🎯 全球直连,no-resolve
+ - IP-CIDR,103.72.28.0/23,🎯 全球直连,no-resolve
+ - IP-CIDR,103.72.38.0/23,🎯 全球直连,no-resolve
+ - IP-CIDR,103.72.40.0/23,🎯 全球直连,no-resolve
+ - IP-CIDR,103.72.44.0/22,🎯 全球直连,no-resolve
+ - IP-CIDR,103.72.48.0/21,🎯 全球直连,no-resolve
+ - IP-CIDR,103.72.128.0/21,🎯 全球直连,no-resolve
+ - IP-CIDR,103.74.24.0/21,🎯 全球直连,no-resolve
+ - IP-CIDR,103.74.48.0/22,🎯 全球直连,no-resolve
+ - IP-CIDR,103.129.252.0/22,🎯 全球直连,no-resolve
+ - IP-CIDR,103.131.252.0/22,🎯 全球直连,no-resolve
+ - IP-CIDR,103.135.240.0/22,🎯 全球直连,no-resolve
+ - IP-CIDR,103.196.64.0/22,🎯 全球直连,no-resolve
+ - IP-CIDR,106.2.32.0/19,🎯 全球直连,no-resolve
+ - IP-CIDR,106.2.64.0/18,🎯 全球直连,no-resolve
+ - IP-CIDR,114.113.196.0/22,🎯 全球直连,no-resolve
+ - IP-CIDR,114.113.200.0/22,🎯 全球直连,no-resolve
+ - IP-CIDR,115.236.112.0/20,🎯 全球直连,no-resolve
+ - IP-CIDR,115.238.76.0/22,🎯 全球直连,no-resolve
+ - IP-CIDR,123.58.160.0/19,🎯 全球直连,no-resolve
+ - IP-CIDR,223.252.192.0/19,🎯 全球直连,no-resolve
+ - IP-CIDR,101.198.128.0/18,🎯 全球直连,no-resolve
+ - IP-CIDR,101.198.192.0/24,🎯 全球直连,no-resolve
+ - IP-CIDR,101.198.194.0/23,🎯 全球直连,no-resolve
+ - IP-CIDR,101.198.196.0/22,🎯 全球直连,no-resolve
+ - IP-CIDR,101.198.200.0/21,🎯 全球直连,no-resolve
+ - IP-CIDR,101.198.208.0/20,🎯 全球直连,no-resolve
+ - IP-CIDR,101.199.196.0/22,🎯 全球直连,no-resolve
  - GEOIP,CN,🎯 全球直连
  - MATCH,🐟 漏网之鱼
