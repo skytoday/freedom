@@ -5,219 +5,231 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 香港 阿里云, server: node3.ourfast.asia, port: 443, type: vmess, uuid: fb9ecac7-ec81-4ffb-8e1a-e9f1e7d4539b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: 香港 电讯盈科有限公司, server: 983d301d-sv2sg0-t802lu-1p9qc.hk.p5pv.com, port: 80, type: vmess, uuid: 37e9a0f8-8ade-11ee-b03a-f23c913c8d2b, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: broadcastlv.chat.bilibili.com}}, udp: true}
-  - {name: 美国 加利福尼亚州圣克拉拉阿里云, server: node4.ourfast.asia, port: 443, type: vmess, uuid: fb9ecac7-ec81-4ffb-8e1a-e9f1e7d4539b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: 香港 电讯盈科有限公司 2, server: baeb9e1b-sv6hs0-svewl8-xu74.hk.p5pv.com, port: 80, type: vmess, uuid: 715a2574-9c25-11eb-8673-f23c9164ca5d, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: broadcastlv.chat.bilibili.com}}, udp: true}
-  - {name: 香港 电讯盈科有限公司 3, server: 42deac02-sv0xs0-szxk6d-1mhdk.hk.p5pv.com, port: 80, type: vmess, uuid: a6a49744-ed60-11ed-8347-f23c9164ca5d, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 42deac02-sv0xs0-szxk6d-1mhdk.hk.p5pv.com}}, udp: true}
-  - {name: 广东省广州市 移动, server: 120.232.153.63, port: 37805, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 香港 电讯盈科有限公司 4, server: 7c8117a5-sv2sg0-sw1h9t-17czn.hk.p5pv.com, port: 80, type: vmess, uuid: 392ea58a-f77f-11ef-be86-f23c9164ca5d, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 7c8117a5-sv2sg0-sw1h9t-17czn.hk.p5pv.com}}, udp: true}
-  - {name: 吉林省 移动(全省通用), server: v5.heduian.link, port: 30805, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /oooo, headers: {Host: v5.heduian.link}}, udp: true}
-  - {name: 香港 电讯盈科有限公司 5, server: 53c6690b-sv2sg0-sz3ckv-19esv.hk.p5pv.com, port: 80, type: vmess, uuid: 86735fe4-967a-11eb-86a4-f23c913c8d2b, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: broadcastlv.chat.bilibili.com}}, udp: true}
-  - {name: 香港 电讯盈科有限公司 6, server: e4fac854-sum4g0-sx1cxx-1tfjk.hk.p5pv.com, port: 80, type: vmess, uuid: 49396d98-f4b4-11ef-8c3f-f23c913c8d2b, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: broadcastlv.chat.bilibili.com}}, udp: true}
-  - {name: 香港 电讯盈科有限公司 7, server: 3712d914-sv2sg0-t1jamc-1fvdh.hk.p5pv.com, port: 80, type: vmess, uuid: 9e1ddc04-073b-11ed-bd7c-f23c913c8d2b, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: broadcastlv.chat.bilibili.com}}, udp: true}
-  - {name: 广东省梅州市 移动, server: 183.237.84.53, port: 55002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美国 CloudFlare节点, server: cloudgetservice.mcloudservice.site, port: 443, type: vmess, uuid: 96e44a22-4f5c-48f9-99d9-f2c1985dd5b9, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /linkvkws, headers: {Host: Usa-Vp-192.blazEcloudMAin.SitE}}, udp: true}
-  - {name: 香港 电讯盈科有限公司 8, server: 67651861-sv2sg0-sx16xo-1j3zm.hk.p5pv.com, port: 80, type: vmess, uuid: 6ce63b80-8b5b-11ef-b635-f23c9164ca5d, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, servername: broadcastlv.chat.bilibili.com, network: ws, ws-opts: {path: /, headers: {Host: 67651861-sv2sg0-sx16xo-1j3zm.hk.p5pv.com}}, udp: true}
-  - {name: 香港 电讯盈科有限公司 9, server: f73aa7dc-sv0xs0-t7uztx-1q41p.hk.p5pv.com, port: 80, type: vmess, uuid: 3cc92f96-9f36-11ee-9144-f23c9164ca5d, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: broadcastlv.chat.bilibili.com}}, udp: true}
-  - {name: 香港 电讯盈科有限公司 10, server: 1ee2f85b-sv2sg0-t2ghw9-1pf7n.hk.p5pv.com, port: 80, type: vmess, uuid: e542ec26-b786-11ee-9a75-f23c91cfbbc9, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: broadcastlv.chat.bilibili.com}}, udp: true}
-  - {name: 香港 电讯盈科有限公司 11, server: 691232a1-sv6hs0-sx8y86-uvgv.hk.p5pv.com, port: 80, type: vmess, uuid: ee67070a-ceb2-11ed-bb7d-f23c913c8d2b, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, servername: broadcastlv.chat.bilibili.com, network: ws, ws-opts: {path: /, headers: {Host: 691232a1-sv6hs0-sx8y86-uvgv.hk.p5pv.com}}, udp: true}
-  - {name: 俄罗斯 V2CROSS.COM, server: 92.243.74.180, port: 8443, type: trojan, password: Aimer, sni: tyep.esslh.filegear-sg.me, skip-cert-verify: true, udp: true}
-  - {name: 香港 电讯盈科有限公司 12, server: dfb89bac-suk9s0-t234dm-eso8.hk.p5pv.com, port: 80, type: vmess, uuid: 3c461e2c-9d13-11ef-8563-f23c913c8d2b, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: broadcastlv.chat.bilibili.com}}, udp: true}
-  - {name: 俄罗斯 V2CROSS.COM 2, server: 212.192.31.173, port: 2287, type: ss, cipher: chacha20-ietf-poly1305, password: ziWP0A1dSz98CcPKqpOSeC, udp: true}
-  - {name: 香港 电讯盈科有限公司 13, server: da24d494-sv2sg0-t7wkq3-1ls9z.hk.p5pv.com, port: 80, type: vmess, uuid: cf5d49c8-7def-11ed-a8bf-f23c91cfbbc9, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: broadcastlv.chat.bilibili.com}}, udp: true}
-  - {name: 香港 电讯盈科有限公司 14, server: c62b5b59-sv2sg0-sx0ey8-1b8u2.hk.p5pv.com, port: 80, type: vmess, uuid: 908111a6-f96b-11ed-9264-f23c913c8d2b, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: broadcastlv.chat.bilibili.com}}, udp: true}
-  - {name: 广东省广州市 移动 2, server: 183.236.51.38, port: 41291, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美国 CloudFlare节点 2, server: 104.17.93.66, port: 80, type: vmess, uuid: 0ad4e581-231b-4676-ad75-d8d2db103795, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /s15.html, headers: {Host: 861917686588512025050915051233013.s15.chibaba.filegear-sg.me}}, udp: true}
-  - {name: 美国 CloudFlare节点 3, server: 172.67.91.182, port: 80, type: vmess, uuid: e7170564-e148-4ebf-be03-8837ee6a3825, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /s15.html, headers: {Host: 982636720292752025050919020768103.s15.chibaba.filegear-sg.me}}, udp: true}
-  - {name: 江苏省 移动, server: chiyu.myfczy169.top, port: 54016, type: ss, cipher: chacha20-ietf-poly1305, password: 887f01da-5b52-4dff-a80f-efe3380ac35f, udp: true}
-  - {name: 香港 电讯盈科有限公司 15, server: d77542fa-sv2sg0-t5cryd-4w8.hk.p5pv.com, port: 80, type: vmess, uuid: ba7a37e3-033a-e1ab-06f6-9027aa4630f5, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: broadcastlv.chat.bilibili.com}}, udp: true}
-  - {name: 香港 电讯盈科有限公司 16, server: 9f243dbd-sv2sg0-sw7il4-uzpp.hk.p5pv.com, port: 80, type: vmess, uuid: bced417c-8328-11ef-b3af-f23c913c8d2b, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: broadcastlv.chat.bilibili.com}}, udp: true}
-  - {name: 香港 电讯盈科有限公司 17, server: 3f4d5c0d-sv2sg0-szxk6d-1mhdk.hk.p5pv.com, port: 80, type: vmess, uuid: a6a49744-ed60-11ed-8347-f23c9164ca5d, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: broadcastlv.chat.bilibili.com}}, udp: true}
-  - {name: 香港 电讯盈科有限公司 18, server: 13fb1c14-sv2sg0-sw0aec-1t3oz.hk.p5pv.com, port: 80, type: vmess, uuid: b3370cdc-c26e-11ef-bd97-f23c9164ca5d, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: broadcastlv.chat.bilibili.com}}, udp: true}
-  - {name: 广东省广州市 移动 3, server: 120.232.153.41, port: 44491, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: 广东省中山市 移动, server: 120.198.44.126, port: 47883, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 香港 电讯盈科有限公司 19, server: 4a8c875a-sv2sg0-sxi4nd-1o6fm.hk.p5pv.com, port: 80, type: vmess, uuid: e03df6fc-97e8-11ee-be7f-f23c9164ca5d, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, servername: broadcastlv.chat.bilibili.com, network: ws, ws-opts: {path: /, headers: {Host: 4a8c875a-sv2sg0-sxi4nd-1o6fm.hk.p5pv.com}}, udp: true}
-  - {name: 美国 CloudFlare节点 4, server: auth0.openai.com, port: 443, type: vmess, uuid: e537f2f5-2a0c-4f59-92c9-832ca6433bf3, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /irvideo.cfd/linkws, headers: {Host: admin.kasrax.ir}}, udp: true}
-  - {name: 香港 电讯盈科有限公司 20, server: 56ef1baf-sv6hs0-t09t13-z7a1.hk.p5pv.com, port: 80, type: vmess, uuid: 3bd247a8-993e-11ec-a8bf-f23c91cfbbc9, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, servername: broadcastlv.chat.bilibili.com, network: ws, ws-opts: {path: /, headers: {Host: 56ef1baf-sv6hs0-t09t13-z7a1.hk.p5pv.com}}, udp: true}
-  - {name: 俄罗斯 莫斯科JustHost, server: 45.147.201.231, port: 20027, type: vmess, uuid: 85d3848b-90dc-40a8-a90d-fc68877d27a4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: 吉林省 移动(全省通用) 2, server: v32.heduian.link, port: 30832, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /oooo, headers: {Host: baidu.com}}, udp: true}
-  - {name: 香港 电讯盈科有限公司 21, server: be70436e-sv2sg0-tdzlqm-1h1y5.hk.p5pv.com, port: 80, type: vmess, uuid: ef332c4a-a21b-11ed-9765-f23c9164ca5d, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: broadcastlv.chat.bilibili.com}}, udp: true}
-  - {name: 香港 电讯盈科有限公司 22, server: a4e9c5f4-sv0xs0-sv37gm-81nv.hk.p5pv.com, port: 80, type: vmess, uuid: 47e91fb6-25b8-df52-bc18-3cdc8548192f, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: broadcastlv.chat.bilibili.com}}, udp: true}
-  - {name: 香港 电讯盈科有限公司 23, server: d2ad3545-sv0xs0-t7bo2t-1psmw.hk.p5pv.com, port: 80, type: vmess, uuid: 42bb6d36-97c7-11ee-be7f-f23c9164ca5d, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: broadcastlv.chat.bilibili.com}}, udp: true}
-  - {name: 香港 电讯盈科有限公司 24, server: d6e3d96a-sv6hs0-sw5wi7-ufc0.hk.p5pv.com, port: 80, type: vmess, uuid: 22308988-8548-11ea-a22e-f23c91cfbbc9, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: broadcastlv.chat.bilibili.com}}, udp: true}
-  - {name: 香港 电讯盈科有限公司 25, server: ac759499-sv2sg0-sw26q2-php4.hk.p5pv.com, port: 80, type: vmess, uuid: c648ecc0-838a-11ed-bd81-f23c913c8d2b, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: broadcastlv.chat.bilibili.com}}, udp: true}
-  - {name: 香港 电讯盈科有限公司 26, server: 12d6e33d-sv2sg0-t32oyt-1k9hc.hk.p5pv.com, port: 80, type: vmess, uuid: 1c7eef0a-56de-11ee-a993-f23c9164ca5d, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: broadcastlv.chat.bilibili.com}}, udp: true}
-  - {name: 香港 电讯盈科有限公司 27, server: 3278b52d-sv2sg0-sw0kma-1tauc.hk.p5pv.com, port: 80, type: vmess, uuid: 36b8113e-e455-11ef-90fa-f23c91cfbbc9, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: broadcastlv.chat.bilibili.com}}, udp: true}
-  - {name: 香港 电讯盈科有限公司 28, server: 0dee4e4a-sv2sg0-t0c4yu-1qc0q.hk.p5pv.com, port: 80, type: vmess, uuid: 82fc0c0a-bc59-11ee-a737-f23c9164ca5d, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: broadcastlv.chat.bilibili.com}}, udp: true}
-  - {name: 香港 电讯盈科有限公司 29, server: 510ddbe7-sv2sg0-t7x08i-1i87l.hk.p5pv.com, port: 80, type: vmess, uuid: 40d572ec-7f67-11ed-bf1f-f23c913c8d2b, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: broadcastlv.chat.bilibili.com}}, udp: true}
-  - {name: 法国 V2CROSS.COM, server: xc132.meiziba5566.com, port: 443, type: vmess, uuid: 28b33c85-3e14-4323-ed50-d6e4d4d773a8, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /28b33c85, headers: {Host: xc132.meiziba5566.com}}, udp: true}
-  - {name: 香港 电讯盈科有限公司 30, server: 2c655502-sv0xs0-t4qa9y-g43g.hk.p5pv.com, port: 80, type: vmess, uuid: 6ddb6a68-d5f5-ca30-3943-cf0c9876d50c, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: broadcastlv.chat.bilibili.com}}, udp: true}
+  - {name: 香港 电讯盈科有限公司, server: 57a489e6-sv6hs0-t9azkv-17xn0.hk.p5pv.com, port: 80, type: vmess, uuid: 4faf123a-572a-11eb-8684-f23c913c8d2b, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 57a489e6-sv6hs0-t9azkv-17xn0.hk.p5pv.com}}, udp: true}
+  - {name: 香港 电讯盈科有限公司 2, server: 055413e9-sucv40-texsud-1l6ym.hk.p5pv.com, port: 80, type: vmess, uuid: b72009aa-ed88-11ed-92a4-f23c91cfbbc9, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: broadcastlv.chat.bilibili.com}}, udp: true}
+  - {name: 香港 电讯盈科有限公司 3, server: d5542df0-sv0xs0-sw2c3o-1thts.hk.p5pv.com, port: 80, type: vmess, uuid: cb96c846-fd6d-11ef-a910-f23c9164ca5d, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: broadcastlv.chat.bilibili.com}}, udp: true}
+  - {name: 法国 V2CROSS.COM, server: xc132.meiziba5566.com, port: 443, type: vmess, uuid: 28b33c85-3e14-4323-ed50-d6e4d4d773a8, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: xc132.meiziba5566.com, network: ws, ws-opts: {path: /28b33c85, headers: {Host: xc132.meiziba5566.com}}, udp: true}
+  - {name: 香港 电讯盈科有限公司 4, server: be70436e-sv2sg0-tdzlqm-1h1y5.hk.p5pv.com, port: 80, type: vmess, uuid: ef332c4a-a21b-11ed-9765-f23c9164ca5d, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: broadcastlv.chat.bilibili.com}}, udp: true}
+  - {name: 香港 电讯盈科有限公司 5, server: 2c655502-sv0xs0-t4qa9y-g43g.hk.p5pv.com, port: 80, type: vmess, uuid: 6ddb6a68-d5f5-ca30-3943-cf0c9876d50c, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: broadcastlv.chat.bilibili.com}}, udp: true}
+  - {name: 美国 CloudFlare节点, server: 172.67.136.233, port: 443, type: vmess, uuid: 3f638f34-8dba-4186-bc43-2716a7ddd4be, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /link, headers: {Host: az05.beyondy.cfd}}, udp: true}
+  - {name: 香港 电讯盈科有限公司 6, server: 53029e52-sv6hs0-swwhoz-1me9w.hk.p5pv.com, port: 80, type: vmess, uuid: 408e7148-df67-11ed-8e13-f23c91cfbbc9, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: broadcastlv.chat.bilibili.com}}, udp: true}
+  - {name: 美国 CloudFlare节点 2, server: 104.21.16.1, port: 80, type: vmess, uuid: 2f38f848-a899-4c87-9807-207a41615e3c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/rongseven?ed=2048", headers: {Host: us.freeyyds.dpdns.org}}, udp: true}
+  - {name: 香港 电讯盈科有限公司 7, server: 4a8c875a-sv2sg0-sxi4nd-1o6fm.hk.p5pv.com, port: 80, type: vmess, uuid: e03df6fc-97e8-11ee-be7f-f23c9164ca5d, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: broadcastlv.chat.bilibili.com}}, udp: true}
+  - {name: 香港 电讯盈科有限公司 8, server: 23ccfab1-sv2sg0-t6ebrn-1f8zp.hk.p5pv.com, port: 80, type: vmess, uuid: dd321b8e-a890-11ed-a8bf-f23c91cfbbc9, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: broadcastlv.chat.bilibili.com}}, udp: true}
+  - {name: 美国 CloudFlare节点 3, server: 104.21.71.131, port: 443, type: trojan, password: 4069c35c-54ea-48ee-9ffa-05d9a0302043, sni: m5rt.999854.xyz, skip-cert-verify: true, udp: true}
+  - {name: 香港 电讯盈科有限公司 9, server: d2c9584b-sv2sg0-sx8o7m-89x.hk.p5pv.com, port: 80, type: vmess, uuid: d507f0a8-049d-11f0-90e2-f23c913c8d2b, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: broadcastlv.chat.bilibili.com}}, udp: true}
+  - {name: 美国 CloudFlare节点 4, server: 104.21.112.1, port: 443, type: trojan, password: ad4a124c-12fb-4467-9ad0-dc6d9b509ac0, sni: 7bhui.191262.xyz, skip-cert-verify: true, udp: true}
+  - {name: 美国 CloudFlare节点 5, server: 104.21.48.1, port: 80, type: vmess, uuid: 2f38f848-a899-4c87-9807-207a41615e3c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/rongseven?ed=2048", headers: {Host: us.freeyyds.dpdns.org}}, udp: true}
+  - {name: 香港 电讯盈科有限公司 10, server: 7b7cbb1e-sv2sg0-svvk7h-1tgdw.hk.p5pv.com, port: 80, type: vmess, uuid: a19397b8-f7fa-11ef-836a-f23c913c8d2b, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, servername: broadcastlv.chat.bilibili.com, network: ws, ws-opts: {path: /, headers: {Host: 7b7cbb1e-sv2sg0-svvk7h-1tgdw.hk.p5pv.com}}, udp: true}
+  - {name: 美国 CloudFlare节点 6, server: 172.67.205.157, port: 2083, type: vmess, uuid: a29e2386-7445-424d-9be1-501f2b2b4d4e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: rak1m2.986986.shop}}, udp: true}
   - {name: 香港 数掘科技gfvps.cn数据中心, server: 27.50.49.136, port: 443, type: trojan, password: Aimer, sni: epccj.ambercc.filegear-sg.me, skip-cert-verify: true, udp: true}
+  - {name: 美国 CloudFlare节点 7, server: www.wn03.cc, port: 80, type: vmess, uuid: 2f38f848-a899-4c87-9807-207a41615e3c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: us.freeyyds.dpdns.org}}, udp: true}
+  - {name: 香港 电讯盈科有限公司 11, server: 3712d914-sv2sg0-t1jamc-1fvdh.hk.p5pv.com, port: 80, type: vmess, uuid: 9e1ddc04-073b-11ed-bd7c-f23c913c8d2b, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: broadcastlv.chat.bilibili.com}}, udp: true}
+  - {name: 香港 电讯盈科有限公司 12, server: eaf70f66-sv0xs0-t8ivpf-z65w.hk.p5pv.com, port: 80, type: vmess, uuid: a2313fba-74a6-11ed-a8bf-f23c91cfbbc9, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: broadcastlv.chat.bilibili.com}}, udp: true}
+  - {name: 广东省广州市 移动, server: cdn-p1-hk.weibo-dns.com, port: 11501, type: ss, cipher: aes-256-gcm, password: 423cf642-6528-410c-b542-2aae04113d33, udp: true}
+  - {name: 香港 电讯盈科有限公司 13, server: af4e4239-sv2sg0-svpmdc-nx3b.hk.p5pv.com, port: 80, type: vmess, uuid: 32315324-cf6b-11ed-979b-f23c9164ca5d, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, servername: broadcastlv.chat.bilibili.com, network: ws, ws-opts: {path: /, headers: {Host: af4e4239-sv2sg0-svpmdc-nx3b.hk.p5pv.com}}, udp: true}
+  - {name: 俄罗斯 莫斯科JustHost, server: 45.147.201.231, port: 20027, type: vmess, uuid: 2c766927-8bff-4672-89a1-e4a8b63e038c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 香港 电讯盈科有限公司 14, server: 5c4c4152-sv2sg0-sy8f4e-ukt4.hk.p5pv.com, port: 80, type: vmess, uuid: 6589f6d0-e192-11ec-bd7c-f23c913c8d2b, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: broadcastlv.chat.bilibili.com}}, udp: true}
+  - {name: 山东省 电信, server: 144.255.36.254, port: 14100, type: vmess, uuid: f6866b0b-f946-4a03-8df0-c7e0016b55ad, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国 CloudFlare节点 8, server: 172.67.91.182, port: 80, type: vmess, uuid: e7170564-e148-4ebf-be03-8837ee6a3825, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /s15.html, headers: {Host: 982636720292752025050919020768103.s15.chibaba.filegear-sg.me}}, udp: true}
+  - {name: 香港 电讯盈科有限公司 15, server: d77542fa-sv2sg0-t5cryd-4w8.hk.p5pv.com, port: 80, type: vmess, uuid: ba7a37e3-033a-e1ab-06f6-9027aa4630f5, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: broadcastlv.chat.bilibili.com}}, udp: true}
+  - {name: 广东省广州市 移动 2, server: 183.236.51.38, port: 41291, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国 CloudFlare节点 9, server: 104.21.64.1, port: 80, type: vmess, uuid: 2f38f848-a899-4c87-9807-207a41615e3c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/rongseven?ed=2048", headers: {Host: us.freeyyds.dpdns.org}}, udp: true}
+  - {name: 香港 电讯盈科有限公司 16, server: 3417ad6c-sv2sg0-te1s1a-1i55g.hk.p5pv.com, port: 80, type: vmess, uuid: d1d13cd2-329f-11ed-bb74-f23c9164ca5d, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: broadcastlv.chat.bilibili.com}}, udp: true}
+  - {name: 俄罗斯 V2CROSS.COM, server: 92.243.74.180, port: 8443, type: trojan, password: Aimer, sni: tyep.esslh.filegear-sg.me, skip-cert-verify: true, udp: true}
+  - {name: 香港 电讯盈科有限公司 17, server: 4fdb9910-sv0xs0-t2p691-1s4hc.hk.p5pv.com, port: 80, type: vmess, uuid: aafedc64-9c23-11ef-a79f-f23c91cfbbc9, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: broadcastlv.chat.bilibili.com}}, udp: true}
+  - {name: 北京市 Amazon数据中心, server: tk.hzlt.tkddns.xyz, port: 22642, type: vmess, uuid: 98e96c9f-4bb3-39d4-9a2c-fac04257f7c7, alterId: 2, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: zxjp-b.tkong.cc}}, udp: true}
+  - {name: 香港 电讯盈科有限公司 18, server: da24d494-sv2sg0-t7wkq3-1ls9z.hk.p5pv.com, port: 80, type: vmess, uuid: cf5d49c8-7def-11ed-a8bf-f23c91cfbbc9, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: broadcastlv.chat.bilibili.com}}, udp: true}
+  - {name: 香港 电讯盈科有限公司 19, server: c251f6b5-sv2sg0-swjbgr-1kcpe.hk.p5pv.com, port: 80, type: vmess, uuid: 3f514ea2-4662-11ed-a8bf-f23c91cfbbc9, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: broadcastlv.chat.bilibili.com}}, udp: true}
+  - {name: 香港 电讯盈科有限公司 20, server: 2df30408-sv2sg0-sv3jcr-1itli.hk.p5pv.com, port: 80, type: vmess, uuid: 4088a148-dbec-11ec-bd7c-f23c913c8d2b, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: broadcastlv.chat.bilibili.com}}, udp: true}
+  - {name: 广东省广州市 移动 3, server: 120.232.153.63, port: 37805, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 香港 电讯盈科有限公司 21, server: 58a3879a-sv2sg0-sywxsy-e54r.hk.p5pv.com, port: 80, type: vmess, uuid: c4f3a1ca-8d10-11eb-a8bf-f23c91cfbbc9, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: broadcastlv.chat.bilibili.com}}, udp: true}
+  - {name: 香港 电讯盈科有限公司 22, server: c753f2d2-sv2sg0-t83gk8-1swd2.hk.p5pv.com, port: 80, type: vmess, uuid: b30b00e8-ec11-11ef-b306-f23c9164ca5d, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: broadcastlv.chat.bilibili.com}}, udp: true}
+  - {name: 俄罗斯 莫斯科JustHost 2, server: 45.147.201.231, port: 22037, type: vmess, uuid: 6ea743bb-61f0-4e93-b1a2-8326e8c486a0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 香港 电讯盈科有限公司 23, server: 42c138d5-sv2sg0-svlime-j22e.hk.p5pv.com, port: 80, type: vmess, uuid: d189a7ec-f038-11ef-bb64-f23c913c8d2b, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: broadcastlv.chat.bilibili.com}}, udp: true}
+  - {name: 美国 CloudFlare节点 10, server: 172.67.220.93, port: 443, type: trojan, password: 9e7caa3b-ca9c-40ba-9ea0-f0c992359239, sni: m2rrrty.777219.xyz, skip-cert-verify: true, udp: true}
+  - {name: 海南省 移动(全省通用), server: h.cm2.xiaomi-api.xyz, port: 19852, type: ss, cipher: chacha20-ietf-poly1305, password: feafc2ef-d5fd-4f6d-803b-fad4a5cc1f0e, udp: true}
+  - {name: 波兰 V2CROSS.COM, server: 193.243.147.128, port: 40368, type: ss, cipher: aes-256-gcm, password: 7BcLdsO1WweoGD0X, udp: true}
+  - {name: 美国 CloudFlare节点 11, server: us01.sh-cloudflare.sbs, port: 8443, type: vmess, uuid: 2703867d-dd8f-4f7f-93f4-ac6e4f56c7e8, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: us01.sh-cloudflare.sbs}}, udp: true}
+  - {name: 香港 电讯盈科有限公司 24, server: d6e3d96a-sv6hs0-sw5wi7-ufc0.hk.p5pv.com, port: 80, type: vmess, uuid: 22308988-8548-11ea-a22e-f23c91cfbbc9, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, servername: broadcastlv.chat.bilibili.com, network: ws, ws-opts: {path: /, headers: {Host: d6e3d96a-sv6hs0-sw5wi7-ufc0.hk.p5pv.com}}, udp: true}
+  - {name: 香港 电讯盈科有限公司 25, server: 7b2f8c5e-sv2sg0-tc61cs-1tja8.hk.p5pv.com, port: 80, type: vmess, uuid: d2f0bee2-02f1-11f0-8eb0-f23c9164ca5d, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: broadcastlv.chat.bilibili.com}}, udp: true}
+  - {name: 美国 CloudFlare节点 12, server: 104.21.96.1, port: 8443, type: vmess, uuid: 914584ee-3515-46ac-a09d-4677a2e9dc9a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: us01.sh-cloudflare.sbs}}, udp: true}
+  - {name: 香港 电讯盈科有限公司 26, server: acf5ec1c-sv2sg0-t2y63q-1jk6u.hk.p5pv.com, port: 80, type: vmess, uuid: 45bc25b2-1a10-11ed-91c0-f23c91cfbbc9, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, servername: broadcastlv.chat.bilibili.com, network: ws, ws-opts: {path: /, headers: {Host: acf5ec1c-sv2sg0-t2y63q-1jk6u.hk.p5pv.com}}, udp: true}
+  - {name: 美国 CloudFlare节点 13, server: rak1.986986.shop, port: 2096, type: vmess, uuid: a29e2386-7445-424d-9be1-501f2b2b4d4e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: rak1.986986.shop}}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 香港 阿里云
+      - 广东省中山市 移动
       - 香港 电讯盈科有限公司
-      - 美国 加利福尼亚州圣克拉拉阿里云
       - 香港 电讯盈科有限公司 2
       - 香港 电讯盈科有限公司 3
-      - 广东省广州市 移动
+      - 法国 V2CROSS.COM
       - 香港 电讯盈科有限公司 4
-      - 吉林省 移动(全省通用)
       - 香港 电讯盈科有限公司 5
-      - 香港 电讯盈科有限公司 6
-      - 香港 电讯盈科有限公司 7
-      - 广东省梅州市 移动
       - 美国 CloudFlare节点
-      - 香港 电讯盈科有限公司 8
-      - 香港 电讯盈科有限公司 9
-      - 香港 电讯盈科有限公司 10
-      - 香港 电讯盈科有限公司 11
-      - 俄罗斯 V2CROSS.COM
-      - 香港 电讯盈科有限公司 12
-      - 俄罗斯 V2CROSS.COM 2
-      - 香港 电讯盈科有限公司 13
-      - 香港 电讯盈科有限公司 14
-      - 广东省广州市 移动 2
+      - 香港 电讯盈科有限公司 6
       - 美国 CloudFlare节点 2
+      - 香港 电讯盈科有限公司 7
+      - 香港 电讯盈科有限公司 8
       - 美国 CloudFlare节点 3
-      - 江苏省 移动
-      - 香港 电讯盈科有限公司 15
-      - 香港 电讯盈科有限公司 16
-      - 香港 电讯盈科有限公司 17
-      - 香港 电讯盈科有限公司 18
-      - 广东省广州市 移动 3
-      - 广东省中山市 移动
-      - 香港 电讯盈科有限公司 19
+      - 香港 电讯盈科有限公司 9
       - 美国 CloudFlare节点 4
-      - 香港 电讯盈科有限公司 20
+      - 美国 CloudFlare节点 5
+      - 香港 电讯盈科有限公司 10
+      - 美国 CloudFlare节点 6
+      - 香港 数掘科技gfvps.cn数据中心
+      - 美国 CloudFlare节点 7
+      - 香港 电讯盈科有限公司 11
+      - 香港 电讯盈科有限公司 12
+      - 广东省广州市 移动
+      - 香港 电讯盈科有限公司 13
       - 俄罗斯 莫斯科JustHost
-      - 吉林省 移动(全省通用) 2
+      - 香港 电讯盈科有限公司 14
+      - 山东省 电信
+      - 美国 CloudFlare节点 8
+      - 香港 电讯盈科有限公司 15
+      - 广东省广州市 移动 2
+      - 美国 CloudFlare节点 9
+      - 香港 电讯盈科有限公司 16
+      - 俄罗斯 V2CROSS.COM
+      - 香港 电讯盈科有限公司 17
+      - 北京市 Amazon数据中心
+      - 香港 电讯盈科有限公司 18
+      - 香港 电讯盈科有限公司 19
+      - 香港 电讯盈科有限公司 20
+      - 广东省广州市 移动 3
       - 香港 电讯盈科有限公司 21
       - 香港 电讯盈科有限公司 22
+      - 俄罗斯 莫斯科JustHost 2
       - 香港 电讯盈科有限公司 23
+      - 美国 CloudFlare节点 10
+      - 海南省 移动(全省通用)
+      - 波兰 V2CROSS.COM
+      - 美国 CloudFlare节点 11
       - 香港 电讯盈科有限公司 24
       - 香港 电讯盈科有限公司 25
+      - 美国 CloudFlare节点 12
       - 香港 电讯盈科有限公司 26
-      - 香港 电讯盈科有限公司 27
-      - 香港 电讯盈科有限公司 28
-      - 香港 电讯盈科有限公司 29
-      - 法国 V2CROSS.COM
-      - 香港 电讯盈科有限公司 30
-      - 香港 数掘科技gfvps.cn数据中心
+      - 美国 CloudFlare节点 13
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 香港 阿里云
+      - 广东省中山市 移动
       - 香港 电讯盈科有限公司
-      - 美国 加利福尼亚州圣克拉拉阿里云
       - 香港 电讯盈科有限公司 2
       - 香港 电讯盈科有限公司 3
-      - 广东省广州市 移动
+      - 法国 V2CROSS.COM
       - 香港 电讯盈科有限公司 4
-      - 吉林省 移动(全省通用)
       - 香港 电讯盈科有限公司 5
-      - 香港 电讯盈科有限公司 6
-      - 香港 电讯盈科有限公司 7
-      - 广东省梅州市 移动
       - 美国 CloudFlare节点
-      - 香港 电讯盈科有限公司 8
-      - 香港 电讯盈科有限公司 9
-      - 香港 电讯盈科有限公司 10
-      - 香港 电讯盈科有限公司 11
-      - 俄罗斯 V2CROSS.COM
-      - 香港 电讯盈科有限公司 12
-      - 俄罗斯 V2CROSS.COM 2
-      - 香港 电讯盈科有限公司 13
-      - 香港 电讯盈科有限公司 14
-      - 广东省广州市 移动 2
+      - 香港 电讯盈科有限公司 6
       - 美国 CloudFlare节点 2
+      - 香港 电讯盈科有限公司 7
+      - 香港 电讯盈科有限公司 8
       - 美国 CloudFlare节点 3
-      - 江苏省 移动
-      - 香港 电讯盈科有限公司 15
-      - 香港 电讯盈科有限公司 16
-      - 香港 电讯盈科有限公司 17
-      - 香港 电讯盈科有限公司 18
-      - 广东省广州市 移动 3
-      - 广东省中山市 移动
-      - 香港 电讯盈科有限公司 19
+      - 香港 电讯盈科有限公司 9
       - 美国 CloudFlare节点 4
-      - 香港 电讯盈科有限公司 20
+      - 美国 CloudFlare节点 5
+      - 香港 电讯盈科有限公司 10
+      - 美国 CloudFlare节点 6
+      - 香港 数掘科技gfvps.cn数据中心
+      - 美国 CloudFlare节点 7
+      - 香港 电讯盈科有限公司 11
+      - 香港 电讯盈科有限公司 12
+      - 广东省广州市 移动
+      - 香港 电讯盈科有限公司 13
       - 俄罗斯 莫斯科JustHost
-      - 吉林省 移动(全省通用) 2
+      - 香港 电讯盈科有限公司 14
+      - 山东省 电信
+      - 美国 CloudFlare节点 8
+      - 香港 电讯盈科有限公司 15
+      - 广东省广州市 移动 2
+      - 美国 CloudFlare节点 9
+      - 香港 电讯盈科有限公司 16
+      - 俄罗斯 V2CROSS.COM
+      - 香港 电讯盈科有限公司 17
+      - 北京市 Amazon数据中心
+      - 香港 电讯盈科有限公司 18
+      - 香港 电讯盈科有限公司 19
+      - 香港 电讯盈科有限公司 20
+      - 广东省广州市 移动 3
       - 香港 电讯盈科有限公司 21
       - 香港 电讯盈科有限公司 22
+      - 俄罗斯 莫斯科JustHost 2
       - 香港 电讯盈科有限公司 23
+      - 美国 CloudFlare节点 10
+      - 海南省 移动(全省通用)
+      - 波兰 V2CROSS.COM
+      - 美国 CloudFlare节点 11
       - 香港 电讯盈科有限公司 24
       - 香港 电讯盈科有限公司 25
+      - 美国 CloudFlare节点 12
       - 香港 电讯盈科有限公司 26
-      - 香港 电讯盈科有限公司 27
-      - 香港 电讯盈科有限公司 28
-      - 香港 电讯盈科有限公司 29
-      - 法国 V2CROSS.COM
-      - 香港 电讯盈科有限公司 30
-      - 香港 数掘科技gfvps.cn数据中心
+      - 美国 CloudFlare节点 13
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 香港 阿里云
+      - 广东省中山市 移动
       - 香港 电讯盈科有限公司
-      - 美国 加利福尼亚州圣克拉拉阿里云
       - 香港 电讯盈科有限公司 2
       - 香港 电讯盈科有限公司 3
-      - 广东省广州市 移动
+      - 法国 V2CROSS.COM
       - 香港 电讯盈科有限公司 4
-      - 吉林省 移动(全省通用)
       - 香港 电讯盈科有限公司 5
-      - 香港 电讯盈科有限公司 6
-      - 香港 电讯盈科有限公司 7
-      - 广东省梅州市 移动
       - 美国 CloudFlare节点
-      - 香港 电讯盈科有限公司 8
-      - 香港 电讯盈科有限公司 9
-      - 香港 电讯盈科有限公司 10
-      - 香港 电讯盈科有限公司 11
-      - 俄罗斯 V2CROSS.COM
-      - 香港 电讯盈科有限公司 12
-      - 俄罗斯 V2CROSS.COM 2
-      - 香港 电讯盈科有限公司 13
-      - 香港 电讯盈科有限公司 14
-      - 广东省广州市 移动 2
+      - 香港 电讯盈科有限公司 6
       - 美国 CloudFlare节点 2
+      - 香港 电讯盈科有限公司 7
+      - 香港 电讯盈科有限公司 8
       - 美国 CloudFlare节点 3
-      - 江苏省 移动
-      - 香港 电讯盈科有限公司 15
-      - 香港 电讯盈科有限公司 16
-      - 香港 电讯盈科有限公司 17
-      - 香港 电讯盈科有限公司 18
-      - 广东省广州市 移动 3
-      - 广东省中山市 移动
-      - 香港 电讯盈科有限公司 19
+      - 香港 电讯盈科有限公司 9
       - 美国 CloudFlare节点 4
-      - 香港 电讯盈科有限公司 20
+      - 美国 CloudFlare节点 5
+      - 香港 电讯盈科有限公司 10
+      - 美国 CloudFlare节点 6
+      - 香港 数掘科技gfvps.cn数据中心
+      - 美国 CloudFlare节点 7
+      - 香港 电讯盈科有限公司 11
+      - 香港 电讯盈科有限公司 12
+      - 广东省广州市 移动
+      - 香港 电讯盈科有限公司 13
       - 俄罗斯 莫斯科JustHost
-      - 吉林省 移动(全省通用) 2
+      - 香港 电讯盈科有限公司 14
+      - 山东省 电信
+      - 美国 CloudFlare节点 8
+      - 香港 电讯盈科有限公司 15
+      - 广东省广州市 移动 2
+      - 美国 CloudFlare节点 9
+      - 香港 电讯盈科有限公司 16
+      - 俄罗斯 V2CROSS.COM
+      - 香港 电讯盈科有限公司 17
+      - 北京市 Amazon数据中心
+      - 香港 电讯盈科有限公司 18
+      - 香港 电讯盈科有限公司 19
+      - 香港 电讯盈科有限公司 20
+      - 广东省广州市 移动 3
       - 香港 电讯盈科有限公司 21
       - 香港 电讯盈科有限公司 22
+      - 俄罗斯 莫斯科JustHost 2
       - 香港 电讯盈科有限公司 23
+      - 美国 CloudFlare节点 10
+      - 海南省 移动(全省通用)
+      - 波兰 V2CROSS.COM
+      - 美国 CloudFlare节点 11
       - 香港 电讯盈科有限公司 24
       - 香港 电讯盈科有限公司 25
+      - 美国 CloudFlare节点 12
       - 香港 电讯盈科有限公司 26
-      - 香港 电讯盈科有限公司 27
-      - 香港 电讯盈科有限公司 28
-      - 香港 电讯盈科有限公司 29
-      - 法国 V2CROSS.COM
-      - 香港 电讯盈科有限公司 30
-      - 香港 数掘科技gfvps.cn数据中心
+      - 美国 CloudFlare节点 13
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -236,60 +248,62 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 香港 阿里云
+      - 广东省中山市 移动
       - 香港 电讯盈科有限公司
-      - 美国 加利福尼亚州圣克拉拉阿里云
       - 香港 电讯盈科有限公司 2
       - 香港 电讯盈科有限公司 3
-      - 广东省广州市 移动
+      - 法国 V2CROSS.COM
       - 香港 电讯盈科有限公司 4
-      - 吉林省 移动(全省通用)
       - 香港 电讯盈科有限公司 5
-      - 香港 电讯盈科有限公司 6
-      - 香港 电讯盈科有限公司 7
-      - 广东省梅州市 移动
       - 美国 CloudFlare节点
-      - 香港 电讯盈科有限公司 8
-      - 香港 电讯盈科有限公司 9
-      - 香港 电讯盈科有限公司 10
-      - 香港 电讯盈科有限公司 11
-      - 俄罗斯 V2CROSS.COM
-      - 香港 电讯盈科有限公司 12
-      - 俄罗斯 V2CROSS.COM 2
-      - 香港 电讯盈科有限公司 13
-      - 香港 电讯盈科有限公司 14
-      - 广东省广州市 移动 2
+      - 香港 电讯盈科有限公司 6
       - 美国 CloudFlare节点 2
+      - 香港 电讯盈科有限公司 7
+      - 香港 电讯盈科有限公司 8
       - 美国 CloudFlare节点 3
-      - 江苏省 移动
-      - 香港 电讯盈科有限公司 15
-      - 香港 电讯盈科有限公司 16
-      - 香港 电讯盈科有限公司 17
-      - 香港 电讯盈科有限公司 18
-      - 广东省广州市 移动 3
-      - 广东省中山市 移动
-      - 香港 电讯盈科有限公司 19
+      - 香港 电讯盈科有限公司 9
       - 美国 CloudFlare节点 4
-      - 香港 电讯盈科有限公司 20
+      - 美国 CloudFlare节点 5
+      - 香港 电讯盈科有限公司 10
+      - 美国 CloudFlare节点 6
+      - 香港 数掘科技gfvps.cn数据中心
+      - 美国 CloudFlare节点 7
+      - 香港 电讯盈科有限公司 11
+      - 香港 电讯盈科有限公司 12
+      - 广东省广州市 移动
+      - 香港 电讯盈科有限公司 13
       - 俄罗斯 莫斯科JustHost
-      - 吉林省 移动(全省通用) 2
+      - 香港 电讯盈科有限公司 14
+      - 山东省 电信
+      - 美国 CloudFlare节点 8
+      - 香港 电讯盈科有限公司 15
+      - 广东省广州市 移动 2
+      - 美国 CloudFlare节点 9
+      - 香港 电讯盈科有限公司 16
+      - 俄罗斯 V2CROSS.COM
+      - 香港 电讯盈科有限公司 17
+      - 北京市 Amazon数据中心
+      - 香港 电讯盈科有限公司 18
+      - 香港 电讯盈科有限公司 19
+      - 香港 电讯盈科有限公司 20
+      - 广东省广州市 移动 3
       - 香港 电讯盈科有限公司 21
       - 香港 电讯盈科有限公司 22
+      - 俄罗斯 莫斯科JustHost 2
       - 香港 电讯盈科有限公司 23
+      - 美国 CloudFlare节点 10
+      - 海南省 移动(全省通用)
+      - 波兰 V2CROSS.COM
+      - 美国 CloudFlare节点 11
       - 香港 电讯盈科有限公司 24
       - 香港 电讯盈科有限公司 25
+      - 美国 CloudFlare节点 12
       - 香港 电讯盈科有限公司 26
-      - 香港 电讯盈科有限公司 27
-      - 香港 电讯盈科有限公司 28
-      - 香港 电讯盈科有限公司 29
-      - 法国 V2CROSS.COM
-      - 香港 电讯盈科有限公司 30
-      - 香港 数掘科技gfvps.cn数据中心
+      - 美国 CloudFlare节点 13
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 香港 阿里云
       - 香港 电讯盈科有限公司
       - 香港 电讯盈科有限公司 2
       - 香港 电讯盈科有限公司 3
@@ -300,6 +314,7 @@ proxy-groups:
       - 香港 电讯盈科有限公司 8
       - 香港 电讯盈科有限公司 9
       - 香港 电讯盈科有限公司 10
+      - 香港 数掘科技gfvps.cn数据中心
       - 香港 电讯盈科有限公司 11
       - 香港 电讯盈科有限公司 12
       - 香港 电讯盈科有限公司 13
@@ -316,175 +331,179 @@ proxy-groups:
       - 香港 电讯盈科有限公司 24
       - 香港 电讯盈科有限公司 25
       - 香港 电讯盈科有限公司 26
-      - 香港 电讯盈科有限公司 27
-      - 香港 电讯盈科有限公司 28
-      - 香港 电讯盈科有限公司 29
-      - 香港 电讯盈科有限公司 30
-      - 香港 数掘科技gfvps.cn数据中心
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 香港 阿里云
+      - 广东省中山市 移动
       - 香港 电讯盈科有限公司
-      - 美国 加利福尼亚州圣克拉拉阿里云
       - 香港 电讯盈科有限公司 2
       - 香港 电讯盈科有限公司 3
-      - 广东省广州市 移动
+      - 法国 V2CROSS.COM
       - 香港 电讯盈科有限公司 4
-      - 吉林省 移动(全省通用)
       - 香港 电讯盈科有限公司 5
-      - 香港 电讯盈科有限公司 6
-      - 香港 电讯盈科有限公司 7
-      - 广东省梅州市 移动
       - 美国 CloudFlare节点
-      - 香港 电讯盈科有限公司 8
-      - 香港 电讯盈科有限公司 9
-      - 香港 电讯盈科有限公司 10
-      - 香港 电讯盈科有限公司 11
-      - 俄罗斯 V2CROSS.COM
-      - 香港 电讯盈科有限公司 12
-      - 俄罗斯 V2CROSS.COM 2
-      - 香港 电讯盈科有限公司 13
-      - 香港 电讯盈科有限公司 14
-      - 广东省广州市 移动 2
+      - 香港 电讯盈科有限公司 6
       - 美国 CloudFlare节点 2
+      - 香港 电讯盈科有限公司 7
+      - 香港 电讯盈科有限公司 8
       - 美国 CloudFlare节点 3
-      - 江苏省 移动
-      - 香港 电讯盈科有限公司 15
-      - 香港 电讯盈科有限公司 16
-      - 香港 电讯盈科有限公司 17
-      - 香港 电讯盈科有限公司 18
-      - 广东省广州市 移动 3
-      - 广东省中山市 移动
-      - 香港 电讯盈科有限公司 19
+      - 香港 电讯盈科有限公司 9
       - 美国 CloudFlare节点 4
-      - 香港 电讯盈科有限公司 20
+      - 美国 CloudFlare节点 5
+      - 香港 电讯盈科有限公司 10
+      - 美国 CloudFlare节点 6
+      - 香港 数掘科技gfvps.cn数据中心
+      - 美国 CloudFlare节点 7
+      - 香港 电讯盈科有限公司 11
+      - 香港 电讯盈科有限公司 12
+      - 广东省广州市 移动
+      - 香港 电讯盈科有限公司 13
       - 俄罗斯 莫斯科JustHost
-      - 吉林省 移动(全省通用) 2
+      - 香港 电讯盈科有限公司 14
+      - 山东省 电信
+      - 美国 CloudFlare节点 8
+      - 香港 电讯盈科有限公司 15
+      - 广东省广州市 移动 2
+      - 美国 CloudFlare节点 9
+      - 香港 电讯盈科有限公司 16
+      - 俄罗斯 V2CROSS.COM
+      - 香港 电讯盈科有限公司 17
+      - 北京市 Amazon数据中心
+      - 香港 电讯盈科有限公司 18
+      - 香港 电讯盈科有限公司 19
+      - 香港 电讯盈科有限公司 20
+      - 广东省广州市 移动 3
       - 香港 电讯盈科有限公司 21
       - 香港 电讯盈科有限公司 22
+      - 俄罗斯 莫斯科JustHost 2
       - 香港 电讯盈科有限公司 23
+      - 美国 CloudFlare节点 10
+      - 海南省 移动(全省通用)
+      - 波兰 V2CROSS.COM
+      - 美国 CloudFlare节点 11
       - 香港 电讯盈科有限公司 24
       - 香港 电讯盈科有限公司 25
+      - 美国 CloudFlare节点 12
       - 香港 电讯盈科有限公司 26
-      - 香港 电讯盈科有限公司 27
-      - 香港 电讯盈科有限公司 28
-      - 香港 电讯盈科有限公司 29
-      - 法国 V2CROSS.COM
-      - 香港 电讯盈科有限公司 30
-      - 香港 数掘科技gfvps.cn数据中心
+      - 美国 CloudFlare节点 13
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 香港 阿里云
+      - 广东省中山市 移动
       - 香港 电讯盈科有限公司
-      - 美国 加利福尼亚州圣克拉拉阿里云
       - 香港 电讯盈科有限公司 2
       - 香港 电讯盈科有限公司 3
-      - 广东省广州市 移动
+      - 法国 V2CROSS.COM
       - 香港 电讯盈科有限公司 4
-      - 吉林省 移动(全省通用)
       - 香港 电讯盈科有限公司 5
-      - 香港 电讯盈科有限公司 6
-      - 香港 电讯盈科有限公司 7
-      - 广东省梅州市 移动
       - 美国 CloudFlare节点
-      - 香港 电讯盈科有限公司 8
-      - 香港 电讯盈科有限公司 9
-      - 香港 电讯盈科有限公司 10
-      - 香港 电讯盈科有限公司 11
-      - 俄罗斯 V2CROSS.COM
-      - 香港 电讯盈科有限公司 12
-      - 俄罗斯 V2CROSS.COM 2
-      - 香港 电讯盈科有限公司 13
-      - 香港 电讯盈科有限公司 14
-      - 广东省广州市 移动 2
+      - 香港 电讯盈科有限公司 6
       - 美国 CloudFlare节点 2
+      - 香港 电讯盈科有限公司 7
+      - 香港 电讯盈科有限公司 8
       - 美国 CloudFlare节点 3
-      - 江苏省 移动
-      - 香港 电讯盈科有限公司 15
-      - 香港 电讯盈科有限公司 16
-      - 香港 电讯盈科有限公司 17
-      - 香港 电讯盈科有限公司 18
-      - 广东省广州市 移动 3
-      - 广东省中山市 移动
-      - 香港 电讯盈科有限公司 19
+      - 香港 电讯盈科有限公司 9
       - 美国 CloudFlare节点 4
-      - 香港 电讯盈科有限公司 20
+      - 美国 CloudFlare节点 5
+      - 香港 电讯盈科有限公司 10
+      - 美国 CloudFlare节点 6
+      - 香港 数掘科技gfvps.cn数据中心
+      - 美国 CloudFlare节点 7
+      - 香港 电讯盈科有限公司 11
+      - 香港 电讯盈科有限公司 12
+      - 广东省广州市 移动
+      - 香港 电讯盈科有限公司 13
       - 俄罗斯 莫斯科JustHost
-      - 吉林省 移动(全省通用) 2
+      - 香港 电讯盈科有限公司 14
+      - 山东省 电信
+      - 美国 CloudFlare节点 8
+      - 香港 电讯盈科有限公司 15
+      - 广东省广州市 移动 2
+      - 美国 CloudFlare节点 9
+      - 香港 电讯盈科有限公司 16
+      - 俄罗斯 V2CROSS.COM
+      - 香港 电讯盈科有限公司 17
+      - 北京市 Amazon数据中心
+      - 香港 电讯盈科有限公司 18
+      - 香港 电讯盈科有限公司 19
+      - 香港 电讯盈科有限公司 20
+      - 广东省广州市 移动 3
       - 香港 电讯盈科有限公司 21
       - 香港 电讯盈科有限公司 22
+      - 俄罗斯 莫斯科JustHost 2
       - 香港 电讯盈科有限公司 23
+      - 美国 CloudFlare节点 10
+      - 海南省 移动(全省通用)
+      - 波兰 V2CROSS.COM
+      - 美国 CloudFlare节点 11
       - 香港 电讯盈科有限公司 24
       - 香港 电讯盈科有限公司 25
+      - 美国 CloudFlare节点 12
       - 香港 电讯盈科有限公司 26
-      - 香港 电讯盈科有限公司 27
-      - 香港 电讯盈科有限公司 28
-      - 香港 电讯盈科有限公司 29
-      - 法国 V2CROSS.COM
-      - 香港 电讯盈科有限公司 30
-      - 香港 数掘科技gfvps.cn数据中心
+      - 美国 CloudFlare节点 13
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 香港 阿里云
+      - 广东省中山市 移动
       - 香港 电讯盈科有限公司
-      - 美国 加利福尼亚州圣克拉拉阿里云
       - 香港 电讯盈科有限公司 2
       - 香港 电讯盈科有限公司 3
-      - 广东省广州市 移动
+      - 法国 V2CROSS.COM
       - 香港 电讯盈科有限公司 4
-      - 吉林省 移动(全省通用)
       - 香港 电讯盈科有限公司 5
-      - 香港 电讯盈科有限公司 6
-      - 香港 电讯盈科有限公司 7
-      - 广东省梅州市 移动
       - 美国 CloudFlare节点
-      - 香港 电讯盈科有限公司 8
-      - 香港 电讯盈科有限公司 9
-      - 香港 电讯盈科有限公司 10
-      - 香港 电讯盈科有限公司 11
-      - 俄罗斯 V2CROSS.COM
-      - 香港 电讯盈科有限公司 12
-      - 俄罗斯 V2CROSS.COM 2
-      - 香港 电讯盈科有限公司 13
-      - 香港 电讯盈科有限公司 14
-      - 广东省广州市 移动 2
+      - 香港 电讯盈科有限公司 6
       - 美国 CloudFlare节点 2
+      - 香港 电讯盈科有限公司 7
+      - 香港 电讯盈科有限公司 8
       - 美国 CloudFlare节点 3
-      - 江苏省 移动
-      - 香港 电讯盈科有限公司 15
-      - 香港 电讯盈科有限公司 16
-      - 香港 电讯盈科有限公司 17
-      - 香港 电讯盈科有限公司 18
-      - 广东省广州市 移动 3
-      - 广东省中山市 移动
-      - 香港 电讯盈科有限公司 19
+      - 香港 电讯盈科有限公司 9
       - 美国 CloudFlare节点 4
-      - 香港 电讯盈科有限公司 20
+      - 美国 CloudFlare节点 5
+      - 香港 电讯盈科有限公司 10
+      - 美国 CloudFlare节点 6
+      - 香港 数掘科技gfvps.cn数据中心
+      - 美国 CloudFlare节点 7
+      - 香港 电讯盈科有限公司 11
+      - 香港 电讯盈科有限公司 12
+      - 广东省广州市 移动
+      - 香港 电讯盈科有限公司 13
       - 俄罗斯 莫斯科JustHost
-      - 吉林省 移动(全省通用) 2
+      - 香港 电讯盈科有限公司 14
+      - 山东省 电信
+      - 美国 CloudFlare节点 8
+      - 香港 电讯盈科有限公司 15
+      - 广东省广州市 移动 2
+      - 美国 CloudFlare节点 9
+      - 香港 电讯盈科有限公司 16
+      - 俄罗斯 V2CROSS.COM
+      - 香港 电讯盈科有限公司 17
+      - 北京市 Amazon数据中心
+      - 香港 电讯盈科有限公司 18
+      - 香港 电讯盈科有限公司 19
+      - 香港 电讯盈科有限公司 20
+      - 广东省广州市 移动 3
       - 香港 电讯盈科有限公司 21
       - 香港 电讯盈科有限公司 22
+      - 俄罗斯 莫斯科JustHost 2
       - 香港 电讯盈科有限公司 23
+      - 美国 CloudFlare节点 10
+      - 海南省 移动(全省通用)
+      - 波兰 V2CROSS.COM
+      - 美国 CloudFlare节点 11
       - 香港 电讯盈科有限公司 24
       - 香港 电讯盈科有限公司 25
+      - 美国 CloudFlare节点 12
       - 香港 电讯盈科有限公司 26
-      - 香港 电讯盈科有限公司 27
-      - 香港 电讯盈科有限公司 28
-      - 香港 电讯盈科有限公司 29
-      - 法国 V2CROSS.COM
-      - 香港 电讯盈科有限公司 30
-      - 香港 数掘科技gfvps.cn数据中心
+      - 美国 CloudFlare节点 13
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -500,55 +519,58 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 香港 阿里云
+      - 广东省中山市 移动
       - 香港 电讯盈科有限公司
-      - 美国 加利福尼亚州圣克拉拉阿里云
       - 香港 电讯盈科有限公司 2
       - 香港 电讯盈科有限公司 3
-      - 广东省广州市 移动
+      - 法国 V2CROSS.COM
       - 香港 电讯盈科有限公司 4
-      - 吉林省 移动(全省通用)
       - 香港 电讯盈科有限公司 5
-      - 香港 电讯盈科有限公司 6
-      - 香港 电讯盈科有限公司 7
-      - 广东省梅州市 移动
       - 美国 CloudFlare节点
-      - 香港 电讯盈科有限公司 8
-      - 香港 电讯盈科有限公司 9
-      - 香港 电讯盈科有限公司 10
-      - 香港 电讯盈科有限公司 11
-      - 俄罗斯 V2CROSS.COM
-      - 香港 电讯盈科有限公司 12
-      - 俄罗斯 V2CROSS.COM 2
-      - 香港 电讯盈科有限公司 13
-      - 香港 电讯盈科有限公司 14
-      - 广东省广州市 移动 2
+      - 香港 电讯盈科有限公司 6
       - 美国 CloudFlare节点 2
+      - 香港 电讯盈科有限公司 7
+      - 香港 电讯盈科有限公司 8
       - 美国 CloudFlare节点 3
-      - 江苏省 移动
-      - 香港 电讯盈科有限公司 15
-      - 香港 电讯盈科有限公司 16
-      - 香港 电讯盈科有限公司 17
-      - 香港 电讯盈科有限公司 18
-      - 广东省广州市 移动 3
-      - 广东省中山市 移动
-      - 香港 电讯盈科有限公司 19
+      - 香港 电讯盈科有限公司 9
       - 美国 CloudFlare节点 4
-      - 香港 电讯盈科有限公司 20
+      - 美国 CloudFlare节点 5
+      - 香港 电讯盈科有限公司 10
+      - 美国 CloudFlare节点 6
+      - 香港 数掘科技gfvps.cn数据中心
+      - 美国 CloudFlare节点 7
+      - 香港 电讯盈科有限公司 11
+      - 香港 电讯盈科有限公司 12
+      - 广东省广州市 移动
+      - 香港 电讯盈科有限公司 13
       - 俄罗斯 莫斯科JustHost
-      - 吉林省 移动(全省通用) 2
+      - 香港 电讯盈科有限公司 14
+      - 山东省 电信
+      - 美国 CloudFlare节点 8
+      - 香港 电讯盈科有限公司 15
+      - 广东省广州市 移动 2
+      - 美国 CloudFlare节点 9
+      - 香港 电讯盈科有限公司 16
+      - 俄罗斯 V2CROSS.COM
+      - 香港 电讯盈科有限公司 17
+      - 北京市 Amazon数据中心
+      - 香港 电讯盈科有限公司 18
+      - 香港 电讯盈科有限公司 19
+      - 香港 电讯盈科有限公司 20
+      - 广东省广州市 移动 3
       - 香港 电讯盈科有限公司 21
       - 香港 电讯盈科有限公司 22
+      - 俄罗斯 莫斯科JustHost 2
       - 香港 电讯盈科有限公司 23
+      - 美国 CloudFlare节点 10
+      - 海南省 移动(全省通用)
+      - 波兰 V2CROSS.COM
+      - 美国 CloudFlare节点 11
       - 香港 电讯盈科有限公司 24
       - 香港 电讯盈科有限公司 25
+      - 美国 CloudFlare节点 12
       - 香港 电讯盈科有限公司 26
-      - 香港 电讯盈科有限公司 27
-      - 香港 电讯盈科有限公司 28
-      - 香港 电讯盈科有限公司 29
-      - 法国 V2CROSS.COM
-      - 香港 电讯盈科有限公司 30
-      - 香港 数掘科技gfvps.cn数据中心
+      - 美国 CloudFlare节点 13
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
