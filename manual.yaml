@@ -5,357 +5,349 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 🇺🇸 美国 Amazon数据中心, server: ultimate-lemming.shiner427.skin, port: 443, type: trojan, password: !<str> 74260665780162200, sni: ultimate-lemming.shiner427.skin, skip-cert-verify: false, udp: true}
-  - {name: 🇺🇸 美国 CloudFlare节点, server: 104.21.112.1, port: 2053, type: vmess, uuid: 8f78e709-2c5f-4c19-9f44-b5b5f80ab74c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: cc2d4.988988.shop}}, udp: true}
-  - {name: 🇺🇸 美国 CloudFlare节点 2, server: m8yuitr.457.pp.ua, port: 443, type: vmess, uuid: b30a50bc-0f63-422d-bbd6-8c790c0abb4d, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: m8yuitr.457.pp.ua, network: ws, ws-opts: {path: /, headers: {Host: m8yuitr.457.pp.ua}}, udp: true}
-  - {name: 🇺🇸 美国 V2CROSS.COM, server: 160.79.105.81, port: 443, type: trojan, password: 6884d714-d3c4-4b49-aa20-767ea92837d6, sni: icecream.955850.xyz, skip-cert-verify: false, udp: true}
-  - {name: 🇨🇳 上海市 联通, server: sslvpn.51job.com, port: 1443, type: vmess, uuid: a6a0d901-67e9-460a-90b5-634c5c4f9782, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /634c5c4f9782, headers: {Host: centos7}}, udp: true}
-  - {name: 🇩🇪 德国 黑森州法兰克福AMazon数据中心, server: cuddly-finch.shiner427.skin, port: 443, type: trojan, password: !<str> 74260665780162200, sni: cuddly-finch.shiner427.skin, skip-cert-verify: false, udp: true}
-  - {name: 🇦🇹 奥地利 V2CROSS.COM, server: 212.183.88.194, port: 443, type: trojan, password: 6884d714-d3c4-4b49-aa20-767ea92837d6, sni: icecream.955850.xyz, skip-cert-verify: false, udp: true}
-  - {name: 🇺🇸 美国 纽约市DigitalOcean云公司, server: 138.197.5.103, port: 443, type: trojan, password: xxoo, sni: us.blazeppn.info, skip-cert-verify: false, udp: true}
-  - {name: 广东省湛江市 移动, server: 120.198.71.214, port: 42375, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 🇺🇸 美国 CloudFlare节点 3, server: 104.21.32.242, port: 443, type: trojan, password: 15153c1d-fc81-4b2a-9689-7b4e4a72dce5, sni: b9uujhyt.890604.dpdns.org, skip-cert-verify: false, udp: true}
-  - {name: 🇭🇰 香港 电讯盈科有限公司, server: fa013a4d-swd340-t2fqpv-11vcy.hgc1.tcpbbr.net, port: 8080, type: vmess, uuid: 99a5f570-7fe4-11ef-aaa7-f23c91cfbbc9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: fa013a4d-swd340-t2fqpv-11vcy.hgc1.tcpbbr.net}}, udp: true}
-  - {name: 🇮🇪 爱尔兰 都柏林Amazon数据中心, server: infinite-goose.shiner427.skin, port: 443, type: trojan, password: !<str> 74260665780162200, sni: infinite-goose.shiner427.skin, skip-cert-verify: false, udp: true}
-  - {name: 🇺🇸 美国 CloudFlare节点 4, server: 172.67.75.172, port: 443, type: trojan, password: 2faaf996-d2b0-440d-8258-81f2b05dd0e4, sni: fwd-refuse-senators-brought.trycloudflare.com, skip-cert-verify: false, udp: true}
-  - {name: 广东省中山市 移动, server: 120.198.44.126, port: 47883, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 🇺🇸 美国 CloudFlare节点 5, server: 172.66.168.218, port: 443, type: trojan, password: aTArbZ2F0E, sni: uSa-vp-27.bLAzECLOUD.SITE, skip-cert-verify: false, udp: true}
-  - {name: 🇨🇳 广东省广州市 移动, server: 183.236.51.38, port: 30052, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 🇷🇺 俄罗斯 莫斯科JustHost, server: 45.147.201.231, port: 20028, type: vmess, uuid: 6d1d673d-8344-471f-88c1-722c6f0017c1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: 欧盟 V2CROSS.COM, server: 45.67.215.5, port: 443, type: trojan, password: 6884d714-d3c4-4b49-aa20-767ea92837d6, sni: icecream.955850.xyz, skip-cert-verify: false, udp: true}
-  - {name: 🇨🇳 北京市 Amazon数据中心, server: 52.80.27.229, port: 22641, type: vmess, uuid: 98e96c9f-4bb3-39d4-9a2c-fac04257f7c7, alterId: 2, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: zxjp-a.tkong.cc}}, udp: true}
-  - {name: 🇺🇸 美国 V2CROSS.COM 2, server: 138.2.107.107, port: 443, type: trojan, password: 6884d714-d3c4-4b49-aa20-767ea92837d6, sni: icecream.955850.xyz, skip-cert-verify: false, udp: true}
-  - {name: 🇩🇪 德国 V2CROSS.COM, server: 194.76.18.122, port: 443, type: trojan, password: 6884d714-d3c4-4b49-aa20-767ea92837d6, sni: icecream.955850.xyz, skip-cert-verify: false, udp: true}
-  - {name: 🇺🇸 美国 俄勒冈州波特兰Amazon数据中心, server: possible-tiger.shiner427.skin, port: 443, type: trojan, password: !<str> 74260665780162200, sni: possible-tiger.shiner427.skin, skip-cert-verify: false, udp: true}
-  - {name: 🇨🇳 北京市 亚马逊(Amazon)公司数据中心, server: tk.hzlt.tkddns.xyz, port: 22642, type: vmess, uuid: 98e96c9f-4bb3-39d4-9a2c-fac04257f7c7, alterId: 2, cipher: auto, tls: true, skip-cert-verify: false, servername: zxjp-b.tkong.cc, network: ws, ws-opts: {path: /, headers: {Host: zxjp-b.tkong.cc}}, udp: true}
-  - {name: 🇺🇸 美国 CloudFlare节点 6, server: 172.67.175.139, port: 443, type: trojan, password: 4a3ee276-f50f-46f6-ba4d-13571732ab70, sni: X3W4.859886.XYz, skip-cert-verify: false, udp: true}
-  - {name: 广东省 联通, server: 4ef54dd8-swd340-t1bnjq-1krtb.cu.plebai.net, port: 15229, type: trojan, password: 60f6b4c4-9d70-11ed-a4d2-f23c9164ca5d, skip-cert-verify: false, udp: true}
-  - {name: 🇩🇪 德国 黑森州法兰克福AMazon数据中心 2, server: 3.121.11.241, port: 443, type: trojan, password: !<str> 74260665780162200, sni: cuddly-finch.shiner427.skin, skip-cert-verify: false, udp: true}
+  - {name: 🇨🇳 北京市 亚马逊(Amazon)公司数据中心, server: tk.hzlt.tkddns.xyz, port: 22641, type: vmess, uuid: 98e96c9f-4bb3-39d4-9a2c-fac04257f7c7, alterId: 2, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: tk.hzlt.tkddns.xyz}}, udp: true}
+  - {name: 🇬🇧 英国 Level3通信股份有限公司, server: 217.163.76.237, port: 443, type: trojan, password: 6884d714-d3c4-4b49-aa20-767ea92837d6, sni: icecream.955850.xyz, skip-cert-verify: false, udp: true}
+  - {name: 🇺🇸 美国 Fastly全球Anycast节点, server: gov.uk, port: 443, type: vmess, uuid: 77848824-93b7-4b89-ffd0-e91afff406ce, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /77848824, headers: {Host: zheshiscp.com}}, udp: true}
   - {name: 🇳🇱 荷兰 V2CROSS.COM, server: 185.133.35.141, port: 443, type: trojan, password: 6884d714-d3c4-4b49-aa20-767ea92837d6, sni: icecream.955850.xyz, skip-cert-verify: false, udp: true}
-  - {name: 🇺🇸 美国 CloudFlare节点 7, server: www.hdmoli.com, port: 80, type: vmess, uuid: 2f38f848-a899-4c87-9807-207a41615e3c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: fr.freeyyds.dpdns.org}}, udp: true}
-  - {name: 🇷🇺 俄罗斯 莫斯科JustHost 2, server: 45.147.201.231, port: 22039, type: vmess, uuid: 1cc59a3a-9625-40f7-b0e6-e233286ae82d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: 广东省中山市 移动 2, server: 183.238.90.8, port: 46920, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 欧盟 V2CROSS.COM 2, server: 45.67.215.153, port: 443, type: trojan, password: 6884d714-d3c4-4b49-aa20-767ea92837d6, sni: icecream.955850.xyz, skip-cert-verify: false, udp: true}
-  - {name: 🇺🇸 美国 CloudFlare节点 8, server: 141.101.120.253, port: 2096, type: vmess, uuid: 381cb6d1-6ad4-4909-8494-b8d786cf78ce, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: 1746882891.speed.adl.cccp.freefly.pp.ua, network: ws, ws-opts: {path: /, headers: {Host: 1746882891.speed.adl.cccp.freefly.pp.ua}}, udp: true}
-  - {name: 广东省湛江市 移动 2, server: 120.198.71.216, port: 35921, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 🇺🇸 美国 CloudFlare节点 9, server: 104.21.64.1, port: 2053, type: vmess, uuid: 8f78e709-2c5f-4c19-9f44-b5b5f80ab74c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: cc2d4.988988.shop}}, udp: true}
-  - {name: 广东省湛江市 移动 3, server: 120.198.71.219, port: 51095, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 🇺🇸 美国 CloudFlare节点 10, server: 104.21.32.242, port: 80, type: vmess, uuid: 0a28b420-4f7c-43ad-a29e-80068ce08263, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /lhU8ShsoPZlulnnYPb86csp, headers: {Host: m11sdfg.890604.dpdns.org}}, udp: true}
-  - {name: 🇺🇸 美国 CloudFlare节点 11, server: d2860d7d-07ee-a0db-ef7b-54808db00b03.890601.pp.ua, port: 443, type: vmess, uuid: 5453ae26-250d-4e79-b4ec-016baf806865, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: d2860d7d-07ee-a0db-ef7b-54808db00b03.890601.pp.ua}}, udp: true}
-  - {name: 广东省 联通 2, server: 3c80a135-swb8g0-t6ouc9-13xtu.cu.plebai.net, port: 15229, type: trojan, password: 4a7f880c-72f4-11ed-b0b5-f23c9164ca5d, sni: 3c80a135-swb8g0-t6ouc9-13xtu.cu.plebai.net, skip-cert-verify: false, udp: true}
-  - {name: 🇵🇱 波兰 V2CROSS.COM, server: 193.243.147.128, port: 40368, type: ss, cipher: aes-256-gcm, password: 7BcLdsO1WweoGD0X, udp: true}
+  - {name: 欧盟 V2CROSS.COM, server: 45.67.215.234, port: 443, type: trojan, password: 6884d714-d3c4-4b49-aa20-767ea92837d6, sni: icecream.955850.xyz, skip-cert-verify: false, udp: true}
+  - {name: 🇨🇳 广东省广州市 移动, server: aflzzul.meiquankongjian.com, port: 52513, type: vmess, uuid: 342bacfd-2b8f-3f49-a16e-439db5b0b9d5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /564dfa20/, headers: {Host: aflzzul.meiquankongjian.com}}, udp: true}
+  - {name: 🇺🇸 美国 CloudFlare节点, server: 172.66.168.218, port: 443, type: trojan, password: aTArbZ2F0E, sni: uSa-vp-27.bLAzECLOUD.SITE, skip-cert-verify: false, udp: true}
+  - {name: 🇺🇸 美国 俄勒冈州波特兰Amazon数据中心, server: possible-tiger.shiner427.skin, port: 443, type: trojan, password: !<str> 74260665780162200, sni: possible-tiger.shiner427.skin, skip-cert-verify: false, udp: true}
+  - {name: 🇺🇸 美国 纽约州伊利县威廉斯维尔村ColoCrossing有限公司, server: wcw004-3.facai2024.com, port: 443, type: vmess, uuid: 09390803-92ae-4146-eaa8-0a01db85f766, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: wcw004-3.facai2024.com, network: ws, ws-opts: {path: /09390803, headers: {Host: wcw004-3.facai2024.com}}, udp: true}
+  - {name: 🇺🇸 美国 CloudFlare节点 2, server: 172.67.71.217, port: 443, type: vmess, uuid: 9072d339-3885-4fe1-b0bc-29fa7505410e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /fixedfloati.cfd/linkwsd, headers: {Host: 1t3chx0.zed23.web1337.net}}, udp: true}
+  - {name: 🇷🇺 俄罗斯 V2CROSS.COM, server: 147.45.69.81, port: 52466, type: ss, cipher: chacha20-ietf-poly1305, password: PcSF0kEpWZvhnWaTVJd67X, udp: true}
+  - {name: 🇮🇳 印度 V2CROSS.COM, server: 202.78.162.5, port: 443, type: vmess, uuid: 118287d2-e968-42e1-80d0-12fa2f5d38d6, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: sahand.serveminecraft.net}}, udp: true}
+  - {name: 广东省中山市 移动, server: 183.238.90.8, port: 46920, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 🇺🇸 美国 CloudFlare节点 3, server: 172.66.168.213, port: 443, type: trojan, password: aTArbZ2F0E, sni: uSa-vp-27.bLAzECLOUD.SITE, skip-cert-verify: false, udp: true}
+  - {name: 安徽省合肥市 移动, server: 112.29.213.228, port: 46019, type: vmess, uuid: 4c5a8a75-7d65-40a9-8c3b-a67abae08534, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /zh-cn}, udp: true}
+  - {name: 🇨🇳 北京市 亚马逊(Amazon)公司数据中心 2, server: tk.hzlt.tkddns.xyz, port: 22642, type: vmess, uuid: 98e96c9f-4bb3-39d4-9a2c-fac04257f7c7, alterId: 2, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: zxjp-b.tkong.cc}}, udp: true}
+  - {name: 🇭🇰 香港 电讯盈科有限公司, server: 0e1121ca-swd340-teqqcv-1rc6n.hgc1.tcpbbr.net, port: 8080, type: vmess, uuid: 32bd96d6-186b-11f0-9a65-f23c9164ca5d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: 0e1121ca-swd340-teqqcv-1rc6n.hgc1.tcpbbr.net}}, udp: true}
+  - {name: 🇺🇸 美国 CloudFlare节点 4, server: 104.21.82.183, port: 8880, type: vmess, uuid: 5a7021e0-26b4-45d6-b175-fe551601ca97, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: server26.beheshtbaneh.com}}, udp: true}
+  - {name: 🇺🇸 美国 CloudFlare节点 5, server: 104.17.147.22, port: 80, type: vmess, uuid: 3f638f34-8dba-4186-bc43-2716a7ddd4be, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /az05.beyondy.cfd:443/link, headers: {Host: telegram----cassiusvpn----3.kale-e08.workers.dev}}, udp: true}
+  - {name: 🇨🇭 瑞士 苏黎世Oracle云计算数据中心, server: 140.238.212.95, port: 443, type: trojan, password: 6884d714-d3c4-4b49-aa20-767ea92837d6, sni: icecream.955850.xyz, skip-cert-verify: false, udp: true}
+  - {name: 🇺🇸 美国 CloudFlare节点 6, server: 172.66.44.230, port: 8443, type: trojan, password: 8r%3C%5B9%27l6hAO%238ZQi, sni: Koma-YT.PAGeS.Dev, skip-cert-verify: false, udp: true}
+  - {name: 🇩🇪 德国 法兰克福Oracle云计算数据中心, server: 132.145.232.171, port: 443, type: vmess, uuid: 9b456c2a-f2c1-45e1-87a9-b7628b04bb24, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /linkws, headers: {Host: beyonddsz.cfd}}, udp: true}
+  - {name: 🇨🇳 广东省广州市 电信, server: 183.2.157.135, port: 15012, type: ss, cipher: aes-256-gcm, password: QZ4L8ZDG75OFMFRU, udp: true}
+  - {name: 🇺🇸 美国 CloudFlare节点 7, server: 9e5560.82d35d19-d88c.shop, port: 80, type: vmess, uuid: 5be76fa5-3758-4282-bb54-b1efabd6ba3d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: us03s.82d35d19-d88c.shop}}, udp: true}
+  - {name: 🇨🇳 广东省广州市 移动 2, server: gzyd.cg.xxality.cn, port: 35000, type: trojan, password: 09e8b39a-4c09-4df0-a50c-af3bef01567e, sni: cgsg2.hysality.com, skip-cert-verify: false, udp: true}
+  - {name: 🇮🇳 印度 V2CROSS.COM 2, server: 202.78.162.5, port: 443, type: vmess, uuid: 2ff97c6d-8557-42a4-b43f-19c77c5959ea, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: irsoft.sytes.net}}, udp: true}
+  - {name: 🇨🇳 广东省广州市 移动 3, server: 183.236.51.38, port: 41024, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 🇺🇸 美国 CloudFlare节点 8, server: 172.67.172.91, port: 443, type: trojan, password: f0f6e76e-e5fe-4e2c-9faf-34832e021eae, sni: Ty.457.pP.uA, skip-cert-verify: false, udp: true}
+  - {name: 🇫🇷 法国 巴黎Amazon数据中心, server: grown-mackerel.shiner427.skin, port: 443, type: trojan, password: !<str> 74260665780162200, sni: grown-mackerel.shiner427.skin, skip-cert-verify: false, udp: true}
+  - {name: 🇺🇸 美国 CloudFlare节点 9, server: 104.21.96.1, port: 2096, type: vmess, uuid: b3928f8d-ea81-4d75-bcec-4016a072adff, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: de01.sh-cloudflare.sbs}}, udp: true}
+  - {name: 🇭🇰 香港 电讯盈科有限公司 2, server: cc424de4-swd340-swp3f3-1teuc.hgc1.tcpbbr.net, port: 8080, type: vmess, uuid: a5a81a34-f257-11ef-ba82-f23c913c8d2b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: cc424de4-swd340-swp3f3-1teuc.hgc1.tcpbbr.net}}, udp: true}
+  - {name: 🇨🇳 北京市 亚马逊(Amazon)公司数据中心 3, server: tk.hzlt.tkddns.xyz, port: 22643, type: vmess, uuid: 98e96c9f-4bb3-39d4-9a2c-fac04257f7c7, alterId: 2, cipher: auto, tls: true, skip-cert-verify: false, servername: zxjp-c.tkong.cc, network: ws, ws-opts: {path: /, headers: {Host: zxjp-c.tkong.cc}}, udp: true}
+  - {name: 🇺🇸 美国 CloudFlare节点 10, server: 172.67.207.27, port: 443, type: trojan, password: a926af96-2cfe-4169-8107-6c5f0d74a938, sni: yu765.taipei108.dpdns.org, skip-cert-verify: false, udp: true}
+  - {name: 🇨🇦 加拿大 魁北克省蒙特利尔Amazon数据中心, server: 52.60.142.77, port: 443, type: trojan, password: !<str> 74260665780162200, sni: allowing-owl.shiner427.skin, skip-cert-verify: false, udp: true}
+  - {name: 🇬🇧 英国 Level3通信股份有限公司 2, server: 217.163.76.254, port: 443, type: trojan, password: 6884d714-d3c4-4b49-aa20-767ea92837d6, sni: icecream.955850.xyz, skip-cert-verify: false, udp: true}
+  - {name: 🇺🇸 美国 CloudFlare节点 11, server: 104.21.32.1, port: 2083, type: vmess, uuid: 8f78e709-2c5f-4c19-9f44-b5b5f80ab74c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: cc2d3.988988.shop}}, udp: true}
+  - {name: 🇿🇦 南非 V2CROSS.COM, server: 160.123.255.243, port: 443, type: trojan, password: 6884d714-d3c4-4b49-aa20-767ea92837d6, sni: icecream.955850.xyz, skip-cert-verify: false, udp: true}
+  - {name: 🇨🇦 加拿大 魁北克省蒙特利尔Amazon数据中心 2, server: allowing-owl.shiner427.skin, port: 443, type: trojan, password: !<str> 74260665780162200, sni: allowing-owl.shiner427.skin, skip-cert-verify: false, udp: true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 🇺🇸 美国 Amazon数据中心
-      - 🇺🇸 美国 CloudFlare节点
-      - 🇺🇸 美国 CloudFlare节点 2
-      - 🇺🇸 美国 V2CROSS.COM
-      - 🇨🇳 上海市 联通
-      - 🇩🇪 德国 黑森州法兰克福AMazon数据中心
-      - 🇦🇹 奥地利 V2CROSS.COM
-      - 🇺🇸 美国 纽约市DigitalOcean云公司
-      - 广东省湛江市 移动
-      - 🇺🇸 美国 CloudFlare节点 3
-      - 🇭🇰 香港 电讯盈科有限公司
-      - 🇮🇪 爱尔兰 都柏林Amazon数据中心
-      - 🇺🇸 美国 CloudFlare节点 4
-      - 广东省中山市 移动
-      - 🇺🇸 美国 CloudFlare节点 5
-      - 🇨🇳 广东省广州市 移动
-      - 🇷🇺 俄罗斯 莫斯科JustHost
-      - 欧盟 V2CROSS.COM
-      - 🇨🇳 北京市 Amazon数据中心
-      - 🇺🇸 美国 V2CROSS.COM 2
-      - 🇩🇪 德国 V2CROSS.COM
-      - 🇺🇸 美国 俄勒冈州波特兰Amazon数据中心
       - 🇨🇳 北京市 亚马逊(Amazon)公司数据中心
-      - 🇺🇸 美国 CloudFlare节点 6
-      - 广东省 联通
-      - 🇩🇪 德国 黑森州法兰克福AMazon数据中心 2
+      - 🇬🇧 英国 Level3通信股份有限公司
+      - 🇺🇸 美国 Fastly全球Anycast节点
       - 🇳🇱 荷兰 V2CROSS.COM
+      - 欧盟 V2CROSS.COM
+      - 🇨🇳 广东省广州市 移动
+      - 🇺🇸 美国 CloudFlare节点
+      - 🇺🇸 美国 俄勒冈州波特兰Amazon数据中心
+      - 🇺🇸 美国 纽约州伊利县威廉斯维尔村ColoCrossing有限公司
+      - 🇺🇸 美国 CloudFlare节点 2
+      - 🇷🇺 俄罗斯 V2CROSS.COM
+      - 🇮🇳 印度 V2CROSS.COM
+      - 广东省中山市 移动
+      - 🇺🇸 美国 CloudFlare节点 3
+      - 安徽省合肥市 移动
+      - 🇨🇳 北京市 亚马逊(Amazon)公司数据中心 2
+      - 🇭🇰 香港 电讯盈科有限公司
+      - 🇺🇸 美国 CloudFlare节点 4
+      - 🇺🇸 美国 CloudFlare节点 5
+      - 🇨🇭 瑞士 苏黎世Oracle云计算数据中心
+      - 🇺🇸 美国 CloudFlare节点 6
+      - 🇩🇪 德国 法兰克福Oracle云计算数据中心
+      - 🇨🇳 广东省广州市 电信
       - 🇺🇸 美国 CloudFlare节点 7
-      - 🇷🇺 俄罗斯 莫斯科JustHost 2
-      - 广东省中山市 移动 2
-      - 欧盟 V2CROSS.COM 2
+      - 🇨🇳 广东省广州市 移动 2
+      - 🇮🇳 印度 V2CROSS.COM 2
+      - 🇨🇳 广东省广州市 移动 3
       - 🇺🇸 美国 CloudFlare节点 8
-      - 广东省湛江市 移动 2
+      - 🇫🇷 法国 巴黎Amazon数据中心
       - 🇺🇸 美国 CloudFlare节点 9
-      - 广东省湛江市 移动 3
+      - 🇭🇰 香港 电讯盈科有限公司 2
+      - 🇨🇳 北京市 亚马逊(Amazon)公司数据中心 3
       - 🇺🇸 美国 CloudFlare节点 10
+      - 🇨🇦 加拿大 魁北克省蒙特利尔Amazon数据中心
+      - 🇬🇧 英国 Level3通信股份有限公司 2
       - 🇺🇸 美国 CloudFlare节点 11
-      - 广东省 联通 2
-      - 🇵🇱 波兰 V2CROSS.COM
+      - 🇿🇦 南非 V2CROSS.COM
+      - 🇨🇦 加拿大 魁北克省蒙特利尔Amazon数据中心 2
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇺🇸 美国 Amazon数据中心
-      - 🇺🇸 美国 CloudFlare节点
-      - 🇺🇸 美国 CloudFlare节点 2
-      - 🇺🇸 美国 V2CROSS.COM
-      - 🇨🇳 上海市 联通
-      - 🇩🇪 德国 黑森州法兰克福AMazon数据中心
-      - 🇦🇹 奥地利 V2CROSS.COM
-      - 🇺🇸 美国 纽约市DigitalOcean云公司
-      - 广东省湛江市 移动
-      - 🇺🇸 美国 CloudFlare节点 3
-      - 🇭🇰 香港 电讯盈科有限公司
-      - 🇮🇪 爱尔兰 都柏林Amazon数据中心
-      - 🇺🇸 美国 CloudFlare节点 4
-      - 广东省中山市 移动
-      - 🇺🇸 美国 CloudFlare节点 5
-      - 🇨🇳 广东省广州市 移动
-      - 🇷🇺 俄罗斯 莫斯科JustHost
-      - 欧盟 V2CROSS.COM
-      - 🇨🇳 北京市 Amazon数据中心
-      - 🇺🇸 美国 V2CROSS.COM 2
-      - 🇩🇪 德国 V2CROSS.COM
-      - 🇺🇸 美国 俄勒冈州波特兰Amazon数据中心
       - 🇨🇳 北京市 亚马逊(Amazon)公司数据中心
-      - 🇺🇸 美国 CloudFlare节点 6
-      - 广东省 联通
-      - 🇩🇪 德国 黑森州法兰克福AMazon数据中心 2
+      - 🇬🇧 英国 Level3通信股份有限公司
+      - 🇺🇸 美国 Fastly全球Anycast节点
       - 🇳🇱 荷兰 V2CROSS.COM
+      - 欧盟 V2CROSS.COM
+      - 🇨🇳 广东省广州市 移动
+      - 🇺🇸 美国 CloudFlare节点
+      - 🇺🇸 美国 俄勒冈州波特兰Amazon数据中心
+      - 🇺🇸 美国 纽约州伊利县威廉斯维尔村ColoCrossing有限公司
+      - 🇺🇸 美国 CloudFlare节点 2
+      - 🇷🇺 俄罗斯 V2CROSS.COM
+      - 🇮🇳 印度 V2CROSS.COM
+      - 广东省中山市 移动
+      - 🇺🇸 美国 CloudFlare节点 3
+      - 安徽省合肥市 移动
+      - 🇨🇳 北京市 亚马逊(Amazon)公司数据中心 2
+      - 🇭🇰 香港 电讯盈科有限公司
+      - 🇺🇸 美国 CloudFlare节点 4
+      - 🇺🇸 美国 CloudFlare节点 5
+      - 🇨🇭 瑞士 苏黎世Oracle云计算数据中心
+      - 🇺🇸 美国 CloudFlare节点 6
+      - 🇩🇪 德国 法兰克福Oracle云计算数据中心
+      - 🇨🇳 广东省广州市 电信
       - 🇺🇸 美国 CloudFlare节点 7
-      - 🇷🇺 俄罗斯 莫斯科JustHost 2
-      - 广东省中山市 移动 2
-      - 欧盟 V2CROSS.COM 2
+      - 🇨🇳 广东省广州市 移动 2
+      - 🇮🇳 印度 V2CROSS.COM 2
+      - 🇨🇳 广东省广州市 移动 3
       - 🇺🇸 美国 CloudFlare节点 8
-      - 广东省湛江市 移动 2
+      - 🇫🇷 法国 巴黎Amazon数据中心
       - 🇺🇸 美国 CloudFlare节点 9
-      - 广东省湛江市 移动 3
+      - 🇭🇰 香港 电讯盈科有限公司 2
+      - 🇨🇳 北京市 亚马逊(Amazon)公司数据中心 3
       - 🇺🇸 美国 CloudFlare节点 10
+      - 🇨🇦 加拿大 魁北克省蒙特利尔Amazon数据中心
+      - 🇬🇧 英国 Level3通信股份有限公司 2
       - 🇺🇸 美国 CloudFlare节点 11
-      - 广东省 联通 2
-      - 🇵🇱 波兰 V2CROSS.COM
+      - 🇿🇦 南非 V2CROSS.COM
+      - 🇨🇦 加拿大 魁北克省蒙特利尔Amazon数据中心 2
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇺🇸 美国 Amazon数据中心
-      - 🇺🇸 美国 CloudFlare节点
-      - 🇺🇸 美国 CloudFlare节点 2
-      - 🇺🇸 美国 V2CROSS.COM
-      - 🇨🇳 上海市 联通
-      - 🇩🇪 德国 黑森州法兰克福AMazon数据中心
-      - 🇦🇹 奥地利 V2CROSS.COM
-      - 🇺🇸 美国 纽约市DigitalOcean云公司
-      - 广东省湛江市 移动
-      - 🇺🇸 美国 CloudFlare节点 3
-      - 🇭🇰 香港 电讯盈科有限公司
-      - 🇮🇪 爱尔兰 都柏林Amazon数据中心
-      - 🇺🇸 美国 CloudFlare节点 4
-      - 广东省中山市 移动
-      - 🇺🇸 美国 CloudFlare节点 5
-      - 🇨🇳 广东省广州市 移动
-      - 🇷🇺 俄罗斯 莫斯科JustHost
-      - 欧盟 V2CROSS.COM
-      - 🇨🇳 北京市 Amazon数据中心
-      - 🇺🇸 美国 V2CROSS.COM 2
-      - 🇩🇪 德国 V2CROSS.COM
-      - 🇺🇸 美国 俄勒冈州波特兰Amazon数据中心
       - 🇨🇳 北京市 亚马逊(Amazon)公司数据中心
-      - 🇺🇸 美国 CloudFlare节点 6
-      - 广东省 联通
-      - 🇩🇪 德国 黑森州法兰克福AMazon数据中心 2
+      - 🇬🇧 英国 Level3通信股份有限公司
+      - 🇺🇸 美国 Fastly全球Anycast节点
       - 🇳🇱 荷兰 V2CROSS.COM
+      - 欧盟 V2CROSS.COM
+      - 🇨🇳 广东省广州市 移动
+      - 🇺🇸 美国 CloudFlare节点
+      - 🇺🇸 美国 俄勒冈州波特兰Amazon数据中心
+      - 🇺🇸 美国 纽约州伊利县威廉斯维尔村ColoCrossing有限公司
+      - 🇺🇸 美国 CloudFlare节点 2
+      - 🇷🇺 俄罗斯 V2CROSS.COM
+      - 🇮🇳 印度 V2CROSS.COM
+      - 广东省中山市 移动
+      - 🇺🇸 美国 CloudFlare节点 3
+      - 安徽省合肥市 移动
+      - 🇨🇳 北京市 亚马逊(Amazon)公司数据中心 2
+      - 🇭🇰 香港 电讯盈科有限公司
+      - 🇺🇸 美国 CloudFlare节点 4
+      - 🇺🇸 美国 CloudFlare节点 5
+      - 🇨🇭 瑞士 苏黎世Oracle云计算数据中心
+      - 🇺🇸 美国 CloudFlare节点 6
+      - 🇩🇪 德国 法兰克福Oracle云计算数据中心
+      - 🇨🇳 广东省广州市 电信
       - 🇺🇸 美国 CloudFlare节点 7
-      - 🇷🇺 俄罗斯 莫斯科JustHost 2
-      - 广东省中山市 移动 2
-      - 欧盟 V2CROSS.COM 2
+      - 🇨🇳 广东省广州市 移动 2
+      - 🇮🇳 印度 V2CROSS.COM 2
+      - 🇨🇳 广东省广州市 移动 3
       - 🇺🇸 美国 CloudFlare节点 8
-      - 广东省湛江市 移动 2
+      - 🇫🇷 法国 巴黎Amazon数据中心
       - 🇺🇸 美国 CloudFlare节点 9
-      - 广东省湛江市 移动 3
+      - 🇭🇰 香港 电讯盈科有限公司 2
+      - 🇨🇳 北京市 亚马逊(Amazon)公司数据中心 3
       - 🇺🇸 美国 CloudFlare节点 10
+      - 🇨🇦 加拿大 魁北克省蒙特利尔Amazon数据中心
+      - 🇬🇧 英国 Level3通信股份有限公司 2
       - 🇺🇸 美国 CloudFlare节点 11
-      - 广东省 联通 2
-      - 🇵🇱 波兰 V2CROSS.COM
+      - 🇿🇦 南非 V2CROSS.COM
+      - 🇨🇦 加拿大 魁北克省蒙特利尔Amazon数据中心 2
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇺🇸 美国 Amazon数据中心
-      - 🇺🇸 美国 CloudFlare节点
-      - 🇺🇸 美国 CloudFlare节点 2
-      - 🇺🇸 美国 V2CROSS.COM
-      - 🇨🇳 上海市 联通
-      - 🇩🇪 德国 黑森州法兰克福AMazon数据中心
-      - 🇦🇹 奥地利 V2CROSS.COM
-      - 🇺🇸 美国 纽约市DigitalOcean云公司
-      - 广东省湛江市 移动
-      - 🇺🇸 美国 CloudFlare节点 3
-      - 🇭🇰 香港 电讯盈科有限公司
-      - 🇮🇪 爱尔兰 都柏林Amazon数据中心
-      - 🇺🇸 美国 CloudFlare节点 4
-      - 广东省中山市 移动
-      - 🇺🇸 美国 CloudFlare节点 5
-      - 🇨🇳 广东省广州市 移动
-      - 🇷🇺 俄罗斯 莫斯科JustHost
-      - 欧盟 V2CROSS.COM
-      - 🇨🇳 北京市 Amazon数据中心
-      - 🇺🇸 美国 V2CROSS.COM 2
-      - 🇩🇪 德国 V2CROSS.COM
-      - 🇺🇸 美国 俄勒冈州波特兰Amazon数据中心
       - 🇨🇳 北京市 亚马逊(Amazon)公司数据中心
-      - 🇺🇸 美国 CloudFlare节点 6
-      - 广东省 联通
-      - 🇩🇪 德国 黑森州法兰克福AMazon数据中心 2
+      - 🇬🇧 英国 Level3通信股份有限公司
+      - 🇺🇸 美国 Fastly全球Anycast节点
       - 🇳🇱 荷兰 V2CROSS.COM
+      - 欧盟 V2CROSS.COM
+      - 🇨🇳 广东省广州市 移动
+      - 🇺🇸 美国 CloudFlare节点
+      - 🇺🇸 美国 俄勒冈州波特兰Amazon数据中心
+      - 🇺🇸 美国 纽约州伊利县威廉斯维尔村ColoCrossing有限公司
+      - 🇺🇸 美国 CloudFlare节点 2
+      - 🇷🇺 俄罗斯 V2CROSS.COM
+      - 🇮🇳 印度 V2CROSS.COM
+      - 广东省中山市 移动
+      - 🇺🇸 美国 CloudFlare节点 3
+      - 安徽省合肥市 移动
+      - 🇨🇳 北京市 亚马逊(Amazon)公司数据中心 2
+      - 🇭🇰 香港 电讯盈科有限公司
+      - 🇺🇸 美国 CloudFlare节点 4
+      - 🇺🇸 美国 CloudFlare节点 5
+      - 🇨🇭 瑞士 苏黎世Oracle云计算数据中心
+      - 🇺🇸 美国 CloudFlare节点 6
+      - 🇩🇪 德国 法兰克福Oracle云计算数据中心
+      - 🇨🇳 广东省广州市 电信
       - 🇺🇸 美国 CloudFlare节点 7
-      - 🇷🇺 俄罗斯 莫斯科JustHost 2
-      - 广东省中山市 移动 2
-      - 欧盟 V2CROSS.COM 2
+      - 🇨🇳 广东省广州市 移动 2
+      - 🇮🇳 印度 V2CROSS.COM 2
+      - 🇨🇳 广东省广州市 移动 3
       - 🇺🇸 美国 CloudFlare节点 8
-      - 广东省湛江市 移动 2
+      - 🇫🇷 法国 巴黎Amazon数据中心
       - 🇺🇸 美国 CloudFlare节点 9
-      - 广东省湛江市 移动 3
+      - 🇭🇰 香港 电讯盈科有限公司 2
+      - 🇨🇳 北京市 亚马逊(Amazon)公司数据中心 3
       - 🇺🇸 美国 CloudFlare节点 10
+      - 🇨🇦 加拿大 魁北克省蒙特利尔Amazon数据中心
+      - 🇬🇧 英国 Level3通信股份有限公司 2
       - 🇺🇸 美国 CloudFlare节点 11
-      - 广东省 联通 2
-      - 🇵🇱 波兰 V2CROSS.COM
+      - 🇿🇦 南非 V2CROSS.COM
+      - 🇨🇦 加拿大 魁北克省蒙特利尔Amazon数据中心 2
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 🇺🇸 美国 Amazon数据中心
-      - 🇺🇸 美国 CloudFlare节点
-      - 🇺🇸 美国 CloudFlare节点 2
-      - 🇺🇸 美国 V2CROSS.COM
-      - 🇨🇳 上海市 联通
-      - 🇩🇪 德国 黑森州法兰克福AMazon数据中心
-      - 🇦🇹 奥地利 V2CROSS.COM
-      - 🇺🇸 美国 纽约市DigitalOcean云公司
-      - 广东省湛江市 移动
-      - 🇺🇸 美国 CloudFlare节点 3
-      - 🇭🇰 香港 电讯盈科有限公司
-      - 🇮🇪 爱尔兰 都柏林Amazon数据中心
-      - 🇺🇸 美国 CloudFlare节点 4
-      - 广东省中山市 移动
-      - 🇺🇸 美国 CloudFlare节点 5
-      - 🇨🇳 广东省广州市 移动
-      - 🇷🇺 俄罗斯 莫斯科JustHost
-      - 欧盟 V2CROSS.COM
-      - 🇨🇳 北京市 Amazon数据中心
-      - 🇺🇸 美国 V2CROSS.COM 2
-      - 🇩🇪 德国 V2CROSS.COM
-      - 🇺🇸 美国 俄勒冈州波特兰Amazon数据中心
       - 🇨🇳 北京市 亚马逊(Amazon)公司数据中心
-      - 🇺🇸 美国 CloudFlare节点 6
-      - 广东省 联通
-      - 🇩🇪 德国 黑森州法兰克福AMazon数据中心 2
+      - 🇬🇧 英国 Level3通信股份有限公司
+      - 🇺🇸 美国 Fastly全球Anycast节点
       - 🇳🇱 荷兰 V2CROSS.COM
+      - 欧盟 V2CROSS.COM
+      - 🇨🇳 广东省广州市 移动
+      - 🇺🇸 美国 CloudFlare节点
+      - 🇺🇸 美国 俄勒冈州波特兰Amazon数据中心
+      - 🇺🇸 美国 纽约州伊利县威廉斯维尔村ColoCrossing有限公司
+      - 🇺🇸 美国 CloudFlare节点 2
+      - 🇷🇺 俄罗斯 V2CROSS.COM
+      - 🇮🇳 印度 V2CROSS.COM
+      - 广东省中山市 移动
+      - 🇺🇸 美国 CloudFlare节点 3
+      - 安徽省合肥市 移动
+      - 🇨🇳 北京市 亚马逊(Amazon)公司数据中心 2
+      - 🇭🇰 香港 电讯盈科有限公司
+      - 🇺🇸 美国 CloudFlare节点 4
+      - 🇺🇸 美国 CloudFlare节点 5
+      - 🇨🇭 瑞士 苏黎世Oracle云计算数据中心
+      - 🇺🇸 美国 CloudFlare节点 6
+      - 🇩🇪 德国 法兰克福Oracle云计算数据中心
+      - 🇨🇳 广东省广州市 电信
       - 🇺🇸 美国 CloudFlare节点 7
-      - 🇷🇺 俄罗斯 莫斯科JustHost 2
-      - 广东省中山市 移动 2
-      - 欧盟 V2CROSS.COM 2
+      - 🇨🇳 广东省广州市 移动 2
+      - 🇮🇳 印度 V2CROSS.COM 2
+      - 🇨🇳 广东省广州市 移动 3
       - 🇺🇸 美国 CloudFlare节点 8
-      - 广东省湛江市 移动 2
+      - 🇫🇷 法国 巴黎Amazon数据中心
       - 🇺🇸 美国 CloudFlare节点 9
-      - 广东省湛江市 移动 3
+      - 🇭🇰 香港 电讯盈科有限公司 2
+      - 🇨🇳 北京市 亚马逊(Amazon)公司数据中心 3
       - 🇺🇸 美国 CloudFlare节点 10
+      - 🇨🇦 加拿大 魁北克省蒙特利尔Amazon数据中心
+      - 🇬🇧 英国 Level3通信股份有限公司 2
       - 🇺🇸 美国 CloudFlare节点 11
-      - 广东省 联通 2
-      - 🇵🇱 波兰 V2CROSS.COM
+      - 🇿🇦 南非 V2CROSS.COM
+      - 🇨🇦 加拿大 魁北克省蒙特利尔Amazon数据中心 2
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇺🇸 美国 Amazon数据中心
-      - 🇺🇸 美国 CloudFlare节点
-      - 🇺🇸 美国 CloudFlare节点 2
-      - 🇺🇸 美国 V2CROSS.COM
-      - 🇨🇳 上海市 联通
-      - 🇩🇪 德国 黑森州法兰克福AMazon数据中心
-      - 🇦🇹 奥地利 V2CROSS.COM
-      - 🇺🇸 美国 纽约市DigitalOcean云公司
-      - 广东省湛江市 移动
-      - 🇺🇸 美国 CloudFlare节点 3
-      - 🇭🇰 香港 电讯盈科有限公司
-      - 🇮🇪 爱尔兰 都柏林Amazon数据中心
-      - 🇺🇸 美国 CloudFlare节点 4
-      - 广东省中山市 移动
-      - 🇺🇸 美国 CloudFlare节点 5
-      - 🇨🇳 广东省广州市 移动
-      - 🇷🇺 俄罗斯 莫斯科JustHost
-      - 欧盟 V2CROSS.COM
-      - 🇨🇳 北京市 Amazon数据中心
-      - 🇺🇸 美国 V2CROSS.COM 2
-      - 🇩🇪 德国 V2CROSS.COM
-      - 🇺🇸 美国 俄勒冈州波特兰Amazon数据中心
       - 🇨🇳 北京市 亚马逊(Amazon)公司数据中心
-      - 🇺🇸 美国 CloudFlare节点 6
-      - 广东省 联通
-      - 🇩🇪 德国 黑森州法兰克福AMazon数据中心 2
+      - 🇬🇧 英国 Level3通信股份有限公司
+      - 🇺🇸 美国 Fastly全球Anycast节点
       - 🇳🇱 荷兰 V2CROSS.COM
+      - 欧盟 V2CROSS.COM
+      - 🇨🇳 广东省广州市 移动
+      - 🇺🇸 美国 CloudFlare节点
+      - 🇺🇸 美国 俄勒冈州波特兰Amazon数据中心
+      - 🇺🇸 美国 纽约州伊利县威廉斯维尔村ColoCrossing有限公司
+      - 🇺🇸 美国 CloudFlare节点 2
+      - 🇷🇺 俄罗斯 V2CROSS.COM
+      - 🇮🇳 印度 V2CROSS.COM
+      - 广东省中山市 移动
+      - 🇺🇸 美国 CloudFlare节点 3
+      - 安徽省合肥市 移动
+      - 🇨🇳 北京市 亚马逊(Amazon)公司数据中心 2
+      - 🇭🇰 香港 电讯盈科有限公司
+      - 🇺🇸 美国 CloudFlare节点 4
+      - 🇺🇸 美国 CloudFlare节点 5
+      - 🇨🇭 瑞士 苏黎世Oracle云计算数据中心
+      - 🇺🇸 美国 CloudFlare节点 6
+      - 🇩🇪 德国 法兰克福Oracle云计算数据中心
+      - 🇨🇳 广东省广州市 电信
       - 🇺🇸 美国 CloudFlare节点 7
-      - 🇷🇺 俄罗斯 莫斯科JustHost 2
-      - 广东省中山市 移动 2
-      - 欧盟 V2CROSS.COM 2
+      - 🇨🇳 广东省广州市 移动 2
+      - 🇮🇳 印度 V2CROSS.COM 2
+      - 🇨🇳 广东省广州市 移动 3
       - 🇺🇸 美国 CloudFlare节点 8
-      - 广东省湛江市 移动 2
+      - 🇫🇷 法国 巴黎Amazon数据中心
       - 🇺🇸 美国 CloudFlare节点 9
-      - 广东省湛江市 移动 3
+      - 🇭🇰 香港 电讯盈科有限公司 2
+      - 🇨🇳 北京市 亚马逊(Amazon)公司数据中心 3
       - 🇺🇸 美国 CloudFlare节点 10
+      - 🇨🇦 加拿大 魁北克省蒙特利尔Amazon数据中心
+      - 🇬🇧 英国 Level3通信股份有限公司 2
       - 🇺🇸 美国 CloudFlare节点 11
-      - 广东省 联通 2
-      - 🇵🇱 波兰 V2CROSS.COM
+      - 🇿🇦 南非 V2CROSS.COM
+      - 🇨🇦 加拿大 魁北克省蒙特利尔Amazon数据中心 2
   - name: 📢 谷歌FCM
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇺🇸 美国 Amazon数据中心
-      - 🇺🇸 美国 CloudFlare节点
-      - 🇺🇸 美国 CloudFlare节点 2
-      - 🇺🇸 美国 V2CROSS.COM
-      - 🇨🇳 上海市 联通
-      - 🇩🇪 德国 黑森州法兰克福AMazon数据中心
-      - 🇦🇹 奥地利 V2CROSS.COM
-      - 🇺🇸 美国 纽约市DigitalOcean云公司
-      - 广东省湛江市 移动
-      - 🇺🇸 美国 CloudFlare节点 3
-      - 🇭🇰 香港 电讯盈科有限公司
-      - 🇮🇪 爱尔兰 都柏林Amazon数据中心
-      - 🇺🇸 美国 CloudFlare节点 4
-      - 广东省中山市 移动
-      - 🇺🇸 美国 CloudFlare节点 5
-      - 🇨🇳 广东省广州市 移动
-      - 🇷🇺 俄罗斯 莫斯科JustHost
-      - 欧盟 V2CROSS.COM
-      - 🇨🇳 北京市 Amazon数据中心
-      - 🇺🇸 美国 V2CROSS.COM 2
-      - 🇩🇪 德国 V2CROSS.COM
-      - 🇺🇸 美国 俄勒冈州波特兰Amazon数据中心
       - 🇨🇳 北京市 亚马逊(Amazon)公司数据中心
-      - 🇺🇸 美国 CloudFlare节点 6
-      - 广东省 联通
-      - 🇩🇪 德国 黑森州法兰克福AMazon数据中心 2
+      - 🇬🇧 英国 Level3通信股份有限公司
+      - 🇺🇸 美国 Fastly全球Anycast节点
       - 🇳🇱 荷兰 V2CROSS.COM
+      - 欧盟 V2CROSS.COM
+      - 🇨🇳 广东省广州市 移动
+      - 🇺🇸 美国 CloudFlare节点
+      - 🇺🇸 美国 俄勒冈州波特兰Amazon数据中心
+      - 🇺🇸 美国 纽约州伊利县威廉斯维尔村ColoCrossing有限公司
+      - 🇺🇸 美国 CloudFlare节点 2
+      - 🇷🇺 俄罗斯 V2CROSS.COM
+      - 🇮🇳 印度 V2CROSS.COM
+      - 广东省中山市 移动
+      - 🇺🇸 美国 CloudFlare节点 3
+      - 安徽省合肥市 移动
+      - 🇨🇳 北京市 亚马逊(Amazon)公司数据中心 2
+      - 🇭🇰 香港 电讯盈科有限公司
+      - 🇺🇸 美国 CloudFlare节点 4
+      - 🇺🇸 美国 CloudFlare节点 5
+      - 🇨🇭 瑞士 苏黎世Oracle云计算数据中心
+      - 🇺🇸 美国 CloudFlare节点 6
+      - 🇩🇪 德国 法兰克福Oracle云计算数据中心
+      - 🇨🇳 广东省广州市 电信
       - 🇺🇸 美国 CloudFlare节点 7
-      - 🇷🇺 俄罗斯 莫斯科JustHost 2
-      - 广东省中山市 移动 2
-      - 欧盟 V2CROSS.COM 2
+      - 🇨🇳 广东省广州市 移动 2
+      - 🇮🇳 印度 V2CROSS.COM 2
+      - 🇨🇳 广东省广州市 移动 3
       - 🇺🇸 美国 CloudFlare节点 8
-      - 广东省湛江市 移动 2
+      - 🇫🇷 法国 巴黎Amazon数据中心
       - 🇺🇸 美国 CloudFlare节点 9
-      - 广东省湛江市 移动 3
+      - 🇭🇰 香港 电讯盈科有限公司 2
+      - 🇨🇳 北京市 亚马逊(Amazon)公司数据中心 3
       - 🇺🇸 美国 CloudFlare节点 10
+      - 🇨🇦 加拿大 魁北克省蒙特利尔Amazon数据中心
+      - 🇬🇧 英国 Level3通信股份有限公司 2
       - 🇺🇸 美国 CloudFlare节点 11
-      - 广东省 联通 2
-      - 🇵🇱 波兰 V2CROSS.COM
+      - 🇿🇦 南非 V2CROSS.COM
+      - 🇨🇦 加拿大 魁北克省蒙特利尔Amazon数据中心 2
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -378,45 +370,44 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇺🇸 美国 Amazon数据中心
-      - 🇺🇸 美国 CloudFlare节点
-      - 🇺🇸 美国 CloudFlare节点 2
-      - 🇺🇸 美国 V2CROSS.COM
-      - 🇨🇳 上海市 联通
-      - 🇩🇪 德国 黑森州法兰克福AMazon数据中心
-      - 🇦🇹 奥地利 V2CROSS.COM
-      - 🇺🇸 美国 纽约市DigitalOcean云公司
-      - 广东省湛江市 移动
-      - 🇺🇸 美国 CloudFlare节点 3
-      - 🇭🇰 香港 电讯盈科有限公司
-      - 🇮🇪 爱尔兰 都柏林Amazon数据中心
-      - 🇺🇸 美国 CloudFlare节点 4
-      - 广东省中山市 移动
-      - 🇺🇸 美国 CloudFlare节点 5
-      - 🇨🇳 广东省广州市 移动
-      - 🇷🇺 俄罗斯 莫斯科JustHost
-      - 欧盟 V2CROSS.COM
-      - 🇨🇳 北京市 Amazon数据中心
-      - 🇺🇸 美国 V2CROSS.COM 2
-      - 🇩🇪 德国 V2CROSS.COM
-      - 🇺🇸 美国 俄勒冈州波特兰Amazon数据中心
       - 🇨🇳 北京市 亚马逊(Amazon)公司数据中心
-      - 🇺🇸 美国 CloudFlare节点 6
-      - 广东省 联通
-      - 🇩🇪 德国 黑森州法兰克福AMazon数据中心 2
+      - 🇬🇧 英国 Level3通信股份有限公司
+      - 🇺🇸 美国 Fastly全球Anycast节点
       - 🇳🇱 荷兰 V2CROSS.COM
+      - 欧盟 V2CROSS.COM
+      - 🇨🇳 广东省广州市 移动
+      - 🇺🇸 美国 CloudFlare节点
+      - 🇺🇸 美国 俄勒冈州波特兰Amazon数据中心
+      - 🇺🇸 美国 纽约州伊利县威廉斯维尔村ColoCrossing有限公司
+      - 🇺🇸 美国 CloudFlare节点 2
+      - 🇷🇺 俄罗斯 V2CROSS.COM
+      - 🇮🇳 印度 V2CROSS.COM
+      - 广东省中山市 移动
+      - 🇺🇸 美国 CloudFlare节点 3
+      - 安徽省合肥市 移动
+      - 🇨🇳 北京市 亚马逊(Amazon)公司数据中心 2
+      - 🇭🇰 香港 电讯盈科有限公司
+      - 🇺🇸 美国 CloudFlare节点 4
+      - 🇺🇸 美国 CloudFlare节点 5
+      - 🇨🇭 瑞士 苏黎世Oracle云计算数据中心
+      - 🇺🇸 美国 CloudFlare节点 6
+      - 🇩🇪 德国 法兰克福Oracle云计算数据中心
+      - 🇨🇳 广东省广州市 电信
       - 🇺🇸 美国 CloudFlare节点 7
-      - 🇷🇺 俄罗斯 莫斯科JustHost 2
-      - 广东省中山市 移动 2
-      - 欧盟 V2CROSS.COM 2
+      - 🇨🇳 广东省广州市 移动 2
+      - 🇮🇳 印度 V2CROSS.COM 2
+      - 🇨🇳 广东省广州市 移动 3
       - 🇺🇸 美国 CloudFlare节点 8
-      - 广东省湛江市 移动 2
+      - 🇫🇷 法国 巴黎Amazon数据中心
       - 🇺🇸 美国 CloudFlare节点 9
-      - 广东省湛江市 移动 3
+      - 🇭🇰 香港 电讯盈科有限公司 2
+      - 🇨🇳 北京市 亚马逊(Amazon)公司数据中心 3
       - 🇺🇸 美国 CloudFlare节点 10
+      - 🇨🇦 加拿大 魁北克省蒙特利尔Amazon数据中心
+      - 🇬🇧 英国 Level3通信股份有限公司 2
       - 🇺🇸 美国 CloudFlare节点 11
-      - 广东省 联通 2
-      - 🇵🇱 波兰 V2CROSS.COM
+      - 🇿🇦 南非 V2CROSS.COM
+      - 🇨🇦 加拿大 魁北克省蒙特利尔Amazon数据中心 2
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
