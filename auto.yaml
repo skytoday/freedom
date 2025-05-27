@@ -5,71 +5,87 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 广东省广州市 移动, server: 120.232.153.40, port: 52182, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美国 CloudFlare节点, server: 104.21.82.183, port: 8880, type: vmess, uuid: 5a7021e0-26b4-45d6-b175-fe551601ca97, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: server26.beheshtbaneh.com}}, udp: true}
   - {name: 俄罗斯 莫斯科JustHost, server: 185.22.153.235, port: 2019, type: ss, cipher: aes-256-gcm, password: e04ae67d4e4cd165, udp: true}
-  - {name: 广东省广州市 移动 2, server: 183.236.51.38, port: 49121, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 希腊 V2CROSS.COM, server: 144.24.200.164, port: 443, type: vmess, uuid: 9b456c2a-f2c1-45e1-87a9-b7628b04bb24, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /linkws, headers: {Host: beyonddsz.cfd}}, udp: true}
-  - {name: 美国 CloudFlare节点 2, server: us01.sh-cloudflare.sbs, port: 8443, type: vmess, uuid: 2703867d-dd8f-4f7f-93f4-ac6e4f56c7e8, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: us01.sh-cloudflare.sbs}}, udp: true}
-  - {name: 美国 CloudFlare节点 3, server: 104.21.64.1, port: 2096, type: vmess, uuid: 8f78e709-2c5f-4c19-9f44-b5b5f80ab74c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: cc2d1.988988.shop}}, udp: true}
-  - {name: 英国 V2CROSS.COM, server: 158.180.228.226, port: 443, type: vmess, uuid: 9b456c2a-f2c1-45e1-87a9-b7628b04bb24, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /linkws, headers: {Host: beyonddsz.cfd}}, udp: true}
-  - {name: 美国 CloudFlare节点 4, server: de01.sh-cloudflare.sbs, port: 2096, type: vmess, uuid: b3928f8d-ea81-4d75-bcec-4016a072adff, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: de01.sh-cloudflare.sbs}}, udp: true}
-  - {name: 广东省江门市 移动, server: 120.234.102.229, port: 42174, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 广东省广州市 电信, server: ti3hyra4.slashdevslashnetslashtun.net, port: 16015, type: ss, cipher: aes-256-gcm, password: 3IJTYIFVEXKSJ92G, udp: true}
-  - {name: 印度 V2CROSS.COM, server: 202.78.162.5, port: 443, type: vmess, uuid: 716eded6-2201-4dbd-9d63-1638c9e8e677, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: pendar.onthewifi.com}}, udp: true}
+  - {name: 美国 CloudFlare节点, server: m11sdfg.890604.dpdns.org, port: 80, type: vmess, uuid: 0a28b420-4f7c-43ad-a29e-80068ce08263, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /lhU8ShsoPZlulnnYPb86csp, headers: {Host: m11sdfg.890604.dpdns.org}}, udp: true}
+  - {name: 美国 CloudFlare节点 2, server: 9x.938.pp.ua, port: 443, type: vmess, uuid: 906ba92f-ef96-4133-8eee-f33202a5a721, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /DAxJddOdTd5pVam9w, headers: {Host: 9x.938.pp.ua}}, udp: true}
+  - {name: 意大利 V2CROSS.COM, server: 185.213.22.93, port: 20026, type: ss, cipher: aes-256-gcm, password: T07L8JNX2QPA7SWB, udp: true}
+  - {name: 美国 V2CROSS.COM, server: 45.135.228.28, port: 443, type: trojan, password: !<str> 74260653385993900, sni: star-anchovy.shiner427.skin, skip-cert-verify: true, udp: true}
+  - {name: 英国 V2CROSS.COM, server: 85.210.120.237, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: Bog0ELmMM9DSxDdQ, udp: true}
+  - {name: 美国 CloudFlare节点 3, server: 172.67.136.233, port: 443, type: vmess, uuid: 3f638f34-8dba-4186-bc43-2716a7ddd4be, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /link, headers: {Host: az05.beyondy.cfd}}, udp: true}
+  - {name: 江苏省 移动, server: 36.151.251.60, port: 28296, type: trojan, password: RlzoEILU, sni: cdn.egvra.cn, skip-cert-verify: true, udp: true}
+  - {name: 欧洲 V2CROSS.COM, server: 185.47.253.144, port: 20010, type: ss, cipher: aes-256-gcm, password: DTCBZ7JOD384EYHS, udp: true}
+  - {name: 吉林省 移动(全省通用), server: v9.heduian.link, port: 30809, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /oooo, headers: {Host: baidu.com}}, udp: true}
+  - {name: 美国 Xerox, server: 13.60.86.63, port: 443, type: trojan, password: FYCO02u8Ny3RS38axzSTl3pcaegKlZ3BZyeS7Eaj6A9ODYIpwCAXF5CR4DqxDn, sni: loosely.freetrade.link, skip-cert-verify: true, udp: true}
+  - {name: 美国 CloudFlare节点 4, server: 9uyiopsdfh.iran.pp.ua, port: 443, type: vmess, uuid: 906ba92f-ef96-4133-8eee-f33202a5a721, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /DAxJddOdTd5pVam9w, headers: {Host: 9uyiopsdfh.iran.pp.ua}}, udp: true}
+  - {name: 广东省广州市 移动, server: 120.232.153.63, port: 37805, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 波兰 V2CROSS.COM, server: 193.243.147.128, port: 40368, type: ss, cipher: aes-256-gcm, password: 7BcLdsO1WweoGD0X, udp: true}
+  - {name: 广东省广州市 电信, server: ti3hyra4.slashdevslashnetslashtun.net, port: 18010, type: ss, cipher: aes-256-gcm, password: HO86LQ8KH31JNMBQ, udp: true}
+  - {name: 吉林省 移动(全省通用) 2, server: 111.26.109.79, port: 30828, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /oooo, headers: {Host: ocbc.com}}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 广东省广州市 移动
-      - 美国 CloudFlare节点
       - 俄罗斯 莫斯科JustHost
-      - 广东省广州市 移动 2
-      - 希腊 V2CROSS.COM
+      - 美国 CloudFlare节点
       - 美国 CloudFlare节点 2
-      - 美国 CloudFlare节点 3
+      - 意大利 V2CROSS.COM
+      - 美国 V2CROSS.COM
       - 英国 V2CROSS.COM
+      - 美国 CloudFlare节点 3
+      - 江苏省 移动
+      - 欧洲 V2CROSS.COM
+      - 吉林省 移动(全省通用)
+      - 美国 Xerox
       - 美国 CloudFlare节点 4
-      - 广东省江门市 移动
+      - 广东省广州市 移动
+      - 波兰 V2CROSS.COM
       - 广东省广州市 电信
-      - 印度 V2CROSS.COM
+      - 吉林省 移动(全省通用) 2
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 广东省广州市 移动
-      - 美国 CloudFlare节点
       - 俄罗斯 莫斯科JustHost
-      - 广东省广州市 移动 2
-      - 希腊 V2CROSS.COM
+      - 美国 CloudFlare节点
       - 美国 CloudFlare节点 2
-      - 美国 CloudFlare节点 3
+      - 意大利 V2CROSS.COM
+      - 美国 V2CROSS.COM
       - 英国 V2CROSS.COM
+      - 美国 CloudFlare节点 3
+      - 江苏省 移动
+      - 欧洲 V2CROSS.COM
+      - 吉林省 移动(全省通用)
+      - 美国 Xerox
       - 美国 CloudFlare节点 4
-      - 广东省江门市 移动
+      - 广东省广州市 移动
+      - 波兰 V2CROSS.COM
       - 广东省广州市 电信
-      - 印度 V2CROSS.COM
+      - 吉林省 移动(全省通用) 2
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 广东省广州市 移动
-      - 美国 CloudFlare节点
       - 俄罗斯 莫斯科JustHost
-      - 广东省广州市 移动 2
-      - 希腊 V2CROSS.COM
+      - 美国 CloudFlare节点
       - 美国 CloudFlare节点 2
-      - 美国 CloudFlare节点 3
+      - 意大利 V2CROSS.COM
+      - 美国 V2CROSS.COM
       - 英国 V2CROSS.COM
+      - 美国 CloudFlare节点 3
+      - 江苏省 移动
+      - 欧洲 V2CROSS.COM
+      - 吉林省 移动(全省通用)
+      - 美国 Xerox
       - 美国 CloudFlare节点 4
-      - 广东省江门市 移动
+      - 广东省广州市 移动
+      - 波兰 V2CROSS.COM
       - 广东省广州市 电信
-      - 印度 V2CROSS.COM
+      - 吉林省 移动(全省通用) 2
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -88,18 +104,22 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 广东省广州市 移动
-      - 美国 CloudFlare节点
       - 俄罗斯 莫斯科JustHost
-      - 广东省广州市 移动 2
-      - 希腊 V2CROSS.COM
+      - 美国 CloudFlare节点
       - 美国 CloudFlare节点 2
-      - 美国 CloudFlare节点 3
+      - 意大利 V2CROSS.COM
+      - 美国 V2CROSS.COM
       - 英国 V2CROSS.COM
+      - 美国 CloudFlare节点 3
+      - 江苏省 移动
+      - 欧洲 V2CROSS.COM
+      - 吉林省 移动(全省通用)
+      - 美国 Xerox
       - 美国 CloudFlare节点 4
-      - 广东省江门市 移动
+      - 广东省广州市 移动
+      - 波兰 V2CROSS.COM
       - 广东省广州市 电信
-      - 印度 V2CROSS.COM
+      - 吉林省 移动(全省通用) 2
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -110,53 +130,65 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 广东省广州市 移动
-      - 美国 CloudFlare节点
       - 俄罗斯 莫斯科JustHost
-      - 广东省广州市 移动 2
-      - 希腊 V2CROSS.COM
+      - 美国 CloudFlare节点
       - 美国 CloudFlare节点 2
-      - 美国 CloudFlare节点 3
+      - 意大利 V2CROSS.COM
+      - 美国 V2CROSS.COM
       - 英国 V2CROSS.COM
+      - 美国 CloudFlare节点 3
+      - 江苏省 移动
+      - 欧洲 V2CROSS.COM
+      - 吉林省 移动(全省通用)
+      - 美国 Xerox
       - 美国 CloudFlare节点 4
-      - 广东省江门市 移动
+      - 广东省广州市 移动
+      - 波兰 V2CROSS.COM
       - 广东省广州市 电信
-      - 印度 V2CROSS.COM
+      - 吉林省 移动(全省通用) 2
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 广东省广州市 移动
-      - 美国 CloudFlare节点
       - 俄罗斯 莫斯科JustHost
-      - 广东省广州市 移动 2
-      - 希腊 V2CROSS.COM
+      - 美国 CloudFlare节点
       - 美国 CloudFlare节点 2
-      - 美国 CloudFlare节点 3
+      - 意大利 V2CROSS.COM
+      - 美国 V2CROSS.COM
       - 英国 V2CROSS.COM
+      - 美国 CloudFlare节点 3
+      - 江苏省 移动
+      - 欧洲 V2CROSS.COM
+      - 吉林省 移动(全省通用)
+      - 美国 Xerox
       - 美国 CloudFlare节点 4
-      - 广东省江门市 移动
+      - 广东省广州市 移动
+      - 波兰 V2CROSS.COM
       - 广东省广州市 电信
-      - 印度 V2CROSS.COM
+      - 吉林省 移动(全省通用) 2
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 广东省广州市 移动
-      - 美国 CloudFlare节点
       - 俄罗斯 莫斯科JustHost
-      - 广东省广州市 移动 2
-      - 希腊 V2CROSS.COM
+      - 美国 CloudFlare节点
       - 美国 CloudFlare节点 2
-      - 美国 CloudFlare节点 3
+      - 意大利 V2CROSS.COM
+      - 美国 V2CROSS.COM
       - 英国 V2CROSS.COM
+      - 美国 CloudFlare节点 3
+      - 江苏省 移动
+      - 欧洲 V2CROSS.COM
+      - 吉林省 移动(全省通用)
+      - 美国 Xerox
       - 美国 CloudFlare节点 4
-      - 广东省江门市 移动
+      - 广东省广州市 移动
+      - 波兰 V2CROSS.COM
       - 广东省广州市 电信
-      - 印度 V2CROSS.COM
+      - 吉林省 移动(全省通用) 2
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -172,18 +204,22 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 广东省广州市 移动
-      - 美国 CloudFlare节点
       - 俄罗斯 莫斯科JustHost
-      - 广东省广州市 移动 2
-      - 希腊 V2CROSS.COM
+      - 美国 CloudFlare节点
       - 美国 CloudFlare节点 2
-      - 美国 CloudFlare节点 3
+      - 意大利 V2CROSS.COM
+      - 美国 V2CROSS.COM
       - 英国 V2CROSS.COM
+      - 美国 CloudFlare节点 3
+      - 江苏省 移动
+      - 欧洲 V2CROSS.COM
+      - 吉林省 移动(全省通用)
+      - 美国 Xerox
       - 美国 CloudFlare节点 4
-      - 广东省江门市 移动
+      - 广东省广州市 移动
+      - 波兰 V2CROSS.COM
       - 广东省广州市 电信
-      - 印度 V2CROSS.COM
+      - 吉林省 移动(全省通用) 2
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
