@@ -5,24 +5,24 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 美国 CloudFlare节点, server: 172.67.149.202, port: 443, type: trojan, password: 19a78eeb-d83a-4364-b095-b7dd93436320, sni: CVFgTrE4.222560.XyZ, skip-cert-verify: true, udp: true}
-  - {name: 广东省中山市 移动, server: 183.238.90.8, port: 39076, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 广东省广州市 UCloud, server: 42.240.152.238, port: 8842, type: trojan, password: 1b4c16925f934c57b954a9f0f23dea33, sni: brwx.spvpv.com, skip-cert-verify: true, udp: true}
-  - {name: 美国 CloudFlare节点 2, server: 172.67.185.107, port: 443, type: trojan, password: 13e26f64-2e0c-4461-92cd-d83294cc18f0, sni: WwwDe.00890604.XyZ, skip-cert-verify: true, udp: true}
-  - {name: 日本 V2CROSS.COM, server: 160.22.79.191, port: 443, type: trojan, password: ttfang, sni: ttfang.fange.me, skip-cert-verify: true, udp: true}
-  - {name: 广东省广州市 移动, server: 183.236.51.38, port: 36519, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 英国 社会保险安全部, server: 51.20.38.227, port: 1935, type: trojan, password: 77G4g4apO0, sni: x8-sweden-amazon-v2-cf9yw.devefun.org, skip-cert-verify: true, udp: true}
+  - {name: 美国 CloudFlare节点, server: 104.25.254.4, port: 2087, type: trojan, password: d6b8011a-c725-435a-9fec-bf6d3530392c, sni: vle.amclubdns.dpdns.org, skip-cert-verify: true, udp: true}
+  - {name: 吉林省 移动(全省通用), server: v35.heduian.link, port: 30835, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /oooo, headers: {Host: v35.heduian.link}}, udp: true}
+  - {name: 广东省湛江市 移动, server: 120.198.71.219, port: 49355, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国 CloudFlare节点 2, server: 104.21.76.21, port: 443, type: trojan, password: 13e26f64-2e0c-4461-92cd-d83294cc18f0, sni: WwwDe.00890604.XyZ, skip-cert-verify: true, udp: true}
+  - {name: 美国 CloudFlare节点 3, server: 104.21.64.1, port: 2096, type: vmess, uuid: b3928f8d-ea81-4d75-bcec-4016a072adff, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: de01.sh-cloudflare.sbs}}, udp: true}
+  - {name: 美国 CloudFlare节点 4, server: hk2.lrzdx.uk, port: 443, type: vmess, uuid: db69d5bc-d36c-4903-f471-74b98c5cefe5, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /register, headers: {Host: hk2.lrzdx.uk}}, udp: true}
+  - {name: 广东省广州市 移动, server: ysl.fxlcn.com, port: 45419, type: vmess, uuid: 469e0b31-30c3-4dab-800d-711232634ce1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 广东省广州市 电信, server: dozo01.flztjc.top, port: 8313, type: trojan, password: 2c605663-b89a-5734-a9d6-97d4743d72cf, sni: dozo01.flztjc.top, skip-cert-verify: true, udp: true}
   - {name: 广东省 移动, server: 120.233.44.201, port: 21102, type: trojan, password: 2b1ed981-6547-4094-998b-06a3323d6f6c, sni: k28.tudou211.com, skip-cert-verify: true, udp: true}
-  - {name: 吉林省 移动(全省通用), server: v25.heduian.link, port: 30825, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /oooo, headers: {Host: v25.heduian.link}}, udp: true}
-  - {name: 韩国 KT电信, server: 118.37.105.12, port: 28827, type: trojan, password: ttfang, sni: ttfang.fange.me, skip-cert-verify: true, udp: true}
-  - {name: 美国 CloudFlare节点 3, server: cloudgetservice.mcloudservice.site, port: 443, type: vmess, uuid: ad2bca4d-be9e-4ac2-b2ed-4c81abb4242f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /linkws, headers: {Host: mAxNEtVip-uSA-Vp4.nETKh3.sItE}}, udp: true}
-  - {name: 广东省广州市 腾讯云, server: 113.99.140.184, port: 39001, type: trojan, password: 85f133142f04dbf6547da33895cfabb3, sni: www.yrtok.com, skip-cert-verify: true, udp: true}
-  - {name: 上海市 上海电信科技发展有限公司(中山南路111号), server: 203.156.253.11, port: 39001, type: trojan, password: 85f133142f04dbf6547da33895cfabb3, sni: www.yrtok.com, skip-cert-verify: true, udp: true}
-  - {name: 美国 CloudFlare节点 4, server: Xcvfgt5.222560.xyz, port: 80, type: vmess, uuid: 19a78eeb-d83a-4364-b095-b7dd93436320, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /7LBPethgWxDoVuzO0WLijID, headers: {Host: xcvfgt5.222560.xyz}}, udp: true}
-  - {name: 美国 CloudFlare节点 5, server: 104.21.76.21, port: 443, type: trojan, password: 13e26f64-2e0c-4461-92cd-d83294cc18f0, sni: WwwDe.00890604.XyZ, skip-cert-verify: true, udp: true}
-  - {name: 韩国 KT电信 2, server: 119.195.155.85, port: 27094, type: trojan, password: ttfang, sni: ttfang.fange.me, skip-cert-verify: true, udp: true}
-  - {name: 江苏省宿迁市 电信/宿迁电信IDC机房, server: 15002.vpdnss.top, port: 15002, type: vmess, uuid: 9f513161-576b-3abc-9c98-06e52c3a24c6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美国 CloudFlare节点 6, server: 172.67.219.196, port: 443, type: trojan, password: f108e0e2-5f12-42b6-9e67-1b2f073ffb2b, sni: CCcvfgt6.852224.dpdns.org, skip-cert-verify: true, udp: true}
+  - {name: 美国 CloudFlare节点 5, server: ip.sb, port: 443, type: vmess, uuid: c9ddb489-7b5e-49ed-8b21-749f4a0ed56d, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /c9ddb489-7b5e-49ed-8b21-749f4a0ed56d-vmess, headers: {Host: usshs.atlen.dpdns.org}}, udp: true}
+  - {name: 美国 CloudFlare节点 6, server: s1.db-link01.top, port: 8880, type: vmess, uuid: 05881d43-e9da-3d65-8cbe-fb0459b78557, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /dabai.in104.20.224.3, headers: {Host: 100-232-210-102.s1.db-link01.top}}, udp: true}
+  - {name: 广东省湛江市 移动 2, server: zf1.10101251.xyz, port: 20251, type: ss, cipher: aes-256-gcm, password: 3ee90aa9-8831-4ea3-9425-c361090a938d, udp: true}
+  - {name: 美国 CloudFlare节点 7, server: 104.21.96.1, port: 8443, type: vmess, uuid: 914584ee-3515-46ac-a09d-4677a2e9dc9a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: us01.sh-cloudflare.sbs}}, udp: true}
+  - {name: 广东省广州市 UCloud, server: 42.240.152.238, port: 8842, type: trojan, password: 1b4c16925f934c57b954a9f0f23dea33, sni: brwx.spvpv.com, skip-cert-verify: true, udp: true}
+  - {name: 吉林省 移动(全省通用) 2, server: v9.heduian.link, port: 30809, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /oooo, headers: {Host: baidu.com}}, udp: true}
+  - {name: 美国 CloudFlare节点 8, server: 104.21.20.162, port: 8443, type: vmess, uuid: 57e595e6-ef54-4e0d-b8df-e96db9612b99, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /horsen, headers: {Host: orvps2.horsenma.net}}, udp: true}
+  - {name: 希腊 V2CROSS.COM, server: vc.fly.dev, port: 443, type: vmess, uuid: 35379219-6535-4f2e-a4fe-3e44f61e0eee, alterId: 32, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /vc, headers: {Host: vc.fly.dev}}, udp: true}
+  - {name: 广东省中山市 移动, server: 183.238.90.8, port: 46920, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
@@ -30,46 +30,46 @@ proxy-groups:
       - ♻️ 自动选择
       - 🎯 全球直连
       - 美国 CloudFlare节点
-      - 广东省中山市 移动
-      - 广东省广州市 UCloud
-      - 美国 CloudFlare节点 2
-      - 日本 V2CROSS.COM
-      - 广东省广州市 移动
-      - 英国 社会保险安全部
-      - 广东省 移动
       - 吉林省 移动(全省通用)
-      - 韩国 KT电信
+      - 广东省湛江市 移动
+      - 美国 CloudFlare节点 2
       - 美国 CloudFlare节点 3
-      - 广东省广州市 腾讯云
-      - 上海市 上海电信科技发展有限公司(中山南路111号)
       - 美国 CloudFlare节点 4
+      - 广东省广州市 移动
+      - 广东省广州市 电信
+      - 广东省 移动
       - 美国 CloudFlare节点 5
-      - 韩国 KT电信 2
-      - 江苏省宿迁市 电信/宿迁电信IDC机房
       - 美国 CloudFlare节点 6
+      - 广东省湛江市 移动 2
+      - 美国 CloudFlare节点 7
+      - 广东省广州市 UCloud
+      - 吉林省 移动(全省通用) 2
+      - 美国 CloudFlare节点 8
+      - 希腊 V2CROSS.COM
+      - 广东省中山市 移动
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
       - 美国 CloudFlare节点
-      - 广东省中山市 移动
-      - 广东省广州市 UCloud
-      - 美国 CloudFlare节点 2
-      - 日本 V2CROSS.COM
-      - 广东省广州市 移动
-      - 英国 社会保险安全部
-      - 广东省 移动
       - 吉林省 移动(全省通用)
-      - 韩国 KT电信
+      - 广东省湛江市 移动
+      - 美国 CloudFlare节点 2
       - 美国 CloudFlare节点 3
-      - 广东省广州市 腾讯云
-      - 上海市 上海电信科技发展有限公司(中山南路111号)
       - 美国 CloudFlare节点 4
+      - 广东省广州市 移动
+      - 广东省广州市 电信
+      - 广东省 移动
       - 美国 CloudFlare节点 5
-      - 韩国 KT电信 2
-      - 江苏省宿迁市 电信/宿迁电信IDC机房
       - 美国 CloudFlare节点 6
+      - 广东省湛江市 移动 2
+      - 美国 CloudFlare节点 7
+      - 广东省广州市 UCloud
+      - 吉林省 移动(全省通用) 2
+      - 美国 CloudFlare节点 8
+      - 希腊 V2CROSS.COM
+      - 广东省中山市 移动
   - name: 🎥 NETFLIX
     type: select
     proxies:
@@ -77,23 +77,23 @@ proxy-groups:
       - ♻️ 自动选择
       - 🎯 全球直连
       - 美国 CloudFlare节点
-      - 广东省中山市 移动
-      - 广东省广州市 UCloud
-      - 美国 CloudFlare节点 2
-      - 日本 V2CROSS.COM
-      - 广东省广州市 移动
-      - 英国 社会保险安全部
-      - 广东省 移动
       - 吉林省 移动(全省通用)
-      - 韩国 KT电信
+      - 广东省湛江市 移动
+      - 美国 CloudFlare节点 2
       - 美国 CloudFlare节点 3
-      - 广东省广州市 腾讯云
-      - 上海市 上海电信科技发展有限公司(中山南路111号)
       - 美国 CloudFlare节点 4
+      - 广东省广州市 移动
+      - 广东省广州市 电信
+      - 广东省 移动
       - 美国 CloudFlare节点 5
-      - 韩国 KT电信 2
-      - 江苏省宿迁市 电信/宿迁电信IDC机房
       - 美国 CloudFlare节点 6
+      - 广东省湛江市 移动 2
+      - 美国 CloudFlare节点 7
+      - 广东省广州市 UCloud
+      - 吉林省 移动(全省通用) 2
+      - 美国 CloudFlare节点 8
+      - 希腊 V2CROSS.COM
+      - 广东省中山市 移动
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -113,23 +113,23 @@ proxy-groups:
       - ♻️ 自动选择
       - 🎯 全球直连
       - 美国 CloudFlare节点
-      - 广东省中山市 移动
-      - 广东省广州市 UCloud
-      - 美国 CloudFlare节点 2
-      - 日本 V2CROSS.COM
-      - 广东省广州市 移动
-      - 英国 社会保险安全部
-      - 广东省 移动
       - 吉林省 移动(全省通用)
-      - 韩国 KT电信
+      - 广东省湛江市 移动
+      - 美国 CloudFlare节点 2
       - 美国 CloudFlare节点 3
-      - 广东省广州市 腾讯云
-      - 上海市 上海电信科技发展有限公司(中山南路111号)
       - 美国 CloudFlare节点 4
+      - 广东省广州市 移动
+      - 广东省广州市 电信
+      - 广东省 移动
       - 美国 CloudFlare节点 5
-      - 韩国 KT电信 2
-      - 江苏省宿迁市 电信/宿迁电信IDC机房
       - 美国 CloudFlare节点 6
+      - 广东省湛江市 移动 2
+      - 美国 CloudFlare节点 7
+      - 广东省广州市 UCloud
+      - 吉林省 移动(全省通用) 2
+      - 美国 CloudFlare节点 8
+      - 希腊 V2CROSS.COM
+      - 广东省中山市 移动
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -141,46 +141,46 @@ proxy-groups:
       - 🎯 全球直连
       - 🔰 节点选择
       - 美国 CloudFlare节点
-      - 广东省中山市 移动
-      - 广东省广州市 UCloud
-      - 美国 CloudFlare节点 2
-      - 日本 V2CROSS.COM
-      - 广东省广州市 移动
-      - 英国 社会保险安全部
-      - 广东省 移动
       - 吉林省 移动(全省通用)
-      - 韩国 KT电信
+      - 广东省湛江市 移动
+      - 美国 CloudFlare节点 2
       - 美国 CloudFlare节点 3
-      - 广东省广州市 腾讯云
-      - 上海市 上海电信科技发展有限公司(中山南路111号)
       - 美国 CloudFlare节点 4
+      - 广东省广州市 移动
+      - 广东省广州市 电信
+      - 广东省 移动
       - 美国 CloudFlare节点 5
-      - 韩国 KT电信 2
-      - 江苏省宿迁市 电信/宿迁电信IDC机房
       - 美国 CloudFlare节点 6
+      - 广东省湛江市 移动 2
+      - 美国 CloudFlare节点 7
+      - 广东省广州市 UCloud
+      - 吉林省 移动(全省通用) 2
+      - 美国 CloudFlare节点 8
+      - 希腊 V2CROSS.COM
+      - 广东省中山市 移动
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - 美国 CloudFlare节点
-      - 广东省中山市 移动
-      - 广东省广州市 UCloud
-      - 美国 CloudFlare节点 2
-      - 日本 V2CROSS.COM
-      - 广东省广州市 移动
-      - 英国 社会保险安全部
-      - 广东省 移动
       - 吉林省 移动(全省通用)
-      - 韩国 KT电信
+      - 广东省湛江市 移动
+      - 美国 CloudFlare节点 2
       - 美国 CloudFlare节点 3
-      - 广东省广州市 腾讯云
-      - 上海市 上海电信科技发展有限公司(中山南路111号)
       - 美国 CloudFlare节点 4
+      - 广东省广州市 移动
+      - 广东省广州市 电信
+      - 广东省 移动
       - 美国 CloudFlare节点 5
-      - 韩国 KT电信 2
-      - 江苏省宿迁市 电信/宿迁电信IDC机房
       - 美国 CloudFlare节点 6
+      - 广东省湛江市 移动 2
+      - 美国 CloudFlare节点 7
+      - 广东省广州市 UCloud
+      - 吉林省 移动(全省通用) 2
+      - 美国 CloudFlare节点 8
+      - 希腊 V2CROSS.COM
+      - 广东省中山市 移动
   - name: 🍎 苹果服务
     type: select
     proxies:
@@ -188,23 +188,23 @@ proxy-groups:
       - 🎯 全球直连
       - ♻️ 自动选择
       - 美国 CloudFlare节点
-      - 广东省中山市 移动
-      - 广东省广州市 UCloud
-      - 美国 CloudFlare节点 2
-      - 日本 V2CROSS.COM
-      - 广东省广州市 移动
-      - 英国 社会保险安全部
-      - 广东省 移动
       - 吉林省 移动(全省通用)
-      - 韩国 KT电信
+      - 广东省湛江市 移动
+      - 美国 CloudFlare节点 2
       - 美国 CloudFlare节点 3
-      - 广东省广州市 腾讯云
-      - 上海市 上海电信科技发展有限公司(中山南路111号)
       - 美国 CloudFlare节点 4
+      - 广东省广州市 移动
+      - 广东省广州市 电信
+      - 广东省 移动
       - 美国 CloudFlare节点 5
-      - 韩国 KT电信 2
-      - 江苏省宿迁市 电信/宿迁电信IDC机房
       - 美国 CloudFlare节点 6
+      - 广东省湛江市 移动 2
+      - 美国 CloudFlare节点 7
+      - 广东省广州市 UCloud
+      - 吉林省 移动(全省通用) 2
+      - 美国 CloudFlare节点 8
+      - 希腊 V2CROSS.COM
+      - 广东省中山市 移动
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -221,23 +221,23 @@ proxy-groups:
       - 🎯 全球直连
       - ♻️ 自动选择
       - 美国 CloudFlare节点
-      - 广东省中山市 移动
-      - 广东省广州市 UCloud
-      - 美国 CloudFlare节点 2
-      - 日本 V2CROSS.COM
-      - 广东省广州市 移动
-      - 英国 社会保险安全部
-      - 广东省 移动
       - 吉林省 移动(全省通用)
-      - 韩国 KT电信
+      - 广东省湛江市 移动
+      - 美国 CloudFlare节点 2
       - 美国 CloudFlare节点 3
-      - 广东省广州市 腾讯云
-      - 上海市 上海电信科技发展有限公司(中山南路111号)
       - 美国 CloudFlare节点 4
+      - 广东省广州市 移动
+      - 广东省广州市 电信
+      - 广东省 移动
       - 美国 CloudFlare节点 5
-      - 韩国 KT电信 2
-      - 江苏省宿迁市 电信/宿迁电信IDC机房
       - 美国 CloudFlare节点 6
+      - 广东省湛江市 移动 2
+      - 美国 CloudFlare节点 7
+      - 广东省广州市 UCloud
+      - 吉林省 移动(全省通用) 2
+      - 美国 CloudFlare节点 8
+      - 希腊 V2CROSS.COM
+      - 广东省中山市 移动
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
