@@ -5,91 +5,75 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
+  - {name: 俄罗斯 莫斯科JustHost, server: 45.147.201.231, port: 23107, type: vmess, uuid: 34749201-3631-4749-8531-ce1822549f01, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 广东省 移动, server: 120.233.44.201, port: 21017, type: trojan, password: 2b1ed981-6547-4094-998b-06a3323d6f6c, sni: 120.233.44.201, skip-cert-verify: true, udp: true}
+  - {name: 美国 CloudFlare节点, server: 104.21.16.1, port: 443, type: trojan, password: 288124da-0d68-42f4-9f48-70dc4dcc55a6, sni: eEEDFRT567u.890614.XYZ, skip-cert-verify: true, udp: true}
+  - {name: 英国 V2CROSS.COM, server: 193.123.81.105, port: 443, type: vmess, uuid: 9b456c2a-f2c1-45e1-87a9-b7628b04bb24, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /linkws, headers: {Host: beyonddsz.cfd}}, udp: true}
+  - {name: 广东省湛江市 移动, server: 120.198.71.219, port: 49355, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国 CloudFlare节点 2, server: 104.21.26.17, port: 443, type: trojan, password: 07a3df8f-2a2c-42f8-ad92-65889d90f3bf, sni: rrrRrRRrT.459.pp.ua, skip-cert-verify: true, udp: true}
+  - {name: 广东省广州市 电信, server: 116.31.75.150, port: 39001, type: trojan, password: 85f133142f04dbf6547da33895cfabb3, sni: www.yrtok.com, skip-cert-verify: true, udp: true}
   - {name: 美国加利福尼亚州洛杉矶 Cloudinnovation数据中心, server: 156.238.18.196, port: 2083, type: trojan, password: d6b8011a-c725-435a-9fec-bf6d3530392c, sni: vle.amclubdns.dpdns.org, skip-cert-verify: true, udp: true}
-  - {name: 欧洲 V2CROSS.COM, server: 185.47.254.177, port: 20007, type: ss, cipher: aes-256-gcm, password: A0H75XANJHLCNCIB, udp: true}
-  - {name: 广东省深圳市 移动, server: relay001.xiaoniuyun.cc, port: 33001, type: ss, cipher: chacha20-ietf-poly1305, password: e2d4ffbd-d0fa-4074-b844-9e8b4e34cd4c, udp: true}
-  - {name: 广东省湛江市 移动, server: 120.198.71.216, port: 35021, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 广东省广州市 腾讯云, server: 113.99.140.184, port: 39001, type: trojan, password: 85f133142f04dbf6547da33895cfabb3, sni: www.yrtok.com, skip-cert-verify: true, udp: true}
-  - {name: 广东省江门市 移动, server: 120.234.102.229, port: 41174, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 广东省湛江市 移动 2, server: wb.kaiqsz.com, port: 42765, type: trojan, password: a25ed269-105b-4f15-bee2-bc2785d38912, sni: wb.kaiqsz.com, skip-cert-verify: true, udp: true}
-  - {name: 俄罗斯 莫斯科JustHost, server: 45.147.201.231, port: 22069, type: vmess, uuid: 57159348-4d98-4311-a990-e62f8c70fd43, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: 英国 社会保险安全部, server: 51.44.138.112, port: 22223, type: trojan, password: telegram-id-directvpn, sni: trojan.burgerip.co.uk, skip-cert-verify: true, udp: true}
-  - {name: 广东省深圳市 移动 2, server: relay002.xiaoniuyun.cc, port: 38035, type: trojan, password: e2d4ffbd-d0fa-4074-b844-9e8b4e34cd4c, sni: kr003.xiaoniuyun.cc, skip-cert-verify: true, udp: true}
-  - {name: 江苏省 移动, server: xd-js.timiwc.com, port: 21332, type: trojan, password: 2b1ed981-6547-4094-998b-06a3323d6f6c, sni: k65.tudou211.com, skip-cert-verify: true, udp: true}
-  - {name: 广东省湛江市 移动 3, server: 120.198.71.214, port: 31180, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 广东省深圳市 移动 3, server: relay001.xiaoniuyun.cc, port: 32005, type: ss, cipher: chacha20-ietf-poly1305, password: e2d4ffbd-d0fa-4074-b844-9e8b4e34cd4c, udp: true}
-  - {name: 香港 电讯盈科有限公司, server: db7f4c2f-sum4g0-sya6u2-4lg6.hk.p5pv.com, port: 80, type: vmess, uuid: a4c9b7cc-a816-11ed-9f65-f23c9164ca5d, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: broadcastlv.chat.bilibili.com}}, udp: true}
-  - {name: 广东省深圳市 移动 4, server: relay001.xiaoniuyun.cc, port: 38027, type: trojan, password: e2d4ffbd-d0fa-4074-b844-9e8b4e34cd4c, sni: ua001.xiaoniuyun.cc, skip-cert-verify: true, udp: true}
-  - {name: 江苏省宿迁市 电信/宿迁电信IDC机房, server: 15002.vpdnss.top, port: 15002, type: vmess, uuid: 9f513161-576b-3abc-9c98-06e52c3a24c6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 广东省湛江市 移动 4, server: zf2.10101251.xyz, port: 30524, type: ss, cipher: aes-256-gcm, password: e22b89ae-6996-4824-ac31-610ac7349e6a, udp: true}
+  - {name: 上海市 上海电信科技发展有限公司(中山南路111号), server: 203.156.253.12, port: 39001, type: trojan, password: 85f133142f04dbf6547da33895cfabb3, sni: www.yrtok.com, skip-cert-verify: true, udp: true}
+  - {name: 美国 CloudFlare节点 3, server: xxxcvfbghy7.222767.xyz, port: 80, type: vmess, uuid: 30602b6d-5d5c-4f56-9b65-9ae2fd9348cb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /TetDjP6oSiF3sGVHqPd73hl, headers: {Host: xxxcvfbghy7.222767.xyz}}, udp: true}
+  - {name: 广东省 移动 2, server: 120.233.44.201, port: 21079, type: trojan, password: 2b1ed981-6547-4094-998b-06a3323d6f6c, sni: k32.tudou211.com, skip-cert-verify: true, udp: true}
+  - {name: 广东省湛江市 移动 2, server: zf2.10101251.xyz, port: 54831, type: ss, cipher: aes-256-gcm, password: e22b89ae-6996-4824-ac31-610ac7349e6a, udp: true}
+  - {name: 美国 CloudFlare节点 4, server: ssXxZaSw.999824.xyZ, port: 443, type: vmess, uuid: 512d9674-db12-44ca-a1b5-654244549b65, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /uiAxvH6OkVk0VCfa7dX3JIrYk7zm, headers: {Host: ssxxzasw.999824.xyz}}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 美国加利福尼亚州洛杉矶 Cloudinnovation数据中心
-      - 欧洲 V2CROSS.COM
-      - 广东省深圳市 移动
-      - 广东省湛江市 移动
-      - 广东省广州市 腾讯云
-      - 广东省江门市 移动
-      - 广东省湛江市 移动 2
       - 俄罗斯 莫斯科JustHost
-      - 英国 社会保险安全部
-      - 广东省深圳市 移动 2
-      - 江苏省 移动
-      - 广东省湛江市 移动 3
-      - 广东省深圳市 移动 3
-      - 香港 电讯盈科有限公司
-      - 广东省深圳市 移动 4
-      - 江苏省宿迁市 电信/宿迁电信IDC机房
-      - 广东省湛江市 移动 4
+      - 广东省 移动
+      - 美国 CloudFlare节点
+      - 英国 V2CROSS.COM
+      - 广东省湛江市 移动
+      - 美国 CloudFlare节点 2
+      - 广东省广州市 电信
+      - 美国加利福尼亚州洛杉矶 Cloudinnovation数据中心
+      - 上海市 上海电信科技发展有限公司(中山南路111号)
+      - 美国 CloudFlare节点 3
+      - 广东省 移动 2
+      - 广东省湛江市 移动 2
+      - 美国 CloudFlare节点 4
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 美国加利福尼亚州洛杉矶 Cloudinnovation数据中心
-      - 欧洲 V2CROSS.COM
-      - 广东省深圳市 移动
-      - 广东省湛江市 移动
-      - 广东省广州市 腾讯云
-      - 广东省江门市 移动
-      - 广东省湛江市 移动 2
       - 俄罗斯 莫斯科JustHost
-      - 英国 社会保险安全部
-      - 广东省深圳市 移动 2
-      - 江苏省 移动
-      - 广东省湛江市 移动 3
-      - 广东省深圳市 移动 3
-      - 香港 电讯盈科有限公司
-      - 广东省深圳市 移动 4
-      - 江苏省宿迁市 电信/宿迁电信IDC机房
-      - 广东省湛江市 移动 4
+      - 广东省 移动
+      - 美国 CloudFlare节点
+      - 英国 V2CROSS.COM
+      - 广东省湛江市 移动
+      - 美国 CloudFlare节点 2
+      - 广东省广州市 电信
+      - 美国加利福尼亚州洛杉矶 Cloudinnovation数据中心
+      - 上海市 上海电信科技发展有限公司(中山南路111号)
+      - 美国 CloudFlare节点 3
+      - 广东省 移动 2
+      - 广东省湛江市 移动 2
+      - 美国 CloudFlare节点 4
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 美国加利福尼亚州洛杉矶 Cloudinnovation数据中心
-      - 欧洲 V2CROSS.COM
-      - 广东省深圳市 移动
-      - 广东省湛江市 移动
-      - 广东省广州市 腾讯云
-      - 广东省江门市 移动
-      - 广东省湛江市 移动 2
       - 俄罗斯 莫斯科JustHost
-      - 英国 社会保险安全部
-      - 广东省深圳市 移动 2
-      - 江苏省 移动
-      - 广东省湛江市 移动 3
-      - 广东省深圳市 移动 3
-      - 香港 电讯盈科有限公司
-      - 广东省深圳市 移动 4
-      - 江苏省宿迁市 电信/宿迁电信IDC机房
-      - 广东省湛江市 移动 4
+      - 广东省 移动
+      - 美国 CloudFlare节点
+      - 英国 V2CROSS.COM
+      - 广东省湛江市 移动
+      - 美国 CloudFlare节点 2
+      - 广东省广州市 电信
+      - 美国加利福尼亚州洛杉矶 Cloudinnovation数据中心
+      - 上海市 上海电信科技发展有限公司(中山南路111号)
+      - 美国 CloudFlare节点 3
+      - 广东省 移动 2
+      - 广东省湛江市 移动 2
+      - 美国 CloudFlare节点 4
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -108,96 +92,79 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 美国加利福尼亚州洛杉矶 Cloudinnovation数据中心
-      - 欧洲 V2CROSS.COM
-      - 广东省深圳市 移动
-      - 广东省湛江市 移动
-      - 广东省广州市 腾讯云
-      - 广东省江门市 移动
-      - 广东省湛江市 移动 2
       - 俄罗斯 莫斯科JustHost
-      - 英国 社会保险安全部
-      - 广东省深圳市 移动 2
-      - 江苏省 移动
-      - 广东省湛江市 移动 3
-      - 广东省深圳市 移动 3
-      - 香港 电讯盈科有限公司
-      - 广东省深圳市 移动 4
-      - 江苏省宿迁市 电信/宿迁电信IDC机房
-      - 广东省湛江市 移动 4
+      - 广东省 移动
+      - 美国 CloudFlare节点
+      - 英国 V2CROSS.COM
+      - 广东省湛江市 移动
+      - 美国 CloudFlare节点 2
+      - 广东省广州市 电信
+      - 美国加利福尼亚州洛杉矶 Cloudinnovation数据中心
+      - 上海市 上海电信科技发展有限公司(中山南路111号)
+      - 美国 CloudFlare节点 3
+      - 广东省 移动 2
+      - 广东省湛江市 移动 2
+      - 美国 CloudFlare节点 4
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 香港 电讯盈科有限公司
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 美国加利福尼亚州洛杉矶 Cloudinnovation数据中心
-      - 欧洲 V2CROSS.COM
-      - 广东省深圳市 移动
-      - 广东省湛江市 移动
-      - 广东省广州市 腾讯云
-      - 广东省江门市 移动
-      - 广东省湛江市 移动 2
       - 俄罗斯 莫斯科JustHost
-      - 英国 社会保险安全部
-      - 广东省深圳市 移动 2
-      - 江苏省 移动
-      - 广东省湛江市 移动 3
-      - 广东省深圳市 移动 3
-      - 香港 电讯盈科有限公司
-      - 广东省深圳市 移动 4
-      - 江苏省宿迁市 电信/宿迁电信IDC机房
-      - 广东省湛江市 移动 4
+      - 广东省 移动
+      - 美国 CloudFlare节点
+      - 英国 V2CROSS.COM
+      - 广东省湛江市 移动
+      - 美国 CloudFlare节点 2
+      - 广东省广州市 电信
+      - 美国加利福尼亚州洛杉矶 Cloudinnovation数据中心
+      - 上海市 上海电信科技发展有限公司(中山南路111号)
+      - 美国 CloudFlare节点 3
+      - 广东省 移动 2
+      - 广东省湛江市 移动 2
+      - 美国 CloudFlare节点 4
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 美国加利福尼亚州洛杉矶 Cloudinnovation数据中心
-      - 欧洲 V2CROSS.COM
-      - 广东省深圳市 移动
-      - 广东省湛江市 移动
-      - 广东省广州市 腾讯云
-      - 广东省江门市 移动
-      - 广东省湛江市 移动 2
       - 俄罗斯 莫斯科JustHost
-      - 英国 社会保险安全部
-      - 广东省深圳市 移动 2
-      - 江苏省 移动
-      - 广东省湛江市 移动 3
-      - 广东省深圳市 移动 3
-      - 香港 电讯盈科有限公司
-      - 广东省深圳市 移动 4
-      - 江苏省宿迁市 电信/宿迁电信IDC机房
-      - 广东省湛江市 移动 4
+      - 广东省 移动
+      - 美国 CloudFlare节点
+      - 英国 V2CROSS.COM
+      - 广东省湛江市 移动
+      - 美国 CloudFlare节点 2
+      - 广东省广州市 电信
+      - 美国加利福尼亚州洛杉矶 Cloudinnovation数据中心
+      - 上海市 上海电信科技发展有限公司(中山南路111号)
+      - 美国 CloudFlare节点 3
+      - 广东省 移动 2
+      - 广东省湛江市 移动 2
+      - 美国 CloudFlare节点 4
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 美国加利福尼亚州洛杉矶 Cloudinnovation数据中心
-      - 欧洲 V2CROSS.COM
-      - 广东省深圳市 移动
-      - 广东省湛江市 移动
-      - 广东省广州市 腾讯云
-      - 广东省江门市 移动
-      - 广东省湛江市 移动 2
       - 俄罗斯 莫斯科JustHost
-      - 英国 社会保险安全部
-      - 广东省深圳市 移动 2
-      - 江苏省 移动
-      - 广东省湛江市 移动 3
-      - 广东省深圳市 移动 3
-      - 香港 电讯盈科有限公司
-      - 广东省深圳市 移动 4
-      - 江苏省宿迁市 电信/宿迁电信IDC机房
-      - 广东省湛江市 移动 4
+      - 广东省 移动
+      - 美国 CloudFlare节点
+      - 英国 V2CROSS.COM
+      - 广东省湛江市 移动
+      - 美国 CloudFlare节点 2
+      - 广东省广州市 电信
+      - 美国加利福尼亚州洛杉矶 Cloudinnovation数据中心
+      - 上海市 上海电信科技发展有限公司(中山南路111号)
+      - 美国 CloudFlare节点 3
+      - 广东省 移动 2
+      - 广东省湛江市 移动 2
+      - 美国 CloudFlare节点 4
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -213,23 +180,19 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 美国加利福尼亚州洛杉矶 Cloudinnovation数据中心
-      - 欧洲 V2CROSS.COM
-      - 广东省深圳市 移动
-      - 广东省湛江市 移动
-      - 广东省广州市 腾讯云
-      - 广东省江门市 移动
-      - 广东省湛江市 移动 2
       - 俄罗斯 莫斯科JustHost
-      - 英国 社会保险安全部
-      - 广东省深圳市 移动 2
-      - 江苏省 移动
-      - 广东省湛江市 移动 3
-      - 广东省深圳市 移动 3
-      - 香港 电讯盈科有限公司
-      - 广东省深圳市 移动 4
-      - 江苏省宿迁市 电信/宿迁电信IDC机房
-      - 广东省湛江市 移动 4
+      - 广东省 移动
+      - 美国 CloudFlare节点
+      - 英国 V2CROSS.COM
+      - 广东省湛江市 移动
+      - 美国 CloudFlare节点 2
+      - 广东省广州市 电信
+      - 美国加利福尼亚州洛杉矶 Cloudinnovation数据中心
+      - 上海市 上海电信科技发展有限公司(中山南路111号)
+      - 美国 CloudFlare节点 3
+      - 广东省 移动 2
+      - 广东省湛江市 移动 2
+      - 美国 CloudFlare节点 4
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
