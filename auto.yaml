@@ -5,71 +5,99 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 江苏省 移动, server: 36.156.184.33, port: 21332, type: trojan, password: 2b1ed981-6547-4094-998b-06a3323d6f6c, sni: k65.tudou211.com, skip-cert-verify: true, udp: true}
-  - {name: 上海市徐汇区 联通漕河泾数据中心, server: lt.fxlcn.com, port: 45235, type: vmess, uuid: 469e0b31-30c3-4dab-800d-711232634ce1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 上海市 上海电信科技发展有限公司(中山南路111号), server: 203.156.253.11, port: 39001, type: trojan, password: 85f133142f04dbf6547da33895cfabb3, sni: www.yrtok.com, skip-cert-verify: true, udp: true}
+  - {name: 台湾省台北市 中华电信, server: tw40.453521.xyz, port: 3663, type: trojan, password: a348278e-71ac-499c-8069-28b1af18c372, skip-cert-verify: true, udp: true}
+  - {name: 美国 CloudFlare节点, server: 104.21.112.1, port: 2096, type: vmess, uuid: 3988dfba-e9ee-40ba-a87e-553aee1c5993, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: de01.sh-cloudflare.sbs}}, udp: true}
   - {name: 吉林省 移动(全省通用), server: v9.heduian.link, port: 30809, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /oooo, headers: {Host: baidu.com}}, udp: true}
-  - {name: 广东省广州市 电信IDC机房, server: 111.45.33.5, port: 30002, type: ss, cipher: aes-256-gcm, password: dwz1GtF7, udp: true}
-  - {name: 美国 CloudFlare节点, server: www.xinjuc.com, port: 80, type: vmess, uuid: 2f38f848-a899-4c87-9807-207a41615e3c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/rongseven?ed=2048", headers: {Host: hk.freeyyds.dpdns.org}}, udp: true}
-  - {name: 美国 CloudFlare节点 2, server: 3EEEeE.999824.xyZ, port: 443, type: vmess, uuid: cdec9d57-661d-456a-bbf2-b4c38e9c6711, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /9dZlJLjHHrL0VwSolbqFpg, headers: {Host: 3eeeee.999824.xyz}}, udp: true}
-  - {name: 德国 法兰克福Oracle云计算数据中心, server: 132.145.232.171, port: 443, type: vmess, uuid: 9b456c2a-f2c1-45e1-87a9-b7628b04bb24, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /linkws, headers: {Host: beyonddsz.cfd}}, udp: true}
-  - {name: 美国 CloudFlare节点 3, server: 104.21.64.1, port: 2096, type: vmess, uuid: b3928f8d-ea81-4d75-bcec-4016a072adff, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: de01.sh-cloudflare.sbs}}, udp: true}
-  - {name: 广东省湛江市 移动, server: wb.kaiqsz.com, port: 42765, type: trojan, password: a25ed269-105b-4f15-bee2-bc2785d38912, sni: wb.kaiqsz.com, skip-cert-verify: true, udp: true}
-  - {name: 广东省湛江市 移动 2, server: 120.198.71.214, port: 31180, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 广东省 移动, server: 120.233.44.201, port: 21017, type: trojan, password: 2b1ed981-6547-4094-998b-06a3323d6f6c, sni: 120.233.44.201, skip-cert-verify: true, udp: true}
+  - {name: 广东省 移动, server: 120.233.44.201, port: 21003, type: trojan, password: 2b1ed981-6547-4094-998b-06a3323d6f6c, sni: k15.tudou211.com, skip-cert-verify: true, udp: true}
+  - {name: 广东省梅州市 移动, server: v28.heduian.link, port: 30828, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /oooo, headers: {Host: ocbc.com}}, udp: true}
+  - {name: 美国 CloudFlare节点 2, server: 104.21.3.189, port: 2053, type: vmess, uuid: 2fc37713-3017-497e-ff2d-965f826a19a3, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: cc2d4.89060004.xyz}}, udp: true}
+  - {name: 广东省广州市 电信, server: pr.fastsoonlink.com, port: 40030, type: ss, cipher: chacha20-ietf-poly1305, password: 7905a32b-012c-4711-89e2-73b6713eca75, udp: true}
+  - {name: 江苏省 移动, server: 36.156.184.33, port: 21603, type: trojan, password: 2b1ed981-6547-4094-998b-06a3323d6f6c, sni: k61.tudou211.com, skip-cert-verify: true, udp: true}
+  - {name: 美国 CloudFlare节点 3, server: 33DEFRTy6.444652.XYZ, port: 80, type: vmess, uuid: cdec9d57-661d-456a-bbf2-b4c38e9c6711, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /9dZlJLjHHrL0VwSolbqFpg, headers: {Host: 33defrty6.444652.xyz}}, udp: true}
+  - {name: 美国 Amazon数据中心, server: 13.37.66.53, port: 22223, type: trojan, password: telegram-id-directvpn, sni: trojan.burgerip.co.uk, skip-cert-verify: true, udp: true}
+  - {name: 广东省广州市 移动, server: 120.232.153.40, port: 31209, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国 CloudFlare节点 4, server: npmjs.com, port: 8080, type: vmess, uuid: 6cbc9c78-1cb1-57d4-a999-e2f4e34c1e03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /nasnet/cdn, headers: {Host: ke7hz36ewz-4515017473.mashallahbet.com}}, udp: true}
+  - {name: 美国 加利福尼亚州洛杉矶Sharktech数据中心, server: 64.32.1.239, port: 30000, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/1750766750833, headers: {Host: www.39676427.xyz}}, udp: true}
+  - {name: 广东省湛江市 移动, server: 120.198.71.219, port: 49355, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国 Amazon数据中心 2, server: 13.37.66.53, port: 22222, type: trojan, password: telegram-id-privatevpns, sni: trojan.burgerip.co.uk, skip-cert-verify: true, udp: true}
+  - {name: 美国 加利福尼亚州洛杉矶市SharkTech数据中心, server: 107.167.5.148, port: 31001, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/1750766524824, headers: {Host: www.32969216.xyz}}, udp: true}
+  - {name: 美国 华盛顿Cogent通信公司, server: 38.11.50.198, port: 30004, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/1750766524824, headers: {Host: www.54846389.xyz}}, udp: true}
+  - {name: 美国 加利福尼亚州洛杉矶Sharktech数据中心 2, server: 64.32.17.45, port: 30004, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/1750766524824, headers: {Host: www.80382494.xyz}}, udp: true}
+  - {name: 江苏省 移动 2, server: xd-js.timiwc.com, port: 21603, type: trojan, password: 2b1ed981-6547-4094-998b-06a3323d6f6c, sni: k61.tudou211.com, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 江苏省 移动
-      - 上海市徐汇区 联通漕河泾数据中心
-      - 上海市 上海电信科技发展有限公司(中山南路111号)
-      - 吉林省 移动(全省通用)
-      - 广东省广州市 电信IDC机房
+      - 台湾省台北市 中华电信
       - 美国 CloudFlare节点
-      - 美国 CloudFlare节点 2
-      - 德国 法兰克福Oracle云计算数据中心
-      - 美国 CloudFlare节点 3
-      - 广东省湛江市 移动
-      - 广东省湛江市 移动 2
+      - 吉林省 移动(全省通用)
       - 广东省 移动
+      - 广东省梅州市 移动
+      - 美国 CloudFlare节点 2
+      - 广东省广州市 电信
+      - 江苏省 移动
+      - 美国 CloudFlare节点 3
+      - 美国 Amazon数据中心
+      - 广东省广州市 移动
+      - 美国 CloudFlare节点 4
+      - 美国 加利福尼亚州洛杉矶Sharktech数据中心
+      - 广东省湛江市 移动
+      - 美国 Amazon数据中心 2
+      - 美国 加利福尼亚州洛杉矶市SharkTech数据中心
+      - 美国 华盛顿Cogent通信公司
+      - 美国 加利福尼亚州洛杉矶Sharktech数据中心 2
+      - 江苏省 移动 2
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 江苏省 移动
-      - 上海市徐汇区 联通漕河泾数据中心
-      - 上海市 上海电信科技发展有限公司(中山南路111号)
-      - 吉林省 移动(全省通用)
-      - 广东省广州市 电信IDC机房
+      - 台湾省台北市 中华电信
       - 美国 CloudFlare节点
-      - 美国 CloudFlare节点 2
-      - 德国 法兰克福Oracle云计算数据中心
-      - 美国 CloudFlare节点 3
-      - 广东省湛江市 移动
-      - 广东省湛江市 移动 2
+      - 吉林省 移动(全省通用)
       - 广东省 移动
+      - 广东省梅州市 移动
+      - 美国 CloudFlare节点 2
+      - 广东省广州市 电信
+      - 江苏省 移动
+      - 美国 CloudFlare节点 3
+      - 美国 Amazon数据中心
+      - 广东省广州市 移动
+      - 美国 CloudFlare节点 4
+      - 美国 加利福尼亚州洛杉矶Sharktech数据中心
+      - 广东省湛江市 移动
+      - 美国 Amazon数据中心 2
+      - 美国 加利福尼亚州洛杉矶市SharkTech数据中心
+      - 美国 华盛顿Cogent通信公司
+      - 美国 加利福尼亚州洛杉矶Sharktech数据中心 2
+      - 江苏省 移动 2
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 江苏省 移动
-      - 上海市徐汇区 联通漕河泾数据中心
-      - 上海市 上海电信科技发展有限公司(中山南路111号)
-      - 吉林省 移动(全省通用)
-      - 广东省广州市 电信IDC机房
+      - 台湾省台北市 中华电信
       - 美国 CloudFlare节点
-      - 美国 CloudFlare节点 2
-      - 德国 法兰克福Oracle云计算数据中心
-      - 美国 CloudFlare节点 3
-      - 广东省湛江市 移动
-      - 广东省湛江市 移动 2
+      - 吉林省 移动(全省通用)
       - 广东省 移动
+      - 广东省梅州市 移动
+      - 美国 CloudFlare节点 2
+      - 广东省广州市 电信
+      - 江苏省 移动
+      - 美国 CloudFlare节点 3
+      - 美国 Amazon数据中心
+      - 广东省广州市 移动
+      - 美国 CloudFlare节点 4
+      - 美国 加利福尼亚州洛杉矶Sharktech数据中心
+      - 广东省湛江市 移动
+      - 美国 Amazon数据中心 2
+      - 美国 加利福尼亚州洛杉矶市SharkTech数据中心
+      - 美国 华盛顿Cogent通信公司
+      - 美国 加利福尼亚州洛杉矶Sharktech数据中心 2
+      - 江苏省 移动 2
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -88,75 +116,104 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 江苏省 移动
-      - 上海市徐汇区 联通漕河泾数据中心
-      - 上海市 上海电信科技发展有限公司(中山南路111号)
-      - 吉林省 移动(全省通用)
-      - 广东省广州市 电信IDC机房
+      - 台湾省台北市 中华电信
       - 美国 CloudFlare节点
-      - 美国 CloudFlare节点 2
-      - 德国 法兰克福Oracle云计算数据中心
-      - 美国 CloudFlare节点 3
-      - 广东省湛江市 移动
-      - 广东省湛江市 移动 2
+      - 吉林省 移动(全省通用)
       - 广东省 移动
+      - 广东省梅州市 移动
+      - 美国 CloudFlare节点 2
+      - 广东省广州市 电信
+      - 江苏省 移动
+      - 美国 CloudFlare节点 3
+      - 美国 Amazon数据中心
+      - 广东省广州市 移动
+      - 美国 CloudFlare节点 4
+      - 美国 加利福尼亚州洛杉矶Sharktech数据中心
+      - 广东省湛江市 移动
+      - 美国 Amazon数据中心 2
+      - 美国 加利福尼亚州洛杉矶市SharkTech数据中心
+      - 美国 华盛顿Cogent通信公司
+      - 美国 加利福尼亚州洛杉矶Sharktech数据中心 2
+      - 江苏省 移动 2
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
+      - 台湾省台北市 中华电信
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 江苏省 移动
-      - 上海市徐汇区 联通漕河泾数据中心
-      - 上海市 上海电信科技发展有限公司(中山南路111号)
-      - 吉林省 移动(全省通用)
-      - 广东省广州市 电信IDC机房
+      - 台湾省台北市 中华电信
       - 美国 CloudFlare节点
-      - 美国 CloudFlare节点 2
-      - 德国 法兰克福Oracle云计算数据中心
-      - 美国 CloudFlare节点 3
-      - 广东省湛江市 移动
-      - 广东省湛江市 移动 2
+      - 吉林省 移动(全省通用)
       - 广东省 移动
+      - 广东省梅州市 移动
+      - 美国 CloudFlare节点 2
+      - 广东省广州市 电信
+      - 江苏省 移动
+      - 美国 CloudFlare节点 3
+      - 美国 Amazon数据中心
+      - 广东省广州市 移动
+      - 美国 CloudFlare节点 4
+      - 美国 加利福尼亚州洛杉矶Sharktech数据中心
+      - 广东省湛江市 移动
+      - 美国 Amazon数据中心 2
+      - 美国 加利福尼亚州洛杉矶市SharkTech数据中心
+      - 美国 华盛顿Cogent通信公司
+      - 美国 加利福尼亚州洛杉矶Sharktech数据中心 2
+      - 江苏省 移动 2
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 江苏省 移动
-      - 上海市徐汇区 联通漕河泾数据中心
-      - 上海市 上海电信科技发展有限公司(中山南路111号)
-      - 吉林省 移动(全省通用)
-      - 广东省广州市 电信IDC机房
+      - 台湾省台北市 中华电信
       - 美国 CloudFlare节点
-      - 美国 CloudFlare节点 2
-      - 德国 法兰克福Oracle云计算数据中心
-      - 美国 CloudFlare节点 3
-      - 广东省湛江市 移动
-      - 广东省湛江市 移动 2
+      - 吉林省 移动(全省通用)
       - 广东省 移动
+      - 广东省梅州市 移动
+      - 美国 CloudFlare节点 2
+      - 广东省广州市 电信
+      - 江苏省 移动
+      - 美国 CloudFlare节点 3
+      - 美国 Amazon数据中心
+      - 广东省广州市 移动
+      - 美国 CloudFlare节点 4
+      - 美国 加利福尼亚州洛杉矶Sharktech数据中心
+      - 广东省湛江市 移动
+      - 美国 Amazon数据中心 2
+      - 美国 加利福尼亚州洛杉矶市SharkTech数据中心
+      - 美国 华盛顿Cogent通信公司
+      - 美国 加利福尼亚州洛杉矶Sharktech数据中心 2
+      - 江苏省 移动 2
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 江苏省 移动
-      - 上海市徐汇区 联通漕河泾数据中心
-      - 上海市 上海电信科技发展有限公司(中山南路111号)
-      - 吉林省 移动(全省通用)
-      - 广东省广州市 电信IDC机房
+      - 台湾省台北市 中华电信
       - 美国 CloudFlare节点
-      - 美国 CloudFlare节点 2
-      - 德国 法兰克福Oracle云计算数据中心
-      - 美国 CloudFlare节点 3
-      - 广东省湛江市 移动
-      - 广东省湛江市 移动 2
+      - 吉林省 移动(全省通用)
       - 广东省 移动
+      - 广东省梅州市 移动
+      - 美国 CloudFlare节点 2
+      - 广东省广州市 电信
+      - 江苏省 移动
+      - 美国 CloudFlare节点 3
+      - 美国 Amazon数据中心
+      - 广东省广州市 移动
+      - 美国 CloudFlare节点 4
+      - 美国 加利福尼亚州洛杉矶Sharktech数据中心
+      - 广东省湛江市 移动
+      - 美国 Amazon数据中心 2
+      - 美国 加利福尼亚州洛杉矶市SharkTech数据中心
+      - 美国 华盛顿Cogent通信公司
+      - 美国 加利福尼亚州洛杉矶Sharktech数据中心 2
+      - 江苏省 移动 2
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -172,18 +229,25 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 江苏省 移动
-      - 上海市徐汇区 联通漕河泾数据中心
-      - 上海市 上海电信科技发展有限公司(中山南路111号)
-      - 吉林省 移动(全省通用)
-      - 广东省广州市 电信IDC机房
+      - 台湾省台北市 中华电信
       - 美国 CloudFlare节点
-      - 美国 CloudFlare节点 2
-      - 德国 法兰克福Oracle云计算数据中心
-      - 美国 CloudFlare节点 3
-      - 广东省湛江市 移动
-      - 广东省湛江市 移动 2
+      - 吉林省 移动(全省通用)
       - 广东省 移动
+      - 广东省梅州市 移动
+      - 美国 CloudFlare节点 2
+      - 广东省广州市 电信
+      - 江苏省 移动
+      - 美国 CloudFlare节点 3
+      - 美国 Amazon数据中心
+      - 广东省广州市 移动
+      - 美国 CloudFlare节点 4
+      - 美国 加利福尼亚州洛杉矶Sharktech数据中心
+      - 广东省湛江市 移动
+      - 美国 Amazon数据中心 2
+      - 美国 加利福尼亚州洛杉矶市SharkTech数据中心
+      - 美国 华盛顿Cogent通信公司
+      - 美国 加利福尼亚州洛杉矶Sharktech数据中心 2
+      - 江苏省 移动 2
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
