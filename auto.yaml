@@ -5,75 +5,71 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 广东省 移动, server: 120.233.128.98, port: 30015, type: ss, cipher: aes-256-gcm, password: dwz1GtF7, udp: true}
-  - {name: 英国 V2CROSS.COM, server: 167.172.95.249, port: 37202, type: ss, cipher: chacha20-ietf-poly1305, password: QzPfIk2Wb8zzxYrglUkylkOSVn7LU8msavPqrD7yMsY=, udp: true}
-  - {name: 摩尔多瓦 V2CROSS.COM, server: 87.251.79.34, port: 20684, type: ss, cipher: chacha20-ietf-poly1305, password: 6pmgeUx8lJnzxXcYxxU6Z6, udp: true}
-  - {name: 美国 CloudFlare节点, server: EeEDCFVg.999824.xYZ, port: 80, type: vmess, uuid: cdec9d57-661d-456a-bbf2-b4c38e9c6711, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /9dZlJLjHHrL0VwSolbqFpg, headers: {Host: eeedcfvg.999824.xyz}}, udp: true}
-  - {name: 广东省 移动 2, server: 120.233.44.201, port: 21017, type: trojan, password: 2b1ed981-6547-4094-998b-06a3323d6f6c, sni: 120.233.44.201, skip-cert-verify: true, udp: true}
+  - {name: 江苏省 移动, server: 36.156.184.33, port: 21332, type: trojan, password: 2b1ed981-6547-4094-998b-06a3323d6f6c, sni: k65.tudou211.com, skip-cert-verify: true, udp: true}
+  - {name: 上海市徐汇区 联通漕河泾数据中心, server: lt.fxlcn.com, port: 45235, type: vmess, uuid: 469e0b31-30c3-4dab-800d-711232634ce1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: 上海市 上海电信科技发展有限公司(中山南路111号), server: 203.156.253.11, port: 39001, type: trojan, password: 85f133142f04dbf6547da33895cfabb3, sni: www.yrtok.com, skip-cert-verify: true, udp: true}
-  - {name: 广东省广州市 移动, server: 120.232.206.57, port: 30018, type: ss, cipher: aes-256-gcm, password: dwz1GtF7, udp: true}
-  - {name: 俄罗斯 V2CROSS.COM, server: 91.194.160.151, port: 1235, type: ss, cipher: chacha20-ietf-poly1305, password: WHBl6OWPkluIE8NtbkbHSJ, udp: true}
-  - {name: 吉林省 移动(全省通用), server: 111.26.109.79, port: 30825, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /oooo}, udp: true}
-  - {name: 美国 CloudFlare节点 2, server: 104.17.128.1, port: 2096, type: trojan, password: d6b8011a-c725-435a-9fec-bf6d3530392c, sni: vle.amclubdns.dpdns.org, skip-cert-verify: true, udp: true}
-  - {name: 广东省江门市 移动, server: 120.234.102.229, port: 41174, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 江苏省 移动, server: xd-js.timiwc.com, port: 21603, type: trojan, password: 2b1ed981-6547-4094-998b-06a3323d6f6c, sni: k61.tudou211.com, skip-cert-verify: true, udp: true}
-  - {name: 广东省东莞市 移动, server: 183.232.235.2, port: 8313, type: trojan, password: 2c605663-b89a-5734-a9d6-97d4743d72cf, sni: hk-13-568.flztjc.net, skip-cert-verify: true, udp: true}
+  - {name: 吉林省 移动(全省通用), server: v9.heduian.link, port: 30809, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /oooo, headers: {Host: baidu.com}}, udp: true}
+  - {name: 广东省广州市 电信IDC机房, server: 111.45.33.5, port: 30002, type: ss, cipher: aes-256-gcm, password: dwz1GtF7, udp: true}
+  - {name: 美国 CloudFlare节点, server: www.xinjuc.com, port: 80, type: vmess, uuid: 2f38f848-a899-4c87-9807-207a41615e3c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/rongseven?ed=2048", headers: {Host: hk.freeyyds.dpdns.org}}, udp: true}
+  - {name: 美国 CloudFlare节点 2, server: 3EEEeE.999824.xyZ, port: 443, type: vmess, uuid: cdec9d57-661d-456a-bbf2-b4c38e9c6711, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /9dZlJLjHHrL0VwSolbqFpg, headers: {Host: 3eeeee.999824.xyz}}, udp: true}
+  - {name: 德国 法兰克福Oracle云计算数据中心, server: 132.145.232.171, port: 443, type: vmess, uuid: 9b456c2a-f2c1-45e1-87a9-b7628b04bb24, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /linkws, headers: {Host: beyonddsz.cfd}}, udp: true}
+  - {name: 美国 CloudFlare节点 3, server: 104.21.64.1, port: 2096, type: vmess, uuid: b3928f8d-ea81-4d75-bcec-4016a072adff, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: de01.sh-cloudflare.sbs}}, udp: true}
+  - {name: 广东省湛江市 移动, server: wb.kaiqsz.com, port: 42765, type: trojan, password: a25ed269-105b-4f15-bee2-bc2785d38912, sni: wb.kaiqsz.com, skip-cert-verify: true, udp: true}
+  - {name: 广东省湛江市 移动 2, server: 120.198.71.214, port: 31180, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 广东省 移动, server: 120.233.44.201, port: 21017, type: trojan, password: 2b1ed981-6547-4094-998b-06a3323d6f6c, sni: 120.233.44.201, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 广东省 移动
-      - 英国 V2CROSS.COM
-      - 摩尔多瓦 V2CROSS.COM
-      - 美国 CloudFlare节点
-      - 广东省 移动 2
-      - 上海市 上海电信科技发展有限公司(中山南路111号)
-      - 广东省广州市 移动
-      - 俄罗斯 V2CROSS.COM
-      - 吉林省 移动(全省通用)
-      - 美国 CloudFlare节点 2
-      - 广东省江门市 移动
       - 江苏省 移动
-      - 广东省东莞市 移动
+      - 上海市徐汇区 联通漕河泾数据中心
+      - 上海市 上海电信科技发展有限公司(中山南路111号)
+      - 吉林省 移动(全省通用)
+      - 广东省广州市 电信IDC机房
+      - 美国 CloudFlare节点
+      - 美国 CloudFlare节点 2
+      - 德国 法兰克福Oracle云计算数据中心
+      - 美国 CloudFlare节点 3
+      - 广东省湛江市 移动
+      - 广东省湛江市 移动 2
+      - 广东省 移动
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 广东省 移动
-      - 英国 V2CROSS.COM
-      - 摩尔多瓦 V2CROSS.COM
-      - 美国 CloudFlare节点
-      - 广东省 移动 2
-      - 上海市 上海电信科技发展有限公司(中山南路111号)
-      - 广东省广州市 移动
-      - 俄罗斯 V2CROSS.COM
-      - 吉林省 移动(全省通用)
-      - 美国 CloudFlare节点 2
-      - 广东省江门市 移动
       - 江苏省 移动
-      - 广东省东莞市 移动
+      - 上海市徐汇区 联通漕河泾数据中心
+      - 上海市 上海电信科技发展有限公司(中山南路111号)
+      - 吉林省 移动(全省通用)
+      - 广东省广州市 电信IDC机房
+      - 美国 CloudFlare节点
+      - 美国 CloudFlare节点 2
+      - 德国 法兰克福Oracle云计算数据中心
+      - 美国 CloudFlare节点 3
+      - 广东省湛江市 移动
+      - 广东省湛江市 移动 2
+      - 广东省 移动
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 广东省 移动
-      - 英国 V2CROSS.COM
-      - 摩尔多瓦 V2CROSS.COM
-      - 美国 CloudFlare节点
-      - 广东省 移动 2
-      - 上海市 上海电信科技发展有限公司(中山南路111号)
-      - 广东省广州市 移动
-      - 俄罗斯 V2CROSS.COM
-      - 吉林省 移动(全省通用)
-      - 美国 CloudFlare节点 2
-      - 广东省江门市 移动
       - 江苏省 移动
-      - 广东省东莞市 移动
+      - 上海市徐汇区 联通漕河泾数据中心
+      - 上海市 上海电信科技发展有限公司(中山南路111号)
+      - 吉林省 移动(全省通用)
+      - 广东省广州市 电信IDC机房
+      - 美国 CloudFlare节点
+      - 美国 CloudFlare节点 2
+      - 德国 法兰克福Oracle云计算数据中心
+      - 美国 CloudFlare节点 3
+      - 广东省湛江市 移动
+      - 广东省湛江市 移动 2
+      - 广东省 移动
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -92,19 +88,18 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 广东省 移动
-      - 英国 V2CROSS.COM
-      - 摩尔多瓦 V2CROSS.COM
-      - 美国 CloudFlare节点
-      - 广东省 移动 2
-      - 上海市 上海电信科技发展有限公司(中山南路111号)
-      - 广东省广州市 移动
-      - 俄罗斯 V2CROSS.COM
-      - 吉林省 移动(全省通用)
-      - 美国 CloudFlare节点 2
-      - 广东省江门市 移动
       - 江苏省 移动
-      - 广东省东莞市 移动
+      - 上海市徐汇区 联通漕河泾数据中心
+      - 上海市 上海电信科技发展有限公司(中山南路111号)
+      - 吉林省 移动(全省通用)
+      - 广东省广州市 电信IDC机房
+      - 美国 CloudFlare节点
+      - 美国 CloudFlare节点 2
+      - 德国 法兰克福Oracle云计算数据中心
+      - 美国 CloudFlare节点 3
+      - 广东省湛江市 移动
+      - 广东省湛江市 移动 2
+      - 广东省 移动
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -115,56 +110,53 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 广东省 移动
-      - 英国 V2CROSS.COM
-      - 摩尔多瓦 V2CROSS.COM
-      - 美国 CloudFlare节点
-      - 广东省 移动 2
-      - 上海市 上海电信科技发展有限公司(中山南路111号)
-      - 广东省广州市 移动
-      - 俄罗斯 V2CROSS.COM
-      - 吉林省 移动(全省通用)
-      - 美国 CloudFlare节点 2
-      - 广东省江门市 移动
       - 江苏省 移动
-      - 广东省东莞市 移动
+      - 上海市徐汇区 联通漕河泾数据中心
+      - 上海市 上海电信科技发展有限公司(中山南路111号)
+      - 吉林省 移动(全省通用)
+      - 广东省广州市 电信IDC机房
+      - 美国 CloudFlare节点
+      - 美国 CloudFlare节点 2
+      - 德国 法兰克福Oracle云计算数据中心
+      - 美国 CloudFlare节点 3
+      - 广东省湛江市 移动
+      - 广东省湛江市 移动 2
+      - 广东省 移动
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 广东省 移动
-      - 英国 V2CROSS.COM
-      - 摩尔多瓦 V2CROSS.COM
-      - 美国 CloudFlare节点
-      - 广东省 移动 2
-      - 上海市 上海电信科技发展有限公司(中山南路111号)
-      - 广东省广州市 移动
-      - 俄罗斯 V2CROSS.COM
-      - 吉林省 移动(全省通用)
-      - 美国 CloudFlare节点 2
-      - 广东省江门市 移动
       - 江苏省 移动
-      - 广东省东莞市 移动
+      - 上海市徐汇区 联通漕河泾数据中心
+      - 上海市 上海电信科技发展有限公司(中山南路111号)
+      - 吉林省 移动(全省通用)
+      - 广东省广州市 电信IDC机房
+      - 美国 CloudFlare节点
+      - 美国 CloudFlare节点 2
+      - 德国 法兰克福Oracle云计算数据中心
+      - 美国 CloudFlare节点 3
+      - 广东省湛江市 移动
+      - 广东省湛江市 移动 2
+      - 广东省 移动
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 广东省 移动
-      - 英国 V2CROSS.COM
-      - 摩尔多瓦 V2CROSS.COM
-      - 美国 CloudFlare节点
-      - 广东省 移动 2
-      - 上海市 上海电信科技发展有限公司(中山南路111号)
-      - 广东省广州市 移动
-      - 俄罗斯 V2CROSS.COM
-      - 吉林省 移动(全省通用)
-      - 美国 CloudFlare节点 2
-      - 广东省江门市 移动
       - 江苏省 移动
-      - 广东省东莞市 移动
+      - 上海市徐汇区 联通漕河泾数据中心
+      - 上海市 上海电信科技发展有限公司(中山南路111号)
+      - 吉林省 移动(全省通用)
+      - 广东省广州市 电信IDC机房
+      - 美国 CloudFlare节点
+      - 美国 CloudFlare节点 2
+      - 德国 法兰克福Oracle云计算数据中心
+      - 美国 CloudFlare节点 3
+      - 广东省湛江市 移动
+      - 广东省湛江市 移动 2
+      - 广东省 移动
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -180,19 +172,18 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 广东省 移动
-      - 英国 V2CROSS.COM
-      - 摩尔多瓦 V2CROSS.COM
-      - 美国 CloudFlare节点
-      - 广东省 移动 2
-      - 上海市 上海电信科技发展有限公司(中山南路111号)
-      - 广东省广州市 移动
-      - 俄罗斯 V2CROSS.COM
-      - 吉林省 移动(全省通用)
-      - 美国 CloudFlare节点 2
-      - 广东省江门市 移动
       - 江苏省 移动
-      - 广东省东莞市 移动
+      - 上海市徐汇区 联通漕河泾数据中心
+      - 上海市 上海电信科技发展有限公司(中山南路111号)
+      - 吉林省 移动(全省通用)
+      - 广东省广州市 电信IDC机房
+      - 美国 CloudFlare节点
+      - 美国 CloudFlare节点 2
+      - 德国 法兰克福Oracle云计算数据中心
+      - 美国 CloudFlare节点 3
+      - 广东省湛江市 移动
+      - 广东省湛江市 移动 2
+      - 广东省 移动
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
