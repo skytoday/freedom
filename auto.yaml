@@ -5,63 +5,71 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 新加坡 甲骨文机房, server: 138.2.64.229, port: 443, type: trojan, password: ttfang, sni: ttfang.fange.me, skip-cert-verify: true, udp: true}
-  - {name: 广东省湛江市 移动, server: lm.kaiqsz.com, port: 16783, type: trojan, password: 55f2afab-bc41-4231-b725-76bef15c3cf7, sni: mmbiz15.redapricotcloud.com, skip-cert-verify: true, udp: true}
-  - {name: 香港 电讯盈科有限公司, server: e0784ed0-swq1s0-sxzls8-1gxvd.hgc1.tcpbbr.net, port: 8080, type: vmess, uuid: 398e0d38-8649-11ef-959c-f23c9164ca5d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: broadcastlv.chat.bilibili.com}}, udp: true}
-  - {name: 广东省湛江市 移动 2, server: lm.kaiqsz.com, port: 55799, type: trojan, password: 55f2afab-bc41-4231-b725-76bef15c3cf7, sni: mmbiz10.redapricotcloud.com, skip-cert-verify: true, udp: true}
-  - {name: 美国 CloudFlare节点, server: npmjs.com, port: 8080, type: vmess, uuid: 6cbc9c78-1cb1-57d4-a999-e2f4e34c1e03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /nasnet/cdn, headers: {Host: ke7hz36ewz-4515017473.mashallahbet.com}}, udp: true}
-  - {name: 美国 CloudFlare节点 2, server: ssXxZaSw.999824.xyZ, port: 443, type: vmess, uuid: 512d9674-db12-44ca-a1b5-654244549b65, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /uiAxvH6OkVk0VCfa7dX3JIrYk7zm, headers: {Host: ssxxzasw.999824.xyz}}, udp: true}
-  - {name: 南非 V2CROSS.COM, server: 45.192.222.112, port: 8443, type: trojan, password: trojan, sni: store.timimi.dpdns.org, skip-cert-verify: true, udp: true}
+  - {name: 西班牙 V2CROSS.COM, server: 109.234.211.66, port: 8443, type: trojan, password: trojan, sni: store.timimi.dpdns.org, skip-cert-verify: true, udp: true}
+  - {name: 美国 CloudFlare节点, server: EeR4567.999824.xYz, port: 443, type: vmess, uuid: cdec9d57-661d-456a-bbf2-b4c38e9c6711, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /9dZlJLjHHrL0VwSolbqFpg, headers: {Host: eer4567.999824.xyz}}, udp: true}
+  - {name: 甘肃省兰州市 移动, server: ti3hyra4.slashdevslashnetslashtun.net, port: 18008, type: ss, cipher: aes-256-gcm, password: QZVFNGZY8253LZYP, udp: true}
+  - {name: 吉林省 移动(全省通用), server: 111.26.109.79, port: 30828, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /oooo, headers: {Host: ocbc.com}}, udp: true}
+  - {name: 甘肃省兰州市 移动 2, server: ti3hyra4.slashdevslashnetslashtun.net, port: 18009, type: ss, cipher: aes-256-gcm, password: MNOORIVKRQF4KGJP, udp: true}
+  - {name: 美国 CloudFlare节点 2, server: EeEDCFVg.999824.xYZ, port: 80, type: vmess, uuid: cdec9d57-661d-456a-bbf2-b4c38e9c6711, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /9dZlJLjHHrL0VwSolbqFpg, headers: {Host: eeedcfvg.999824.xyz}}, udp: true}
+  - {name: 美国 CloudFlare节点 3, server: 104.21.6.179, port: 443, type: trojan, password: 6757b7d6-fa32-4708-b5d1-30e3cf928b51, sni: ZZzzzZZ.890601.XYZ, skip-cert-verify: true, udp: true}
+  - {name: 广东省广州市 电信, server: fg.fxlcn.com, port: 45242, type: vmess, uuid: 469e0b31-30c3-4dab-800d-711232634ce1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国 CloudFlare节点 4, server: EeedcFvg.999824.xYZ, port: 443, type: vmess, uuid: cdec9d57-661d-456a-bbf2-b4c38e9c6711, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /9dZlJLjHHrL0VwSolbqFpg, headers: {Host: eeedcfvg.999824.xyz}}, udp: true}
+  - {name: 伊朗 V2CROSS.COM, server: 193.151.151.93, port: 52262, type: vmess, uuid: af5a0d0c-c898-4a51-ba6a-47179d483e41, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: 广东省汕头市 移动, server: 57100505-sytz40-t389l0-1rsuw.cm5.cnkuaishou.com, port: 27233, type: trojan, password: 0de37cdc-abff-11ef-b7c6-f23c913c8d2b, sni: 57100505-sytz40-t389l0-1rsuw.cm5.cnkuaishou.com, skip-cert-verify: true, udp: true}
-  - {name: 俄罗斯 莫斯科JustHost, server: 185.22.152.92, port: 1019, type: ss, cipher: aes-256-gcm, password: d989ff3d46a63f63, udp: true}
-  - {name: 广东省深圳市 移动, server: ysl.fxlcn.com, port: 45419, type: vmess, uuid: 469e0b31-30c3-4dab-800d-711232634ce1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国 CloudFlare节点 5, server: 104.17.176.171, port: 8080, type: vmess, uuid: 6cbc9c78-1cb1-57d4-a999-e2f4e34c1e03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /nasnet/cdn, headers: {Host: ke7hz36ewz-4515017473.mashallahbet.com}}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 新加坡 甲骨文机房
-      - 广东省湛江市 移动
-      - 香港 电讯盈科有限公司
-      - 广东省湛江市 移动 2
+      - 西班牙 V2CROSS.COM
       - 美国 CloudFlare节点
+      - 甘肃省兰州市 移动
+      - 吉林省 移动(全省通用)
+      - 甘肃省兰州市 移动 2
       - 美国 CloudFlare节点 2
-      - 南非 V2CROSS.COM
+      - 美国 CloudFlare节点 3
+      - 广东省广州市 电信
+      - 美国 CloudFlare节点 4
+      - 伊朗 V2CROSS.COM
       - 广东省汕头市 移动
-      - 俄罗斯 莫斯科JustHost
-      - 广东省深圳市 移动
+      - 美国 CloudFlare节点 5
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 新加坡 甲骨文机房
-      - 广东省湛江市 移动
-      - 香港 电讯盈科有限公司
-      - 广东省湛江市 移动 2
+      - 西班牙 V2CROSS.COM
       - 美国 CloudFlare节点
+      - 甘肃省兰州市 移动
+      - 吉林省 移动(全省通用)
+      - 甘肃省兰州市 移动 2
       - 美国 CloudFlare节点 2
-      - 南非 V2CROSS.COM
+      - 美国 CloudFlare节点 3
+      - 广东省广州市 电信
+      - 美国 CloudFlare节点 4
+      - 伊朗 V2CROSS.COM
       - 广东省汕头市 移动
-      - 俄罗斯 莫斯科JustHost
-      - 广东省深圳市 移动
+      - 美国 CloudFlare节点 5
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 新加坡 甲骨文机房
-      - 广东省湛江市 移动
-      - 香港 电讯盈科有限公司
-      - 广东省湛江市 移动 2
+      - 西班牙 V2CROSS.COM
       - 美国 CloudFlare节点
+      - 甘肃省兰州市 移动
+      - 吉林省 移动(全省通用)
+      - 甘肃省兰州市 移动 2
       - 美国 CloudFlare节点 2
-      - 南非 V2CROSS.COM
+      - 美国 CloudFlare节点 3
+      - 广东省广州市 电信
+      - 美国 CloudFlare节点 4
+      - 伊朗 V2CROSS.COM
       - 广东省汕头市 移动
-      - 俄罗斯 莫斯科JustHost
-      - 广东省深圳市 移动
+      - 美国 CloudFlare节点 5
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -80,68 +88,75 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 新加坡 甲骨文机房
-      - 广东省湛江市 移动
-      - 香港 电讯盈科有限公司
-      - 广东省湛江市 移动 2
+      - 西班牙 V2CROSS.COM
       - 美国 CloudFlare节点
+      - 甘肃省兰州市 移动
+      - 吉林省 移动(全省通用)
+      - 甘肃省兰州市 移动 2
       - 美国 CloudFlare节点 2
-      - 南非 V2CROSS.COM
+      - 美国 CloudFlare节点 3
+      - 广东省广州市 电信
+      - 美国 CloudFlare节点 4
+      - 伊朗 V2CROSS.COM
       - 广东省汕头市 移动
-      - 俄罗斯 莫斯科JustHost
-      - 广东省深圳市 移动
+      - 美国 CloudFlare节点 5
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 香港 电讯盈科有限公司
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 新加坡 甲骨文机房
-      - 广东省湛江市 移动
-      - 香港 电讯盈科有限公司
-      - 广东省湛江市 移动 2
+      - 西班牙 V2CROSS.COM
       - 美国 CloudFlare节点
+      - 甘肃省兰州市 移动
+      - 吉林省 移动(全省通用)
+      - 甘肃省兰州市 移动 2
       - 美国 CloudFlare节点 2
-      - 南非 V2CROSS.COM
+      - 美国 CloudFlare节点 3
+      - 广东省广州市 电信
+      - 美国 CloudFlare节点 4
+      - 伊朗 V2CROSS.COM
       - 广东省汕头市 移动
-      - 俄罗斯 莫斯科JustHost
-      - 广东省深圳市 移动
+      - 美国 CloudFlare节点 5
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 新加坡 甲骨文机房
-      - 广东省湛江市 移动
-      - 香港 电讯盈科有限公司
-      - 广东省湛江市 移动 2
+      - 西班牙 V2CROSS.COM
       - 美国 CloudFlare节点
+      - 甘肃省兰州市 移动
+      - 吉林省 移动(全省通用)
+      - 甘肃省兰州市 移动 2
       - 美国 CloudFlare节点 2
-      - 南非 V2CROSS.COM
+      - 美国 CloudFlare节点 3
+      - 广东省广州市 电信
+      - 美国 CloudFlare节点 4
+      - 伊朗 V2CROSS.COM
       - 广东省汕头市 移动
-      - 俄罗斯 莫斯科JustHost
-      - 广东省深圳市 移动
+      - 美国 CloudFlare节点 5
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 新加坡 甲骨文机房
-      - 广东省湛江市 移动
-      - 香港 电讯盈科有限公司
-      - 广东省湛江市 移动 2
+      - 西班牙 V2CROSS.COM
       - 美国 CloudFlare节点
+      - 甘肃省兰州市 移动
+      - 吉林省 移动(全省通用)
+      - 甘肃省兰州市 移动 2
       - 美国 CloudFlare节点 2
-      - 南非 V2CROSS.COM
+      - 美国 CloudFlare节点 3
+      - 广东省广州市 电信
+      - 美国 CloudFlare节点 4
+      - 伊朗 V2CROSS.COM
       - 广东省汕头市 移动
-      - 俄罗斯 莫斯科JustHost
-      - 广东省深圳市 移动
+      - 美国 CloudFlare节点 5
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -157,16 +172,18 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 新加坡 甲骨文机房
-      - 广东省湛江市 移动
-      - 香港 电讯盈科有限公司
-      - 广东省湛江市 移动 2
+      - 西班牙 V2CROSS.COM
       - 美国 CloudFlare节点
+      - 甘肃省兰州市 移动
+      - 吉林省 移动(全省通用)
+      - 甘肃省兰州市 移动 2
       - 美国 CloudFlare节点 2
-      - 南非 V2CROSS.COM
+      - 美国 CloudFlare节点 3
+      - 广东省广州市 电信
+      - 美国 CloudFlare节点 4
+      - 伊朗 V2CROSS.COM
       - 广东省汕头市 移动
-      - 俄罗斯 莫斯科JustHost
-      - 广东省深圳市 移动
+      - 美国 CloudFlare节点 5
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
