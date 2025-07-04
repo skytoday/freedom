@@ -5,93 +5,93 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 🇺🇸 美国 Cloudinnovation数据中心, server: 154.83.2.200, port: 443, type: trojan, password: d6b8011a-c725-435a-9fec-bf6d3530392c, sni: vle.amclubdns.dpdns.org, skip-cert-verify: false, udp: true}
-  - {name: 🇨🇳 上海市徐汇区 联通漕河泾数据中心, server: lt.fxlcn.com, port: 45276, type: vmess, uuid: 469e0b31-30c3-4dab-800d-711232634ce1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 🇺🇸 美国 CloudFlare节点, server: 1743919941.tencentapp.cn, port: 8443, type: vmess, uuid: 3bb3c730-e107-49c5-a0b2-b576d1b26a5e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: 1743919978.speed.laxha.cccp.freefly.pp.ua}}, udp: true}
-  - {name: 🇨🇳 浙江省宁波市 移动, server: yal.fxlcn.com, port: 45272, type: vmess, uuid: 469e0b31-30c3-4dab-800d-711232634ce1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 🇺🇸 美国 CloudFlare节点 2, server: awetdfgn_cdn.hfhfb.homes, port: 2086, type: vmess, uuid: 16f000d7-7805-459d-9130-200d00180b7c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/market?ed=1024", headers: {Host: mgcdn8.hfhfb.homes}}, udp: true}
-  - {name: 🇨🇳 台湾省新竹县 中华电信, server: hyttttesgvvxb1.jkhkgj.xyz, port: 80, type: vmess, uuid: 16f000d7-7805-459d-9130-200d00180b7c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/market/jp1?ed=512", headers: {Host: file.dingtalk.com}}, udp: true}
+  - {name: 🇨🇳 台湾省桃园市 中华电信, server: hyttttesgvvxb1.jkhkgj.xyz, port: 80, type: vmess, uuid: 16f000d7-7805-459d-9130-200d00180b7c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/market/jp1?ed=512", headers: {Host: file.dingtalk.com}}, udp: true}
+  - {name: 🇺🇸 美国 CloudFlare节点, server: npmjs.com, port: 8080, type: vmess, uuid: 6cbc9c78-1cb1-57d4-a999-e2f4e34c1e03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /nasnet/cdn, headers: {Host: ke7hz36ewz-4515017473.mashallahbet.com}}, udp: true}
+  - {name: 🇨🇳 台湾省台北市 中华电信, server: twjxlnnoljxc.jkhkgj.xyz, port: 80, type: vmess, uuid: 16f000d7-7805-459d-9130-200d00180b7c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/market/tw?ed=512", headers: {Host: file.dingtalk.com}}, udp: true}
+  - {name: 欧盟 V2CROSS.COM, server: 45.87.175.58, port: 8080, type: ss, cipher: chacha20-ietf-poly1305, password: oZIoA69Q8yhcQV8ka3Pa3A, udp: true}
+  - {name: 🇺🇸 美国 加利福尼亚州洛杉矶PetaExpress, server: 107.148.6.67, port: 30001, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /path/170733132233}, udp: true}
+  - {name: 吉林省 移动(全省通用), server: 111.26.109.79, port: 30828, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /oooo, headers: {Host: ocbc.com}}, udp: true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 🇺🇸 美国 Cloudinnovation数据中心
-      - 🇨🇳 上海市徐汇区 联通漕河泾数据中心
+      - 🇨🇳 台湾省桃园市 中华电信
       - 🇺🇸 美国 CloudFlare节点
-      - 🇨🇳 浙江省宁波市 移动
-      - 🇺🇸 美国 CloudFlare节点 2
-      - 🇨🇳 台湾省新竹县 中华电信
+      - 🇨🇳 台湾省台北市 中华电信
+      - 欧盟 V2CROSS.COM
+      - 🇺🇸 美国 加利福尼亚州洛杉矶PetaExpress
+      - 吉林省 移动(全省通用)
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇺🇸 美国 Cloudinnovation数据中心
-      - 🇨🇳 上海市徐汇区 联通漕河泾数据中心
+      - 🇨🇳 台湾省桃园市 中华电信
       - 🇺🇸 美国 CloudFlare节点
-      - 🇨🇳 浙江省宁波市 移动
-      - 🇺🇸 美国 CloudFlare节点 2
-      - 🇨🇳 台湾省新竹县 中华电信
+      - 🇨🇳 台湾省台北市 中华电信
+      - 欧盟 V2CROSS.COM
+      - 🇺🇸 美国 加利福尼亚州洛杉矶PetaExpress
+      - 吉林省 移动(全省通用)
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇺🇸 美国 Cloudinnovation数据中心
-      - 🇨🇳 上海市徐汇区 联通漕河泾数据中心
+      - 🇨🇳 台湾省桃园市 中华电信
       - 🇺🇸 美国 CloudFlare节点
-      - 🇨🇳 浙江省宁波市 移动
-      - 🇺🇸 美国 CloudFlare节点 2
-      - 🇨🇳 台湾省新竹县 中华电信
+      - 🇨🇳 台湾省台北市 中华电信
+      - 欧盟 V2CROSS.COM
+      - 🇺🇸 美国 加利福尼亚州洛杉矶PetaExpress
+      - 吉林省 移动(全省通用)
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇺🇸 美国 Cloudinnovation数据中心
-      - 🇨🇳 上海市徐汇区 联通漕河泾数据中心
+      - 🇨🇳 台湾省桃园市 中华电信
       - 🇺🇸 美国 CloudFlare节点
-      - 🇨🇳 浙江省宁波市 移动
-      - 🇺🇸 美国 CloudFlare节点 2
-      - 🇨🇳 台湾省新竹县 中华电信
+      - 🇨🇳 台湾省台北市 中华电信
+      - 欧盟 V2CROSS.COM
+      - 🇺🇸 美国 加利福尼亚州洛杉矶PetaExpress
+      - 吉林省 移动(全省通用)
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 🇺🇸 美国 Cloudinnovation数据中心
-      - 🇨🇳 上海市徐汇区 联通漕河泾数据中心
+      - 🇨🇳 台湾省桃园市 中华电信
       - 🇺🇸 美国 CloudFlare节点
-      - 🇨🇳 浙江省宁波市 移动
-      - 🇺🇸 美国 CloudFlare节点 2
-      - 🇨🇳 台湾省新竹县 中华电信
+      - 🇨🇳 台湾省台北市 中华电信
+      - 欧盟 V2CROSS.COM
+      - 🇺🇸 美国 加利福尼亚州洛杉矶PetaExpress
+      - 吉林省 移动(全省通用)
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇺🇸 美国 Cloudinnovation数据中心
-      - 🇨🇳 上海市徐汇区 联通漕河泾数据中心
+      - 🇨🇳 台湾省桃园市 中华电信
       - 🇺🇸 美国 CloudFlare节点
-      - 🇨🇳 浙江省宁波市 移动
-      - 🇺🇸 美国 CloudFlare节点 2
-      - 🇨🇳 台湾省新竹县 中华电信
+      - 🇨🇳 台湾省台北市 中华电信
+      - 欧盟 V2CROSS.COM
+      - 🇺🇸 美国 加利福尼亚州洛杉矶PetaExpress
+      - 吉林省 移动(全省通用)
   - name: 📢 谷歌FCM
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇺🇸 美国 Cloudinnovation数据中心
-      - 🇨🇳 上海市徐汇区 联通漕河泾数据中心
+      - 🇨🇳 台湾省桃园市 中华电信
       - 🇺🇸 美国 CloudFlare节点
-      - 🇨🇳 浙江省宁波市 移动
-      - 🇺🇸 美国 CloudFlare节点 2
-      - 🇨🇳 台湾省新竹县 中华电信
+      - 🇨🇳 台湾省台北市 中华电信
+      - 欧盟 V2CROSS.COM
+      - 🇺🇸 美国 加利福尼亚州洛杉矶PetaExpress
+      - 吉林省 移动(全省通用)
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -114,12 +114,12 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇺🇸 美国 Cloudinnovation数据中心
-      - 🇨🇳 上海市徐汇区 联通漕河泾数据中心
+      - 🇨🇳 台湾省桃园市 中华电信
       - 🇺🇸 美国 CloudFlare节点
-      - 🇨🇳 浙江省宁波市 移动
-      - 🇺🇸 美国 CloudFlare节点 2
-      - 🇨🇳 台湾省新竹县 中华电信
+      - 🇨🇳 台湾省台北市 中华电信
+      - 欧盟 V2CROSS.COM
+      - 🇺🇸 美国 加利福尼亚州洛杉矶PetaExpress
+      - 吉林省 移动(全省通用)
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
