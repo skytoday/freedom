@@ -5,59 +5,67 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
+  - {name: 美国 CloudFlare节点, server: 172.67.219.196, port: 443, type: trojan, password: f108e0e2-5f12-42b6-9e67-1b2f073ffb2b, sni: CCcvfgt6.852224.dpdns.org, skip-cert-verify: true, udp: true}
+  - {name: 美国 Cloudinnovation数据中心, server: 154.83.2.200, port: 443, type: trojan, password: d6b8011a-c725-435a-9fec-bf6d3530392c, sni: vle.amclubdns.dpdns.org, skip-cert-verify: true, udp: true}
+  - {name: 欧盟 V2CROSS.COM, server: beesyar.org, port: 8080, type: ss, cipher: chacha20-ietf-poly1305, password: cvII85TrW6n0OGyfpHVS1u, udp: true}
+  - {name: 北美地区 V2CROSS.COM, server: 23.177.185.63, port: 49454, type: ss, cipher: chacha20-ietf-poly1305, password: WrYfzlAsqV4kKOJRPF2WHR, udp: true}
   - {name: 俄罗斯 V2CROSS.COM, server: 46.254.93.243, port: 8443, type: trojan, password: Aimer, sni: epmk.ambercc.filegear-sg.me, skip-cert-verify: true, udp: true}
-  - {name: 美国 CloudFlare节点, server: cccvffgty.444752.xyz, port: 443, type: trojan, password: 512d9674-db12-44ca-a1b5-654244549b65, sni: cccvffgty.444752.xyz, skip-cert-verify: true, udp: true}
-  - {name: 俄罗斯 V2CROSS.COM 2, server: 185.143.221.140, port: 25000, type: vmess, uuid: ddb70955-ee94-4f83-8ed0-c46172ee1383, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: 欧盟 V2CROSS.COM, server: beesyar.org, port: 8080, type: ss, cipher: chacha20-ietf-poly1305, password: 4a2rfixophdjffa8KVA4Aa, udp: true}
-  - {name: 西班牙 V2CROSS.COM, server: 109.234.211.66, port: 8443, type: trojan, password: trojan, sni: store.timimi.dpdns.org, skip-cert-verify: true, udp: true}
-  - {name: 广东省 移动, server: pr.fastsoonlink.com, port: 40030, type: ss, cipher: chacha20-ietf-poly1305, password: 7905a32b-012c-4711-89e2-73b6713eca75, udp: true}
-  - {name: 美国 CloudFlare节点 2, server: 172.67.219.196, port: 443, type: trojan, password: f108e0e2-5f12-42b6-9e67-1b2f073ffb2b, sni: CCcvfgt6.852224.dpdns.org, skip-cert-verify: true, udp: true}
-  - {name: 广东省汕头市 移动, server: v29.heduian.link, port: 30829, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /oooo, headers: {Host: ocbc.com}}, udp: true}
-  - {name: 乌克兰 V2CROSS.COM, server: 31.43.179.27, port: 443, type: trojan, password: Aimer, sni: epmk.ambercc.filegear-sg.me, skip-cert-verify: true, udp: true}
+  - {name: 广东省汕头市 移动, server: v7.heduian.link, port: 30807, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /oooo, headers: {Host: v7.heduian.link}}, udp: true}
+  - {name: 美国 V2CROSS.COM, server: 165.22.74.230, port: 443, type: trojan, password: 4732adfa16c6450bbef87264e41332db, sni: nextstepcareer.online, skip-cert-verify: true, udp: true}
+  - {name: 俄罗斯 V2CROSS.COM 2, server: 77.246.102.112, port: 60117, type: ss, cipher: chacha20-ietf-poly1305, password: Y1hjiUmSgucgzYYJ0WtqwW, udp: true}
+  - {name: 俄罗斯 V2CROSS.COM 3, server: 185.143.221.140, port: 23117, type: vmess, uuid: 961d9964-4f6a-4b5c-a93e-64fe7f2fd28c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 美国 V2CROSS.COM 2, server: nextstepcareer.online, port: 443, type: trojan, password: 4732adfa16c6450bbef87264e41332db, skip-cert-verify: true, udp: true}
+  - {name: 广东省湛江市 移动, server: gz-43e866.kaiqsz.com, port: 42765, type: trojan, password: 77c0e69d-f479-4636-bbe5-e79001d5708b, sni: mmbiz1.redapricotcloud.com, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 俄罗斯 V2CROSS.COM
       - 美国 CloudFlare节点
-      - 俄罗斯 V2CROSS.COM 2
+      - 美国 Cloudinnovation数据中心
       - 欧盟 V2CROSS.COM
-      - 西班牙 V2CROSS.COM
-      - 广东省 移动
-      - 美国 CloudFlare节点 2
+      - 北美地区 V2CROSS.COM
+      - 俄罗斯 V2CROSS.COM
       - 广东省汕头市 移动
-      - 乌克兰 V2CROSS.COM
+      - 美国 V2CROSS.COM
+      - 俄罗斯 V2CROSS.COM 2
+      - 俄罗斯 V2CROSS.COM 3
+      - 美国 V2CROSS.COM 2
+      - 广东省湛江市 移动
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 俄罗斯 V2CROSS.COM
       - 美国 CloudFlare节点
-      - 俄罗斯 V2CROSS.COM 2
+      - 美国 Cloudinnovation数据中心
       - 欧盟 V2CROSS.COM
-      - 西班牙 V2CROSS.COM
-      - 广东省 移动
-      - 美国 CloudFlare节点 2
+      - 北美地区 V2CROSS.COM
+      - 俄罗斯 V2CROSS.COM
       - 广东省汕头市 移动
-      - 乌克兰 V2CROSS.COM
+      - 美国 V2CROSS.COM
+      - 俄罗斯 V2CROSS.COM 2
+      - 俄罗斯 V2CROSS.COM 3
+      - 美国 V2CROSS.COM 2
+      - 广东省湛江市 移动
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 俄罗斯 V2CROSS.COM
       - 美国 CloudFlare节点
-      - 俄罗斯 V2CROSS.COM 2
+      - 美国 Cloudinnovation数据中心
       - 欧盟 V2CROSS.COM
-      - 西班牙 V2CROSS.COM
-      - 广东省 移动
-      - 美国 CloudFlare节点 2
+      - 北美地区 V2CROSS.COM
+      - 俄罗斯 V2CROSS.COM
       - 广东省汕头市 移动
-      - 乌克兰 V2CROSS.COM
+      - 美国 V2CROSS.COM
+      - 俄罗斯 V2CROSS.COM 2
+      - 俄罗斯 V2CROSS.COM 3
+      - 美国 V2CROSS.COM 2
+      - 广东省湛江市 移动
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -76,15 +84,17 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 俄罗斯 V2CROSS.COM
       - 美国 CloudFlare节点
-      - 俄罗斯 V2CROSS.COM 2
+      - 美国 Cloudinnovation数据中心
       - 欧盟 V2CROSS.COM
-      - 西班牙 V2CROSS.COM
-      - 广东省 移动
-      - 美国 CloudFlare节点 2
+      - 北美地区 V2CROSS.COM
+      - 俄罗斯 V2CROSS.COM
       - 广东省汕头市 移动
-      - 乌克兰 V2CROSS.COM
+      - 美国 V2CROSS.COM
+      - 俄罗斯 V2CROSS.COM 2
+      - 俄罗斯 V2CROSS.COM 3
+      - 美国 V2CROSS.COM 2
+      - 广东省湛江市 移动
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -95,44 +105,50 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 俄罗斯 V2CROSS.COM
       - 美国 CloudFlare节点
-      - 俄罗斯 V2CROSS.COM 2
+      - 美国 Cloudinnovation数据中心
       - 欧盟 V2CROSS.COM
-      - 西班牙 V2CROSS.COM
-      - 广东省 移动
-      - 美国 CloudFlare节点 2
+      - 北美地区 V2CROSS.COM
+      - 俄罗斯 V2CROSS.COM
       - 广东省汕头市 移动
-      - 乌克兰 V2CROSS.COM
+      - 美国 V2CROSS.COM
+      - 俄罗斯 V2CROSS.COM 2
+      - 俄罗斯 V2CROSS.COM 3
+      - 美国 V2CROSS.COM 2
+      - 广东省湛江市 移动
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 俄罗斯 V2CROSS.COM
       - 美国 CloudFlare节点
-      - 俄罗斯 V2CROSS.COM 2
+      - 美国 Cloudinnovation数据中心
       - 欧盟 V2CROSS.COM
-      - 西班牙 V2CROSS.COM
-      - 广东省 移动
-      - 美国 CloudFlare节点 2
+      - 北美地区 V2CROSS.COM
+      - 俄罗斯 V2CROSS.COM
       - 广东省汕头市 移动
-      - 乌克兰 V2CROSS.COM
+      - 美国 V2CROSS.COM
+      - 俄罗斯 V2CROSS.COM 2
+      - 俄罗斯 V2CROSS.COM 3
+      - 美国 V2CROSS.COM 2
+      - 广东省湛江市 移动
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 俄罗斯 V2CROSS.COM
       - 美国 CloudFlare节点
-      - 俄罗斯 V2CROSS.COM 2
+      - 美国 Cloudinnovation数据中心
       - 欧盟 V2CROSS.COM
-      - 西班牙 V2CROSS.COM
-      - 广东省 移动
-      - 美国 CloudFlare节点 2
+      - 北美地区 V2CROSS.COM
+      - 俄罗斯 V2CROSS.COM
       - 广东省汕头市 移动
-      - 乌克兰 V2CROSS.COM
+      - 美国 V2CROSS.COM
+      - 俄罗斯 V2CROSS.COM 2
+      - 俄罗斯 V2CROSS.COM 3
+      - 美国 V2CROSS.COM 2
+      - 广东省湛江市 移动
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -148,15 +164,17 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 俄罗斯 V2CROSS.COM
       - 美国 CloudFlare节点
-      - 俄罗斯 V2CROSS.COM 2
+      - 美国 Cloudinnovation数据中心
       - 欧盟 V2CROSS.COM
-      - 西班牙 V2CROSS.COM
-      - 广东省 移动
-      - 美国 CloudFlare节点 2
+      - 北美地区 V2CROSS.COM
+      - 俄罗斯 V2CROSS.COM
       - 广东省汕头市 移动
-      - 乌克兰 V2CROSS.COM
+      - 美国 V2CROSS.COM
+      - 俄罗斯 V2CROSS.COM 2
+      - 俄罗斯 V2CROSS.COM 3
+      - 美国 V2CROSS.COM 2
+      - 广东省湛江市 移动
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
