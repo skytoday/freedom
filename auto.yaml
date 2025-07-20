@@ -5,43 +5,67 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 福建省厦门市 电信, server: pr.fastsoonlink.com, port: 40030, type: ss, cipher: chacha20-ietf-poly1305, password: 7905a32b-012c-4711-89e2-73b6713eca75, udp: true}
-  - {name: 美国 CloudFlare节点, server: 172.67.193.50, port: 8443, type: vmess, uuid: 57e595e6-ef54-4e0d-b8df-e96db9612b99, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /horsen, headers: {Host: orvps2.horsenma.net}}, udp: true}
-  - {name: 美国 CloudFlare节点 2, server: cf.fovi.tk, port: 443, type: vmess, uuid: bf67437e-6c90-45ca-abc2-c7240a5ce2aa, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /eisasqa, headers: {Host: foxlux.fovi.tk}}, udp: true}
-  - {name: 美国 CloudFlare节点 3, server: www.meter.net, port: 2083, type: vmess, uuid: c208e0ae-6f6d-4745-99da-44a44744c530, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: "/linkwsrt?ed=2560", headers: {Host: blaze-ger-248.blazecloudmain.site}}, udp: true}
-  - {name: 美国 CloudFlare节点 4, server: cc2dash.89060004.xyz, port: 2083, type: vmess, uuid: 2fc37713-3017-497e-ff2d-965f826a19a3, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: cc2d3.89060004.xyz}}, udp: true}
+  - {name: 江苏省 移动, server: 36.151.192.239, port: 39701, type: trojan, password: d0d08cddacc3190ea81b1b792e1b5fde, sni: www.baidu.com, skip-cert-verify: true, udp: true}
+  - {name: 俄罗斯 V2CROSS.COM, server: 78.153.131.96, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 7jvHHF5SaFob, udp: true}
+  - {name: 江苏省 移动 2, server: v8.heduian.link, port: 30808, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /oooo, headers: {Host: v8.heduian.link}}, udp: true}
+  - {name: 乌克兰 V2CROSS.COM, server: 2.59.163.104, port: 2222, type: ss, cipher: chacha20-ietf-poly1305, password: qscavF5UviIL-8V-E4raBA, udp: true}
+  - {name: 江苏省 移动 3, server: 36.151.192.239, port: 3596, type: trojan, password: d0d08cddacc3190ea81b1b792e1b5fde, sni: www.baidu.com, skip-cert-verify: true, udp: true}
+  - {name: 江苏省 移动 4, server: v4.heduian.link, port: 30804, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /oooo, headers: {Host: ocbc.com}}, udp: true}
+  - {name: 英国 V2CROSS.COM, server: stirring-parakeet.shiner427.skin, port: 443, type: trojan, password: !<str> 74260628090146500, skip-cert-verify: true, udp: true}
+  - {name: 美国 CloudFlare节点, server: 172.67.131.27, port: 2053, type: vmess, uuid: 350e2b01-d410-44a6-90ba-6483f1062972, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: rak2d4.89060004.xyz}}, udp: true}
+  - {name: 美国 CloudFlare节点 2, server: 172.67.193.50, port: 8443, type: vmess, uuid: 57e595e6-ef54-4e0d-b8df-e96db9612b99, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /horsen, headers: {Host: orvps2.horsenma.net}}, udp: true}
+  - {name: 江苏省 移动 5, server: v5.heduian.link, port: 30805, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /oooo, headers: {Host: v5.heduian.link}}, udp: true}
+  - {name: 美国 CloudFlare节点 3, server: awetdfgn_cdn.hfhfb.homes, port: 2086, type: vmess, uuid: 1ae7b2ce-393d-4b22-ab55-a8d3e319f1a9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/market?ed=1024", headers: {Host: mgcdn10.hfhfb.homes}}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 福建省厦门市 电信
+      - 江苏省 移动
+      - 俄罗斯 V2CROSS.COM
+      - 江苏省 移动 2
+      - 乌克兰 V2CROSS.COM
+      - 江苏省 移动 3
+      - 江苏省 移动 4
+      - 英国 V2CROSS.COM
       - 美国 CloudFlare节点
       - 美国 CloudFlare节点 2
+      - 江苏省 移动 5
       - 美国 CloudFlare节点 3
-      - 美国 CloudFlare节点 4
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 福建省厦门市 电信
+      - 江苏省 移动
+      - 俄罗斯 V2CROSS.COM
+      - 江苏省 移动 2
+      - 乌克兰 V2CROSS.COM
+      - 江苏省 移动 3
+      - 江苏省 移动 4
+      - 英国 V2CROSS.COM
       - 美国 CloudFlare节点
       - 美国 CloudFlare节点 2
+      - 江苏省 移动 5
       - 美国 CloudFlare节点 3
-      - 美国 CloudFlare节点 4
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 福建省厦门市 电信
+      - 江苏省 移动
+      - 俄罗斯 V2CROSS.COM
+      - 江苏省 移动 2
+      - 乌克兰 V2CROSS.COM
+      - 江苏省 移动 3
+      - 江苏省 移动 4
+      - 英国 V2CROSS.COM
       - 美国 CloudFlare节点
       - 美国 CloudFlare节点 2
+      - 江苏省 移动 5
       - 美国 CloudFlare节点 3
-      - 美国 CloudFlare节点 4
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -60,11 +84,17 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 福建省厦门市 电信
+      - 江苏省 移动
+      - 俄罗斯 V2CROSS.COM
+      - 江苏省 移动 2
+      - 乌克兰 V2CROSS.COM
+      - 江苏省 移动 3
+      - 江苏省 移动 4
+      - 英国 V2CROSS.COM
       - 美国 CloudFlare节点
       - 美国 CloudFlare节点 2
+      - 江苏省 移动 5
       - 美国 CloudFlare节点 3
-      - 美国 CloudFlare节点 4
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -75,32 +105,50 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 福建省厦门市 电信
+      - 江苏省 移动
+      - 俄罗斯 V2CROSS.COM
+      - 江苏省 移动 2
+      - 乌克兰 V2CROSS.COM
+      - 江苏省 移动 3
+      - 江苏省 移动 4
+      - 英国 V2CROSS.COM
       - 美国 CloudFlare节点
       - 美国 CloudFlare节点 2
+      - 江苏省 移动 5
       - 美国 CloudFlare节点 3
-      - 美国 CloudFlare节点 4
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 福建省厦门市 电信
+      - 江苏省 移动
+      - 俄罗斯 V2CROSS.COM
+      - 江苏省 移动 2
+      - 乌克兰 V2CROSS.COM
+      - 江苏省 移动 3
+      - 江苏省 移动 4
+      - 英国 V2CROSS.COM
       - 美国 CloudFlare节点
       - 美国 CloudFlare节点 2
+      - 江苏省 移动 5
       - 美国 CloudFlare节点 3
-      - 美国 CloudFlare节点 4
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 福建省厦门市 电信
+      - 江苏省 移动
+      - 俄罗斯 V2CROSS.COM
+      - 江苏省 移动 2
+      - 乌克兰 V2CROSS.COM
+      - 江苏省 移动 3
+      - 江苏省 移动 4
+      - 英国 V2CROSS.COM
       - 美国 CloudFlare节点
       - 美国 CloudFlare节点 2
+      - 江苏省 移动 5
       - 美国 CloudFlare节点 3
-      - 美国 CloudFlare节点 4
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -116,11 +164,17 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 福建省厦门市 电信
+      - 江苏省 移动
+      - 俄罗斯 V2CROSS.COM
+      - 江苏省 移动 2
+      - 乌克兰 V2CROSS.COM
+      - 江苏省 移动 3
+      - 江苏省 移动 4
+      - 英国 V2CROSS.COM
       - 美国 CloudFlare节点
       - 美国 CloudFlare节点 2
+      - 江苏省 移动 5
       - 美国 CloudFlare节点 3
-      - 美国 CloudFlare节点 4
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
