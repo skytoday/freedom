@@ -5,34 +5,34 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
+  - {name: 香港 电讯盈科有限公司, server: hkt.gotochinatown.net, port: 80, type: vmess, uuid: dfb6b402-f422-11ef-80e5-f23c9164ca5d, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: hkt.gotochinatown.net}}, udp: true}
   - {name: 印度 V2CROSS.COM, server: 103.160.204.241, port: 8880, type: vmess, uuid: 248be52b-35d9-34cb-9b73-e12b78bc1301, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /dabai.in, headers: {Host: TG.WangCai2.s2.db-link02.top}}, udp: true}
-  - {name: 香港 电讯盈科有限公司, server: hkt.gotochinatown.net, port: 80, type: vmess, uuid: 19dd9c70-e4a5-11ed-8347-f23c9164ca5d, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: hkt.gotochinatown.net}}, udp: true}
-  - {name: 美国 惠普HP, server: 15.204.234.200, port: 41100, type: vmess, uuid: c7f169a3-2e9a-4894-ba53-7b2fa6fd08b4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 江苏省 移动, server: v8.heduian.link, port: 30808, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /oooo, headers: {Host: v8.heduian.link}}, udp: true}
-  - {name: 美国 CloudFlare节点, server: www.meter.net, port: 2083, type: vmess, uuid: d218dfe5-fae6-408e-b615-8666df7f0924, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /wssss, headers: {Host: blaze-uk-48.pinkle7.site}}, udp: true}
-  - {name: 香港 电讯盈科有限公司 2, server: 5a2142ce-szi1s0-t0xtcx-1swry.hkt.tcpbbr.net, port: 80, type: vmess, uuid: 8a5d58a0-c50e-11ef-a46e-f23c913c8d2b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: broadcastlv.chat.bilibili.com}}, udp: true}
+  - {name: 美国 CloudFlare节点, server: cf.fovi.tk, port: 443, type: vmess, uuid: bf67437e-6c90-45ca-abc2-c7240a5ce2aa, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /eisasqa, headers: {Host: foxlux.fovi.tk}}, udp: true}
+  - {name: 美国 CloudFlare节点 2, server: 172.67.214.21, port: 443, type: trojan, password: 7248e825-887c-48b9-83bc-c26bc6392bf8, sni: xXcdvFgt.191268.XYz, skip-cert-verify: true, udp: true}
+  - {name: 福建省厦门市 电信, server: pr.fastsoonlink.com, port: 40030, type: ss, cipher: chacha20-ietf-poly1305, password: ae6e933b-8874-4bf4-a384-0de216ef2bf4, udp: true}
+  - {name: 香港 电讯盈科有限公司 2, server: 4b9d07b6-sz8sg0-t0o6k2-6gn6.hkt.tcpbbr.net, port: 80, type: vmess, uuid: c12f73f6-e8c7-11ed-9246-f23c9164ca5d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 4b9d07b6-sz8sg0-t0o6k2-6gn6.hkt.tcpbbr.net}}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 印度 V2CROSS.COM
       - 香港 电讯盈科有限公司
-      - 美国 惠普HP
-      - 江苏省 移动
+      - 印度 V2CROSS.COM
       - 美国 CloudFlare节点
+      - 美国 CloudFlare节点 2
+      - 福建省厦门市 电信
       - 香港 电讯盈科有限公司 2
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 印度 V2CROSS.COM
       - 香港 电讯盈科有限公司
-      - 美国 惠普HP
-      - 江苏省 移动
+      - 印度 V2CROSS.COM
       - 美国 CloudFlare节点
+      - 美国 CloudFlare节点 2
+      - 福建省厦门市 电信
       - 香港 电讯盈科有限公司 2
   - name: 🎥 NETFLIX
     type: select
@@ -40,11 +40,11 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 印度 V2CROSS.COM
       - 香港 电讯盈科有限公司
-      - 美国 惠普HP
-      - 江苏省 移动
+      - 印度 V2CROSS.COM
       - 美国 CloudFlare节点
+      - 美国 CloudFlare节点 2
+      - 福建省厦门市 电信
       - 香港 电讯盈科有限公司 2
   - name: ⛔️ 广告拦截
     type: select
@@ -64,11 +64,11 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 印度 V2CROSS.COM
       - 香港 电讯盈科有限公司
-      - 美国 惠普HP
-      - 江苏省 移动
+      - 印度 V2CROSS.COM
       - 美国 CloudFlare节点
+      - 美国 CloudFlare节点 2
+      - 福建省厦门市 电信
       - 香港 电讯盈科有限公司 2
   - name: 🌏 国内媒体
     type: select
@@ -82,22 +82,22 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 印度 V2CROSS.COM
       - 香港 电讯盈科有限公司
-      - 美国 惠普HP
-      - 江苏省 移动
+      - 印度 V2CROSS.COM
       - 美国 CloudFlare节点
+      - 美国 CloudFlare节点 2
+      - 福建省厦门市 电信
       - 香港 电讯盈科有限公司 2
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 印度 V2CROSS.COM
       - 香港 电讯盈科有限公司
-      - 美国 惠普HP
-      - 江苏省 移动
+      - 印度 V2CROSS.COM
       - 美国 CloudFlare节点
+      - 美国 CloudFlare节点 2
+      - 福建省厦门市 电信
       - 香港 电讯盈科有限公司 2
   - name: 🍎 苹果服务
     type: select
@@ -105,11 +105,11 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 印度 V2CROSS.COM
       - 香港 电讯盈科有限公司
-      - 美国 惠普HP
-      - 江苏省 移动
+      - 印度 V2CROSS.COM
       - 美国 CloudFlare节点
+      - 美国 CloudFlare节点 2
+      - 福建省厦门市 电信
       - 香港 电讯盈科有限公司 2
   - name: 🎯 全球直连
     type: select
@@ -126,11 +126,11 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 印度 V2CROSS.COM
       - 香港 电讯盈科有限公司
-      - 美国 惠普HP
-      - 江苏省 移动
+      - 印度 V2CROSS.COM
       - 美国 CloudFlare节点
+      - 美国 CloudFlare节点 2
+      - 福建省厦门市 电信
       - 香港 电讯盈科有限公司 2
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
