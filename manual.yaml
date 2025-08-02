@@ -5,197 +5,181 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 🇮🇷 伊朗 V2CROSS.COM, server: 188.212.96.235, port: 20521, type: vmess, uuid: 9fe28d12-8cf1-478d-b4d4-e38c5212354c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: 🇺🇸 美国 Cloudinnovation数据中心, server: 154.83.2.88, port: 2083, type: trojan, password: Aimer, sni: epga.aimercc.dpdns.org, skip-cert-verify: false, udp: true}
   - {name: 🇺🇸 美国 V2CROSS.COM, server: 192.200.160.15, port: 8443, type: trojan, password: Aimer, sni: epga.aimercc.dpdns.org, skip-cert-verify: false, udp: true}
-  - {name: 🇺🇸 美国 CloudFlare节点, server: 172.67.214.21, port: 443, type: trojan, password: 7248e825-887c-48b9-83bc-c26bc6392bf8, sni: xXcdvFgt.191268.XYz, skip-cert-verify: false, udp: true}
-  - {name: 🇮🇳 印度 V2CROSS.COM, server: 103.160.204.241, port: 8880, type: vmess, uuid: 248be52b-35d9-34cb-9b73-e12b78bc1301, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /dabai.in, headers: {Host: TG.WangCai2.s2.db-link02.top}}, udp: true}
-  - {name: 🇺🇸 美国 V2CROSS.COM 2, server: 45.153.7.25, port: 8880, type: vmess, uuid: 3e1e3e7f-2683-3f36-83b1-1850790295df, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/dabai&Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: TG.WangCai2.s2.cn-db.top}}, udp: true}
-  - {name: 广东省汕头市 移动, server: c8e8974d-t0fds0-t0l7ae-4mce.77.iwskwai.com, port: 3686, type: vmess, uuid: 06c625ea-5902-11ee-9e87-f23c9313b177, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 🇺🇸 美国 CloudFlare节点 2, server: test.flha.ru, port: 80, type: vmess, uuid: 2bab6b8f-8d6e-463a-8331-b9de3d56921d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /2bab6b8f-8d6e-463a-8331-b9de3d56921d-vmess, headers: {Host: test.flha.ru}}, udp: true}
-  - {name: 亚太地区 V2CROSS.COM, server: 103.116.7.103, port: 2083, type: trojan, password: Aimer, sni: epga.aimercc.dpdns.org, skip-cert-verify: false, udp: true}
-  - {name: 🇷🇺 俄罗斯 V2CROSS.COM, server: 92.243.74.239, port: 8443, type: trojan, password: Aimer, sni: epga.aimercc.dpdns.org, skip-cert-verify: false, udp: true}
-  - {name: 🇺🇸 美国 V2CROSS.COM 3, server: 192.200.160.35, port: 2083, type: trojan, password: Aimer, sni: epga.aimercc.dpdns.org, skip-cert-verify: false, udp: true}
-  - {name: 🇨🇳 台湾省 V2CROSS.COM, server: 45.121.48.174, port: 20788, type: vmess, uuid: bfc630aa-4598-4481-9338-cac15e3e6b65, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 🇷🇺 俄罗斯 V2CROSS.COM 2, server: 77.221.155.32, port: 20521, type: vmess, uuid: 15ee3899-e5e1-4dc9-8128-325fa32c652b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: 🇨🇳 江苏省 移动, server: v39.heduian.link, port: 30839, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /oooo, headers: {Host: baidu.com}}, udp: true}
-  - {name: 🇺🇸 美国 V2CROSS.COM 4, server: 161.145.150.26, port: 2087, type: trojan, password: Aimer, sni: epga.aimercc.dpdns.org, skip-cert-verify: false, udp: true}
-  - {name: 🇺🇸 美国 V2CROSS.COM 5, server: 45.142.120.25, port: 8880, type: vmess, uuid: 3e1e3e7f-2683-3f36-83b1-1850790295df, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/dabai&Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: TG.WangCai2.s2.cn-db.top}}, udp: true}
-  - {name: 🇭🇰 香港 电讯盈科有限公司, server: v10.heduian.link, port: 30807, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /oooo, headers: {Host: baidu.com}}, udp: true}
-  - {name: 🇷🇺 俄罗斯 V2CROSS.COM 3, server: 92.243.74.180, port: 8443, type: trojan, password: Aimer, sni: epga.aimercc.dpdns.org, skip-cert-verify: false, udp: true}
-  - {name: 🇷🇺 俄罗斯 V2CROSS.COM 4, server: 77.105.163.25, port: 8880, type: vmess, uuid: 3e1e3e7f-2683-3f36-83b1-1850790295df, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/dabai&Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: TG.WangCai2.s2.cn-db.top}}, udp: true}
+  - {name: 亚太地区 V2CROSS.COM, server: 103.169.142.241, port: 8880, type: vmess, uuid: 248be52b-35d9-34cb-9b73-e12b78bc1301, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /dabai.in, headers: {Host: TG.WangCai2.s2.db-link02.top}}, udp: true}
+  - {name: 🇬🇧 英国 V2CROSS.COM, server: 80.93.202.25, port: 8880, type: vmess, uuid: 3e1e3e7f-2683-3f36-83b1-1850790295df, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/dabai&Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: TG.WangCai2.s2.cn-db.top}}, udp: true}
+  - {name: 🇺🇸 美国 CloudFlare节点, server: s3.db-link01.top, port: 2082, type: vmess, uuid: 248be52b-35d9-34cb-9b73-e12b78bc1301, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /dabai.in104.24.10.144, headers: {Host: 100-136-78-97.s3.db-link01.top}}, udp: true}
+  - {name: 🇨🇳 江苏省盐城市 移动, server: 36.156.102.125, port: 461, type: trojan, password: d0d08cddacc3190ea81b1b792e1b5fde, sni: www.baidu.com, skip-cert-verify: false, udp: true}
+  - {name: 🇺🇸 美国 Emagine Concept有限公司, server: 103.61.139.137, port: 20521, type: vmess, uuid: f8d93cfb-3d5d-447c-a697-16496dd74697, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 🇮🇳 印度 V2CROSS.COM, server: 14.102.228.172, port: 8880, type: vmess, uuid: 70df7c1e-12c8-325f-a12a-34aa46949e60, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/dabai&Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: TG.WangCai2.s4.cn-db.top}}, udp: true}
+  - {name: 🇨🇳 江苏省 移动, server: v9.heduian.link, port: 30809, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /oooo, headers: {Host: baidu.com}}, udp: true}
+  - {name: 🇺🇸 美国 V2CROSS.COM 2, server: 161.145.150.26, port: 2087, type: trojan, password: Aimer, sni: epga.aimercc.dpdns.org, skip-cert-verify: false, udp: true}
+  - {name: 乌克兰 V2CROSS.COM, server: 31.43.179.27, port: 443, type: trojan, password: Aimer, sni: epga.aimercc.dpdns.org, skip-cert-verify: false, udp: true}
+  - {name: 🇺🇸 美国 V2CROSS.COM 3, server: 167.68.5.248, port: 2087, type: trojan, password: Aimer, sni: epga.aimercc.dpdns.org, skip-cert-verify: false, udp: true}
+  - {name: 🇺🇸 美国 V2CROSS.COM 4, server: 161.145.150.29, port: 2083, type: trojan, password: Aimer, sni: epga.aimercc.dpdns.org, skip-cert-verify: false, udp: true}
+  - {name: 🇮🇷 伊朗 V2CROSS.COM, server: 188.212.96.235, port: 20521, type: vmess, uuid: 9fe28d12-8cf1-478d-b4d4-e38c5212354c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 乌克兰 V2CROSS.COM 2, server: 46.202.30.25, port: 8880, type: vmess, uuid: 3e1e3e7f-2683-3f36-83b1-1850790295df, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/dabai&Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: TG.WangCai2.s2.cn-db.top}}, udp: true}
+  - {name: 🇺🇸 美国 洛杉矶, server: 66.81.247.230, port: 2096, type: trojan, password: Aimer, sni: epga.aimercc.dpdns.org, skip-cert-verify: false, udp: true}
+  - {name: 🇨🇦 加拿大 V2CROSS.COM, server: 130.250.137.63, port: 2083, type: trojan, password: Aimer, sni: epga.aimercc.dpdns.org, skip-cert-verify: false, udp: true}
+  - {name: 🇺🇸 美国 CloudFlare节点 2, server: 190.93.246.151, port: 80, type: vmess, uuid: 2f38f848-a899-4c87-9807-207a41615e3c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /rongseven, headers: {Host: pj.sevens.cf}}, udp: true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 🇮🇷 伊朗 V2CROSS.COM
-      - 🇺🇸 美国 Cloudinnovation数据中心
       - 🇺🇸 美国 V2CROSS.COM
-      - 🇺🇸 美国 CloudFlare节点
-      - 🇮🇳 印度 V2CROSS.COM
-      - 🇺🇸 美国 V2CROSS.COM 2
-      - 广东省汕头市 移动
-      - 🇺🇸 美国 CloudFlare节点 2
       - 亚太地区 V2CROSS.COM
-      - 🇷🇺 俄罗斯 V2CROSS.COM
-      - 🇺🇸 美国 V2CROSS.COM 3
-      - 🇨🇳 台湾省 V2CROSS.COM
-      - 🇷🇺 俄罗斯 V2CROSS.COM 2
+      - 🇬🇧 英国 V2CROSS.COM
+      - 🇺🇸 美国 CloudFlare节点
+      - 🇨🇳 江苏省盐城市 移动
+      - 🇺🇸 美国 Emagine Concept有限公司
+      - 🇮🇳 印度 V2CROSS.COM
       - 🇨🇳 江苏省 移动
+      - 🇺🇸 美国 V2CROSS.COM 2
+      - 乌克兰 V2CROSS.COM
+      - 🇺🇸 美国 V2CROSS.COM 3
       - 🇺🇸 美国 V2CROSS.COM 4
-      - 🇺🇸 美国 V2CROSS.COM 5
-      - 🇭🇰 香港 电讯盈科有限公司
-      - 🇷🇺 俄罗斯 V2CROSS.COM 3
-      - 🇷🇺 俄罗斯 V2CROSS.COM 4
+      - 🇮🇷 伊朗 V2CROSS.COM
+      - 乌克兰 V2CROSS.COM 2
+      - 🇺🇸 美国 洛杉矶
+      - 🇨🇦 加拿大 V2CROSS.COM
+      - 🇺🇸 美国 CloudFlare节点 2
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇮🇷 伊朗 V2CROSS.COM
-      - 🇺🇸 美国 Cloudinnovation数据中心
       - 🇺🇸 美国 V2CROSS.COM
-      - 🇺🇸 美国 CloudFlare节点
-      - 🇮🇳 印度 V2CROSS.COM
-      - 🇺🇸 美国 V2CROSS.COM 2
-      - 广东省汕头市 移动
-      - 🇺🇸 美国 CloudFlare节点 2
       - 亚太地区 V2CROSS.COM
-      - 🇷🇺 俄罗斯 V2CROSS.COM
-      - 🇺🇸 美国 V2CROSS.COM 3
-      - 🇨🇳 台湾省 V2CROSS.COM
-      - 🇷🇺 俄罗斯 V2CROSS.COM 2
+      - 🇬🇧 英国 V2CROSS.COM
+      - 🇺🇸 美国 CloudFlare节点
+      - 🇨🇳 江苏省盐城市 移动
+      - 🇺🇸 美国 Emagine Concept有限公司
+      - 🇮🇳 印度 V2CROSS.COM
       - 🇨🇳 江苏省 移动
+      - 🇺🇸 美国 V2CROSS.COM 2
+      - 乌克兰 V2CROSS.COM
+      - 🇺🇸 美国 V2CROSS.COM 3
       - 🇺🇸 美国 V2CROSS.COM 4
-      - 🇺🇸 美国 V2CROSS.COM 5
-      - 🇭🇰 香港 电讯盈科有限公司
-      - 🇷🇺 俄罗斯 V2CROSS.COM 3
-      - 🇷🇺 俄罗斯 V2CROSS.COM 4
+      - 🇮🇷 伊朗 V2CROSS.COM
+      - 乌克兰 V2CROSS.COM 2
+      - 🇺🇸 美国 洛杉矶
+      - 🇨🇦 加拿大 V2CROSS.COM
+      - 🇺🇸 美国 CloudFlare节点 2
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇮🇷 伊朗 V2CROSS.COM
-      - 🇺🇸 美国 Cloudinnovation数据中心
       - 🇺🇸 美国 V2CROSS.COM
-      - 🇺🇸 美国 CloudFlare节点
-      - 🇮🇳 印度 V2CROSS.COM
-      - 🇺🇸 美国 V2CROSS.COM 2
-      - 广东省汕头市 移动
-      - 🇺🇸 美国 CloudFlare节点 2
       - 亚太地区 V2CROSS.COM
-      - 🇷🇺 俄罗斯 V2CROSS.COM
-      - 🇺🇸 美国 V2CROSS.COM 3
-      - 🇨🇳 台湾省 V2CROSS.COM
-      - 🇷🇺 俄罗斯 V2CROSS.COM 2
+      - 🇬🇧 英国 V2CROSS.COM
+      - 🇺🇸 美国 CloudFlare节点
+      - 🇨🇳 江苏省盐城市 移动
+      - 🇺🇸 美国 Emagine Concept有限公司
+      - 🇮🇳 印度 V2CROSS.COM
       - 🇨🇳 江苏省 移动
+      - 🇺🇸 美国 V2CROSS.COM 2
+      - 乌克兰 V2CROSS.COM
+      - 🇺🇸 美国 V2CROSS.COM 3
       - 🇺🇸 美国 V2CROSS.COM 4
-      - 🇺🇸 美国 V2CROSS.COM 5
-      - 🇭🇰 香港 电讯盈科有限公司
-      - 🇷🇺 俄罗斯 V2CROSS.COM 3
-      - 🇷🇺 俄罗斯 V2CROSS.COM 4
+      - 🇮🇷 伊朗 V2CROSS.COM
+      - 乌克兰 V2CROSS.COM 2
+      - 🇺🇸 美国 洛杉矶
+      - 🇨🇦 加拿大 V2CROSS.COM
+      - 🇺🇸 美国 CloudFlare节点 2
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇮🇷 伊朗 V2CROSS.COM
-      - 🇺🇸 美国 Cloudinnovation数据中心
       - 🇺🇸 美国 V2CROSS.COM
-      - 🇺🇸 美国 CloudFlare节点
-      - 🇮🇳 印度 V2CROSS.COM
-      - 🇺🇸 美国 V2CROSS.COM 2
-      - 广东省汕头市 移动
-      - 🇺🇸 美国 CloudFlare节点 2
       - 亚太地区 V2CROSS.COM
-      - 🇷🇺 俄罗斯 V2CROSS.COM
-      - 🇺🇸 美国 V2CROSS.COM 3
-      - 🇨🇳 台湾省 V2CROSS.COM
-      - 🇷🇺 俄罗斯 V2CROSS.COM 2
+      - 🇬🇧 英国 V2CROSS.COM
+      - 🇺🇸 美国 CloudFlare节点
+      - 🇨🇳 江苏省盐城市 移动
+      - 🇺🇸 美国 Emagine Concept有限公司
+      - 🇮🇳 印度 V2CROSS.COM
       - 🇨🇳 江苏省 移动
+      - 🇺🇸 美国 V2CROSS.COM 2
+      - 乌克兰 V2CROSS.COM
+      - 🇺🇸 美国 V2CROSS.COM 3
       - 🇺🇸 美国 V2CROSS.COM 4
-      - 🇺🇸 美国 V2CROSS.COM 5
-      - 🇭🇰 香港 电讯盈科有限公司
-      - 🇷🇺 俄罗斯 V2CROSS.COM 3
-      - 🇷🇺 俄罗斯 V2CROSS.COM 4
+      - 🇮🇷 伊朗 V2CROSS.COM
+      - 乌克兰 V2CROSS.COM 2
+      - 🇺🇸 美国 洛杉矶
+      - 🇨🇦 加拿大 V2CROSS.COM
+      - 🇺🇸 美国 CloudFlare节点 2
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 🇮🇷 伊朗 V2CROSS.COM
-      - 🇺🇸 美国 Cloudinnovation数据中心
       - 🇺🇸 美国 V2CROSS.COM
-      - 🇺🇸 美国 CloudFlare节点
-      - 🇮🇳 印度 V2CROSS.COM
-      - 🇺🇸 美国 V2CROSS.COM 2
-      - 广东省汕头市 移动
-      - 🇺🇸 美国 CloudFlare节点 2
       - 亚太地区 V2CROSS.COM
-      - 🇷🇺 俄罗斯 V2CROSS.COM
-      - 🇺🇸 美国 V2CROSS.COM 3
-      - 🇨🇳 台湾省 V2CROSS.COM
-      - 🇷🇺 俄罗斯 V2CROSS.COM 2
+      - 🇬🇧 英国 V2CROSS.COM
+      - 🇺🇸 美国 CloudFlare节点
+      - 🇨🇳 江苏省盐城市 移动
+      - 🇺🇸 美国 Emagine Concept有限公司
+      - 🇮🇳 印度 V2CROSS.COM
       - 🇨🇳 江苏省 移动
+      - 🇺🇸 美国 V2CROSS.COM 2
+      - 乌克兰 V2CROSS.COM
+      - 🇺🇸 美国 V2CROSS.COM 3
       - 🇺🇸 美国 V2CROSS.COM 4
-      - 🇺🇸 美国 V2CROSS.COM 5
-      - 🇭🇰 香港 电讯盈科有限公司
-      - 🇷🇺 俄罗斯 V2CROSS.COM 3
-      - 🇷🇺 俄罗斯 V2CROSS.COM 4
+      - 🇮🇷 伊朗 V2CROSS.COM
+      - 乌克兰 V2CROSS.COM 2
+      - 🇺🇸 美国 洛杉矶
+      - 🇨🇦 加拿大 V2CROSS.COM
+      - 🇺🇸 美国 CloudFlare节点 2
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇮🇷 伊朗 V2CROSS.COM
-      - 🇺🇸 美国 Cloudinnovation数据中心
       - 🇺🇸 美国 V2CROSS.COM
-      - 🇺🇸 美国 CloudFlare节点
-      - 🇮🇳 印度 V2CROSS.COM
-      - 🇺🇸 美国 V2CROSS.COM 2
-      - 广东省汕头市 移动
-      - 🇺🇸 美国 CloudFlare节点 2
       - 亚太地区 V2CROSS.COM
-      - 🇷🇺 俄罗斯 V2CROSS.COM
-      - 🇺🇸 美国 V2CROSS.COM 3
-      - 🇨🇳 台湾省 V2CROSS.COM
-      - 🇷🇺 俄罗斯 V2CROSS.COM 2
+      - 🇬🇧 英国 V2CROSS.COM
+      - 🇺🇸 美国 CloudFlare节点
+      - 🇨🇳 江苏省盐城市 移动
+      - 🇺🇸 美国 Emagine Concept有限公司
+      - 🇮🇳 印度 V2CROSS.COM
       - 🇨🇳 江苏省 移动
+      - 🇺🇸 美国 V2CROSS.COM 2
+      - 乌克兰 V2CROSS.COM
+      - 🇺🇸 美国 V2CROSS.COM 3
       - 🇺🇸 美国 V2CROSS.COM 4
-      - 🇺🇸 美国 V2CROSS.COM 5
-      - 🇭🇰 香港 电讯盈科有限公司
-      - 🇷🇺 俄罗斯 V2CROSS.COM 3
-      - 🇷🇺 俄罗斯 V2CROSS.COM 4
+      - 🇮🇷 伊朗 V2CROSS.COM
+      - 乌克兰 V2CROSS.COM 2
+      - 🇺🇸 美国 洛杉矶
+      - 🇨🇦 加拿大 V2CROSS.COM
+      - 🇺🇸 美国 CloudFlare节点 2
   - name: 📢 谷歌FCM
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇮🇷 伊朗 V2CROSS.COM
-      - 🇺🇸 美国 Cloudinnovation数据中心
       - 🇺🇸 美国 V2CROSS.COM
-      - 🇺🇸 美国 CloudFlare节点
-      - 🇮🇳 印度 V2CROSS.COM
-      - 🇺🇸 美国 V2CROSS.COM 2
-      - 广东省汕头市 移动
-      - 🇺🇸 美国 CloudFlare节点 2
       - 亚太地区 V2CROSS.COM
-      - 🇷🇺 俄罗斯 V2CROSS.COM
-      - 🇺🇸 美国 V2CROSS.COM 3
-      - 🇨🇳 台湾省 V2CROSS.COM
-      - 🇷🇺 俄罗斯 V2CROSS.COM 2
+      - 🇬🇧 英国 V2CROSS.COM
+      - 🇺🇸 美国 CloudFlare节点
+      - 🇨🇳 江苏省盐城市 移动
+      - 🇺🇸 美国 Emagine Concept有限公司
+      - 🇮🇳 印度 V2CROSS.COM
       - 🇨🇳 江苏省 移动
+      - 🇺🇸 美国 V2CROSS.COM 2
+      - 乌克兰 V2CROSS.COM
+      - 🇺🇸 美国 V2CROSS.COM 3
       - 🇺🇸 美国 V2CROSS.COM 4
-      - 🇺🇸 美国 V2CROSS.COM 5
-      - 🇭🇰 香港 电讯盈科有限公司
-      - 🇷🇺 俄罗斯 V2CROSS.COM 3
-      - 🇷🇺 俄罗斯 V2CROSS.COM 4
+      - 🇮🇷 伊朗 V2CROSS.COM
+      - 乌克兰 V2CROSS.COM 2
+      - 🇺🇸 美国 洛杉矶
+      - 🇨🇦 加拿大 V2CROSS.COM
+      - 🇺🇸 美国 CloudFlare节点 2
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -218,25 +202,23 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇮🇷 伊朗 V2CROSS.COM
-      - 🇺🇸 美国 Cloudinnovation数据中心
       - 🇺🇸 美国 V2CROSS.COM
-      - 🇺🇸 美国 CloudFlare节点
-      - 🇮🇳 印度 V2CROSS.COM
-      - 🇺🇸 美国 V2CROSS.COM 2
-      - 广东省汕头市 移动
-      - 🇺🇸 美国 CloudFlare节点 2
       - 亚太地区 V2CROSS.COM
-      - 🇷🇺 俄罗斯 V2CROSS.COM
-      - 🇺🇸 美国 V2CROSS.COM 3
-      - 🇨🇳 台湾省 V2CROSS.COM
-      - 🇷🇺 俄罗斯 V2CROSS.COM 2
+      - 🇬🇧 英国 V2CROSS.COM
+      - 🇺🇸 美国 CloudFlare节点
+      - 🇨🇳 江苏省盐城市 移动
+      - 🇺🇸 美国 Emagine Concept有限公司
+      - 🇮🇳 印度 V2CROSS.COM
       - 🇨🇳 江苏省 移动
+      - 🇺🇸 美国 V2CROSS.COM 2
+      - 乌克兰 V2CROSS.COM
+      - 🇺🇸 美国 V2CROSS.COM 3
       - 🇺🇸 美国 V2CROSS.COM 4
-      - 🇺🇸 美国 V2CROSS.COM 5
-      - 🇭🇰 香港 电讯盈科有限公司
-      - 🇷🇺 俄罗斯 V2CROSS.COM 3
-      - 🇷🇺 俄罗斯 V2CROSS.COM 4
+      - 🇮🇷 伊朗 V2CROSS.COM
+      - 乌克兰 V2CROSS.COM 2
+      - 🇺🇸 美国 洛杉矶
+      - 🇨🇦 加拿大 V2CROSS.COM
+      - 🇺🇸 美国 CloudFlare节点 2
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
