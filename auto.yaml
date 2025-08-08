@@ -5,47 +5,39 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 摩尔多瓦 V2CROSS.COM, server: 185.193.30.88, port: 8880, type: vmess, uuid: cc0926df-54a8-3df7-934c-fd3ead64f6aa, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/dabai&Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: TG.WangCai2.s2.cn-db.top}}, udp: true}
-  - {name: 欧盟 V2CROSS.COM, server: 45.80.111.88, port: 8880, type: vmess, uuid: cc0926df-54a8-3df7-934c-fd3ead64f6aa, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/dabai&Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: TG.WangCai2.s2.cn-db.top}}, udp: true}
-  - {name: 美国 加州, server: 216.24.57.30, port: 443, type: trojan, password: tg-fq521free, sni: torjan.xn--xhq44j.eu.org, skip-cert-verify: true, udp: true}
-  - {name: 美国 V2CROSS.COM, server: 167.68.4.88, port: 8880, type: vmess, uuid: cc0926df-54a8-3df7-934c-fd3ead64f6aa, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/dabai&Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: TG.WangCai2.s2.cn-db.top}}, udp: true}
-  - {name: 丹麦 V2CROSS.COM, server: 185.162.228.88, port: 8880, type: vmess, uuid: cc0926df-54a8-3df7-934c-fd3ead64f6aa, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/dabai&Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: TG.WangCai2.s2.cn-db.top}}, udp: true}
-  - {name: 摩尔多瓦 V2CROSS.COM 2, server: 185.193.29.88, port: 8880, type: vmess, uuid: cc0926df-54a8-3df7-934c-fd3ead64f6aa, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/dabai&Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: TG.WangCai2.s2.cn-db.top}}, udp: true}
+  - {name: 美国 CloudFlare节点, server: 172.67.214.21, port: 443, type: trojan, password: 7248e825-887c-48b9-83bc-c26bc6392bf8, sni: xXcdvFgt.191268.XYz, skip-cert-verify: true, udp: true}
+  - {name: 美国 俄勒冈州波特兰Amazon数据中心, server: cgroup.node2.s.nodelist-airport.com, port: 4021, type: ss, cipher: aes-256-gcm, password: 8f3a835c-8a45-480d-ae35-1deb2c52dcae, udp: true}
+  - {name: 欧盟 V2CROSS.COM, server: 45.85.118.88, port: 8880, type: vmess, uuid: cc0926df-54a8-3df7-934c-fd3ead64f6aa, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/dabai&Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: TG.WangCai2.s2.cn-db.top}}, udp: true}
+  - {name: 美国 Vegasnap公司, server: 104.129.165.88, port: 8880, type: vmess, uuid: cc0926df-54a8-3df7-934c-fd3ead64f6aa, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/dabai&Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: TG.WangCai2.s2.cn-db.top}}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 摩尔多瓦 V2CROSS.COM
+      - 美国 CloudFlare节点
+      - 美国 俄勒冈州波特兰Amazon数据中心
       - 欧盟 V2CROSS.COM
-      - 美国 加州
-      - 美国 V2CROSS.COM
-      - 丹麦 V2CROSS.COM
-      - 摩尔多瓦 V2CROSS.COM 2
+      - 美国 Vegasnap公司
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 摩尔多瓦 V2CROSS.COM
+      - 美国 CloudFlare节点
+      - 美国 俄勒冈州波特兰Amazon数据中心
       - 欧盟 V2CROSS.COM
-      - 美国 加州
-      - 美国 V2CROSS.COM
-      - 丹麦 V2CROSS.COM
-      - 摩尔多瓦 V2CROSS.COM 2
+      - 美国 Vegasnap公司
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 摩尔多瓦 V2CROSS.COM
+      - 美国 CloudFlare节点
+      - 美国 俄勒冈州波特兰Amazon数据中心
       - 欧盟 V2CROSS.COM
-      - 美国 加州
-      - 美国 V2CROSS.COM
-      - 丹麦 V2CROSS.COM
-      - 摩尔多瓦 V2CROSS.COM 2
+      - 美国 Vegasnap公司
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -64,12 +56,10 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 摩尔多瓦 V2CROSS.COM
+      - 美国 CloudFlare节点
+      - 美国 俄勒冈州波特兰Amazon数据中心
       - 欧盟 V2CROSS.COM
-      - 美国 加州
-      - 美国 V2CROSS.COM
-      - 丹麦 V2CROSS.COM
-      - 摩尔多瓦 V2CROSS.COM 2
+      - 美国 Vegasnap公司
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -80,35 +70,29 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 摩尔多瓦 V2CROSS.COM
+      - 美国 CloudFlare节点
+      - 美国 俄勒冈州波特兰Amazon数据中心
       - 欧盟 V2CROSS.COM
-      - 美国 加州
-      - 美国 V2CROSS.COM
-      - 丹麦 V2CROSS.COM
-      - 摩尔多瓦 V2CROSS.COM 2
+      - 美国 Vegasnap公司
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 摩尔多瓦 V2CROSS.COM
+      - 美国 CloudFlare节点
+      - 美国 俄勒冈州波特兰Amazon数据中心
       - 欧盟 V2CROSS.COM
-      - 美国 加州
-      - 美国 V2CROSS.COM
-      - 丹麦 V2CROSS.COM
-      - 摩尔多瓦 V2CROSS.COM 2
+      - 美国 Vegasnap公司
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 摩尔多瓦 V2CROSS.COM
+      - 美国 CloudFlare节点
+      - 美国 俄勒冈州波特兰Amazon数据中心
       - 欧盟 V2CROSS.COM
-      - 美国 加州
-      - 美国 V2CROSS.COM
-      - 丹麦 V2CROSS.COM
-      - 摩尔多瓦 V2CROSS.COM 2
+      - 美国 Vegasnap公司
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -124,12 +108,10 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 摩尔多瓦 V2CROSS.COM
+      - 美国 CloudFlare节点
+      - 美国 俄勒冈州波特兰Amazon数据中心
       - 欧盟 V2CROSS.COM
-      - 美国 加州
-      - 美国 V2CROSS.COM
-      - 丹麦 V2CROSS.COM
-      - 摩尔多瓦 V2CROSS.COM 2
+      - 美国 Vegasnap公司
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
