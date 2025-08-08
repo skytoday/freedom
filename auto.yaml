@@ -5,175 +5,51 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 印度 V2CROSS.COM, server: 202.78.160.88, port: 8443, type: ss, cipher: chacha20-ietf-poly1305, password: c0iCgBG1Jma4QGutmZC17k, udp: true}
-  - {name: 美国 Microsoft, server: 050910.xyz, port: 20086, type: vmess, uuid: 7e992138-4bae-44d7-893e-c33605c40d5f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 050910.xyz}}, udp: true}
-  - {name: 伊朗 V2CROSS.COM, server: 151.242.251.144, port: 8080, type: ss, cipher: chacha20-ietf-poly1305, password: 4a2rfixophdjffa8KVA4Aa, udp: true}
-  - {name: 乌克兰 V2CROSS.COM, server: switcher-nick-croquet.freesocks.work, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 9tqhMdIrTkgQ46PvhyAtMH, udp: true}
-  - {name: 俄罗斯 V2CROSS.COM, server: 89.185.84.172, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: PPDI4eTCSUzQ, udp: true}
-  - {name: 美国 宾夕法尼亚州拉克万纳县克拉克斯萨密特自治区VolumeDrive股份有限公司, server: 199.168.139.196, port: 20086, type: vmess, uuid: ab1d79c6-f0de-49a3-a356-cd77b5d8034e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: 江苏省 移动, server: v36.heduian.link, port: 30836, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /oooo, headers: {Host: v36.heduian.link}}, udp: true}
-  - {name: 日本 东京都Amazon数据中心, server: 18.183.10.226, port: 8313, type: ss, cipher: chacha20-ietf-poly1305, password: ljqdalu13.., udp: true}
-  - {name: 日本 东京Amazon数据中心, server: 3.112.229.14, port: 8313, type: ss, cipher: chacha20-ietf-poly1305, password: ljqdalu13.., udp: true}
-  - {name: 美国 CloudFlare节点, server: cloudgetservice.mcloudservice.site, port: 443, type: vmess, uuid: 37f464cb-b826-4278-9bf8-11bdf1ec892b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /linvkws, headers: {Host: Fra-Vp-123.BLaZECLOUD.Site}}, udp: true}
-  - {name: 上海市 上海美橙科技信息发展有限公司, server: hz.niaoyun.vip, port: 45372, type: ss, cipher: chacha20-ietf-poly1305, password: 48dd925d-5e9e-49ee-969d-088e5f1acea1, udp: true}
-  - {name: 广东省广州市 移动, server: awes35lesl.blhao0o.dpdns.org, port: 12030, type: ss, cipher: aes-128-gcm, password: 01721e43-5389-4f97-b21c-900abb2bda9e, udp: true}
-  - {name: 广东省广州市 移动 2, server: awes35lesl.blhao0o.dpdns.org, port: 12023, type: ss, cipher: aes-128-gcm, password: 01721e43-5389-4f97-b21c-900abb2bda9e, udp: true}
-  - {name: 德国 V2CROSS.COM, server: 46.165.194.96, port: 20086, type: vmess, uuid: 01b1efee-6677-4cdb-a0f1-0f3dff2d8176, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: 美国 V2CROSS.COM, server: 199.181.197.60, port: 443, type: vmess, uuid: de94cc0a-0592-4969-b1fc-97ea8f0ea0b3, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /us.kkp.me.eu.org/aa, headers: {Host: farid.1.berozha.ir}}, udp: true}
-  - {name: 日本 东京Amazon数据中心 2, server: 3.112.244.106, port: 8313, type: ss, cipher: chacha20-ietf-poly1305, password: ljqdalu13.., udp: true}
-  - {name: 丹麦 V2CROSS.COM, server: 185.162.228.88, port: 8880, type: vmess, uuid: cc0926df-54a8-3df7-934c-fd3ead64f6aa, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/dabai&Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: TG.WangCai2.s2.cn-db.top}}, udp: true}
-  - {name: 美国 V2CROSS.COM 2, server: 65.20.75.244, port: 8313, type: ss, cipher: chacha20-ietf-poly1305, password: ljqdalu13.., udp: true}
-  - {name: 日本 东京Amazon数据中心 3, server: 3.113.32.132, port: 8313, type: ss, cipher: chacha20-ietf-poly1305, password: ljqdalu13.., udp: true}
-  - {name: 北美地区 V2CROSS.COM, server: 23.184.200.69, port: 20086, type: vmess, uuid: ed715e84-81a0-40c5-bb6a-4d8d341e5cfa, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: 美国 惠普HP, server: 15.204.234.200, port: 41100, type: vmess, uuid: c7f169a3-2e9a-4894-ba53-7b2fa6fd08b4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美国加利福尼亚州洛杉矶 MULTACOM数据中心, server: 156.236.76.186, port: 20086, type: vmess, uuid: f0323382-fad2-448e-85b9-1ccf98b9c927, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: 江苏省 移动 2, server: v24.heduian.link, port: 30824, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /oooo, headers: {Host: v24.heduian.link}}, udp: true}
-  - {name: 北美地区 V2CROSS.COM 2, server: 104.192.226.106, port: 990, type: ss, cipher: chacha20-ietf-poly1305, password: f8f7aCzcPKbsF8p3, udp: true}
-  - {name: 亚太地区 V2CROSS.COM, server: 103.163.218.2, port: 990, type: ss, cipher: chacha20-ietf-poly1305, password: f8f7aCzcPKbsF8p3, udp: true}
-  - {name: 欧盟 V2CROSS.COM, server: 45.87.175.199, port: 8080, type: ss, cipher: chacha20-ietf-poly1305, password: cvII85TrW6n0OGyfpHVS1u, udp: true}
-  - {name: 加拿大 Bell, server: 142.171.224.111, port: 20086, type: vmess, uuid: 0908eadd-7337-49dd-8e9b-e325bca02910, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: 意大利 V2CROSS.COM, server: 185.213.23.226, port: 990, type: ss, cipher: chacha20-ietf-poly1305, password: f8f7aCzcPKbsF8p3, udp: true}
-  - {name: 欧盟 V2CROSS.COM 2, server: 45.85.118.88, port: 8880, type: vmess, uuid: cc0926df-54a8-3df7-934c-fd3ead64f6aa, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/dabai&Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: TG.WangCai2.s2.cn-db.top}}, udp: true}
-  - {name: 香港 电讯盈科有限公司, server: v10.heduian.link, port: 30807, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /oooo, headers: {Host: baidu.com}}, udp: true}
-  - {name: 美国加利福尼亚州洛杉矶 PetaExpress, server: 198.2.218.216, port: 44883, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美国 V2CROSS.COM 3, server: universal.opengate.wiki, port: 2222, type: ss, cipher: chacha20-ietf-poly1305, password: trErto8XzLALaQEslTp_jw, udp: true}
-  - {name: 广东省广州市 移动 3, server: awes35lesl.blhao0o.dpdns.org, port: 12028, type: ss, cipher: aes-128-gcm, password: 01721e43-5389-4f97-b21c-900abb2bda9e, udp: true}
-  - {name: 欧盟 V2CROSS.COM 3, server: 45.67.139.225, port: 20086, type: vmess, uuid: d3928330-4050-47f6-9d1c-df1fd801c568, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: 美国 加州, server: 64.81.119.155, port: 20086, type: vmess, uuid: 2b1ec5f4-27d6-4bb0-9d3c-d5683433f5ed, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: 欧盟 V2CROSS.COM 4, server: 45.87.175.28, port: 8080, type: ss, cipher: chacha20-ietf-poly1305, password: oZIoA69Q8yhcQV8ka3Pa3A, udp: true}
+  - {name: 丹麦 V2CROSS.COM, server: pubg.ac, port: 80, type: vmess, uuid: 76414574-71e0-4706-89cc-c5b09c13445d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /profile/telegram@ssrsub, headers: {Host: cdn-node-oss-99.paofu.de}}, udp: true}
+  - {name: 香港 电讯盈科有限公司, server: ee734b86-t0bog0-t2bzbl-1qs82.hk.p5pv.com, port: 80, type: vmess, uuid: 9c6d1142-dc2b-11ee-88c7-f23c913c8d2b, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: broadcastlv.chat.bilibili.com}}, udp: true}
+  - {name: 台湾省 V2CROSS.COM, server: 45.121.48.174, port: 20788, type: vmess, uuid: bfc630aa-4598-4481-9338-cac15e3e6b65, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国 CloudFlare节点, server: test.flha.ru, port: 80, type: vmess, uuid: 2bab6b8f-8d6e-463a-8331-b9de3d56921d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /2bab6b8f-8d6e-463a-8331-b9de3d56921d-vmess, headers: {Host: test.flha.ru}}, udp: true}
   - {name: 德国 黑森州法兰克福DigitalOcean数据中心, server: 46.101.152.68, port: 20086, type: vmess, uuid: e3501cb6-af9a-44ab-bb4b-48aa5fca2ae8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: 美国 华盛顿Cogent通信公司, server: 38.47.119.228, port: 20086, type: vmess, uuid: 56a41710-9c20-4107-86e4-840827e50e8a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 摩尔多瓦 V2CROSS.COM, server: 185.193.30.88, port: 8880, type: vmess, uuid: cc0926df-54a8-3df7-934c-fd3ead64f6aa, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/dabai&Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: TG.WangCai2.s2.cn-db.top}}, udp: true}
+  - {name: 香港 电讯盈科有限公司 2, server: v10.heduian.link, port: 30807, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /oooo, headers: {Host: baidu.com}}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 印度 V2CROSS.COM
-      - 美国 Microsoft
-      - 伊朗 V2CROSS.COM
-      - 乌克兰 V2CROSS.COM
-      - 俄罗斯 V2CROSS.COM
-      - 美国 宾夕法尼亚州拉克万纳县克拉克斯萨密特自治区VolumeDrive股份有限公司
-      - 江苏省 移动
-      - 日本 东京都Amazon数据中心
-      - 日本 东京Amazon数据中心
-      - 美国 CloudFlare节点
-      - 上海市 上海美橙科技信息发展有限公司
-      - 广东省广州市 移动
-      - 广东省广州市 移动 2
-      - 德国 V2CROSS.COM
-      - 美国 V2CROSS.COM
-      - 日本 东京Amazon数据中心 2
       - 丹麦 V2CROSS.COM
-      - 美国 V2CROSS.COM 2
-      - 日本 东京Amazon数据中心 3
-      - 北美地区 V2CROSS.COM
-      - 美国 惠普HP
-      - 美国加利福尼亚州洛杉矶 MULTACOM数据中心
-      - 江苏省 移动 2
-      - 北美地区 V2CROSS.COM 2
-      - 亚太地区 V2CROSS.COM
-      - 欧盟 V2CROSS.COM
-      - 加拿大 Bell
-      - 意大利 V2CROSS.COM
-      - 欧盟 V2CROSS.COM 2
       - 香港 电讯盈科有限公司
-      - 美国加利福尼亚州洛杉矶 PetaExpress
-      - 美国 V2CROSS.COM 3
-      - 广东省广州市 移动 3
-      - 欧盟 V2CROSS.COM 3
-      - 美国 加州
-      - 欧盟 V2CROSS.COM 4
+      - 台湾省 V2CROSS.COM
+      - 美国 CloudFlare节点
       - 德国 黑森州法兰克福DigitalOcean数据中心
-      - 美国 华盛顿Cogent通信公司
+      - 摩尔多瓦 V2CROSS.COM
+      - 香港 电讯盈科有限公司 2
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 印度 V2CROSS.COM
-      - 美国 Microsoft
-      - 伊朗 V2CROSS.COM
-      - 乌克兰 V2CROSS.COM
-      - 俄罗斯 V2CROSS.COM
-      - 美国 宾夕法尼亚州拉克万纳县克拉克斯萨密特自治区VolumeDrive股份有限公司
-      - 江苏省 移动
-      - 日本 东京都Amazon数据中心
-      - 日本 东京Amazon数据中心
-      - 美国 CloudFlare节点
-      - 上海市 上海美橙科技信息发展有限公司
-      - 广东省广州市 移动
-      - 广东省广州市 移动 2
-      - 德国 V2CROSS.COM
-      - 美国 V2CROSS.COM
-      - 日本 东京Amazon数据中心 2
       - 丹麦 V2CROSS.COM
-      - 美国 V2CROSS.COM 2
-      - 日本 东京Amazon数据中心 3
-      - 北美地区 V2CROSS.COM
-      - 美国 惠普HP
-      - 美国加利福尼亚州洛杉矶 MULTACOM数据中心
-      - 江苏省 移动 2
-      - 北美地区 V2CROSS.COM 2
-      - 亚太地区 V2CROSS.COM
-      - 欧盟 V2CROSS.COM
-      - 加拿大 Bell
-      - 意大利 V2CROSS.COM
-      - 欧盟 V2CROSS.COM 2
       - 香港 电讯盈科有限公司
-      - 美国加利福尼亚州洛杉矶 PetaExpress
-      - 美国 V2CROSS.COM 3
-      - 广东省广州市 移动 3
-      - 欧盟 V2CROSS.COM 3
-      - 美国 加州
-      - 欧盟 V2CROSS.COM 4
+      - 台湾省 V2CROSS.COM
+      - 美国 CloudFlare节点
       - 德国 黑森州法兰克福DigitalOcean数据中心
-      - 美国 华盛顿Cogent通信公司
+      - 摩尔多瓦 V2CROSS.COM
+      - 香港 电讯盈科有限公司 2
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 印度 V2CROSS.COM
-      - 美国 Microsoft
-      - 伊朗 V2CROSS.COM
-      - 乌克兰 V2CROSS.COM
-      - 俄罗斯 V2CROSS.COM
-      - 美国 宾夕法尼亚州拉克万纳县克拉克斯萨密特自治区VolumeDrive股份有限公司
-      - 江苏省 移动
-      - 日本 东京都Amazon数据中心
-      - 日本 东京Amazon数据中心
-      - 美国 CloudFlare节点
-      - 上海市 上海美橙科技信息发展有限公司
-      - 广东省广州市 移动
-      - 广东省广州市 移动 2
-      - 德国 V2CROSS.COM
-      - 美国 V2CROSS.COM
-      - 日本 东京Amazon数据中心 2
       - 丹麦 V2CROSS.COM
-      - 美国 V2CROSS.COM 2
-      - 日本 东京Amazon数据中心 3
-      - 北美地区 V2CROSS.COM
-      - 美国 惠普HP
-      - 美国加利福尼亚州洛杉矶 MULTACOM数据中心
-      - 江苏省 移动 2
-      - 北美地区 V2CROSS.COM 2
-      - 亚太地区 V2CROSS.COM
-      - 欧盟 V2CROSS.COM
-      - 加拿大 Bell
-      - 意大利 V2CROSS.COM
-      - 欧盟 V2CROSS.COM 2
       - 香港 电讯盈科有限公司
-      - 美国加利福尼亚州洛杉矶 PetaExpress
-      - 美国 V2CROSS.COM 3
-      - 广东省广州市 移动 3
-      - 欧盟 V2CROSS.COM 3
-      - 美国 加州
-      - 欧盟 V2CROSS.COM 4
+      - 台湾省 V2CROSS.COM
+      - 美国 CloudFlare节点
       - 德国 黑森州法兰克福DigitalOcean数据中心
-      - 美国 华盛顿Cogent通信公司
+      - 摩尔多瓦 V2CROSS.COM
+      - 香港 电讯盈科有限公司 2
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -192,180 +68,58 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 印度 V2CROSS.COM
-      - 美国 Microsoft
-      - 伊朗 V2CROSS.COM
-      - 乌克兰 V2CROSS.COM
-      - 俄罗斯 V2CROSS.COM
-      - 美国 宾夕法尼亚州拉克万纳县克拉克斯萨密特自治区VolumeDrive股份有限公司
-      - 江苏省 移动
-      - 日本 东京都Amazon数据中心
-      - 日本 东京Amazon数据中心
-      - 美国 CloudFlare节点
-      - 上海市 上海美橙科技信息发展有限公司
-      - 广东省广州市 移动
-      - 广东省广州市 移动 2
-      - 德国 V2CROSS.COM
-      - 美国 V2CROSS.COM
-      - 日本 东京Amazon数据中心 2
       - 丹麦 V2CROSS.COM
-      - 美国 V2CROSS.COM 2
-      - 日本 东京Amazon数据中心 3
-      - 北美地区 V2CROSS.COM
-      - 美国 惠普HP
-      - 美国加利福尼亚州洛杉矶 MULTACOM数据中心
-      - 江苏省 移动 2
-      - 北美地区 V2CROSS.COM 2
-      - 亚太地区 V2CROSS.COM
-      - 欧盟 V2CROSS.COM
-      - 加拿大 Bell
-      - 意大利 V2CROSS.COM
-      - 欧盟 V2CROSS.COM 2
       - 香港 电讯盈科有限公司
-      - 美国加利福尼亚州洛杉矶 PetaExpress
-      - 美国 V2CROSS.COM 3
-      - 广东省广州市 移动 3
-      - 欧盟 V2CROSS.COM 3
-      - 美国 加州
-      - 欧盟 V2CROSS.COM 4
+      - 台湾省 V2CROSS.COM
+      - 美国 CloudFlare节点
       - 德国 黑森州法兰克福DigitalOcean数据中心
-      - 美国 华盛顿Cogent通信公司
+      - 摩尔多瓦 V2CROSS.COM
+      - 香港 电讯盈科有限公司 2
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
       - 香港 电讯盈科有限公司
+      - 台湾省 V2CROSS.COM
+      - 香港 电讯盈科有限公司 2
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 印度 V2CROSS.COM
-      - 美国 Microsoft
-      - 伊朗 V2CROSS.COM
-      - 乌克兰 V2CROSS.COM
-      - 俄罗斯 V2CROSS.COM
-      - 美国 宾夕法尼亚州拉克万纳县克拉克斯萨密特自治区VolumeDrive股份有限公司
-      - 江苏省 移动
-      - 日本 东京都Amazon数据中心
-      - 日本 东京Amazon数据中心
-      - 美国 CloudFlare节点
-      - 上海市 上海美橙科技信息发展有限公司
-      - 广东省广州市 移动
-      - 广东省广州市 移动 2
-      - 德国 V2CROSS.COM
-      - 美国 V2CROSS.COM
-      - 日本 东京Amazon数据中心 2
       - 丹麦 V2CROSS.COM
-      - 美国 V2CROSS.COM 2
-      - 日本 东京Amazon数据中心 3
-      - 北美地区 V2CROSS.COM
-      - 美国 惠普HP
-      - 美国加利福尼亚州洛杉矶 MULTACOM数据中心
-      - 江苏省 移动 2
-      - 北美地区 V2CROSS.COM 2
-      - 亚太地区 V2CROSS.COM
-      - 欧盟 V2CROSS.COM
-      - 加拿大 Bell
-      - 意大利 V2CROSS.COM
-      - 欧盟 V2CROSS.COM 2
       - 香港 电讯盈科有限公司
-      - 美国加利福尼亚州洛杉矶 PetaExpress
-      - 美国 V2CROSS.COM 3
-      - 广东省广州市 移动 3
-      - 欧盟 V2CROSS.COM 3
-      - 美国 加州
-      - 欧盟 V2CROSS.COM 4
+      - 台湾省 V2CROSS.COM
+      - 美国 CloudFlare节点
       - 德国 黑森州法兰克福DigitalOcean数据中心
-      - 美国 华盛顿Cogent通信公司
+      - 摩尔多瓦 V2CROSS.COM
+      - 香港 电讯盈科有限公司 2
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 印度 V2CROSS.COM
-      - 美国 Microsoft
-      - 伊朗 V2CROSS.COM
-      - 乌克兰 V2CROSS.COM
-      - 俄罗斯 V2CROSS.COM
-      - 美国 宾夕法尼亚州拉克万纳县克拉克斯萨密特自治区VolumeDrive股份有限公司
-      - 江苏省 移动
-      - 日本 东京都Amazon数据中心
-      - 日本 东京Amazon数据中心
-      - 美国 CloudFlare节点
-      - 上海市 上海美橙科技信息发展有限公司
-      - 广东省广州市 移动
-      - 广东省广州市 移动 2
-      - 德国 V2CROSS.COM
-      - 美国 V2CROSS.COM
-      - 日本 东京Amazon数据中心 2
       - 丹麦 V2CROSS.COM
-      - 美国 V2CROSS.COM 2
-      - 日本 东京Amazon数据中心 3
-      - 北美地区 V2CROSS.COM
-      - 美国 惠普HP
-      - 美国加利福尼亚州洛杉矶 MULTACOM数据中心
-      - 江苏省 移动 2
-      - 北美地区 V2CROSS.COM 2
-      - 亚太地区 V2CROSS.COM
-      - 欧盟 V2CROSS.COM
-      - 加拿大 Bell
-      - 意大利 V2CROSS.COM
-      - 欧盟 V2CROSS.COM 2
       - 香港 电讯盈科有限公司
-      - 美国加利福尼亚州洛杉矶 PetaExpress
-      - 美国 V2CROSS.COM 3
-      - 广东省广州市 移动 3
-      - 欧盟 V2CROSS.COM 3
-      - 美国 加州
-      - 欧盟 V2CROSS.COM 4
+      - 台湾省 V2CROSS.COM
+      - 美国 CloudFlare节点
       - 德国 黑森州法兰克福DigitalOcean数据中心
-      - 美国 华盛顿Cogent通信公司
+      - 摩尔多瓦 V2CROSS.COM
+      - 香港 电讯盈科有限公司 2
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 印度 V2CROSS.COM
-      - 美国 Microsoft
-      - 伊朗 V2CROSS.COM
-      - 乌克兰 V2CROSS.COM
-      - 俄罗斯 V2CROSS.COM
-      - 美国 宾夕法尼亚州拉克万纳县克拉克斯萨密特自治区VolumeDrive股份有限公司
-      - 江苏省 移动
-      - 日本 东京都Amazon数据中心
-      - 日本 东京Amazon数据中心
-      - 美国 CloudFlare节点
-      - 上海市 上海美橙科技信息发展有限公司
-      - 广东省广州市 移动
-      - 广东省广州市 移动 2
-      - 德国 V2CROSS.COM
-      - 美国 V2CROSS.COM
-      - 日本 东京Amazon数据中心 2
       - 丹麦 V2CROSS.COM
-      - 美国 V2CROSS.COM 2
-      - 日本 东京Amazon数据中心 3
-      - 北美地区 V2CROSS.COM
-      - 美国 惠普HP
-      - 美国加利福尼亚州洛杉矶 MULTACOM数据中心
-      - 江苏省 移动 2
-      - 北美地区 V2CROSS.COM 2
-      - 亚太地区 V2CROSS.COM
-      - 欧盟 V2CROSS.COM
-      - 加拿大 Bell
-      - 意大利 V2CROSS.COM
-      - 欧盟 V2CROSS.COM 2
       - 香港 电讯盈科有限公司
-      - 美国加利福尼亚州洛杉矶 PetaExpress
-      - 美国 V2CROSS.COM 3
-      - 广东省广州市 移动 3
-      - 欧盟 V2CROSS.COM 3
-      - 美国 加州
-      - 欧盟 V2CROSS.COM 4
+      - 台湾省 V2CROSS.COM
+      - 美国 CloudFlare节点
       - 德国 黑森州法兰克福DigitalOcean数据中心
-      - 美国 华盛顿Cogent通信公司
+      - 摩尔多瓦 V2CROSS.COM
+      - 香港 电讯盈科有限公司 2
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -381,44 +135,13 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 印度 V2CROSS.COM
-      - 美国 Microsoft
-      - 伊朗 V2CROSS.COM
-      - 乌克兰 V2CROSS.COM
-      - 俄罗斯 V2CROSS.COM
-      - 美国 宾夕法尼亚州拉克万纳县克拉克斯萨密特自治区VolumeDrive股份有限公司
-      - 江苏省 移动
-      - 日本 东京都Amazon数据中心
-      - 日本 东京Amazon数据中心
-      - 美国 CloudFlare节点
-      - 上海市 上海美橙科技信息发展有限公司
-      - 广东省广州市 移动
-      - 广东省广州市 移动 2
-      - 德国 V2CROSS.COM
-      - 美国 V2CROSS.COM
-      - 日本 东京Amazon数据中心 2
       - 丹麦 V2CROSS.COM
-      - 美国 V2CROSS.COM 2
-      - 日本 东京Amazon数据中心 3
-      - 北美地区 V2CROSS.COM
-      - 美国 惠普HP
-      - 美国加利福尼亚州洛杉矶 MULTACOM数据中心
-      - 江苏省 移动 2
-      - 北美地区 V2CROSS.COM 2
-      - 亚太地区 V2CROSS.COM
-      - 欧盟 V2CROSS.COM
-      - 加拿大 Bell
-      - 意大利 V2CROSS.COM
-      - 欧盟 V2CROSS.COM 2
       - 香港 电讯盈科有限公司
-      - 美国加利福尼亚州洛杉矶 PetaExpress
-      - 美国 V2CROSS.COM 3
-      - 广东省广州市 移动 3
-      - 欧盟 V2CROSS.COM 3
-      - 美国 加州
-      - 欧盟 V2CROSS.COM 4
+      - 台湾省 V2CROSS.COM
+      - 美国 CloudFlare节点
       - 德国 黑森州法兰克福DigitalOcean数据中心
-      - 美国 华盛顿Cogent通信公司
+      - 摩尔多瓦 V2CROSS.COM
+      - 香港 电讯盈科有限公司 2
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
