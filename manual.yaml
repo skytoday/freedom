@@ -5,101 +5,77 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 🇨🇳 江苏省 移动, server: v6.heduian.link, port: 30806, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /oooo, headers: {Host: ocbc.com}}, udp: true}
-  - {name: 🇭🇰 香港 电讯盈科有限公司, server: a04ab468-t0fds0-t1a5pv-luwe.hkt.tcpbbr.net, port: 80, type: vmess, uuid: a2b0fd2b-716f-0df8-d4e2-03a1c00e5f1a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: a04ab468-t0fds0-t1a5pv-luwe.hkt.tcpbbr.net}}, udp: true}
-  - {name: 🇨🇳 江苏省 移动 2, server: v36.heduian.link, port: 30836, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /oooo, headers: {Host: v36.heduian.link}}, udp: true}
-  - {name: 🇨🇳 江苏省 移动 3, server: v37.heduian.link, port: 30837, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /oooo, headers: {Host: v37.heduian.link}}, udp: true}
-  - {name: 🇭🇰 香港 电讯盈科有限公司 2, server: hkt.gotochinatown.net, port: 80, type: vmess, uuid: e534d120-d32f-11ef-bdb9-f23c91cfbbc9, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: hkt.gotochinatown.net}}, udp: true}
-  - {name: 🇺🇸 美国 CloudFlare节点, server: www.meter.net, port: 2083, type: vmess, uuid: d218dfe5-fae6-408e-b615-8666df7f0924, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /wssss, headers: {Host: blaze-uk-48.pinkle7.site}}, udp: true}
-  - {name: 🇩🇰 丹麦 V2CROSS.COM, server: pubg.ac, port: 80, type: vmess, uuid: 27425750-5bf5-497b-92d4-16e67030e154, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /profile/telegram@ssrsub, headers: {Host: cdn-node-oss-99.paofu.de}}, udp: true}
+  - {name: 🇭🇰 香港 电讯盈科有限公司, server: 12052f04-t0fds0-t0ht6z-1oijm.hkt.tcpbbr.net, port: 80, type: vmess, uuid: bf140bc0-3f68-11ee-953a-f23c9164ca5d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: 12052f04-t0fds0-t0ht6z-1oijm.hkt.tcpbbr.net}}, udp: true}
+  - {name: 🇺🇸 美国 CloudFlare节点, server: test3.flha.ru, port: 80, type: vmess, uuid: 9a81340d-f81b-4c76-8abb-f4d305c535c0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /9a81340d-f81b-4c76-8abb-f4d305c535c0-vmess, headers: {Host: test3.flha.ru}}, udp: true}
+  - {name: 🇨🇳 江苏省 移动, server: v36.heduian.link, port: 30836, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /oooo, headers: {Host: v36.heduian.link}}, udp: true}
+  - {name: 🇺🇸 美国 CloudFlare节点 2, server: www.meter.net, port: 2083, type: vmess, uuid: d218dfe5-fae6-408e-b615-8666df7f0924, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /wssss, headers: {Host: blaze-uk-48.pinkle7.site}}, udp: true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 🇨🇳 江苏省 移动
       - 🇭🇰 香港 电讯盈科有限公司
-      - 🇨🇳 江苏省 移动 2
-      - 🇨🇳 江苏省 移动 3
-      - 🇭🇰 香港 电讯盈科有限公司 2
       - 🇺🇸 美国 CloudFlare节点
-      - 🇩🇰 丹麦 V2CROSS.COM
+      - 🇨🇳 江苏省 移动
+      - 🇺🇸 美国 CloudFlare节点 2
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇨🇳 江苏省 移动
       - 🇭🇰 香港 电讯盈科有限公司
-      - 🇨🇳 江苏省 移动 2
-      - 🇨🇳 江苏省 移动 3
-      - 🇭🇰 香港 电讯盈科有限公司 2
       - 🇺🇸 美国 CloudFlare节点
-      - 🇩🇰 丹麦 V2CROSS.COM
+      - 🇨🇳 江苏省 移动
+      - 🇺🇸 美国 CloudFlare节点 2
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇨🇳 江苏省 移动
       - 🇭🇰 香港 电讯盈科有限公司
-      - 🇨🇳 江苏省 移动 2
-      - 🇨🇳 江苏省 移动 3
-      - 🇭🇰 香港 电讯盈科有限公司 2
       - 🇺🇸 美国 CloudFlare节点
-      - 🇩🇰 丹麦 V2CROSS.COM
+      - 🇨🇳 江苏省 移动
+      - 🇺🇸 美国 CloudFlare节点 2
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇨🇳 江苏省 移动
       - 🇭🇰 香港 电讯盈科有限公司
-      - 🇨🇳 江苏省 移动 2
-      - 🇨🇳 江苏省 移动 3
-      - 🇭🇰 香港 电讯盈科有限公司 2
       - 🇺🇸 美国 CloudFlare节点
-      - 🇩🇰 丹麦 V2CROSS.COM
+      - 🇨🇳 江苏省 移动
+      - 🇺🇸 美国 CloudFlare节点 2
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 🇨🇳 江苏省 移动
       - 🇭🇰 香港 电讯盈科有限公司
-      - 🇨🇳 江苏省 移动 2
-      - 🇨🇳 江苏省 移动 3
-      - 🇭🇰 香港 电讯盈科有限公司 2
       - 🇺🇸 美国 CloudFlare节点
-      - 🇩🇰 丹麦 V2CROSS.COM
+      - 🇨🇳 江苏省 移动
+      - 🇺🇸 美国 CloudFlare节点 2
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇨🇳 江苏省 移动
       - 🇭🇰 香港 电讯盈科有限公司
-      - 🇨🇳 江苏省 移动 2
-      - 🇨🇳 江苏省 移动 3
-      - 🇭🇰 香港 电讯盈科有限公司 2
       - 🇺🇸 美国 CloudFlare节点
-      - 🇩🇰 丹麦 V2CROSS.COM
+      - 🇨🇳 江苏省 移动
+      - 🇺🇸 美国 CloudFlare节点 2
   - name: 📢 谷歌FCM
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇨🇳 江苏省 移动
       - 🇭🇰 香港 电讯盈科有限公司
-      - 🇨🇳 江苏省 移动 2
-      - 🇨🇳 江苏省 移动 3
-      - 🇭🇰 香港 电讯盈科有限公司 2
       - 🇺🇸 美国 CloudFlare节点
-      - 🇩🇰 丹麦 V2CROSS.COM
+      - 🇨🇳 江苏省 移动
+      - 🇺🇸 美国 CloudFlare节点 2
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -122,13 +98,10 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇨🇳 江苏省 移动
       - 🇭🇰 香港 电讯盈科有限公司
-      - 🇨🇳 江苏省 移动 2
-      - 🇨🇳 江苏省 移动 3
-      - 🇭🇰 香港 电讯盈科有限公司 2
       - 🇺🇸 美国 CloudFlare节点
-      - 🇩🇰 丹麦 V2CROSS.COM
+      - 🇨🇳 江苏省 移动
+      - 🇺🇸 美国 CloudFlare节点 2
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
