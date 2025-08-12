@@ -5,9 +5,9 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 🇺🇸 美国 CloudFlare节点, server: test3.flha.ru, port: 80, type: vmess, uuid: 9a81340d-f81b-4c76-8abb-f4d305c535c0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /9a81340d-f81b-4c76-8abb-f4d305c535c0-vmess, headers: {Host: test3.flha.ru}}, udp: true}
-  - {name: 🇨🇳 江苏省 移动, server: v29.heduian.link, port: 30829, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /oooo, headers: {Host: ocbc.com}}, udp: true}
-  - {name: 🇭🇰 香港 电讯盈科有限公司, server: 13e491cf-szv0g0-t167d0-ggww.hk.p5pv.com, port: 80, type: vmess, uuid: bcc58e88-e147-11ec-b286-f23c91cfbbc9, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: broadcastlv.chat.bilibili.com}}, udp: true}
+  - {name: 🇺🇸 美国 CloudFlare节点, server: cloudgetservice.mcloudservice.site, port: 443, type: vmess, uuid: 37f464cb-b826-4278-9bf8-11bdf1ec892b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /linvkws, headers: {Host: Fra-Vp-123.BLaZECLOUD.Site}}, udp: true}
+  - {name: 🇭🇰 香港 电讯盈科有限公司, server: 12ee28bb-symkg0-t02swp-fa3p.hk3.p5pv.com, port: 80, type: vmess, uuid: 905fcd78-866c-81e1-3cb8-1beb59d661ab, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: broadcastlv.chat.bilibili.com}}, udp: true}
+  - {name: 🇭🇰 香港 电讯盈科有限公司 2, server: v10.heduian.link, port: 30807, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /oooo, headers: {Host: baidu.com}}, udp: true}
   - {name: 🇺🇸 美国 CloudFlare节点 2, server: 172.67.214.21, port: 443, type: trojan, password: 7248e825-887c-48b9-83bc-c26bc6392bf8, sni: xXcdvFgt.191268.XYz, skip-cert-verify: false, udp: true}
 proxy-groups:
   - name: 🚀 节点选择
@@ -16,8 +16,8 @@ proxy-groups:
       - ♻️ 自动选择
       - DIRECT
       - 🇺🇸 美国 CloudFlare节点
-      - 🇨🇳 江苏省 移动
       - 🇭🇰 香港 电讯盈科有限公司
+      - 🇭🇰 香港 电讯盈科有限公司 2
       - 🇺🇸 美国 CloudFlare节点 2
   - name: ♻️ 自动选择
     type: url-test
@@ -26,8 +26,8 @@ proxy-groups:
     tolerance: 50
     proxies:
       - 🇺🇸 美国 CloudFlare节点
-      - 🇨🇳 江苏省 移动
       - 🇭🇰 香港 电讯盈科有限公司
+      - 🇭🇰 香港 电讯盈科有限公司 2
       - 🇺🇸 美国 CloudFlare节点 2
   - name: 🌍 国外媒体
     type: select
@@ -36,8 +36,8 @@ proxy-groups:
       - ♻️ 自动选择
       - 🎯 全球直连
       - 🇺🇸 美国 CloudFlare节点
-      - 🇨🇳 江苏省 移动
       - 🇭🇰 香港 电讯盈科有限公司
+      - 🇭🇰 香港 电讯盈科有限公司 2
       - 🇺🇸 美国 CloudFlare节点 2
   - name: 📲 电报信息
     type: select
@@ -45,8 +45,8 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - 🇺🇸 美国 CloudFlare节点
-      - 🇨🇳 江苏省 移动
       - 🇭🇰 香港 电讯盈科有限公司
+      - 🇭🇰 香港 电讯盈科有限公司 2
       - 🇺🇸 美国 CloudFlare节点 2
   - name: Ⓜ️ 微软服务
     type: select
@@ -54,8 +54,8 @@ proxy-groups:
       - 🎯 全球直连
       - 🚀 节点选择
       - 🇺🇸 美国 CloudFlare节点
-      - 🇨🇳 江苏省 移动
       - 🇭🇰 香港 电讯盈科有限公司
+      - 🇭🇰 香港 电讯盈科有限公司 2
       - 🇺🇸 美国 CloudFlare节点 2
   - name: 🍎 苹果服务
     type: select
@@ -63,8 +63,8 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - 🇺🇸 美国 CloudFlare节点
-      - 🇨🇳 江苏省 移动
       - 🇭🇰 香港 电讯盈科有限公司
+      - 🇭🇰 香港 电讯盈科有限公司 2
       - 🇺🇸 美国 CloudFlare节点 2
   - name: 📢 谷歌FCM
     type: select
@@ -73,8 +73,8 @@ proxy-groups:
       - 🎯 全球直连
       - ♻️ 自动选择
       - 🇺🇸 美国 CloudFlare节点
-      - 🇨🇳 江苏省 移动
       - 🇭🇰 香港 电讯盈科有限公司
+      - 🇭🇰 香港 电讯盈科有限公司 2
       - 🇺🇸 美国 CloudFlare节点 2
   - name: 🎯 全球直连
     type: select
@@ -99,8 +99,8 @@ proxy-groups:
       - 🎯 全球直连
       - ♻️ 自动选择
       - 🇺🇸 美国 CloudFlare节点
-      - 🇨🇳 江苏省 移动
       - 🇭🇰 香港 电讯盈科有限公司
+      - 🇭🇰 香港 电讯盈科有限公司 2
       - 🇺🇸 美国 CloudFlare节点 2
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
@@ -1991,8 +1991,8 @@ rules:
  - DOMAIN-SUFFIX,client-api.arkoselabs.com,🌍 国外媒体
  - DOMAIN-SUFFIX,copilot.cloud.microsoft,🌍 国外媒体
  - DOMAIN-SUFFIX,copilot.microsoft.com,🌍 国外媒体
- - DOMAIN-SUFFIX,curosr.com,🌍 国外媒体
- - DOMAIN-SUFFIX,curosr.sh,🌍 国外媒体
+ - DOMAIN-SUFFIX,cursor.com,🌍 国外媒体
+ - DOMAIN-SUFFIX,cursor.sh,🌍 国外媒体
  - DOMAIN-SUFFIX,events.statsigapi.net,🌍 国外媒体
  - DOMAIN-SUFFIX,featuregates.org,🌍 国外媒体
  - DOMAIN-SUFFIX,gemini.google.com,🌍 国外媒体
