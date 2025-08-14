@@ -5,22 +5,20 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 中国 阿里云, server: 8.148.194.255, port: 25010, type: trojan, password: be76ac23-8ff8-4afe-a86e-5153f4ce869d, skip-cert-verify: true, udp: true}
-  - {name: 江苏省 移动, server: v9.heduian.link, port: 30809, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /oooo, headers: {Host: baidu.com}}, udp: true}
-  - {name: 美国 CloudFlare节点, server: www.speedtest.net, port: 443, type: vmess, uuid: e2fb28b8-a457-4bd2-801e-56fdcccbd88e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /linkvkwsss, headers: {Host: blaze-cana-126.blazeservers1.site}}, udp: true}
-  - {name: 广东省 移动, server: t1.fttos.xyz, port: 35782, type: ss, cipher: chacha20-ietf-poly1305, password: 628726b8-9371-4bdd-aab5-d864a492a492, udp: true}
-  - {name: 美国 CloudFlare节点 2, server: fk3.620720.xyz, port: 8443, type: vmess, uuid: 516d8a7a-3f0b-41d3-bad0-246116381516, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: fk3.620720.xyz}}, udp: true}
-  - {name: 美国 CloudFlare节点 3, server: 172.67.214.21, port: 443, type: trojan, password: 7248e825-887c-48b9-83bc-c26bc6392bf8, sni: xXcdvFgt.191268.XYz, skip-cert-verify: true, udp: true}
+  - {name: 江苏省 移动, server: v29.heduian.link, port: 30829, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /oooo, headers: {Host: ocbc.com}}, udp: true}
+  - {name: 江苏省 移动 2, server: v37.heduian.link, port: 30837, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /oooo, headers: {Host: v37.heduian.link}}, udp: true}
+  - {name: 美国 CloudFlare节点, server: test3.flha.ru, port: 80, type: vmess, uuid: 9a81340d-f81b-4c76-8abb-f4d305c535c0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /9a81340d-f81b-4c76-8abb-f4d305c535c0-vmess, headers: {Host: test3.flha.ru}}, udp: true}
+  - {name: 美国 CloudFlare节点 2, server: www.visa.com.sg, port: 2053, type: trojan, password: 0F22D008-24D4-4DFE-947B-8D2FD64CD24C, sni: t.hongkong6.qzz.io, skip-cert-verify: true, udp: true}
+  - {name: 美国 CloudFlare节点 3, server: 104.21.77.149, port: 443, type: vmess, uuid: 20e89a95-cedf-4fe3-9421-517ce66be170, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /SHToRcqfiraYkzOdf, headers: {Host: dddccvvbnnji.999834.xyz}}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 中国 阿里云
       - 江苏省 移动
+      - 江苏省 移动 2
       - 美国 CloudFlare节点
-      - 广东省 移动
       - 美国 CloudFlare节点 2
       - 美国 CloudFlare节点 3
   - name: ♻️ 自动选择
@@ -28,10 +26,9 @@ proxy-groups:
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 中国 阿里云
       - 江苏省 移动
+      - 江苏省 移动 2
       - 美国 CloudFlare节点
-      - 广东省 移动
       - 美国 CloudFlare节点 2
       - 美国 CloudFlare节点 3
   - name: 🎥 NETFLIX
@@ -40,10 +37,9 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 中国 阿里云
       - 江苏省 移动
+      - 江苏省 移动 2
       - 美国 CloudFlare节点
-      - 广东省 移动
       - 美国 CloudFlare节点 2
       - 美国 CloudFlare节点 3
   - name: ⛔️ 广告拦截
@@ -64,10 +60,9 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 中国 阿里云
       - 江苏省 移动
+      - 江苏省 移动 2
       - 美国 CloudFlare节点
-      - 广东省 移动
       - 美国 CloudFlare节点 2
       - 美国 CloudFlare节点 3
   - name: 🌏 国内媒体
@@ -80,10 +75,9 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 中国 阿里云
       - 江苏省 移动
+      - 江苏省 移动 2
       - 美国 CloudFlare节点
-      - 广东省 移动
       - 美国 CloudFlare节点 2
       - 美国 CloudFlare节点 3
   - name: 📲 电报信息
@@ -91,10 +85,9 @@ proxy-groups:
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 中国 阿里云
       - 江苏省 移动
+      - 江苏省 移动 2
       - 美国 CloudFlare节点
-      - 广东省 移动
       - 美国 CloudFlare节点 2
       - 美国 CloudFlare节点 3
   - name: 🍎 苹果服务
@@ -103,10 +96,9 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 中国 阿里云
       - 江苏省 移动
+      - 江苏省 移动 2
       - 美国 CloudFlare节点
-      - 广东省 移动
       - 美国 CloudFlare节点 2
       - 美国 CloudFlare节点 3
   - name: 🎯 全球直连
@@ -124,10 +116,9 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 中国 阿里云
       - 江苏省 移动
+      - 江苏省 移动 2
       - 美国 CloudFlare节点
-      - 广东省 移动
       - 美国 CloudFlare节点 2
       - 美国 CloudFlare节点 3
 rules:
