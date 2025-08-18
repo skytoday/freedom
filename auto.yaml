@@ -5,35 +5,51 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 江苏省 移动, server: v9.heduian.link, port: 30809, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /oooo, headers: {Host: baidu.com}}, udp: true}
-  - {name: 美国 CloudFlare节点, server: ip.sb, port: 443, type: vmess, uuid: 28548ef7-983d-4ee8-8bd6-7d71d905b5a2, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /28548ef7-983d-4ee8-8bd6-7d71d905b5a2-vmess, headers: {Host: fr.atlen.dpdns.org}}, udp: true}
   - {name: 江苏省盐城市 移动, server: 36.156.102.125, port: 406, type: trojan, password: 253bc477d4e43c209f2d427272968280, sni: www.baidu.com, skip-cert-verify: true, udp: true}
+  - {name: 广东省广州市 电信, server: xinjiapo.tmdns-sing.top, port: 13886, type: ss, cipher: aes-128-gcm, password: 6b1e5475-7661-4921-aa26-d11758b2f3f1, udp: true}
+  - {name: 广东省广州市 电信 2, server: hanguo01.tmdns-sing.top, port: 13882, type: ss, cipher: aes-128-gcm, password: 6b1e5475-7661-4921-aa26-d11758b2f3f1, udp: true}
+  - {name: 美国 加州, server: 216.24.57.30, port: 443, type: trojan, password: tg-fq521free, sni: torjan.xn--xhq44j.eu.org, skip-cert-verify: true, udp: true}
+  - {name: 北美地区 V2CROSS.COM, server: 198.62.62.67, port: 443, type: trojan, password: tg-fq521free, sni: torjan.xn--xhq44j.eu.org, skip-cert-verify: true, udp: true}
+  - {name: 广东省广州市 电信 3, server: hk1-20250813213806be3c17japantm01.tmdns-sing.top, port: 13872, type: ss, cipher: aes-128-gcm, password: 6b1e5475-7661-4921-aa26-d11758b2f3f1, udp: true}
+  - {name: 美国 CloudFlare节点, server: ip.sb, port: 443, type: vmess, uuid: 28548ef7-983d-4ee8-8bd6-7d71d905b5a2, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /28548ef7-983d-4ee8-8bd6-7d71d905b5a2-vmess, headers: {Host: fr.atlen.dpdns.org}}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 江苏省 移动
-      - 美国 CloudFlare节点
       - 江苏省盐城市 移动
+      - 广东省广州市 电信
+      - 广东省广州市 电信 2
+      - 美国 加州
+      - 北美地区 V2CROSS.COM
+      - 广东省广州市 电信 3
+      - 美国 CloudFlare节点
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 江苏省 移动
-      - 美国 CloudFlare节点
       - 江苏省盐城市 移动
+      - 广东省广州市 电信
+      - 广东省广州市 电信 2
+      - 美国 加州
+      - 北美地区 V2CROSS.COM
+      - 广东省广州市 电信 3
+      - 美国 CloudFlare节点
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 江苏省 移动
-      - 美国 CloudFlare节点
       - 江苏省盐城市 移动
+      - 广东省广州市 电信
+      - 广东省广州市 电信 2
+      - 美国 加州
+      - 北美地区 V2CROSS.COM
+      - 广东省广州市 电信 3
+      - 美国 CloudFlare节点
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -52,9 +68,13 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 江苏省 移动
-      - 美国 CloudFlare节点
       - 江苏省盐城市 移动
+      - 广东省广州市 电信
+      - 广东省广州市 电信 2
+      - 美国 加州
+      - 北美地区 V2CROSS.COM
+      - 广东省广州市 电信 3
+      - 美国 CloudFlare节点
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -65,26 +85,38 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 江苏省 移动
-      - 美国 CloudFlare节点
       - 江苏省盐城市 移动
+      - 广东省广州市 电信
+      - 广东省广州市 电信 2
+      - 美国 加州
+      - 北美地区 V2CROSS.COM
+      - 广东省广州市 电信 3
+      - 美国 CloudFlare节点
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 江苏省 移动
-      - 美国 CloudFlare节点
       - 江苏省盐城市 移动
+      - 广东省广州市 电信
+      - 广东省广州市 电信 2
+      - 美国 加州
+      - 北美地区 V2CROSS.COM
+      - 广东省广州市 电信 3
+      - 美国 CloudFlare节点
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 江苏省 移动
-      - 美国 CloudFlare节点
       - 江苏省盐城市 移动
+      - 广东省广州市 电信
+      - 广东省广州市 电信 2
+      - 美国 加州
+      - 北美地区 V2CROSS.COM
+      - 广东省广州市 电信 3
+      - 美国 CloudFlare节点
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -100,9 +132,13 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 江苏省 移动
-      - 美国 CloudFlare节点
       - 江苏省盐城市 移动
+      - 广东省广州市 电信
+      - 广东省广州市 电信 2
+      - 美国 加州
+      - 北美地区 V2CROSS.COM
+      - 广东省广州市 电信 3
+      - 美国 CloudFlare节点
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve

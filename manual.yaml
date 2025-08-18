@@ -5,229 +5,101 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 🇺🇸 美国 CloudFlare节点, server: fk1.620720.xyz, port: 8443, type: vmess, uuid: 516d8a7a-3f0b-41d3-bad0-246116381516, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: fk1.620720.xyz}}, udp: true}
-  - {name: 🇮🇷 伊朗 V2CROSS.COM, server: dl01.armod.top, port: 443, type: vmess, uuid: cd11391b-9f7a-4478-b624-3a1d5d81d426, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 🇨🇳 江苏省盐城市 移动, server: 36.156.102.125, port: 406, type: trojan, password: 253bc477d4e43c209f2d427272968280, sni: www.baidu.com, skip-cert-verify: false, udp: true}
+  - {name: 🇨🇳 广东省广州市 电信, server: xinjiapo.tmdns-sing.top, port: 13886, type: ss, cipher: aes-128-gcm, password: 6b1e5475-7661-4921-aa26-d11758b2f3f1, udp: true}
+  - {name: 🇨🇳 广东省广州市 电信 2, server: hanguo01.tmdns-sing.top, port: 13882, type: ss, cipher: aes-128-gcm, password: 6b1e5475-7661-4921-aa26-d11758b2f3f1, udp: true}
+  - {name: 🇺🇸 美国 加州, server: 216.24.57.30, port: 443, type: trojan, password: tg-fq521free, sni: torjan.xn--xhq44j.eu.org, skip-cert-verify: false, udp: true}
   - {name: 🇺🇸 北美地区 V2CROSS.COM, server: 198.62.62.67, port: 443, type: trojan, password: tg-fq521free, sni: torjan.xn--xhq44j.eu.org, skip-cert-verify: false, udp: true}
-  - {name: 🇺🇸 美国 V2CROSS.COM, server: 135.84.74.254, port: 2083, type: trojan, password: Aimer, sni: epgc.aimercc.dpdns.org, skip-cert-verify: false, udp: true}
-  - {name: 🇺🇸 美国 V2CROSS.COM 2, server: 135.84.74.27, port: 8443, type: trojan, password: Aimer, sni: epgc.aimercc.dpdns.org, skip-cert-verify: false, udp: true}
-  - {name: 🇺🇸 美国 V2CROSS.COM 3, server: 167.68.4.199, port: 2053, type: trojan, password: Aimer, sni: epgc.aimercc.dpdns.org, skip-cert-verify: false, udp: true}
-  - {name: 🇭🇰 香港 电讯盈科有限公司, server: 83da64f6-szi1s0-t0y0nd-1mmbp.hkt.tcpbbr.net, port: 80, type: vmess, uuid: 607d365e-7ea1-11ee-95e9-f23c913c8d2b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: 83da64f6-szi1s0-t0y0nd-1mmbp.hkt.tcpbbr.net}}, udp: true}
-  - {name: 🇺🇸 美国 V2CROSS.COM 4, server: 192.200.160.35, port: 2083, type: trojan, password: Aimer, sni: epgc.aimercc.dpdns.org, skip-cert-verify: false, udp: true}
-  - {name: 🇺🇸 美国 CloudFlare节点 2, server: 104.18.149.76, port: 443, type: vmess, uuid: de94cc0a-0592-4969-b1fc-97ea8f0ea0b3, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /aa, headers: {Host: us.kkp.me.eu.org}}, udp: true}
-  - {name: 🇷🇺 俄罗斯 V2CROSS.COM, server: 92.243.74.23, port: 2096, type: trojan, password: Aimer, sni: epgc.aimercc.dpdns.org, skip-cert-verify: false, udp: true}
-  - {name: 🇺🇸 美国 V2CROSS.COM 5, server: 199.34.228.164, port: 2087, type: trojan, password: Aimer, sni: epgc.aimercc.dpdns.org, skip-cert-verify: false, udp: true}
-  - {name: 🇷🇺 俄罗斯 V2CROSS.COM 2, server: 176.124.223.92, port: 443, type: trojan, password: Aimer, sni: epgc.aimercc.dpdns.org, skip-cert-verify: false, udp: true}
-  - {name: 🇨🇦 加拿大 V2CROSS.COM, server: 130.250.137.63, port: 2083, type: trojan, password: Aimer, sni: epgc.aimercc.dpdns.org, skip-cert-verify: false, udp: true}
-  - {name: 🇺🇸 美国 V2CROSS.COM 6, server: 192.0.54.221, port: 2083, type: trojan, password: Aimer, sni: epgc.aimercc.dpdns.org, skip-cert-verify: false, udp: true}
-  - {name: 亚太地区 V2CROSS.COM, server: 103.116.7.100, port: 2087, type: trojan, password: Aimer, sni: epgc.aimercc.dpdns.org, skip-cert-verify: false, udp: true}
-  - {name: 🇺🇸 美国 CloudFlare节点 3, server: ip.sb, port: 443, type: vmess, uuid: 28548ef7-983d-4ee8-8bd6-7d71d905b5a2, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /28548ef7-983d-4ee8-8bd6-7d71d905b5a2-vmess, headers: {Host: fr.atlen.dpdns.org}}, udp: true}
-  - {name: 🇺🇸 美国 CloudFlare节点 4, server: 172.67.214.21, port: 443, type: trojan, password: 7248e825-887c-48b9-83bc-c26bc6392bf8, sni: xXcdvFgt.191268.XYz, skip-cert-verify: false, udp: true}
-  - {name: 🇺🇸 美国 V2CROSS.COM 7, server: 155.46.213.38, port: 2083, type: trojan, password: Aimer, sni: epgc.aimercc.dpdns.org, skip-cert-verify: false, udp: true}
-  - {name: 🇷🇺 俄罗斯 V2CROSS.COM 3, server: 77.232.140.114, port: 2053, type: trojan, password: Aimer, sni: epgc.aimercc.dpdns.org, skip-cert-verify: false, udp: true}
-  - {name: 亚太地区 V2CROSS.COM 2, server: 103.116.7.235, port: 443, type: trojan, password: Aimer, sni: epgc.aimercc.dpdns.org, skip-cert-verify: false, udp: true}
-  - {name: 欧盟 V2CROSS.COM, server: 45.67.215.95, port: 443, type: trojan, password: tg-fq521free, sni: torjan.xn--xhq44j.eu.org, skip-cert-verify: false, udp: true}
-  - {name: 🇺🇸 美国 CloudFlare节点 5, server: test3.flha.ru, port: 80, type: vmess, uuid: 9a81340d-f81b-4c76-8abb-f4d305c535c0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /9a81340d-f81b-4c76-8abb-f4d305c535c0-vmess, headers: {Host: test3.flha.ru}}, udp: true}
-  - {name: 🇺🇸 美国 CloudFlare节点 6, server: cc2dash.89060004.xyz, port: 2096, type: vmess, uuid: 2fc37713-3017-497e-ff2d-965f826a19a3, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: cc2d1.89060004.xyz}}, udp: true}
+  - {name: 🇨🇳 广东省广州市 电信 3, server: hk1-20250813213806be3c17japantm01.tmdns-sing.top, port: 13872, type: ss, cipher: aes-128-gcm, password: 6b1e5475-7661-4921-aa26-d11758b2f3f1, udp: true}
+  - {name: 🇺🇸 美国 CloudFlare节点, server: ip.sb, port: 443, type: vmess, uuid: 28548ef7-983d-4ee8-8bd6-7d71d905b5a2, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /28548ef7-983d-4ee8-8bd6-7d71d905b5a2-vmess, headers: {Host: fr.atlen.dpdns.org}}, udp: true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 🇺🇸 美国 CloudFlare节点
-      - 🇮🇷 伊朗 V2CROSS.COM
+      - 🇨🇳 江苏省盐城市 移动
+      - 🇨🇳 广东省广州市 电信
+      - 🇨🇳 广东省广州市 电信 2
+      - 🇺🇸 美国 加州
       - 🇺🇸 北美地区 V2CROSS.COM
-      - 🇺🇸 美国 V2CROSS.COM
-      - 🇺🇸 美国 V2CROSS.COM 2
-      - 🇺🇸 美国 V2CROSS.COM 3
-      - 🇭🇰 香港 电讯盈科有限公司
-      - 🇺🇸 美国 V2CROSS.COM 4
-      - 🇺🇸 美国 CloudFlare节点 2
-      - 🇷🇺 俄罗斯 V2CROSS.COM
-      - 🇺🇸 美国 V2CROSS.COM 5
-      - 🇷🇺 俄罗斯 V2CROSS.COM 2
-      - 🇨🇦 加拿大 V2CROSS.COM
-      - 🇺🇸 美国 V2CROSS.COM 6
-      - 亚太地区 V2CROSS.COM
-      - 🇺🇸 美国 CloudFlare节点 3
-      - 🇺🇸 美国 CloudFlare节点 4
-      - 🇺🇸 美国 V2CROSS.COM 7
-      - 🇷🇺 俄罗斯 V2CROSS.COM 3
-      - 亚太地区 V2CROSS.COM 2
-      - 欧盟 V2CROSS.COM
-      - 🇺🇸 美国 CloudFlare节点 5
-      - 🇺🇸 美国 CloudFlare节点 6
+      - 🇨🇳 广东省广州市 电信 3
+      - 🇺🇸 美国 CloudFlare节点
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇺🇸 美国 CloudFlare节点
-      - 🇮🇷 伊朗 V2CROSS.COM
+      - 🇨🇳 江苏省盐城市 移动
+      - 🇨🇳 广东省广州市 电信
+      - 🇨🇳 广东省广州市 电信 2
+      - 🇺🇸 美国 加州
       - 🇺🇸 北美地区 V2CROSS.COM
-      - 🇺🇸 美国 V2CROSS.COM
-      - 🇺🇸 美国 V2CROSS.COM 2
-      - 🇺🇸 美国 V2CROSS.COM 3
-      - 🇭🇰 香港 电讯盈科有限公司
-      - 🇺🇸 美国 V2CROSS.COM 4
-      - 🇺🇸 美国 CloudFlare节点 2
-      - 🇷🇺 俄罗斯 V2CROSS.COM
-      - 🇺🇸 美国 V2CROSS.COM 5
-      - 🇷🇺 俄罗斯 V2CROSS.COM 2
-      - 🇨🇦 加拿大 V2CROSS.COM
-      - 🇺🇸 美国 V2CROSS.COM 6
-      - 亚太地区 V2CROSS.COM
-      - 🇺🇸 美国 CloudFlare节点 3
-      - 🇺🇸 美国 CloudFlare节点 4
-      - 🇺🇸 美国 V2CROSS.COM 7
-      - 🇷🇺 俄罗斯 V2CROSS.COM 3
-      - 亚太地区 V2CROSS.COM 2
-      - 欧盟 V2CROSS.COM
-      - 🇺🇸 美国 CloudFlare节点 5
-      - 🇺🇸 美国 CloudFlare节点 6
+      - 🇨🇳 广东省广州市 电信 3
+      - 🇺🇸 美国 CloudFlare节点
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇺🇸 美国 CloudFlare节点
-      - 🇮🇷 伊朗 V2CROSS.COM
+      - 🇨🇳 江苏省盐城市 移动
+      - 🇨🇳 广东省广州市 电信
+      - 🇨🇳 广东省广州市 电信 2
+      - 🇺🇸 美国 加州
       - 🇺🇸 北美地区 V2CROSS.COM
-      - 🇺🇸 美国 V2CROSS.COM
-      - 🇺🇸 美国 V2CROSS.COM 2
-      - 🇺🇸 美国 V2CROSS.COM 3
-      - 🇭🇰 香港 电讯盈科有限公司
-      - 🇺🇸 美国 V2CROSS.COM 4
-      - 🇺🇸 美国 CloudFlare节点 2
-      - 🇷🇺 俄罗斯 V2CROSS.COM
-      - 🇺🇸 美国 V2CROSS.COM 5
-      - 🇷🇺 俄罗斯 V2CROSS.COM 2
-      - 🇨🇦 加拿大 V2CROSS.COM
-      - 🇺🇸 美国 V2CROSS.COM 6
-      - 亚太地区 V2CROSS.COM
-      - 🇺🇸 美国 CloudFlare节点 3
-      - 🇺🇸 美国 CloudFlare节点 4
-      - 🇺🇸 美国 V2CROSS.COM 7
-      - 🇷🇺 俄罗斯 V2CROSS.COM 3
-      - 亚太地区 V2CROSS.COM 2
-      - 欧盟 V2CROSS.COM
-      - 🇺🇸 美国 CloudFlare节点 5
-      - 🇺🇸 美国 CloudFlare节点 6
+      - 🇨🇳 广东省广州市 电信 3
+      - 🇺🇸 美国 CloudFlare节点
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇺🇸 美国 CloudFlare节点
-      - 🇮🇷 伊朗 V2CROSS.COM
+      - 🇨🇳 江苏省盐城市 移动
+      - 🇨🇳 广东省广州市 电信
+      - 🇨🇳 广东省广州市 电信 2
+      - 🇺🇸 美国 加州
       - 🇺🇸 北美地区 V2CROSS.COM
-      - 🇺🇸 美国 V2CROSS.COM
-      - 🇺🇸 美国 V2CROSS.COM 2
-      - 🇺🇸 美国 V2CROSS.COM 3
-      - 🇭🇰 香港 电讯盈科有限公司
-      - 🇺🇸 美国 V2CROSS.COM 4
-      - 🇺🇸 美国 CloudFlare节点 2
-      - 🇷🇺 俄罗斯 V2CROSS.COM
-      - 🇺🇸 美国 V2CROSS.COM 5
-      - 🇷🇺 俄罗斯 V2CROSS.COM 2
-      - 🇨🇦 加拿大 V2CROSS.COM
-      - 🇺🇸 美国 V2CROSS.COM 6
-      - 亚太地区 V2CROSS.COM
-      - 🇺🇸 美国 CloudFlare节点 3
-      - 🇺🇸 美国 CloudFlare节点 4
-      - 🇺🇸 美国 V2CROSS.COM 7
-      - 🇷🇺 俄罗斯 V2CROSS.COM 3
-      - 亚太地区 V2CROSS.COM 2
-      - 欧盟 V2CROSS.COM
-      - 🇺🇸 美国 CloudFlare节点 5
-      - 🇺🇸 美国 CloudFlare节点 6
+      - 🇨🇳 广东省广州市 电信 3
+      - 🇺🇸 美国 CloudFlare节点
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 🇺🇸 美国 CloudFlare节点
-      - 🇮🇷 伊朗 V2CROSS.COM
+      - 🇨🇳 江苏省盐城市 移动
+      - 🇨🇳 广东省广州市 电信
+      - 🇨🇳 广东省广州市 电信 2
+      - 🇺🇸 美国 加州
       - 🇺🇸 北美地区 V2CROSS.COM
-      - 🇺🇸 美国 V2CROSS.COM
-      - 🇺🇸 美国 V2CROSS.COM 2
-      - 🇺🇸 美国 V2CROSS.COM 3
-      - 🇭🇰 香港 电讯盈科有限公司
-      - 🇺🇸 美国 V2CROSS.COM 4
-      - 🇺🇸 美国 CloudFlare节点 2
-      - 🇷🇺 俄罗斯 V2CROSS.COM
-      - 🇺🇸 美国 V2CROSS.COM 5
-      - 🇷🇺 俄罗斯 V2CROSS.COM 2
-      - 🇨🇦 加拿大 V2CROSS.COM
-      - 🇺🇸 美国 V2CROSS.COM 6
-      - 亚太地区 V2CROSS.COM
-      - 🇺🇸 美国 CloudFlare节点 3
-      - 🇺🇸 美国 CloudFlare节点 4
-      - 🇺🇸 美国 V2CROSS.COM 7
-      - 🇷🇺 俄罗斯 V2CROSS.COM 3
-      - 亚太地区 V2CROSS.COM 2
-      - 欧盟 V2CROSS.COM
-      - 🇺🇸 美国 CloudFlare节点 5
-      - 🇺🇸 美国 CloudFlare节点 6
+      - 🇨🇳 广东省广州市 电信 3
+      - 🇺🇸 美国 CloudFlare节点
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇺🇸 美国 CloudFlare节点
-      - 🇮🇷 伊朗 V2CROSS.COM
+      - 🇨🇳 江苏省盐城市 移动
+      - 🇨🇳 广东省广州市 电信
+      - 🇨🇳 广东省广州市 电信 2
+      - 🇺🇸 美国 加州
       - 🇺🇸 北美地区 V2CROSS.COM
-      - 🇺🇸 美国 V2CROSS.COM
-      - 🇺🇸 美国 V2CROSS.COM 2
-      - 🇺🇸 美国 V2CROSS.COM 3
-      - 🇭🇰 香港 电讯盈科有限公司
-      - 🇺🇸 美国 V2CROSS.COM 4
-      - 🇺🇸 美国 CloudFlare节点 2
-      - 🇷🇺 俄罗斯 V2CROSS.COM
-      - 🇺🇸 美国 V2CROSS.COM 5
-      - 🇷🇺 俄罗斯 V2CROSS.COM 2
-      - 🇨🇦 加拿大 V2CROSS.COM
-      - 🇺🇸 美国 V2CROSS.COM 6
-      - 亚太地区 V2CROSS.COM
-      - 🇺🇸 美国 CloudFlare节点 3
-      - 🇺🇸 美国 CloudFlare节点 4
-      - 🇺🇸 美国 V2CROSS.COM 7
-      - 🇷🇺 俄罗斯 V2CROSS.COM 3
-      - 亚太地区 V2CROSS.COM 2
-      - 欧盟 V2CROSS.COM
-      - 🇺🇸 美国 CloudFlare节点 5
-      - 🇺🇸 美国 CloudFlare节点 6
+      - 🇨🇳 广东省广州市 电信 3
+      - 🇺🇸 美国 CloudFlare节点
   - name: 📢 谷歌FCM
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇺🇸 美国 CloudFlare节点
-      - 🇮🇷 伊朗 V2CROSS.COM
+      - 🇨🇳 江苏省盐城市 移动
+      - 🇨🇳 广东省广州市 电信
+      - 🇨🇳 广东省广州市 电信 2
+      - 🇺🇸 美国 加州
       - 🇺🇸 北美地区 V2CROSS.COM
-      - 🇺🇸 美国 V2CROSS.COM
-      - 🇺🇸 美国 V2CROSS.COM 2
-      - 🇺🇸 美国 V2CROSS.COM 3
-      - 🇭🇰 香港 电讯盈科有限公司
-      - 🇺🇸 美国 V2CROSS.COM 4
-      - 🇺🇸 美国 CloudFlare节点 2
-      - 🇷🇺 俄罗斯 V2CROSS.COM
-      - 🇺🇸 美国 V2CROSS.COM 5
-      - 🇷🇺 俄罗斯 V2CROSS.COM 2
-      - 🇨🇦 加拿大 V2CROSS.COM
-      - 🇺🇸 美国 V2CROSS.COM 6
-      - 亚太地区 V2CROSS.COM
-      - 🇺🇸 美国 CloudFlare节点 3
-      - 🇺🇸 美国 CloudFlare节点 4
-      - 🇺🇸 美国 V2CROSS.COM 7
-      - 🇷🇺 俄罗斯 V2CROSS.COM 3
-      - 亚太地区 V2CROSS.COM 2
-      - 欧盟 V2CROSS.COM
-      - 🇺🇸 美国 CloudFlare节点 5
-      - 🇺🇸 美国 CloudFlare节点 6
+      - 🇨🇳 广东省广州市 电信 3
+      - 🇺🇸 美国 CloudFlare节点
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -250,29 +122,13 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇺🇸 美国 CloudFlare节点
-      - 🇮🇷 伊朗 V2CROSS.COM
+      - 🇨🇳 江苏省盐城市 移动
+      - 🇨🇳 广东省广州市 电信
+      - 🇨🇳 广东省广州市 电信 2
+      - 🇺🇸 美国 加州
       - 🇺🇸 北美地区 V2CROSS.COM
-      - 🇺🇸 美国 V2CROSS.COM
-      - 🇺🇸 美国 V2CROSS.COM 2
-      - 🇺🇸 美国 V2CROSS.COM 3
-      - 🇭🇰 香港 电讯盈科有限公司
-      - 🇺🇸 美国 V2CROSS.COM 4
-      - 🇺🇸 美国 CloudFlare节点 2
-      - 🇷🇺 俄罗斯 V2CROSS.COM
-      - 🇺🇸 美国 V2CROSS.COM 5
-      - 🇷🇺 俄罗斯 V2CROSS.COM 2
-      - 🇨🇦 加拿大 V2CROSS.COM
-      - 🇺🇸 美国 V2CROSS.COM 6
-      - 亚太地区 V2CROSS.COM
-      - 🇺🇸 美国 CloudFlare节点 3
-      - 🇺🇸 美国 CloudFlare节点 4
-      - 🇺🇸 美国 V2CROSS.COM 7
-      - 🇷🇺 俄罗斯 V2CROSS.COM 3
-      - 亚太地区 V2CROSS.COM 2
-      - 欧盟 V2CROSS.COM
-      - 🇺🇸 美国 CloudFlare节点 5
-      - 🇺🇸 美国 CloudFlare节点 6
+      - 🇨🇳 广东省广州市 电信 3
+      - 🇺🇸 美国 CloudFlare节点
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
