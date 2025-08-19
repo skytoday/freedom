@@ -5,101 +5,93 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 🇨🇳 江苏省盐城市 移动, server: 36.156.102.125, port: 406, type: trojan, password: 253bc477d4e43c209f2d427272968280, sni: www.baidu.com, skip-cert-verify: false, udp: true}
-  - {name: 🇨🇳 广东省广州市 电信, server: xinjiapo.tmdns-sing.top, port: 13886, type: ss, cipher: aes-128-gcm, password: 6b1e5475-7661-4921-aa26-d11758b2f3f1, udp: true}
-  - {name: 🇨🇳 广东省广州市 电信 2, server: hanguo01.tmdns-sing.top, port: 13882, type: ss, cipher: aes-128-gcm, password: 6b1e5475-7661-4921-aa26-d11758b2f3f1, udp: true}
+  - {name: 🇨🇦 加拿大 V2CROSS.COM, server: 205.233.181.3, port: 443, type: vmess, uuid: de94cc0a-0592-4969-b1fc-97ea8f0ea0b3, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /us.kkp.me.eu.org/aa, headers: {Host: farid.1.berozha.ir}}, udp: true}
+  - {name: 🇺🇸 美国 华盛顿Cogent通信公司, server: 38.180.211.126, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: Kuiqk2cP0BMWrgme9IfEvp, udp: true}
+  - {name: 🇺🇸 美国 CloudFlare节点, server: www.speedtest.net, port: 443, type: vmess, uuid: e2fb28b8-a457-4bd2-801e-56fdcccbd88e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /linkvkwsss, headers: {Host: blaze-cana-126.blazeservers1.site}}, udp: true}
+  - {name: 🇭🇰 香港 电讯盈科有限公司, server: hkt.gotochinatown.net, port: 80, type: vmess, uuid: 384d1b42-655f-11ed-a8bf-f23c91cfbbc9, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: hkt.gotochinatown.net}}, udp: true}
+  - {name: 🇺🇸 美国 CloudFlare节点 2, server: 104.18.3.108, port: 8443, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: false, udp: true}
   - {name: 🇺🇸 美国 加州, server: 216.24.57.30, port: 443, type: trojan, password: tg-fq521free, sni: torjan.xn--xhq44j.eu.org, skip-cert-verify: false, udp: true}
-  - {name: 🇺🇸 北美地区 V2CROSS.COM, server: 198.62.62.67, port: 443, type: trojan, password: tg-fq521free, sni: torjan.xn--xhq44j.eu.org, skip-cert-verify: false, udp: true}
-  - {name: 🇨🇳 广东省广州市 电信 3, server: hk1-20250813213806be3c17japantm01.tmdns-sing.top, port: 13872, type: ss, cipher: aes-128-gcm, password: 6b1e5475-7661-4921-aa26-d11758b2f3f1, udp: true}
-  - {name: 🇺🇸 美国 CloudFlare节点, server: ip.sb, port: 443, type: vmess, uuid: 28548ef7-983d-4ee8-8bd6-7d71d905b5a2, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /28548ef7-983d-4ee8-8bd6-7d71d905b5a2-vmess, headers: {Host: fr.atlen.dpdns.org}}, udp: true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 🇨🇳 江苏省盐城市 移动
-      - 🇨🇳 广东省广州市 电信
-      - 🇨🇳 广东省广州市 电信 2
-      - 🇺🇸 美国 加州
-      - 🇺🇸 北美地区 V2CROSS.COM
-      - 🇨🇳 广东省广州市 电信 3
+      - 🇨🇦 加拿大 V2CROSS.COM
+      - 🇺🇸 美国 华盛顿Cogent通信公司
       - 🇺🇸 美国 CloudFlare节点
+      - 🇭🇰 香港 电讯盈科有限公司
+      - 🇺🇸 美国 CloudFlare节点 2
+      - 🇺🇸 美国 加州
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇨🇳 江苏省盐城市 移动
-      - 🇨🇳 广东省广州市 电信
-      - 🇨🇳 广东省广州市 电信 2
-      - 🇺🇸 美国 加州
-      - 🇺🇸 北美地区 V2CROSS.COM
-      - 🇨🇳 广东省广州市 电信 3
+      - 🇨🇦 加拿大 V2CROSS.COM
+      - 🇺🇸 美国 华盛顿Cogent通信公司
       - 🇺🇸 美国 CloudFlare节点
+      - 🇭🇰 香港 电讯盈科有限公司
+      - 🇺🇸 美国 CloudFlare节点 2
+      - 🇺🇸 美国 加州
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇨🇳 江苏省盐城市 移动
-      - 🇨🇳 广东省广州市 电信
-      - 🇨🇳 广东省广州市 电信 2
-      - 🇺🇸 美国 加州
-      - 🇺🇸 北美地区 V2CROSS.COM
-      - 🇨🇳 广东省广州市 电信 3
+      - 🇨🇦 加拿大 V2CROSS.COM
+      - 🇺🇸 美国 华盛顿Cogent通信公司
       - 🇺🇸 美国 CloudFlare节点
+      - 🇭🇰 香港 电讯盈科有限公司
+      - 🇺🇸 美国 CloudFlare节点 2
+      - 🇺🇸 美国 加州
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇨🇳 江苏省盐城市 移动
-      - 🇨🇳 广东省广州市 电信
-      - 🇨🇳 广东省广州市 电信 2
-      - 🇺🇸 美国 加州
-      - 🇺🇸 北美地区 V2CROSS.COM
-      - 🇨🇳 广东省广州市 电信 3
+      - 🇨🇦 加拿大 V2CROSS.COM
+      - 🇺🇸 美国 华盛顿Cogent通信公司
       - 🇺🇸 美国 CloudFlare节点
+      - 🇭🇰 香港 电讯盈科有限公司
+      - 🇺🇸 美国 CloudFlare节点 2
+      - 🇺🇸 美国 加州
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 🇨🇳 江苏省盐城市 移动
-      - 🇨🇳 广东省广州市 电信
-      - 🇨🇳 广东省广州市 电信 2
-      - 🇺🇸 美国 加州
-      - 🇺🇸 北美地区 V2CROSS.COM
-      - 🇨🇳 广东省广州市 电信 3
+      - 🇨🇦 加拿大 V2CROSS.COM
+      - 🇺🇸 美国 华盛顿Cogent通信公司
       - 🇺🇸 美国 CloudFlare节点
+      - 🇭🇰 香港 电讯盈科有限公司
+      - 🇺🇸 美国 CloudFlare节点 2
+      - 🇺🇸 美国 加州
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇨🇳 江苏省盐城市 移动
-      - 🇨🇳 广东省广州市 电信
-      - 🇨🇳 广东省广州市 电信 2
-      - 🇺🇸 美国 加州
-      - 🇺🇸 北美地区 V2CROSS.COM
-      - 🇨🇳 广东省广州市 电信 3
+      - 🇨🇦 加拿大 V2CROSS.COM
+      - 🇺🇸 美国 华盛顿Cogent通信公司
       - 🇺🇸 美国 CloudFlare节点
+      - 🇭🇰 香港 电讯盈科有限公司
+      - 🇺🇸 美国 CloudFlare节点 2
+      - 🇺🇸 美国 加州
   - name: 📢 谷歌FCM
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇨🇳 江苏省盐城市 移动
-      - 🇨🇳 广东省广州市 电信
-      - 🇨🇳 广东省广州市 电信 2
-      - 🇺🇸 美国 加州
-      - 🇺🇸 北美地区 V2CROSS.COM
-      - 🇨🇳 广东省广州市 电信 3
+      - 🇨🇦 加拿大 V2CROSS.COM
+      - 🇺🇸 美国 华盛顿Cogent通信公司
       - 🇺🇸 美国 CloudFlare节点
+      - 🇭🇰 香港 电讯盈科有限公司
+      - 🇺🇸 美国 CloudFlare节点 2
+      - 🇺🇸 美国 加州
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -122,13 +114,12 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇨🇳 江苏省盐城市 移动
-      - 🇨🇳 广东省广州市 电信
-      - 🇨🇳 广东省广州市 电信 2
-      - 🇺🇸 美国 加州
-      - 🇺🇸 北美地区 V2CROSS.COM
-      - 🇨🇳 广东省广州市 电信 3
+      - 🇨🇦 加拿大 V2CROSS.COM
+      - 🇺🇸 美国 华盛顿Cogent通信公司
       - 🇺🇸 美国 CloudFlare节点
+      - 🇭🇰 香港 电讯盈科有限公司
+      - 🇺🇸 美国 CloudFlare节点 2
+      - 🇺🇸 美国 加州
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
