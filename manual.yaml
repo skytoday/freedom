@@ -5,109 +5,93 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 🇭🇰 香港 电讯盈科有限公司, server: 1e426046-t0fds0-t12cnj-1ol97.hk.p5pv.com, port: 80, type: vmess, uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: broadcastlv.chat.bilibili.com}}, udp: true}
-  - {name: 🇺🇸 美国 CloudFlare节点, server: cloudgetservice.mcloudservice.site, port: 443, type: vmess, uuid: 37f464cb-b826-4278-9bf8-11bdf1ec892b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /linvkws, headers: {Host: Fra-Vp-123.BLaZECLOUD.Site}}, udp: true}
-  - {name: 🇮🇷 伊朗 V2CROSS.COM, server: beesyar.org, port: 8080, type: ss, cipher: chacha20-ietf-poly1305, password: 4a2rfixophdjffa8KVA4Aa, udp: true}
-  - {name: 🇺🇸 美国 V2CROSS.COM, server: 199.181.197.60, port: 443, type: vmess, uuid: de94cc0a-0592-4969-b1fc-97ea8f0ea0b3, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /us.kkp.me.eu.org/aa, headers: {Host: farid.1.berozha.ir}}, udp: true}
-  - {name: 🇺🇸 美国 CloudFlare节点 2, server: 172.67.170.147, port: 443, type: vmess, uuid: ffcf7ec1-3e09-4821-b3d9-b426a107b73b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /4Bp70NdrJV3xr1D40NK, headers: {Host: xcvfgt6.999854.xyz}}, udp: true}
-  - {name: 🇩🇪 德国 V2CROSS.COM, server: 62.146.235.193, port: 28011, type: vmess, uuid: cfc5a87f-3c13-4e25-b556-176cdd6b5c6a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 🇺🇸 美国 CloudFlare节点 3, server: 172.67.165.122, port: 443, type: vmess, uuid: 20e89a95-cedf-4fe3-9421-517ce66be170, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /SHToRcqfiraYkzOdf, headers: {Host: pppploiu.4444936.xyz}}, udp: true}
-  - {name: 🇮🇷 伊朗 V2CROSS.COM 2, server: 151.242.251.147, port: 8080, type: ss, cipher: chacha20-ietf-poly1305, password: QCXDxuDlTTMD7jtgHUjIoj, udp: true}
+  - {name: 🇬🇧 英国 社会保险安全部, server: 51.222.158.243, port: 8443, type: vmess, uuid: 4b0df213-0e59-4c16-b391-e0d97686bfa9, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /vmess/}, udp: true}
+  - {name: 🇨🇳 广东省深圳市 移动, server: yuenan01.tmdns-sing.top, port: 13875, type: ss, cipher: aes-128-gcm, password: 6b1e5475-7661-4921-aa26-d11758b2f3f1, udp: true}
+  - {name: 🇺🇸 美国 CloudFlare节点, server: ip.sb, port: 443, type: vmess, uuid: 28548ef7-983d-4ee8-8bd6-7d71d905b5a2, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /28548ef7-983d-4ee8-8bd6-7d71d905b5a2-vmess, headers: {Host: fr.atlen.dpdns.org}}, udp: true}
+  - {name: 🇭🇰 香港 电讯盈科有限公司, server: hkt.gotochinatown.net, port: 80, type: vmess, uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: hkt.gotochinatown.net}}, udp: true}
+  - {name: 🇨🇳 广东省深圳市 移动 2, server: hanguo01.tmdns-sing.top, port: 13882, type: ss, cipher: aes-128-gcm, password: 6b1e5475-7661-4921-aa26-d11758b2f3f1, udp: true}
+  - {name: 🇺🇸 美国 CloudFlare节点 2, server: bBbbbbbBb.222769.XYZ, port: 80, type: vmess, uuid: 2e65577e-8fdb-4bb1-a495-96f3122099a7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /f6taOMcOSZb9TPR, headers: {Host: bbbbbbbbb.222769.xyz}}, udp: true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 🇭🇰 香港 电讯盈科有限公司
+      - 🇬🇧 英国 社会保险安全部
+      - 🇨🇳 广东省深圳市 移动
       - 🇺🇸 美国 CloudFlare节点
-      - 🇮🇷 伊朗 V2CROSS.COM
-      - 🇺🇸 美国 V2CROSS.COM
+      - 🇭🇰 香港 电讯盈科有限公司
+      - 🇨🇳 广东省深圳市 移动 2
       - 🇺🇸 美国 CloudFlare节点 2
-      - 🇩🇪 德国 V2CROSS.COM
-      - 🇺🇸 美国 CloudFlare节点 3
-      - 🇮🇷 伊朗 V2CROSS.COM 2
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇭🇰 香港 电讯盈科有限公司
+      - 🇬🇧 英国 社会保险安全部
+      - 🇨🇳 广东省深圳市 移动
       - 🇺🇸 美国 CloudFlare节点
-      - 🇮🇷 伊朗 V2CROSS.COM
-      - 🇺🇸 美国 V2CROSS.COM
+      - 🇭🇰 香港 电讯盈科有限公司
+      - 🇨🇳 广东省深圳市 移动 2
       - 🇺🇸 美国 CloudFlare节点 2
-      - 🇩🇪 德国 V2CROSS.COM
-      - 🇺🇸 美国 CloudFlare节点 3
-      - 🇮🇷 伊朗 V2CROSS.COM 2
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇭🇰 香港 电讯盈科有限公司
+      - 🇬🇧 英国 社会保险安全部
+      - 🇨🇳 广东省深圳市 移动
       - 🇺🇸 美国 CloudFlare节点
-      - 🇮🇷 伊朗 V2CROSS.COM
-      - 🇺🇸 美国 V2CROSS.COM
+      - 🇭🇰 香港 电讯盈科有限公司
+      - 🇨🇳 广东省深圳市 移动 2
       - 🇺🇸 美国 CloudFlare节点 2
-      - 🇩🇪 德国 V2CROSS.COM
-      - 🇺🇸 美国 CloudFlare节点 3
-      - 🇮🇷 伊朗 V2CROSS.COM 2
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇭🇰 香港 电讯盈科有限公司
+      - 🇬🇧 英国 社会保险安全部
+      - 🇨🇳 广东省深圳市 移动
       - 🇺🇸 美国 CloudFlare节点
-      - 🇮🇷 伊朗 V2CROSS.COM
-      - 🇺🇸 美国 V2CROSS.COM
+      - 🇭🇰 香港 电讯盈科有限公司
+      - 🇨🇳 广东省深圳市 移动 2
       - 🇺🇸 美国 CloudFlare节点 2
-      - 🇩🇪 德国 V2CROSS.COM
-      - 🇺🇸 美国 CloudFlare节点 3
-      - 🇮🇷 伊朗 V2CROSS.COM 2
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 🇭🇰 香港 电讯盈科有限公司
+      - 🇬🇧 英国 社会保险安全部
+      - 🇨🇳 广东省深圳市 移动
       - 🇺🇸 美国 CloudFlare节点
-      - 🇮🇷 伊朗 V2CROSS.COM
-      - 🇺🇸 美国 V2CROSS.COM
+      - 🇭🇰 香港 电讯盈科有限公司
+      - 🇨🇳 广东省深圳市 移动 2
       - 🇺🇸 美国 CloudFlare节点 2
-      - 🇩🇪 德国 V2CROSS.COM
-      - 🇺🇸 美国 CloudFlare节点 3
-      - 🇮🇷 伊朗 V2CROSS.COM 2
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇭🇰 香港 电讯盈科有限公司
+      - 🇬🇧 英国 社会保险安全部
+      - 🇨🇳 广东省深圳市 移动
       - 🇺🇸 美国 CloudFlare节点
-      - 🇮🇷 伊朗 V2CROSS.COM
-      - 🇺🇸 美国 V2CROSS.COM
+      - 🇭🇰 香港 电讯盈科有限公司
+      - 🇨🇳 广东省深圳市 移动 2
       - 🇺🇸 美国 CloudFlare节点 2
-      - 🇩🇪 德国 V2CROSS.COM
-      - 🇺🇸 美国 CloudFlare节点 3
-      - 🇮🇷 伊朗 V2CROSS.COM 2
   - name: 📢 谷歌FCM
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇭🇰 香港 电讯盈科有限公司
+      - 🇬🇧 英国 社会保险安全部
+      - 🇨🇳 广东省深圳市 移动
       - 🇺🇸 美国 CloudFlare节点
-      - 🇮🇷 伊朗 V2CROSS.COM
-      - 🇺🇸 美国 V2CROSS.COM
+      - 🇭🇰 香港 电讯盈科有限公司
+      - 🇨🇳 广东省深圳市 移动 2
       - 🇺🇸 美国 CloudFlare节点 2
-      - 🇩🇪 德国 V2CROSS.COM
-      - 🇺🇸 美国 CloudFlare节点 3
-      - 🇮🇷 伊朗 V2CROSS.COM 2
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -130,14 +114,12 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇭🇰 香港 电讯盈科有限公司
+      - 🇬🇧 英国 社会保险安全部
+      - 🇨🇳 广东省深圳市 移动
       - 🇺🇸 美国 CloudFlare节点
-      - 🇮🇷 伊朗 V2CROSS.COM
-      - 🇺🇸 美国 V2CROSS.COM
+      - 🇭🇰 香港 电讯盈科有限公司
+      - 🇨🇳 广东省深圳市 移动 2
       - 🇺🇸 美国 CloudFlare节点 2
-      - 🇩🇪 德国 V2CROSS.COM
-      - 🇺🇸 美国 CloudFlare节点 3
-      - 🇮🇷 伊朗 V2CROSS.COM 2
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
