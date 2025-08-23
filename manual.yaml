@@ -5,12 +5,11 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 亚太地区 V2CROSS.COM, server: usa022.tmdns-sing.top, port: 13892, type: ss, cipher: aes-128-gcm, password: 6b1e5475-7661-4921-aa26-d11758b2f3f1, udp: true}
-  - {name: 欧盟 V2CROSS.COM, server: 45.85.119.190, port: 443, type: vmess, uuid: de94cc0a-0592-4969-b1fc-97ea8f0ea0b3, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /us.kkp.me.eu.org/aa, headers: {Host: farid.1.berozha.ir}}, udp: true}
+  - {name: 亚太地区 V2CROSS.COM, server: hk1-20250813213806be3c17japantm01.tmdns-sing.top, port: 13872, type: ss, cipher: aes-128-gcm, password: 6b1e5475-7661-4921-aa26-d11758b2f3f1, udp: true}
   - {name: 🇨🇳 江苏省 移动, server: v9.heduian.link, port: 30809, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /oooo, headers: {Host: baidu.com}}, udp: true}
-  - {name: 🇺🇸 美国 CloudFlare节点, server: cloudgetservice.mcloudservice.site, port: 443, type: vmess, uuid: 37f464cb-b826-4278-9bf8-11bdf1ec892b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /linvkws, headers: {Host: Fra-Vp-123.BLaZECLOUD.Site}}, udp: true}
-  - {name: 🇨🇦 加拿大 V2CROSS.COM, server: 205.233.181.3, port: 443, type: vmess, uuid: de94cc0a-0592-4969-b1fc-97ea8f0ea0b3, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /us.kkp.me.eu.org/aa, headers: {Host: farid.1.berozha.ir}}, udp: true}
-  - {name: 🇺🇸 美国 CloudFlare节点 2, server: 172.67.206.152, port: 443, type: vmess, uuid: e053ff61-f350-4fe8-9a45-56da927d417c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /ri9mOOVJuAimB74kgXZ, headers: {Host: 9ef7d8c2-70ef-dcb5-39a5-5c514e43bf12.freevpnatm2025.dpdns.org}}, udp: true}
+  - {name: 🇮🇹 意大利 V2CROSS.COM, server: 185.213.23.226, port: 990, type: ss, cipher: chacha20-ietf-poly1305, password: f8f7aCzcPKbsF8p3, udp: true}
+  - {name: 🇭🇰 香港 电讯盈科有限公司, server: 1e426046-t0fds0-t12cnj-1ol97.hk.p5pv.com, port: 80, type: vmess, uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: broadcastlv.chat.bilibili.com}}, udp: true}
+  - {name: 🇺🇸 美国 V2CROSS.COM, server: 199.181.197.60, port: 443, type: vmess, uuid: de94cc0a-0592-4969-b1fc-97ea8f0ea0b3, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /us.kkp.me.eu.org/aa, headers: {Host: farid.1.berozha.ir}}, udp: true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -18,11 +17,10 @@ proxy-groups:
       - ♻️ 自动选择
       - DIRECT
       - 亚太地区 V2CROSS.COM
-      - 欧盟 V2CROSS.COM
       - 🇨🇳 江苏省 移动
-      - 🇺🇸 美国 CloudFlare节点
-      - 🇨🇦 加拿大 V2CROSS.COM
-      - 🇺🇸 美国 CloudFlare节点 2
+      - 🇮🇹 意大利 V2CROSS.COM
+      - 🇭🇰 香港 电讯盈科有限公司
+      - 🇺🇸 美国 V2CROSS.COM
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -30,11 +28,10 @@ proxy-groups:
     tolerance: 50
     proxies:
       - 亚太地区 V2CROSS.COM
-      - 欧盟 V2CROSS.COM
       - 🇨🇳 江苏省 移动
-      - 🇺🇸 美国 CloudFlare节点
-      - 🇨🇦 加拿大 V2CROSS.COM
-      - 🇺🇸 美国 CloudFlare节点 2
+      - 🇮🇹 意大利 V2CROSS.COM
+      - 🇭🇰 香港 电讯盈科有限公司
+      - 🇺🇸 美国 V2CROSS.COM
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -42,44 +39,40 @@ proxy-groups:
       - ♻️ 自动选择
       - 🎯 全球直连
       - 亚太地区 V2CROSS.COM
-      - 欧盟 V2CROSS.COM
       - 🇨🇳 江苏省 移动
-      - 🇺🇸 美国 CloudFlare节点
-      - 🇨🇦 加拿大 V2CROSS.COM
-      - 🇺🇸 美国 CloudFlare节点 2
+      - 🇮🇹 意大利 V2CROSS.COM
+      - 🇭🇰 香港 电讯盈科有限公司
+      - 🇺🇸 美国 V2CROSS.COM
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - 亚太地区 V2CROSS.COM
-      - 欧盟 V2CROSS.COM
       - 🇨🇳 江苏省 移动
-      - 🇺🇸 美国 CloudFlare节点
-      - 🇨🇦 加拿大 V2CROSS.COM
-      - 🇺🇸 美国 CloudFlare节点 2
+      - 🇮🇹 意大利 V2CROSS.COM
+      - 🇭🇰 香港 电讯盈科有限公司
+      - 🇺🇸 美国 V2CROSS.COM
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
       - 亚太地区 V2CROSS.COM
-      - 欧盟 V2CROSS.COM
       - 🇨🇳 江苏省 移动
-      - 🇺🇸 美国 CloudFlare节点
-      - 🇨🇦 加拿大 V2CROSS.COM
-      - 🇺🇸 美国 CloudFlare节点 2
+      - 🇮🇹 意大利 V2CROSS.COM
+      - 🇭🇰 香港 电讯盈科有限公司
+      - 🇺🇸 美国 V2CROSS.COM
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - 亚太地区 V2CROSS.COM
-      - 欧盟 V2CROSS.COM
       - 🇨🇳 江苏省 移动
-      - 🇺🇸 美国 CloudFlare节点
-      - 🇨🇦 加拿大 V2CROSS.COM
-      - 🇺🇸 美国 CloudFlare节点 2
+      - 🇮🇹 意大利 V2CROSS.COM
+      - 🇭🇰 香港 电讯盈科有限公司
+      - 🇺🇸 美国 V2CROSS.COM
   - name: 📢 谷歌FCM
     type: select
     proxies:
@@ -87,11 +80,10 @@ proxy-groups:
       - 🎯 全球直连
       - ♻️ 自动选择
       - 亚太地区 V2CROSS.COM
-      - 欧盟 V2CROSS.COM
       - 🇨🇳 江苏省 移动
-      - 🇺🇸 美国 CloudFlare节点
-      - 🇨🇦 加拿大 V2CROSS.COM
-      - 🇺🇸 美国 CloudFlare节点 2
+      - 🇮🇹 意大利 V2CROSS.COM
+      - 🇭🇰 香港 电讯盈科有限公司
+      - 🇺🇸 美国 V2CROSS.COM
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -115,11 +107,10 @@ proxy-groups:
       - 🎯 全球直连
       - ♻️ 自动选择
       - 亚太地区 V2CROSS.COM
-      - 欧盟 V2CROSS.COM
       - 🇨🇳 江苏省 移动
-      - 🇺🇸 美国 CloudFlare节点
-      - 🇨🇦 加拿大 V2CROSS.COM
-      - 🇺🇸 美国 CloudFlare节点 2
+      - 🇮🇹 意大利 V2CROSS.COM
+      - 🇭🇰 香港 电讯盈科有限公司
+      - 🇺🇸 美国 V2CROSS.COM
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
