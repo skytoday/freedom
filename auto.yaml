@@ -5,55 +5,43 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 广东省 移动, server: 183.240.245.241, port: 48383, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 荷兰 V2CROSS.COM, server: 185.133.35.214, port: 8880, type: vmess, uuid: d1b75cc3-e618-37c4-9c55-ff11b4ed493b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/dabai&Telegram🇨🇳@WangCai2/?ed=2560", headers: {Host: TG.WangCai2.s4.db-link02.top}}, udp: true}
-  - {name: 亚太地区 V2CROSS.COM, server: usa022.tmdns-sing.top, port: 13892, type: ss, cipher: aes-128-gcm, password: 6b1e5475-7661-4921-aa26-d11758b2f3f1, udp: true}
-  - {name: 加拿大 V2CROSS.COM, server: 167.17.179.116, port: 8388, type: ss, cipher: aes-256-gcm, password: pRAqZ4afakQyiP8f, udp: true}
-  - {name: 美国 亚利桑那州斯科茨代尔市Go Daddy集团公司, server: 166.62.104.212, port: 8880, type: vmess, uuid: b209dfbf-6bb0-30b2-a77a-286e230466b5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/dabai&Telegram🇨🇳@WangCai2/?ed=2560", headers: {Host: TG.WangCai2.s4.db-link02.top}}, udp: true}
-  - {name: 亚太地区 V2CROSS.COM 2, server: japan001.tmdns-sing.top, port: 13890, type: ss, cipher: aes-128-gcm, password: 6b1e5475-7661-4921-aa26-d11758b2f3f1, udp: true}
-  - {name: 香港 电讯盈科有限公司, server: hkt.gotochinatown.net, port: 80, type: vmess, uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: hkt.gotochinatown.net}}, udp: true}
-  - {name: 美国 亚利桑那州斯科茨代尔市Go Daddy集团公司 2, server: 72.167.25.212, port: 8880, type: vmess, uuid: b209dfbf-6bb0-30b2-a77a-286e230466b5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/dabai&Telegram🇨🇳@WangCai2/?ed=2560", headers: {Host: TG.WangCai2.s4.db-link02.top}}, udp: true}
+  - {name: 美国 CloudFlare节点, server: 172.67.206.152, port: 443, type: vmess, uuid: e053ff61-f350-4fe8-9a45-56da927d417c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ri9mOOVJuAimB74kgXZ, headers: {Host: 9ef7d8c2-70ef-dcb5-39a5-5c514e43bf12.freevpnatm2025.dpdns.org}}, udp: true}
+  - {name: 香港 电讯盈科有限公司, server: c004e6fe-t1i9s0-tm53cm-1ol97.hkt.tcpbbr.net, port: 80, type: vmess, uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: broadcastlv.chat.bilibili.com}}, udp: true}
+  - {name: 伊朗 V2CROSS.COM, server: 188.121.105.248, port: 4040, type: vmess, uuid: d6fd109d-e147-4253-83f1-50b3401fb8da, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 亚太地区 V2CROSS.COM, server: awes35lesl.blhao0o.dpdns.org, port: 12031, type: ss, cipher: aes-128-gcm, password: 01721e43-5389-4f97-b21c-900abb2bda9e, udp: true}
+  - {name: 美国 CloudFlare节点 2, server: cf.fovi.tk, port: 443, type: vmess, uuid: bf67437e-6c90-45ca-abc2-c7240a5ce2aa, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /eisasqa, headers: {Host: foxlux.fovi.tk}}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 广东省 移动
-      - 荷兰 V2CROSS.COM
-      - 亚太地区 V2CROSS.COM
-      - 加拿大 V2CROSS.COM
-      - 美国 亚利桑那州斯科茨代尔市Go Daddy集团公司
-      - 亚太地区 V2CROSS.COM 2
+      - 美国 CloudFlare节点
       - 香港 电讯盈科有限公司
-      - 美国 亚利桑那州斯科茨代尔市Go Daddy集团公司 2
+      - 伊朗 V2CROSS.COM
+      - 亚太地区 V2CROSS.COM
+      - 美国 CloudFlare节点 2
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 广东省 移动
-      - 荷兰 V2CROSS.COM
-      - 亚太地区 V2CROSS.COM
-      - 加拿大 V2CROSS.COM
-      - 美国 亚利桑那州斯科茨代尔市Go Daddy集团公司
-      - 亚太地区 V2CROSS.COM 2
+      - 美国 CloudFlare节点
       - 香港 电讯盈科有限公司
-      - 美国 亚利桑那州斯科茨代尔市Go Daddy集团公司 2
+      - 伊朗 V2CROSS.COM
+      - 亚太地区 V2CROSS.COM
+      - 美国 CloudFlare节点 2
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 广东省 移动
-      - 荷兰 V2CROSS.COM
-      - 亚太地区 V2CROSS.COM
-      - 加拿大 V2CROSS.COM
-      - 美国 亚利桑那州斯科茨代尔市Go Daddy集团公司
-      - 亚太地区 V2CROSS.COM 2
+      - 美国 CloudFlare节点
       - 香港 电讯盈科有限公司
-      - 美国 亚利桑那州斯科茨代尔市Go Daddy集团公司 2
+      - 伊朗 V2CROSS.COM
+      - 亚太地区 V2CROSS.COM
+      - 美国 CloudFlare节点 2
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -72,14 +60,11 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 广东省 移动
-      - 荷兰 V2CROSS.COM
-      - 亚太地区 V2CROSS.COM
-      - 加拿大 V2CROSS.COM
-      - 美国 亚利桑那州斯科茨代尔市Go Daddy集团公司
-      - 亚太地区 V2CROSS.COM 2
+      - 美国 CloudFlare节点
       - 香港 电讯盈科有限公司
-      - 美国 亚利桑那州斯科茨代尔市Go Daddy集团公司 2
+      - 伊朗 V2CROSS.COM
+      - 亚太地区 V2CROSS.COM
+      - 美国 CloudFlare节点 2
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -91,41 +76,32 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 广东省 移动
-      - 荷兰 V2CROSS.COM
-      - 亚太地区 V2CROSS.COM
-      - 加拿大 V2CROSS.COM
-      - 美国 亚利桑那州斯科茨代尔市Go Daddy集团公司
-      - 亚太地区 V2CROSS.COM 2
+      - 美国 CloudFlare节点
       - 香港 电讯盈科有限公司
-      - 美国 亚利桑那州斯科茨代尔市Go Daddy集团公司 2
+      - 伊朗 V2CROSS.COM
+      - 亚太地区 V2CROSS.COM
+      - 美国 CloudFlare节点 2
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 广东省 移动
-      - 荷兰 V2CROSS.COM
-      - 亚太地区 V2CROSS.COM
-      - 加拿大 V2CROSS.COM
-      - 美国 亚利桑那州斯科茨代尔市Go Daddy集团公司
-      - 亚太地区 V2CROSS.COM 2
+      - 美国 CloudFlare节点
       - 香港 电讯盈科有限公司
-      - 美国 亚利桑那州斯科茨代尔市Go Daddy集团公司 2
+      - 伊朗 V2CROSS.COM
+      - 亚太地区 V2CROSS.COM
+      - 美国 CloudFlare节点 2
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 广东省 移动
-      - 荷兰 V2CROSS.COM
-      - 亚太地区 V2CROSS.COM
-      - 加拿大 V2CROSS.COM
-      - 美国 亚利桑那州斯科茨代尔市Go Daddy集团公司
-      - 亚太地区 V2CROSS.COM 2
+      - 美国 CloudFlare节点
       - 香港 电讯盈科有限公司
-      - 美国 亚利桑那州斯科茨代尔市Go Daddy集团公司 2
+      - 伊朗 V2CROSS.COM
+      - 亚太地区 V2CROSS.COM
+      - 美国 CloudFlare节点 2
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -141,14 +117,11 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 广东省 移动
-      - 荷兰 V2CROSS.COM
-      - 亚太地区 V2CROSS.COM
-      - 加拿大 V2CROSS.COM
-      - 美国 亚利桑那州斯科茨代尔市Go Daddy集团公司
-      - 亚太地区 V2CROSS.COM 2
+      - 美国 CloudFlare节点
       - 香港 电讯盈科有限公司
-      - 美国 亚利桑那州斯科茨代尔市Go Daddy集团公司 2
+      - 伊朗 V2CROSS.COM
+      - 亚太地区 V2CROSS.COM
+      - 美国 CloudFlare节点 2
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
