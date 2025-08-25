@@ -5,6 +5,10 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
+  - {name: 🇺🇸 美国 CloudFlare节点, server: ip.sb, port: 443, type: vmess, uuid: 28548ef7-983d-4ee8-8bd6-7d71d905b5a2, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /28548ef7-983d-4ee8-8bd6-7d71d905b5a2-vmess, headers: {Host: fr.atlen.dpdns.org}}, udp: true}
+  - {name: 🇺🇸 北美地区 V2CROSS.COM, server: 198.62.62.67, port: 443, type: trojan, password: tg-fq521free, sni: torjan.xn--xhq44j.eu.org, skip-cert-verify: false, udp: true}
+  - {name: 🇺🇸 美国 CloudFlare节点 2, server: www.speedtest.net, port: 80, type: vmess, uuid: 3d76ac40-80c4-11f0-b432-205c6d5f5d78, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /b87r3d9e, headers: {Host: zula.ir.eu-2.hihu.net}}, udp: true}
+  - {name: 🇩🇪 德国 V2CROSS.COM, server: 194.76.18.129, port: 443, type: trojan, password: tg-fq521free, sni: torjan.xn--xhq44j.eu.org, skip-cert-verify: false, udp: true}
   - {name: 🇱🇹 立陶宛 V2CROSS.COM, server: 86.38.214.194, port: 2096, type: trojan, password: ttfang, sni: ttfang.fange.me, skip-cert-verify: false, udp: true}
 proxy-groups:
   - name: 🚀 节点选择
@@ -12,6 +16,10 @@ proxy-groups:
     proxies:
       - ♻️ 自动选择
       - DIRECT
+      - 🇺🇸 美国 CloudFlare节点
+      - 🇺🇸 北美地区 V2CROSS.COM
+      - 🇺🇸 美国 CloudFlare节点 2
+      - 🇩🇪 德国 V2CROSS.COM
       - 🇱🇹 立陶宛 V2CROSS.COM
   - name: ♻️ 自动选择
     type: url-test
@@ -19,6 +27,10 @@ proxy-groups:
     interval: 300
     tolerance: 50
     proxies:
+      - 🇺🇸 美国 CloudFlare节点
+      - 🇺🇸 北美地区 V2CROSS.COM
+      - 🇺🇸 美国 CloudFlare节点 2
+      - 🇩🇪 德国 V2CROSS.COM
       - 🇱🇹 立陶宛 V2CROSS.COM
   - name: 🌍 国外媒体
     type: select
@@ -26,24 +38,40 @@ proxy-groups:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
+      - 🇺🇸 美国 CloudFlare节点
+      - 🇺🇸 北美地区 V2CROSS.COM
+      - 🇺🇸 美国 CloudFlare节点 2
+      - 🇩🇪 德国 V2CROSS.COM
       - 🇱🇹 立陶宛 V2CROSS.COM
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
+      - 🇺🇸 美国 CloudFlare节点
+      - 🇺🇸 北美地区 V2CROSS.COM
+      - 🇺🇸 美国 CloudFlare节点 2
+      - 🇩🇪 德国 V2CROSS.COM
       - 🇱🇹 立陶宛 V2CROSS.COM
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
+      - 🇺🇸 美国 CloudFlare节点
+      - 🇺🇸 北美地区 V2CROSS.COM
+      - 🇺🇸 美国 CloudFlare节点 2
+      - 🇩🇪 德国 V2CROSS.COM
       - 🇱🇹 立陶宛 V2CROSS.COM
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
+      - 🇺🇸 美国 CloudFlare节点
+      - 🇺🇸 北美地区 V2CROSS.COM
+      - 🇺🇸 美国 CloudFlare节点 2
+      - 🇩🇪 德国 V2CROSS.COM
       - 🇱🇹 立陶宛 V2CROSS.COM
   - name: 📢 谷歌FCM
     type: select
@@ -51,6 +79,10 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - 🇺🇸 美国 CloudFlare节点
+      - 🇺🇸 北美地区 V2CROSS.COM
+      - 🇺🇸 美国 CloudFlare节点 2
+      - 🇩🇪 德国 V2CROSS.COM
       - 🇱🇹 立陶宛 V2CROSS.COM
   - name: 🎯 全球直连
     type: select
@@ -74,6 +106,10 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - 🇺🇸 美国 CloudFlare节点
+      - 🇺🇸 北美地区 V2CROSS.COM
+      - 🇺🇸 美国 CloudFlare节点 2
+      - 🇩🇪 德国 V2CROSS.COM
       - 🇱🇹 立陶宛 V2CROSS.COM
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
