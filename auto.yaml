@@ -5,55 +5,47 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
+  - {name: 台湾省 中华电信(HiNet)数据中心, server: 125.229.191.104, port: 10033, type: ss, cipher: chacha20-ietf-poly1305, password: 96af3623-aed0-48c1-ad98-a33344bb3143, udp: true}
   - {name: 德国 V2CROSS.COM, server: 194.76.18.129, port: 443, type: trojan, password: tg-fq521free, sni: torjan.xn--xhq44j.eu.org, skip-cert-verify: true, udp: true}
-  - {name: 美国 CloudFlare节点, server: cproxies.com, port: 443, type: vmess, uuid: de94cc0a-0592-4969-b1fc-97ea8f0ea0b3, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /us.kkp.me.eu.org/aa, headers: {Host: farid.1.berozha.ir}}, udp: true}
-  - {name: 美国 CloudFlare节点 2, server: cf.fovi.tk, port: 443, type: vmess, uuid: bf67437e-6c90-45ca-abc2-c7240a5ce2aa, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /eisasqa, headers: {Host: foxpol.fovi.tk}}, udp: true}
-  - {name: 江苏省 移动, server: v24.heduian.link, port: 30824, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /oooo, headers: {Host: v24.heduian.link}}, udp: true}
-  - {name: 江苏省盐城市 创凡云, server: 223.111.144.13, port: 6928, type: trojan, password: 253bc477d4e43c209f2d427272968280, sni: www.baidu.com, skip-cert-verify: true, udp: true}
-  - {name: 江苏省 移动 2, server: 36.150.215.203, port: 3043, type: trojan, password: 253bc477d4e43c209f2d427272968280, sni: www.baidu.com, skip-cert-verify: true, udp: true}
-  - {name: 亚太地区 V2CROSS.COM, server: awes35lesl.blhao0o.dpdns.org, port: 12023, type: ss, cipher: aes-128-gcm, password: 01721e43-5389-4f97-b21c-900abb2bda9e, udp: true}
-  - {name: 江苏省 移动 3, server: 36.150.215.203, port: 4397, type: trojan, password: 253bc477d4e43c209f2d427272968280, sni: www.baidu.com, skip-cert-verify: true, udp: true}
+  - {name: 广东省 移动, server: 183.240.245.250, port: 47272, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 欧盟 V2CROSS.COM, server: 45.67.215.95, port: 443, type: trojan, password: tg-fq521free, sni: torjan.xn--xhq44j.eu.org, skip-cert-verify: true, udp: true}
+  - {name: 台湾省台中市 中华电信, server: 1.165.101.45, port: 10041, type: ss, cipher: chacha20-ietf-poly1305, password: 96af3623-aed0-48c1-ad98-a33344bb3143, udp: true}
+  - {name: 台湾省 中华电信(HiNet)数据中心 2, server: 59.126.32.188, port: 10073, type: ss, cipher: chacha20-ietf-poly1305, password: 73a56277-ecff-45dd-8b1f-0fd659af774c, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
+      - 台湾省 中华电信(HiNet)数据中心
       - 德国 V2CROSS.COM
-      - 美国 CloudFlare节点
-      - 美国 CloudFlare节点 2
-      - 江苏省 移动
-      - 江苏省盐城市 创凡云
-      - 江苏省 移动 2
-      - 亚太地区 V2CROSS.COM
-      - 江苏省 移动 3
+      - 广东省 移动
+      - 欧盟 V2CROSS.COM
+      - 台湾省台中市 中华电信
+      - 台湾省 中华电信(HiNet)数据中心 2
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
+      - 台湾省 中华电信(HiNet)数据中心
       - 德国 V2CROSS.COM
-      - 美国 CloudFlare节点
-      - 美国 CloudFlare节点 2
-      - 江苏省 移动
-      - 江苏省盐城市 创凡云
-      - 江苏省 移动 2
-      - 亚太地区 V2CROSS.COM
-      - 江苏省 移动 3
+      - 广东省 移动
+      - 欧盟 V2CROSS.COM
+      - 台湾省台中市 中华电信
+      - 台湾省 中华电信(HiNet)数据中心 2
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
+      - 台湾省 中华电信(HiNet)数据中心
       - 德国 V2CROSS.COM
-      - 美国 CloudFlare节点
-      - 美国 CloudFlare节点 2
-      - 江苏省 移动
-      - 江苏省盐城市 创凡云
-      - 江苏省 移动 2
-      - 亚太地区 V2CROSS.COM
-      - 江苏省 移动 3
+      - 广东省 移动
+      - 欧盟 V2CROSS.COM
+      - 台湾省台中市 中华电信
+      - 台湾省 中华电信(HiNet)数据中心 2
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -72,59 +64,54 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
+      - 台湾省 中华电信(HiNet)数据中心
       - 德国 V2CROSS.COM
-      - 美国 CloudFlare节点
-      - 美国 CloudFlare节点 2
-      - 江苏省 移动
-      - 江苏省盐城市 创凡云
-      - 江苏省 移动 2
-      - 亚太地区 V2CROSS.COM
-      - 江苏省 移动 3
+      - 广东省 移动
+      - 欧盟 V2CROSS.COM
+      - 台湾省台中市 中华电信
+      - 台湾省 中华电信(HiNet)数据中心 2
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
+      - 台湾省 中华电信(HiNet)数据中心
+      - 台湾省台中市 中华电信
+      - 台湾省 中华电信(HiNet)数据中心 2
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
+      - 台湾省 中华电信(HiNet)数据中心
       - 德国 V2CROSS.COM
-      - 美国 CloudFlare节点
-      - 美国 CloudFlare节点 2
-      - 江苏省 移动
-      - 江苏省盐城市 创凡云
-      - 江苏省 移动 2
-      - 亚太地区 V2CROSS.COM
-      - 江苏省 移动 3
+      - 广东省 移动
+      - 欧盟 V2CROSS.COM
+      - 台湾省台中市 中华电信
+      - 台湾省 中华电信(HiNet)数据中心 2
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
+      - 台湾省 中华电信(HiNet)数据中心
       - 德国 V2CROSS.COM
-      - 美国 CloudFlare节点
-      - 美国 CloudFlare节点 2
-      - 江苏省 移动
-      - 江苏省盐城市 创凡云
-      - 江苏省 移动 2
-      - 亚太地区 V2CROSS.COM
-      - 江苏省 移动 3
+      - 广东省 移动
+      - 欧盟 V2CROSS.COM
+      - 台湾省台中市 中华电信
+      - 台湾省 中华电信(HiNet)数据中心 2
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - 台湾省 中华电信(HiNet)数据中心
       - 德国 V2CROSS.COM
-      - 美国 CloudFlare节点
-      - 美国 CloudFlare节点 2
-      - 江苏省 移动
-      - 江苏省盐城市 创凡云
-      - 江苏省 移动 2
-      - 亚太地区 V2CROSS.COM
-      - 江苏省 移动 3
+      - 广东省 移动
+      - 欧盟 V2CROSS.COM
+      - 台湾省台中市 中华电信
+      - 台湾省 中华电信(HiNet)数据中心 2
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -140,14 +127,12 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - 台湾省 中华电信(HiNet)数据中心
       - 德国 V2CROSS.COM
-      - 美国 CloudFlare节点
-      - 美国 CloudFlare节点 2
-      - 江苏省 移动
-      - 江苏省盐城市 创凡云
-      - 江苏省 移动 2
-      - 亚太地区 V2CROSS.COM
-      - 江苏省 移动 3
+      - 广东省 移动
+      - 欧盟 V2CROSS.COM
+      - 台湾省台中市 中华电信
+      - 台湾省 中华电信(HiNet)数据中心 2
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
