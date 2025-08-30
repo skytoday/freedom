@@ -5,93 +5,109 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 🇨🇳 台湾省 中华电信(HiNet)数据中心, server: 125.229.191.104, port: 10033, type: ss, cipher: chacha20-ietf-poly1305, password: 96af3623-aed0-48c1-ad98-a33344bb3143, udp: true}
-  - {name: 🇩🇪 德国 V2CROSS.COM, server: 194.76.18.129, port: 443, type: trojan, password: tg-fq521free, sni: torjan.xn--xhq44j.eu.org, skip-cert-verify: false, udp: true}
-  - {name: 广东省 移动, server: 183.240.245.250, port: 47272, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 欧盟 V2CROSS.COM, server: 45.67.215.95, port: 443, type: trojan, password: tg-fq521free, sni: torjan.xn--xhq44j.eu.org, skip-cert-verify: false, udp: true}
-  - {name: 🇨🇳 台湾省台中市 中华电信, server: 1.165.101.45, port: 10041, type: ss, cipher: chacha20-ietf-poly1305, password: 96af3623-aed0-48c1-ad98-a33344bb3143, udp: true}
-  - {name: 🇨🇳 台湾省 中华电信(HiNet)数据中心 2, server: 59.126.32.188, port: 10073, type: ss, cipher: chacha20-ietf-poly1305, password: 73a56277-ecff-45dd-8b1f-0fd659af774c, udp: true}
+  - {name: 🇧🇬 保加利亚 V2CROSS.COM, server: 185.176.26.224, port: 8880, type: vmess, uuid: 64076cae-b5ba-32c8-a316-fa782f0a553b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/dabai&Telegram🇨🇳@WangCai2/?ed=2560", headers: {Host: TG.WangCai2.s4.db-link02.top}}, udp: true}
+  - {name: 🇺🇸 美国 CloudFlare节点, server: 104.21.77.149, port: 443, type: vmess, uuid: 20e89a95-cedf-4fe3-9421-517ce66be170, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /SHToRcqfiraYkzOdf, headers: {Host: dddcccvghyu.999834.xyz}}, udp: true}
+  - {name: 🇨🇳 江苏省 移动, server: v9.heduian.link, port: 30809, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /oooo, headers: {Host: baidu.com}}, udp: true}
+  - {name: 🇨🇳 台湾省 中华电信(HiNet)数据中心, server: 59.126.32.188, port: 10073, type: ss, cipher: chacha20-ietf-poly1305, password: 7be4e35f-a716-41cf-8287-212c3f69f85b, udp: true}
+  - {name: 🇭🇰 香港 电讯盈科有限公司, server: hkt.gotochinatown.net, port: 80, type: vmess, uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: hkt.gotochinatown.net}}, udp: true}
+  - {name: 广东省阳江市 移动, server: lm.kaiqsz.com, port: 59225, type: trojan, password: 55f2afab-bc41-4231-b725-76bef15c3cf7, sni: mmbiz12.redapricotcloud.com, skip-cert-verify: false, udp: true}
+  - {name: 🇨🇳 台湾省 中华电信(HiNet)数据中心 2, server: 125.231.82.47, port: 10038, type: ss, cipher: chacha20-ietf-poly1305, password: 505be454-f666-4d07-a29e-7ceb368f9091, udp: true}
+  - {name: 欧盟 V2CROSS.COM, server: 45.12.31.224, port: 8880, type: vmess, uuid: 7a61cb1c-e5ea-31ef-b885-0018390eec5e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/dabai&Telegram🇨🇳@WangCai2/?ed=2560", headers: {Host: TG.WangCai2.s4.db-link02.top}}, udp: true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
+      - 🇧🇬 保加利亚 V2CROSS.COM
+      - 🇺🇸 美国 CloudFlare节点
+      - 🇨🇳 江苏省 移动
       - 🇨🇳 台湾省 中华电信(HiNet)数据中心
-      - 🇩🇪 德国 V2CROSS.COM
-      - 广东省 移动
-      - 欧盟 V2CROSS.COM
-      - 🇨🇳 台湾省台中市 中华电信
+      - 🇭🇰 香港 电讯盈科有限公司
+      - 广东省阳江市 移动
       - 🇨🇳 台湾省 中华电信(HiNet)数据中心 2
+      - 欧盟 V2CROSS.COM
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
+      - 🇧🇬 保加利亚 V2CROSS.COM
+      - 🇺🇸 美国 CloudFlare节点
+      - 🇨🇳 江苏省 移动
       - 🇨🇳 台湾省 中华电信(HiNet)数据中心
-      - 🇩🇪 德国 V2CROSS.COM
-      - 广东省 移动
-      - 欧盟 V2CROSS.COM
-      - 🇨🇳 台湾省台中市 中华电信
+      - 🇭🇰 香港 电讯盈科有限公司
+      - 广东省阳江市 移动
       - 🇨🇳 台湾省 中华电信(HiNet)数据中心 2
+      - 欧盟 V2CROSS.COM
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
+      - 🇧🇬 保加利亚 V2CROSS.COM
+      - 🇺🇸 美国 CloudFlare节点
+      - 🇨🇳 江苏省 移动
       - 🇨🇳 台湾省 中华电信(HiNet)数据中心
-      - 🇩🇪 德国 V2CROSS.COM
-      - 广东省 移动
-      - 欧盟 V2CROSS.COM
-      - 🇨🇳 台湾省台中市 中华电信
+      - 🇭🇰 香港 电讯盈科有限公司
+      - 广东省阳江市 移动
       - 🇨🇳 台湾省 中华电信(HiNet)数据中心 2
+      - 欧盟 V2CROSS.COM
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
+      - 🇧🇬 保加利亚 V2CROSS.COM
+      - 🇺🇸 美国 CloudFlare节点
+      - 🇨🇳 江苏省 移动
       - 🇨🇳 台湾省 中华电信(HiNet)数据中心
-      - 🇩🇪 德国 V2CROSS.COM
-      - 广东省 移动
-      - 欧盟 V2CROSS.COM
-      - 🇨🇳 台湾省台中市 中华电信
+      - 🇭🇰 香港 电讯盈科有限公司
+      - 广东省阳江市 移动
       - 🇨🇳 台湾省 中华电信(HiNet)数据中心 2
+      - 欧盟 V2CROSS.COM
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
+      - 🇧🇬 保加利亚 V2CROSS.COM
+      - 🇺🇸 美国 CloudFlare节点
+      - 🇨🇳 江苏省 移动
       - 🇨🇳 台湾省 中华电信(HiNet)数据中心
-      - 🇩🇪 德国 V2CROSS.COM
-      - 广东省 移动
-      - 欧盟 V2CROSS.COM
-      - 🇨🇳 台湾省台中市 中华电信
+      - 🇭🇰 香港 电讯盈科有限公司
+      - 广东省阳江市 移动
       - 🇨🇳 台湾省 中华电信(HiNet)数据中心 2
+      - 欧盟 V2CROSS.COM
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
+      - 🇧🇬 保加利亚 V2CROSS.COM
+      - 🇺🇸 美国 CloudFlare节点
+      - 🇨🇳 江苏省 移动
       - 🇨🇳 台湾省 中华电信(HiNet)数据中心
-      - 🇩🇪 德国 V2CROSS.COM
-      - 广东省 移动
-      - 欧盟 V2CROSS.COM
-      - 🇨🇳 台湾省台中市 中华电信
+      - 🇭🇰 香港 电讯盈科有限公司
+      - 广东省阳江市 移动
       - 🇨🇳 台湾省 中华电信(HiNet)数据中心 2
+      - 欧盟 V2CROSS.COM
   - name: 📢 谷歌FCM
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - 🇧🇬 保加利亚 V2CROSS.COM
+      - 🇺🇸 美国 CloudFlare节点
+      - 🇨🇳 江苏省 移动
       - 🇨🇳 台湾省 中华电信(HiNet)数据中心
-      - 🇩🇪 德国 V2CROSS.COM
-      - 广东省 移动
-      - 欧盟 V2CROSS.COM
-      - 🇨🇳 台湾省台中市 中华电信
+      - 🇭🇰 香港 电讯盈科有限公司
+      - 广东省阳江市 移动
       - 🇨🇳 台湾省 中华电信(HiNet)数据中心 2
+      - 欧盟 V2CROSS.COM
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -114,12 +130,14 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - 🇧🇬 保加利亚 V2CROSS.COM
+      - 🇺🇸 美国 CloudFlare节点
+      - 🇨🇳 江苏省 移动
       - 🇨🇳 台湾省 中华电信(HiNet)数据中心
-      - 🇩🇪 德国 V2CROSS.COM
-      - 广东省 移动
-      - 欧盟 V2CROSS.COM
-      - 🇨🇳 台湾省台中市 中华电信
+      - 🇭🇰 香港 电讯盈科有限公司
+      - 广东省阳江市 移动
       - 🇨🇳 台湾省 中华电信(HiNet)数据中心 2
+      - 欧盟 V2CROSS.COM
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
