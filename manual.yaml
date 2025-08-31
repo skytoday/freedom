@@ -5,77 +5,93 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 🇯🇵 日本 BIGLOBE, server: bl.sytes.net, port: 50414, type: ss, cipher: aes-128-gcm, password: 940031a6-fd32-4d6b-901d-77b7f943698e, udp: true}
-  - {name: 🇺🇸 美国 CloudFlare节点, server: 104.18.14.54, port: 80, type: vmess, uuid: bd8f4c3a-b55a-4a55-a4be-d2ead4a4c66a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/index.html?ed=2048", headers: {Host: 845296302850992025082820102725073.s15.chibaba.filegear-sg.me}}, udp: true}
+  - {name: 🇨🇳 台湾省 中华电信(HiNet)数据中心, server: 125.228.162.233, port: 10145, type: ss, cipher: chacha20-ietf-poly1305, password: 579084fb-9323-4090-b577-639b6a997fde, udp: true}
+  - {name: 🇨🇳 台湾省彰化县 中华电信, server: 1.170.22.205, port: 10082, type: ss, cipher: chacha20-ietf-poly1305, password: 182a640c-ca1a-425e-8398-d5ac86bfb096, udp: true}
+  - {name: 🇭🇰 香港 电讯盈科有限公司, server: v10.heduian.link, port: 30807, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /oooo, headers: {Host: baidu.com}}, udp: true}
+  - {name: 🇨🇳 台湾省彰化县 中华电信 2, server: 1.170.17.164, port: 10152, type: ss, cipher: chacha20-ietf-poly1305, password: ce7149cd-ea77-4e46-af7d-d4f6930ea541, udp: true}
   - {name: 🇨🇳 江苏省 移动, server: v39.heduian.link, port: 30839, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /oooo, headers: {Host: baidu.com}}, udp: true}
-  - {name: 🇺🇸 美国 CloudFlare节点 2, server: baota.me, port: 80, type: vmess, uuid: 2f38f848-a899-4c87-9807-207a41615e3c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/rongseven?ed=2048", headers: {Host: us.freeyyds.dpdns.org}}, udp: true}
+  - {name: 🇬🇧 英国 V2CROSS.COM, server: 194.36.55.224, port: 8880, type: vmess, uuid: 7a61cb1c-e5ea-31ef-b885-0018390eec5e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/dabai&Telegram🇨🇳@WangCai2/?ed=2560", headers: {Host: TG.WangCai2.s4.db-link02.top}}, udp: true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 🇯🇵 日本 BIGLOBE
-      - 🇺🇸 美国 CloudFlare节点
+      - 🇨🇳 台湾省 中华电信(HiNet)数据中心
+      - 🇨🇳 台湾省彰化县 中华电信
+      - 🇭🇰 香港 电讯盈科有限公司
+      - 🇨🇳 台湾省彰化县 中华电信 2
       - 🇨🇳 江苏省 移动
-      - 🇺🇸 美国 CloudFlare节点 2
+      - 🇬🇧 英国 V2CROSS.COM
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇯🇵 日本 BIGLOBE
-      - 🇺🇸 美国 CloudFlare节点
+      - 🇨🇳 台湾省 中华电信(HiNet)数据中心
+      - 🇨🇳 台湾省彰化县 中华电信
+      - 🇭🇰 香港 电讯盈科有限公司
+      - 🇨🇳 台湾省彰化县 中华电信 2
       - 🇨🇳 江苏省 移动
-      - 🇺🇸 美国 CloudFlare节点 2
+      - 🇬🇧 英国 V2CROSS.COM
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇯🇵 日本 BIGLOBE
-      - 🇺🇸 美国 CloudFlare节点
+      - 🇨🇳 台湾省 中华电信(HiNet)数据中心
+      - 🇨🇳 台湾省彰化县 中华电信
+      - 🇭🇰 香港 电讯盈科有限公司
+      - 🇨🇳 台湾省彰化县 中华电信 2
       - 🇨🇳 江苏省 移动
-      - 🇺🇸 美国 CloudFlare节点 2
+      - 🇬🇧 英国 V2CROSS.COM
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇯🇵 日本 BIGLOBE
-      - 🇺🇸 美国 CloudFlare节点
+      - 🇨🇳 台湾省 中华电信(HiNet)数据中心
+      - 🇨🇳 台湾省彰化县 中华电信
+      - 🇭🇰 香港 电讯盈科有限公司
+      - 🇨🇳 台湾省彰化县 中华电信 2
       - 🇨🇳 江苏省 移动
-      - 🇺🇸 美国 CloudFlare节点 2
+      - 🇬🇧 英国 V2CROSS.COM
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 🇯🇵 日本 BIGLOBE
-      - 🇺🇸 美国 CloudFlare节点
+      - 🇨🇳 台湾省 中华电信(HiNet)数据中心
+      - 🇨🇳 台湾省彰化县 中华电信
+      - 🇭🇰 香港 电讯盈科有限公司
+      - 🇨🇳 台湾省彰化县 中华电信 2
       - 🇨🇳 江苏省 移动
-      - 🇺🇸 美国 CloudFlare节点 2
+      - 🇬🇧 英国 V2CROSS.COM
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇯🇵 日本 BIGLOBE
-      - 🇺🇸 美国 CloudFlare节点
+      - 🇨🇳 台湾省 中华电信(HiNet)数据中心
+      - 🇨🇳 台湾省彰化县 中华电信
+      - 🇭🇰 香港 电讯盈科有限公司
+      - 🇨🇳 台湾省彰化县 中华电信 2
       - 🇨🇳 江苏省 移动
-      - 🇺🇸 美国 CloudFlare节点 2
+      - 🇬🇧 英国 V2CROSS.COM
   - name: 📢 谷歌FCM
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇯🇵 日本 BIGLOBE
-      - 🇺🇸 美国 CloudFlare节点
+      - 🇨🇳 台湾省 中华电信(HiNet)数据中心
+      - 🇨🇳 台湾省彰化县 中华电信
+      - 🇭🇰 香港 电讯盈科有限公司
+      - 🇨🇳 台湾省彰化县 中华电信 2
       - 🇨🇳 江苏省 移动
-      - 🇺🇸 美国 CloudFlare节点 2
+      - 🇬🇧 英国 V2CROSS.COM
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -98,10 +114,12 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇯🇵 日本 BIGLOBE
-      - 🇺🇸 美国 CloudFlare节点
+      - 🇨🇳 台湾省 中华电信(HiNet)数据中心
+      - 🇨🇳 台湾省彰化县 中华电信
+      - 🇭🇰 香港 电讯盈科有限公司
+      - 🇨🇳 台湾省彰化县 中华电信 2
       - 🇨🇳 江苏省 移动
-      - 🇺🇸 美国 CloudFlare节点 2
+      - 🇬🇧 英国 V2CROSS.COM
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
