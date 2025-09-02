@@ -5,47 +5,55 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 摩尔多瓦 V2CROSS.COM, server: 185.193.30.224, port: 8880, type: vmess, uuid: 5c6b69d8-97a2-39c1-92b8-02fc0a369c31, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/dabai&Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: TG.WangCai2.s4.db-link02.top}}, udp: true}
-  - {name: 江苏省 移动, server: v5.heduian.link, port: 30805, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /oooo, headers: {Host: ocbc.com}}, udp: true}
-  - {name: 美国 V2CROSS.COM, server: 209.94.90.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, udp: true}
-  - {name: 亚太地区 V2CROSS.COM, server: awes35lesl.blhao0o.dpdns.org, port: 12020, type: ss, cipher: aes-128-gcm, password: 01721e43-5389-4f97-b21c-900abb2bda9e, udp: true}
-  - {name: 俄罗斯 V2CROSS.COM, server: 194.53.53.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, udp: true}
-  - {name: 美国 CloudFlare节点, server: bBbbbbbBb.222769.XYZ, port: 80, type: vmess, uuid: 2e65577e-8fdb-4bb1-a495-96f3122099a7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /f6taOMcOSZb9TPR, headers: {Host: bbbbbbbbb.222769.xyz}}, udp: true}
+  - {name: 丹麦 V2CROSS.COM, server: csgo.com, port: 80, type: vmess, uuid: 457f64d5-cc68-4911-82ee-636ebb568a46, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /profile/telegram@ssrsub, headers: {Host: cdn-node-oss-99.paofu.de}}, udp: true}
+  - {name: 亚太地区 V2CROSS.COM, server: awes35lesl.blhao0o.dpdns.org, port: 12008, type: ss, cipher: aes-128-gcm, password: 01721e43-5389-4f97-b21c-900abb2bda9e, udp: true}
+  - {name: 江苏省 移动, server: v9.heduian.link, port: 30809, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /oooo, headers: {Host: baidu.com}}, udp: true}
+  - {name: 西班牙 V2CROSS.COM, server: 185.238.228.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, udp: true}
+  - {name: 广东省汕尾市 移动, server: mm.huawei-api.top, port: 19852, type: ss, cipher: chacha20-ietf-poly1305, password: feafc2ef-d5fd-4f6d-803b-fad4a5cc1f0e, udp: true}
+  - {name: 广东省广州市 电信IDC机房, server: freed.themars.top, port: 31101, type: ss, cipher: chacha20-ietf-poly1305, password: D8FCC5C0-4AB6-4978-BAC7-55B31D67D76E, udp: true}
+  - {name: 美国 CloudFlare节点, server: api.jquery.com, port: 443, type: vmess, uuid: de94cc0a-0592-4969-b1fc-97ea8f0ea0b3, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /us.kkp.me.eu.org/aa, headers: {Host: admin.kasrax.ir}}, udp: true}
+  - {name: 美国 CloudFlare节点 2, server: u1.huvicloud.com, port: 443, type: vmess, uuid: 04ddf6fd-2d5c-46ae-aa6c-6983a8c73725, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /04ddf6fd-2d5c-46ae-aa6c-6983a8c73725, headers: {Host: u1.huvicloud.com}}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 摩尔多瓦 V2CROSS.COM
-      - 江苏省 移动
-      - 美国 V2CROSS.COM
+      - 丹麦 V2CROSS.COM
       - 亚太地区 V2CROSS.COM
-      - 俄罗斯 V2CROSS.COM
+      - 江苏省 移动
+      - 西班牙 V2CROSS.COM
+      - 广东省汕尾市 移动
+      - 广东省广州市 电信IDC机房
       - 美国 CloudFlare节点
+      - 美国 CloudFlare节点 2
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 摩尔多瓦 V2CROSS.COM
-      - 江苏省 移动
-      - 美国 V2CROSS.COM
+      - 丹麦 V2CROSS.COM
       - 亚太地区 V2CROSS.COM
-      - 俄罗斯 V2CROSS.COM
+      - 江苏省 移动
+      - 西班牙 V2CROSS.COM
+      - 广东省汕尾市 移动
+      - 广东省广州市 电信IDC机房
       - 美国 CloudFlare节点
+      - 美国 CloudFlare节点 2
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 摩尔多瓦 V2CROSS.COM
-      - 江苏省 移动
-      - 美国 V2CROSS.COM
+      - 丹麦 V2CROSS.COM
       - 亚太地区 V2CROSS.COM
-      - 俄罗斯 V2CROSS.COM
+      - 江苏省 移动
+      - 西班牙 V2CROSS.COM
+      - 广东省汕尾市 移动
+      - 广东省广州市 电信IDC机房
       - 美国 CloudFlare节点
+      - 美国 CloudFlare节点 2
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -64,12 +72,14 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 摩尔多瓦 V2CROSS.COM
-      - 江苏省 移动
-      - 美国 V2CROSS.COM
+      - 丹麦 V2CROSS.COM
       - 亚太地区 V2CROSS.COM
-      - 俄罗斯 V2CROSS.COM
+      - 江苏省 移动
+      - 西班牙 V2CROSS.COM
+      - 广东省汕尾市 移动
+      - 广东省广州市 电信IDC机房
       - 美国 CloudFlare节点
+      - 美国 CloudFlare节点 2
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -80,35 +90,41 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 摩尔多瓦 V2CROSS.COM
-      - 江苏省 移动
-      - 美国 V2CROSS.COM
+      - 丹麦 V2CROSS.COM
       - 亚太地区 V2CROSS.COM
-      - 俄罗斯 V2CROSS.COM
+      - 江苏省 移动
+      - 西班牙 V2CROSS.COM
+      - 广东省汕尾市 移动
+      - 广东省广州市 电信IDC机房
       - 美国 CloudFlare节点
+      - 美国 CloudFlare节点 2
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 摩尔多瓦 V2CROSS.COM
-      - 江苏省 移动
-      - 美国 V2CROSS.COM
+      - 丹麦 V2CROSS.COM
       - 亚太地区 V2CROSS.COM
-      - 俄罗斯 V2CROSS.COM
+      - 江苏省 移动
+      - 西班牙 V2CROSS.COM
+      - 广东省汕尾市 移动
+      - 广东省广州市 电信IDC机房
       - 美国 CloudFlare节点
+      - 美国 CloudFlare节点 2
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 摩尔多瓦 V2CROSS.COM
-      - 江苏省 移动
-      - 美国 V2CROSS.COM
+      - 丹麦 V2CROSS.COM
       - 亚太地区 V2CROSS.COM
-      - 俄罗斯 V2CROSS.COM
+      - 江苏省 移动
+      - 西班牙 V2CROSS.COM
+      - 广东省汕尾市 移动
+      - 广东省广州市 电信IDC机房
       - 美国 CloudFlare节点
+      - 美国 CloudFlare节点 2
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -124,12 +140,14 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 摩尔多瓦 V2CROSS.COM
-      - 江苏省 移动
-      - 美国 V2CROSS.COM
+      - 丹麦 V2CROSS.COM
       - 亚太地区 V2CROSS.COM
-      - 俄罗斯 V2CROSS.COM
+      - 江苏省 移动
+      - 西班牙 V2CROSS.COM
+      - 广东省汕尾市 移动
+      - 广东省广州市 电信IDC机房
       - 美国 CloudFlare节点
+      - 美国 CloudFlare节点 2
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
