@@ -5,63 +5,71 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 美国 V2CROSS.COM, server: 192.200.160.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, udp: true}
-  - {name: 台湾省 中华电信(HiNet)数据中心, server: 118.170.199.80, port: 10034, type: ss, cipher: chacha20-ietf-poly1305, password: 9746d3ab-3c5a-4bcb-a41b-9163ed1af350, udp: true}
-  - {name: 美国 V2CROSS.COM 2, server: 192.0.63.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, udp: true}
-  - {name: 韩国 KT电信, server: 121.148.27.194, port: 55582, type: vmess, uuid: c47059b2-c52e-4abd-b585-417461366b0c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/arki?ed=2048"}, udp: true}
-  - {name: 俄罗斯 V2CROSS.COM, server: 185.59.218.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, udp: true}
-  - {name: 德国 V2CROSS.COM, server: 185.16.110.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, udp: true}
-  - {name: 西班牙 V2CROSS.COM, server: 185.251.81.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, udp: true}
-  - {name: 西班牙 V2CROSS.COM 2, server: 185.251.80.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, udp: true}
-  - {name: 立陶宛 V2CROSS.COM, server: 185.148.107.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, udp: true}
-  - {name: 江苏省 移动, server: v39.heduian.link, port: 30839, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /oooo, headers: {Host: baidu.com}}, udp: true}
+  - {name: 卢森堡 root.lu数据中心, server: 188.42.89.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, udp: true}
+  - {name: 广东省东莞市 电信IDC机房, server: okanc.iepl.cac.cab, port: 23012, type: trojan, password: 82d0fb76-b9ff-41c2-ba15-2aec44f78e7c, sni: www.bilibili.com, skip-cert-verify: true, udp: true}
+  - {name: 瑞典 V2CROSS.COM, server: 195.13.55.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, udp: true}
+  - {name: 美国 V2CROSS.COM, server: 45.144.174.211, port: 23168, type: vmess, uuid: 43510de6-129d-4cff-a78e-f4ecdba0524e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 45.144.174.211}}, udp: true}
+  - {name: 英国 V2CROSS.COM, server: 188.244.122.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, udp: true}
+  - {name: 西班牙 V2CROSS.COM, server: 185.251.82.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, udp: true}
+  - {name: 英国 V2CROSS.COM 2, server: 195.26.229.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, udp: true}
+  - {name: 台湾省桃园市 中华电信, server: tuntro002.instconn.com, port: 20253, type: trojan, password: 79462058-8af8-4f78-9f72-252035389b87, sni: bing.3668989.xyz, skip-cert-verify: true, udp: true}
+  - {name: 荷兰 V2CROSS.COM, server: 188.164.248.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, udp: true}
+  - {name: 立陶宛 V2CROSS.COM, server: 185.148.106.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, udp: true}
+  - {name: 香港 电讯盈科有限公司, server: hkt.gotochinatown.net, port: 80, type: vmess, uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: hkt.gotochinatown.net}}, udp: true}
+  - {name: 德国 V2CROSS.COM, server: 195.13.44.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
+      - 卢森堡 root.lu数据中心
+      - 广东省东莞市 电信IDC机房
+      - 瑞典 V2CROSS.COM
       - 美国 V2CROSS.COM
-      - 台湾省 中华电信(HiNet)数据中心
-      - 美国 V2CROSS.COM 2
-      - 韩国 KT电信
-      - 俄罗斯 V2CROSS.COM
-      - 德国 V2CROSS.COM
+      - 英国 V2CROSS.COM
       - 西班牙 V2CROSS.COM
-      - 西班牙 V2CROSS.COM 2
+      - 英国 V2CROSS.COM 2
+      - 台湾省桃园市 中华电信
+      - 荷兰 V2CROSS.COM
       - 立陶宛 V2CROSS.COM
-      - 江苏省 移动
+      - 香港 电讯盈科有限公司
+      - 德国 V2CROSS.COM
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
+      - 卢森堡 root.lu数据中心
+      - 广东省东莞市 电信IDC机房
+      - 瑞典 V2CROSS.COM
       - 美国 V2CROSS.COM
-      - 台湾省 中华电信(HiNet)数据中心
-      - 美国 V2CROSS.COM 2
-      - 韩国 KT电信
-      - 俄罗斯 V2CROSS.COM
-      - 德国 V2CROSS.COM
+      - 英国 V2CROSS.COM
       - 西班牙 V2CROSS.COM
-      - 西班牙 V2CROSS.COM 2
+      - 英国 V2CROSS.COM 2
+      - 台湾省桃园市 中华电信
+      - 荷兰 V2CROSS.COM
       - 立陶宛 V2CROSS.COM
-      - 江苏省 移动
+      - 香港 电讯盈科有限公司
+      - 德国 V2CROSS.COM
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
+      - 卢森堡 root.lu数据中心
+      - 广东省东莞市 电信IDC机房
+      - 瑞典 V2CROSS.COM
       - 美国 V2CROSS.COM
-      - 台湾省 中华电信(HiNet)数据中心
-      - 美国 V2CROSS.COM 2
-      - 韩国 KT电信
-      - 俄罗斯 V2CROSS.COM
-      - 德国 V2CROSS.COM
+      - 英国 V2CROSS.COM
       - 西班牙 V2CROSS.COM
-      - 西班牙 V2CROSS.COM 2
+      - 英国 V2CROSS.COM 2
+      - 台湾省桃园市 中华电信
+      - 荷兰 V2CROSS.COM
       - 立陶宛 V2CROSS.COM
-      - 江苏省 移动
+      - 香港 电讯盈科有限公司
+      - 德国 V2CROSS.COM
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -80,68 +88,77 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
+      - 卢森堡 root.lu数据中心
+      - 广东省东莞市 电信IDC机房
+      - 瑞典 V2CROSS.COM
       - 美国 V2CROSS.COM
-      - 台湾省 中华电信(HiNet)数据中心
-      - 美国 V2CROSS.COM 2
-      - 韩国 KT电信
-      - 俄罗斯 V2CROSS.COM
-      - 德国 V2CROSS.COM
+      - 英国 V2CROSS.COM
       - 西班牙 V2CROSS.COM
-      - 西班牙 V2CROSS.COM 2
+      - 英国 V2CROSS.COM 2
+      - 台湾省桃园市 中华电信
+      - 荷兰 V2CROSS.COM
       - 立陶宛 V2CROSS.COM
-      - 江苏省 移动
+      - 香港 电讯盈科有限公司
+      - 德国 V2CROSS.COM
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 台湾省 中华电信(HiNet)数据中心
+      - 台湾省桃园市 中华电信
+      - 香港 电讯盈科有限公司
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
+      - 卢森堡 root.lu数据中心
+      - 广东省东莞市 电信IDC机房
+      - 瑞典 V2CROSS.COM
       - 美国 V2CROSS.COM
-      - 台湾省 中华电信(HiNet)数据中心
-      - 美国 V2CROSS.COM 2
-      - 韩国 KT电信
-      - 俄罗斯 V2CROSS.COM
-      - 德国 V2CROSS.COM
+      - 英国 V2CROSS.COM
       - 西班牙 V2CROSS.COM
-      - 西班牙 V2CROSS.COM 2
+      - 英国 V2CROSS.COM 2
+      - 台湾省桃园市 中华电信
+      - 荷兰 V2CROSS.COM
       - 立陶宛 V2CROSS.COM
-      - 江苏省 移动
+      - 香港 电讯盈科有限公司
+      - 德国 V2CROSS.COM
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
+      - 卢森堡 root.lu数据中心
+      - 广东省东莞市 电信IDC机房
+      - 瑞典 V2CROSS.COM
       - 美国 V2CROSS.COM
-      - 台湾省 中华电信(HiNet)数据中心
-      - 美国 V2CROSS.COM 2
-      - 韩国 KT电信
-      - 俄罗斯 V2CROSS.COM
-      - 德国 V2CROSS.COM
+      - 英国 V2CROSS.COM
       - 西班牙 V2CROSS.COM
-      - 西班牙 V2CROSS.COM 2
+      - 英国 V2CROSS.COM 2
+      - 台湾省桃园市 中华电信
+      - 荷兰 V2CROSS.COM
       - 立陶宛 V2CROSS.COM
-      - 江苏省 移动
+      - 香港 电讯盈科有限公司
+      - 德国 V2CROSS.COM
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - 卢森堡 root.lu数据中心
+      - 广东省东莞市 电信IDC机房
+      - 瑞典 V2CROSS.COM
       - 美国 V2CROSS.COM
-      - 台湾省 中华电信(HiNet)数据中心
-      - 美国 V2CROSS.COM 2
-      - 韩国 KT电信
-      - 俄罗斯 V2CROSS.COM
-      - 德国 V2CROSS.COM
+      - 英国 V2CROSS.COM
       - 西班牙 V2CROSS.COM
-      - 西班牙 V2CROSS.COM 2
+      - 英国 V2CROSS.COM 2
+      - 台湾省桃园市 中华电信
+      - 荷兰 V2CROSS.COM
       - 立陶宛 V2CROSS.COM
-      - 江苏省 移动
+      - 香港 电讯盈科有限公司
+      - 德国 V2CROSS.COM
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -157,16 +174,18 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - 卢森堡 root.lu数据中心
+      - 广东省东莞市 电信IDC机房
+      - 瑞典 V2CROSS.COM
       - 美国 V2CROSS.COM
-      - 台湾省 中华电信(HiNet)数据中心
-      - 美国 V2CROSS.COM 2
-      - 韩国 KT电信
-      - 俄罗斯 V2CROSS.COM
-      - 德国 V2CROSS.COM
+      - 英国 V2CROSS.COM
       - 西班牙 V2CROSS.COM
-      - 西班牙 V2CROSS.COM 2
+      - 英国 V2CROSS.COM 2
+      - 台湾省桃园市 中华电信
+      - 荷兰 V2CROSS.COM
       - 立陶宛 V2CROSS.COM
-      - 江苏省 移动
+      - 香港 电讯盈科有限公司
+      - 德国 V2CROSS.COM
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
