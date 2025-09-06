@@ -5,141 +5,133 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 🇨🇳 台湾省 中华电信(HiNet)数据中心, server: 59.126.32.59, port: 10066, type: ss, cipher: chacha20-ietf-poly1305, password: 6b9e151f-10bb-4ef9-8607-fe3ad53f7dc1, udp: true}
-  - {name: 🇺🇸 美国 CloudFlare节点, server: 104.16.79.65, port: 80, type: vmess, uuid: 6acd1528-42cc-43cf-93a4-f36bd859f6d2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/index.html?ed=2048", headers: {Host: 745019073041272025090210144391493.fr.chibaba.filegear-sg.me}}, udp: true}
-  - {name: 🇭🇰 香港 电讯盈科有限公司, server: c004e6fe-t1i9s0-tm53cm-1ol97.hkt.tcpbbr.net, port: 80, type: vmess, uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: broadcastlv.chat.bilibili.com}}, udp: true}
-  - {name: 🇱🇹 立陶宛 V2CROSS.COM, server: 185.148.107.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: false, udp: true}
-  - {name: 🇪🇸 西班牙 V2CROSS.COM, server: 185.251.81.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: false, udp: true}
-  - {name: 🇬🇧 英国 社会保险安全部, server: 51.222.158.243, port: 8443, type: vmess, uuid: 4b0df213-0e59-4c16-b391-e0d97686bfa9, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /vmess/}, udp: true}
-  - {name: 🇩🇪 德国 V2CROSS.COM, server: 194.76.18.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: false, udp: true}
-  - {name: 🇫🇷 法国 V2CROSS.COM, server: 185.7.240.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: false, udp: true}
-  - {name: 🇱🇹 立陶宛 V2CROSS.COM 2, server: 185.148.106.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: false, udp: true}
-  - {name: 🇨🇳 江苏省 移动, server: v39.heduian.link, port: 30839, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /oooo, headers: {Host: baidu.com}}, udp: true}
-  - {name: 🇭🇰 香港 电讯盈科有限公司 2, server: v10.heduian.link, port: 30807, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /oooo, headers: {Host: baidu.com}}, udp: true}
-  - {name: 🇨🇳 江苏省 移动 2, server: v29.heduian.link, port: 30829, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /oooo, headers: {Host: ocbc.com}}, udp: true}
+  - {name: 🇱🇹 立陶宛 V2CROSS.COM, server: 185.148.106.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: false, udp: true}
+  - {name: 🇺🇸 美国 华盛顿Cogent通信公司, server: 38.60.134.249, port: 443, type: vmess, uuid: beb28159-7f4c-4c09-9313-6283515f150b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 🇪🇸 西班牙 V2CROSS.COM, server: 185.251.80.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: false, udp: true}
+  - {name: 🇳🇱 荷兰 V2CROSS.COM, server: 188.164.248.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: false, udp: true}
+  - {name: 🇷🇺 俄罗斯 V2CROSS.COM, server: 185.59.218.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: false, udp: true}
+  - {name: 🇪🇸 西班牙 V2CROSS.COM 2, server: 185.251.81.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: false, udp: true}
+  - {name: 🇺🇸 美国 V2CROSS.COM, server: 192.200.160.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: false, udp: true}
+  - {name: 🇭🇰 香港 电讯盈科有限公司, server: v10.heduian.link, port: 30807, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /oooo, headers: {Host: baidu.com}}, udp: true}
+  - {name: 🇺🇸 美国 V2CROSS.COM 2, server: 192.0.54.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: false, udp: true}
+  - {name: 🇱🇹 立陶宛 V2CROSS.COM 2, server: 185.148.107.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: false, udp: true}
+  - {name: 🇬🇧 英国 V2CROSS.COM, server: 185.156.19.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: false, udp: true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 🇨🇳 台湾省 中华电信(HiNet)数据中心
-      - 🇺🇸 美国 CloudFlare节点
-      - 🇭🇰 香港 电讯盈科有限公司
       - 🇱🇹 立陶宛 V2CROSS.COM
+      - 🇺🇸 美国 华盛顿Cogent通信公司
       - 🇪🇸 西班牙 V2CROSS.COM
-      - 🇬🇧 英国 社会保险安全部
-      - 🇩🇪 德国 V2CROSS.COM
-      - 🇫🇷 法国 V2CROSS.COM
+      - 🇳🇱 荷兰 V2CROSS.COM
+      - 🇷🇺 俄罗斯 V2CROSS.COM
+      - 🇪🇸 西班牙 V2CROSS.COM 2
+      - 🇺🇸 美国 V2CROSS.COM
+      - 🇭🇰 香港 电讯盈科有限公司
+      - 🇺🇸 美国 V2CROSS.COM 2
       - 🇱🇹 立陶宛 V2CROSS.COM 2
-      - 🇨🇳 江苏省 移动
-      - 🇭🇰 香港 电讯盈科有限公司 2
-      - 🇨🇳 江苏省 移动 2
+      - 🇬🇧 英国 V2CROSS.COM
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇨🇳 台湾省 中华电信(HiNet)数据中心
-      - 🇺🇸 美国 CloudFlare节点
-      - 🇭🇰 香港 电讯盈科有限公司
       - 🇱🇹 立陶宛 V2CROSS.COM
+      - 🇺🇸 美国 华盛顿Cogent通信公司
       - 🇪🇸 西班牙 V2CROSS.COM
-      - 🇬🇧 英国 社会保险安全部
-      - 🇩🇪 德国 V2CROSS.COM
-      - 🇫🇷 法国 V2CROSS.COM
+      - 🇳🇱 荷兰 V2CROSS.COM
+      - 🇷🇺 俄罗斯 V2CROSS.COM
+      - 🇪🇸 西班牙 V2CROSS.COM 2
+      - 🇺🇸 美国 V2CROSS.COM
+      - 🇭🇰 香港 电讯盈科有限公司
+      - 🇺🇸 美国 V2CROSS.COM 2
       - 🇱🇹 立陶宛 V2CROSS.COM 2
-      - 🇨🇳 江苏省 移动
-      - 🇭🇰 香港 电讯盈科有限公司 2
-      - 🇨🇳 江苏省 移动 2
+      - 🇬🇧 英国 V2CROSS.COM
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇨🇳 台湾省 中华电信(HiNet)数据中心
-      - 🇺🇸 美国 CloudFlare节点
-      - 🇭🇰 香港 电讯盈科有限公司
       - 🇱🇹 立陶宛 V2CROSS.COM
+      - 🇺🇸 美国 华盛顿Cogent通信公司
       - 🇪🇸 西班牙 V2CROSS.COM
-      - 🇬🇧 英国 社会保险安全部
-      - 🇩🇪 德国 V2CROSS.COM
-      - 🇫🇷 法国 V2CROSS.COM
+      - 🇳🇱 荷兰 V2CROSS.COM
+      - 🇷🇺 俄罗斯 V2CROSS.COM
+      - 🇪🇸 西班牙 V2CROSS.COM 2
+      - 🇺🇸 美国 V2CROSS.COM
+      - 🇭🇰 香港 电讯盈科有限公司
+      - 🇺🇸 美国 V2CROSS.COM 2
       - 🇱🇹 立陶宛 V2CROSS.COM 2
-      - 🇨🇳 江苏省 移动
-      - 🇭🇰 香港 电讯盈科有限公司 2
-      - 🇨🇳 江苏省 移动 2
+      - 🇬🇧 英国 V2CROSS.COM
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇨🇳 台湾省 中华电信(HiNet)数据中心
-      - 🇺🇸 美国 CloudFlare节点
-      - 🇭🇰 香港 电讯盈科有限公司
       - 🇱🇹 立陶宛 V2CROSS.COM
+      - 🇺🇸 美国 华盛顿Cogent通信公司
       - 🇪🇸 西班牙 V2CROSS.COM
-      - 🇬🇧 英国 社会保险安全部
-      - 🇩🇪 德国 V2CROSS.COM
-      - 🇫🇷 法国 V2CROSS.COM
+      - 🇳🇱 荷兰 V2CROSS.COM
+      - 🇷🇺 俄罗斯 V2CROSS.COM
+      - 🇪🇸 西班牙 V2CROSS.COM 2
+      - 🇺🇸 美国 V2CROSS.COM
+      - 🇭🇰 香港 电讯盈科有限公司
+      - 🇺🇸 美国 V2CROSS.COM 2
       - 🇱🇹 立陶宛 V2CROSS.COM 2
-      - 🇨🇳 江苏省 移动
-      - 🇭🇰 香港 电讯盈科有限公司 2
-      - 🇨🇳 江苏省 移动 2
+      - 🇬🇧 英国 V2CROSS.COM
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 🇨🇳 台湾省 中华电信(HiNet)数据中心
-      - 🇺🇸 美国 CloudFlare节点
-      - 🇭🇰 香港 电讯盈科有限公司
       - 🇱🇹 立陶宛 V2CROSS.COM
+      - 🇺🇸 美国 华盛顿Cogent通信公司
       - 🇪🇸 西班牙 V2CROSS.COM
-      - 🇬🇧 英国 社会保险安全部
-      - 🇩🇪 德国 V2CROSS.COM
-      - 🇫🇷 法国 V2CROSS.COM
+      - 🇳🇱 荷兰 V2CROSS.COM
+      - 🇷🇺 俄罗斯 V2CROSS.COM
+      - 🇪🇸 西班牙 V2CROSS.COM 2
+      - 🇺🇸 美国 V2CROSS.COM
+      - 🇭🇰 香港 电讯盈科有限公司
+      - 🇺🇸 美国 V2CROSS.COM 2
       - 🇱🇹 立陶宛 V2CROSS.COM 2
-      - 🇨🇳 江苏省 移动
-      - 🇭🇰 香港 电讯盈科有限公司 2
-      - 🇨🇳 江苏省 移动 2
+      - 🇬🇧 英国 V2CROSS.COM
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇨🇳 台湾省 中华电信(HiNet)数据中心
-      - 🇺🇸 美国 CloudFlare节点
-      - 🇭🇰 香港 电讯盈科有限公司
       - 🇱🇹 立陶宛 V2CROSS.COM
+      - 🇺🇸 美国 华盛顿Cogent通信公司
       - 🇪🇸 西班牙 V2CROSS.COM
-      - 🇬🇧 英国 社会保险安全部
-      - 🇩🇪 德国 V2CROSS.COM
-      - 🇫🇷 法国 V2CROSS.COM
+      - 🇳🇱 荷兰 V2CROSS.COM
+      - 🇷🇺 俄罗斯 V2CROSS.COM
+      - 🇪🇸 西班牙 V2CROSS.COM 2
+      - 🇺🇸 美国 V2CROSS.COM
+      - 🇭🇰 香港 电讯盈科有限公司
+      - 🇺🇸 美国 V2CROSS.COM 2
       - 🇱🇹 立陶宛 V2CROSS.COM 2
-      - 🇨🇳 江苏省 移动
-      - 🇭🇰 香港 电讯盈科有限公司 2
-      - 🇨🇳 江苏省 移动 2
+      - 🇬🇧 英国 V2CROSS.COM
   - name: 📢 谷歌FCM
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇨🇳 台湾省 中华电信(HiNet)数据中心
-      - 🇺🇸 美国 CloudFlare节点
-      - 🇭🇰 香港 电讯盈科有限公司
       - 🇱🇹 立陶宛 V2CROSS.COM
+      - 🇺🇸 美国 华盛顿Cogent通信公司
       - 🇪🇸 西班牙 V2CROSS.COM
-      - 🇬🇧 英国 社会保险安全部
-      - 🇩🇪 德国 V2CROSS.COM
-      - 🇫🇷 法国 V2CROSS.COM
+      - 🇳🇱 荷兰 V2CROSS.COM
+      - 🇷🇺 俄罗斯 V2CROSS.COM
+      - 🇪🇸 西班牙 V2CROSS.COM 2
+      - 🇺🇸 美国 V2CROSS.COM
+      - 🇭🇰 香港 电讯盈科有限公司
+      - 🇺🇸 美国 V2CROSS.COM 2
       - 🇱🇹 立陶宛 V2CROSS.COM 2
-      - 🇨🇳 江苏省 移动
-      - 🇭🇰 香港 电讯盈科有限公司 2
-      - 🇨🇳 江苏省 移动 2
+      - 🇬🇧 英国 V2CROSS.COM
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -162,18 +154,17 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇨🇳 台湾省 中华电信(HiNet)数据中心
-      - 🇺🇸 美国 CloudFlare节点
-      - 🇭🇰 香港 电讯盈科有限公司
       - 🇱🇹 立陶宛 V2CROSS.COM
+      - 🇺🇸 美国 华盛顿Cogent通信公司
       - 🇪🇸 西班牙 V2CROSS.COM
-      - 🇬🇧 英国 社会保险安全部
-      - 🇩🇪 德国 V2CROSS.COM
-      - 🇫🇷 法国 V2CROSS.COM
+      - 🇳🇱 荷兰 V2CROSS.COM
+      - 🇷🇺 俄罗斯 V2CROSS.COM
+      - 🇪🇸 西班牙 V2CROSS.COM 2
+      - 🇺🇸 美国 V2CROSS.COM
+      - 🇭🇰 香港 电讯盈科有限公司
+      - 🇺🇸 美国 V2CROSS.COM 2
       - 🇱🇹 立陶宛 V2CROSS.COM 2
-      - 🇨🇳 江苏省 移动
-      - 🇭🇰 香港 电讯盈科有限公司 2
-      - 🇨🇳 江苏省 移动 2
+      - 🇬🇧 英国 V2CROSS.COM
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
