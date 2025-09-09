@@ -5,131 +5,67 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 德国 V2CROSS.COM, server: 195.13.45.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, udp: true}
-  - {name: 美国加利福尼亚州圣何塞 xTom, server: 62.3.15.230, port: 17610, type: vmess, uuid: 22cb70f5-1d61-4de9-8ae8-fb3620efa3c1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/arki?ed=2048"}, udp: true}
-  - {name: 西班牙 V2CROSS.COM, server: 185.251.82.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, udp: true}
-  - {name: 韩国 互联网络信息中心(KRNIC), server: 61.111.244.112, port: 56072, type: vmess, uuid: 8e144fed-48f5-41b0-8161-b29f1c78a645, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/arki?ed=2048"}, udp: true}
-  - {name: 美国 阿里云, server: 47.239.142.73, port: 56079, type: vmess, uuid: 236b1b6b-6197-45fd-b576-7541df13e500, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/arki?ed=2048"}, udp: true}
-  - {name: 美国 V2CROSS.COM, server: 154.44.3.27, port: 51457, type: vmess, uuid: 06390c45-1f0e-4440-b84f-71c6c6efb581, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: 韩国 互联网络信息中心(KRNIC) 2, server: 61.111.251.218, port: 43828, type: vmess, uuid: 0cd44aa1-93eb-403e-9b05-5c3526a4218e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/arki?ed=2048"}, udp: true}
-  - {name: 江苏省 移动, server: v29.heduian.link, port: 30829, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /oooo, headers: {Host: ocbc.com}}, udp: true}
-  - {name: 英国 V2CROSS.COM, server: 195.26.229.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, udp: true}
-  - {name: 韩国 互联网络信息中心(KRNIC) 3, server: 61.111.251.218, port: 36495, type: vmess, uuid: 533a8a84-2ae2-4fcc-abea-757d4907f045, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/arki?ed=2048"}, udp: true}
-  - {name: 卢森堡 root.lu数据中心, server: 188.42.89.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, udp: true}
-  - {name: 韩国 互联网络信息中心(KRNIC) 4, server: 61.111.244.132, port: 23347, type: vmess, uuid: 1a9e4700-4a45-4c62-8c41-e7192114aa16, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/arki?ed=2048"}, udp: true}
-  - {name: 法国 V2CROSS.COM, server: 185.7.240.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, udp: true}
-  - {name: 美国 华盛顿Cogent通信公司, server: 38.209.121.136, port: 37912, type: vmess, uuid: 73d5f116-e87e-48ca-9bb3-065f8c00b6f2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /abc}, udp: true}
-  - {name: 美国 V2CROSS.COM 2, server: 154.44.3.27, port: 37068, type: vmess, uuid: cf1981e9-a83d-4ea4-ee44-4b6d7183dadb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: 香港 阿里云, server: 47.86.160.177, port: 22083, type: vmess, uuid: 374f0ecb-2140-4f4f-bdd8-c43561cf383a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/arki?ed=2048"}, udp: true}
-  - {name: 中国 阿里云, server: 8.218.204.70, port: 62805, type: vmess, uuid: 31d1f27f-64cf-420c-b595-c0342252564c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/arki?ed=2048"}, udp: true}
-  - {name: 香港 阿里云 2, server: 47.83.237.118, port: 10202, type: vmess, uuid: 0e25c816-b893-457c-a53d-6872156dff12, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/arki?ed=2048"}, udp: true}
-  - {name: 西班牙 V2CROSS.COM 2, server: 185.251.81.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, udp: true}
-  - {name: 江苏省 移动 2, server: entrance03.qqa678.cc, port: 47083, type: ss, cipher: aes-256-gcm, password: e0c4345e-f943-4a45-977b-514fdec6ffe9, udp: true}
-  - {name: 德国 V2CROSS.COM 2, server: 185.16.110.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, udp: true}
-  - {name: 西班牙 V2CROSS.COM 3, server: 185.238.228.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, udp: true}
-  - {name: 香港 电讯盈科有限公司, server: hkt.gotochinatown.net, port: 80, type: vmess, uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: hkt.gotochinatown.net}}, udp: true}
-  - {name: 美国 V2CROSS.COM 3, server: 199.34.230.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, udp: true}
-  - {name: 香港 阿里云 3, server: 47.243.113.80, port: 45979, type: vmess, uuid: 23bdf6df-c482-46d0-c0f4-5a98d534ea11, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /test}, udp: true}
-  - {name: 香港 阿里云 4, server: 47.86.160.177, port: 44636, type: vmess, uuid: 18056b4b-b862-4f4e-8497-329d3616dbad, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/arki?ed=2048"}, udp: true}
-  - {name: 德国 V2CROSS.COM 3, server: 194.76.18.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, udp: true}
+  - {name: 英国 V2CROSS.COM, server: 185.156.19.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, udp: true}
+  - {name: 美国 CloudFlare节点, server: v35.emoyes.top, port: 443, type: vmess, uuid: a78fc14e-4e8b-4fc0-8cab-86fd81c583ca, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: v35.emoyes.top}}, udp: true}
+  - {name: 俄罗斯 V2CROSS.COM, server: 185.59.218.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, udp: true}
+  - {name: 卢森堡 root.lu数据中心, server: 188.42.145.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, udp: true}
+  - {name: 西班牙 V2CROSS.COM, server: 185.251.83.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, udp: true}
+  - {name: 美国 V2CROSS.COM, server: 199.34.230.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, udp: true}
+  - {name: 西班牙 V2CROSS.COM 2, server: 185.238.228.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, udp: true}
+  - {name: 立陶宛 NGS新闻, server: 185.176.24.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, udp: true}
+  - {name: 美国 V2CROSS.COM 2, server: 209.94.90.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, udp: true}
+  - {name: 江苏省 移动, server: v9.heduian.link, port: 30809, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /oooo, headers: {Host: baidu.com}}, udp: true}
+  - {name: 卢森堡 root.lu数据中心 2, server: 188.42.89.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 德国 V2CROSS.COM
-      - 美国加利福尼亚州圣何塞 xTom
-      - 西班牙 V2CROSS.COM
-      - 韩国 互联网络信息中心(KRNIC)
-      - 美国 阿里云
-      - 美国 V2CROSS.COM
-      - 韩国 互联网络信息中心(KRNIC) 2
-      - 江苏省 移动
       - 英国 V2CROSS.COM
-      - 韩国 互联网络信息中心(KRNIC) 3
+      - 美国 CloudFlare节点
+      - 俄罗斯 V2CROSS.COM
       - 卢森堡 root.lu数据中心
-      - 韩国 互联网络信息中心(KRNIC) 4
-      - 法国 V2CROSS.COM
-      - 美国 华盛顿Cogent通信公司
-      - 美国 V2CROSS.COM 2
-      - 香港 阿里云
-      - 中国 阿里云
-      - 香港 阿里云 2
+      - 西班牙 V2CROSS.COM
+      - 美国 V2CROSS.COM
       - 西班牙 V2CROSS.COM 2
-      - 江苏省 移动 2
-      - 德国 V2CROSS.COM 2
-      - 西班牙 V2CROSS.COM 3
-      - 香港 电讯盈科有限公司
-      - 美国 V2CROSS.COM 3
-      - 香港 阿里云 3
-      - 香港 阿里云 4
-      - 德国 V2CROSS.COM 3
+      - 立陶宛 NGS新闻
+      - 美国 V2CROSS.COM 2
+      - 江苏省 移动
+      - 卢森堡 root.lu数据中心 2
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 德国 V2CROSS.COM
-      - 美国加利福尼亚州圣何塞 xTom
-      - 西班牙 V2CROSS.COM
-      - 韩国 互联网络信息中心(KRNIC)
-      - 美国 阿里云
-      - 美国 V2CROSS.COM
-      - 韩国 互联网络信息中心(KRNIC) 2
-      - 江苏省 移动
       - 英国 V2CROSS.COM
-      - 韩国 互联网络信息中心(KRNIC) 3
+      - 美国 CloudFlare节点
+      - 俄罗斯 V2CROSS.COM
       - 卢森堡 root.lu数据中心
-      - 韩国 互联网络信息中心(KRNIC) 4
-      - 法国 V2CROSS.COM
-      - 美国 华盛顿Cogent通信公司
-      - 美国 V2CROSS.COM 2
-      - 香港 阿里云
-      - 中国 阿里云
-      - 香港 阿里云 2
+      - 西班牙 V2CROSS.COM
+      - 美国 V2CROSS.COM
       - 西班牙 V2CROSS.COM 2
-      - 江苏省 移动 2
-      - 德国 V2CROSS.COM 2
-      - 西班牙 V2CROSS.COM 3
-      - 香港 电讯盈科有限公司
-      - 美国 V2CROSS.COM 3
-      - 香港 阿里云 3
-      - 香港 阿里云 4
-      - 德国 V2CROSS.COM 3
+      - 立陶宛 NGS新闻
+      - 美国 V2CROSS.COM 2
+      - 江苏省 移动
+      - 卢森堡 root.lu数据中心 2
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 德国 V2CROSS.COM
-      - 美国加利福尼亚州圣何塞 xTom
-      - 西班牙 V2CROSS.COM
-      - 韩国 互联网络信息中心(KRNIC)
-      - 美国 阿里云
-      - 美国 V2CROSS.COM
-      - 韩国 互联网络信息中心(KRNIC) 2
-      - 江苏省 移动
       - 英国 V2CROSS.COM
-      - 韩国 互联网络信息中心(KRNIC) 3
+      - 美国 CloudFlare节点
+      - 俄罗斯 V2CROSS.COM
       - 卢森堡 root.lu数据中心
-      - 韩国 互联网络信息中心(KRNIC) 4
-      - 法国 V2CROSS.COM
-      - 美国 华盛顿Cogent通信公司
-      - 美国 V2CROSS.COM 2
-      - 香港 阿里云
-      - 中国 阿里云
-      - 香港 阿里云 2
+      - 西班牙 V2CROSS.COM
+      - 美国 V2CROSS.COM
       - 西班牙 V2CROSS.COM 2
-      - 江苏省 移动 2
-      - 德国 V2CROSS.COM 2
-      - 西班牙 V2CROSS.COM 3
-      - 香港 电讯盈科有限公司
-      - 美国 V2CROSS.COM 3
-      - 香港 阿里云 3
-      - 香港 阿里云 4
-      - 德国 V2CROSS.COM 3
+      - 立陶宛 NGS新闻
+      - 美国 V2CROSS.COM 2
+      - 江苏省 移动
+      - 卢森堡 root.lu数据中心 2
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -148,140 +84,71 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 德国 V2CROSS.COM
-      - 美国加利福尼亚州圣何塞 xTom
-      - 西班牙 V2CROSS.COM
-      - 韩国 互联网络信息中心(KRNIC)
-      - 美国 阿里云
-      - 美国 V2CROSS.COM
-      - 韩国 互联网络信息中心(KRNIC) 2
-      - 江苏省 移动
       - 英国 V2CROSS.COM
-      - 韩国 互联网络信息中心(KRNIC) 3
+      - 美国 CloudFlare节点
+      - 俄罗斯 V2CROSS.COM
       - 卢森堡 root.lu数据中心
-      - 韩国 互联网络信息中心(KRNIC) 4
-      - 法国 V2CROSS.COM
-      - 美国 华盛顿Cogent通信公司
-      - 美国 V2CROSS.COM 2
-      - 香港 阿里云
-      - 中国 阿里云
-      - 香港 阿里云 2
+      - 西班牙 V2CROSS.COM
+      - 美国 V2CROSS.COM
       - 西班牙 V2CROSS.COM 2
-      - 江苏省 移动 2
-      - 德国 V2CROSS.COM 2
-      - 西班牙 V2CROSS.COM 3
-      - 香港 电讯盈科有限公司
-      - 美国 V2CROSS.COM 3
-      - 香港 阿里云 3
-      - 香港 阿里云 4
-      - 德国 V2CROSS.COM 3
+      - 立陶宛 NGS新闻
+      - 美国 V2CROSS.COM 2
+      - 江苏省 移动
+      - 卢森堡 root.lu数据中心 2
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 香港 阿里云
-      - 香港 阿里云 2
-      - 香港 电讯盈科有限公司
-      - 香港 阿里云 3
-      - 香港 阿里云 4
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 德国 V2CROSS.COM
-      - 美国加利福尼亚州圣何塞 xTom
-      - 西班牙 V2CROSS.COM
-      - 韩国 互联网络信息中心(KRNIC)
-      - 美国 阿里云
-      - 美国 V2CROSS.COM
-      - 韩国 互联网络信息中心(KRNIC) 2
-      - 江苏省 移动
       - 英国 V2CROSS.COM
-      - 韩国 互联网络信息中心(KRNIC) 3
+      - 美国 CloudFlare节点
+      - 俄罗斯 V2CROSS.COM
       - 卢森堡 root.lu数据中心
-      - 韩国 互联网络信息中心(KRNIC) 4
-      - 法国 V2CROSS.COM
-      - 美国 华盛顿Cogent通信公司
-      - 美国 V2CROSS.COM 2
-      - 香港 阿里云
-      - 中国 阿里云
-      - 香港 阿里云 2
+      - 西班牙 V2CROSS.COM
+      - 美国 V2CROSS.COM
       - 西班牙 V2CROSS.COM 2
-      - 江苏省 移动 2
-      - 德国 V2CROSS.COM 2
-      - 西班牙 V2CROSS.COM 3
-      - 香港 电讯盈科有限公司
-      - 美国 V2CROSS.COM 3
-      - 香港 阿里云 3
-      - 香港 阿里云 4
-      - 德国 V2CROSS.COM 3
+      - 立陶宛 NGS新闻
+      - 美国 V2CROSS.COM 2
+      - 江苏省 移动
+      - 卢森堡 root.lu数据中心 2
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 德国 V2CROSS.COM
-      - 美国加利福尼亚州圣何塞 xTom
-      - 西班牙 V2CROSS.COM
-      - 韩国 互联网络信息中心(KRNIC)
-      - 美国 阿里云
-      - 美国 V2CROSS.COM
-      - 韩国 互联网络信息中心(KRNIC) 2
-      - 江苏省 移动
       - 英国 V2CROSS.COM
-      - 韩国 互联网络信息中心(KRNIC) 3
+      - 美国 CloudFlare节点
+      - 俄罗斯 V2CROSS.COM
       - 卢森堡 root.lu数据中心
-      - 韩国 互联网络信息中心(KRNIC) 4
-      - 法国 V2CROSS.COM
-      - 美国 华盛顿Cogent通信公司
-      - 美国 V2CROSS.COM 2
-      - 香港 阿里云
-      - 中国 阿里云
-      - 香港 阿里云 2
+      - 西班牙 V2CROSS.COM
+      - 美国 V2CROSS.COM
       - 西班牙 V2CROSS.COM 2
-      - 江苏省 移动 2
-      - 德国 V2CROSS.COM 2
-      - 西班牙 V2CROSS.COM 3
-      - 香港 电讯盈科有限公司
-      - 美国 V2CROSS.COM 3
-      - 香港 阿里云 3
-      - 香港 阿里云 4
-      - 德国 V2CROSS.COM 3
+      - 立陶宛 NGS新闻
+      - 美国 V2CROSS.COM 2
+      - 江苏省 移动
+      - 卢森堡 root.lu数据中心 2
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 德国 V2CROSS.COM
-      - 美国加利福尼亚州圣何塞 xTom
-      - 西班牙 V2CROSS.COM
-      - 韩国 互联网络信息中心(KRNIC)
-      - 美国 阿里云
-      - 美国 V2CROSS.COM
-      - 韩国 互联网络信息中心(KRNIC) 2
-      - 江苏省 移动
       - 英国 V2CROSS.COM
-      - 韩国 互联网络信息中心(KRNIC) 3
+      - 美国 CloudFlare节点
+      - 俄罗斯 V2CROSS.COM
       - 卢森堡 root.lu数据中心
-      - 韩国 互联网络信息中心(KRNIC) 4
-      - 法国 V2CROSS.COM
-      - 美国 华盛顿Cogent通信公司
-      - 美国 V2CROSS.COM 2
-      - 香港 阿里云
-      - 中国 阿里云
-      - 香港 阿里云 2
+      - 西班牙 V2CROSS.COM
+      - 美国 V2CROSS.COM
       - 西班牙 V2CROSS.COM 2
-      - 江苏省 移动 2
-      - 德国 V2CROSS.COM 2
-      - 西班牙 V2CROSS.COM 3
-      - 香港 电讯盈科有限公司
-      - 美国 V2CROSS.COM 3
-      - 香港 阿里云 3
-      - 香港 阿里云 4
-      - 德国 V2CROSS.COM 3
+      - 立陶宛 NGS新闻
+      - 美国 V2CROSS.COM 2
+      - 江苏省 移动
+      - 卢森堡 root.lu数据中心 2
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -297,33 +164,17 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 德国 V2CROSS.COM
-      - 美国加利福尼亚州圣何塞 xTom
-      - 西班牙 V2CROSS.COM
-      - 韩国 互联网络信息中心(KRNIC)
-      - 美国 阿里云
-      - 美国 V2CROSS.COM
-      - 韩国 互联网络信息中心(KRNIC) 2
-      - 江苏省 移动
       - 英国 V2CROSS.COM
-      - 韩国 互联网络信息中心(KRNIC) 3
+      - 美国 CloudFlare节点
+      - 俄罗斯 V2CROSS.COM
       - 卢森堡 root.lu数据中心
-      - 韩国 互联网络信息中心(KRNIC) 4
-      - 法国 V2CROSS.COM
-      - 美国 华盛顿Cogent通信公司
-      - 美国 V2CROSS.COM 2
-      - 香港 阿里云
-      - 中国 阿里云
-      - 香港 阿里云 2
+      - 西班牙 V2CROSS.COM
+      - 美国 V2CROSS.COM
       - 西班牙 V2CROSS.COM 2
-      - 江苏省 移动 2
-      - 德国 V2CROSS.COM 2
-      - 西班牙 V2CROSS.COM 3
-      - 香港 电讯盈科有限公司
-      - 美国 V2CROSS.COM 3
-      - 香港 阿里云 3
-      - 香港 阿里云 4
-      - 德国 V2CROSS.COM 3
+      - 立陶宛 NGS新闻
+      - 美国 V2CROSS.COM 2
+      - 江苏省 移动
+      - 卢森堡 root.lu数据中心 2
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
