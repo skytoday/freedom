@@ -5,63 +5,59 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 美国 V2CROSS.COM, server: 192.0.54.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, udp: true}
-  - {name: 俄罗斯 V2CROSS.COM, server: 193.9.49.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, udp: true}
-  - {name: 俄罗斯 V2CROSS.COM 2, server: 185.59.218.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, udp: true}
-  - {name: 加拿大 V2CROSS.COM, server: 205.233.181.3, port: 443, type: vmess, uuid: de94cc0a-0592-4969-b1fc-97ea8f0ea0b3, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /us.kkp.me.eu.org/aa, headers: {Host: farid.1.berozha.ir}}, udp: true}
-  - {name: 美国 CloudFlare节点, server: v35.emoyes.top, port: 443, type: vmess, uuid: a78fc14e-4e8b-4fc0-8cab-86fd81c583ca, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: v35.emoyes.top}}, udp: true}
-  - {name: 美国 CloudFlare节点 2, server: cproxies.com, port: 443, type: vmess, uuid: de94cc0a-0592-4969-b1fc-97ea8f0ea0b3, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /us.kkp.me.eu.org/aa, headers: {Host: farid.1.berozha.ir}}, udp: true}
-  - {name: 香港 电讯盈科有限公司, server: v10.heduian.link, port: 30807, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /oooo, headers: {Host: baidu.com}}, udp: true}
-  - {name: 英国 V2CROSS.COM, server: 194.36.55.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, udp: true}
-  - {name: 江苏省 移动, server: v29.heduian.link, port: 30829, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /oooo, headers: {Host: ocbc.com}}, udp: true}
-  - {name: 美国 V2CROSS.COM 2, server: 192.200.160.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, udp: true}
+  - {name: 英国 V2CROSS.COM, server: 185.156.19.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, udp: true}
+  - {name: 江苏省 移动, server: v9.heduian.link, port: 30809, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /oooo, headers: {Host: baidu.com}}, udp: true}
+  - {name: 保加利亚 V2CROSS.COM, server: 185.176.26.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, udp: true}
+  - {name: 美国 V2CROSS.COM, server: 192.0.63.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, udp: true}
+  - {name: 美国 V2CROSS.COM 2, server: 199.34.229.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, udp: true}
+  - {name: 法国 V2CROSS.COM, server: 185.7.240.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, udp: true}
+  - {name: 西班牙 V2CROSS.COM, server: 185.251.80.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, udp: true}
+  - {name: 香港 Amazon数据中心, server: 18.162.224.234, port: 16888, type: ss, cipher: aes-256-gcm, password: amazongreatvpn, udp: true}
+  - {name: 卢森堡 root.lu数据中心, server: 188.42.88.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 美国 V2CROSS.COM
-      - 俄罗斯 V2CROSS.COM
-      - 俄罗斯 V2CROSS.COM 2
-      - 加拿大 V2CROSS.COM
-      - 美国 CloudFlare节点
-      - 美国 CloudFlare节点 2
-      - 香港 电讯盈科有限公司
       - 英国 V2CROSS.COM
       - 江苏省 移动
+      - 保加利亚 V2CROSS.COM
+      - 美国 V2CROSS.COM
       - 美国 V2CROSS.COM 2
+      - 法国 V2CROSS.COM
+      - 西班牙 V2CROSS.COM
+      - 香港 Amazon数据中心
+      - 卢森堡 root.lu数据中心
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 美国 V2CROSS.COM
-      - 俄罗斯 V2CROSS.COM
-      - 俄罗斯 V2CROSS.COM 2
-      - 加拿大 V2CROSS.COM
-      - 美国 CloudFlare节点
-      - 美国 CloudFlare节点 2
-      - 香港 电讯盈科有限公司
       - 英国 V2CROSS.COM
       - 江苏省 移动
+      - 保加利亚 V2CROSS.COM
+      - 美国 V2CROSS.COM
       - 美国 V2CROSS.COM 2
+      - 法国 V2CROSS.COM
+      - 西班牙 V2CROSS.COM
+      - 香港 Amazon数据中心
+      - 卢森堡 root.lu数据中心
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 美国 V2CROSS.COM
-      - 俄罗斯 V2CROSS.COM
-      - 俄罗斯 V2CROSS.COM 2
-      - 加拿大 V2CROSS.COM
-      - 美国 CloudFlare节点
-      - 美国 CloudFlare节点 2
-      - 香港 电讯盈科有限公司
       - 英国 V2CROSS.COM
       - 江苏省 移动
+      - 保加利亚 V2CROSS.COM
+      - 美国 V2CROSS.COM
       - 美国 V2CROSS.COM 2
+      - 法国 V2CROSS.COM
+      - 西班牙 V2CROSS.COM
+      - 香港 Amazon数据中心
+      - 卢森堡 root.lu数据中心
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -80,68 +76,64 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 美国 V2CROSS.COM
-      - 俄罗斯 V2CROSS.COM
-      - 俄罗斯 V2CROSS.COM 2
-      - 加拿大 V2CROSS.COM
-      - 美国 CloudFlare节点
-      - 美国 CloudFlare节点 2
-      - 香港 电讯盈科有限公司
       - 英国 V2CROSS.COM
       - 江苏省 移动
+      - 保加利亚 V2CROSS.COM
+      - 美国 V2CROSS.COM
       - 美国 V2CROSS.COM 2
+      - 法国 V2CROSS.COM
+      - 西班牙 V2CROSS.COM
+      - 香港 Amazon数据中心
+      - 卢森堡 root.lu数据中心
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 香港 电讯盈科有限公司
+      - 香港 Amazon数据中心
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 美国 V2CROSS.COM
-      - 俄罗斯 V2CROSS.COM
-      - 俄罗斯 V2CROSS.COM 2
-      - 加拿大 V2CROSS.COM
-      - 美国 CloudFlare节点
-      - 美国 CloudFlare节点 2
-      - 香港 电讯盈科有限公司
       - 英国 V2CROSS.COM
       - 江苏省 移动
+      - 保加利亚 V2CROSS.COM
+      - 美国 V2CROSS.COM
       - 美国 V2CROSS.COM 2
+      - 法国 V2CROSS.COM
+      - 西班牙 V2CROSS.COM
+      - 香港 Amazon数据中心
+      - 卢森堡 root.lu数据中心
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 美国 V2CROSS.COM
-      - 俄罗斯 V2CROSS.COM
-      - 俄罗斯 V2CROSS.COM 2
-      - 加拿大 V2CROSS.COM
-      - 美国 CloudFlare节点
-      - 美国 CloudFlare节点 2
-      - 香港 电讯盈科有限公司
       - 英国 V2CROSS.COM
       - 江苏省 移动
+      - 保加利亚 V2CROSS.COM
+      - 美国 V2CROSS.COM
       - 美国 V2CROSS.COM 2
+      - 法国 V2CROSS.COM
+      - 西班牙 V2CROSS.COM
+      - 香港 Amazon数据中心
+      - 卢森堡 root.lu数据中心
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 美国 V2CROSS.COM
-      - 俄罗斯 V2CROSS.COM
-      - 俄罗斯 V2CROSS.COM 2
-      - 加拿大 V2CROSS.COM
-      - 美国 CloudFlare节点
-      - 美国 CloudFlare节点 2
-      - 香港 电讯盈科有限公司
       - 英国 V2CROSS.COM
       - 江苏省 移动
+      - 保加利亚 V2CROSS.COM
+      - 美国 V2CROSS.COM
       - 美国 V2CROSS.COM 2
+      - 法国 V2CROSS.COM
+      - 西班牙 V2CROSS.COM
+      - 香港 Amazon数据中心
+      - 卢森堡 root.lu数据中心
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -157,16 +149,15 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 美国 V2CROSS.COM
-      - 俄罗斯 V2CROSS.COM
-      - 俄罗斯 V2CROSS.COM 2
-      - 加拿大 V2CROSS.COM
-      - 美国 CloudFlare节点
-      - 美国 CloudFlare节点 2
-      - 香港 电讯盈科有限公司
       - 英国 V2CROSS.COM
       - 江苏省 移动
+      - 保加利亚 V2CROSS.COM
+      - 美国 V2CROSS.COM
       - 美国 V2CROSS.COM 2
+      - 法国 V2CROSS.COM
+      - 西班牙 V2CROSS.COM
+      - 香港 Amazon数据中心
+      - 卢森堡 root.lu数据中心
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
