@@ -5,67 +5,63 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 美国 V2CROSS.COM, server: 192.0.63.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, udp: true}
-  - {name: 法国 V2CROSS.COM, server: 185.7.240.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, udp: true}
-  - {name: 香港 电讯盈科有限公司, server: hkt.gotochinatown.net, port: 80, type: vmess, uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: hkt.gotochinatown.net}}, udp: true}
   - {name: 俄罗斯 V2CROSS.COM, server: 185.174.138.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, udp: true}
-  - {name: 英国 V2CROSS.COM, server: 188.244.122.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, udp: true}
-  - {name: 美国 CloudFlare节点, server: v35.emoyes.top, port: 443, type: vmess, uuid: a78fc14e-4e8b-4fc0-8cab-86fd81c583ca, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: v35.emoyes.top}}, udp: true}
-  - {name: 美国 V2CROSS.COM 2, server: 199.34.230.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, udp: true}
-  - {name: 俄罗斯 V2CROSS.COM 2, server: 185.59.218.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, udp: true}
-  - {name: 立陶宛 V2CROSS.COM, server: 185.148.107.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, udp: true}
-  - {name: 美国 V2CROSS.COM 3, server: 209.94.90.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, udp: true}
-  - {name: 德国 V2CROSS.COM, server: 185.16.110.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, udp: true}
+  - {name: 美国 CloudFlare节点, server: v34.emoyes.top, port: 8443, type: vmess, uuid: a78fc14e-4e8b-4fc0-8cab-86fd81c583ca, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: v34.emoyes.top}}, udp: true}
+  - {name: 德国 V2CROSS.COM, server: 84.200.91.228, port: 1080, type: ss, cipher: chacha20-ietf-poly1305, password: 5ZQh4pssSk4aK1JG1XhBRg, udp: true}
+  - {name: 英国 V2CROSS.COM, server: 185.156.19.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, udp: true}
+  - {name: 奥地利 V2CROSS.COM, server: 212.183.88.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, udp: true}
+  - {name: 江苏省 移动, server: v29.heduian.link, port: 30829, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /oooo, headers: {Host: ocbc.com}}, udp: true}
+  - {name: 西班牙 V2CROSS.COM, server: 185.251.83.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, udp: true}
+  - {name: 卢森堡 root.lu数据中心, server: 188.42.89.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, udp: true}
+  - {name: 德国 V2CROSS.COM 2, server: 185.16.110.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, udp: true}
+  - {name: 立陶宛 V2CROSS.COM, server: 185.148.106.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 美国 V2CROSS.COM
-      - 法国 V2CROSS.COM
-      - 香港 电讯盈科有限公司
       - 俄罗斯 V2CROSS.COM
-      - 英国 V2CROSS.COM
       - 美国 CloudFlare节点
-      - 美国 V2CROSS.COM 2
-      - 俄罗斯 V2CROSS.COM 2
-      - 立陶宛 V2CROSS.COM
-      - 美国 V2CROSS.COM 3
       - 德国 V2CROSS.COM
+      - 英国 V2CROSS.COM
+      - 奥地利 V2CROSS.COM
+      - 江苏省 移动
+      - 西班牙 V2CROSS.COM
+      - 卢森堡 root.lu数据中心
+      - 德国 V2CROSS.COM 2
+      - 立陶宛 V2CROSS.COM
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 美国 V2CROSS.COM
-      - 法国 V2CROSS.COM
-      - 香港 电讯盈科有限公司
       - 俄罗斯 V2CROSS.COM
-      - 英国 V2CROSS.COM
       - 美国 CloudFlare节点
-      - 美国 V2CROSS.COM 2
-      - 俄罗斯 V2CROSS.COM 2
-      - 立陶宛 V2CROSS.COM
-      - 美国 V2CROSS.COM 3
       - 德国 V2CROSS.COM
+      - 英国 V2CROSS.COM
+      - 奥地利 V2CROSS.COM
+      - 江苏省 移动
+      - 西班牙 V2CROSS.COM
+      - 卢森堡 root.lu数据中心
+      - 德国 V2CROSS.COM 2
+      - 立陶宛 V2CROSS.COM
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 美国 V2CROSS.COM
-      - 法国 V2CROSS.COM
-      - 香港 电讯盈科有限公司
       - 俄罗斯 V2CROSS.COM
-      - 英国 V2CROSS.COM
       - 美国 CloudFlare节点
-      - 美国 V2CROSS.COM 2
-      - 俄罗斯 V2CROSS.COM 2
-      - 立陶宛 V2CROSS.COM
-      - 美国 V2CROSS.COM 3
       - 德国 V2CROSS.COM
+      - 英国 V2CROSS.COM
+      - 奥地利 V2CROSS.COM
+      - 江苏省 移动
+      - 西班牙 V2CROSS.COM
+      - 卢森堡 root.lu数据中心
+      - 德国 V2CROSS.COM 2
+      - 立陶宛 V2CROSS.COM
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -84,72 +80,67 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 美国 V2CROSS.COM
-      - 法国 V2CROSS.COM
-      - 香港 电讯盈科有限公司
       - 俄罗斯 V2CROSS.COM
-      - 英国 V2CROSS.COM
       - 美国 CloudFlare节点
-      - 美国 V2CROSS.COM 2
-      - 俄罗斯 V2CROSS.COM 2
-      - 立陶宛 V2CROSS.COM
-      - 美国 V2CROSS.COM 3
       - 德国 V2CROSS.COM
+      - 英国 V2CROSS.COM
+      - 奥地利 V2CROSS.COM
+      - 江苏省 移动
+      - 西班牙 V2CROSS.COM
+      - 卢森堡 root.lu数据中心
+      - 德国 V2CROSS.COM 2
+      - 立陶宛 V2CROSS.COM
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 香港 电讯盈科有限公司
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 美国 V2CROSS.COM
-      - 法国 V2CROSS.COM
-      - 香港 电讯盈科有限公司
       - 俄罗斯 V2CROSS.COM
-      - 英国 V2CROSS.COM
       - 美国 CloudFlare节点
-      - 美国 V2CROSS.COM 2
-      - 俄罗斯 V2CROSS.COM 2
-      - 立陶宛 V2CROSS.COM
-      - 美国 V2CROSS.COM 3
       - 德国 V2CROSS.COM
+      - 英国 V2CROSS.COM
+      - 奥地利 V2CROSS.COM
+      - 江苏省 移动
+      - 西班牙 V2CROSS.COM
+      - 卢森堡 root.lu数据中心
+      - 德国 V2CROSS.COM 2
+      - 立陶宛 V2CROSS.COM
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 美国 V2CROSS.COM
-      - 法国 V2CROSS.COM
-      - 香港 电讯盈科有限公司
       - 俄罗斯 V2CROSS.COM
-      - 英国 V2CROSS.COM
       - 美国 CloudFlare节点
-      - 美国 V2CROSS.COM 2
-      - 俄罗斯 V2CROSS.COM 2
-      - 立陶宛 V2CROSS.COM
-      - 美国 V2CROSS.COM 3
       - 德国 V2CROSS.COM
+      - 英国 V2CROSS.COM
+      - 奥地利 V2CROSS.COM
+      - 江苏省 移动
+      - 西班牙 V2CROSS.COM
+      - 卢森堡 root.lu数据中心
+      - 德国 V2CROSS.COM 2
+      - 立陶宛 V2CROSS.COM
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 美国 V2CROSS.COM
-      - 法国 V2CROSS.COM
-      - 香港 电讯盈科有限公司
       - 俄罗斯 V2CROSS.COM
-      - 英国 V2CROSS.COM
       - 美国 CloudFlare节点
-      - 美国 V2CROSS.COM 2
-      - 俄罗斯 V2CROSS.COM 2
-      - 立陶宛 V2CROSS.COM
-      - 美国 V2CROSS.COM 3
       - 德国 V2CROSS.COM
+      - 英国 V2CROSS.COM
+      - 奥地利 V2CROSS.COM
+      - 江苏省 移动
+      - 西班牙 V2CROSS.COM
+      - 卢森堡 root.lu数据中心
+      - 德国 V2CROSS.COM 2
+      - 立陶宛 V2CROSS.COM
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -165,17 +156,16 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 美国 V2CROSS.COM
-      - 法国 V2CROSS.COM
-      - 香港 电讯盈科有限公司
       - 俄罗斯 V2CROSS.COM
-      - 英国 V2CROSS.COM
       - 美国 CloudFlare节点
-      - 美国 V2CROSS.COM 2
-      - 俄罗斯 V2CROSS.COM 2
-      - 立陶宛 V2CROSS.COM
-      - 美国 V2CROSS.COM 3
       - 德国 V2CROSS.COM
+      - 英国 V2CROSS.COM
+      - 奥地利 V2CROSS.COM
+      - 江苏省 移动
+      - 西班牙 V2CROSS.COM
+      - 卢森堡 root.lu数据中心
+      - 德国 V2CROSS.COM 2
+      - 立陶宛 V2CROSS.COM
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
