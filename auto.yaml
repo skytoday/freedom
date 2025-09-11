@@ -5,67 +5,71 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 美国 V2CROSS.COM, server: vall.codefyinc.com, port: 443, type: vmess, uuid: 606ece17-7279-4a43-b879-f8502103de8f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /vmessws, headers: {Host: vall.codefyinc.com}}, udp: true}
-  - {name: 美国 V2CROSS.COM 2, server: 199.34.230.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, udp: true}
+  - {name: 江苏省 移动, server: v35.heduian.link, port: 30835, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /oooo, headers: {Host: v35.heduian.link}}, udp: true}
+  - {name: 立陶宛 NGS新闻, server: 185.176.24.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, udp: true}
+  - {name: 美国 CloudFlare节点, server: cproxies.com, port: 443, type: vmess, uuid: de94cc0a-0592-4969-b1fc-97ea8f0ea0b3, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /us.kkp.me.eu.org/aa, headers: {Host: farid.1.berozha.ir}}, udp: true}
   - {name: 香港 电讯盈科有限公司, server: v10.heduian.link, port: 30807, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /oooo, headers: {Host: baidu.com}}, udp: true}
   - {name: 荷兰 V2CROSS.COM, server: 188.164.248.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, udp: true}
-  - {name: 英国 V2CROSS.COM, server: 195.26.229.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, udp: true}
-  - {name: 卢森堡 root.lu数据中心, server: 188.42.88.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, udp: true}
-  - {name: 德国 V2CROSS.COM, server: 185.245.107.61, port: 2222, type: ss, cipher: chacha20-ietf-poly1305, password: qscavF5UviIL-8V-E4raBA, udp: true}
-  - {name: 美国 V2CROSS.COM 3, server: 209.94.90.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, udp: true}
-  - {name: 江苏省 移动, server: v9.heduian.link, port: 30809, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /oooo, headers: {Host: baidu.com}}, udp: true}
-  - {name: 美国 V2CROSS.COM 4, server: 192.200.160.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, udp: true}
-  - {name: 立陶宛 V2CROSS.COM, server: 185.148.107.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, udp: true}
+  - {name: 美国 V2CROSS.COM, server: 192.0.54.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, udp: true}
+  - {name: 美国 V2CROSS.COM 2, server: 199.181.197.60, port: 443, type: vmess, uuid: de94cc0a-0592-4969-b1fc-97ea8f0ea0b3, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /us.kkp.me.eu.org/aa, headers: {Host: farid.1.berozha.ir}}, udp: true}
+  - {name: 江苏省 移动 2, server: v9.heduian.link, port: 30809, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /oooo, headers: {Host: baidu.com}}, udp: true}
+  - {name: 英国 V2CROSS.COM, server: 188.244.122.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, udp: true}
+  - {name: 美国 V2CROSS.COM 3, server: 199.34.230.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, udp: true}
+  - {name: 俄罗斯 V2CROSS.COM, server: 185.174.138.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, udp: true}
+  - {name: 香港 电讯盈科有限公司 2, server: hkt.gotochinatown.net, port: 80, type: vmess, uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: hkt.gotochinatown.net}}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 美国 V2CROSS.COM
-      - 美国 V2CROSS.COM 2
+      - 江苏省 移动
+      - 立陶宛 NGS新闻
+      - 美国 CloudFlare节点
       - 香港 电讯盈科有限公司
       - 荷兰 V2CROSS.COM
+      - 美国 V2CROSS.COM
+      - 美国 V2CROSS.COM 2
+      - 江苏省 移动 2
       - 英国 V2CROSS.COM
-      - 卢森堡 root.lu数据中心
-      - 德国 V2CROSS.COM
       - 美国 V2CROSS.COM 3
-      - 江苏省 移动
-      - 美国 V2CROSS.COM 4
-      - 立陶宛 V2CROSS.COM
+      - 俄罗斯 V2CROSS.COM
+      - 香港 电讯盈科有限公司 2
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 美国 V2CROSS.COM
-      - 美国 V2CROSS.COM 2
+      - 江苏省 移动
+      - 立陶宛 NGS新闻
+      - 美国 CloudFlare节点
       - 香港 电讯盈科有限公司
       - 荷兰 V2CROSS.COM
+      - 美国 V2CROSS.COM
+      - 美国 V2CROSS.COM 2
+      - 江苏省 移动 2
       - 英国 V2CROSS.COM
-      - 卢森堡 root.lu数据中心
-      - 德国 V2CROSS.COM
       - 美国 V2CROSS.COM 3
-      - 江苏省 移动
-      - 美国 V2CROSS.COM 4
-      - 立陶宛 V2CROSS.COM
+      - 俄罗斯 V2CROSS.COM
+      - 香港 电讯盈科有限公司 2
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 美国 V2CROSS.COM
-      - 美国 V2CROSS.COM 2
+      - 江苏省 移动
+      - 立陶宛 NGS新闻
+      - 美国 CloudFlare节点
       - 香港 电讯盈科有限公司
       - 荷兰 V2CROSS.COM
+      - 美国 V2CROSS.COM
+      - 美国 V2CROSS.COM 2
+      - 江苏省 移动 2
       - 英国 V2CROSS.COM
-      - 卢森堡 root.lu数据中心
-      - 德国 V2CROSS.COM
       - 美国 V2CROSS.COM 3
-      - 江苏省 移动
-      - 美国 V2CROSS.COM 4
-      - 立陶宛 V2CROSS.COM
+      - 俄罗斯 V2CROSS.COM
+      - 香港 电讯盈科有限公司 2
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -84,72 +88,77 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 美国 V2CROSS.COM
-      - 美国 V2CROSS.COM 2
+      - 江苏省 移动
+      - 立陶宛 NGS新闻
+      - 美国 CloudFlare节点
       - 香港 电讯盈科有限公司
       - 荷兰 V2CROSS.COM
+      - 美国 V2CROSS.COM
+      - 美国 V2CROSS.COM 2
+      - 江苏省 移动 2
       - 英国 V2CROSS.COM
-      - 卢森堡 root.lu数据中心
-      - 德国 V2CROSS.COM
       - 美国 V2CROSS.COM 3
-      - 江苏省 移动
-      - 美国 V2CROSS.COM 4
-      - 立陶宛 V2CROSS.COM
+      - 俄罗斯 V2CROSS.COM
+      - 香港 电讯盈科有限公司 2
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
       - 香港 电讯盈科有限公司
+      - 香港 电讯盈科有限公司 2
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 美国 V2CROSS.COM
-      - 美国 V2CROSS.COM 2
+      - 江苏省 移动
+      - 立陶宛 NGS新闻
+      - 美国 CloudFlare节点
       - 香港 电讯盈科有限公司
       - 荷兰 V2CROSS.COM
+      - 美国 V2CROSS.COM
+      - 美国 V2CROSS.COM 2
+      - 江苏省 移动 2
       - 英国 V2CROSS.COM
-      - 卢森堡 root.lu数据中心
-      - 德国 V2CROSS.COM
       - 美国 V2CROSS.COM 3
-      - 江苏省 移动
-      - 美国 V2CROSS.COM 4
-      - 立陶宛 V2CROSS.COM
+      - 俄罗斯 V2CROSS.COM
+      - 香港 电讯盈科有限公司 2
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 美国 V2CROSS.COM
-      - 美国 V2CROSS.COM 2
+      - 江苏省 移动
+      - 立陶宛 NGS新闻
+      - 美国 CloudFlare节点
       - 香港 电讯盈科有限公司
       - 荷兰 V2CROSS.COM
+      - 美国 V2CROSS.COM
+      - 美国 V2CROSS.COM 2
+      - 江苏省 移动 2
       - 英国 V2CROSS.COM
-      - 卢森堡 root.lu数据中心
-      - 德国 V2CROSS.COM
       - 美国 V2CROSS.COM 3
-      - 江苏省 移动
-      - 美国 V2CROSS.COM 4
-      - 立陶宛 V2CROSS.COM
+      - 俄罗斯 V2CROSS.COM
+      - 香港 电讯盈科有限公司 2
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 美国 V2CROSS.COM
-      - 美国 V2CROSS.COM 2
+      - 江苏省 移动
+      - 立陶宛 NGS新闻
+      - 美国 CloudFlare节点
       - 香港 电讯盈科有限公司
       - 荷兰 V2CROSS.COM
+      - 美国 V2CROSS.COM
+      - 美国 V2CROSS.COM 2
+      - 江苏省 移动 2
       - 英国 V2CROSS.COM
-      - 卢森堡 root.lu数据中心
-      - 德国 V2CROSS.COM
       - 美国 V2CROSS.COM 3
-      - 江苏省 移动
-      - 美国 V2CROSS.COM 4
-      - 立陶宛 V2CROSS.COM
+      - 俄罗斯 V2CROSS.COM
+      - 香港 电讯盈科有限公司 2
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -165,17 +174,18 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 美国 V2CROSS.COM
-      - 美国 V2CROSS.COM 2
+      - 江苏省 移动
+      - 立陶宛 NGS新闻
+      - 美国 CloudFlare节点
       - 香港 电讯盈科有限公司
       - 荷兰 V2CROSS.COM
+      - 美国 V2CROSS.COM
+      - 美国 V2CROSS.COM 2
+      - 江苏省 移动 2
       - 英国 V2CROSS.COM
-      - 卢森堡 root.lu数据中心
-      - 德国 V2CROSS.COM
       - 美国 V2CROSS.COM 3
-      - 江苏省 移动
-      - 美国 V2CROSS.COM 4
-      - 立陶宛 V2CROSS.COM
+      - 俄罗斯 V2CROSS.COM
+      - 香港 电讯盈科有限公司 2
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
