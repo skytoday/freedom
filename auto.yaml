@@ -5,83 +5,75 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 美国 V2CROSS.COM, server: 192.200.160.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, udp: true}
-  - {name: 德国 V2CROSS.COM, server: 195.13.44.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, udp: true}
+  - {name: 俄罗斯 V2CROSS.COM, server: 193.124.224.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, udp: true}
+  - {name: 西班牙 V2CROSS.COM, server: 185.238.228.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, udp: true}
+  - {name: 香港 特别行政区, server: 103.104.247.47, port: 8080, type: ss, cipher: chacha20-ietf-poly1305, password: oZIoA69Q8yhcQV8ka3Pa3A, udp: true}
+  - {name: 北美地区 V2CROSS.COM, server: 198.62.62.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, udp: true}
+  - {name: 英国 V2CROSS.COM, server: 195.26.229.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, udp: true}
+  - {name: 俄罗斯 V2CROSS.COM 2, server: 185.174.138.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, udp: true}
+  - {name: 江苏省 移动, server: v9.heduian.link, port: 30809, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /oooo, headers: {Host: baidu.com}}, udp: true}
+  - {name: 德国 V2CROSS.COM, server: 185.16.110.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, udp: true}
+  - {name: 美国 V2CROSS.COM, server: 192.0.63.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, udp: true}
+  - {name: 美国 V2CROSS.COM 2, server: serkat.org, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 1, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: linkvws, headers: {Host: serkat.org}}, udp: true}
+  - {name: 美国 V2CROSS.COM 3, server: 199.34.230.87, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, udp: true}
   - {name: 卢森堡 root.lu数据中心, server: 188.42.145.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, udp: true}
-  - {name: 法国 国际航空电讯集团公司(SITA), server: jamekk.org, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 1, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: linkvws, headers: {Host: jamekk.org}}, udp: true}
-  - {name: 美国 V2CROSS.COM 2, server: 199.68.156.87, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, udp: true}
-  - {name: 美国 V2CROSS.COM 3, server: 209.46.30.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, udp: true}
-  - {name: 法国 国际航空电讯集团公司(SITA) 2, server: 57.129.64.238, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /linkvws, headers: {Host: kapelleng.com}}, udp: true}
-  - {name: 美国 V2CROSS.COM 4, server: 192.0.63.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, udp: true}
-  - {name: 英国 V2CROSS.COM, server: 195.26.229.87, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, udp: true}
-  - {name: 俄罗斯 V2CROSS.COM, server: 185.59.218.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, udp: true}
-  - {name: 德国 V2CROSS.COM 2, server: 195.13.44.87, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, udp: true}
-  - {name: 西班牙 V2CROSS.COM, server: 185.251.80.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, udp: true}
-  - {name: 西班牙 V2CROSS.COM 2, server: 185.251.81.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, udp: true}
-  - {name: 立陶宛 V2CROSS.COM, server: 185.148.105.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, udp: true}
-  - {name: 美国 V2CROSS.COM 5, server: 199.34.230.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, udp: true}
+  - {name: 西班牙 V2CROSS.COM 2, server: 185.18.250.195, port: 2096, type: trojan, password: slch2024, sni: ocost-dy.wmlefl.cc, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 美国 V2CROSS.COM
+      - 俄罗斯 V2CROSS.COM
+      - 西班牙 V2CROSS.COM
+      - 香港 特别行政区
+      - 北美地区 V2CROSS.COM
+      - 英国 V2CROSS.COM
+      - 俄罗斯 V2CROSS.COM 2
+      - 江苏省 移动
       - 德国 V2CROSS.COM
-      - 卢森堡 root.lu数据中心
-      - 法国 国际航空电讯集团公司(SITA)
+      - 美国 V2CROSS.COM
       - 美国 V2CROSS.COM 2
       - 美国 V2CROSS.COM 3
-      - 法国 国际航空电讯集团公司(SITA) 2
-      - 美国 V2CROSS.COM 4
-      - 英国 V2CROSS.COM
-      - 俄罗斯 V2CROSS.COM
-      - 德国 V2CROSS.COM 2
-      - 西班牙 V2CROSS.COM
+      - 卢森堡 root.lu数据中心
       - 西班牙 V2CROSS.COM 2
-      - 立陶宛 V2CROSS.COM
-      - 美国 V2CROSS.COM 5
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 美国 V2CROSS.COM
+      - 俄罗斯 V2CROSS.COM
+      - 西班牙 V2CROSS.COM
+      - 香港 特别行政区
+      - 北美地区 V2CROSS.COM
+      - 英国 V2CROSS.COM
+      - 俄罗斯 V2CROSS.COM 2
+      - 江苏省 移动
       - 德国 V2CROSS.COM
-      - 卢森堡 root.lu数据中心
-      - 法国 国际航空电讯集团公司(SITA)
+      - 美国 V2CROSS.COM
       - 美国 V2CROSS.COM 2
       - 美国 V2CROSS.COM 3
-      - 法国 国际航空电讯集团公司(SITA) 2
-      - 美国 V2CROSS.COM 4
-      - 英国 V2CROSS.COM
-      - 俄罗斯 V2CROSS.COM
-      - 德国 V2CROSS.COM 2
-      - 西班牙 V2CROSS.COM
+      - 卢森堡 root.lu数据中心
       - 西班牙 V2CROSS.COM 2
-      - 立陶宛 V2CROSS.COM
-      - 美国 V2CROSS.COM 5
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 美国 V2CROSS.COM
+      - 俄罗斯 V2CROSS.COM
+      - 西班牙 V2CROSS.COM
+      - 香港 特别行政区
+      - 北美地区 V2CROSS.COM
+      - 英国 V2CROSS.COM
+      - 俄罗斯 V2CROSS.COM 2
+      - 江苏省 移动
       - 德国 V2CROSS.COM
-      - 卢森堡 root.lu数据中心
-      - 法国 国际航空电讯集团公司(SITA)
+      - 美国 V2CROSS.COM
       - 美国 V2CROSS.COM 2
       - 美国 V2CROSS.COM 3
-      - 法国 国际航空电讯集团公司(SITA) 2
-      - 美国 V2CROSS.COM 4
-      - 英国 V2CROSS.COM
-      - 俄罗斯 V2CROSS.COM
-      - 德国 V2CROSS.COM 2
-      - 西班牙 V2CROSS.COM
+      - 卢森堡 root.lu数据中心
       - 西班牙 V2CROSS.COM 2
-      - 立陶宛 V2CROSS.COM
-      - 美国 V2CROSS.COM 5
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -100,87 +92,80 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 美国 V2CROSS.COM
+      - 俄罗斯 V2CROSS.COM
+      - 西班牙 V2CROSS.COM
+      - 香港 特别行政区
+      - 北美地区 V2CROSS.COM
+      - 英国 V2CROSS.COM
+      - 俄罗斯 V2CROSS.COM 2
+      - 江苏省 移动
       - 德国 V2CROSS.COM
-      - 卢森堡 root.lu数据中心
-      - 法国 国际航空电讯集团公司(SITA)
+      - 美国 V2CROSS.COM
       - 美国 V2CROSS.COM 2
       - 美国 V2CROSS.COM 3
-      - 法国 国际航空电讯集团公司(SITA) 2
-      - 美国 V2CROSS.COM 4
-      - 英国 V2CROSS.COM
-      - 俄罗斯 V2CROSS.COM
-      - 德国 V2CROSS.COM 2
-      - 西班牙 V2CROSS.COM
+      - 卢森堡 root.lu数据中心
       - 西班牙 V2CROSS.COM 2
-      - 立陶宛 V2CROSS.COM
-      - 美国 V2CROSS.COM 5
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
+      - 香港 特别行政区
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 美国 V2CROSS.COM
+      - 俄罗斯 V2CROSS.COM
+      - 西班牙 V2CROSS.COM
+      - 香港 特别行政区
+      - 北美地区 V2CROSS.COM
+      - 英国 V2CROSS.COM
+      - 俄罗斯 V2CROSS.COM 2
+      - 江苏省 移动
       - 德国 V2CROSS.COM
-      - 卢森堡 root.lu数据中心
-      - 法国 国际航空电讯集团公司(SITA)
+      - 美国 V2CROSS.COM
       - 美国 V2CROSS.COM 2
       - 美国 V2CROSS.COM 3
-      - 法国 国际航空电讯集团公司(SITA) 2
-      - 美国 V2CROSS.COM 4
-      - 英国 V2CROSS.COM
-      - 俄罗斯 V2CROSS.COM
-      - 德国 V2CROSS.COM 2
-      - 西班牙 V2CROSS.COM
+      - 卢森堡 root.lu数据中心
       - 西班牙 V2CROSS.COM 2
-      - 立陶宛 V2CROSS.COM
-      - 美国 V2CROSS.COM 5
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 美国 V2CROSS.COM
+      - 俄罗斯 V2CROSS.COM
+      - 西班牙 V2CROSS.COM
+      - 香港 特别行政区
+      - 北美地区 V2CROSS.COM
+      - 英国 V2CROSS.COM
+      - 俄罗斯 V2CROSS.COM 2
+      - 江苏省 移动
       - 德国 V2CROSS.COM
-      - 卢森堡 root.lu数据中心
-      - 法国 国际航空电讯集团公司(SITA)
+      - 美国 V2CROSS.COM
       - 美国 V2CROSS.COM 2
       - 美国 V2CROSS.COM 3
-      - 法国 国际航空电讯集团公司(SITA) 2
-      - 美国 V2CROSS.COM 4
-      - 英国 V2CROSS.COM
-      - 俄罗斯 V2CROSS.COM
-      - 德国 V2CROSS.COM 2
-      - 西班牙 V2CROSS.COM
+      - 卢森堡 root.lu数据中心
       - 西班牙 V2CROSS.COM 2
-      - 立陶宛 V2CROSS.COM
-      - 美国 V2CROSS.COM 5
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 美国 V2CROSS.COM
+      - 俄罗斯 V2CROSS.COM
+      - 西班牙 V2CROSS.COM
+      - 香港 特别行政区
+      - 北美地区 V2CROSS.COM
+      - 英国 V2CROSS.COM
+      - 俄罗斯 V2CROSS.COM 2
+      - 江苏省 移动
       - 德国 V2CROSS.COM
-      - 卢森堡 root.lu数据中心
-      - 法国 国际航空电讯集团公司(SITA)
+      - 美国 V2CROSS.COM
       - 美国 V2CROSS.COM 2
       - 美国 V2CROSS.COM 3
-      - 法国 国际航空电讯集团公司(SITA) 2
-      - 美国 V2CROSS.COM 4
-      - 英国 V2CROSS.COM
-      - 俄罗斯 V2CROSS.COM
-      - 德国 V2CROSS.COM 2
-      - 西班牙 V2CROSS.COM
+      - 卢森堡 root.lu数据中心
       - 西班牙 V2CROSS.COM 2
-      - 立陶宛 V2CROSS.COM
-      - 美国 V2CROSS.COM 5
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -196,21 +181,19 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 美国 V2CROSS.COM
+      - 俄罗斯 V2CROSS.COM
+      - 西班牙 V2CROSS.COM
+      - 香港 特别行政区
+      - 北美地区 V2CROSS.COM
+      - 英国 V2CROSS.COM
+      - 俄罗斯 V2CROSS.COM 2
+      - 江苏省 移动
       - 德国 V2CROSS.COM
-      - 卢森堡 root.lu数据中心
-      - 法国 国际航空电讯集团公司(SITA)
+      - 美国 V2CROSS.COM
       - 美国 V2CROSS.COM 2
       - 美国 V2CROSS.COM 3
-      - 法国 国际航空电讯集团公司(SITA) 2
-      - 美国 V2CROSS.COM 4
-      - 英国 V2CROSS.COM
-      - 俄罗斯 V2CROSS.COM
-      - 德国 V2CROSS.COM 2
-      - 西班牙 V2CROSS.COM
+      - 卢森堡 root.lu数据中心
       - 西班牙 V2CROSS.COM 2
-      - 立陶宛 V2CROSS.COM
-      - 美国 V2CROSS.COM 5
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
