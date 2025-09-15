@@ -5,109 +5,77 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 🇺🇸 美国 V2CROSS.COM, server: serkat.org, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 1, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: linkvws, headers: {Host: serkat.org}}, udp: true}
-  - {name: 广东省 移动, server: 183.240.245.242, port: 33331, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 🇨🇳 江苏省 移动, server: v39.heduian.link, port: 30839, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /oooo, headers: {Host: baidu.com}}, udp: true}
   - {name: 🇫🇷 法国 国际航空电讯集团公司(SITA), server: jamekk.org, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 1, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: linkvws, headers: {Host: jamekk.org}}, udp: true}
-  - {name: 乌克兰 V2CROSS.COM, server: switcher-nick-croquet.freesocks.work, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 9tqhMdIrTkgQ46PvhyAtMH, udp: true}
-  - {name: 🇨🇳 江苏省 移动 2, server: v9.heduian.link, port: 30809, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /oooo, headers: {Host: baidu.com}}, udp: true}
-  - {name: 🇨🇳 江苏省 移动 3, server: v8.heduian.link, port: 30808, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /oooo, headers: {Host: v8.heduian.link}}, udp: true}
-  - {name: 🇦🇺 澳大利亚 V2CROSS.COM, server: 202.79.161.192, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: path/170733132233}, udp: true}
+  - {name: 🇯🇵 日本 东京都Amazon数据中心, server: xingxing.jiasu123.org, port: 2966, type: trojan, password: 253bc477d4e43c209f2d427272968280, skip-cert-verify: false, udp: true}
+  - {name: 🇨🇳 江苏省 移动, server: v9.heduian.link, port: 30809, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /oooo, headers: {Host: baidu.com}}, udp: true}
+  - {name: 🇨🇳 江苏省 移动 2, server: 36.150.215.200, port: 391, type: trojan, password: 253bc477d4e43c209f2d427272968280, sni: www.baidu.com, skip-cert-verify: false, udp: true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 🇺🇸 美国 V2CROSS.COM
-      - 广东省 移动
-      - 🇨🇳 江苏省 移动
       - 🇫🇷 法国 国际航空电讯集团公司(SITA)
-      - 乌克兰 V2CROSS.COM
+      - 🇯🇵 日本 东京都Amazon数据中心
+      - 🇨🇳 江苏省 移动
       - 🇨🇳 江苏省 移动 2
-      - 🇨🇳 江苏省 移动 3
-      - 🇦🇺 澳大利亚 V2CROSS.COM
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇺🇸 美国 V2CROSS.COM
-      - 广东省 移动
-      - 🇨🇳 江苏省 移动
       - 🇫🇷 法国 国际航空电讯集团公司(SITA)
-      - 乌克兰 V2CROSS.COM
+      - 🇯🇵 日本 东京都Amazon数据中心
+      - 🇨🇳 江苏省 移动
       - 🇨🇳 江苏省 移动 2
-      - 🇨🇳 江苏省 移动 3
-      - 🇦🇺 澳大利亚 V2CROSS.COM
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇺🇸 美国 V2CROSS.COM
-      - 广东省 移动
-      - 🇨🇳 江苏省 移动
       - 🇫🇷 法国 国际航空电讯集团公司(SITA)
-      - 乌克兰 V2CROSS.COM
+      - 🇯🇵 日本 东京都Amazon数据中心
+      - 🇨🇳 江苏省 移动
       - 🇨🇳 江苏省 移动 2
-      - 🇨🇳 江苏省 移动 3
-      - 🇦🇺 澳大利亚 V2CROSS.COM
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇺🇸 美国 V2CROSS.COM
-      - 广东省 移动
-      - 🇨🇳 江苏省 移动
       - 🇫🇷 法国 国际航空电讯集团公司(SITA)
-      - 乌克兰 V2CROSS.COM
+      - 🇯🇵 日本 东京都Amazon数据中心
+      - 🇨🇳 江苏省 移动
       - 🇨🇳 江苏省 移动 2
-      - 🇨🇳 江苏省 移动 3
-      - 🇦🇺 澳大利亚 V2CROSS.COM
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 🇺🇸 美国 V2CROSS.COM
-      - 广东省 移动
-      - 🇨🇳 江苏省 移动
       - 🇫🇷 法国 国际航空电讯集团公司(SITA)
-      - 乌克兰 V2CROSS.COM
+      - 🇯🇵 日本 东京都Amazon数据中心
+      - 🇨🇳 江苏省 移动
       - 🇨🇳 江苏省 移动 2
-      - 🇨🇳 江苏省 移动 3
-      - 🇦🇺 澳大利亚 V2CROSS.COM
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇺🇸 美国 V2CROSS.COM
-      - 广东省 移动
-      - 🇨🇳 江苏省 移动
       - 🇫🇷 法国 国际航空电讯集团公司(SITA)
-      - 乌克兰 V2CROSS.COM
+      - 🇯🇵 日本 东京都Amazon数据中心
+      - 🇨🇳 江苏省 移动
       - 🇨🇳 江苏省 移动 2
-      - 🇨🇳 江苏省 移动 3
-      - 🇦🇺 澳大利亚 V2CROSS.COM
   - name: 📢 谷歌FCM
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇺🇸 美国 V2CROSS.COM
-      - 广东省 移动
-      - 🇨🇳 江苏省 移动
       - 🇫🇷 法国 国际航空电讯集团公司(SITA)
-      - 乌克兰 V2CROSS.COM
+      - 🇯🇵 日本 东京都Amazon数据中心
+      - 🇨🇳 江苏省 移动
       - 🇨🇳 江苏省 移动 2
-      - 🇨🇳 江苏省 移动 3
-      - 🇦🇺 澳大利亚 V2CROSS.COM
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -130,14 +98,10 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇺🇸 美国 V2CROSS.COM
-      - 广东省 移动
-      - 🇨🇳 江苏省 移动
       - 🇫🇷 法国 国际航空电讯集团公司(SITA)
-      - 乌克兰 V2CROSS.COM
+      - 🇯🇵 日本 东京都Amazon数据中心
+      - 🇨🇳 江苏省 移动
       - 🇨🇳 江苏省 移动 2
-      - 🇨🇳 江苏省 移动 3
-      - 🇦🇺 澳大利亚 V2CROSS.COM
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
