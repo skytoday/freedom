@@ -5,263 +5,51 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 香港 阿里云, server: 47.242.228.101, port: 53666, type: vmess, uuid: 82977a23-74c9-4b58-ae19-fcad8f14aff7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/arki?ed=2048"}, udp: true}
-  - {name: 香港 阿里云 2, server: 47.86.43.197, port: 29435, type: vmess, uuid: 248828eb-38cc-4806-8ec0-5eb5f821f41c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/arki?ed=2048"}, udp: true}
-  - {name: 香港 阿里云 3, server: 47.86.47.36, port: 27079, type: vmess, uuid: ffcc83eb-bc52-4395-b1cc-dfe33af3466b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/arki?ed=2048"}, udp: true}
-  - {name: 广东省 移动, server: 183.240.245.242, port: 33331, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 香港 阿里云 4, server: 47.86.35.193, port: 20521, type: vmess, uuid: 9d3c4552-28b3-4b62-ba80-deef68d1af85, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: 香港 阿里云 5, server: 47.86.19.148, port: 27182, type: vmess, uuid: 818cb1d5-54d1-488a-a2ee-e4920a40ab65, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/arki?ed=2048"}, udp: true}
-  - {name: 香港 阿里云 6, server: 47.83.248.249, port: 56330, type: vmess, uuid: ddf48802-a5f9-41ab-9921-757a6add95d2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/arki?ed=2048"}, udp: true}
-  - {name: 美国 阿里云, server: 47.236.170.107, port: 20521, type: vmess, uuid: f20a4825-281f-444a-8d5c-b2c2623d62cb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 乌克兰 V2CROSS.COM, server: switcher-nick-croquet.freesocks.work, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 9tqhMdIrTkgQ46PvhyAtMH, udp: true}
+  - {name: 美国 CloudFlare节点, server: qqqqqqqqqqqqaaaa.www890604.dpdns.org, port: 443, type: vmess, uuid: 4174b95d-115e-4d39-add6-1f8db95bb860, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /6We3U9Df1WGxgFnoFPw1, headers: {Host: qqqqqqqqqqqqaaaa.www890604.dpdns.org}}, udp: true}
   - {name: 美国 V2CROSS.COM, server: 148.113.176.192, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: linkvws, headers: {Host: fapeng.org}}, udp: true}
-  - {name: 中国 阿里云, server: 8.218.240.45, port: 9707, type: vmess, uuid: 4294b1eb-6eea-4e9d-ab77-58c88a995f1d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/arki?ed=2048"}, udp: true}
-  - {name: 亚太地区 V2CROSS.COM, server: gtm1.ktmwan.net, port: 12889, type: vmess, uuid: a29407fb-75b6-4855-9c13-16c3e827e710, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: v1.pstatp.com}}, udp: true}
-  - {name: 香港 阿里云 7, server: 47.86.42.93, port: 20521, type: vmess, uuid: 09e0efbd-0cbc-4af5-b947-c6789576459e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: 南非 V2CROSS.COM, server: 154.201.76.172, port: 20521, type: vmess, uuid: 496cec71-a0fd-4f25-bba1-cba9e9d5a52f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: 香港 阿里云 8, server: 47.86.45.187, port: 20521, type: vmess, uuid: cb88decd-9e25-4d9c-867f-d22d599ed618, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: 香港 阿里云 9, server: 47.86.47.3, port: 17175, type: vmess, uuid: 9cc901b5-61dd-467e-8fe4-0fef7efd5cbb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/arki?ed=2048"}, udp: true}
-  - {name: 香港 阿里云 10, server: 47.86.18.65, port: 55708, type: vmess, uuid: b5c3932b-795d-4a3b-afe8-ba7707e5c46c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/arki?ed=2048"}, udp: true}
-  - {name: 香港 阿里云 11, server: 47.86.45.136, port: 61980, type: vmess, uuid: 851b7167-6587-4990-b9de-80f76ca49c2a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/arki?ed=2048"}, udp: true}
-  - {name: 香港 阿里云 12, server: 47.86.45.187, port: 19591, type: vmess, uuid: 0c05f793-489d-4e3f-b107-5eba4137808c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/arki?ed=2048"}, udp: true}
-  - {name: 江苏省 移动, server: v39.heduian.link, port: 30839, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /oooo, headers: {Host: baidu.com}}, udp: true}
-  - {name: 香港 阿里云 13, server: 47.76.184.231, port: 51312, type: vmess, uuid: 85b0dc88-ab65-401a-b45c-d3ce3391e0bc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/arki?ed=2048"}, udp: true}
-  - {name: 美国 V2CROSS.COM 2, server: 192.3.107.252, port: 443, type: trojan, password: 2ee85121-31de-4581-a492-eb00f606e392, sni: rc8.freeguard.org, skip-cert-verify: true, udp: true}
-  - {name: 香港 阿里云 14, server: 47.86.47.132, port: 35296, type: vmess, uuid: b6e7b6fd-02d9-45c7-94c9-62d0a380f347, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/arki?ed=2048"}, udp: true}
-  - {name: 香港 阿里云 15, server: 47.86.18.65, port: 49995, type: vmess, uuid: ea3e4900-760e-41b3-a467-ada8611eee94, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/arki?ed=2048"}, udp: true}
-  - {name: 香港 电讯盈科有限公司, server: v10.heduian.link, port: 30807, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /oooo, headers: {Host: baidu.com}}, udp: true}
-  - {name: 香港 阿里云 16, server: 47.86.42.197, port: 20521, type: vmess, uuid: fe0861ca-1e49-44dd-ad74-51406cb77165, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: 香港 阿里云 17, server: 47.83.248.27, port: 27122, type: vmess, uuid: ded62bc3-13e2-4d68-be71-884f7a5cf280, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/arki?ed=2048"}, udp: true}
-  - {name: 美国 科罗拉多州NTT(美国)通信公司, server: 216.167.78.203, port: 20521, type: vmess, uuid: 4d780417-821c-443d-a34d-ea6b8f424590, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: 香港 阿里云 18, server: 47.86.39.196, port: 45433, type: vmess, uuid: 24527b5a-76c6-492d-869c-1b838fe5d9b6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/arki?ed=2048"}, udp: true}
-  - {name: 香港 阿里云 19, server: 47.86.45.61, port: 20521, type: vmess, uuid: 920c31bc-4bfc-4b5c-9d72-668290f811f8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: 香港 阿里云 20, server: 47.86.19.244, port: 49994, type: vmess, uuid: fd9de4a0-a8a0-4521-bb7f-c4b5a8e9d11e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/arki?ed=2048"}, udp: true}
-  - {name: 香港 阿里云 21, server: 47.86.17.15, port: 40741, type: vmess, uuid: 5dfe2da6-6cb6-4788-a050-016be0f27f73, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/arki?ed=2048"}, udp: true}
-  - {name: 香港 阿里云 22, server: 47.86.47.96, port: 44763, type: vmess, uuid: 675bdf54-7e61-4653-a089-abb43a316ce0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/arki?ed=2048"}, udp: true}
-  - {name: 香港 阿里云 23, server: 47.86.18.114, port: 49941, type: vmess, uuid: 0902c7ac-ef35-40a8-a8ce-2db337a8a97b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/arki?ed=2048"}, udp: true}
-  - {name: 美国 V2CROSS.COM 3, server: serkat.org, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 1, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: linkvws, headers: {Host: serkat.org}}, udp: true}
-  - {name: 香港 阿里云 24, server: 47.86.47.1, port: 62274, type: vmess, uuid: 97433249-de3a-46a8-adbd-61b62ff47afa, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/arki?ed=2048"}, udp: true}
-  - {name: 香港 阿里云 25, server: 47.86.38.177, port: 3254, type: vmess, uuid: 0109d257-bf09-4988-9490-0cf679858159, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/arki?ed=2048"}, udp: true}
-  - {name: 香港 阿里云 26, server: 47.86.47.146, port: 50475, type: vmess, uuid: 13d9fe5d-da41-4a1a-a20c-1ba7b0b976ba, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/arki?ed=2048"}, udp: true}
-  - {name: 亚太地区 V2CROSS.COM 2, server: gtm1.ktmwan.net, port: 12891, type: vmess, uuid: a29407fb-75b6-4855-9c13-16c3e827e710, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: v1.pstatp.com}}, udp: true}
-  - {name: 日本 阿里云, server: 47.91.3.234, port: 20521, type: vmess, uuid: c99bbb45-73a5-44d5-bfe9-b05e08730673, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: 香港 阿里云 27, server: 47.86.43.137, port: 20255, type: vmess, uuid: 6393c111-4a9c-4f6b-923f-f8b82f1f1650, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/arki?ed=2048"}, udp: true}
-  - {name: 亚太地区 V2CROSS.COM 3, server: gtm1.ktmwan.net, port: 12885, type: vmess, uuid: a29407fb-75b6-4855-9c13-16c3e827e710, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: v1.pstatp.com}}, udp: true}
-  - {name: 香港 阿里云 28, server: 47.86.35.193, port: 38206, type: vmess, uuid: 67dbeae1-2fb2-4101-a04f-c236381768c6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/arki?ed=2048"}, udp: true}
-  - {name: 香港 阿里云 29, server: 47.86.43.137, port: 20521, type: vmess, uuid: e737552d-4d41-4d28-af16-3e8fefe77942, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: 香港 阿里云 30, server: 47.86.47.108, port: 21593, type: vmess, uuid: 03af42b4-6062-4f97-ad18-d993e9483f20, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/arki?ed=2048"}, udp: true}
-  - {name: 香港 阿里云 31, server: 47.83.248.249, port: 20521, type: vmess, uuid: 5ddcfc71-9648-4c43-b14e-a5370409d73e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: 香港 阿里云 32, server: 47.86.46.218, port: 44217, type: vmess, uuid: a585acbb-9615-47d8-af39-a97f29923831, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/arki?ed=2048"}, udp: true}
-  - {name: 中国 阿里云 2, server: 8.218.240.45, port: 23624, type: vmess, uuid: 7d9cbf24-54c5-4f07-b14c-67f65faa9164, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/arki?ed=2048"}, udp: true}
-  - {name: 香港 阿里云 33, server: 47.86.42.228, port: 38221, type: vmess, uuid: 22d1db02-3f4c-4926-9dc8-5b7f028ef60e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/arki?ed=2048"}, udp: true}
-  - {name: 亚太地区 V2CROSS.COM 4, server: gtm1.ktmwan.net, port: 12890, type: vmess, uuid: a29407fb-75b6-4855-9c13-16c3e827e710, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: v1.pstatp.com}}, udp: true}
   - {name: 韩国 光州广域市KT电信, server: 115.23.87.171, port: 20521, type: vmess, uuid: 8447d810-05b2-46dc-b933-f6a5b1801faf, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: 香港 阿里云 34, server: 47.86.47.186, port: 12064, type: vmess, uuid: 18a5a51b-28b5-4a07-a3ad-81b637ca98fe, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/arki?ed=2048"}, udp: true}
-  - {name: 中国 阿里云 3, server: 8.217.95.43, port: 20521, type: vmess, uuid: 026c4c2f-9887-4c8f-a353-382d58fa6145, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: 香港 阿里云 35, server: 47.86.42.228, port: 27520, type: vmess, uuid: dd6cc72f-0afc-4dac-98b3-988457c22475, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/arki?ed=2048"}, udp: true}
-  - {name: 香港 阿里云 36, server: 47.86.46.96, port: 20521, type: vmess, uuid: 04f3481b-437b-4bd4-8210-033002ee48ba, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: 韩国 光州广域市KT电信 2, server: 115.23.87.171, port: 25279, type: vmess, uuid: 64fcf8b2-3d05-40a5-9434-db699296ba4b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/arki?ed=2048"}, udp: true}
-  - {name: 香港 阿里云 37, server: 47.86.43.137, port: 26332, type: vmess, uuid: ff615c71-c284-4274-9d16-9b99dd796126, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/arki?ed=2048"}, udp: true}
-  - {name: 英国 V2CROSS.COM, server: jamekk.org, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 1, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: linkvws, headers: {Host: jamekk.org}}, udp: true}
-  - {name: 香港 阿里云 38, server: 47.86.47.24, port: 55235, type: vmess, uuid: b8d79cf5-42c3-4552-82a7-830262b8f64c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/arki?ed=2048"}, udp: true}
-  - {name: 亚太地区 V2CROSS.COM 5, server: gtm1.ktmwan.net, port: 12901, type: vmess, uuid: a29407fb-75b6-4855-9c13-16c3e827e710, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: v1.pstatp.com}}, udp: true}
-  - {name: 香港 阿里云 39, server: 47.86.42.228, port: 49065, type: vmess, uuid: 54b3064a-3539-4c36-947f-a5d34b9c87ff, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/arki?ed=2048"}, udp: true}
+  - {name: 广东省东莞市 电信, server: aflzzul.meiquankongjian.com, port: 52512, type: vmess, uuid: 342bacfd-2b8f-3f49-a16e-439db5b0b9d5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /564dfa20/, headers: {Host: aflzzul.meiquankongjian.com}}, udp: true}
+  - {name: 韩国 V2CROSS.COM, server: 45.141.139.109, port: 13311, type: vmess, uuid: 6752e2c4-ff7c-4da5-a815-c307bf83ab48, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/arki?ed=2048"}, udp: true}
+  - {name: 奥地利 V2CROSS.COM, server: 46.29.34.205, port: 59956, type: vmess, uuid: ca0c9937-58a6-44ea-9111-a6abac267d0f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 香港 阿里云
-      - 香港 阿里云 2
-      - 香港 阿里云 3
-      - 广东省 移动
-      - 香港 阿里云 4
-      - 香港 阿里云 5
-      - 香港 阿里云 6
-      - 美国 阿里云
+      - 乌克兰 V2CROSS.COM
+      - 美国 CloudFlare节点
       - 美国 V2CROSS.COM
-      - 中国 阿里云
-      - 亚太地区 V2CROSS.COM
-      - 香港 阿里云 7
-      - 南非 V2CROSS.COM
-      - 香港 阿里云 8
-      - 香港 阿里云 9
-      - 香港 阿里云 10
-      - 香港 阿里云 11
-      - 香港 阿里云 12
-      - 江苏省 移动
-      - 香港 阿里云 13
-      - 美国 V2CROSS.COM 2
-      - 香港 阿里云 14
-      - 香港 阿里云 15
-      - 香港 电讯盈科有限公司
-      - 香港 阿里云 16
-      - 香港 阿里云 17
-      - 美国 科罗拉多州NTT(美国)通信公司
-      - 香港 阿里云 18
-      - 香港 阿里云 19
-      - 香港 阿里云 20
-      - 香港 阿里云 21
-      - 香港 阿里云 22
-      - 香港 阿里云 23
-      - 美国 V2CROSS.COM 3
-      - 香港 阿里云 24
-      - 香港 阿里云 25
-      - 香港 阿里云 26
-      - 亚太地区 V2CROSS.COM 2
-      - 日本 阿里云
-      - 香港 阿里云 27
-      - 亚太地区 V2CROSS.COM 3
-      - 香港 阿里云 28
-      - 香港 阿里云 29
-      - 香港 阿里云 30
-      - 香港 阿里云 31
-      - 香港 阿里云 32
-      - 中国 阿里云 2
-      - 香港 阿里云 33
-      - 亚太地区 V2CROSS.COM 4
       - 韩国 光州广域市KT电信
-      - 香港 阿里云 34
-      - 中国 阿里云 3
-      - 香港 阿里云 35
-      - 香港 阿里云 36
-      - 韩国 光州广域市KT电信 2
-      - 香港 阿里云 37
-      - 英国 V2CROSS.COM
-      - 香港 阿里云 38
-      - 亚太地区 V2CROSS.COM 5
-      - 香港 阿里云 39
+      - 广东省东莞市 电信
+      - 韩国 V2CROSS.COM
+      - 奥地利 V2CROSS.COM
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 香港 阿里云
-      - 香港 阿里云 2
-      - 香港 阿里云 3
-      - 广东省 移动
-      - 香港 阿里云 4
-      - 香港 阿里云 5
-      - 香港 阿里云 6
-      - 美国 阿里云
+      - 乌克兰 V2CROSS.COM
+      - 美国 CloudFlare节点
       - 美国 V2CROSS.COM
-      - 中国 阿里云
-      - 亚太地区 V2CROSS.COM
-      - 香港 阿里云 7
-      - 南非 V2CROSS.COM
-      - 香港 阿里云 8
-      - 香港 阿里云 9
-      - 香港 阿里云 10
-      - 香港 阿里云 11
-      - 香港 阿里云 12
-      - 江苏省 移动
-      - 香港 阿里云 13
-      - 美国 V2CROSS.COM 2
-      - 香港 阿里云 14
-      - 香港 阿里云 15
-      - 香港 电讯盈科有限公司
-      - 香港 阿里云 16
-      - 香港 阿里云 17
-      - 美国 科罗拉多州NTT(美国)通信公司
-      - 香港 阿里云 18
-      - 香港 阿里云 19
-      - 香港 阿里云 20
-      - 香港 阿里云 21
-      - 香港 阿里云 22
-      - 香港 阿里云 23
-      - 美国 V2CROSS.COM 3
-      - 香港 阿里云 24
-      - 香港 阿里云 25
-      - 香港 阿里云 26
-      - 亚太地区 V2CROSS.COM 2
-      - 日本 阿里云
-      - 香港 阿里云 27
-      - 亚太地区 V2CROSS.COM 3
-      - 香港 阿里云 28
-      - 香港 阿里云 29
-      - 香港 阿里云 30
-      - 香港 阿里云 31
-      - 香港 阿里云 32
-      - 中国 阿里云 2
-      - 香港 阿里云 33
-      - 亚太地区 V2CROSS.COM 4
       - 韩国 光州广域市KT电信
-      - 香港 阿里云 34
-      - 中国 阿里云 3
-      - 香港 阿里云 35
-      - 香港 阿里云 36
-      - 韩国 光州广域市KT电信 2
-      - 香港 阿里云 37
-      - 英国 V2CROSS.COM
-      - 香港 阿里云 38
-      - 亚太地区 V2CROSS.COM 5
-      - 香港 阿里云 39
+      - 广东省东莞市 电信
+      - 韩国 V2CROSS.COM
+      - 奥地利 V2CROSS.COM
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 香港 阿里云
-      - 香港 阿里云 2
-      - 香港 阿里云 3
-      - 广东省 移动
-      - 香港 阿里云 4
-      - 香港 阿里云 5
-      - 香港 阿里云 6
-      - 美国 阿里云
+      - 乌克兰 V2CROSS.COM
+      - 美国 CloudFlare节点
       - 美国 V2CROSS.COM
-      - 中国 阿里云
-      - 亚太地区 V2CROSS.COM
-      - 香港 阿里云 7
-      - 南非 V2CROSS.COM
-      - 香港 阿里云 8
-      - 香港 阿里云 9
-      - 香港 阿里云 10
-      - 香港 阿里云 11
-      - 香港 阿里云 12
-      - 江苏省 移动
-      - 香港 阿里云 13
-      - 美国 V2CROSS.COM 2
-      - 香港 阿里云 14
-      - 香港 阿里云 15
-      - 香港 电讯盈科有限公司
-      - 香港 阿里云 16
-      - 香港 阿里云 17
-      - 美国 科罗拉多州NTT(美国)通信公司
-      - 香港 阿里云 18
-      - 香港 阿里云 19
-      - 香港 阿里云 20
-      - 香港 阿里云 21
-      - 香港 阿里云 22
-      - 香港 阿里云 23
-      - 美国 V2CROSS.COM 3
-      - 香港 阿里云 24
-      - 香港 阿里云 25
-      - 香港 阿里云 26
-      - 亚太地区 V2CROSS.COM 2
-      - 日本 阿里云
-      - 香港 阿里云 27
-      - 亚太地区 V2CROSS.COM 3
-      - 香港 阿里云 28
-      - 香港 阿里云 29
-      - 香港 阿里云 30
-      - 香港 阿里云 31
-      - 香港 阿里云 32
-      - 中国 阿里云 2
-      - 香港 阿里云 33
-      - 亚太地区 V2CROSS.COM 4
       - 韩国 光州广域市KT电信
-      - 香港 阿里云 34
-      - 中国 阿里云 3
-      - 香港 阿里云 35
-      - 香港 阿里云 36
-      - 韩国 光州广域市KT电信 2
-      - 香港 阿里云 37
-      - 英国 V2CROSS.COM
-      - 香港 阿里云 38
-      - 亚太地区 V2CROSS.COM 5
-      - 香港 阿里云 39
+      - 广东省东莞市 电信
+      - 韩国 V2CROSS.COM
+      - 奥地利 V2CROSS.COM
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -280,307 +68,55 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 香港 阿里云
-      - 香港 阿里云 2
-      - 香港 阿里云 3
-      - 广东省 移动
-      - 香港 阿里云 4
-      - 香港 阿里云 5
-      - 香港 阿里云 6
-      - 美国 阿里云
+      - 乌克兰 V2CROSS.COM
+      - 美国 CloudFlare节点
       - 美国 V2CROSS.COM
-      - 中国 阿里云
-      - 亚太地区 V2CROSS.COM
-      - 香港 阿里云 7
-      - 南非 V2CROSS.COM
-      - 香港 阿里云 8
-      - 香港 阿里云 9
-      - 香港 阿里云 10
-      - 香港 阿里云 11
-      - 香港 阿里云 12
-      - 江苏省 移动
-      - 香港 阿里云 13
-      - 美国 V2CROSS.COM 2
-      - 香港 阿里云 14
-      - 香港 阿里云 15
-      - 香港 电讯盈科有限公司
-      - 香港 阿里云 16
-      - 香港 阿里云 17
-      - 美国 科罗拉多州NTT(美国)通信公司
-      - 香港 阿里云 18
-      - 香港 阿里云 19
-      - 香港 阿里云 20
-      - 香港 阿里云 21
-      - 香港 阿里云 22
-      - 香港 阿里云 23
-      - 美国 V2CROSS.COM 3
-      - 香港 阿里云 24
-      - 香港 阿里云 25
-      - 香港 阿里云 26
-      - 亚太地区 V2CROSS.COM 2
-      - 日本 阿里云
-      - 香港 阿里云 27
-      - 亚太地区 V2CROSS.COM 3
-      - 香港 阿里云 28
-      - 香港 阿里云 29
-      - 香港 阿里云 30
-      - 香港 阿里云 31
-      - 香港 阿里云 32
-      - 中国 阿里云 2
-      - 香港 阿里云 33
-      - 亚太地区 V2CROSS.COM 4
       - 韩国 光州广域市KT电信
-      - 香港 阿里云 34
-      - 中国 阿里云 3
-      - 香港 阿里云 35
-      - 香港 阿里云 36
-      - 韩国 光州广域市KT电信 2
-      - 香港 阿里云 37
-      - 英国 V2CROSS.COM
-      - 香港 阿里云 38
-      - 亚太地区 V2CROSS.COM 5
-      - 香港 阿里云 39
+      - 广东省东莞市 电信
+      - 韩国 V2CROSS.COM
+      - 奥地利 V2CROSS.COM
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 香港 阿里云
-      - 香港 阿里云 2
-      - 香港 阿里云 3
-      - 香港 阿里云 4
-      - 香港 阿里云 5
-      - 香港 阿里云 6
-      - 香港 阿里云 7
-      - 香港 阿里云 8
-      - 香港 阿里云 9
-      - 香港 阿里云 10
-      - 香港 阿里云 11
-      - 香港 阿里云 12
-      - 香港 阿里云 13
-      - 香港 阿里云 14
-      - 香港 阿里云 15
-      - 香港 电讯盈科有限公司
-      - 香港 阿里云 16
-      - 香港 阿里云 17
-      - 香港 阿里云 18
-      - 香港 阿里云 19
-      - 香港 阿里云 20
-      - 香港 阿里云 21
-      - 香港 阿里云 22
-      - 香港 阿里云 23
-      - 香港 阿里云 24
-      - 香港 阿里云 25
-      - 香港 阿里云 26
-      - 香港 阿里云 27
-      - 香港 阿里云 28
-      - 香港 阿里云 29
-      - 香港 阿里云 30
-      - 香港 阿里云 31
-      - 香港 阿里云 32
-      - 香港 阿里云 33
-      - 香港 阿里云 34
-      - 香港 阿里云 35
-      - 香港 阿里云 36
-      - 香港 阿里云 37
-      - 香港 阿里云 38
-      - 香港 阿里云 39
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 香港 阿里云
-      - 香港 阿里云 2
-      - 香港 阿里云 3
-      - 广东省 移动
-      - 香港 阿里云 4
-      - 香港 阿里云 5
-      - 香港 阿里云 6
-      - 美国 阿里云
+      - 乌克兰 V2CROSS.COM
+      - 美国 CloudFlare节点
       - 美国 V2CROSS.COM
-      - 中国 阿里云
-      - 亚太地区 V2CROSS.COM
-      - 香港 阿里云 7
-      - 南非 V2CROSS.COM
-      - 香港 阿里云 8
-      - 香港 阿里云 9
-      - 香港 阿里云 10
-      - 香港 阿里云 11
-      - 香港 阿里云 12
-      - 江苏省 移动
-      - 香港 阿里云 13
-      - 美国 V2CROSS.COM 2
-      - 香港 阿里云 14
-      - 香港 阿里云 15
-      - 香港 电讯盈科有限公司
-      - 香港 阿里云 16
-      - 香港 阿里云 17
-      - 美国 科罗拉多州NTT(美国)通信公司
-      - 香港 阿里云 18
-      - 香港 阿里云 19
-      - 香港 阿里云 20
-      - 香港 阿里云 21
-      - 香港 阿里云 22
-      - 香港 阿里云 23
-      - 美国 V2CROSS.COM 3
-      - 香港 阿里云 24
-      - 香港 阿里云 25
-      - 香港 阿里云 26
-      - 亚太地区 V2CROSS.COM 2
-      - 日本 阿里云
-      - 香港 阿里云 27
-      - 亚太地区 V2CROSS.COM 3
-      - 香港 阿里云 28
-      - 香港 阿里云 29
-      - 香港 阿里云 30
-      - 香港 阿里云 31
-      - 香港 阿里云 32
-      - 中国 阿里云 2
-      - 香港 阿里云 33
-      - 亚太地区 V2CROSS.COM 4
       - 韩国 光州广域市KT电信
-      - 香港 阿里云 34
-      - 中国 阿里云 3
-      - 香港 阿里云 35
-      - 香港 阿里云 36
-      - 韩国 光州广域市KT电信 2
-      - 香港 阿里云 37
-      - 英国 V2CROSS.COM
-      - 香港 阿里云 38
-      - 亚太地区 V2CROSS.COM 5
-      - 香港 阿里云 39
+      - 广东省东莞市 电信
+      - 韩国 V2CROSS.COM
+      - 奥地利 V2CROSS.COM
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 香港 阿里云
-      - 香港 阿里云 2
-      - 香港 阿里云 3
-      - 广东省 移动
-      - 香港 阿里云 4
-      - 香港 阿里云 5
-      - 香港 阿里云 6
-      - 美国 阿里云
+      - 乌克兰 V2CROSS.COM
+      - 美国 CloudFlare节点
       - 美国 V2CROSS.COM
-      - 中国 阿里云
-      - 亚太地区 V2CROSS.COM
-      - 香港 阿里云 7
-      - 南非 V2CROSS.COM
-      - 香港 阿里云 8
-      - 香港 阿里云 9
-      - 香港 阿里云 10
-      - 香港 阿里云 11
-      - 香港 阿里云 12
-      - 江苏省 移动
-      - 香港 阿里云 13
-      - 美国 V2CROSS.COM 2
-      - 香港 阿里云 14
-      - 香港 阿里云 15
-      - 香港 电讯盈科有限公司
-      - 香港 阿里云 16
-      - 香港 阿里云 17
-      - 美国 科罗拉多州NTT(美国)通信公司
-      - 香港 阿里云 18
-      - 香港 阿里云 19
-      - 香港 阿里云 20
-      - 香港 阿里云 21
-      - 香港 阿里云 22
-      - 香港 阿里云 23
-      - 美国 V2CROSS.COM 3
-      - 香港 阿里云 24
-      - 香港 阿里云 25
-      - 香港 阿里云 26
-      - 亚太地区 V2CROSS.COM 2
-      - 日本 阿里云
-      - 香港 阿里云 27
-      - 亚太地区 V2CROSS.COM 3
-      - 香港 阿里云 28
-      - 香港 阿里云 29
-      - 香港 阿里云 30
-      - 香港 阿里云 31
-      - 香港 阿里云 32
-      - 中国 阿里云 2
-      - 香港 阿里云 33
-      - 亚太地区 V2CROSS.COM 4
       - 韩国 光州广域市KT电信
-      - 香港 阿里云 34
-      - 中国 阿里云 3
-      - 香港 阿里云 35
-      - 香港 阿里云 36
-      - 韩国 光州广域市KT电信 2
-      - 香港 阿里云 37
-      - 英国 V2CROSS.COM
-      - 香港 阿里云 38
-      - 亚太地区 V2CROSS.COM 5
-      - 香港 阿里云 39
+      - 广东省东莞市 电信
+      - 韩国 V2CROSS.COM
+      - 奥地利 V2CROSS.COM
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 香港 阿里云
-      - 香港 阿里云 2
-      - 香港 阿里云 3
-      - 广东省 移动
-      - 香港 阿里云 4
-      - 香港 阿里云 5
-      - 香港 阿里云 6
-      - 美国 阿里云
+      - 乌克兰 V2CROSS.COM
+      - 美国 CloudFlare节点
       - 美国 V2CROSS.COM
-      - 中国 阿里云
-      - 亚太地区 V2CROSS.COM
-      - 香港 阿里云 7
-      - 南非 V2CROSS.COM
-      - 香港 阿里云 8
-      - 香港 阿里云 9
-      - 香港 阿里云 10
-      - 香港 阿里云 11
-      - 香港 阿里云 12
-      - 江苏省 移动
-      - 香港 阿里云 13
-      - 美国 V2CROSS.COM 2
-      - 香港 阿里云 14
-      - 香港 阿里云 15
-      - 香港 电讯盈科有限公司
-      - 香港 阿里云 16
-      - 香港 阿里云 17
-      - 美国 科罗拉多州NTT(美国)通信公司
-      - 香港 阿里云 18
-      - 香港 阿里云 19
-      - 香港 阿里云 20
-      - 香港 阿里云 21
-      - 香港 阿里云 22
-      - 香港 阿里云 23
-      - 美国 V2CROSS.COM 3
-      - 香港 阿里云 24
-      - 香港 阿里云 25
-      - 香港 阿里云 26
-      - 亚太地区 V2CROSS.COM 2
-      - 日本 阿里云
-      - 香港 阿里云 27
-      - 亚太地区 V2CROSS.COM 3
-      - 香港 阿里云 28
-      - 香港 阿里云 29
-      - 香港 阿里云 30
-      - 香港 阿里云 31
-      - 香港 阿里云 32
-      - 中国 阿里云 2
-      - 香港 阿里云 33
-      - 亚太地区 V2CROSS.COM 4
       - 韩国 光州广域市KT电信
-      - 香港 阿里云 34
-      - 中国 阿里云 3
-      - 香港 阿里云 35
-      - 香港 阿里云 36
-      - 韩国 光州广域市KT电信 2
-      - 香港 阿里云 37
-      - 英国 V2CROSS.COM
-      - 香港 阿里云 38
-      - 亚太地区 V2CROSS.COM 5
-      - 香港 阿里云 39
+      - 广东省东莞市 电信
+      - 韩国 V2CROSS.COM
+      - 奥地利 V2CROSS.COM
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -596,66 +132,13 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 香港 阿里云
-      - 香港 阿里云 2
-      - 香港 阿里云 3
-      - 广东省 移动
-      - 香港 阿里云 4
-      - 香港 阿里云 5
-      - 香港 阿里云 6
-      - 美国 阿里云
+      - 乌克兰 V2CROSS.COM
+      - 美国 CloudFlare节点
       - 美国 V2CROSS.COM
-      - 中国 阿里云
-      - 亚太地区 V2CROSS.COM
-      - 香港 阿里云 7
-      - 南非 V2CROSS.COM
-      - 香港 阿里云 8
-      - 香港 阿里云 9
-      - 香港 阿里云 10
-      - 香港 阿里云 11
-      - 香港 阿里云 12
-      - 江苏省 移动
-      - 香港 阿里云 13
-      - 美国 V2CROSS.COM 2
-      - 香港 阿里云 14
-      - 香港 阿里云 15
-      - 香港 电讯盈科有限公司
-      - 香港 阿里云 16
-      - 香港 阿里云 17
-      - 美国 科罗拉多州NTT(美国)通信公司
-      - 香港 阿里云 18
-      - 香港 阿里云 19
-      - 香港 阿里云 20
-      - 香港 阿里云 21
-      - 香港 阿里云 22
-      - 香港 阿里云 23
-      - 美国 V2CROSS.COM 3
-      - 香港 阿里云 24
-      - 香港 阿里云 25
-      - 香港 阿里云 26
-      - 亚太地区 V2CROSS.COM 2
-      - 日本 阿里云
-      - 香港 阿里云 27
-      - 亚太地区 V2CROSS.COM 3
-      - 香港 阿里云 28
-      - 香港 阿里云 29
-      - 香港 阿里云 30
-      - 香港 阿里云 31
-      - 香港 阿里云 32
-      - 中国 阿里云 2
-      - 香港 阿里云 33
-      - 亚太地区 V2CROSS.COM 4
       - 韩国 光州广域市KT电信
-      - 香港 阿里云 34
-      - 中国 阿里云 3
-      - 香港 阿里云 35
-      - 香港 阿里云 36
-      - 韩国 光州广域市KT电信 2
-      - 香港 阿里云 37
-      - 英国 V2CROSS.COM
-      - 香港 阿里云 38
-      - 亚太地区 V2CROSS.COM 5
-      - 香港 阿里云 39
+      - 广东省东莞市 电信
+      - 韩国 V2CROSS.COM
+      - 奥地利 V2CROSS.COM
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
