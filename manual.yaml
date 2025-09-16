@@ -5,77 +5,77 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 🇨🇳 江苏省 移动, server: v9.heduian.link, port: 30809, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /oooo, headers: {Host: baidu.com}}, udp: true}
-  - {name: 🇦🇺 澳大利亚 V2CROSS.COM, server: 202.79.161.192, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: path/170733132233}, udp: true}
-  - {name: 🇫🇷 法国 国际航空电讯集团公司(SITA), server: serkat.org, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 1, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: linkvws, headers: {Host: serkat.org}}, udp: true}
-  - {name: 🇨🇳 江苏省 移动 2, server: v8.heduian.link, port: 30808, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /oooo, headers: {Host: v8.heduian.link}}, udp: true}
+  - {name: 🇺🇸 美国 V2CROSS.COM, server: 192.3.107.252, port: 443, type: trojan, password: 2ee85121-31de-4581-a492-eb00f606e392, sni: rc8.freeguard.org, skip-cert-verify: false, udp: true}
+  - {name: 🇨🇳 江苏省 移动, server: v39.heduian.link, port: 30839, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /oooo, headers: {Host: baidu.com}}, udp: true}
+  - {name: 🇨🇦 加拿大 V2CROSS.COM, server: 167.17.183.59, port: 20219, type: ss, cipher: aes-256-gcm, password: 017c7384fc99638d, udp: true}
+  - {name: 🇷🇺 俄罗斯 V2CROSS.COM, server: 212.192.15.40, port: 8388, type: ss, cipher: aes-256-gcm, password: wioMkgwpRIt5jb7I, udp: true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
+      - 🇺🇸 美国 V2CROSS.COM
       - 🇨🇳 江苏省 移动
-      - 🇦🇺 澳大利亚 V2CROSS.COM
-      - 🇫🇷 法国 国际航空电讯集团公司(SITA)
-      - 🇨🇳 江苏省 移动 2
+      - 🇨🇦 加拿大 V2CROSS.COM
+      - 🇷🇺 俄罗斯 V2CROSS.COM
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
+      - 🇺🇸 美国 V2CROSS.COM
       - 🇨🇳 江苏省 移动
-      - 🇦🇺 澳大利亚 V2CROSS.COM
-      - 🇫🇷 法国 国际航空电讯集团公司(SITA)
-      - 🇨🇳 江苏省 移动 2
+      - 🇨🇦 加拿大 V2CROSS.COM
+      - 🇷🇺 俄罗斯 V2CROSS.COM
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
+      - 🇺🇸 美国 V2CROSS.COM
       - 🇨🇳 江苏省 移动
-      - 🇦🇺 澳大利亚 V2CROSS.COM
-      - 🇫🇷 法国 国际航空电讯集团公司(SITA)
-      - 🇨🇳 江苏省 移动 2
+      - 🇨🇦 加拿大 V2CROSS.COM
+      - 🇷🇺 俄罗斯 V2CROSS.COM
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
+      - 🇺🇸 美国 V2CROSS.COM
       - 🇨🇳 江苏省 移动
-      - 🇦🇺 澳大利亚 V2CROSS.COM
-      - 🇫🇷 法国 国际航空电讯集团公司(SITA)
-      - 🇨🇳 江苏省 移动 2
+      - 🇨🇦 加拿大 V2CROSS.COM
+      - 🇷🇺 俄罗斯 V2CROSS.COM
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
+      - 🇺🇸 美国 V2CROSS.COM
       - 🇨🇳 江苏省 移动
-      - 🇦🇺 澳大利亚 V2CROSS.COM
-      - 🇫🇷 法国 国际航空电讯集团公司(SITA)
-      - 🇨🇳 江苏省 移动 2
+      - 🇨🇦 加拿大 V2CROSS.COM
+      - 🇷🇺 俄罗斯 V2CROSS.COM
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
+      - 🇺🇸 美国 V2CROSS.COM
       - 🇨🇳 江苏省 移动
-      - 🇦🇺 澳大利亚 V2CROSS.COM
-      - 🇫🇷 法国 国际航空电讯集团公司(SITA)
-      - 🇨🇳 江苏省 移动 2
+      - 🇨🇦 加拿大 V2CROSS.COM
+      - 🇷🇺 俄罗斯 V2CROSS.COM
   - name: 📢 谷歌FCM
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - 🇺🇸 美国 V2CROSS.COM
       - 🇨🇳 江苏省 移动
-      - 🇦🇺 澳大利亚 V2CROSS.COM
-      - 🇫🇷 法国 国际航空电讯集团公司(SITA)
-      - 🇨🇳 江苏省 移动 2
+      - 🇨🇦 加拿大 V2CROSS.COM
+      - 🇷🇺 俄罗斯 V2CROSS.COM
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -98,10 +98,10 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - 🇺🇸 美国 V2CROSS.COM
       - 🇨🇳 江苏省 移动
-      - 🇦🇺 澳大利亚 V2CROSS.COM
-      - 🇫🇷 法国 国际航空电讯集团公司(SITA)
-      - 🇨🇳 江苏省 移动 2
+      - 🇨🇦 加拿大 V2CROSS.COM
+      - 🇷🇺 俄罗斯 V2CROSS.COM
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
