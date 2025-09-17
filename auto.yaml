@@ -5,63 +5,59 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 美国 V2CROSS.COM, server: 140.235.38.89, port: 6474, type: vmess, uuid: 96a69037-7bf8-43f8-bd62-4beb8f1f36e2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/arki?ed=2048"}, udp: true}
-  - {name: 香港 阿里云, server: 47.86.39.105, port: 3227, type: vmess, uuid: cc7556ed-1af2-4291-b4ed-f9dc4eb7a435, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/arki?ed=2048"}, udp: true}
-  - {name: 香港 阿里云 2, server: 47.86.43.242, port: 35987, type: vmess, uuid: cdb1236d-7bd5-4213-9371-6407c2ac85b0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/arki?ed=2048"}, udp: true}
-  - {name: 江苏省 移动, server: v9.heduian.link, port: 30809, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /oooo, headers: {Host: baidu.com}}, udp: true}
-  - {name: 香港 阿里云 3, server: 47.86.39.105, port: 23376, type: vmess, uuid: d7d5047d-4431-4c2e-bbdd-7c11b72aaa1c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/arki?ed=2048"}, udp: true}
-  - {name: 香港 电讯盈科有限公司, server: hkt.gotochinatown.net, port: 80, type: vmess, uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: hkt.gotochinatown.net}}, udp: true}
-  - {name: 香港 特别行政区, server: 185.239.84.246, port: 24213, type: vmess, uuid: 679c8170-54a6-4d7d-c831-f052e16a93d4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美国 V2CROSS.COM 2, server: 209.146.100.247, port: 20521, type: vmess, uuid: 9239aaf5-8516-4690-9621-ae4ceac87a99, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: 俄罗斯 V2CROSS.COM, server: 193.124.24.247, port: 6511, type: vmess, uuid: 5ef4e89b-262f-4c74-e793-c7332079f251, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 香港 电讯盈科有限公司 2, server: c004e6fe-t1i9s0-tm53cm-1ol97.hkt.tcpbbr.net, port: 80, type: vmess, uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: broadcastlv.chat.bilibili.com}}, udp: true}
+  - {name: 英国 V2CROSS.COM, server: kampong.org, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 1, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: linkvws, headers: {Host: kampong.org}}, udp: true}
+  - {name: 香港 阿里云, server: 47.86.18.80, port: 31523, type: vmess, uuid: 015f1957-281d-4cda-ae41-f435cf9a349f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/arki?ed=2048"}, udp: true}
+  - {name: 香港 阿里云 2, server: 47.86.35.129, port: 38381, type: vmess, uuid: 39e6a792-2ef9-464f-a18c-c280a09faf1b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/arki?ed=2048"}, udp: true}
+  - {name: 美国 CloudFlare节点, server: v34.emoyes.top, port: 8443, type: vmess, uuid: 08b24d8d-10ab-4c5a-990e-4e0e194870af, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: v34.emoyes.top}}, udp: true}
+  - {name: 江苏省 移动, server: v39.heduian.link, port: 30839, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /oooo, headers: {Host: baidu.com}}, udp: true}
+  - {name: 香港 UCloud, server: 165.154.112.107, port: 12000, type: trojan, password: 1640ef52-2db0-44ab-b3f3-8690b762ebc9, skip-cert-verify: true, udp: true}
+  - {name: 香港 阿里云 3, server: 47.86.43.242, port: 30775, type: vmess, uuid: f443f846-da0c-4d19-9fb1-1e76cc33127f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/arki?ed=2048"}, udp: true}
+  - {name: 英国 社会保险安全部, server: ov-canada3.09vpn.com, port: 8443, type: vmess, uuid: 1a06fe60-0933-4b66-b927-937a5e015c50, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /vmess/, headers: {Host: ov-canada3.09vpn.com}}, udp: true}
+  - {name: 香港 电讯盈科有限公司, server: c004e6fe-t1i9s0-tm53cm-1ol97.hkt.tcpbbr.net, port: 80, type: vmess, uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: broadcastlv.chat.bilibili.com}}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 美国 V2CROSS.COM
+      - 英国 V2CROSS.COM
       - 香港 阿里云
       - 香港 阿里云 2
+      - 美国 CloudFlare节点
       - 江苏省 移动
+      - 香港 UCloud
       - 香港 阿里云 3
+      - 英国 社会保险安全部
       - 香港 电讯盈科有限公司
-      - 香港 特别行政区
-      - 美国 V2CROSS.COM 2
-      - 俄罗斯 V2CROSS.COM
-      - 香港 电讯盈科有限公司 2
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 美国 V2CROSS.COM
+      - 英国 V2CROSS.COM
       - 香港 阿里云
       - 香港 阿里云 2
+      - 美国 CloudFlare节点
       - 江苏省 移动
+      - 香港 UCloud
       - 香港 阿里云 3
+      - 英国 社会保险安全部
       - 香港 电讯盈科有限公司
-      - 香港 特别行政区
-      - 美国 V2CROSS.COM 2
-      - 俄罗斯 V2CROSS.COM
-      - 香港 电讯盈科有限公司 2
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 美国 V2CROSS.COM
+      - 英国 V2CROSS.COM
       - 香港 阿里云
       - 香港 阿里云 2
+      - 美国 CloudFlare节点
       - 江苏省 移动
+      - 香港 UCloud
       - 香港 阿里云 3
+      - 英国 社会保险安全部
       - 香港 电讯盈科有限公司
-      - 香港 特别行政区
-      - 美国 V2CROSS.COM 2
-      - 俄罗斯 V2CROSS.COM
-      - 香港 电讯盈科有限公司 2
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -80,73 +76,68 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 美国 V2CROSS.COM
+      - 英国 V2CROSS.COM
       - 香港 阿里云
       - 香港 阿里云 2
+      - 美国 CloudFlare节点
       - 江苏省 移动
+      - 香港 UCloud
       - 香港 阿里云 3
+      - 英国 社会保险安全部
       - 香港 电讯盈科有限公司
-      - 香港 特别行政区
-      - 美国 V2CROSS.COM 2
-      - 俄罗斯 V2CROSS.COM
-      - 香港 电讯盈科有限公司 2
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
       - 香港 阿里云
       - 香港 阿里云 2
+      - 香港 UCloud
       - 香港 阿里云 3
       - 香港 电讯盈科有限公司
-      - 香港 特别行政区
-      - 香港 电讯盈科有限公司 2
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 美国 V2CROSS.COM
+      - 英国 V2CROSS.COM
       - 香港 阿里云
       - 香港 阿里云 2
+      - 美国 CloudFlare节点
       - 江苏省 移动
+      - 香港 UCloud
       - 香港 阿里云 3
+      - 英国 社会保险安全部
       - 香港 电讯盈科有限公司
-      - 香港 特别行政区
-      - 美国 V2CROSS.COM 2
-      - 俄罗斯 V2CROSS.COM
-      - 香港 电讯盈科有限公司 2
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 美国 V2CROSS.COM
+      - 英国 V2CROSS.COM
       - 香港 阿里云
       - 香港 阿里云 2
+      - 美国 CloudFlare节点
       - 江苏省 移动
+      - 香港 UCloud
       - 香港 阿里云 3
+      - 英国 社会保险安全部
       - 香港 电讯盈科有限公司
-      - 香港 特别行政区
-      - 美国 V2CROSS.COM 2
-      - 俄罗斯 V2CROSS.COM
-      - 香港 电讯盈科有限公司 2
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 美国 V2CROSS.COM
+      - 英国 V2CROSS.COM
       - 香港 阿里云
       - 香港 阿里云 2
+      - 美国 CloudFlare节点
       - 江苏省 移动
+      - 香港 UCloud
       - 香港 阿里云 3
+      - 英国 社会保险安全部
       - 香港 电讯盈科有限公司
-      - 香港 特别行政区
-      - 美国 V2CROSS.COM 2
-      - 俄罗斯 V2CROSS.COM
-      - 香港 电讯盈科有限公司 2
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -162,16 +153,15 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 美国 V2CROSS.COM
+      - 英国 V2CROSS.COM
       - 香港 阿里云
       - 香港 阿里云 2
+      - 美国 CloudFlare节点
       - 江苏省 移动
+      - 香港 UCloud
       - 香港 阿里云 3
+      - 英国 社会保险安全部
       - 香港 电讯盈科有限公司
-      - 香港 特别行政区
-      - 美国 V2CROSS.COM 2
-      - 俄罗斯 V2CROSS.COM
-      - 香港 电讯盈科有限公司 2
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
