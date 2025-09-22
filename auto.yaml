@@ -5,59 +5,67 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 香港 电讯盈科有限公司, server: v10.heduian.link, port: 30807, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /oooo, headers: {Host: baidu.com}}, udp: true}
-  - {name: 美国 CloudFlare节点, server: test2.flha.ru, port: 80, type: vmess, uuid: 15f62abf-8cc9-4598-8d57-e4df7b499a84, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /15f62abf-8cc9-4598-8d57-e4df7b499a84-vmess, headers: {Host: test2.flha.ru}}, udp: true}
-  - {name: 法国 国际航空电讯集团公司(SITA), server: jamekk.org, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 1, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: linkvws, headers: {Host: jamekk.org}}, udp: true}
-  - {name: 美国 V2CROSS.COM, server: sirens.isquirrel.net, port: 28334, type: trojan, password: RzFSy3laClaxnYCcO3jBEpYgDyZx2CO78IC3X46ATFD73RSSZZTx8yCOKYDOqeD8pSeRa, skip-cert-verify: true, udp: true}
-  - {name: 美国 惠普HP, server: 15.204.248.103, port: 443, type: trojan, password: 2ee85121-31de-4581-a492-eb00f606e392, sni: rs3.freeguard.org, skip-cert-verify: true, udp: true}
-  - {name: 美国 V2CROSS.COM 2, server: toaster.isquirrel.net, port: 443, type: trojan, password: 3ZFDxASRw0XIcKYFlp4RSCeSwA8ap7lEAzZB7uNnO38yDYOzDe3p23CxF0OlTx6YSK3j3, skip-cert-verify: true, udp: true}
-  - {name: 澳大利亚 V2CROSS.COM, server: 202.79.161.192, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: path/170733132233}, udp: true}
-  - {name: 美国 V2CROSS.COM 3, server: mintaka.appagent.net, port: 443, type: trojan, password: 4xS33pu88RaTF37ZxRjzAZc9zxe8OaYBX9CSO3p5SSxquFOFEySnDlCleCFA2DN3gaeDl, skip-cert-verify: true, udp: true}
   - {name: 江苏省 移动, server: v29.heduian.link, port: 30829, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /oooo, headers: {Host: ocbc.com}}, udp: true}
+  - {name: 福建省厦门市 电信, server: uk.fastsoonlink.com, port: 40008, type: ss, cipher: chacha20-ietf-poly1305, password: 9177de1a-aeff-43f1-93a6-7dd08a2fdc41, udp: true}
+  - {name: 欧盟 V2CROSS.COM, server: 45.91.171.116, port: 443, type: trojan, password: 2ee85121-31de-4581-a492-eb00f606e392, sni: sto.freeguard.org, skip-cert-verify: true, udp: true}
+  - {name: 法国 国际航空电讯集团公司(SITA), server: serkat.org, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 1, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: linkvws, headers: {Host: serkat.org}}, udp: true}
+  - {name: 欧盟 V2CROSS.COM 2, server: 45.85.119.190, port: 443, type: vmess, uuid: de94cc0a-0592-4969-b1fc-97ea8f0ea0b3, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /us.kkp.me.eu.org/aa, headers: {Host: farid.1.berozha.ir}}, udp: true}
+  - {name: 福建省厦门市 电信 2, server: us.fastsoonlink.com, port: 40001, type: ss, cipher: chacha20-ietf-poly1305, password: 9177de1a-aeff-43f1-93a6-7dd08a2fdc41, udp: true}
+  - {name: 美国 V2CROSS.COM, server: pricey.appagent.net, port: 28334, type: trojan, password: F9OKESxKjSDExSeaOw7XyINxDzaOZqeKxCeIczYYED8ewZ2Yl9AppAySO3XwFNy3lCaXDDCFnlACSB0, skip-cert-verify: true, udp: true}
+  - {name: 美国 V2CROSS.COM 2, server: blength.appagent.net, port: 18332, type: trojan, password: 0C3YaEDx46ODTFTcaF8lXlZ3zeqSlF33wZagexzRjIyODa8RDwp8XSCO93ygCSYcSYABA, skip-cert-verify: true, udp: true}
+  - {name: 法国 国际航空电讯集团公司(SITA) 2, server: 57.129.64.238, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /linkvws, headers: {Host: kapelleng.com}}, udp: true}
+  - {name: 福建省厦门市 电信 3, server: tur.fastsoonlink.com, port: 40019, type: ss, cipher: chacha20-ietf-poly1305, password: 9177de1a-aeff-43f1-93a6-7dd08a2fdc41, udp: true}
+  - {name: 福建省厦门市 电信 4, server: hk.fastsoonlink.com, port: 40000, type: ss, cipher: chacha20-ietf-poly1305, password: 9177de1a-aeff-43f1-93a6-7dd08a2fdc41, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 香港 电讯盈科有限公司
-      - 美国 CloudFlare节点
-      - 法国 国际航空电讯集团公司(SITA)
-      - 美国 V2CROSS.COM
-      - 美国 惠普HP
-      - 美国 V2CROSS.COM 2
-      - 澳大利亚 V2CROSS.COM
-      - 美国 V2CROSS.COM 3
       - 江苏省 移动
+      - 福建省厦门市 电信
+      - 欧盟 V2CROSS.COM
+      - 法国 国际航空电讯集团公司(SITA)
+      - 欧盟 V2CROSS.COM 2
+      - 福建省厦门市 电信 2
+      - 美国 V2CROSS.COM
+      - 美国 V2CROSS.COM 2
+      - 法国 国际航空电讯集团公司(SITA) 2
+      - 福建省厦门市 电信 3
+      - 福建省厦门市 电信 4
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 香港 电讯盈科有限公司
-      - 美国 CloudFlare节点
-      - 法国 国际航空电讯集团公司(SITA)
-      - 美国 V2CROSS.COM
-      - 美国 惠普HP
-      - 美国 V2CROSS.COM 2
-      - 澳大利亚 V2CROSS.COM
-      - 美国 V2CROSS.COM 3
       - 江苏省 移动
+      - 福建省厦门市 电信
+      - 欧盟 V2CROSS.COM
+      - 法国 国际航空电讯集团公司(SITA)
+      - 欧盟 V2CROSS.COM 2
+      - 福建省厦门市 电信 2
+      - 美国 V2CROSS.COM
+      - 美国 V2CROSS.COM 2
+      - 法国 国际航空电讯集团公司(SITA) 2
+      - 福建省厦门市 电信 3
+      - 福建省厦门市 电信 4
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 香港 电讯盈科有限公司
-      - 美国 CloudFlare节点
-      - 法国 国际航空电讯集团公司(SITA)
-      - 美国 V2CROSS.COM
-      - 美国 惠普HP
-      - 美国 V2CROSS.COM 2
-      - 澳大利亚 V2CROSS.COM
-      - 美国 V2CROSS.COM 3
       - 江苏省 移动
+      - 福建省厦门市 电信
+      - 欧盟 V2CROSS.COM
+      - 法国 国际航空电讯集团公司(SITA)
+      - 欧盟 V2CROSS.COM 2
+      - 福建省厦门市 电信 2
+      - 美国 V2CROSS.COM
+      - 美国 V2CROSS.COM 2
+      - 法国 国际航空电讯集团公司(SITA) 2
+      - 福建省厦门市 电信 3
+      - 福建省厦门市 电信 4
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -76,64 +84,71 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 香港 电讯盈科有限公司
-      - 美国 CloudFlare节点
-      - 法国 国际航空电讯集团公司(SITA)
-      - 美国 V2CROSS.COM
-      - 美国 惠普HP
-      - 美国 V2CROSS.COM 2
-      - 澳大利亚 V2CROSS.COM
-      - 美国 V2CROSS.COM 3
       - 江苏省 移动
+      - 福建省厦门市 电信
+      - 欧盟 V2CROSS.COM
+      - 法国 国际航空电讯集团公司(SITA)
+      - 欧盟 V2CROSS.COM 2
+      - 福建省厦门市 电信 2
+      - 美国 V2CROSS.COM
+      - 美国 V2CROSS.COM 2
+      - 法国 国际航空电讯集团公司(SITA) 2
+      - 福建省厦门市 电信 3
+      - 福建省厦门市 电信 4
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 香港 电讯盈科有限公司
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 香港 电讯盈科有限公司
-      - 美国 CloudFlare节点
-      - 法国 国际航空电讯集团公司(SITA)
-      - 美国 V2CROSS.COM
-      - 美国 惠普HP
-      - 美国 V2CROSS.COM 2
-      - 澳大利亚 V2CROSS.COM
-      - 美国 V2CROSS.COM 3
       - 江苏省 移动
+      - 福建省厦门市 电信
+      - 欧盟 V2CROSS.COM
+      - 法国 国际航空电讯集团公司(SITA)
+      - 欧盟 V2CROSS.COM 2
+      - 福建省厦门市 电信 2
+      - 美国 V2CROSS.COM
+      - 美国 V2CROSS.COM 2
+      - 法国 国际航空电讯集团公司(SITA) 2
+      - 福建省厦门市 电信 3
+      - 福建省厦门市 电信 4
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 香港 电讯盈科有限公司
-      - 美国 CloudFlare节点
-      - 法国 国际航空电讯集团公司(SITA)
-      - 美国 V2CROSS.COM
-      - 美国 惠普HP
-      - 美国 V2CROSS.COM 2
-      - 澳大利亚 V2CROSS.COM
-      - 美国 V2CROSS.COM 3
       - 江苏省 移动
+      - 福建省厦门市 电信
+      - 欧盟 V2CROSS.COM
+      - 法国 国际航空电讯集团公司(SITA)
+      - 欧盟 V2CROSS.COM 2
+      - 福建省厦门市 电信 2
+      - 美国 V2CROSS.COM
+      - 美国 V2CROSS.COM 2
+      - 法国 国际航空电讯集团公司(SITA) 2
+      - 福建省厦门市 电信 3
+      - 福建省厦门市 电信 4
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 香港 电讯盈科有限公司
-      - 美国 CloudFlare节点
-      - 法国 国际航空电讯集团公司(SITA)
-      - 美国 V2CROSS.COM
-      - 美国 惠普HP
-      - 美国 V2CROSS.COM 2
-      - 澳大利亚 V2CROSS.COM
-      - 美国 V2CROSS.COM 3
       - 江苏省 移动
+      - 福建省厦门市 电信
+      - 欧盟 V2CROSS.COM
+      - 法国 国际航空电讯集团公司(SITA)
+      - 欧盟 V2CROSS.COM 2
+      - 福建省厦门市 电信 2
+      - 美国 V2CROSS.COM
+      - 美国 V2CROSS.COM 2
+      - 法国 国际航空电讯集团公司(SITA) 2
+      - 福建省厦门市 电信 3
+      - 福建省厦门市 电信 4
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -149,15 +164,17 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 香港 电讯盈科有限公司
-      - 美国 CloudFlare节点
-      - 法国 国际航空电讯集团公司(SITA)
-      - 美国 V2CROSS.COM
-      - 美国 惠普HP
-      - 美国 V2CROSS.COM 2
-      - 澳大利亚 V2CROSS.COM
-      - 美国 V2CROSS.COM 3
       - 江苏省 移动
+      - 福建省厦门市 电信
+      - 欧盟 V2CROSS.COM
+      - 法国 国际航空电讯集团公司(SITA)
+      - 欧盟 V2CROSS.COM 2
+      - 福建省厦门市 电信 2
+      - 美国 V2CROSS.COM
+      - 美国 V2CROSS.COM 2
+      - 法国 国际航空电讯集团公司(SITA) 2
+      - 福建省厦门市 电信 3
+      - 福建省厦门市 电信 4
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
