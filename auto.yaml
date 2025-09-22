@@ -5,67 +5,83 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 美国 华盛顿Cogent通信公司, server: 38.110.1.122, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: 马来西亚 V2CROSS.COM, server: 116.206.93.165, port: 39975, type: vmess, uuid: bb892078-98ef-4321-edf4-4c408edd5ae2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 法国 国际航空电讯集团公司(SITA), server: jamekk.org, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 1, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: linkvws, headers: {Host: jamekk.org}}, udp: true}
+  - {name: 江苏省 移动, server: v39.heduian.link, port: 30839, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /oooo, headers: {Host: baidu.com}}, udp: true}
+  - {name: 香港 电讯盈科有限公司, server: hkt.gotochinatown.net, port: 80, type: vmess, uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: hkt.gotochinatown.net}}, udp: true}
+  - {name: 中国 阿里云, server: 8.217.220.30, port: 39648, type: vmess, uuid: 2c2583b6-ece0-4d3d-a7f5-cf37c4a6fa8d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/arki?ed=2048"}, udp: true}
+  - {name: 美国 阿里云, server: 47.239.30.251, port: 65421, type: vmess, uuid: e8ce8dbe-dd3b-41c7-9082-0a9b2ef4ed8e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/arki?ed=2048"}, udp: true}
+  - {name: 香港 阿里云, server: 47.242.183.114, port: 3327, type: vmess, uuid: 2e0f1ced-ff88-4857-8c44-70a229012d89, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/arki?ed=2048"}, udp: true}
+  - {name: 香港 电讯盈科有限公司 2, server: 697dc551-t1i9s0-tm53cm-1ol97.hk3.p5pv.com, port: 80, type: vmess, uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 697dc551-t1i9s0-tm53cm-1ol97.hk3.p5pv.com}}, udp: true}
+  - {name: 日本 V2CROSS.COM, server: 163.61.208.37, port: 4355, type: vmess, uuid: 37ba82a4-2a71-43c5-9b41-a568116da44e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/arki?ed=2048"}, udp: true}
+  - {name: 中国 阿里云 2, server: 8.218.26.43, port: 53960, type: vmess, uuid: 2fb8eedb-929a-4119-a6a2-f34c2b13b6dd, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/arki?ed=2048"}, udp: true}
   - {name: 福建省厦门市 电信, server: uk.fastsoonlink.com, port: 40008, type: ss, cipher: chacha20-ietf-poly1305, password: 9177de1a-aeff-43f1-93a6-7dd08a2fdc41, udp: true}
-  - {name: 俄罗斯 莫斯科JustHost, server: 45.140.169.26, port: 30102, type: ss, cipher: aes-256-gcm, password: 7ae4e68cf77f6089, udp: true}
-  - {name: 福建省厦门市 电信 2, server: frk.fastsoonlink.com, port: 40011, type: ss, cipher: chacha20-ietf-poly1305, password: 9177de1a-aeff-43f1-93a6-7dd08a2fdc41, udp: true}
-  - {name: 福建省厦门市 电信 3, server: vn.fastsoonlink.com, port: 40021, type: ss, cipher: chacha20-ietf-poly1305, password: 9177de1a-aeff-43f1-93a6-7dd08a2fdc41, udp: true}
-  - {name: 伊朗 V2CROSS.COM, server: 151.242.251.144, port: 8080, type: ss, cipher: chacha20-ietf-poly1305, password: 4a2rfixophdjffa8KVA4Aa, udp: true}
-  - {name: 福建省厦门市 电信 4, server: us.fastsoonlink.com, port: 40001, type: ss, cipher: chacha20-ietf-poly1305, password: 9177de1a-aeff-43f1-93a6-7dd08a2fdc41, udp: true}
-  - {name: 香港 电讯盈科有限公司, server: v10.heduian.link, port: 30807, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /oooo, headers: {Host: baidu.com}}, udp: true}
-  - {name: 江苏省 移动, server: v9.heduian.link, port: 30809, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /oooo, headers: {Host: baidu.com}}, udp: true}
-  - {name: 福建省厦门市 电信 5, server: tur.fastsoonlink.com, port: 40019, type: ss, cipher: chacha20-ietf-poly1305, password: 9177de1a-aeff-43f1-93a6-7dd08a2fdc41, udp: true}
-  - {name: 福建省厦门市 电信 6, server: pr.fastsoonlink.com, port: 40030, type: ss, cipher: chacha20-ietf-poly1305, password: 9177de1a-aeff-43f1-93a6-7dd08a2fdc41, udp: true}
+  - {name: 中国 阿里云 3, server: 8.217.220.30, port: 62236, type: vmess, uuid: 1d250ec9-412a-4b9b-bbdc-cdfcd76620b0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/arki?ed=2048"}, udp: true}
+  - {name: 中国 阿里云 4, server: 8.218.26.43, port: 4946, type: vmess, uuid: 548e20b7-f0c7-4552-a533-8a6427cd62bd, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/arki?ed=2048"}, udp: true}
+  - {name: 美国 V2CROSS.COM, server: 45.144.174.60, port: 23177, type: vmess, uuid: 9661e432-c1c7-472e-89fe-2233e3f1fdf5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 中国 阿里云 5, server: 8.218.8.84, port: 30489, type: vmess, uuid: c7275393-4687-4709-ac07-17a516a1b457, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/arki?ed=2048"}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 美国 华盛顿Cogent通信公司
-      - 福建省厦门市 电信
-      - 俄罗斯 莫斯科JustHost
-      - 福建省厦门市 电信 2
-      - 福建省厦门市 电信 3
-      - 伊朗 V2CROSS.COM
-      - 福建省厦门市 电信 4
-      - 香港 电讯盈科有限公司
+      - 马来西亚 V2CROSS.COM
+      - 法国 国际航空电讯集团公司(SITA)
       - 江苏省 移动
-      - 福建省厦门市 电信 5
-      - 福建省厦门市 电信 6
+      - 香港 电讯盈科有限公司
+      - 中国 阿里云
+      - 美国 阿里云
+      - 香港 阿里云
+      - 香港 电讯盈科有限公司 2
+      - 日本 V2CROSS.COM
+      - 中国 阿里云 2
+      - 福建省厦门市 电信
+      - 中国 阿里云 3
+      - 中国 阿里云 4
+      - 美国 V2CROSS.COM
+      - 中国 阿里云 5
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 美国 华盛顿Cogent通信公司
-      - 福建省厦门市 电信
-      - 俄罗斯 莫斯科JustHost
-      - 福建省厦门市 电信 2
-      - 福建省厦门市 电信 3
-      - 伊朗 V2CROSS.COM
-      - 福建省厦门市 电信 4
-      - 香港 电讯盈科有限公司
+      - 马来西亚 V2CROSS.COM
+      - 法国 国际航空电讯集团公司(SITA)
       - 江苏省 移动
-      - 福建省厦门市 电信 5
-      - 福建省厦门市 电信 6
+      - 香港 电讯盈科有限公司
+      - 中国 阿里云
+      - 美国 阿里云
+      - 香港 阿里云
+      - 香港 电讯盈科有限公司 2
+      - 日本 V2CROSS.COM
+      - 中国 阿里云 2
+      - 福建省厦门市 电信
+      - 中国 阿里云 3
+      - 中国 阿里云 4
+      - 美国 V2CROSS.COM
+      - 中国 阿里云 5
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 美国 华盛顿Cogent通信公司
-      - 福建省厦门市 电信
-      - 俄罗斯 莫斯科JustHost
-      - 福建省厦门市 电信 2
-      - 福建省厦门市 电信 3
-      - 伊朗 V2CROSS.COM
-      - 福建省厦门市 电信 4
-      - 香港 电讯盈科有限公司
+      - 马来西亚 V2CROSS.COM
+      - 法国 国际航空电讯集团公司(SITA)
       - 江苏省 移动
-      - 福建省厦门市 电信 5
-      - 福建省厦门市 电信 6
+      - 香港 电讯盈科有限公司
+      - 中国 阿里云
+      - 美国 阿里云
+      - 香港 阿里云
+      - 香港 电讯盈科有限公司 2
+      - 日本 V2CROSS.COM
+      - 中国 阿里云 2
+      - 福建省厦门市 电信
+      - 中国 阿里云 3
+      - 中国 阿里云 4
+      - 美国 V2CROSS.COM
+      - 中国 阿里云 5
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -84,72 +100,90 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 美国 华盛顿Cogent通信公司
-      - 福建省厦门市 电信
-      - 俄罗斯 莫斯科JustHost
-      - 福建省厦门市 电信 2
-      - 福建省厦门市 电信 3
-      - 伊朗 V2CROSS.COM
-      - 福建省厦门市 电信 4
-      - 香港 电讯盈科有限公司
+      - 马来西亚 V2CROSS.COM
+      - 法国 国际航空电讯集团公司(SITA)
       - 江苏省 移动
-      - 福建省厦门市 电信 5
-      - 福建省厦门市 电信 6
+      - 香港 电讯盈科有限公司
+      - 中国 阿里云
+      - 美国 阿里云
+      - 香港 阿里云
+      - 香港 电讯盈科有限公司 2
+      - 日本 V2CROSS.COM
+      - 中国 阿里云 2
+      - 福建省厦门市 电信
+      - 中国 阿里云 3
+      - 中国 阿里云 4
+      - 美国 V2CROSS.COM
+      - 中国 阿里云 5
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
       - 香港 电讯盈科有限公司
+      - 香港 阿里云
+      - 香港 电讯盈科有限公司 2
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 美国 华盛顿Cogent通信公司
-      - 福建省厦门市 电信
-      - 俄罗斯 莫斯科JustHost
-      - 福建省厦门市 电信 2
-      - 福建省厦门市 电信 3
-      - 伊朗 V2CROSS.COM
-      - 福建省厦门市 电信 4
-      - 香港 电讯盈科有限公司
+      - 马来西亚 V2CROSS.COM
+      - 法国 国际航空电讯集团公司(SITA)
       - 江苏省 移动
-      - 福建省厦门市 电信 5
-      - 福建省厦门市 电信 6
+      - 香港 电讯盈科有限公司
+      - 中国 阿里云
+      - 美国 阿里云
+      - 香港 阿里云
+      - 香港 电讯盈科有限公司 2
+      - 日本 V2CROSS.COM
+      - 中国 阿里云 2
+      - 福建省厦门市 电信
+      - 中国 阿里云 3
+      - 中国 阿里云 4
+      - 美国 V2CROSS.COM
+      - 中国 阿里云 5
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 美国 华盛顿Cogent通信公司
-      - 福建省厦门市 电信
-      - 俄罗斯 莫斯科JustHost
-      - 福建省厦门市 电信 2
-      - 福建省厦门市 电信 3
-      - 伊朗 V2CROSS.COM
-      - 福建省厦门市 电信 4
-      - 香港 电讯盈科有限公司
+      - 马来西亚 V2CROSS.COM
+      - 法国 国际航空电讯集团公司(SITA)
       - 江苏省 移动
-      - 福建省厦门市 电信 5
-      - 福建省厦门市 电信 6
+      - 香港 电讯盈科有限公司
+      - 中国 阿里云
+      - 美国 阿里云
+      - 香港 阿里云
+      - 香港 电讯盈科有限公司 2
+      - 日本 V2CROSS.COM
+      - 中国 阿里云 2
+      - 福建省厦门市 电信
+      - 中国 阿里云 3
+      - 中国 阿里云 4
+      - 美国 V2CROSS.COM
+      - 中国 阿里云 5
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 美国 华盛顿Cogent通信公司
-      - 福建省厦门市 电信
-      - 俄罗斯 莫斯科JustHost
-      - 福建省厦门市 电信 2
-      - 福建省厦门市 电信 3
-      - 伊朗 V2CROSS.COM
-      - 福建省厦门市 电信 4
-      - 香港 电讯盈科有限公司
+      - 马来西亚 V2CROSS.COM
+      - 法国 国际航空电讯集团公司(SITA)
       - 江苏省 移动
-      - 福建省厦门市 电信 5
-      - 福建省厦门市 电信 6
+      - 香港 电讯盈科有限公司
+      - 中国 阿里云
+      - 美国 阿里云
+      - 香港 阿里云
+      - 香港 电讯盈科有限公司 2
+      - 日本 V2CROSS.COM
+      - 中国 阿里云 2
+      - 福建省厦门市 电信
+      - 中国 阿里云 3
+      - 中国 阿里云 4
+      - 美国 V2CROSS.COM
+      - 中国 阿里云 5
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -165,17 +199,21 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 美国 华盛顿Cogent通信公司
-      - 福建省厦门市 电信
-      - 俄罗斯 莫斯科JustHost
-      - 福建省厦门市 电信 2
-      - 福建省厦门市 电信 3
-      - 伊朗 V2CROSS.COM
-      - 福建省厦门市 电信 4
-      - 香港 电讯盈科有限公司
+      - 马来西亚 V2CROSS.COM
+      - 法国 国际航空电讯集团公司(SITA)
       - 江苏省 移动
-      - 福建省厦门市 电信 5
-      - 福建省厦门市 电信 6
+      - 香港 电讯盈科有限公司
+      - 中国 阿里云
+      - 美国 阿里云
+      - 香港 阿里云
+      - 香港 电讯盈科有限公司 2
+      - 日本 V2CROSS.COM
+      - 中国 阿里云 2
+      - 福建省厦门市 电信
+      - 中国 阿里云 3
+      - 中国 阿里云 4
+      - 美国 V2CROSS.COM
+      - 中国 阿里云 5
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
