@@ -5,93 +5,101 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 🇺🇸 美国 V2CROSS.COM, server: v36.heduian.link, port: 30836, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /oooo, headers: {Host: v36.heduian.link}}, udp: true}
-  - {name: 🇺🇸 美国 纽约州伊利县威廉斯维尔村ColoCrossing有限公司, server: v29.heduian.link, port: 30829, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /oooo, headers: {Host: ocbc.com}}, udp: true}
-  - {name: 🇺🇸 美国 惠普HP, server: 15.204.248.103, port: 443, type: trojan, password: 2ee85121-31de-4581-a492-eb00f606e392, sni: rs3.freeguard.org, skip-cert-verify: false, udp: true}
-  - {name: 福建省厦门市 电信, server: uk.fastsoonlink.com, port: 40008, type: ss, cipher: chacha20-ietf-poly1305, password: 9177de1a-aeff-43f1-93a6-7dd08a2fdc41, udp: true}
-  - {name: 🇫🇷 法国 国际航空电讯集团公司(SITA), server: 57.128.189.240, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /linkvws}, udp: true}
-  - {name: 🇫🇷 法国 鲁贝OVH数据中心, server: 51.75.160.237, port: 443, type: vmess, uuid: 3adba462-318f-4a6c-ad7a-2923bc74f207, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /linkvkwss, headers: {Host: blazE-Uk-237.BLaZEsERVERs1.sItE}}, udp: true}
+  - {name: 🇯🇵 日本 东京都樱花互联网数据中心, server: 202.181.103.246, port: 443, type: trojan, password: 253bc477d4e43c209f2d427272968280, sni: www.nintendogames.net, skip-cert-verify: false, udp: true}
+  - {name: 🇯🇵 日本 东京Sakura樱花云数据中心, server: 160.16.236.32, port: 443, type: trojan, password: 253bc477d4e43c209f2d427272968280, sni: www.nintendogames.net, skip-cert-verify: false, udp: true}
+  - {name: 🇳🇱 荷兰 V2CROSS.COM, server: 185.247.118.230, port: 4362, type: ss, cipher: chacha20-ietf-poly1305, password: AzdG4PQMZlUHdZSET907cr, udp: true}
+  - {name: 🇺🇸 美国 加利福尼亚州圣何塞PRGMR云计算公司, server: 71.19.148.74, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: gqkUCvmeOTghYJXF1YIuk5, udp: true}
+  - {name: 🇺🇸 美国 CloudFlare节点, server: dddvvbn.931.pp.ua, port: 443, type: vmess, uuid: 4174b95d-115e-4d39-add6-1f8db95bb860, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /6We3U9Df1WGxgFnoFPw1, headers: {Host: dddvvbn.931.pp.ua}}, udp: true}
+  - {name: 🇫🇷 法国 国际航空电讯集团公司(SITA), server: 57.129.28.213, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: linkvws, headers: {Host: fapeng.org}}, udp: true}
+  - {name: 🇺🇸 美国 纽约州伊利县威廉斯维尔村ColoCrossing有限公司, server: 198.46.152.83, port: 443, type: trojan, password: 2ee85121-31de-4581-a492-eb00f606e392, sni: sj3.freeguard.org, skip-cert-verify: false, udp: true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 🇺🇸 美国 V2CROSS.COM
-      - 🇺🇸 美国 纽约州伊利县威廉斯维尔村ColoCrossing有限公司
-      - 🇺🇸 美国 惠普HP
-      - 福建省厦门市 电信
+      - 🇯🇵 日本 东京都樱花互联网数据中心
+      - 🇯🇵 日本 东京Sakura樱花云数据中心
+      - 🇳🇱 荷兰 V2CROSS.COM
+      - 🇺🇸 美国 加利福尼亚州圣何塞PRGMR云计算公司
+      - 🇺🇸 美国 CloudFlare节点
       - 🇫🇷 法国 国际航空电讯集团公司(SITA)
-      - 🇫🇷 法国 鲁贝OVH数据中心
+      - 🇺🇸 美国 纽约州伊利县威廉斯维尔村ColoCrossing有限公司
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇺🇸 美国 V2CROSS.COM
-      - 🇺🇸 美国 纽约州伊利县威廉斯维尔村ColoCrossing有限公司
-      - 🇺🇸 美国 惠普HP
-      - 福建省厦门市 电信
+      - 🇯🇵 日本 东京都樱花互联网数据中心
+      - 🇯🇵 日本 东京Sakura樱花云数据中心
+      - 🇳🇱 荷兰 V2CROSS.COM
+      - 🇺🇸 美国 加利福尼亚州圣何塞PRGMR云计算公司
+      - 🇺🇸 美国 CloudFlare节点
       - 🇫🇷 法国 国际航空电讯集团公司(SITA)
-      - 🇫🇷 法国 鲁贝OVH数据中心
+      - 🇺🇸 美国 纽约州伊利县威廉斯维尔村ColoCrossing有限公司
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇺🇸 美国 V2CROSS.COM
-      - 🇺🇸 美国 纽约州伊利县威廉斯维尔村ColoCrossing有限公司
-      - 🇺🇸 美国 惠普HP
-      - 福建省厦门市 电信
+      - 🇯🇵 日本 东京都樱花互联网数据中心
+      - 🇯🇵 日本 东京Sakura樱花云数据中心
+      - 🇳🇱 荷兰 V2CROSS.COM
+      - 🇺🇸 美国 加利福尼亚州圣何塞PRGMR云计算公司
+      - 🇺🇸 美国 CloudFlare节点
       - 🇫🇷 法国 国际航空电讯集团公司(SITA)
-      - 🇫🇷 法国 鲁贝OVH数据中心
+      - 🇺🇸 美国 纽约州伊利县威廉斯维尔村ColoCrossing有限公司
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇺🇸 美国 V2CROSS.COM
-      - 🇺🇸 美国 纽约州伊利县威廉斯维尔村ColoCrossing有限公司
-      - 🇺🇸 美国 惠普HP
-      - 福建省厦门市 电信
+      - 🇯🇵 日本 东京都樱花互联网数据中心
+      - 🇯🇵 日本 东京Sakura樱花云数据中心
+      - 🇳🇱 荷兰 V2CROSS.COM
+      - 🇺🇸 美国 加利福尼亚州圣何塞PRGMR云计算公司
+      - 🇺🇸 美国 CloudFlare节点
       - 🇫🇷 法国 国际航空电讯集团公司(SITA)
-      - 🇫🇷 法国 鲁贝OVH数据中心
+      - 🇺🇸 美国 纽约州伊利县威廉斯维尔村ColoCrossing有限公司
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 🇺🇸 美国 V2CROSS.COM
-      - 🇺🇸 美国 纽约州伊利县威廉斯维尔村ColoCrossing有限公司
-      - 🇺🇸 美国 惠普HP
-      - 福建省厦门市 电信
+      - 🇯🇵 日本 东京都樱花互联网数据中心
+      - 🇯🇵 日本 东京Sakura樱花云数据中心
+      - 🇳🇱 荷兰 V2CROSS.COM
+      - 🇺🇸 美国 加利福尼亚州圣何塞PRGMR云计算公司
+      - 🇺🇸 美国 CloudFlare节点
       - 🇫🇷 法国 国际航空电讯集团公司(SITA)
-      - 🇫🇷 法国 鲁贝OVH数据中心
+      - 🇺🇸 美国 纽约州伊利县威廉斯维尔村ColoCrossing有限公司
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇺🇸 美国 V2CROSS.COM
-      - 🇺🇸 美国 纽约州伊利县威廉斯维尔村ColoCrossing有限公司
-      - 🇺🇸 美国 惠普HP
-      - 福建省厦门市 电信
+      - 🇯🇵 日本 东京都樱花互联网数据中心
+      - 🇯🇵 日本 东京Sakura樱花云数据中心
+      - 🇳🇱 荷兰 V2CROSS.COM
+      - 🇺🇸 美国 加利福尼亚州圣何塞PRGMR云计算公司
+      - 🇺🇸 美国 CloudFlare节点
       - 🇫🇷 法国 国际航空电讯集团公司(SITA)
-      - 🇫🇷 法国 鲁贝OVH数据中心
+      - 🇺🇸 美国 纽约州伊利县威廉斯维尔村ColoCrossing有限公司
   - name: 📢 谷歌FCM
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇺🇸 美国 V2CROSS.COM
-      - 🇺🇸 美国 纽约州伊利县威廉斯维尔村ColoCrossing有限公司
-      - 🇺🇸 美国 惠普HP
-      - 福建省厦门市 电信
+      - 🇯🇵 日本 东京都樱花互联网数据中心
+      - 🇯🇵 日本 东京Sakura樱花云数据中心
+      - 🇳🇱 荷兰 V2CROSS.COM
+      - 🇺🇸 美国 加利福尼亚州圣何塞PRGMR云计算公司
+      - 🇺🇸 美国 CloudFlare节点
       - 🇫🇷 法国 国际航空电讯集团公司(SITA)
-      - 🇫🇷 法国 鲁贝OVH数据中心
+      - 🇺🇸 美国 纽约州伊利县威廉斯维尔村ColoCrossing有限公司
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -114,12 +122,13 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇺🇸 美国 V2CROSS.COM
-      - 🇺🇸 美国 纽约州伊利县威廉斯维尔村ColoCrossing有限公司
-      - 🇺🇸 美国 惠普HP
-      - 福建省厦门市 电信
+      - 🇯🇵 日本 东京都樱花互联网数据中心
+      - 🇯🇵 日本 东京Sakura樱花云数据中心
+      - 🇳🇱 荷兰 V2CROSS.COM
+      - 🇺🇸 美国 加利福尼亚州圣何塞PRGMR云计算公司
+      - 🇺🇸 美国 CloudFlare节点
       - 🇫🇷 法国 国际航空电讯集团公司(SITA)
-      - 🇫🇷 法国 鲁贝OVH数据中心
+      - 🇺🇸 美国 纽约州伊利县威廉斯维尔村ColoCrossing有限公司
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
