@@ -5,101 +5,117 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 🇯🇵 日本 东京都樱花互联网数据中心, server: 202.181.103.246, port: 443, type: trojan, password: 253bc477d4e43c209f2d427272968280, sni: www.nintendogames.net, skip-cert-verify: false, udp: true}
-  - {name: 🇯🇵 日本 东京Sakura樱花云数据中心, server: 160.16.236.32, port: 443, type: trojan, password: 253bc477d4e43c209f2d427272968280, sni: www.nintendogames.net, skip-cert-verify: false, udp: true}
-  - {name: 🇳🇱 荷兰 V2CROSS.COM, server: 185.247.118.230, port: 4362, type: ss, cipher: chacha20-ietf-poly1305, password: AzdG4PQMZlUHdZSET907cr, udp: true}
-  - {name: 🇺🇸 美国 加利福尼亚州圣何塞PRGMR云计算公司, server: 71.19.148.74, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: gqkUCvmeOTghYJXF1YIuk5, udp: true}
-  - {name: 🇺🇸 美国 CloudFlare节点, server: dddvvbn.931.pp.ua, port: 443, type: vmess, uuid: 4174b95d-115e-4d39-add6-1f8db95bb860, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /6We3U9Df1WGxgFnoFPw1, headers: {Host: dddvvbn.931.pp.ua}}, udp: true}
+  - {name: 🇺🇸 美国 Xerox, server: cgroup.node3.v.nodelist-airport.com, port: 24321, type: vmess, uuid: 8f3a835c-8a45-480d-ae35-1deb2c52dcae, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 🇺🇸 美国 3COM公司企业网, server: 152.67.8.205, port: 80, type: vmess, uuid: 9db4c708-aef8-4359-821b-38e47990be0d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 🇯🇵 日本 V2CROSS.COM, server: 163.61.208.131, port: 26821, type: vmess, uuid: bd1bdd99-d311-49bf-a68f-27ee8e42e670, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/arki?ed=2048"}, udp: true}
+  - {name: 🇯🇵 日本 V2CROSS.COM 2, server: 163.61.208.35, port: 26821, type: vmess, uuid: bd1bdd99-d311-49bf-a68f-27ee8e42e670, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/arki?ed=2048"}, udp: true}
+  - {name: 🇯🇵 日本 V2CROSS.COM 3, server: 163.61.208.73, port: 16863, type: vmess, uuid: e4ee1fa7-b055-46fe-9ca8-257dcfe86fad, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/arki?ed=2048"}, udp: true}
+  - {name: 🇯🇵 日本 V2CROSS.COM 4, server: 163.61.208.121, port: 4355, type: vmess, uuid: 37ba82a4-2a71-43c5-9b41-a568116da44e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/arki?ed=2048"}, udp: true}
   - {name: 🇫🇷 法国 国际航空电讯集团公司(SITA), server: 57.129.28.213, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: linkvws, headers: {Host: fapeng.org}}, udp: true}
-  - {name: 🇺🇸 美国 纽约州伊利县威廉斯维尔村ColoCrossing有限公司, server: 198.46.152.83, port: 443, type: trojan, password: 2ee85121-31de-4581-a492-eb00f606e392, sni: sj3.freeguard.org, skip-cert-verify: false, udp: true}
+  - {name: 🇯🇵 日本 V2CROSS.COM 5, server: 163.61.208.108, port: 4355, type: vmess, uuid: 37ba82a4-2a71-43c5-9b41-a568116da44e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/arki?ed=2048"}, udp: true}
+  - {name: 🇨🇳 江苏省 移动, server: v9.heduian.link, port: 30809, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /oooo, headers: {Host: baidu.com}}, udp: true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 🇯🇵 日本 东京都樱花互联网数据中心
-      - 🇯🇵 日本 东京Sakura樱花云数据中心
-      - 🇳🇱 荷兰 V2CROSS.COM
-      - 🇺🇸 美国 加利福尼亚州圣何塞PRGMR云计算公司
-      - 🇺🇸 美国 CloudFlare节点
+      - 🇺🇸 美国 Xerox
+      - 🇺🇸 美国 3COM公司企业网
+      - 🇯🇵 日本 V2CROSS.COM
+      - 🇯🇵 日本 V2CROSS.COM 2
+      - 🇯🇵 日本 V2CROSS.COM 3
+      - 🇯🇵 日本 V2CROSS.COM 4
       - 🇫🇷 法国 国际航空电讯集团公司(SITA)
-      - 🇺🇸 美国 纽约州伊利县威廉斯维尔村ColoCrossing有限公司
+      - 🇯🇵 日本 V2CROSS.COM 5
+      - 🇨🇳 江苏省 移动
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇯🇵 日本 东京都樱花互联网数据中心
-      - 🇯🇵 日本 东京Sakura樱花云数据中心
-      - 🇳🇱 荷兰 V2CROSS.COM
-      - 🇺🇸 美国 加利福尼亚州圣何塞PRGMR云计算公司
-      - 🇺🇸 美国 CloudFlare节点
+      - 🇺🇸 美国 Xerox
+      - 🇺🇸 美国 3COM公司企业网
+      - 🇯🇵 日本 V2CROSS.COM
+      - 🇯🇵 日本 V2CROSS.COM 2
+      - 🇯🇵 日本 V2CROSS.COM 3
+      - 🇯🇵 日本 V2CROSS.COM 4
       - 🇫🇷 法国 国际航空电讯集团公司(SITA)
-      - 🇺🇸 美国 纽约州伊利县威廉斯维尔村ColoCrossing有限公司
+      - 🇯🇵 日本 V2CROSS.COM 5
+      - 🇨🇳 江苏省 移动
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇯🇵 日本 东京都樱花互联网数据中心
-      - 🇯🇵 日本 东京Sakura樱花云数据中心
-      - 🇳🇱 荷兰 V2CROSS.COM
-      - 🇺🇸 美国 加利福尼亚州圣何塞PRGMR云计算公司
-      - 🇺🇸 美国 CloudFlare节点
+      - 🇺🇸 美国 Xerox
+      - 🇺🇸 美国 3COM公司企业网
+      - 🇯🇵 日本 V2CROSS.COM
+      - 🇯🇵 日本 V2CROSS.COM 2
+      - 🇯🇵 日本 V2CROSS.COM 3
+      - 🇯🇵 日本 V2CROSS.COM 4
       - 🇫🇷 法国 国际航空电讯集团公司(SITA)
-      - 🇺🇸 美国 纽约州伊利县威廉斯维尔村ColoCrossing有限公司
+      - 🇯🇵 日本 V2CROSS.COM 5
+      - 🇨🇳 江苏省 移动
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇯🇵 日本 东京都樱花互联网数据中心
-      - 🇯🇵 日本 东京Sakura樱花云数据中心
-      - 🇳🇱 荷兰 V2CROSS.COM
-      - 🇺🇸 美国 加利福尼亚州圣何塞PRGMR云计算公司
-      - 🇺🇸 美国 CloudFlare节点
+      - 🇺🇸 美国 Xerox
+      - 🇺🇸 美国 3COM公司企业网
+      - 🇯🇵 日本 V2CROSS.COM
+      - 🇯🇵 日本 V2CROSS.COM 2
+      - 🇯🇵 日本 V2CROSS.COM 3
+      - 🇯🇵 日本 V2CROSS.COM 4
       - 🇫🇷 法国 国际航空电讯集团公司(SITA)
-      - 🇺🇸 美国 纽约州伊利县威廉斯维尔村ColoCrossing有限公司
+      - 🇯🇵 日本 V2CROSS.COM 5
+      - 🇨🇳 江苏省 移动
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 🇯🇵 日本 东京都樱花互联网数据中心
-      - 🇯🇵 日本 东京Sakura樱花云数据中心
-      - 🇳🇱 荷兰 V2CROSS.COM
-      - 🇺🇸 美国 加利福尼亚州圣何塞PRGMR云计算公司
-      - 🇺🇸 美国 CloudFlare节点
+      - 🇺🇸 美国 Xerox
+      - 🇺🇸 美国 3COM公司企业网
+      - 🇯🇵 日本 V2CROSS.COM
+      - 🇯🇵 日本 V2CROSS.COM 2
+      - 🇯🇵 日本 V2CROSS.COM 3
+      - 🇯🇵 日本 V2CROSS.COM 4
       - 🇫🇷 法国 国际航空电讯集团公司(SITA)
-      - 🇺🇸 美国 纽约州伊利县威廉斯维尔村ColoCrossing有限公司
+      - 🇯🇵 日本 V2CROSS.COM 5
+      - 🇨🇳 江苏省 移动
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇯🇵 日本 东京都樱花互联网数据中心
-      - 🇯🇵 日本 东京Sakura樱花云数据中心
-      - 🇳🇱 荷兰 V2CROSS.COM
-      - 🇺🇸 美国 加利福尼亚州圣何塞PRGMR云计算公司
-      - 🇺🇸 美国 CloudFlare节点
+      - 🇺🇸 美国 Xerox
+      - 🇺🇸 美国 3COM公司企业网
+      - 🇯🇵 日本 V2CROSS.COM
+      - 🇯🇵 日本 V2CROSS.COM 2
+      - 🇯🇵 日本 V2CROSS.COM 3
+      - 🇯🇵 日本 V2CROSS.COM 4
       - 🇫🇷 法国 国际航空电讯集团公司(SITA)
-      - 🇺🇸 美国 纽约州伊利县威廉斯维尔村ColoCrossing有限公司
+      - 🇯🇵 日本 V2CROSS.COM 5
+      - 🇨🇳 江苏省 移动
   - name: 📢 谷歌FCM
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇯🇵 日本 东京都樱花互联网数据中心
-      - 🇯🇵 日本 东京Sakura樱花云数据中心
-      - 🇳🇱 荷兰 V2CROSS.COM
-      - 🇺🇸 美国 加利福尼亚州圣何塞PRGMR云计算公司
-      - 🇺🇸 美国 CloudFlare节点
+      - 🇺🇸 美国 Xerox
+      - 🇺🇸 美国 3COM公司企业网
+      - 🇯🇵 日本 V2CROSS.COM
+      - 🇯🇵 日本 V2CROSS.COM 2
+      - 🇯🇵 日本 V2CROSS.COM 3
+      - 🇯🇵 日本 V2CROSS.COM 4
       - 🇫🇷 法国 国际航空电讯集团公司(SITA)
-      - 🇺🇸 美国 纽约州伊利县威廉斯维尔村ColoCrossing有限公司
+      - 🇯🇵 日本 V2CROSS.COM 5
+      - 🇨🇳 江苏省 移动
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -122,13 +138,15 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇯🇵 日本 东京都樱花互联网数据中心
-      - 🇯🇵 日本 东京Sakura樱花云数据中心
-      - 🇳🇱 荷兰 V2CROSS.COM
-      - 🇺🇸 美国 加利福尼亚州圣何塞PRGMR云计算公司
-      - 🇺🇸 美国 CloudFlare节点
+      - 🇺🇸 美国 Xerox
+      - 🇺🇸 美国 3COM公司企业网
+      - 🇯🇵 日本 V2CROSS.COM
+      - 🇯🇵 日本 V2CROSS.COM 2
+      - 🇯🇵 日本 V2CROSS.COM 3
+      - 🇯🇵 日本 V2CROSS.COM 4
       - 🇫🇷 法国 国际航空电讯集团公司(SITA)
-      - 🇺🇸 美国 纽约州伊利县威廉斯维尔村ColoCrossing有限公司
+      - 🇯🇵 日本 V2CROSS.COM 5
+      - 🇨🇳 江苏省 移动
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
