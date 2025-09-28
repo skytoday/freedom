@@ -5,51 +5,35 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
+  - {name: 香港 电讯盈科有限公司, server: eb362f92-svukg0-t12cnj-1ol97.hk.p5pv.com, port: 80, type: vmess, uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: eb362f92-svukg0-t12cnj-1ol97.hk.p5pv.com}}, udp: true}
+  - {name: 美国 CloudFlare节点, server: 73E42019-c820-A66a-011E-f11937232ec1.89890604.XYz, port: 443, type: vmess, uuid: c2633560-5acb-4dd3-9c22-9a6c2fd212e2, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /2uRsM4Z4Y8O5OsbJkA, headers: {Host: 73e42019-C820-A66A-011E-f11937232EC1.89890604.xYZ}}, udp: true}
   - {name: 江苏省 移动, server: v9.heduian.link, port: 30809, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /oooo, headers: {Host: baidu.com}}, udp: true}
-  - {name: 江苏省 移动 2, server: v29.heduian.link, port: 30829, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /oooo, headers: {Host: v29.heduian.link}}, udp: true}
-  - {name: 江苏省 移动 3, server: v39.heduian.link, port: 30839, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /oooo, headers: {Host: baidu.com}}, udp: true}
-  - {name: 香港 电讯盈科有限公司, server: c004e6fe-t1i9s0-tm53cm-1ol97.hkt.tcpbbr.net, port: 80, type: vmess, uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: broadcastlv.chat.bilibili.com}}, udp: true}
-  - {name: 美国 华盛顿Cogent通信公司, server: 38.180.249.177, port: 8443, type: trojan, password: installshield, sni: 38.180.249.177, skip-cert-verify: true, udp: true}
-  - {name: 俄罗斯 Rubtsovsk Branch of Altai State University, server: 212.192.12.251, port: 23183, type: vmess, uuid: cd7e994f-f9f3-4fae-93c7-ee4e36a84811, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: 香港 电讯盈科有限公司 2, server: v10.heduian.link, port: 30807, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /oooo, headers: {Host: baidu.com}}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 江苏省 移动
-      - 江苏省 移动 2
-      - 江苏省 移动 3
       - 香港 电讯盈科有限公司
-      - 美国 华盛顿Cogent通信公司
-      - 俄罗斯 Rubtsovsk Branch of Altai State University
-      - 香港 电讯盈科有限公司 2
+      - 美国 CloudFlare节点
+      - 江苏省 移动
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 江苏省 移动
-      - 江苏省 移动 2
-      - 江苏省 移动 3
       - 香港 电讯盈科有限公司
-      - 美国 华盛顿Cogent通信公司
-      - 俄罗斯 Rubtsovsk Branch of Altai State University
-      - 香港 电讯盈科有限公司 2
+      - 美国 CloudFlare节点
+      - 江苏省 移动
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 江苏省 移动
-      - 江苏省 移动 2
-      - 江苏省 移动 3
       - 香港 电讯盈科有限公司
-      - 美国 华盛顿Cogent通信公司
-      - 俄罗斯 Rubtsovsk Branch of Altai State University
-      - 香港 电讯盈科有限公司 2
+      - 美国 CloudFlare节点
+      - 江苏省 移动
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -68,57 +52,40 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 江苏省 移动
-      - 江苏省 移动 2
-      - 江苏省 移动 3
       - 香港 电讯盈科有限公司
-      - 美国 华盛顿Cogent通信公司
-      - 俄罗斯 Rubtsovsk Branch of Altai State University
-      - 香港 电讯盈科有限公司 2
+      - 美国 CloudFlare节点
+      - 江苏省 移动
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
       - 香港 电讯盈科有限公司
-      - 香港 电讯盈科有限公司 2
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 江苏省 移动
-      - 江苏省 移动 2
-      - 江苏省 移动 3
       - 香港 电讯盈科有限公司
-      - 美国 华盛顿Cogent通信公司
-      - 俄罗斯 Rubtsovsk Branch of Altai State University
-      - 香港 电讯盈科有限公司 2
+      - 美国 CloudFlare节点
+      - 江苏省 移动
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 江苏省 移动
-      - 江苏省 移动 2
-      - 江苏省 移动 3
       - 香港 电讯盈科有限公司
-      - 美国 华盛顿Cogent通信公司
-      - 俄罗斯 Rubtsovsk Branch of Altai State University
-      - 香港 电讯盈科有限公司 2
+      - 美国 CloudFlare节点
+      - 江苏省 移动
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 江苏省 移动
-      - 江苏省 移动 2
-      - 江苏省 移动 3
       - 香港 电讯盈科有限公司
-      - 美国 华盛顿Cogent通信公司
-      - 俄罗斯 Rubtsovsk Branch of Altai State University
-      - 香港 电讯盈科有限公司 2
+      - 美国 CloudFlare节点
+      - 江苏省 移动
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -134,13 +101,9 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 江苏省 移动
-      - 江苏省 移动 2
-      - 江苏省 移动 3
       - 香港 电讯盈科有限公司
-      - 美国 华盛顿Cogent通信公司
-      - 俄罗斯 Rubtsovsk Branch of Altai State University
-      - 香港 电讯盈科有限公司 2
+      - 美国 CloudFlare节点
+      - 江苏省 移动
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
