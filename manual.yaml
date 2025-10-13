@@ -5,93 +5,93 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
+  - {name: 🇷🇴 罗马尼亚 V2CROSS.COM, server: 185.195.67.178, port: 990, type: ss, cipher: chacha20-ietf-poly1305, password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=, udp: true}
+  - {name: 🇺🇸 美国 加利福尼亚州圣何塞PRGMR云计算公司, server: pupas-shirting-unsung.freesocks.work, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: p78naCf2EfOlRSLTX0wFVx, udp: true}
   - {name: 🇨🇳 江苏省 移动, server: v5.heduian.link, port: 30805, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /oooo, headers: {Host: v5.heduian.link}}, udp: true}
-  - {name: 🇷🇺 俄罗斯 V2CROSS.COM, server: cpanel.erade32.ir, port: 100, type: vmess, uuid: 0888adea-086c-4783-9989-85df86819c1f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 🇨🇳 江苏省盐城市 移动, server: 36.156.102.84, port: 2381, type: trojan, password: 253bc477d4e43c209f2d427272968280, sni: fe2.update.microsoft.com, skip-cert-verify: false, udp: true}
-  - {name: 🇨🇳 江苏省盐城市 移动 2, server: 36.156.102.84, port: 5321, type: trojan, password: 253bc477d4e43c209f2d427272968280, sni: www.nintendogames.net, skip-cert-verify: false, udp: true}
-  - {name: 🇨🇳 江苏省盐城市 移动 3, server: 36.156.102.84, port: 24673, type: trojan, password: 253bc477d4e43c209f2d427272968280, sni: fe2.update.microsoft.com, skip-cert-verify: false, udp: true}
-  - {name: 🇨🇳 江苏省盐城市 移动 4, server: 36.156.102.84, port: 1920, type: trojan, password: 253bc477d4e43c209f2d427272968280, sni: www.nintendogames.net, skip-cert-verify: false, udp: true}
+  - {name: 🇨🇳 江苏省 移动 2, server: v6.heduian.link, port: 30806, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /oooo, headers: {Host: ocbc.com}}, udp: true}
+  - {name: 🇨🇳 江苏省 移动 3, server: v9.heduian.link, port: 30809, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /oooo, headers: {Host: baidu.com}}, udp: true}
+  - {name: 🇺🇸 美国 华盛顿Cogent通信公司, server: 38.12.83.217, port: 30002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
+      - 🇷🇴 罗马尼亚 V2CROSS.COM
+      - 🇺🇸 美国 加利福尼亚州圣何塞PRGMR云计算公司
       - 🇨🇳 江苏省 移动
-      - 🇷🇺 俄罗斯 V2CROSS.COM
-      - 🇨🇳 江苏省盐城市 移动
-      - 🇨🇳 江苏省盐城市 移动 2
-      - 🇨🇳 江苏省盐城市 移动 3
-      - 🇨🇳 江苏省盐城市 移动 4
+      - 🇨🇳 江苏省 移动 2
+      - 🇨🇳 江苏省 移动 3
+      - 🇺🇸 美国 华盛顿Cogent通信公司
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
+      - 🇷🇴 罗马尼亚 V2CROSS.COM
+      - 🇺🇸 美国 加利福尼亚州圣何塞PRGMR云计算公司
       - 🇨🇳 江苏省 移动
-      - 🇷🇺 俄罗斯 V2CROSS.COM
-      - 🇨🇳 江苏省盐城市 移动
-      - 🇨🇳 江苏省盐城市 移动 2
-      - 🇨🇳 江苏省盐城市 移动 3
-      - 🇨🇳 江苏省盐城市 移动 4
+      - 🇨🇳 江苏省 移动 2
+      - 🇨🇳 江苏省 移动 3
+      - 🇺🇸 美国 华盛顿Cogent通信公司
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
+      - 🇷🇴 罗马尼亚 V2CROSS.COM
+      - 🇺🇸 美国 加利福尼亚州圣何塞PRGMR云计算公司
       - 🇨🇳 江苏省 移动
-      - 🇷🇺 俄罗斯 V2CROSS.COM
-      - 🇨🇳 江苏省盐城市 移动
-      - 🇨🇳 江苏省盐城市 移动 2
-      - 🇨🇳 江苏省盐城市 移动 3
-      - 🇨🇳 江苏省盐城市 移动 4
+      - 🇨🇳 江苏省 移动 2
+      - 🇨🇳 江苏省 移动 3
+      - 🇺🇸 美国 华盛顿Cogent通信公司
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
+      - 🇷🇴 罗马尼亚 V2CROSS.COM
+      - 🇺🇸 美国 加利福尼亚州圣何塞PRGMR云计算公司
       - 🇨🇳 江苏省 移动
-      - 🇷🇺 俄罗斯 V2CROSS.COM
-      - 🇨🇳 江苏省盐城市 移动
-      - 🇨🇳 江苏省盐城市 移动 2
-      - 🇨🇳 江苏省盐城市 移动 3
-      - 🇨🇳 江苏省盐城市 移动 4
+      - 🇨🇳 江苏省 移动 2
+      - 🇨🇳 江苏省 移动 3
+      - 🇺🇸 美国 华盛顿Cogent通信公司
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
+      - 🇷🇴 罗马尼亚 V2CROSS.COM
+      - 🇺🇸 美国 加利福尼亚州圣何塞PRGMR云计算公司
       - 🇨🇳 江苏省 移动
-      - 🇷🇺 俄罗斯 V2CROSS.COM
-      - 🇨🇳 江苏省盐城市 移动
-      - 🇨🇳 江苏省盐城市 移动 2
-      - 🇨🇳 江苏省盐城市 移动 3
-      - 🇨🇳 江苏省盐城市 移动 4
+      - 🇨🇳 江苏省 移动 2
+      - 🇨🇳 江苏省 移动 3
+      - 🇺🇸 美国 华盛顿Cogent通信公司
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
+      - 🇷🇴 罗马尼亚 V2CROSS.COM
+      - 🇺🇸 美国 加利福尼亚州圣何塞PRGMR云计算公司
       - 🇨🇳 江苏省 移动
-      - 🇷🇺 俄罗斯 V2CROSS.COM
-      - 🇨🇳 江苏省盐城市 移动
-      - 🇨🇳 江苏省盐城市 移动 2
-      - 🇨🇳 江苏省盐城市 移动 3
-      - 🇨🇳 江苏省盐城市 移动 4
+      - 🇨🇳 江苏省 移动 2
+      - 🇨🇳 江苏省 移动 3
+      - 🇺🇸 美国 华盛顿Cogent通信公司
   - name: 📢 谷歌FCM
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - 🇷🇴 罗马尼亚 V2CROSS.COM
+      - 🇺🇸 美国 加利福尼亚州圣何塞PRGMR云计算公司
       - 🇨🇳 江苏省 移动
-      - 🇷🇺 俄罗斯 V2CROSS.COM
-      - 🇨🇳 江苏省盐城市 移动
-      - 🇨🇳 江苏省盐城市 移动 2
-      - 🇨🇳 江苏省盐城市 移动 3
-      - 🇨🇳 江苏省盐城市 移动 4
+      - 🇨🇳 江苏省 移动 2
+      - 🇨🇳 江苏省 移动 3
+      - 🇺🇸 美国 华盛顿Cogent通信公司
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -114,12 +114,12 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - 🇷🇴 罗马尼亚 V2CROSS.COM
+      - 🇺🇸 美国 加利福尼亚州圣何塞PRGMR云计算公司
       - 🇨🇳 江苏省 移动
-      - 🇷🇺 俄罗斯 V2CROSS.COM
-      - 🇨🇳 江苏省盐城市 移动
-      - 🇨🇳 江苏省盐城市 移动 2
-      - 🇨🇳 江苏省盐城市 移动 3
-      - 🇨🇳 江苏省盐城市 移动 4
+      - 🇨🇳 江苏省 移动 2
+      - 🇨🇳 江苏省 移动 3
+      - 🇺🇸 美国 华盛顿Cogent通信公司
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
