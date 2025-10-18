@@ -5,13 +5,10 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 香港 电讯盈科有限公司, server: 9def5c5d-t398g0-tdnzz0-1qtp7.hk3.p5pv.com, port: 80, type: vmess, uuid: 3653c708-df72-11ee-aec1-f23c9164ca5d, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: broadcastlv.chat.bilibili.com}}, udp: true}
-  - {name: 香港 电讯盈科有限公司 2, server: 697dc551-t1i9s0-tm53cm-1ol97.hk3.p5pv.com, port: 80, type: vmess, uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 697dc551-t1i9s0-tm53cm-1ol97.hk3.p5pv.com}}, udp: true}
-  - {name: 瑞典 V2CROSS.COM, server: 157.180.123.212, port: 10100, type: vmess, uuid: 14fd5c56-2d55-44a5-9876-6ce27d3aec44, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 台湾省 中华电信(HiNet)数据中心, server: 125.230.2.54, port: 10040, type: ss, cipher: chacha20-ietf-poly1305, password: c18823c7-3cc5-4395-a6c4-c432a9f88493, udp: true}
-  - {name: 江苏省 移动, server: v8.heduian.link, port: 30808, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /oooo, headers: {Host: v8.heduian.link}}, udp: true}
-  - {name: 台湾省台中市 中华电信, server: 36.235.11.59, port: 10117, type: ss, cipher: chacha20-ietf-poly1305, password: 759de4f3-ac4b-4d02-a25f-7fd753ad3222, udp: true}
-  - {name: 匈牙利 V2CROSS.COM, server: 109.61.39.28, port: 990, type: ss, cipher: chacha20-ietf-poly1305, password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=, udp: true}
+  - {name: 台湾省台北市 V2CROSS.COM, server: 46.3.26.12, port: 443, type: vmess, uuid: 4bf075f5-4d5e-4d39-f5ab-b32a86250f0e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /aa, headers: {Host: hk.nbee.pp.ua}}, udp: true}
+  - {name: 欧盟 V2CROSS.COM, server: beesyar.org, port: 8080, type: ss, cipher: chacha20-ietf-poly1305, password: cvII85TrW6n0OGyfpHVS1u, udp: true}
+  - {name: 伊朗 V2CROSS.COM, server: 151.242.251.131, port: 8080, type: ss, cipher: chacha20-ietf-poly1305, password: QCXDxuDlTTMD7jtgHUjIoj, udp: true}
+  - {name: 香港 电讯盈科有限公司, server: v10.heduian.link, port: 30807, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /oooo, headers: {Host: baidu.com}}, udp: true}
   - {name: 美国 V2CROSS.COM, server: 204.136.10.115, port: 1866, type: ss, cipher: chacha20-ietf-poly1305, password: oXGp1+ihlfKg826H, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
@@ -19,26 +16,20 @@ proxy-groups:
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
+      - 台湾省台北市 V2CROSS.COM
+      - 欧盟 V2CROSS.COM
+      - 伊朗 V2CROSS.COM
       - 香港 电讯盈科有限公司
-      - 香港 电讯盈科有限公司 2
-      - 瑞典 V2CROSS.COM
-      - 台湾省 中华电信(HiNet)数据中心
-      - 江苏省 移动
-      - 台湾省台中市 中华电信
-      - 匈牙利 V2CROSS.COM
       - 美国 V2CROSS.COM
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
+      - 台湾省台北市 V2CROSS.COM
+      - 欧盟 V2CROSS.COM
+      - 伊朗 V2CROSS.COM
       - 香港 电讯盈科有限公司
-      - 香港 电讯盈科有限公司 2
-      - 瑞典 V2CROSS.COM
-      - 台湾省 中华电信(HiNet)数据中心
-      - 江苏省 移动
-      - 台湾省台中市 中华电信
-      - 匈牙利 V2CROSS.COM
       - 美国 V2CROSS.COM
   - name: 🎥 NETFLIX
     type: select
@@ -46,13 +37,10 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
+      - 台湾省台北市 V2CROSS.COM
+      - 欧盟 V2CROSS.COM
+      - 伊朗 V2CROSS.COM
       - 香港 电讯盈科有限公司
-      - 香港 电讯盈科有限公司 2
-      - 瑞典 V2CROSS.COM
-      - 台湾省 中华电信(HiNet)数据中心
-      - 江苏省 移动
-      - 台湾省台中市 中华电信
-      - 匈牙利 V2CROSS.COM
       - 美国 V2CROSS.COM
   - name: ⛔️ 广告拦截
     type: select
@@ -72,48 +60,37 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
+      - 台湾省台北市 V2CROSS.COM
+      - 欧盟 V2CROSS.COM
+      - 伊朗 V2CROSS.COM
       - 香港 电讯盈科有限公司
-      - 香港 电讯盈科有限公司 2
-      - 瑞典 V2CROSS.COM
-      - 台湾省 中华电信(HiNet)数据中心
-      - 江苏省 移动
-      - 台湾省台中市 中华电信
-      - 匈牙利 V2CROSS.COM
       - 美国 V2CROSS.COM
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
+      - 台湾省台北市 V2CROSS.COM
       - 香港 电讯盈科有限公司
-      - 香港 电讯盈科有限公司 2
-      - 台湾省 中华电信(HiNet)数据中心
-      - 台湾省台中市 中华电信
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
+      - 台湾省台北市 V2CROSS.COM
+      - 欧盟 V2CROSS.COM
+      - 伊朗 V2CROSS.COM
       - 香港 电讯盈科有限公司
-      - 香港 电讯盈科有限公司 2
-      - 瑞典 V2CROSS.COM
-      - 台湾省 中华电信(HiNet)数据中心
-      - 江苏省 移动
-      - 台湾省台中市 中华电信
-      - 匈牙利 V2CROSS.COM
       - 美国 V2CROSS.COM
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
+      - 台湾省台北市 V2CROSS.COM
+      - 欧盟 V2CROSS.COM
+      - 伊朗 V2CROSS.COM
       - 香港 电讯盈科有限公司
-      - 香港 电讯盈科有限公司 2
-      - 瑞典 V2CROSS.COM
-      - 台湾省 中华电信(HiNet)数据中心
-      - 江苏省 移动
-      - 台湾省台中市 中华电信
-      - 匈牙利 V2CROSS.COM
       - 美国 V2CROSS.COM
   - name: 🍎 苹果服务
     type: select
@@ -121,13 +98,10 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - 台湾省台北市 V2CROSS.COM
+      - 欧盟 V2CROSS.COM
+      - 伊朗 V2CROSS.COM
       - 香港 电讯盈科有限公司
-      - 香港 电讯盈科有限公司 2
-      - 瑞典 V2CROSS.COM
-      - 台湾省 中华电信(HiNet)数据中心
-      - 江苏省 移动
-      - 台湾省台中市 中华电信
-      - 匈牙利 V2CROSS.COM
       - 美国 V2CROSS.COM
   - name: 🎯 全球直连
     type: select
@@ -144,13 +118,10 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - 台湾省台北市 V2CROSS.COM
+      - 欧盟 V2CROSS.COM
+      - 伊朗 V2CROSS.COM
       - 香港 电讯盈科有限公司
-      - 香港 电讯盈科有限公司 2
-      - 瑞典 V2CROSS.COM
-      - 台湾省 中华电信(HiNet)数据中心
-      - 江苏省 移动
-      - 台湾省台中市 中华电信
-      - 匈牙利 V2CROSS.COM
       - 美国 V2CROSS.COM
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
