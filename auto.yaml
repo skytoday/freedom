@@ -5,47 +5,39 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 美国 CloudFlare节点, server: 172.67.204.19, port: 443, type: vmess, uuid: 5f726fe3-d82e-4da5-a711-8af0cbb2b682, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /azumase.ren, headers: {Host: 1a2d514b-37cf-499f-8d08-d017a92ab5bb.asoul-ava.top}}, udp: true}
-  - {name: 台湾省台南市 中华电信, server: 114.35.114.182, port: 10129, type: ss, cipher: chacha20-ietf-poly1305, password: 719adfec-6f6a-468b-a693-61c00002ab9f, udp: true}
-  - {name: 江苏省 移动, server: v9.heduian.link, port: 30809, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /oooo, headers: {Host: baidu.com}}, udp: true}
   - {name: 美国 V2CROSS.COM, server: 204.136.10.115, port: 1866, type: ss, cipher: chacha20-ietf-poly1305, password: oXGp1+ihlfKg826H, udp: true}
-  - {name: 香港 电讯盈科有限公司, server: v10.heduian.link, port: 30807, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /oooo, headers: {Host: baidu.com}}, udp: true}
-  - {name: 美国 CloudFlare节点 2, server: 172.67.160.44, port: 443, type: vmess, uuid: 086c655d-0c12-47dd-9d5a-2670089201ee, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ri9mOOVJuAimB74kgXZ, headers: {Host: 7c681e58-53be-8513-d3ea-bd425436e356.huangshang.site}}, udp: true}
+  - {name: 江苏省 移动, server: v8.heduian.link, port: 30808, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /oooo, headers: {Host: v8.heduian.link}}, udp: true}
+  - {name: 伊朗 V2CROSS.COM, server: pl.vpnsparta.pro, port: 57456, type: ss, cipher: chacha20-ietf-poly1305, password: 360e21d21977dc11, udp: true}
+  - {name: 江苏省 移动 2, server: 36.151.195.112, port: 4556, type: trojan, password: BxceQaOe, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 美国 CloudFlare节点
-      - 台湾省台南市 中华电信
-      - 江苏省 移动
       - 美国 V2CROSS.COM
-      - 香港 电讯盈科有限公司
-      - 美国 CloudFlare节点 2
+      - 江苏省 移动
+      - 伊朗 V2CROSS.COM
+      - 江苏省 移动 2
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 美国 CloudFlare节点
-      - 台湾省台南市 中华电信
-      - 江苏省 移动
       - 美国 V2CROSS.COM
-      - 香港 电讯盈科有限公司
-      - 美国 CloudFlare节点 2
+      - 江苏省 移动
+      - 伊朗 V2CROSS.COM
+      - 江苏省 移动 2
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 美国 CloudFlare节点
-      - 台湾省台南市 中华电信
-      - 江苏省 移动
       - 美国 V2CROSS.COM
-      - 香港 电讯盈科有限公司
-      - 美国 CloudFlare节点 2
+      - 江苏省 移动
+      - 伊朗 V2CROSS.COM
+      - 江苏省 移动 2
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -64,53 +56,43 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 美国 CloudFlare节点
-      - 台湾省台南市 中华电信
-      - 江苏省 移动
       - 美国 V2CROSS.COM
-      - 香港 电讯盈科有限公司
-      - 美国 CloudFlare节点 2
+      - 江苏省 移动
+      - 伊朗 V2CROSS.COM
+      - 江苏省 移动 2
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 台湾省台南市 中华电信
-      - 香港 电讯盈科有限公司
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 美国 CloudFlare节点
-      - 台湾省台南市 中华电信
-      - 江苏省 移动
       - 美国 V2CROSS.COM
-      - 香港 电讯盈科有限公司
-      - 美国 CloudFlare节点 2
+      - 江苏省 移动
+      - 伊朗 V2CROSS.COM
+      - 江苏省 移动 2
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 美国 CloudFlare节点
-      - 台湾省台南市 中华电信
-      - 江苏省 移动
       - 美国 V2CROSS.COM
-      - 香港 电讯盈科有限公司
-      - 美国 CloudFlare节点 2
+      - 江苏省 移动
+      - 伊朗 V2CROSS.COM
+      - 江苏省 移动 2
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 美国 CloudFlare节点
-      - 台湾省台南市 中华电信
-      - 江苏省 移动
       - 美国 V2CROSS.COM
-      - 香港 电讯盈科有限公司
-      - 美国 CloudFlare节点 2
+      - 江苏省 移动
+      - 伊朗 V2CROSS.COM
+      - 江苏省 移动 2
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -126,12 +108,10 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 美国 CloudFlare节点
-      - 台湾省台南市 中华电信
-      - 江苏省 移动
       - 美国 V2CROSS.COM
-      - 香港 电讯盈科有限公司
-      - 美国 CloudFlare节点 2
+      - 江苏省 移动
+      - 伊朗 V2CROSS.COM
+      - 江苏省 移动 2
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
