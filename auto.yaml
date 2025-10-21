@@ -5,55 +5,39 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 香港 阿里云, server: 47.243.251.240, port: 8842, type: vmess, uuid: aed654a3-97bb-4ba6-a6c3-faea46befc72, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/arki?ed=2048"}, udp: true}
-  - {name: 广东省 移动, server: v9.heduian.link, port: 30809, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /oooo, headers: {Host: baidu.com}}, udp: true}
-  - {name: 香港 电讯盈科有限公司, server: a4f2978e-sva740-t48iy7-gydh.hk3.p5pv.com, port: 80, type: vmess, uuid: b68f4b4c-2d02-11ec-9ee8-f23c913c8d2b, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: broadcastlv.chat.bilibili.com}}, udp: true}
-  - {name: 香港 电讯盈科有限公司 2, server: c9dc37fe-szi1s0-t0y0nd-1mmbp.hk3.p5pv.com, port: 80, type: vmess, uuid: 607d365e-7ea1-11ee-95e9-f23c913c8d2b, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: broadcastlv.chat.bilibili.com}}, udp: true}
-  - {name: 德国 法尔肯施泰因HETZNER, server: 176.9.178.52, port: 2052, type: vmess, uuid: 94452e78-daad-490f-f14e-5a143e752bf8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: 中国 阿里云, server: 8.217.124.8, port: 14165, type: vmess, uuid: 1f8daab3-34f9-4d01-914c-71c56c41c039, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/arki?ed=2048"}, udp: true}
-  - {name: 香港 阿里云 2, server: 8.210.212.196, port: 34348, type: vmess, uuid: fb9fc043-2c70-42eb-88c0-66804ca33062, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/arki?ed=2048"}, udp: true}
-  - {name: 俄罗斯 V2CROSS.COM, server: 212.192.15.176, port: 27123, type: vmess, uuid: fb240b16-18d7-43af-8c54-7efd0d7eb8d7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 美国 CloudFlare节点, server: t1.620720.xyz, port: 8443, type: vmess, uuid: 516d8a7a-3f0b-41d3-bad0-246116381516, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: t1.620720.xyz}}, udp: true}
+  - {name: 江苏省盐城市 移动, server: 36.156.102.115, port: 2088, type: trojan, password: BxceQaOe, skip-cert-verify: true, udp: true}
+  - {name: 江苏省盐城市 移动 2, server: 36.156.102.115, port: 44095, type: trojan, password: BxceQaOe, skip-cert-verify: true, udp: true}
+  - {name: 江苏省 移动, server: v9.heduian.link, port: 30809, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /oooo, headers: {Host: baidu.com}}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 香港 阿里云
-      - 广东省 移动
-      - 香港 电讯盈科有限公司
-      - 香港 电讯盈科有限公司 2
-      - 德国 法尔肯施泰因HETZNER
-      - 中国 阿里云
-      - 香港 阿里云 2
-      - 俄罗斯 V2CROSS.COM
+      - 美国 CloudFlare节点
+      - 江苏省盐城市 移动
+      - 江苏省盐城市 移动 2
+      - 江苏省 移动
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 香港 阿里云
-      - 广东省 移动
-      - 香港 电讯盈科有限公司
-      - 香港 电讯盈科有限公司 2
-      - 德国 法尔肯施泰因HETZNER
-      - 中国 阿里云
-      - 香港 阿里云 2
-      - 俄罗斯 V2CROSS.COM
+      - 美国 CloudFlare节点
+      - 江苏省盐城市 移动
+      - 江苏省盐城市 移动 2
+      - 江苏省 移动
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 香港 阿里云
-      - 广东省 移动
-      - 香港 电讯盈科有限公司
-      - 香港 电讯盈科有限公司 2
-      - 德国 法尔肯施泰因HETZNER
-      - 中国 阿里云
-      - 香港 阿里云 2
-      - 俄罗斯 V2CROSS.COM
+      - 美国 CloudFlare节点
+      - 江苏省盐城市 移动
+      - 江苏省盐城市 移动 2
+      - 江苏省 移动
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -72,63 +56,43 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 香港 阿里云
-      - 广东省 移动
-      - 香港 电讯盈科有限公司
-      - 香港 电讯盈科有限公司 2
-      - 德国 法尔肯施泰因HETZNER
-      - 中国 阿里云
-      - 香港 阿里云 2
-      - 俄罗斯 V2CROSS.COM
+      - 美国 CloudFlare节点
+      - 江苏省盐城市 移动
+      - 江苏省盐城市 移动 2
+      - 江苏省 移动
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 香港 阿里云
-      - 香港 电讯盈科有限公司
-      - 香港 电讯盈科有限公司 2
-      - 香港 阿里云 2
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 香港 阿里云
-      - 广东省 移动
-      - 香港 电讯盈科有限公司
-      - 香港 电讯盈科有限公司 2
-      - 德国 法尔肯施泰因HETZNER
-      - 中国 阿里云
-      - 香港 阿里云 2
-      - 俄罗斯 V2CROSS.COM
+      - 美国 CloudFlare节点
+      - 江苏省盐城市 移动
+      - 江苏省盐城市 移动 2
+      - 江苏省 移动
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 香港 阿里云
-      - 广东省 移动
-      - 香港 电讯盈科有限公司
-      - 香港 电讯盈科有限公司 2
-      - 德国 法尔肯施泰因HETZNER
-      - 中国 阿里云
-      - 香港 阿里云 2
-      - 俄罗斯 V2CROSS.COM
+      - 美国 CloudFlare节点
+      - 江苏省盐城市 移动
+      - 江苏省盐城市 移动 2
+      - 江苏省 移动
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 香港 阿里云
-      - 广东省 移动
-      - 香港 电讯盈科有限公司
-      - 香港 电讯盈科有限公司 2
-      - 德国 法尔肯施泰因HETZNER
-      - 中国 阿里云
-      - 香港 阿里云 2
-      - 俄罗斯 V2CROSS.COM
+      - 美国 CloudFlare节点
+      - 江苏省盐城市 移动
+      - 江苏省盐城市 移动 2
+      - 江苏省 移动
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -144,14 +108,10 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 香港 阿里云
-      - 广东省 移动
-      - 香港 电讯盈科有限公司
-      - 香港 电讯盈科有限公司 2
-      - 德国 法尔肯施泰因HETZNER
-      - 中国 阿里云
-      - 香港 阿里云 2
-      - 俄罗斯 V2CROSS.COM
+      - 美国 CloudFlare节点
+      - 江苏省盐城市 移动
+      - 江苏省盐城市 移动 2
+      - 江苏省 移动
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve

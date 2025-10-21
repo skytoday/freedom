@@ -5,85 +5,77 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 🇭🇰 香港 电讯盈科有限公司, server: c9dc37fe-szi1s0-t0y0nd-1mmbp.hk3.p5pv.com, port: 80, type: vmess, uuid: 607d365e-7ea1-11ee-95e9-f23c913c8d2b, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: broadcastlv.chat.bilibili.com}}, udp: true}
-  - {name: 🇭🇰 香港 电讯盈科有限公司 2, server: hkt.gotochinatown.net, port: 80, type: vmess, uuid: e534d120-d32f-11ef-bdb9-f23c91cfbbc9, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: hkt.gotochinatown.net}}, udp: true}
-  - {name: 🇭🇰 香港 电讯盈科有限公司 3, server: c92d9037-sunz40-suqjqq-1pr35.hk3.p5pv.com, port: 80, type: vmess, uuid: 6b7c1278-ff9d-11ee-84ca-f23c913c8d2b, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: c92d9037-sunz40-suqjqq-1pr35.hk3.p5pv.com}}, udp: true}
-  - {name: 🇭🇰 香港 电讯盈科有限公司 4, server: v10.heduian.link, port: 30807, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /oooo, headers: {Host: baidu.com}}, udp: true}
-  - {name: 🇨🇳 江苏省盐城市 移动, server: 36.156.102.115, port: 44095, type: trojan, password: BxceQaOe, skip-cert-verify: false, udp: true}
+  - {name: 🇺🇸 美国 CloudFlare节点, server: t1.620720.xyz, port: 8443, type: vmess, uuid: 516d8a7a-3f0b-41d3-bad0-246116381516, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: t1.620720.xyz}}, udp: true}
+  - {name: 🇨🇳 江苏省盐城市 移动, server: 36.156.102.115, port: 2088, type: trojan, password: BxceQaOe, skip-cert-verify: false, udp: true}
+  - {name: 🇨🇳 江苏省盐城市 移动 2, server: 36.156.102.115, port: 44095, type: trojan, password: BxceQaOe, skip-cert-verify: false, udp: true}
+  - {name: 🇨🇳 江苏省 移动, server: v9.heduian.link, port: 30809, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /oooo, headers: {Host: baidu.com}}, udp: true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 🇭🇰 香港 电讯盈科有限公司
-      - 🇭🇰 香港 电讯盈科有限公司 2
-      - 🇭🇰 香港 电讯盈科有限公司 3
-      - 🇭🇰 香港 电讯盈科有限公司 4
+      - 🇺🇸 美国 CloudFlare节点
       - 🇨🇳 江苏省盐城市 移动
+      - 🇨🇳 江苏省盐城市 移动 2
+      - 🇨🇳 江苏省 移动
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇭🇰 香港 电讯盈科有限公司
-      - 🇭🇰 香港 电讯盈科有限公司 2
-      - 🇭🇰 香港 电讯盈科有限公司 3
-      - 🇭🇰 香港 电讯盈科有限公司 4
+      - 🇺🇸 美国 CloudFlare节点
       - 🇨🇳 江苏省盐城市 移动
+      - 🇨🇳 江苏省盐城市 移动 2
+      - 🇨🇳 江苏省 移动
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇭🇰 香港 电讯盈科有限公司
-      - 🇭🇰 香港 电讯盈科有限公司 2
-      - 🇭🇰 香港 电讯盈科有限公司 3
-      - 🇭🇰 香港 电讯盈科有限公司 4
+      - 🇺🇸 美国 CloudFlare节点
       - 🇨🇳 江苏省盐城市 移动
+      - 🇨🇳 江苏省盐城市 移动 2
+      - 🇨🇳 江苏省 移动
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇭🇰 香港 电讯盈科有限公司
-      - 🇭🇰 香港 电讯盈科有限公司 2
-      - 🇭🇰 香港 电讯盈科有限公司 3
-      - 🇭🇰 香港 电讯盈科有限公司 4
+      - 🇺🇸 美国 CloudFlare节点
       - 🇨🇳 江苏省盐城市 移动
+      - 🇨🇳 江苏省盐城市 移动 2
+      - 🇨🇳 江苏省 移动
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 🇭🇰 香港 电讯盈科有限公司
-      - 🇭🇰 香港 电讯盈科有限公司 2
-      - 🇭🇰 香港 电讯盈科有限公司 3
-      - 🇭🇰 香港 电讯盈科有限公司 4
+      - 🇺🇸 美国 CloudFlare节点
       - 🇨🇳 江苏省盐城市 移动
+      - 🇨🇳 江苏省盐城市 移动 2
+      - 🇨🇳 江苏省 移动
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇭🇰 香港 电讯盈科有限公司
-      - 🇭🇰 香港 电讯盈科有限公司 2
-      - 🇭🇰 香港 电讯盈科有限公司 3
-      - 🇭🇰 香港 电讯盈科有限公司 4
+      - 🇺🇸 美国 CloudFlare节点
       - 🇨🇳 江苏省盐城市 移动
+      - 🇨🇳 江苏省盐城市 移动 2
+      - 🇨🇳 江苏省 移动
   - name: 📢 谷歌FCM
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇭🇰 香港 电讯盈科有限公司
-      - 🇭🇰 香港 电讯盈科有限公司 2
-      - 🇭🇰 香港 电讯盈科有限公司 3
-      - 🇭🇰 香港 电讯盈科有限公司 4
+      - 🇺🇸 美国 CloudFlare节点
       - 🇨🇳 江苏省盐城市 移动
+      - 🇨🇳 江苏省盐城市 移动 2
+      - 🇨🇳 江苏省 移动
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -106,11 +98,10 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇭🇰 香港 电讯盈科有限公司
-      - 🇭🇰 香港 电讯盈科有限公司 2
-      - 🇭🇰 香港 电讯盈科有限公司 3
-      - 🇭🇰 香港 电讯盈科有限公司 4
+      - 🇺🇸 美国 CloudFlare节点
       - 🇨🇳 江苏省盐城市 移动
+      - 🇨🇳 江苏省盐城市 移动 2
+      - 🇨🇳 江苏省 移动
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
