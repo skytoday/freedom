@@ -5,11 +5,10 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 江苏省盐城市 移动, server: 36.156.102.115, port: 2088, type: trojan, password: BxceQaOe, skip-cert-verify: true, udp: true}
-  - {name: 俄罗斯 V2CROSS.COM, server: 212.192.15.176, port: 25169, type: vmess, uuid: 254ce8ad-9181-488f-90c7-9c4bd7ac65d8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: 俄罗斯 V2CROSS.COM 2, server: 212.192.15.176, port: 27123, type: vmess, uuid: 88906f4d-160f-4252-ad6d-9dc2645f792e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: 江苏省 移动, server: v29.heduian.link, port: 30829, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /oooo, headers: {Host: ocbc.com}}, udp: true}
-  - {name: 河北省石家庄市 电信, server: 124.236.46.114, port: 47083, type: vmess, uuid: fd49381f-9fd8-4403-8698-48331a4d775d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 江苏省盐城市 移动, server: 36.156.102.115, port: 26876, type: trojan, password: BxceQaOe, skip-cert-verify: true, udp: true}
+  - {name: 俄罗斯 V2CROSS.COM, server: 212.192.15.176, port: 25169, type: vmess, uuid: 0b4d2a2c-7ac1-4cf5-bac8-c6b8fa9afd77, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 江苏省 移动, server: v39.heduian.link, port: 30839, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /oooo, headers: {Host: baidu.com}}, udp: true}
+  - {name: 香港 电讯盈科有限公司, server: 58.152.110.40, port: 443, type: trojan, password: ea39fa94f1ee00999337ea1fd3318e69, sni: www.nintendogames.net, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
@@ -18,9 +17,8 @@ proxy-groups:
       - 🎯 全球直连
       - 江苏省盐城市 移动
       - 俄罗斯 V2CROSS.COM
-      - 俄罗斯 V2CROSS.COM 2
       - 江苏省 移动
-      - 河北省石家庄市 电信
+      - 香港 电讯盈科有限公司
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -28,9 +26,8 @@ proxy-groups:
     proxies:
       - 江苏省盐城市 移动
       - 俄罗斯 V2CROSS.COM
-      - 俄罗斯 V2CROSS.COM 2
       - 江苏省 移动
-      - 河北省石家庄市 电信
+      - 香港 电讯盈科有限公司
   - name: 🎥 NETFLIX
     type: select
     proxies:
@@ -39,9 +36,8 @@ proxy-groups:
       - 🎯 全球直连
       - 江苏省盐城市 移动
       - 俄罗斯 V2CROSS.COM
-      - 俄罗斯 V2CROSS.COM 2
       - 江苏省 移动
-      - 河北省石家庄市 电信
+      - 香港 电讯盈科有限公司
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -62,13 +58,13 @@ proxy-groups:
       - 🎯 全球直连
       - 江苏省盐城市 移动
       - 俄罗斯 V2CROSS.COM
-      - 俄罗斯 V2CROSS.COM 2
       - 江苏省 移动
-      - 河北省石家庄市 电信
+      - 香港 电讯盈科有限公司
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
+      - 香港 电讯盈科有限公司
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
@@ -77,9 +73,8 @@ proxy-groups:
       - 🔰 节点选择
       - 江苏省盐城市 移动
       - 俄罗斯 V2CROSS.COM
-      - 俄罗斯 V2CROSS.COM 2
       - 江苏省 移动
-      - 河北省石家庄市 电信
+      - 香港 电讯盈科有限公司
   - name: 📲 电报信息
     type: select
     proxies:
@@ -87,9 +82,8 @@ proxy-groups:
       - 🎯 全球直连
       - 江苏省盐城市 移动
       - 俄罗斯 V2CROSS.COM
-      - 俄罗斯 V2CROSS.COM 2
       - 江苏省 移动
-      - 河北省石家庄市 电信
+      - 香港 电讯盈科有限公司
   - name: 🍎 苹果服务
     type: select
     proxies:
@@ -98,9 +92,8 @@ proxy-groups:
       - ♻️ 自动选择
       - 江苏省盐城市 移动
       - 俄罗斯 V2CROSS.COM
-      - 俄罗斯 V2CROSS.COM 2
       - 江苏省 移动
-      - 河北省石家庄市 电信
+      - 香港 电讯盈科有限公司
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -118,9 +111,8 @@ proxy-groups:
       - ♻️ 自动选择
       - 江苏省盐城市 移动
       - 俄罗斯 V2CROSS.COM
-      - 俄罗斯 V2CROSS.COM 2
       - 江苏省 移动
-      - 河北省石家庄市 电信
+      - 香港 电讯盈科有限公司
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
