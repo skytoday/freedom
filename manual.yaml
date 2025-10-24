@@ -5,85 +5,69 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 欧盟 V2CROSS.COM, server: 45.87.175.193, port: 8080, type: ss, cipher: chacha20-ietf-poly1305, password: cvII85TrW6n0OGyfpHVS1u, udp: true}
-  - {name: 🇺🇸 美国 CloudFlare节点, server: nop-55q.pages.dev, port: 2053, type: trojan, password: T%40_WvT8Ho%40LW%25w_%2C, sni: NOp-55q.pAgEs.dEv, skip-cert-verify: false, udp: true}
-  - {name: 🇷🇺 俄罗斯 V2CROSS.COM, server: 212.192.15.176, port: 25169, type: vmess, uuid: 2ecaf88b-6470-4b2f-81e8-b9aebd0cd35d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: 山东省济南市 联通, server: v29.heduian.link, port: 30829, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /oooo, headers: {Host: ocbc.com}}, udp: true}
+  - {name: 🇮🇷 伊朗 V2CROSS.COM, server: 37.202.200.11, port: 12412, type: trojan, password: 898e1dca-14b2-4371-abc8-1b9f839bff6d, sni: wjp04.weyaf9sdoh2h.space, skip-cert-verify: false, udp: true}
   - {name: 🇨🇳 江苏省盐城市 移动, server: 36.156.102.69, port: 194, type: trojan, password: BxceQaOe, skip-cert-verify: false, udp: true}
+  - {name: 🇮🇷 伊朗 V2CROSS.COM 2, server: 37.202.200.19, port: 15013, type: trojan, password: 898e1dca-14b2-4371-abc8-1b9f839bff6d, sni: jp02.weyaf9sdoh2h.space, skip-cert-verify: false, udp: true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 欧盟 V2CROSS.COM
-      - 🇺🇸 美国 CloudFlare节点
-      - 🇷🇺 俄罗斯 V2CROSS.COM
-      - 山东省济南市 联通
+      - 🇮🇷 伊朗 V2CROSS.COM
       - 🇨🇳 江苏省盐城市 移动
+      - 🇮🇷 伊朗 V2CROSS.COM 2
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 欧盟 V2CROSS.COM
-      - 🇺🇸 美国 CloudFlare节点
-      - 🇷🇺 俄罗斯 V2CROSS.COM
-      - 山东省济南市 联通
+      - 🇮🇷 伊朗 V2CROSS.COM
       - 🇨🇳 江苏省盐城市 移动
+      - 🇮🇷 伊朗 V2CROSS.COM 2
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 欧盟 V2CROSS.COM
-      - 🇺🇸 美国 CloudFlare节点
-      - 🇷🇺 俄罗斯 V2CROSS.COM
-      - 山东省济南市 联通
+      - 🇮🇷 伊朗 V2CROSS.COM
       - 🇨🇳 江苏省盐城市 移动
+      - 🇮🇷 伊朗 V2CROSS.COM 2
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 欧盟 V2CROSS.COM
-      - 🇺🇸 美国 CloudFlare节点
-      - 🇷🇺 俄罗斯 V2CROSS.COM
-      - 山东省济南市 联通
+      - 🇮🇷 伊朗 V2CROSS.COM
       - 🇨🇳 江苏省盐城市 移动
+      - 🇮🇷 伊朗 V2CROSS.COM 2
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 欧盟 V2CROSS.COM
-      - 🇺🇸 美国 CloudFlare节点
-      - 🇷🇺 俄罗斯 V2CROSS.COM
-      - 山东省济南市 联通
+      - 🇮🇷 伊朗 V2CROSS.COM
       - 🇨🇳 江苏省盐城市 移动
+      - 🇮🇷 伊朗 V2CROSS.COM 2
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 欧盟 V2CROSS.COM
-      - 🇺🇸 美国 CloudFlare节点
-      - 🇷🇺 俄罗斯 V2CROSS.COM
-      - 山东省济南市 联通
+      - 🇮🇷 伊朗 V2CROSS.COM
       - 🇨🇳 江苏省盐城市 移动
+      - 🇮🇷 伊朗 V2CROSS.COM 2
   - name: 📢 谷歌FCM
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 欧盟 V2CROSS.COM
-      - 🇺🇸 美国 CloudFlare节点
-      - 🇷🇺 俄罗斯 V2CROSS.COM
-      - 山东省济南市 联通
+      - 🇮🇷 伊朗 V2CROSS.COM
       - 🇨🇳 江苏省盐城市 移动
+      - 🇮🇷 伊朗 V2CROSS.COM 2
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -106,11 +90,9 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 欧盟 V2CROSS.COM
-      - 🇺🇸 美国 CloudFlare节点
-      - 🇷🇺 俄罗斯 V2CROSS.COM
-      - 山东省济南市 联通
+      - 🇮🇷 伊朗 V2CROSS.COM
       - 🇨🇳 江苏省盐城市 移动
+      - 🇮🇷 伊朗 V2CROSS.COM 2
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
