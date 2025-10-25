@@ -5,59 +5,55 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 罗马尼亚 V2CROSS.COM, server: 188.214.157.58, port: 990, type: ss, cipher: chacha20-ietf-poly1305, password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=, udp: true}
-  - {name: 香港 电讯盈科有限公司, server: 24671c5a-sv4n40-swjbgr-1kcpe.hk3.p5pv.com, port: 80, type: vmess, uuid: 3f514ea2-4662-11ed-a8bf-f23c91cfbbc9, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: broadcastlv.chat.bilibili.com}}, udp: true}
+  - {name: 香港 电讯盈科有限公司, server: hkt.gotochinatown.net, port: 80, type: vmess, uuid: a5a81a34-f257-11ef-ba82-f23c913c8d2b, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: hkt.gotochinatown.net}}, udp: true}
   - {name: 江苏省 移动, server: 36.151.251.23, port: 4451, type: trojan, password: BxceQaOe, skip-cert-verify: true, udp: true}
   - {name: 江苏省 移动 2, server: v9.heduian.link, port: 30809, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /oooo, headers: {Host: baidu.com}}, udp: true}
-  - {name: 美国 CloudFlare节点, server: sy4.620720.xyz, port: 443, type: vmess, uuid: 516d8a7a-3f0b-41d3-bad0-246116381516, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: sy4.620720.xyz}}, udp: true}
-  - {name: 香港 电讯盈科有限公司 2, server: c251f6b5-sv2sg0-swjbgr-1kcpe.hk.p5pv.com, port: 80, type: vmess, uuid: 3f514ea2-4662-11ed-a8bf-f23c91cfbbc9, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: broadcastlv.chat.bilibili.com}}, udp: true}
-  - {name: 美国 CloudFlare节点 2, server: nop-55q.pages.dev, port: 2053, type: trojan, password: T%40_WvT8Ho%40LW%25w_%2C, sni: NOp-55q.pAgEs.dEv, skip-cert-verify: true, udp: true}
-  - {name: 香港 电讯盈科有限公司 3, server: v10.heduian.link, port: 30807, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /oooo, headers: {Host: baidu.com}}, udp: true}
+  - {name: 罗马尼亚 V2CROSS.COM, server: 188.214.157.58, port: 990, type: ss, cipher: chacha20-ietf-poly1305, password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=, udp: true}
+  - {name: 香港 电讯盈科有限公司 2, server: 58.152.110.83, port: 443, type: trojan, password: ea39fa94f1ee00999337ea1fd3318e69, sni: www.nintendogames.net, skip-cert-verify: true, udp: true}
   - {name: 江苏省 移动 3, server: 36.151.251.35, port: 24392, type: trojan, password: BxceQaOe, skip-cert-verify: true, udp: true}
+  - {name: 香港 电讯盈科有限公司 3, server: v10.heduian.link, port: 30807, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /oooo, headers: {Host: baidu.com}}, udp: true}
+  - {name: 美国 CloudFlare节点, server: nop-55q.pages.dev, port: 2053, type: trojan, password: T%40_WvT8Ho%40LW%25w_%2C, sni: NOp-55q.pAgEs.dEv, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 罗马尼亚 V2CROSS.COM
       - 香港 电讯盈科有限公司
       - 江苏省 移动
       - 江苏省 移动 2
-      - 美国 CloudFlare节点
+      - 罗马尼亚 V2CROSS.COM
       - 香港 电讯盈科有限公司 2
-      - 美国 CloudFlare节点 2
-      - 香港 电讯盈科有限公司 3
       - 江苏省 移动 3
+      - 香港 电讯盈科有限公司 3
+      - 美国 CloudFlare节点
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 罗马尼亚 V2CROSS.COM
       - 香港 电讯盈科有限公司
       - 江苏省 移动
       - 江苏省 移动 2
-      - 美国 CloudFlare节点
+      - 罗马尼亚 V2CROSS.COM
       - 香港 电讯盈科有限公司 2
-      - 美国 CloudFlare节点 2
-      - 香港 电讯盈科有限公司 3
       - 江苏省 移动 3
+      - 香港 电讯盈科有限公司 3
+      - 美国 CloudFlare节点
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 罗马尼亚 V2CROSS.COM
       - 香港 电讯盈科有限公司
       - 江苏省 移动
       - 江苏省 移动 2
-      - 美国 CloudFlare节点
+      - 罗马尼亚 V2CROSS.COM
       - 香港 电讯盈科有限公司 2
-      - 美国 CloudFlare节点 2
-      - 香港 电讯盈科有限公司 3
       - 江苏省 移动 3
+      - 香港 电讯盈科有限公司 3
+      - 美国 CloudFlare节点
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -76,15 +72,14 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 罗马尼亚 V2CROSS.COM
       - 香港 电讯盈科有限公司
       - 江苏省 移动
       - 江苏省 移动 2
-      - 美国 CloudFlare节点
+      - 罗马尼亚 V2CROSS.COM
       - 香港 电讯盈科有限公司 2
-      - 美国 CloudFlare节点 2
-      - 香港 电讯盈科有限公司 3
       - 江苏省 移动 3
+      - 香港 电讯盈科有限公司 3
+      - 美国 CloudFlare节点
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -98,44 +93,41 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 罗马尼亚 V2CROSS.COM
       - 香港 电讯盈科有限公司
       - 江苏省 移动
       - 江苏省 移动 2
-      - 美国 CloudFlare节点
+      - 罗马尼亚 V2CROSS.COM
       - 香港 电讯盈科有限公司 2
-      - 美国 CloudFlare节点 2
-      - 香港 电讯盈科有限公司 3
       - 江苏省 移动 3
+      - 香港 电讯盈科有限公司 3
+      - 美国 CloudFlare节点
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 罗马尼亚 V2CROSS.COM
       - 香港 电讯盈科有限公司
       - 江苏省 移动
       - 江苏省 移动 2
-      - 美国 CloudFlare节点
+      - 罗马尼亚 V2CROSS.COM
       - 香港 电讯盈科有限公司 2
-      - 美国 CloudFlare节点 2
-      - 香港 电讯盈科有限公司 3
       - 江苏省 移动 3
+      - 香港 电讯盈科有限公司 3
+      - 美国 CloudFlare节点
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 罗马尼亚 V2CROSS.COM
       - 香港 电讯盈科有限公司
       - 江苏省 移动
       - 江苏省 移动 2
-      - 美国 CloudFlare节点
+      - 罗马尼亚 V2CROSS.COM
       - 香港 电讯盈科有限公司 2
-      - 美国 CloudFlare节点 2
-      - 香港 电讯盈科有限公司 3
       - 江苏省 移动 3
+      - 香港 电讯盈科有限公司 3
+      - 美国 CloudFlare节点
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -151,15 +143,14 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 罗马尼亚 V2CROSS.COM
       - 香港 电讯盈科有限公司
       - 江苏省 移动
       - 江苏省 移动 2
-      - 美国 CloudFlare节点
+      - 罗马尼亚 V2CROSS.COM
       - 香港 电讯盈科有限公司 2
-      - 美国 CloudFlare节点 2
-      - 香港 电讯盈科有限公司 3
       - 江苏省 移动 3
+      - 香港 电讯盈科有限公司 3
+      - 美国 CloudFlare节点
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
