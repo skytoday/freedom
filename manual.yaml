@@ -5,77 +5,85 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
+  - {name: 🇺🇸 美国 CloudFlare节点, server: c7.620720.xyz, port: 8443, type: vmess, uuid: 516d8a7a-3f0b-41d3-bad0-246116381516, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: c7.620720.xyz}}, udp: true}
+  - {name: 🇨🇳 江苏省 移动, server: v9.heduian.link, port: 30809, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /oooo, headers: {Host: baidu.com}}, udp: true}
   - {name: 🇭🇰 香港 电讯盈科有限公司, server: v10.heduian.link, port: 30807, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /oooo, headers: {Host: baidu.com}}, udp: true}
-  - {name: 🇨🇳 江苏省 移动, server: 36.150.215.241, port: 1924, type: trojan, password: BxceQaOe, skip-cert-verify: false, udp: true}
-  - {name: 🇺🇸 美国 CloudFlare节点, server: nop-55q.pages.dev, port: 2053, type: trojan, password: T%40_WvT8Ho%40LW%25w_%2C, sni: NOp-55q.pAgEs.dEv, skip-cert-verify: false, udp: true}
-  - {name: 甘肃省兰州市 移动, server: aflzzul.meiquankongjian.com, port: 52511, type: vmess, uuid: 342bacfd-2b8f-3f49-a16e-439db5b0b9d5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /564dfa20/, headers: {Host: aflzzul.meiquankongjian.com}}, udp: true}
+  - {name: 🇭🇰 香港 腾讯云, server: node2.mangging.com, port: 10055, type: vmess, uuid: 353d4c13-a756-46dd-ba6f-3dfecfeb37fc, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, udp: true}
+  - {name: 🇨🇳 江苏省 移动 2, server: 36.151.251.23, port: 4451, type: trojan, password: BxceQaOe, skip-cert-verify: false, udp: true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 🇭🇰 香港 电讯盈科有限公司
-      - 🇨🇳 江苏省 移动
       - 🇺🇸 美国 CloudFlare节点
-      - 甘肃省兰州市 移动
+      - 🇨🇳 江苏省 移动
+      - 🇭🇰 香港 电讯盈科有限公司
+      - 🇭🇰 香港 腾讯云
+      - 🇨🇳 江苏省 移动 2
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇭🇰 香港 电讯盈科有限公司
-      - 🇨🇳 江苏省 移动
       - 🇺🇸 美国 CloudFlare节点
-      - 甘肃省兰州市 移动
+      - 🇨🇳 江苏省 移动
+      - 🇭🇰 香港 电讯盈科有限公司
+      - 🇭🇰 香港 腾讯云
+      - 🇨🇳 江苏省 移动 2
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇭🇰 香港 电讯盈科有限公司
-      - 🇨🇳 江苏省 移动
       - 🇺🇸 美国 CloudFlare节点
-      - 甘肃省兰州市 移动
+      - 🇨🇳 江苏省 移动
+      - 🇭🇰 香港 电讯盈科有限公司
+      - 🇭🇰 香港 腾讯云
+      - 🇨🇳 江苏省 移动 2
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇭🇰 香港 电讯盈科有限公司
-      - 🇨🇳 江苏省 移动
       - 🇺🇸 美国 CloudFlare节点
-      - 甘肃省兰州市 移动
+      - 🇨🇳 江苏省 移动
+      - 🇭🇰 香港 电讯盈科有限公司
+      - 🇭🇰 香港 腾讯云
+      - 🇨🇳 江苏省 移动 2
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 🇭🇰 香港 电讯盈科有限公司
-      - 🇨🇳 江苏省 移动
       - 🇺🇸 美国 CloudFlare节点
-      - 甘肃省兰州市 移动
+      - 🇨🇳 江苏省 移动
+      - 🇭🇰 香港 电讯盈科有限公司
+      - 🇭🇰 香港 腾讯云
+      - 🇨🇳 江苏省 移动 2
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇭🇰 香港 电讯盈科有限公司
-      - 🇨🇳 江苏省 移动
       - 🇺🇸 美国 CloudFlare节点
-      - 甘肃省兰州市 移动
+      - 🇨🇳 江苏省 移动
+      - 🇭🇰 香港 电讯盈科有限公司
+      - 🇭🇰 香港 腾讯云
+      - 🇨🇳 江苏省 移动 2
   - name: 📢 谷歌FCM
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇭🇰 香港 电讯盈科有限公司
-      - 🇨🇳 江苏省 移动
       - 🇺🇸 美国 CloudFlare节点
-      - 甘肃省兰州市 移动
+      - 🇨🇳 江苏省 移动
+      - 🇭🇰 香港 电讯盈科有限公司
+      - 🇭🇰 香港 腾讯云
+      - 🇨🇳 江苏省 移动 2
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -98,10 +106,11 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇭🇰 香港 电讯盈科有限公司
-      - 🇨🇳 江苏省 移动
       - 🇺🇸 美国 CloudFlare节点
-      - 甘肃省兰州市 移动
+      - 🇨🇳 江苏省 移动
+      - 🇭🇰 香港 电讯盈科有限公司
+      - 🇭🇰 香港 腾讯云
+      - 🇨🇳 江苏省 移动 2
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
