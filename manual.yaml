@@ -5,77 +5,77 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 🇭🇰 香港 特别行政区, server: 43.247.134.213, port: 59516, type: vmess, uuid: 2906e19e-c99f-456e-bcb3-c5472fd594e5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 🇭🇰 香港 电讯盈科有限公司, server: 58.152.46.98, port: 443, type: trojan, password: BxceQaOe, skip-cert-verify: false, udp: true}
-  - {name: 🇷🇺 俄罗斯 Rubtsovsk Branch of Altai State University, server: 212.192.13.86, port: 23185, type: vmess, uuid: a16e5c52-054e-41b1-b74d-7ef4b77b539b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 🇨🇳 中国 V2CROSS.COM, server: v9.heduian.link, port: 30809, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /oooo, headers: {Host: baidu.com}}, udp: true}
   - {name: 🇨🇳 台湾省 道法法律事务所, server: 103.127.218.91, port: 54693, type: vmess, uuid: 1cef03ad-6343-408c-8121-cbd1fda2ee9d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /1cef03ad}, udp: true}
+  - {name: 🇨🇳 中国 V2CROSS.COM 2, server: v29.heduian.link, port: 30829, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /oooo, headers: {Host: ocbc.com}}, udp: true}
+  - {name: 🇯🇵 日本 V2CROSS.COM, server: tls.19.node-for-bigairport.win, port: 23211, type: vmess, uuid: c69374da-2208-4cbd-b81e-cdf88b5e7f53, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 🇭🇰 香港 特别行政区
-      - 🇭🇰 香港 电讯盈科有限公司
-      - 🇷🇺 俄罗斯 Rubtsovsk Branch of Altai State University
+      - 🇨🇳 中国 V2CROSS.COM
       - 🇨🇳 台湾省 道法法律事务所
+      - 🇨🇳 中国 V2CROSS.COM 2
+      - 🇯🇵 日本 V2CROSS.COM
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇭🇰 香港 特别行政区
-      - 🇭🇰 香港 电讯盈科有限公司
-      - 🇷🇺 俄罗斯 Rubtsovsk Branch of Altai State University
+      - 🇨🇳 中国 V2CROSS.COM
       - 🇨🇳 台湾省 道法法律事务所
+      - 🇨🇳 中国 V2CROSS.COM 2
+      - 🇯🇵 日本 V2CROSS.COM
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇭🇰 香港 特别行政区
-      - 🇭🇰 香港 电讯盈科有限公司
-      - 🇷🇺 俄罗斯 Rubtsovsk Branch of Altai State University
+      - 🇨🇳 中国 V2CROSS.COM
       - 🇨🇳 台湾省 道法法律事务所
+      - 🇨🇳 中国 V2CROSS.COM 2
+      - 🇯🇵 日本 V2CROSS.COM
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇭🇰 香港 特别行政区
-      - 🇭🇰 香港 电讯盈科有限公司
-      - 🇷🇺 俄罗斯 Rubtsovsk Branch of Altai State University
+      - 🇨🇳 中国 V2CROSS.COM
       - 🇨🇳 台湾省 道法法律事务所
+      - 🇨🇳 中国 V2CROSS.COM 2
+      - 🇯🇵 日本 V2CROSS.COM
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 🇭🇰 香港 特别行政区
-      - 🇭🇰 香港 电讯盈科有限公司
-      - 🇷🇺 俄罗斯 Rubtsovsk Branch of Altai State University
+      - 🇨🇳 中国 V2CROSS.COM
       - 🇨🇳 台湾省 道法法律事务所
+      - 🇨🇳 中国 V2CROSS.COM 2
+      - 🇯🇵 日本 V2CROSS.COM
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇭🇰 香港 特别行政区
-      - 🇭🇰 香港 电讯盈科有限公司
-      - 🇷🇺 俄罗斯 Rubtsovsk Branch of Altai State University
+      - 🇨🇳 中国 V2CROSS.COM
       - 🇨🇳 台湾省 道法法律事务所
+      - 🇨🇳 中国 V2CROSS.COM 2
+      - 🇯🇵 日本 V2CROSS.COM
   - name: 📢 谷歌FCM
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇭🇰 香港 特别行政区
-      - 🇭🇰 香港 电讯盈科有限公司
-      - 🇷🇺 俄罗斯 Rubtsovsk Branch of Altai State University
+      - 🇨🇳 中国 V2CROSS.COM
       - 🇨🇳 台湾省 道法法律事务所
+      - 🇨🇳 中国 V2CROSS.COM 2
+      - 🇯🇵 日本 V2CROSS.COM
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -98,10 +98,10 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇭🇰 香港 特别行政区
-      - 🇭🇰 香港 电讯盈科有限公司
-      - 🇷🇺 俄罗斯 Rubtsovsk Branch of Altai State University
+      - 🇨🇳 中国 V2CROSS.COM
       - 🇨🇳 台湾省 道法法律事务所
+      - 🇨🇳 中国 V2CROSS.COM 2
+      - 🇯🇵 日本 V2CROSS.COM
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
