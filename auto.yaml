@@ -5,59 +5,35 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 美国 弗吉尼亚州阿什本Amazon数据中心, server: 54.90.226.121, port: 80, type: ss, cipher: aes-256-gcm, password: dada0801, udp: true}
-  - {name: 美国 弗吉尼亚州阿什本Amazon数据中心 2, server: 34.235.122.208, port: 80, type: ss, cipher: aes-256-gcm, password: dada0801, udp: true}
-  - {name: 香港 电讯盈科有限公司, server: hkt.gotochinatown.net, port: 80, type: vmess, uuid: 40639730-e027-11ea-87ad-f23c913c8d2b, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: hkt.gotochinatown.net}}, udp: true}
-  - {name: 香港 电讯盈科有限公司 2, server: v10.heduian.link, port: 30807, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /oooo, headers: {Host: baidu.com}}, udp: true}
-  - {name: 香港 电讯盈科有限公司 3, server: 58.152.53.3, port: 443, type: trojan, password: BxceQaOe, skip-cert-verify: true, udp: true}
   - {name: 江苏省 移动, server: 36.150.215.197, port: 2088, type: trojan, password: BxceQaOe, skip-cert-verify: true, udp: true}
+  - {name: 塞尔维亚 V2CROSS.COM, server: uk.vpnsparta.pro, port: 57456, type: ss, cipher: chacha20-ietf-poly1305, password: c40641c1f89e7acb, udp: true}
   - {name: 中国 V2CROSS.COM, server: v9.heduian.link, port: 30809, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /oooo, headers: {Host: baidu.com}}, udp: true}
-  - {name: 美国 CloudFlare节点, server: cf.090227.xyz, port: 443, type: vmess, uuid: 290cc691-3ac6-4387-98a1-25c8eb8ca2ea, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: sgal.dagrate.eu.org}}, udp: true}
-  - {name: 美国 CloudFlare节点 2, server: 1a2d514b-37cf-499f-8d08-d017a92ab5bb.asoul-ava.top, port: 443, type: vmess, uuid: 5f726fe3-d82e-4da5-a711-8af0cbb2b682, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /azumase.ren, headers: {Host: 1a2d514b-37cf-499f-8d08-d017a92ab5bb.asoul-ava.top}}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 美国 弗吉尼亚州阿什本Amazon数据中心
-      - 美国 弗吉尼亚州阿什本Amazon数据中心 2
-      - 香港 电讯盈科有限公司
-      - 香港 电讯盈科有限公司 2
-      - 香港 电讯盈科有限公司 3
       - 江苏省 移动
+      - 塞尔维亚 V2CROSS.COM
       - 中国 V2CROSS.COM
-      - 美国 CloudFlare节点
-      - 美国 CloudFlare节点 2
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 美国 弗吉尼亚州阿什本Amazon数据中心
-      - 美国 弗吉尼亚州阿什本Amazon数据中心 2
-      - 香港 电讯盈科有限公司
-      - 香港 电讯盈科有限公司 2
-      - 香港 电讯盈科有限公司 3
       - 江苏省 移动
+      - 塞尔维亚 V2CROSS.COM
       - 中国 V2CROSS.COM
-      - 美国 CloudFlare节点
-      - 美国 CloudFlare节点 2
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 美国 弗吉尼亚州阿什本Amazon数据中心
-      - 美国 弗吉尼亚州阿什本Amazon数据中心 2
-      - 香港 电讯盈科有限公司
-      - 香港 电讯盈科有限公司 2
-      - 香港 电讯盈科有限公司 3
       - 江苏省 移动
+      - 塞尔维亚 V2CROSS.COM
       - 中国 V2CROSS.COM
-      - 美国 CloudFlare节点
-      - 美国 CloudFlare节点 2
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -76,66 +52,39 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 美国 弗吉尼亚州阿什本Amazon数据中心
-      - 美国 弗吉尼亚州阿什本Amazon数据中心 2
-      - 香港 电讯盈科有限公司
-      - 香港 电讯盈科有限公司 2
-      - 香港 电讯盈科有限公司 3
       - 江苏省 移动
+      - 塞尔维亚 V2CROSS.COM
       - 中国 V2CROSS.COM
-      - 美国 CloudFlare节点
-      - 美国 CloudFlare节点 2
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 香港 电讯盈科有限公司
-      - 香港 电讯盈科有限公司 2
-      - 香港 电讯盈科有限公司 3
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 美国 弗吉尼亚州阿什本Amazon数据中心
-      - 美国 弗吉尼亚州阿什本Amazon数据中心 2
-      - 香港 电讯盈科有限公司
-      - 香港 电讯盈科有限公司 2
-      - 香港 电讯盈科有限公司 3
       - 江苏省 移动
+      - 塞尔维亚 V2CROSS.COM
       - 中国 V2CROSS.COM
-      - 美国 CloudFlare节点
-      - 美国 CloudFlare节点 2
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 美国 弗吉尼亚州阿什本Amazon数据中心
-      - 美国 弗吉尼亚州阿什本Amazon数据中心 2
-      - 香港 电讯盈科有限公司
-      - 香港 电讯盈科有限公司 2
-      - 香港 电讯盈科有限公司 3
       - 江苏省 移动
+      - 塞尔维亚 V2CROSS.COM
       - 中国 V2CROSS.COM
-      - 美国 CloudFlare节点
-      - 美国 CloudFlare节点 2
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 美国 弗吉尼亚州阿什本Amazon数据中心
-      - 美国 弗吉尼亚州阿什本Amazon数据中心 2
-      - 香港 电讯盈科有限公司
-      - 香港 电讯盈科有限公司 2
-      - 香港 电讯盈科有限公司 3
       - 江苏省 移动
+      - 塞尔维亚 V2CROSS.COM
       - 中国 V2CROSS.COM
-      - 美国 CloudFlare节点
-      - 美国 CloudFlare节点 2
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -151,15 +100,9 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 美国 弗吉尼亚州阿什本Amazon数据中心
-      - 美国 弗吉尼亚州阿什本Amazon数据中心 2
-      - 香港 电讯盈科有限公司
-      - 香港 电讯盈科有限公司 2
-      - 香港 电讯盈科有限公司 3
       - 江苏省 移动
+      - 塞尔维亚 V2CROSS.COM
       - 中国 V2CROSS.COM
-      - 美国 CloudFlare节点
-      - 美国 CloudFlare节点 2
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
