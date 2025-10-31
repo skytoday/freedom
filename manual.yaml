@@ -5,85 +5,109 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 🇨🇳 江苏省 移动, server: 36.150.215.236, port: 487, type: trojan, password: BxceQaOe, skip-cert-verify: false, udp: true}
-  - {name: 🇨🇳 江苏省盐城市 移动, server: 36.156.102.74, port: 43567, type: trojan, password: BxceQaOe, skip-cert-verify: false, udp: true}
-  - {name: 🇨🇳 中国 V2CROSS.COM, server: v9.heduian.link, port: 30809, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /oooo, headers: {Host: baidu.com}}, udp: true}
-  - {name: 🇭🇰 香港 电讯盈科有限公司, server: 58.152.53.3, port: 443, type: trojan, password: BxceQaOe, skip-cert-verify: false, udp: true}
-  - {name: 🇨🇳 江苏省 移动 2, server: 36.150.215.197, port: 9713, type: trojan, password: BxceQaOe, skip-cert-verify: false, udp: true}
+  - {name: 🇺🇸 美国 乔治亚州, server: cg1c15.waimaojd.com, port: 443, type: vmess, uuid: 6fc84fd2-0442-405f-baa7-6daf66b81a10, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /api/v1/graphql, headers: {Host: cg1c15.waimaojd.com}}, udp: true}
+  - {name: 🇺🇸 美国 加利福尼亚州洛杉矶Sharktech数据中心, server: cg1c06.waimaojd.com, port: 443, type: vmess, uuid: 6fc84fd2-0442-405f-baa7-6daf66b81a10, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /api/v1/graphql, headers: {Host: cg1c06.waimaojd.com}}, udp: true}
+  - {name: 🇷🇺 俄罗斯 鞑靼斯坦喀山justhost, server: cg1c09.waimaojd.com, port: 443, type: vmess, uuid: 6fc84fd2-0442-405f-baa7-6daf66b81a10, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /api/v1/graphql, headers: {Host: cg1c09.waimaojd.com}}, udp: true}
+  - {name: 🇺🇸 美国 加利福尼亚州洛杉矶Sharktech数据中心 2, server: cg1c02.waimaojd.com, port: 443, type: vmess, uuid: 6fc84fd2-0442-405f-baa7-6daf66b81a10, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /api/v1/graphql, headers: {Host: cg1c02.waimaojd.com}}, udp: true}
+  - {name: 🇭🇰 香港 电讯盈科有限公司, server: v10.heduian.link, port: 30807, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /oooo, headers: {Host: baidu.com}}, udp: true}
+  - {name: 🇬🇧 英国 伦敦DigitalOcean数据中心, server: cg1c12.waimaojd.com, port: 443, type: vmess, uuid: 6fc84fd2-0442-405f-baa7-6daf66b81a10, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /api/v1/graphql, headers: {Host: cg1c12.waimaojd.com}}, udp: true}
+  - {name: 🇺🇸 美国 加利福尼亚州洛杉矶市SharkTech数据中心, server: cg1c01.waimaojd.com, port: 443, type: vmess, uuid: 6fc84fd2-0442-405f-baa7-6daf66b81a10, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /api/v1/graphql, headers: {Host: cg1c01.waimaojd.com}}, udp: true}
+  - {name: 🇨🇳 江苏省 移动, server: 36.150.215.197, port: 9713, type: trojan, password: BxceQaOe, skip-cert-verify: false, udp: true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 🇨🇳 江苏省 移动
-      - 🇨🇳 江苏省盐城市 移动
-      - 🇨🇳 中国 V2CROSS.COM
+      - 🇺🇸 美国 乔治亚州
+      - 🇺🇸 美国 加利福尼亚州洛杉矶Sharktech数据中心
+      - 🇷🇺 俄罗斯 鞑靼斯坦喀山justhost
+      - 🇺🇸 美国 加利福尼亚州洛杉矶Sharktech数据中心 2
       - 🇭🇰 香港 电讯盈科有限公司
-      - 🇨🇳 江苏省 移动 2
+      - 🇬🇧 英国 伦敦DigitalOcean数据中心
+      - 🇺🇸 美国 加利福尼亚州洛杉矶市SharkTech数据中心
+      - 🇨🇳 江苏省 移动
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇨🇳 江苏省 移动
-      - 🇨🇳 江苏省盐城市 移动
-      - 🇨🇳 中国 V2CROSS.COM
+      - 🇺🇸 美国 乔治亚州
+      - 🇺🇸 美国 加利福尼亚州洛杉矶Sharktech数据中心
+      - 🇷🇺 俄罗斯 鞑靼斯坦喀山justhost
+      - 🇺🇸 美国 加利福尼亚州洛杉矶Sharktech数据中心 2
       - 🇭🇰 香港 电讯盈科有限公司
-      - 🇨🇳 江苏省 移动 2
+      - 🇬🇧 英国 伦敦DigitalOcean数据中心
+      - 🇺🇸 美国 加利福尼亚州洛杉矶市SharkTech数据中心
+      - 🇨🇳 江苏省 移动
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇨🇳 江苏省 移动
-      - 🇨🇳 江苏省盐城市 移动
-      - 🇨🇳 中国 V2CROSS.COM
+      - 🇺🇸 美国 乔治亚州
+      - 🇺🇸 美国 加利福尼亚州洛杉矶Sharktech数据中心
+      - 🇷🇺 俄罗斯 鞑靼斯坦喀山justhost
+      - 🇺🇸 美国 加利福尼亚州洛杉矶Sharktech数据中心 2
       - 🇭🇰 香港 电讯盈科有限公司
-      - 🇨🇳 江苏省 移动 2
+      - 🇬🇧 英国 伦敦DigitalOcean数据中心
+      - 🇺🇸 美国 加利福尼亚州洛杉矶市SharkTech数据中心
+      - 🇨🇳 江苏省 移动
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇨🇳 江苏省 移动
-      - 🇨🇳 江苏省盐城市 移动
-      - 🇨🇳 中国 V2CROSS.COM
+      - 🇺🇸 美国 乔治亚州
+      - 🇺🇸 美国 加利福尼亚州洛杉矶Sharktech数据中心
+      - 🇷🇺 俄罗斯 鞑靼斯坦喀山justhost
+      - 🇺🇸 美国 加利福尼亚州洛杉矶Sharktech数据中心 2
       - 🇭🇰 香港 电讯盈科有限公司
-      - 🇨🇳 江苏省 移动 2
+      - 🇬🇧 英国 伦敦DigitalOcean数据中心
+      - 🇺🇸 美国 加利福尼亚州洛杉矶市SharkTech数据中心
+      - 🇨🇳 江苏省 移动
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 🇨🇳 江苏省 移动
-      - 🇨🇳 江苏省盐城市 移动
-      - 🇨🇳 中国 V2CROSS.COM
+      - 🇺🇸 美国 乔治亚州
+      - 🇺🇸 美国 加利福尼亚州洛杉矶Sharktech数据中心
+      - 🇷🇺 俄罗斯 鞑靼斯坦喀山justhost
+      - 🇺🇸 美国 加利福尼亚州洛杉矶Sharktech数据中心 2
       - 🇭🇰 香港 电讯盈科有限公司
-      - 🇨🇳 江苏省 移动 2
+      - 🇬🇧 英国 伦敦DigitalOcean数据中心
+      - 🇺🇸 美国 加利福尼亚州洛杉矶市SharkTech数据中心
+      - 🇨🇳 江苏省 移动
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇨🇳 江苏省 移动
-      - 🇨🇳 江苏省盐城市 移动
-      - 🇨🇳 中国 V2CROSS.COM
+      - 🇺🇸 美国 乔治亚州
+      - 🇺🇸 美国 加利福尼亚州洛杉矶Sharktech数据中心
+      - 🇷🇺 俄罗斯 鞑靼斯坦喀山justhost
+      - 🇺🇸 美国 加利福尼亚州洛杉矶Sharktech数据中心 2
       - 🇭🇰 香港 电讯盈科有限公司
-      - 🇨🇳 江苏省 移动 2
+      - 🇬🇧 英国 伦敦DigitalOcean数据中心
+      - 🇺🇸 美国 加利福尼亚州洛杉矶市SharkTech数据中心
+      - 🇨🇳 江苏省 移动
   - name: 📢 谷歌FCM
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇨🇳 江苏省 移动
-      - 🇨🇳 江苏省盐城市 移动
-      - 🇨🇳 中国 V2CROSS.COM
+      - 🇺🇸 美国 乔治亚州
+      - 🇺🇸 美国 加利福尼亚州洛杉矶Sharktech数据中心
+      - 🇷🇺 俄罗斯 鞑靼斯坦喀山justhost
+      - 🇺🇸 美国 加利福尼亚州洛杉矶Sharktech数据中心 2
       - 🇭🇰 香港 电讯盈科有限公司
-      - 🇨🇳 江苏省 移动 2
+      - 🇬🇧 英国 伦敦DigitalOcean数据中心
+      - 🇺🇸 美国 加利福尼亚州洛杉矶市SharkTech数据中心
+      - 🇨🇳 江苏省 移动
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -106,11 +130,14 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇨🇳 江苏省 移动
-      - 🇨🇳 江苏省盐城市 移动
-      - 🇨🇳 中国 V2CROSS.COM
+      - 🇺🇸 美国 乔治亚州
+      - 🇺🇸 美国 加利福尼亚州洛杉矶Sharktech数据中心
+      - 🇷🇺 俄罗斯 鞑靼斯坦喀山justhost
+      - 🇺🇸 美国 加利福尼亚州洛杉矶Sharktech数据中心 2
       - 🇭🇰 香港 电讯盈科有限公司
-      - 🇨🇳 江苏省 移动 2
+      - 🇬🇧 英国 伦敦DigitalOcean数据中心
+      - 🇺🇸 美国 加利福尼亚州洛杉矶市SharkTech数据中心
+      - 🇨🇳 江苏省 移动
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
