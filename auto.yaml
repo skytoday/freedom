@@ -5,47 +5,51 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 北京市 移动, server: 36.133.73.36, port: 11819, type: vmess, uuid: de32752c-0661-467e-82d3-35bc740a787f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 中国 V2CROSS.COM, server: v9.heduian.link, port: 30809, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /oooo, headers: {Host: baidu.com}}, udp: true}
   - {name: 江苏省 移动, server: 36.150.215.245, port: 9269, type: trojan, password: BxceQaOe, sni: t.me%2Fripaojiedian, skip-cert-verify: true, udp: true}
-  - {name: 香港 电讯盈科有限公司, server: 203.198.122.129, port: 443, type: trojan, password: BxceQaOe, sni: t.me%2Fripaojiedian, skip-cert-verify: true, udp: true}
+  - {name: 俄罗斯 莫斯科JustHost, server: ru1.nodea6a6.skynode.me, port: 80, type: vmess, uuid: c3f95b7e-0fc7-3311-9a3d-e34e675632d4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /download, headers: {Host: node-59-175-206-86.speedtest.cn}}, udp: true}
+  - {name: 瑞典 V2CROSS.COM, server: 185.146.173.117, port: 80, type: vmess, uuid: d967ffca-de90-4daa-bd00-d527e5bae11f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/?BIA_TELEGRAM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1)", headers: {Host: google.whatsapp.snapp.torob.basalam.leoshopping77.ir.}}, udp: true}
   - {name: 江苏省 移动 2, server: 36.150.215.137, port: 5156, type: trojan, password: BxceQaOe, sni: t.me%2Fripaojiedian, skip-cert-verify: true, udp: true}
+  - {name: 四川省 移动数据上网公共出口, server: 117.172.176.23, port: 4553, type: trojan, password: e4e262d453466988575c397a30562337, sni: www.nintendogames.net, skip-cert-verify: true, udp: true}
   - {name: 美国 CloudFlare节点, server: 141.101.121.250, port: 80, type: vmess, uuid: d967ffca-de90-4daa-bd00-d527e5bae11f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/?BIA_TELEGRAM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1)", headers: {Host: google.whatsapp.snapp.torob.basalam.leoshopping77.ir.}}, udp: true}
+  - {name: 香港 电讯盈科有限公司, server: 58.152.46.98, port: 443, type: trojan, password: BxceQaOe, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 北京市 移动
-      - 中国 V2CROSS.COM
       - 江苏省 移动
-      - 香港 电讯盈科有限公司
+      - 俄罗斯 莫斯科JustHost
+      - 瑞典 V2CROSS.COM
       - 江苏省 移动 2
+      - 四川省 移动数据上网公共出口
       - 美国 CloudFlare节点
+      - 香港 电讯盈科有限公司
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 北京市 移动
-      - 中国 V2CROSS.COM
       - 江苏省 移动
-      - 香港 电讯盈科有限公司
+      - 俄罗斯 莫斯科JustHost
+      - 瑞典 V2CROSS.COM
       - 江苏省 移动 2
+      - 四川省 移动数据上网公共出口
       - 美国 CloudFlare节点
+      - 香港 电讯盈科有限公司
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 北京市 移动
-      - 中国 V2CROSS.COM
       - 江苏省 移动
-      - 香港 电讯盈科有限公司
+      - 俄罗斯 莫斯科JustHost
+      - 瑞典 V2CROSS.COM
       - 江苏省 移动 2
+      - 四川省 移动数据上网公共出口
       - 美国 CloudFlare节点
+      - 香港 电讯盈科有限公司
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -64,12 +68,13 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 北京市 移动
-      - 中国 V2CROSS.COM
       - 江苏省 移动
-      - 香港 电讯盈科有限公司
+      - 俄罗斯 莫斯科JustHost
+      - 瑞典 V2CROSS.COM
       - 江苏省 移动 2
+      - 四川省 移动数据上网公共出口
       - 美国 CloudFlare节点
+      - 香港 电讯盈科有限公司
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -81,35 +86,38 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 北京市 移动
-      - 中国 V2CROSS.COM
       - 江苏省 移动
-      - 香港 电讯盈科有限公司
+      - 俄罗斯 莫斯科JustHost
+      - 瑞典 V2CROSS.COM
       - 江苏省 移动 2
+      - 四川省 移动数据上网公共出口
       - 美国 CloudFlare节点
+      - 香港 电讯盈科有限公司
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 北京市 移动
-      - 中国 V2CROSS.COM
       - 江苏省 移动
-      - 香港 电讯盈科有限公司
+      - 俄罗斯 莫斯科JustHost
+      - 瑞典 V2CROSS.COM
       - 江苏省 移动 2
+      - 四川省 移动数据上网公共出口
       - 美国 CloudFlare节点
+      - 香港 电讯盈科有限公司
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 北京市 移动
-      - 中国 V2CROSS.COM
       - 江苏省 移动
-      - 香港 电讯盈科有限公司
+      - 俄罗斯 莫斯科JustHost
+      - 瑞典 V2CROSS.COM
       - 江苏省 移动 2
+      - 四川省 移动数据上网公共出口
       - 美国 CloudFlare节点
+      - 香港 电讯盈科有限公司
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -125,12 +133,13 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 北京市 移动
-      - 中国 V2CROSS.COM
       - 江苏省 移动
-      - 香港 电讯盈科有限公司
+      - 俄罗斯 莫斯科JustHost
+      - 瑞典 V2CROSS.COM
       - 江苏省 移动 2
+      - 四川省 移动数据上网公共出口
       - 美国 CloudFlare节点
+      - 香港 电讯盈科有限公司
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
