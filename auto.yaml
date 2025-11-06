@@ -5,47 +5,59 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 美国 CloudFlare节点, server: 141.101.121.3, port: 80, type: vmess, uuid: d967ffca-de90-4daa-bd00-d527e5bae11f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/?BIA_TELEGRAM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1)", headers: {Host: google.whatsapp.snapp.torob.basalam.leoshopping77.ir.}}, udp: true}
-  - {name: 瑞典 V2CROSS.COM, server: 185.146.173.117, port: 80, type: vmess, uuid: d967ffca-de90-4daa-bd00-d527e5bae11f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/?BIA_TELEGRAM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1)", headers: {Host: google.whatsapp.snapp.torob.basalam.leoshopping77.ir.}}, udp: true}
-  - {name: 四川省 移动数据上网公共出口, server: 117.172.176.23, port: 2173, type: trojan, password: e4e262d453466988575c397a30562337, sni: www.nintendogames.net, skip-cert-verify: true, udp: true}
-  - {name: 香港 电讯盈科有限公司, server: v10.heduian.link, port: 30807, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /oooo, headers: {Host: baidu.com}}, udp: true}
-  - {name: 瑞典 V2CROSS.COM 2, server: 185.146.173.126, port: 80, type: vmess, uuid: d967ffca-de90-4daa-bd00-d527e5bae11f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/?BIA_TELEGRAM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)", headers: {Host: google.whatsapp.snapp.torob.basalam.leoshopping77.ir.}}, udp: true}
-  - {name: 中国 V2CROSS.COM, server: v9.heduian.link, port: 30809, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /oooo, headers: {Host: baidu.com}}, udp: true}
+  - {name: 广东省 移动, server: kr2.web3sp.com, port: 50339, type: ss, cipher: aes-128-gcm, password: I1qrYxOXxPYCOkhT, udp: true}
+  - {name: 北京市 移动, server: 36.133.73.36, port: 11819, type: vmess, uuid: de32752c-0661-467e-82d3-35bc740a787f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 广东省 移动 2, server: sg1.web3sp.com, port: 50229, type: ss, cipher: aes-128-gcm, password: I1qrYxOXxPYCOkhT, udp: true}
+  - {name: 美国 CloudFlare节点, server: cf.090227.xyz, port: 443, type: vmess, uuid: 290cc691-3ac6-4387-98a1-25c8eb8ca2ea, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: sgal.dagrate.eu.org}}, udp: true}
+  - {name: 香港 电讯盈科有限公司, server: 203.198.122.129, port: 443, type: trojan, password: BxceQaOe, sni: t.me%2Fripaojiedian, skip-cert-verify: true, udp: true}
+  - {name: 广东省广州市 电信, server: hk4.web3sp.com, port: 50049, type: ss, cipher: aes-128-gcm, password: I1qrYxOXxPYCOkhT, udp: true}
+  - {name: 美国 惠普公司, server: 15.235.186.140, port: 8443, type: ss, cipher: aes-256-gcm, password: bd080898-b41a-48ae-b164-1baae4124627, udp: true}
+  - {name: 香港 电讯盈科有限公司 2, server: 58.152.46.98, port: 443, type: trojan, password: BxceQaOe, skip-cert-verify: true, udp: true}
+  - {name: 四川省 移动数据上网公共出口, server: 117.172.176.23, port: 1332, type: trojan, password: e4e262d453466988575c397a30562337, sni: www.nintendogames.net, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
+      - 广东省 移动
+      - 北京市 移动
+      - 广东省 移动 2
       - 美国 CloudFlare节点
-      - 瑞典 V2CROSS.COM
-      - 四川省 移动数据上网公共出口
       - 香港 电讯盈科有限公司
-      - 瑞典 V2CROSS.COM 2
-      - 中国 V2CROSS.COM
+      - 广东省广州市 电信
+      - 美国 惠普公司
+      - 香港 电讯盈科有限公司 2
+      - 四川省 移动数据上网公共出口
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
+      - 广东省 移动
+      - 北京市 移动
+      - 广东省 移动 2
       - 美国 CloudFlare节点
-      - 瑞典 V2CROSS.COM
-      - 四川省 移动数据上网公共出口
       - 香港 电讯盈科有限公司
-      - 瑞典 V2CROSS.COM 2
-      - 中国 V2CROSS.COM
+      - 广东省广州市 电信
+      - 美国 惠普公司
+      - 香港 电讯盈科有限公司 2
+      - 四川省 移动数据上网公共出口
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
+      - 广东省 移动
+      - 北京市 移动
+      - 广东省 移动 2
       - 美国 CloudFlare节点
-      - 瑞典 V2CROSS.COM
-      - 四川省 移动数据上网公共出口
       - 香港 电讯盈科有限公司
-      - 瑞典 V2CROSS.COM 2
-      - 中国 V2CROSS.COM
+      - 广东省广州市 电信
+      - 美国 惠普公司
+      - 香港 电讯盈科有限公司 2
+      - 四川省 移动数据上网公共出口
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -64,52 +76,65 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
+      - 广东省 移动
+      - 北京市 移动
+      - 广东省 移动 2
       - 美国 CloudFlare节点
-      - 瑞典 V2CROSS.COM
-      - 四川省 移动数据上网公共出口
       - 香港 电讯盈科有限公司
-      - 瑞典 V2CROSS.COM 2
-      - 中国 V2CROSS.COM
+      - 广东省广州市 电信
+      - 美国 惠普公司
+      - 香港 电讯盈科有限公司 2
+      - 四川省 移动数据上网公共出口
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
       - 香港 电讯盈科有限公司
+      - 香港 电讯盈科有限公司 2
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
+      - 广东省 移动
+      - 北京市 移动
+      - 广东省 移动 2
       - 美国 CloudFlare节点
-      - 瑞典 V2CROSS.COM
-      - 四川省 移动数据上网公共出口
       - 香港 电讯盈科有限公司
-      - 瑞典 V2CROSS.COM 2
-      - 中国 V2CROSS.COM
+      - 广东省广州市 电信
+      - 美国 惠普公司
+      - 香港 电讯盈科有限公司 2
+      - 四川省 移动数据上网公共出口
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
+      - 广东省 移动
+      - 北京市 移动
+      - 广东省 移动 2
       - 美国 CloudFlare节点
-      - 瑞典 V2CROSS.COM
-      - 四川省 移动数据上网公共出口
       - 香港 电讯盈科有限公司
-      - 瑞典 V2CROSS.COM 2
-      - 中国 V2CROSS.COM
+      - 广东省广州市 电信
+      - 美国 惠普公司
+      - 香港 电讯盈科有限公司 2
+      - 四川省 移动数据上网公共出口
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - 广东省 移动
+      - 北京市 移动
+      - 广东省 移动 2
       - 美国 CloudFlare节点
-      - 瑞典 V2CROSS.COM
-      - 四川省 移动数据上网公共出口
       - 香港 电讯盈科有限公司
-      - 瑞典 V2CROSS.COM 2
-      - 中国 V2CROSS.COM
+      - 广东省广州市 电信
+      - 美国 惠普公司
+      - 香港 电讯盈科有限公司 2
+      - 四川省 移动数据上网公共出口
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -125,12 +150,15 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - 广东省 移动
+      - 北京市 移动
+      - 广东省 移动 2
       - 美国 CloudFlare节点
-      - 瑞典 V2CROSS.COM
-      - 四川省 移动数据上网公共出口
       - 香港 电讯盈科有限公司
-      - 瑞典 V2CROSS.COM 2
-      - 中国 V2CROSS.COM
+      - 广东省广州市 电信
+      - 美国 惠普公司
+      - 香港 电讯盈科有限公司 2
+      - 四川省 移动数据上网公共出口
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
