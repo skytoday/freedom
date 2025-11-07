@@ -5,59 +5,47 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 香港 Cloudie数据中心, server: 103.243.26.209, port: 8080, type: vmess, uuid: bc7e6840-ab83-4570-eaae-d9aff1e2da09, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 香港 电讯盈科有限公司, server: 203.198.122.194, port: 443, type: trojan, password: 1b57001bd214304027025a740b6cf1ac, sni: www.nintendogames.net, skip-cert-verify: true, udp: true}
-  - {name: 香港 电讯盈科有限公司 2, server: 58.152.46.98, port: 443, type: trojan, password: BxceQaOe, skip-cert-verify: true, udp: true}
-  - {name: 广东省广州市 电信, server: vn1.web3sp.com, port: 51069, type: ss, cipher: aes-128-gcm, password: I1qrYxOXxPYCOkhT, udp: true}
-  - {name: 瑞典 V2CROSS.COM, server: 185.146.173.16, port: 80, type: vmess, uuid: d967ffca-de90-4daa-bd00-d527e5bae11f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/?BIA_TELEGRAM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1)", headers: {Host: google.whatsapp.snapp.torob.basalam.leoshopping77.ir.}}, udp: true}
-  - {name: 德国 V2CROSS.COM, server: 77.37.33.227, port: 80, type: vmess, uuid: d967ffca-de90-4daa-bd00-d527e5bae11f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/?BIA_TELEGRAM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)", headers: {Host: google.whatsapp.snapp.torob.basalam.leoshopping77.ir.}}, udp: true}
-  - {name: 台湾省 道法法律事务所, server: 103.127.218.91, port: 54693, type: vmess, uuid: 1cef03ad-6343-408c-8121-cbd1fda2ee9d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /1cef03ad}, udp: true}
-  - {name: 香港 阿里云, server: 47.86.85.95, port: 14044, type: vmess, uuid: 74475bf0-0267-4a04-b431-54752e31994b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/arki?ed=2048"}, udp: true}
-  - {name: 瑞典 V2CROSS.COM 2, server: 185.146.173.117, port: 80, type: vmess, uuid: d967ffca-de90-4daa-bd00-d527e5bae11f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/?BIA_TELEGRAM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1)", headers: {Host: google.whatsapp.snapp.torob.basalam.leoshopping77.ir.}}, udp: true}
+  - {name: 美国 CloudFlare节点, server: 141.101.121.250, port: 80, type: vmess, uuid: d967ffca-de90-4daa-bd00-d527e5bae11f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/?BIA_TELEGRAM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1)", headers: {Host: google.whatsapp.snapp.torob.basalam.leoshopping77.ir.}}, udp: true}
+  - {name: 香港 电讯盈科有限公司, server: 203.198.122.129, port: 443, type: trojan, password: BxceQaOe, skip-cert-verify: true, udp: true}
+  - {name: 广东省 移动, server: kr2.web3sp.com, port: 50339, type: ss, cipher: aes-128-gcm, password: I1qrYxOXxPYCOkhT, udp: true}
+  - {name: 广东省广州市 移动, server: tkcmi.5tk.top, port: 38637, type: vmess, uuid: 93058ab5-bb29-44d4-c309-d224c0967732, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 瑞典 V2CROSS.COM, server: 185.146.173.24, port: 80, type: vmess, uuid: d967ffca-de90-4daa-bd00-d527e5bae11f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/?BIA_TELEGRAM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1)", headers: {Host: google.whatsapp.snapp.torob.basalam.leoshopping77.ir.}}, udp: true}
+  - {name: 北京市 移动, server: 36.133.73.36, port: 11819, type: vmess, uuid: de32752c-0661-467e-82d3-35bc740a787f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 香港 Cloudie数据中心
+      - 美国 CloudFlare节点
       - 香港 电讯盈科有限公司
-      - 香港 电讯盈科有限公司 2
-      - 广东省广州市 电信
+      - 广东省 移动
+      - 广东省广州市 移动
       - 瑞典 V2CROSS.COM
-      - 德国 V2CROSS.COM
-      - 台湾省 道法法律事务所
-      - 香港 阿里云
-      - 瑞典 V2CROSS.COM 2
+      - 北京市 移动
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 香港 Cloudie数据中心
+      - 美国 CloudFlare节点
       - 香港 电讯盈科有限公司
-      - 香港 电讯盈科有限公司 2
-      - 广东省广州市 电信
+      - 广东省 移动
+      - 广东省广州市 移动
       - 瑞典 V2CROSS.COM
-      - 德国 V2CROSS.COM
-      - 台湾省 道法法律事务所
-      - 香港 阿里云
-      - 瑞典 V2CROSS.COM 2
+      - 北京市 移动
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 香港 Cloudie数据中心
+      - 美国 CloudFlare节点
       - 香港 电讯盈科有限公司
-      - 香港 电讯盈科有限公司 2
-      - 广东省广州市 电信
+      - 广东省 移动
+      - 广东省广州市 移动
       - 瑞典 V2CROSS.COM
-      - 德国 V2CROSS.COM
-      - 台湾省 道法法律事务所
-      - 香港 阿里云
-      - 瑞典 V2CROSS.COM 2
+      - 北京市 移动
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -76,68 +64,52 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 香港 Cloudie数据中心
+      - 美国 CloudFlare节点
       - 香港 电讯盈科有限公司
-      - 香港 电讯盈科有限公司 2
-      - 广东省广州市 电信
+      - 广东省 移动
+      - 广东省广州市 移动
       - 瑞典 V2CROSS.COM
-      - 德国 V2CROSS.COM
-      - 台湾省 道法法律事务所
-      - 香港 阿里云
-      - 瑞典 V2CROSS.COM 2
+      - 北京市 移动
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 香港 Cloudie数据中心
       - 香港 电讯盈科有限公司
-      - 香港 电讯盈科有限公司 2
-      - 台湾省 道法法律事务所
-      - 香港 阿里云
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 香港 Cloudie数据中心
+      - 美国 CloudFlare节点
       - 香港 电讯盈科有限公司
-      - 香港 电讯盈科有限公司 2
-      - 广东省广州市 电信
+      - 广东省 移动
+      - 广东省广州市 移动
       - 瑞典 V2CROSS.COM
-      - 德国 V2CROSS.COM
-      - 台湾省 道法法律事务所
-      - 香港 阿里云
-      - 瑞典 V2CROSS.COM 2
+      - 北京市 移动
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 香港 Cloudie数据中心
+      - 美国 CloudFlare节点
       - 香港 电讯盈科有限公司
-      - 香港 电讯盈科有限公司 2
-      - 广东省广州市 电信
+      - 广东省 移动
+      - 广东省广州市 移动
       - 瑞典 V2CROSS.COM
-      - 德国 V2CROSS.COM
-      - 台湾省 道法法律事务所
-      - 香港 阿里云
-      - 瑞典 V2CROSS.COM 2
+      - 北京市 移动
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 香港 Cloudie数据中心
+      - 美国 CloudFlare节点
       - 香港 电讯盈科有限公司
-      - 香港 电讯盈科有限公司 2
-      - 广东省广州市 电信
+      - 广东省 移动
+      - 广东省广州市 移动
       - 瑞典 V2CROSS.COM
-      - 德国 V2CROSS.COM
-      - 台湾省 道法法律事务所
-      - 香港 阿里云
-      - 瑞典 V2CROSS.COM 2
+      - 北京市 移动
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -153,15 +125,12 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 香港 Cloudie数据中心
+      - 美国 CloudFlare节点
       - 香港 电讯盈科有限公司
-      - 香港 电讯盈科有限公司 2
-      - 广东省广州市 电信
+      - 广东省 移动
+      - 广东省广州市 移动
       - 瑞典 V2CROSS.COM
-      - 德国 V2CROSS.COM
-      - 台湾省 道法法律事务所
-      - 香港 阿里云
-      - 瑞典 V2CROSS.COM 2
+      - 北京市 移动
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
