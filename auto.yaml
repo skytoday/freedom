@@ -5,71 +5,55 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 英国 V2CROSS.COM, server: xg1c1.waimaohots.com, port: 443, type: vmess, uuid: f95da449-747a-4ecc-b4ba-9f0f715a25df, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /api/v1/graphql, headers: {Host: xg1c1.waimaohots.com}}, udp: true}
-  - {name: 广东省广州市 移动, server: tkcmi.5tk.top, port: 38637, type: vmess, uuid: 93058ab5-bb29-44d4-c309-d224c0967732, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美国 伊利诺伊州芝加哥Sharktech数据中心, server: cg1c03.waimaojd.com, port: 443, type: vmess, uuid: d8bb518e-9e03-44bb-8a60-2b50190079ba, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /api/v1/graphql, headers: {Host: cg1c03.waimaojd.com}}, udp: true}
-  - {name: 美国 CloudFlare节点, server: cg1c04.waimaojd.com, port: 443, type: vmess, uuid: d8bb518e-9e03-44bb-8a60-2b50190079ba, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /api/v1/graphql, headers: {Host: cg1c04.waimaojd.com}}, udp: true}
-  - {name: 亚太地区 V2CROSS.COM, server: liubu9.singdns.com, port: 17459, type: ss, cipher: aes-128-gcm, password: 57bc0c04-8184-48f5-906b-897d095ed445, udp: true}
-  - {name: 广东省 移动, server: sg2.web3sp.com, port: 50239, type: ss, cipher: aes-128-gcm, password: I1qrYxOXxPYCOkhT, udp: true}
-  - {name: 美国 马里兰州罗耀拉大学, server: xg1b6.waimaohots.com, port: 443, type: vmess, uuid: f95da449-747a-4ecc-b4ba-9f0f715a25df, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /api/v1/graphql, headers: {Host: xg1b6.waimaohots.com}}, udp: true}
-  - {name: 美国 加利福尼亚州旧金山DigitalOcean数据中心, server: xg1a8.waimaohots.com, port: 443, type: vmess, uuid: f95da449-747a-4ecc-b4ba-9f0f715a25df, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /api/v1/graphql, headers: {Host: xg1a8.waimaohots.com}}, udp: true}
-  - {name: 广东省广州市 电信, server: oss-cn-shanghai.letssepub.com, port: 20021, type: trojan, password: adbac894-90b9-4913-b77e-a715a8d4ebc8, sni: dingding-doc.com, skip-cert-verify: true, udp: true}
-  - {name: 美国 戴维逊大学, server: xg1b7.waimaohots.com, port: 443, type: vmess, uuid: f95da449-747a-4ecc-b4ba-9f0f715a25df, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /api/v1/graphql, headers: {Host: xg1b7.waimaohots.com}}, udp: true}
-  - {name: 江苏省 移动, server: 36.150.27.76, port: 49509, type: vmess, uuid: aed41f1e-75e7-41ce-a2d4-38f65a6bbc86, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 广东省 移动, server: kr2.web3sp.com, port: 50339, type: ss, cipher: aes-128-gcm, password: I1qrYxOXxPYCOkhT, udp: true}
   - {name: 香港 Cloudie数据中心, server: 103.243.26.209, port: 10086, type: vmess, uuid: c5ec2e3f-c058-46a8-a148-1831824bb94b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 香港 电讯盈科, server: v10.heduian.link, port: 30807, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /oooo, headers: {Host: baidu.com}}, udp: true}
+  - {name: 香港 电讯盈科有限公司, server: 203.198.122.194, port: 443, type: trojan, password: 1b57001bd214304027025a740b6cf1ac, sni: www.nintendogames.net, skip-cert-verify: true, udp: true}
+  - {name: 乌克兰 V2CROSS.COM, server: 95.164.10.228, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: SDaFISr3Gfm6YkBSSrFIEwwWjEEU7Xbo, udp: true}
+  - {name: 新加坡 亚马逊(Amazon)公司数据中心, server: hk3.nodea6a6.skynode.me, port: 8080, type: vmess, uuid: c3f95b7e-0fc7-3311-9a3d-e34e675632d4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/download?ed=2560", headers: {Host: node-59-175-206-86.speedtest.cn}}, udp: true}
+  - {name: 西班牙 V2CROSS.COM, server: 164.138.202.55, port: 50475, type: vmess, uuid: b3bfb11c-43ff-41f3-9ba7-18b615baa134, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 亚太地区 V2CROSS.COM, server: liubu9.singdns.com, port: 17459, type: ss, cipher: aes-128-gcm, password: 57bc0c04-8184-48f5-906b-897d095ed445, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 英国 V2CROSS.COM
-      - 广东省广州市 移动
-      - 美国 伊利诺伊州芝加哥Sharktech数据中心
-      - 美国 CloudFlare节点
-      - 亚太地区 V2CROSS.COM
       - 广东省 移动
-      - 美国 马里兰州罗耀拉大学
-      - 美国 加利福尼亚州旧金山DigitalOcean数据中心
-      - 广东省广州市 电信
-      - 美国 戴维逊大学
-      - 江苏省 移动
       - 香港 Cloudie数据中心
+      - 香港 电讯盈科
+      - 香港 电讯盈科有限公司
+      - 乌克兰 V2CROSS.COM
+      - 新加坡 亚马逊(Amazon)公司数据中心
+      - 西班牙 V2CROSS.COM
+      - 亚太地区 V2CROSS.COM
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 英国 V2CROSS.COM
-      - 广东省广州市 移动
-      - 美国 伊利诺伊州芝加哥Sharktech数据中心
-      - 美国 CloudFlare节点
-      - 亚太地区 V2CROSS.COM
       - 广东省 移动
-      - 美国 马里兰州罗耀拉大学
-      - 美国 加利福尼亚州旧金山DigitalOcean数据中心
-      - 广东省广州市 电信
-      - 美国 戴维逊大学
-      - 江苏省 移动
       - 香港 Cloudie数据中心
+      - 香港 电讯盈科
+      - 香港 电讯盈科有限公司
+      - 乌克兰 V2CROSS.COM
+      - 新加坡 亚马逊(Amazon)公司数据中心
+      - 西班牙 V2CROSS.COM
+      - 亚太地区 V2CROSS.COM
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 英国 V2CROSS.COM
-      - 广东省广州市 移动
-      - 美国 伊利诺伊州芝加哥Sharktech数据中心
-      - 美国 CloudFlare节点
-      - 亚太地区 V2CROSS.COM
       - 广东省 移动
-      - 美国 马里兰州罗耀拉大学
-      - 美国 加利福尼亚州旧金山DigitalOcean数据中心
-      - 广东省广州市 电信
-      - 美国 戴维逊大学
-      - 江苏省 移动
       - 香港 Cloudie数据中心
+      - 香港 电讯盈科
+      - 香港 电讯盈科有限公司
+      - 乌克兰 V2CROSS.COM
+      - 新加坡 亚马逊(Amazon)公司数据中心
+      - 西班牙 V2CROSS.COM
+      - 亚太地区 V2CROSS.COM
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -88,76 +72,62 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 英国 V2CROSS.COM
-      - 广东省广州市 移动
-      - 美国 伊利诺伊州芝加哥Sharktech数据中心
-      - 美国 CloudFlare节点
-      - 亚太地区 V2CROSS.COM
       - 广东省 移动
-      - 美国 马里兰州罗耀拉大学
-      - 美国 加利福尼亚州旧金山DigitalOcean数据中心
-      - 广东省广州市 电信
-      - 美国 戴维逊大学
-      - 江苏省 移动
       - 香港 Cloudie数据中心
+      - 香港 电讯盈科
+      - 香港 电讯盈科有限公司
+      - 乌克兰 V2CROSS.COM
+      - 新加坡 亚马逊(Amazon)公司数据中心
+      - 西班牙 V2CROSS.COM
+      - 亚太地区 V2CROSS.COM
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
       - 香港 Cloudie数据中心
+      - 香港 电讯盈科
+      - 香港 电讯盈科有限公司
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 英国 V2CROSS.COM
-      - 广东省广州市 移动
-      - 美国 伊利诺伊州芝加哥Sharktech数据中心
-      - 美国 CloudFlare节点
-      - 亚太地区 V2CROSS.COM
       - 广东省 移动
-      - 美国 马里兰州罗耀拉大学
-      - 美国 加利福尼亚州旧金山DigitalOcean数据中心
-      - 广东省广州市 电信
-      - 美国 戴维逊大学
-      - 江苏省 移动
       - 香港 Cloudie数据中心
+      - 香港 电讯盈科
+      - 香港 电讯盈科有限公司
+      - 乌克兰 V2CROSS.COM
+      - 新加坡 亚马逊(Amazon)公司数据中心
+      - 西班牙 V2CROSS.COM
+      - 亚太地区 V2CROSS.COM
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 英国 V2CROSS.COM
-      - 广东省广州市 移动
-      - 美国 伊利诺伊州芝加哥Sharktech数据中心
-      - 美国 CloudFlare节点
-      - 亚太地区 V2CROSS.COM
       - 广东省 移动
-      - 美国 马里兰州罗耀拉大学
-      - 美国 加利福尼亚州旧金山DigitalOcean数据中心
-      - 广东省广州市 电信
-      - 美国 戴维逊大学
-      - 江苏省 移动
       - 香港 Cloudie数据中心
+      - 香港 电讯盈科
+      - 香港 电讯盈科有限公司
+      - 乌克兰 V2CROSS.COM
+      - 新加坡 亚马逊(Amazon)公司数据中心
+      - 西班牙 V2CROSS.COM
+      - 亚太地区 V2CROSS.COM
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 英国 V2CROSS.COM
-      - 广东省广州市 移动
-      - 美国 伊利诺伊州芝加哥Sharktech数据中心
-      - 美国 CloudFlare节点
-      - 亚太地区 V2CROSS.COM
       - 广东省 移动
-      - 美国 马里兰州罗耀拉大学
-      - 美国 加利福尼亚州旧金山DigitalOcean数据中心
-      - 广东省广州市 电信
-      - 美国 戴维逊大学
-      - 江苏省 移动
       - 香港 Cloudie数据中心
+      - 香港 电讯盈科
+      - 香港 电讯盈科有限公司
+      - 乌克兰 V2CROSS.COM
+      - 新加坡 亚马逊(Amazon)公司数据中心
+      - 西班牙 V2CROSS.COM
+      - 亚太地区 V2CROSS.COM
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -173,18 +143,14 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 英国 V2CROSS.COM
-      - 广东省广州市 移动
-      - 美国 伊利诺伊州芝加哥Sharktech数据中心
-      - 美国 CloudFlare节点
-      - 亚太地区 V2CROSS.COM
       - 广东省 移动
-      - 美国 马里兰州罗耀拉大学
-      - 美国 加利福尼亚州旧金山DigitalOcean数据中心
-      - 广东省广州市 电信
-      - 美国 戴维逊大学
-      - 江苏省 移动
       - 香港 Cloudie数据中心
+      - 香港 电讯盈科
+      - 香港 电讯盈科有限公司
+      - 乌克兰 V2CROSS.COM
+      - 新加坡 亚马逊(Amazon)公司数据中心
+      - 西班牙 V2CROSS.COM
+      - 亚太地区 V2CROSS.COM
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
