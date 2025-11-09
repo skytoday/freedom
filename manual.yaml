@@ -5,109 +5,125 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 🇨🇳 广东省广州市 电信, server: oss-cn-shanghai.letssepub.com, port: 20021, type: trojan, password: adbac894-90b9-4913-b77e-a715a8d4ebc8, sni: dingding-doc.com, skip-cert-verify: false, udp: true}
-  - {name: 🇨🇳 中国 V2CROSS.COM, server: v9.heduian.link, port: 30809, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /oooo, headers: {Host: baidu.com}}, udp: true}
-  - {name: 🇭🇰 香港 电讯盈科有限公司, server: 58.152.30.26, port: 443, type: trojan, password: BxceQaOe, sni: t.me%2Fripaojiedian, skip-cert-verify: false, udp: true}
-  - {name: 🇸🇪 瑞典 V2CROSS.COM, server: 185.146.173.24, port: 80, type: vmess, uuid: d967ffca-de90-4daa-bd00-d527e5bae11f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/?BIA_TELEGRAM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1)", headers: {Host: google.whatsapp.snapp.torob.basalam.leoshopping77.ir.}}, udp: true}
-  - {name: 🇭🇰 香港 电讯盈科有限公司 2, server: 203.198.122.129, port: 443, type: trojan, password: BxceQaOe, sni: t.me%252Fripaojiedian, skip-cert-verify: false, udp: true}
-  - {name: 🇭🇰 香港 电讯盈科有限公司 3, server: 58.152.46.98, port: 443, type: trojan, password: BxceQaOe, skip-cert-verify: false, udp: true}
-  - {name: 🇨🇳 江苏省 移动, server: 36.150.215.248, port: 4492, type: trojan, password: BxceQaOe, sni: t.me%252Fripaojiedian, skip-cert-verify: false, udp: true}
-  - {name: 🇺🇸 美国 CloudFlare节点, server: 104.18.240.238, port: 80, type: vmess, uuid: d967ffca-de90-4daa-bd00-d527e5bae11f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/?BIA_TELEGRAM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1)", headers: {Host: google.whatsapp.snapp.torob.basalam.leoshopping77.ir.}}, udp: true}
+  - {name: 🇭🇰 香港 电讯盈科有限公司, server: 58.152.46.98, port: 443, type: trojan, password: BxceQaOe, sni: 58.152.46.98, skip-cert-verify: false, udp: true}
+  - {name: 🇨🇳 广东省广州市 电信, server: sg1.web3sp.com, port: 50229, type: ss, cipher: aes-128-gcm, password: I1qrYxOXxPYCOkhT, udp: true}
+  - {name: 🇨🇳 广东省广州市 电信 2, server: in2.web3sp.com, port: 50619, type: ss, cipher: aes-128-gcm, password: I1qrYxOXxPYCOkhT, udp: true}
+  - {name: 四川省 移动数据上网公共出口, server: 117.172.176.22, port: 373, type: trojan, password: 1b57001bd214304027025a740b6cf1ac, sni: www.nintendogames.net, skip-cert-verify: false, udp: true}
+  - {name: 🇨🇳 中国 V2CROSS.COM, server: 221.128.195.12, port: 3841, type: trojan, password: 1b57001bd214304027025a740b6cf1ac, sni: www.nintendogames.net, skip-cert-verify: false, udp: true}
+  - {name: 🇺🇸 美国 CloudFlare节点, server: 141.101.121.250, port: 80, type: vmess, uuid: d967ffca-de90-4daa-bd00-d527e5bae11f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/?BIA_TELEGRAM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1)", headers: {Host: google.whatsapp.snapp.torob.basalam.leoshopping77.ir.}}, udp: true}
+  - {name: 🇭🇰 香港 电讯盈科有限公司 2, server: 203.198.122.129, port: 443, type: trojan, password: BxceQaOe, skip-cert-verify: false, udp: true}
+  - {name: 🇭🇰 香港 电讯盈科有限公司 3, server: 58.152.30.26, port: 443, type: trojan, password: BxceQaOe, sni: t.me%252Fripaojiedian, skip-cert-verify: false, udp: true}
+  - {name: 🇨🇳 中国 阿里云, server: 8.148.248.105, port: 11215, type: vmess, uuid: c74f0304-5b43-3772-852a-2b108c423d23, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 🇨🇳 江苏省 移动, server: 36.151.251.38, port: 25891, type: trojan, password: BxceQaOe, sni: t.me%2Fripaojiedian, skip-cert-verify: false, udp: true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 🇨🇳 广东省广州市 电信
-      - 🇨🇳 中国 V2CROSS.COM
       - 🇭🇰 香港 电讯盈科有限公司
-      - 🇸🇪 瑞典 V2CROSS.COM
+      - 🇨🇳 广东省广州市 电信
+      - 🇨🇳 广东省广州市 电信 2
+      - 四川省 移动数据上网公共出口
+      - 🇨🇳 中国 V2CROSS.COM
+      - 🇺🇸 美国 CloudFlare节点
       - 🇭🇰 香港 电讯盈科有限公司 2
       - 🇭🇰 香港 电讯盈科有限公司 3
+      - 🇨🇳 中国 阿里云
       - 🇨🇳 江苏省 移动
-      - 🇺🇸 美国 CloudFlare节点
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇨🇳 广东省广州市 电信
-      - 🇨🇳 中国 V2CROSS.COM
       - 🇭🇰 香港 电讯盈科有限公司
-      - 🇸🇪 瑞典 V2CROSS.COM
+      - 🇨🇳 广东省广州市 电信
+      - 🇨🇳 广东省广州市 电信 2
+      - 四川省 移动数据上网公共出口
+      - 🇨🇳 中国 V2CROSS.COM
+      - 🇺🇸 美国 CloudFlare节点
       - 🇭🇰 香港 电讯盈科有限公司 2
       - 🇭🇰 香港 电讯盈科有限公司 3
+      - 🇨🇳 中国 阿里云
       - 🇨🇳 江苏省 移动
-      - 🇺🇸 美国 CloudFlare节点
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇨🇳 广东省广州市 电信
-      - 🇨🇳 中国 V2CROSS.COM
       - 🇭🇰 香港 电讯盈科有限公司
-      - 🇸🇪 瑞典 V2CROSS.COM
+      - 🇨🇳 广东省广州市 电信
+      - 🇨🇳 广东省广州市 电信 2
+      - 四川省 移动数据上网公共出口
+      - 🇨🇳 中国 V2CROSS.COM
+      - 🇺🇸 美国 CloudFlare节点
       - 🇭🇰 香港 电讯盈科有限公司 2
       - 🇭🇰 香港 电讯盈科有限公司 3
+      - 🇨🇳 中国 阿里云
       - 🇨🇳 江苏省 移动
-      - 🇺🇸 美国 CloudFlare节点
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇨🇳 广东省广州市 电信
-      - 🇨🇳 中国 V2CROSS.COM
       - 🇭🇰 香港 电讯盈科有限公司
-      - 🇸🇪 瑞典 V2CROSS.COM
+      - 🇨🇳 广东省广州市 电信
+      - 🇨🇳 广东省广州市 电信 2
+      - 四川省 移动数据上网公共出口
+      - 🇨🇳 中国 V2CROSS.COM
+      - 🇺🇸 美国 CloudFlare节点
       - 🇭🇰 香港 电讯盈科有限公司 2
       - 🇭🇰 香港 电讯盈科有限公司 3
+      - 🇨🇳 中国 阿里云
       - 🇨🇳 江苏省 移动
-      - 🇺🇸 美国 CloudFlare节点
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 🇨🇳 广东省广州市 电信
-      - 🇨🇳 中国 V2CROSS.COM
       - 🇭🇰 香港 电讯盈科有限公司
-      - 🇸🇪 瑞典 V2CROSS.COM
+      - 🇨🇳 广东省广州市 电信
+      - 🇨🇳 广东省广州市 电信 2
+      - 四川省 移动数据上网公共出口
+      - 🇨🇳 中国 V2CROSS.COM
+      - 🇺🇸 美国 CloudFlare节点
       - 🇭🇰 香港 电讯盈科有限公司 2
       - 🇭🇰 香港 电讯盈科有限公司 3
+      - 🇨🇳 中国 阿里云
       - 🇨🇳 江苏省 移动
-      - 🇺🇸 美国 CloudFlare节点
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇨🇳 广东省广州市 电信
-      - 🇨🇳 中国 V2CROSS.COM
       - 🇭🇰 香港 电讯盈科有限公司
-      - 🇸🇪 瑞典 V2CROSS.COM
+      - 🇨🇳 广东省广州市 电信
+      - 🇨🇳 广东省广州市 电信 2
+      - 四川省 移动数据上网公共出口
+      - 🇨🇳 中国 V2CROSS.COM
+      - 🇺🇸 美国 CloudFlare节点
       - 🇭🇰 香港 电讯盈科有限公司 2
       - 🇭🇰 香港 电讯盈科有限公司 3
+      - 🇨🇳 中国 阿里云
       - 🇨🇳 江苏省 移动
-      - 🇺🇸 美国 CloudFlare节点
   - name: 📢 谷歌FCM
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇨🇳 广东省广州市 电信
-      - 🇨🇳 中国 V2CROSS.COM
       - 🇭🇰 香港 电讯盈科有限公司
-      - 🇸🇪 瑞典 V2CROSS.COM
+      - 🇨🇳 广东省广州市 电信
+      - 🇨🇳 广东省广州市 电信 2
+      - 四川省 移动数据上网公共出口
+      - 🇨🇳 中国 V2CROSS.COM
+      - 🇺🇸 美国 CloudFlare节点
       - 🇭🇰 香港 电讯盈科有限公司 2
       - 🇭🇰 香港 电讯盈科有限公司 3
+      - 🇨🇳 中国 阿里云
       - 🇨🇳 江苏省 移动
-      - 🇺🇸 美国 CloudFlare节点
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -130,14 +146,16 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇨🇳 广东省广州市 电信
-      - 🇨🇳 中国 V2CROSS.COM
       - 🇭🇰 香港 电讯盈科有限公司
-      - 🇸🇪 瑞典 V2CROSS.COM
+      - 🇨🇳 广东省广州市 电信
+      - 🇨🇳 广东省广州市 电信 2
+      - 四川省 移动数据上网公共出口
+      - 🇨🇳 中国 V2CROSS.COM
+      - 🇺🇸 美国 CloudFlare节点
       - 🇭🇰 香港 电讯盈科有限公司 2
       - 🇭🇰 香港 电讯盈科有限公司 3
+      - 🇨🇳 中国 阿里云
       - 🇨🇳 江苏省 移动
-      - 🇺🇸 美国 CloudFlare节点
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
