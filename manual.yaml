@@ -5,93 +5,101 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 🇺🇸 美国 CloudFlare节点, server: 141.101.121.120, port: 80, type: vmess, uuid: d967ffca-de90-4daa-bd00-d527e5bae11f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/?BIA_TELEGRAM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)", headers: {Host: google.whatsapp.snapp.torob.basalam.leoshopping77.ir.}}, udp: true}
-  - {name: 🇭🇰 香港 特别行政区, server: 175.29.22.101, port: 28034, type: vmess, uuid: d2540325-9ad6-33d7-be86-259b5bba4ef8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 🇨🇳 江苏省 移动, server: 36.150.215.248, port: 8041, type: trojan, password: BxceQaOe, sni: t.me%2Fripaojiedian, skip-cert-verify: false, udp: true}
-  - {name: 🇺🇸 美国 CloudFlare节点 2, server: 141.101.121.250, port: 80, type: vmess, uuid: d967ffca-de90-4daa-bd00-d527e5bae11f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/?BIA_TELEGRAM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1)", headers: {Host: google.whatsapp.snapp.torob.basalam.leoshopping77.ir.}}, udp: true}
-  - {name: 🇨🇳 广东省广州市 电信, server: oss-cn-shanghai.letssepub.com, port: 20021, type: trojan, password: adbac894-90b9-4913-b77e-a715a8d4ebc8, sni: dingding-doc.com, skip-cert-verify: false, udp: true}
-  - {name: 🇭🇰 香港 电讯盈科有限公司, server: 58.152.30.26, port: 443, type: trojan, password: BxceQaOe, sni: t.me%25252Fripaojiedian, skip-cert-verify: false, udp: true}
+  - {name: 🇭🇰 香港 特别行政区, server: cdn3.ttcdn.top, port: 13231, type: vmess, uuid: e14c2114-e492-4be9-b51e-3f2f0fd5c48d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 🇬🇧 英国 V2CROSS.COM, server: t.cnmjcn.cyou, port: 16622, type: vmess, uuid: 180628eb-a18b-4096-9b81-268f32f6a020, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: 481e9db24fc371b854d98245ce8ffb64.mobgslb.tbcache.com}}, udp: true}
+  - {name: 🇭🇰 香港 电讯盈科有限公司, server: 58.152.46.98, port: 443, type: trojan, password: BxceQaOe, skip-cert-verify: false, udp: true}
+  - {name: 🇭🇰 香港 电讯盈科有限公司 2, server: 58.152.53.186, port: 443, type: trojan, password: BxceQaOe, sni: t.me%2Fripaojiedian, skip-cert-verify: false, udp: true}
+  - {name: 🇷🇺 俄罗斯 V2CROSS.COM, server: nl-v2ray.freevmess.com, port: 2083, type: vmess, uuid: c3d066bc-4170-4006-a95c-0012367e8f13, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, udp: true}
+  - {name: 🇬🇧 英国 V2CROSS.COM 2, server: t.cnmjcn.cyou, port: 16622, type: vmess, uuid: 180628eb-a18b-4096-9b81-268f32f6a020, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: 481e9db24fc371b854d98245ce8ffb64.mobgslb.tbcache.com}}, udp: true}
+  - {name: 🇭🇰 香港 特别行政区 2, server: 175.29.22.101, port: 28034, type: vmess, uuid: d2540325-9ad6-33d7-be86-259b5bba4ef8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 🇺🇸 美国 CloudFlare节点
       - 🇭🇰 香港 特别行政区
-      - 🇨🇳 江苏省 移动
-      - 🇺🇸 美国 CloudFlare节点 2
-      - 🇨🇳 广东省广州市 电信
+      - 🇬🇧 英国 V2CROSS.COM
       - 🇭🇰 香港 电讯盈科有限公司
+      - 🇭🇰 香港 电讯盈科有限公司 2
+      - 🇷🇺 俄罗斯 V2CROSS.COM
+      - 🇬🇧 英国 V2CROSS.COM 2
+      - 🇭🇰 香港 特别行政区 2
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇺🇸 美国 CloudFlare节点
       - 🇭🇰 香港 特别行政区
-      - 🇨🇳 江苏省 移动
-      - 🇺🇸 美国 CloudFlare节点 2
-      - 🇨🇳 广东省广州市 电信
+      - 🇬🇧 英国 V2CROSS.COM
       - 🇭🇰 香港 电讯盈科有限公司
+      - 🇭🇰 香港 电讯盈科有限公司 2
+      - 🇷🇺 俄罗斯 V2CROSS.COM
+      - 🇬🇧 英国 V2CROSS.COM 2
+      - 🇭🇰 香港 特别行政区 2
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇺🇸 美国 CloudFlare节点
       - 🇭🇰 香港 特别行政区
-      - 🇨🇳 江苏省 移动
-      - 🇺🇸 美国 CloudFlare节点 2
-      - 🇨🇳 广东省广州市 电信
+      - 🇬🇧 英国 V2CROSS.COM
       - 🇭🇰 香港 电讯盈科有限公司
+      - 🇭🇰 香港 电讯盈科有限公司 2
+      - 🇷🇺 俄罗斯 V2CROSS.COM
+      - 🇬🇧 英国 V2CROSS.COM 2
+      - 🇭🇰 香港 特别行政区 2
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇺🇸 美国 CloudFlare节点
       - 🇭🇰 香港 特别行政区
-      - 🇨🇳 江苏省 移动
-      - 🇺🇸 美国 CloudFlare节点 2
-      - 🇨🇳 广东省广州市 电信
+      - 🇬🇧 英国 V2CROSS.COM
       - 🇭🇰 香港 电讯盈科有限公司
+      - 🇭🇰 香港 电讯盈科有限公司 2
+      - 🇷🇺 俄罗斯 V2CROSS.COM
+      - 🇬🇧 英国 V2CROSS.COM 2
+      - 🇭🇰 香港 特别行政区 2
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 🇺🇸 美国 CloudFlare节点
       - 🇭🇰 香港 特别行政区
-      - 🇨🇳 江苏省 移动
-      - 🇺🇸 美国 CloudFlare节点 2
-      - 🇨🇳 广东省广州市 电信
+      - 🇬🇧 英国 V2CROSS.COM
       - 🇭🇰 香港 电讯盈科有限公司
+      - 🇭🇰 香港 电讯盈科有限公司 2
+      - 🇷🇺 俄罗斯 V2CROSS.COM
+      - 🇬🇧 英国 V2CROSS.COM 2
+      - 🇭🇰 香港 特别行政区 2
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇺🇸 美国 CloudFlare节点
       - 🇭🇰 香港 特别行政区
-      - 🇨🇳 江苏省 移动
-      - 🇺🇸 美国 CloudFlare节点 2
-      - 🇨🇳 广东省广州市 电信
+      - 🇬🇧 英国 V2CROSS.COM
       - 🇭🇰 香港 电讯盈科有限公司
+      - 🇭🇰 香港 电讯盈科有限公司 2
+      - 🇷🇺 俄罗斯 V2CROSS.COM
+      - 🇬🇧 英国 V2CROSS.COM 2
+      - 🇭🇰 香港 特别行政区 2
   - name: 📢 谷歌FCM
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇺🇸 美国 CloudFlare节点
       - 🇭🇰 香港 特别行政区
-      - 🇨🇳 江苏省 移动
-      - 🇺🇸 美国 CloudFlare节点 2
-      - 🇨🇳 广东省广州市 电信
+      - 🇬🇧 英国 V2CROSS.COM
       - 🇭🇰 香港 电讯盈科有限公司
+      - 🇭🇰 香港 电讯盈科有限公司 2
+      - 🇷🇺 俄罗斯 V2CROSS.COM
+      - 🇬🇧 英国 V2CROSS.COM 2
+      - 🇭🇰 香港 特别行政区 2
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -114,12 +122,13 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇺🇸 美国 CloudFlare节点
       - 🇭🇰 香港 特别行政区
-      - 🇨🇳 江苏省 移动
-      - 🇺🇸 美国 CloudFlare节点 2
-      - 🇨🇳 广东省广州市 电信
+      - 🇬🇧 英国 V2CROSS.COM
       - 🇭🇰 香港 电讯盈科有限公司
+      - 🇭🇰 香港 电讯盈科有限公司 2
+      - 🇷🇺 俄罗斯 V2CROSS.COM
+      - 🇬🇧 英国 V2CROSS.COM 2
+      - 🇭🇰 香港 特别行政区 2
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
