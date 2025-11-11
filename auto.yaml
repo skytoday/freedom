@@ -5,9 +5,11 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 香港 电讯盈科有限公司, server: 58.152.53.186, port: 443, type: trojan, password: BxceQaOe, sni: t.me%2Fripaojiedian, skip-cert-verify: true, udp: true}
-  - {name: 香港 阿里云, server: 8.210.212.196, port: 34348, type: vmess, uuid: fb9fc043-2c70-42eb-88c0-66804ca33062, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/arki?ed=2048"}, udp: true}
-  - {name: 俄罗斯 V2CROSS.COM, server: 62.133.63.230, port: 1580, type: ss, cipher: chacha20-ietf-poly1305, password: KgcKQpFCkXnOJXceV68o12, udp: true}
+  - {name: 香港 电讯盈科有限公司, server: 116.49.237.130, port: 4569, type: trojan, password: BxceQaOe, sni: t.me%2Fripaojiedian, skip-cert-verify: true, udp: true}
+  - {name: 亚太地区 V2CROSS.COM, server: liubu9.singdns.com, port: 17459, type: ss, cipher: aes-128-gcm, password: 57bc0c04-8184-48f5-906b-897d095ed445, udp: true}
+  - {name: 香港 电讯盈科有限公司 2, server: 203.198.122.129, port: 443, type: trojan, password: BxceQaOe, skip-cert-verify: true, udp: true}
+  - {name: 香港 电讯盈科有限公司 3, server: 58.152.46.98, port: 443, type: trojan, password: BxceQaOe, skip-cert-verify: true, udp: true}
+  - {name: 香港 电讯盈科有限公司 4, server: 203.198.122.97, port: 443, type: trojan, password: BxceQaOe, sni: t.me%2Fripaojiedian, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
@@ -15,16 +17,20 @@ proxy-groups:
       - ♻️ 自动选择
       - 🎯 全球直连
       - 香港 电讯盈科有限公司
-      - 香港 阿里云
-      - 俄罗斯 V2CROSS.COM
+      - 亚太地区 V2CROSS.COM
+      - 香港 电讯盈科有限公司 2
+      - 香港 电讯盈科有限公司 3
+      - 香港 电讯盈科有限公司 4
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
       - 香港 电讯盈科有限公司
-      - 香港 阿里云
-      - 俄罗斯 V2CROSS.COM
+      - 亚太地区 V2CROSS.COM
+      - 香港 电讯盈科有限公司 2
+      - 香港 电讯盈科有限公司 3
+      - 香港 电讯盈科有限公司 4
   - name: 🎥 NETFLIX
     type: select
     proxies:
@@ -32,8 +38,10 @@ proxy-groups:
       - ♻️ 自动选择
       - 🎯 全球直连
       - 香港 电讯盈科有限公司
-      - 香港 阿里云
-      - 俄罗斯 V2CROSS.COM
+      - 亚太地区 V2CROSS.COM
+      - 香港 电讯盈科有限公司 2
+      - 香港 电讯盈科有限公司 3
+      - 香港 电讯盈科有限公司 4
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -53,14 +61,18 @@ proxy-groups:
       - ♻️ 自动选择
       - 🎯 全球直连
       - 香港 电讯盈科有限公司
-      - 香港 阿里云
-      - 俄罗斯 V2CROSS.COM
+      - 亚太地区 V2CROSS.COM
+      - 香港 电讯盈科有限公司 2
+      - 香港 电讯盈科有限公司 3
+      - 香港 电讯盈科有限公司 4
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
       - 香港 电讯盈科有限公司
-      - 香港 阿里云
+      - 香港 电讯盈科有限公司 2
+      - 香港 电讯盈科有限公司 3
+      - 香港 电讯盈科有限公司 4
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
@@ -68,16 +80,20 @@ proxy-groups:
       - 🎯 全球直连
       - 🔰 节点选择
       - 香港 电讯盈科有限公司
-      - 香港 阿里云
-      - 俄罗斯 V2CROSS.COM
+      - 亚太地区 V2CROSS.COM
+      - 香港 电讯盈科有限公司 2
+      - 香港 电讯盈科有限公司 3
+      - 香港 电讯盈科有限公司 4
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - 香港 电讯盈科有限公司
-      - 香港 阿里云
-      - 俄罗斯 V2CROSS.COM
+      - 亚太地区 V2CROSS.COM
+      - 香港 电讯盈科有限公司 2
+      - 香港 电讯盈科有限公司 3
+      - 香港 电讯盈科有限公司 4
   - name: 🍎 苹果服务
     type: select
     proxies:
@@ -85,8 +101,10 @@ proxy-groups:
       - 🎯 全球直连
       - ♻️ 自动选择
       - 香港 电讯盈科有限公司
-      - 香港 阿里云
-      - 俄罗斯 V2CROSS.COM
+      - 亚太地区 V2CROSS.COM
+      - 香港 电讯盈科有限公司 2
+      - 香港 电讯盈科有限公司 3
+      - 香港 电讯盈科有限公司 4
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -103,8 +121,10 @@ proxy-groups:
       - 🎯 全球直连
       - ♻️ 自动选择
       - 香港 电讯盈科有限公司
-      - 香港 阿里云
-      - 俄罗斯 V2CROSS.COM
+      - 亚太地区 V2CROSS.COM
+      - 香港 电讯盈科有限公司 2
+      - 香港 电讯盈科有限公司 3
+      - 香港 电讯盈科有限公司 4
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
