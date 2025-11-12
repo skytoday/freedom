@@ -5,10 +5,9 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 香港 电讯盈科有限公司, server: 116.49.237.130, port: 4569, type: trojan, password: BxceQaOe, skip-cert-verify: true, udp: true}
-  - {name: 新加坡 Amazon数据中心, server: cgroup.node3.v.nodelist-airport.com, port: 24321, type: vmess, uuid: 8f3a835c-8a45-480d-ae35-1deb2c52dcae, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 香港 电讯盈科有限公司, server: 116.49.237.130, port: 518, type: trojan, password: BxceQaOe, sni: t.me%25252Fripaojiedian, skip-cert-verify: true, udp: true}
+  - {name: 香港 电讯盈科有限公司 2, server: 219.77.239.35, port: 443, type: trojan, password: BxceQaOe, sni: t.me%25252Fripaojiedian, skip-cert-verify: true, udp: true}
   - {name: 江苏省 移动, server: 36.150.215.246, port: 5156, type: trojan, password: BxceQaOe, sni: t.me%2Fripaojiedian, skip-cert-verify: true, udp: true}
-  - {name: 美国 CloudFlare节点, server: 141.101.120.130, port: 80, type: vmess, uuid: d967ffca-de90-4daa-bd00-d527e5bae11f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/?---@AZARBAYKAB1---@AZARBAYJAB1---@AZARBAYJAB1---@AZARBAYJAB1---@AZARBAYJAB1/?ed=2560", headers: {Host: google.whatsapp.snapp.torob.basalam.leoshopping77.ir.}}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
@@ -16,18 +15,16 @@ proxy-groups:
       - ♻️ 自动选择
       - 🎯 全球直连
       - 香港 电讯盈科有限公司
-      - 新加坡 Amazon数据中心
+      - 香港 电讯盈科有限公司 2
       - 江苏省 移动
-      - 美国 CloudFlare节点
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
       - 香港 电讯盈科有限公司
-      - 新加坡 Amazon数据中心
+      - 香港 电讯盈科有限公司 2
       - 江苏省 移动
-      - 美国 CloudFlare节点
   - name: 🎥 NETFLIX
     type: select
     proxies:
@@ -35,9 +32,8 @@ proxy-groups:
       - ♻️ 自动选择
       - 🎯 全球直连
       - 香港 电讯盈科有限公司
-      - 新加坡 Amazon数据中心
+      - 香港 电讯盈科有限公司 2
       - 江苏省 移动
-      - 美国 CloudFlare节点
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -57,14 +53,14 @@ proxy-groups:
       - ♻️ 自动选择
       - 🎯 全球直连
       - 香港 电讯盈科有限公司
-      - 新加坡 Amazon数据中心
+      - 香港 电讯盈科有限公司 2
       - 江苏省 移动
-      - 美国 CloudFlare节点
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
       - 香港 电讯盈科有限公司
+      - 香港 电讯盈科有限公司 2
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
@@ -72,18 +68,16 @@ proxy-groups:
       - 🎯 全球直连
       - 🔰 节点选择
       - 香港 电讯盈科有限公司
-      - 新加坡 Amazon数据中心
+      - 香港 电讯盈科有限公司 2
       - 江苏省 移动
-      - 美国 CloudFlare节点
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - 香港 电讯盈科有限公司
-      - 新加坡 Amazon数据中心
+      - 香港 电讯盈科有限公司 2
       - 江苏省 移动
-      - 美国 CloudFlare节点
   - name: 🍎 苹果服务
     type: select
     proxies:
@@ -91,9 +85,8 @@ proxy-groups:
       - 🎯 全球直连
       - ♻️ 自动选择
       - 香港 电讯盈科有限公司
-      - 新加坡 Amazon数据中心
+      - 香港 电讯盈科有限公司 2
       - 江苏省 移动
-      - 美国 CloudFlare节点
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -110,9 +103,8 @@ proxy-groups:
       - 🎯 全球直连
       - ♻️ 自动选择
       - 香港 电讯盈科有限公司
-      - 新加坡 Amazon数据中心
+      - 香港 电讯盈科有限公司 2
       - 江苏省 移动
-      - 美国 CloudFlare节点
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
