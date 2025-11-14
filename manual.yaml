@@ -5,77 +5,85 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 🇸🇪 瑞典 V2CROSS.COM, server: 185.146.173.24, port: 80, type: vmess, uuid: d967ffca-de90-4daa-bd00-d527e5bae11f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/?BIA_TELEGRAM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)", headers: {Host: google.whatsapp.snapp.torob.basalam.leoshopping77.ir.}}, udp: true}
-  - {name: 🇭🇰 香港 电讯盈科有限公司, server: 203.198.122.129, port: 443, type: trojan, password: BxceQaOe, skip-cert-verify: false, udp: true}
-  - {name: 🇭🇰 香港 电讯盈科有限公司 2, server: 203.198.122.97, port: 443, type: trojan, password: BxceQaOe, sni: t.me%2Fripaojiedian, skip-cert-verify: false, udp: true}
-  - {name: 亚太地区 V2CROSS.COM, server: onecat-jp.03ezhg0qsa.download, port: 25007, type: vmess, uuid: 69749298-6821-3358-b6d3-1d18d8642cba, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 🇺🇸 美国 CloudFlare节点, server: 1a2d514b-37cf-499f-8d08-d017a92ab5bb.asoul-ava.top, port: 443, type: vmess, uuid: 5f726fe3-d82e-4da5-a711-8af0cbb2b682, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /azumase.ren, headers: {Host: 1a2d514b-37cf-499f-8d08-d017a92ab5bb.asoul-ava.top}}, udp: true}
+  - {name: 安徽省芜湖市 电信, server: 114.98.183.61, port: 47083, type: vmess, uuid: b3fa070f-5511-48be-934b-f632f6b8a7c7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 亚太地区 V2CROSS.COM, server: liubu9.singdns.com, port: 17459, type: ss, cipher: aes-128-gcm, password: 57bc0c04-8184-48f5-906b-897d095ed445, udp: true}
+  - {name: 🇭🇰 香港 电讯盈科有限公司, server: 219.77.239.35, port: 443, type: trojan, password: BxceQaOe, sni: t.me%2Fripaojiedian, skip-cert-verify: false, udp: true}
+  - {name: 🇸🇪 瑞典 V2CROSS.COM, server: 185.146.173.82, port: 80, type: vmess, uuid: d967ffca-de90-4daa-bd00-d527e5bae11f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/?BIA_TELEGRAM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1)", headers: {Host: google.whatsapp.snapp.torob.basalam.leoshopping77.ir.}}, udp: true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 🇸🇪 瑞典 V2CROSS.COM
-      - 🇭🇰 香港 电讯盈科有限公司
-      - 🇭🇰 香港 电讯盈科有限公司 2
+      - 🇺🇸 美国 CloudFlare节点
+      - 安徽省芜湖市 电信
       - 亚太地区 V2CROSS.COM
+      - 🇭🇰 香港 电讯盈科有限公司
+      - 🇸🇪 瑞典 V2CROSS.COM
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇸🇪 瑞典 V2CROSS.COM
-      - 🇭🇰 香港 电讯盈科有限公司
-      - 🇭🇰 香港 电讯盈科有限公司 2
+      - 🇺🇸 美国 CloudFlare节点
+      - 安徽省芜湖市 电信
       - 亚太地区 V2CROSS.COM
+      - 🇭🇰 香港 电讯盈科有限公司
+      - 🇸🇪 瑞典 V2CROSS.COM
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇸🇪 瑞典 V2CROSS.COM
-      - 🇭🇰 香港 电讯盈科有限公司
-      - 🇭🇰 香港 电讯盈科有限公司 2
+      - 🇺🇸 美国 CloudFlare节点
+      - 安徽省芜湖市 电信
       - 亚太地区 V2CROSS.COM
+      - 🇭🇰 香港 电讯盈科有限公司
+      - 🇸🇪 瑞典 V2CROSS.COM
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇸🇪 瑞典 V2CROSS.COM
-      - 🇭🇰 香港 电讯盈科有限公司
-      - 🇭🇰 香港 电讯盈科有限公司 2
+      - 🇺🇸 美国 CloudFlare节点
+      - 安徽省芜湖市 电信
       - 亚太地区 V2CROSS.COM
+      - 🇭🇰 香港 电讯盈科有限公司
+      - 🇸🇪 瑞典 V2CROSS.COM
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 🇸🇪 瑞典 V2CROSS.COM
-      - 🇭🇰 香港 电讯盈科有限公司
-      - 🇭🇰 香港 电讯盈科有限公司 2
+      - 🇺🇸 美国 CloudFlare节点
+      - 安徽省芜湖市 电信
       - 亚太地区 V2CROSS.COM
+      - 🇭🇰 香港 电讯盈科有限公司
+      - 🇸🇪 瑞典 V2CROSS.COM
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇸🇪 瑞典 V2CROSS.COM
-      - 🇭🇰 香港 电讯盈科有限公司
-      - 🇭🇰 香港 电讯盈科有限公司 2
+      - 🇺🇸 美国 CloudFlare节点
+      - 安徽省芜湖市 电信
       - 亚太地区 V2CROSS.COM
+      - 🇭🇰 香港 电讯盈科有限公司
+      - 🇸🇪 瑞典 V2CROSS.COM
   - name: 📢 谷歌FCM
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇸🇪 瑞典 V2CROSS.COM
-      - 🇭🇰 香港 电讯盈科有限公司
-      - 🇭🇰 香港 电讯盈科有限公司 2
+      - 🇺🇸 美国 CloudFlare节点
+      - 安徽省芜湖市 电信
       - 亚太地区 V2CROSS.COM
+      - 🇭🇰 香港 电讯盈科有限公司
+      - 🇸🇪 瑞典 V2CROSS.COM
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -98,10 +106,11 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇸🇪 瑞典 V2CROSS.COM
-      - 🇭🇰 香港 电讯盈科有限公司
-      - 🇭🇰 香港 电讯盈科有限公司 2
+      - 🇺🇸 美国 CloudFlare节点
+      - 安徽省芜湖市 电信
       - 亚太地区 V2CROSS.COM
+      - 🇭🇰 香港 电讯盈科有限公司
+      - 🇸🇪 瑞典 V2CROSS.COM
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
