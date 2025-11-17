@@ -5,43 +5,47 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 伊朗 V2CROSS.COM, server: 151.242.165.233, port: 3443, type: trojan, password: c2e3cdc0-bc72-3505-b2a9-ea5ed7bfa23f, sni: origin-a.akamaihd.net, skip-cert-verify: true, udp: true}
-  - {name: 伊朗 V2CROSS.COM 2, server: 151.242.164.127, port: 3443, type: trojan, password: c2e3cdc0-bc72-3505-b2a9-ea5ed7bfa23f, skip-cert-verify: true, udp: true}
-  - {name: 美国 V2CROSS.COM, server: 172.82.67.156.sslip.io, port: 443, type: vmess, uuid: 55821780-6970-49df-8a23-800c2c9b7d3a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /SGBvMNdpPtNtvgyaVXm, headers: {Host: 172.82.67.156.sslip.io}}, udp: true}
   - {name: 香港 电讯盈科有限公司, server: 219.79.165.55, port: 443, type: trojan, password: BxceQaOe, sni: t.me%2Fripaojiedian, skip-cert-verify: true, udp: true}
-  - {name: 香港 电讯盈科有限公司 2, server: 58.152.26.173, port: 443, type: trojan, password: BxceQaOe, sni: t.me%252Fripaojiedian, skip-cert-verify: true, udp: true}
+  - {name: 香港 UCloud, server: 165.154.112.107, port: 12000, type: trojan, password: 1640ef52-2db0-44ab-b3f3-8690b762ebc9, skip-cert-verify: true, udp: true}
+  - {name: 香港 电讯盈科有限公司 2, server: 58.152.26.173, port: 443, type: trojan, password: BxceQaOe, sni: t.me%2Fripaojiedian, skip-cert-verify: true, udp: true}
+  - {name: 伊朗 V2CROSS.COM, server: 151.242.164.127, port: 3443, type: trojan, password: c2e3cdc0-bc72-3505-b2a9-ea5ed7bfa23f, skip-cert-verify: true, udp: true}
+  - {name: 伊朗 V2CROSS.COM 2, server: 151.242.165.233, port: 3443, type: trojan, password: c2e3cdc0-bc72-3505-b2a9-ea5ed7bfa23f, sni: origin-a.akamaihd.net, skip-cert-verify: true, udp: true}
+  - {name: 美国 CloudFlare节点, server: 141.101.121.120, port: 80, type: vmess, uuid: d967ffca-de90-4daa-bd00-d527e5bae11f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/?BIA_TELEGRAM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)", headers: {Host: google.whatsapp.snapp.torob.basalam.leoshopping77.ir.}}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
+      - 香港 电讯盈科有限公司
+      - 香港 UCloud
+      - 香港 电讯盈科有限公司 2
       - 伊朗 V2CROSS.COM
       - 伊朗 V2CROSS.COM 2
-      - 美国 V2CROSS.COM
-      - 香港 电讯盈科有限公司
-      - 香港 电讯盈科有限公司 2
+      - 美国 CloudFlare节点
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
+      - 香港 电讯盈科有限公司
+      - 香港 UCloud
+      - 香港 电讯盈科有限公司 2
       - 伊朗 V2CROSS.COM
       - 伊朗 V2CROSS.COM 2
-      - 美国 V2CROSS.COM
-      - 香港 电讯盈科有限公司
-      - 香港 电讯盈科有限公司 2
+      - 美国 CloudFlare节点
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
+      - 香港 电讯盈科有限公司
+      - 香港 UCloud
+      - 香港 电讯盈科有限公司 2
       - 伊朗 V2CROSS.COM
       - 伊朗 V2CROSS.COM 2
-      - 美国 V2CROSS.COM
-      - 香港 电讯盈科有限公司
-      - 香港 电讯盈科有限公司 2
+      - 美国 CloudFlare节点
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -60,16 +64,18 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
+      - 香港 电讯盈科有限公司
+      - 香港 UCloud
+      - 香港 电讯盈科有限公司 2
       - 伊朗 V2CROSS.COM
       - 伊朗 V2CROSS.COM 2
-      - 美国 V2CROSS.COM
-      - 香港 电讯盈科有限公司
-      - 香港 电讯盈科有限公司 2
+      - 美国 CloudFlare节点
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
       - 香港 电讯盈科有限公司
+      - 香港 UCloud
       - 香港 电讯盈科有限公司 2
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
@@ -77,32 +83,35 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
+      - 香港 电讯盈科有限公司
+      - 香港 UCloud
+      - 香港 电讯盈科有限公司 2
       - 伊朗 V2CROSS.COM
       - 伊朗 V2CROSS.COM 2
-      - 美国 V2CROSS.COM
-      - 香港 电讯盈科有限公司
-      - 香港 电讯盈科有限公司 2
+      - 美国 CloudFlare节点
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
+      - 香港 电讯盈科有限公司
+      - 香港 UCloud
+      - 香港 电讯盈科有限公司 2
       - 伊朗 V2CROSS.COM
       - 伊朗 V2CROSS.COM 2
-      - 美国 V2CROSS.COM
-      - 香港 电讯盈科有限公司
-      - 香港 电讯盈科有限公司 2
+      - 美国 CloudFlare节点
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - 香港 电讯盈科有限公司
+      - 香港 UCloud
+      - 香港 电讯盈科有限公司 2
       - 伊朗 V2CROSS.COM
       - 伊朗 V2CROSS.COM 2
-      - 美国 V2CROSS.COM
-      - 香港 电讯盈科有限公司
-      - 香港 电讯盈科有限公司 2
+      - 美国 CloudFlare节点
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -118,11 +127,12 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - 香港 电讯盈科有限公司
+      - 香港 UCloud
+      - 香港 电讯盈科有限公司 2
       - 伊朗 V2CROSS.COM
       - 伊朗 V2CROSS.COM 2
-      - 美国 V2CROSS.COM
-      - 香港 电讯盈科有限公司
-      - 香港 电讯盈科有限公司 2
+      - 美国 CloudFlare节点
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
