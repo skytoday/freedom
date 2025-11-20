@@ -5,10 +5,10 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 亚太地区 V2CROSS.COM, server: 103.219.103.217, port: 23344, type: ss, cipher: aes-128-gcm, password: 79ad2852-eb76-4c3e-ba4d-3668ee5ece74, udp: true}
   - {name: 🇭🇰 香港 电讯盈科有限公司, server: 219.79.165.55, port: 443, type: trojan, password: BxceQaOe, sni: t.me%2Fripaojiedian, skip-cert-verify: false, udp: true}
-  - {name: 亚太地区 V2CROSS.COM 2, server: 103.219.103.217, port: 21712, type: ss, cipher: aes-128-gcm, password: 79ad2852-eb76-4c3e-ba4d-3668ee5ece74, udp: true}
-  - {name: 🇭🇰 香港 阿里云, server: n1744453320.lie5d.cyou, port: 443, type: vmess, uuid: 8889a08a-09f8-4c97-bed2-df31b62fcf23, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: n1744453320.lie5d.cyou}}, udp: true}
+  - {name: 🇷🇺 俄罗斯 V2CROSS.COM, server: sv1.ahsg.top, port: 5060, type: trojan, password: eLpjAXg6pM, skip-cert-verify: false, udp: true}
+  - {name: 亚太地区 V2CROSS.COM, server: 103.219.103.217, port: 21712, type: ss, cipher: aes-128-gcm, password: 79ad2852-eb76-4c3e-ba4d-3668ee5ece74, udp: true}
+  - {name: 亚太地区 V2CROSS.COM 2, server: 103.219.103.217, port: 23344, type: ss, cipher: aes-128-gcm, password: 79ad2852-eb76-4c3e-ba4d-3668ee5ece74, udp: true}
   - {name: 🇭🇰 香港 电讯盈科有限公司 2, server: 58.152.25.241, port: 443, type: trojan, password: BxceQaOe, sni: t.me%252Fripaojiedian, skip-cert-verify: false, udp: true}
 proxy-groups:
   - name: 🚀 节点选择
@@ -16,10 +16,10 @@ proxy-groups:
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 亚太地区 V2CROSS.COM
       - 🇭🇰 香港 电讯盈科有限公司
+      - 🇷🇺 俄罗斯 V2CROSS.COM
+      - 亚太地区 V2CROSS.COM
       - 亚太地区 V2CROSS.COM 2
-      - 🇭🇰 香港 阿里云
       - 🇭🇰 香港 电讯盈科有限公司 2
   - name: ♻️ 自动选择
     type: url-test
@@ -27,10 +27,10 @@ proxy-groups:
     interval: 300
     tolerance: 50
     proxies:
-      - 亚太地区 V2CROSS.COM
       - 🇭🇰 香港 电讯盈科有限公司
+      - 🇷🇺 俄罗斯 V2CROSS.COM
+      - 亚太地区 V2CROSS.COM
       - 亚太地区 V2CROSS.COM 2
-      - 🇭🇰 香港 阿里云
       - 🇭🇰 香港 电讯盈科有限公司 2
   - name: 🌍 国外媒体
     type: select
@@ -38,40 +38,40 @@ proxy-groups:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 亚太地区 V2CROSS.COM
       - 🇭🇰 香港 电讯盈科有限公司
+      - 🇷🇺 俄罗斯 V2CROSS.COM
+      - 亚太地区 V2CROSS.COM
       - 亚太地区 V2CROSS.COM 2
-      - 🇭🇰 香港 阿里云
       - 🇭🇰 香港 电讯盈科有限公司 2
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 亚太地区 V2CROSS.COM
       - 🇭🇰 香港 电讯盈科有限公司
+      - 🇷🇺 俄罗斯 V2CROSS.COM
+      - 亚太地区 V2CROSS.COM
       - 亚太地区 V2CROSS.COM 2
-      - 🇭🇰 香港 阿里云
       - 🇭🇰 香港 电讯盈科有限公司 2
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 亚太地区 V2CROSS.COM
       - 🇭🇰 香港 电讯盈科有限公司
+      - 🇷🇺 俄罗斯 V2CROSS.COM
+      - 亚太地区 V2CROSS.COM
       - 亚太地区 V2CROSS.COM 2
-      - 🇭🇰 香港 阿里云
       - 🇭🇰 香港 电讯盈科有限公司 2
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 亚太地区 V2CROSS.COM
       - 🇭🇰 香港 电讯盈科有限公司
+      - 🇷🇺 俄罗斯 V2CROSS.COM
+      - 亚太地区 V2CROSS.COM
       - 亚太地区 V2CROSS.COM 2
-      - 🇭🇰 香港 阿里云
       - 🇭🇰 香港 电讯盈科有限公司 2
   - name: 📢 谷歌FCM
     type: select
@@ -79,10 +79,10 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 亚太地区 V2CROSS.COM
       - 🇭🇰 香港 电讯盈科有限公司
+      - 🇷🇺 俄罗斯 V2CROSS.COM
+      - 亚太地区 V2CROSS.COM
       - 亚太地区 V2CROSS.COM 2
-      - 🇭🇰 香港 阿里云
       - 🇭🇰 香港 电讯盈科有限公司 2
   - name: 🎯 全球直连
     type: select
@@ -106,10 +106,10 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 亚太地区 V2CROSS.COM
       - 🇭🇰 香港 电讯盈科有限公司
+      - 🇷🇺 俄罗斯 V2CROSS.COM
+      - 亚太地区 V2CROSS.COM
       - 亚太地区 V2CROSS.COM 2
-      - 🇭🇰 香港 阿里云
       - 🇭🇰 香港 电讯盈科有限公司 2
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
