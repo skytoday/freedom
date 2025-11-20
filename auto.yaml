@@ -5,51 +5,43 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 伊朗 V2CROSS.COM, server: 37.202.200.19, port: 25010, type: trojan, password: 09e71e3b-1f9f-44ab-9a10-02e0e10e2f05, sni: 37.202.200.19, skip-cert-verify: true, udp: true}
-  - {name: 香港 电讯盈科有限公司, server: 219.79.165.55, port: 443, type: trojan, password: BxceQaOe, sni: t.me%25252Fripaojiedian, skip-cert-verify: true, udp: true}
-  - {name: 奥地利 V2CROSS.COM, server: 46.29.34.205, port: 59956, type: vmess, uuid: ca0c9937-58a6-44ea-9111-a6abac267d0f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 瑞典 V2CROSS.COM, server: 185.146.173.16, port: 80, type: vmess, uuid: d967ffca-de90-4daa-bd00-d527e5bae11f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/?BIA_TELEGRAM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1)", headers: {Host: google.whatsapp.snapp.torob.basalam.leoshopping77.ir.}}, udp: true}
-  - {name: 奥地利 V2CROSS.COM 2, server: 46.29.34.205, port: 22947, type: vmess, uuid: d7291fc4-1702-4826-8fe1-ab301b1c8f82, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 香港 电讯盈科有限公司 2, server: 58.152.26.173, port: 443, type: trojan, password: BxceQaOe, sni: t.me%2Fripaojiedian, skip-cert-verify: true, udp: true}
-  - {name: 奥地利 V2CROSS.COM 3, server: 46.29.34.205, port: 41346, type: vmess, uuid: 6063ad0d-26fe-46a7-bf78-dfea71afde9b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 香港 阿里云, server: n1744453320.lie5d.cyou, port: 443, type: vmess, uuid: 8889a08a-09f8-4c97-bed2-df31b62fcf23, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: n1744453320.lie5d.cyou}}, udp: true}
+  - {name: 香港 阿里云 2, server: n1744453320.lie5d.cyou, port: 443, type: vmess, uuid: 8889a08a-09f8-4c97-bed2-df31b62fcf23, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: n1744453320.lie5d.cyou}}, udp: true}
+  - {name: 亚太地区 V2CROSS.COM, server: 103.219.103.217, port: 23344, type: ss, cipher: aes-128-gcm, password: 79ad2852-eb76-4c3e-ba4d-3668ee5ece74, udp: true}
+  - {name: 香港 电讯盈科有限公司, server: 58.152.25.241, port: 443, type: trojan, password: BxceQaOe, sni: t.me%2Fripaojiedian, skip-cert-verify: true, udp: true}
+  - {name: 香港 电讯盈科有限公司 2, server: 219.79.165.55, port: 443, type: trojan, password: BxceQaOe, sni: t.me%252Fripaojiedian, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 伊朗 V2CROSS.COM
+      - 香港 阿里云
+      - 香港 阿里云 2
+      - 亚太地区 V2CROSS.COM
       - 香港 电讯盈科有限公司
-      - 奥地利 V2CROSS.COM
-      - 瑞典 V2CROSS.COM
-      - 奥地利 V2CROSS.COM 2
       - 香港 电讯盈科有限公司 2
-      - 奥地利 V2CROSS.COM 3
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 伊朗 V2CROSS.COM
+      - 香港 阿里云
+      - 香港 阿里云 2
+      - 亚太地区 V2CROSS.COM
       - 香港 电讯盈科有限公司
-      - 奥地利 V2CROSS.COM
-      - 瑞典 V2CROSS.COM
-      - 奥地利 V2CROSS.COM 2
       - 香港 电讯盈科有限公司 2
-      - 奥地利 V2CROSS.COM 3
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 伊朗 V2CROSS.COM
+      - 香港 阿里云
+      - 香港 阿里云 2
+      - 亚太地区 V2CROSS.COM
       - 香港 电讯盈科有限公司
-      - 奥地利 V2CROSS.COM
-      - 瑞典 V2CROSS.COM
-      - 奥地利 V2CROSS.COM 2
       - 香港 电讯盈科有限公司 2
-      - 奥地利 V2CROSS.COM 3
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -68,17 +60,17 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 伊朗 V2CROSS.COM
+      - 香港 阿里云
+      - 香港 阿里云 2
+      - 亚太地区 V2CROSS.COM
       - 香港 电讯盈科有限公司
-      - 奥地利 V2CROSS.COM
-      - 瑞典 V2CROSS.COM
-      - 奥地利 V2CROSS.COM 2
       - 香港 电讯盈科有限公司 2
-      - 奥地利 V2CROSS.COM 3
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
+      - 香港 阿里云
+      - 香港 阿里云 2
       - 香港 电讯盈科有限公司
       - 香港 电讯盈科有限公司 2
       - 🔰 节点选择
@@ -87,38 +79,32 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 伊朗 V2CROSS.COM
+      - 香港 阿里云
+      - 香港 阿里云 2
+      - 亚太地区 V2CROSS.COM
       - 香港 电讯盈科有限公司
-      - 奥地利 V2CROSS.COM
-      - 瑞典 V2CROSS.COM
-      - 奥地利 V2CROSS.COM 2
       - 香港 电讯盈科有限公司 2
-      - 奥地利 V2CROSS.COM 3
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 伊朗 V2CROSS.COM
+      - 香港 阿里云
+      - 香港 阿里云 2
+      - 亚太地区 V2CROSS.COM
       - 香港 电讯盈科有限公司
-      - 奥地利 V2CROSS.COM
-      - 瑞典 V2CROSS.COM
-      - 奥地利 V2CROSS.COM 2
       - 香港 电讯盈科有限公司 2
-      - 奥地利 V2CROSS.COM 3
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 伊朗 V2CROSS.COM
+      - 香港 阿里云
+      - 香港 阿里云 2
+      - 亚太地区 V2CROSS.COM
       - 香港 电讯盈科有限公司
-      - 奥地利 V2CROSS.COM
-      - 瑞典 V2CROSS.COM
-      - 奥地利 V2CROSS.COM 2
       - 香港 电讯盈科有限公司 2
-      - 奥地利 V2CROSS.COM 3
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -134,13 +120,11 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 伊朗 V2CROSS.COM
+      - 香港 阿里云
+      - 香港 阿里云 2
+      - 亚太地区 V2CROSS.COM
       - 香港 电讯盈科有限公司
-      - 奥地利 V2CROSS.COM
-      - 瑞典 V2CROSS.COM
-      - 奥地利 V2CROSS.COM 2
       - 香港 电讯盈科有限公司 2
-      - 奥地利 V2CROSS.COM 3
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
