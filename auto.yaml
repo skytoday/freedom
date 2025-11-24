@@ -5,59 +5,39 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 亚太地区 V2CROSS.COM, server: wangcai.singdns.com, port: 21712, type: ss, cipher: aes-128-gcm, password: 79ad2852-eb76-4c3e-ba4d-3668ee5ece74, udp: true}
-  - {name: 欧盟 V2CROSS.COM, server: 45.87.175.166, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 1RWwXhwfAB5gAEozU4G2Pg, udp: true}
-  - {name: 俄罗斯 V2CROSS.COM, server: 37.18.14.33, port: 443, type: trojan, password: Qzy7tgpRhu, sni: m.vk.com, skip-cert-verify: true, udp: true}
   - {name: 英国 V2CROSS.COM, server: 82.198.246.97, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美国 弗吉尼亚州斯特灵阿里云, server: n1749032902.xlxzzx.com, port: 443, type: vmess, uuid: 6f932d64-1eb4-4160-bc8d-6085cfd4d37d, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: n1749032902.xlxzzx.com}}, udp: true}
-  - {name: 香港 电讯盈科有限公司, server: 58.152.25.241, port: 443, type: trojan, password: BxceQaOe, sni: t.me%252Fripaojiedian, skip-cert-verify: true, udp: true}
   - {name: 英国 V2CROSS.COM 2, server: 82.198.246.97, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 英国 V2CROSS.COM 3, server: 82.198.246.97, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 香港 电讯盈科有限公司 2, server: 58.152.53.22, port: 443, type: trojan, password: BxceQaOe, sni: t.me%2Fripaojiedian, skip-cert-verify: true, udp: true}
+  - {name: 美国 弗吉尼亚州斯特灵阿里云, server: n1749032902.xlxzzx.com, port: 443, type: vmess, uuid: 6f932d64-1eb4-4160-bc8d-6085cfd4d37d, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: n1749032902.xlxzzx.com}}, udp: true}
+  - {name: 亚太地区 V2CROSS.COM, server: 103.219.103.217, port: 23344, type: ss, cipher: aes-128-gcm, password: 79ad2852-eb76-4c3e-ba4d-3668ee5ece74, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 亚太地区 V2CROSS.COM
-      - 欧盟 V2CROSS.COM
-      - 俄罗斯 V2CROSS.COM
       - 英国 V2CROSS.COM
-      - 美国 弗吉尼亚州斯特灵阿里云
-      - 香港 电讯盈科有限公司
       - 英国 V2CROSS.COM 2
-      - 英国 V2CROSS.COM 3
-      - 香港 电讯盈科有限公司 2
+      - 美国 弗吉尼亚州斯特灵阿里云
+      - 亚太地区 V2CROSS.COM
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 亚太地区 V2CROSS.COM
-      - 欧盟 V2CROSS.COM
-      - 俄罗斯 V2CROSS.COM
       - 英国 V2CROSS.COM
-      - 美国 弗吉尼亚州斯特灵阿里云
-      - 香港 电讯盈科有限公司
       - 英国 V2CROSS.COM 2
-      - 英国 V2CROSS.COM 3
-      - 香港 电讯盈科有限公司 2
+      - 美国 弗吉尼亚州斯特灵阿里云
+      - 亚太地区 V2CROSS.COM
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 亚太地区 V2CROSS.COM
-      - 欧盟 V2CROSS.COM
-      - 俄罗斯 V2CROSS.COM
       - 英国 V2CROSS.COM
-      - 美国 弗吉尼亚州斯特灵阿里云
-      - 香港 电讯盈科有限公司
       - 英国 V2CROSS.COM 2
-      - 英国 V2CROSS.COM 3
-      - 香港 电讯盈科有限公司 2
+      - 美国 弗吉尼亚州斯特灵阿里云
+      - 亚太地区 V2CROSS.COM
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -76,65 +56,43 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 亚太地区 V2CROSS.COM
-      - 欧盟 V2CROSS.COM
-      - 俄罗斯 V2CROSS.COM
       - 英国 V2CROSS.COM
-      - 美国 弗吉尼亚州斯特灵阿里云
-      - 香港 电讯盈科有限公司
       - 英国 V2CROSS.COM 2
-      - 英国 V2CROSS.COM 3
-      - 香港 电讯盈科有限公司 2
+      - 美国 弗吉尼亚州斯特灵阿里云
+      - 亚太地区 V2CROSS.COM
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 香港 电讯盈科有限公司
-      - 香港 电讯盈科有限公司 2
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 亚太地区 V2CROSS.COM
-      - 欧盟 V2CROSS.COM
-      - 俄罗斯 V2CROSS.COM
       - 英国 V2CROSS.COM
-      - 美国 弗吉尼亚州斯特灵阿里云
-      - 香港 电讯盈科有限公司
       - 英国 V2CROSS.COM 2
-      - 英国 V2CROSS.COM 3
-      - 香港 电讯盈科有限公司 2
+      - 美国 弗吉尼亚州斯特灵阿里云
+      - 亚太地区 V2CROSS.COM
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 亚太地区 V2CROSS.COM
-      - 欧盟 V2CROSS.COM
-      - 俄罗斯 V2CROSS.COM
       - 英国 V2CROSS.COM
-      - 美国 弗吉尼亚州斯特灵阿里云
-      - 香港 电讯盈科有限公司
       - 英国 V2CROSS.COM 2
-      - 英国 V2CROSS.COM 3
-      - 香港 电讯盈科有限公司 2
+      - 美国 弗吉尼亚州斯特灵阿里云
+      - 亚太地区 V2CROSS.COM
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 亚太地区 V2CROSS.COM
-      - 欧盟 V2CROSS.COM
-      - 俄罗斯 V2CROSS.COM
       - 英国 V2CROSS.COM
-      - 美国 弗吉尼亚州斯特灵阿里云
-      - 香港 电讯盈科有限公司
       - 英国 V2CROSS.COM 2
-      - 英国 V2CROSS.COM 3
-      - 香港 电讯盈科有限公司 2
+      - 美国 弗吉尼亚州斯特灵阿里云
+      - 亚太地区 V2CROSS.COM
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -150,15 +108,10 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 亚太地区 V2CROSS.COM
-      - 欧盟 V2CROSS.COM
-      - 俄罗斯 V2CROSS.COM
       - 英国 V2CROSS.COM
-      - 美国 弗吉尼亚州斯特灵阿里云
-      - 香港 电讯盈科有限公司
       - 英国 V2CROSS.COM 2
-      - 英国 V2CROSS.COM 3
-      - 香港 电讯盈科有限公司 2
+      - 美国 弗吉尼亚州斯特灵阿里云
+      - 亚太地区 V2CROSS.COM
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
