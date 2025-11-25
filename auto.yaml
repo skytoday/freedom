@@ -5,35 +5,43 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 亚太地区 V2CROSS.COM, server: 103.219.103.217, port: 23344, type: ss, cipher: aes-128-gcm, password: 79ad2852-eb76-4c3e-ba4d-3668ee5ece74, udp: true}
+  - {name: 俄罗斯 V2CROSS.COM, server: 37.18.14.33, port: 443, type: trojan, password: Qzy7tgpRhu, sni: m.vk.com, skip-cert-verify: true, udp: true}
+  - {name: 亚太地区 V2CROSS.COM, server: wangcai.singdns.com, port: 23344, type: ss, cipher: aes-128-gcm, password: 79ad2852-eb76-4c3e-ba4d-3668ee5ece74, udp: true}
   - {name: 英国 V2CROSS.COM, server: 82.198.246.97, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美国 Alabanza, server: free.best-antiaging-reviews.com, port: 2053, type: vmess, uuid: 095ee315-a14c-4bf7-8bcb-568392415e26, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: free.best-antiaging-reviews.com}}, udp: true}
+  - {name: 香港 电讯盈科有限公司, server: 58.152.53.22, port: 443, type: trojan, password: BxceQaOe, sni: t.me%2Fripaojiedian, skip-cert-verify: true, udp: true}
+  - {name: 亚太地区 V2CROSS.COM 2, server: 103.219.103.217, port: 23344, type: ss, cipher: aes-128-gcm, password: 79ad2852-eb76-4c3e-ba4d-3668ee5ece74, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
+      - 俄罗斯 V2CROSS.COM
       - 亚太地区 V2CROSS.COM
       - 英国 V2CROSS.COM
-      - 美国 Alabanza
+      - 香港 电讯盈科有限公司
+      - 亚太地区 V2CROSS.COM 2
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
+      - 俄罗斯 V2CROSS.COM
       - 亚太地区 V2CROSS.COM
       - 英国 V2CROSS.COM
-      - 美国 Alabanza
+      - 香港 电讯盈科有限公司
+      - 亚太地区 V2CROSS.COM 2
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
+      - 俄罗斯 V2CROSS.COM
       - 亚太地区 V2CROSS.COM
       - 英国 V2CROSS.COM
-      - 美国 Alabanza
+      - 香港 电讯盈科有限公司
+      - 亚太地区 V2CROSS.COM 2
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -52,39 +60,48 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
+      - 俄罗斯 V2CROSS.COM
       - 亚太地区 V2CROSS.COM
       - 英国 V2CROSS.COM
-      - 美国 Alabanza
+      - 香港 电讯盈科有限公司
+      - 亚太地区 V2CROSS.COM 2
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
+      - 香港 电讯盈科有限公司
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
+      - 俄罗斯 V2CROSS.COM
       - 亚太地区 V2CROSS.COM
       - 英国 V2CROSS.COM
-      - 美国 Alabanza
+      - 香港 电讯盈科有限公司
+      - 亚太地区 V2CROSS.COM 2
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
+      - 俄罗斯 V2CROSS.COM
       - 亚太地区 V2CROSS.COM
       - 英国 V2CROSS.COM
-      - 美国 Alabanza
+      - 香港 电讯盈科有限公司
+      - 亚太地区 V2CROSS.COM 2
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - 俄罗斯 V2CROSS.COM
       - 亚太地区 V2CROSS.COM
       - 英国 V2CROSS.COM
-      - 美国 Alabanza
+      - 香港 电讯盈科有限公司
+      - 亚太地区 V2CROSS.COM 2
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -100,9 +117,11 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - 俄罗斯 V2CROSS.COM
       - 亚太地区 V2CROSS.COM
       - 英国 V2CROSS.COM
-      - 美国 Alabanza
+      - 香港 电讯盈科有限公司
+      - 亚太地区 V2CROSS.COM 2
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
