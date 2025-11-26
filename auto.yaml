@@ -5,47 +5,39 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
+  - {name: 英国 V2CROSS.COM, server: 82.198.246.97, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: 亚太地区 V2CROSS.COM, server: wangcai.singdns.com, port: 21712, type: ss, cipher: aes-128-gcm, password: 79ad2852-eb76-4c3e-ba4d-3668ee5ece74, udp: true}
   - {name: 美国 CloudFlare节点, server: cf.fovi.tk, port: 443, type: vmess, uuid: bf67437e-6c90-45ca-abc2-c7240a5ce2aa, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /eisasqa, headers: {Host: foxpol.fovi.tk}}, udp: true}
-  - {name: 香港 电讯盈科有限公司, server: 58.152.53.8, port: 443, type: trojan, password: BxceQaOe, sni: t.me%25252Fripaojiedian, skip-cert-verify: true, udp: true}
-  - {name: 亚太地区 V2CROSS.COM 2, server: wangcai.singdns.com, port: 23344, type: ss, cipher: aes-128-gcm, password: 79ad2852-eb76-4c3e-ba4d-3668ee5ece74, udp: true}
-  - {name: 日本 东京SAKURA数据中心, server: 153.121.65.212, port: 5156, type: trojan, password: BxceQaOe, sni: t.me%252Fripaojiedian, skip-cert-verify: true, udp: true}
-  - {name: 中国 V2CROSS.COM, server: 144.48.180.187, port: 30812, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 香港 电讯盈科有限公司, server: 112.120.31.179, port: 443, type: trojan, password: BxceQaOe, sni: t.me%2Fripaojiedian, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
+      - 英国 V2CROSS.COM
       - 亚太地区 V2CROSS.COM
       - 美国 CloudFlare节点
       - 香港 电讯盈科有限公司
-      - 亚太地区 V2CROSS.COM 2
-      - 日本 东京SAKURA数据中心
-      - 中国 V2CROSS.COM
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
+      - 英国 V2CROSS.COM
       - 亚太地区 V2CROSS.COM
       - 美国 CloudFlare节点
       - 香港 电讯盈科有限公司
-      - 亚太地区 V2CROSS.COM 2
-      - 日本 东京SAKURA数据中心
-      - 中国 V2CROSS.COM
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
+      - 英国 V2CROSS.COM
       - 亚太地区 V2CROSS.COM
       - 美国 CloudFlare节点
       - 香港 电讯盈科有限公司
-      - 亚太地区 V2CROSS.COM 2
-      - 日本 东京SAKURA数据中心
-      - 中国 V2CROSS.COM
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -64,12 +56,10 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
+      - 英国 V2CROSS.COM
       - 亚太地区 V2CROSS.COM
       - 美国 CloudFlare节点
       - 香港 电讯盈科有限公司
-      - 亚太地区 V2CROSS.COM 2
-      - 日本 东京SAKURA数据中心
-      - 中国 V2CROSS.COM
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -81,35 +71,29 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
+      - 英国 V2CROSS.COM
       - 亚太地区 V2CROSS.COM
       - 美国 CloudFlare节点
       - 香港 电讯盈科有限公司
-      - 亚太地区 V2CROSS.COM 2
-      - 日本 东京SAKURA数据中心
-      - 中国 V2CROSS.COM
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
+      - 英国 V2CROSS.COM
       - 亚太地区 V2CROSS.COM
       - 美国 CloudFlare节点
       - 香港 电讯盈科有限公司
-      - 亚太地区 V2CROSS.COM 2
-      - 日本 东京SAKURA数据中心
-      - 中国 V2CROSS.COM
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - 英国 V2CROSS.COM
       - 亚太地区 V2CROSS.COM
       - 美国 CloudFlare节点
       - 香港 电讯盈科有限公司
-      - 亚太地区 V2CROSS.COM 2
-      - 日本 东京SAKURA数据中心
-      - 中国 V2CROSS.COM
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -125,12 +109,10 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - 英国 V2CROSS.COM
       - 亚太地区 V2CROSS.COM
       - 美国 CloudFlare节点
       - 香港 电讯盈科有限公司
-      - 亚太地区 V2CROSS.COM 2
-      - 日本 东京SAKURA数据中心
-      - 中国 V2CROSS.COM
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
