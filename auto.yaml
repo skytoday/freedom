@@ -5,51 +5,55 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 美国 CloudFlare节点, server: cf.fovi.tk, port: 443, type: vmess, uuid: bf67437e-6c90-45ca-abc2-c7240a5ce2aa, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /eisasqa, headers: {Host: foxlux.fovi.tk}}, udp: true}
+  - {name: 美国 V2CROSS.COM, server: 167.150.100.115, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: pJtDFXMfdW9VNdJpaf4e2LfFkXdWgxrz, udp: true}
   - {name: 香港 电讯盈科有限公司, server: 112.120.31.179, port: 443, type: trojan, password: BxceQaOe, sni: t.me%2Fripaojiedian, skip-cert-verify: true, udp: true}
-  - {name: 美国 CloudFlare节点 2, server: cf.fovi.tk, port: 443, type: vmess, uuid: bf67437e-6c90-45ca-abc2-c7240a5ce2aa, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /eisasqa, headers: {Host: foxpol.fovi.tk}}, udp: true}
-  - {name: 日本 东京都Amazon数据中心, server: 18.183.209.234, port: 2569, type: trojan, password: BxceQaOe, sni: t.me%25252Fripaojiedian, skip-cert-verify: true, udp: true}
-  - {name: 俄罗斯 V2CROSS.COM, server: 37.18.14.33, port: 443, type: trojan, password: Qzy7tgpRhu, sni: m.vk.com, skip-cert-verify: true, udp: true}
-  - {name: 日本 东京樱花网络数据中心, server: 160.16.82.24, port: 2145, type: trojan, password: BxceQaOe, sni: t.me%252Fripaojiedian, skip-cert-verify: true, udp: true}
-  - {name: 日本 V2CROSS.COM, server: 146.56.112.110, port: 8888, type: vmess, uuid: e7c302f3-90d6-42dd-9d7d-94a3683a3707, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 日本东京都东京 oracle.com, server: tokyo01.zgjok.com, port: 443, type: vmess, uuid: e6d5d668-2091-41d9-9bff-df0a1c5107ec, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: tokyo01.zgjok.com}}, udp: true}
+  - {name: 美国 华盛顿Cogent通信公司, server: 38.96.254.102, port: 18509, type: trojan, password: .ie4rghJuMkcf0oF, sni: shoppingmall.electricbanana.click, skip-cert-verify: true, udp: true}
+  - {name: 加拿大多伦多 V2CROSS.COM, server: 198.57.27.27, port: 12990, type: trojan, password: 6pRjKQJ0CWyFtG.9, sni: diningtable.electricbanana.click, skip-cert-verify: true, udp: true}
+  - {name: 美国 CloudFlare节点, server: 8bswhv.teeoomboom.de, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 8bswhv.teeoomboom.de}}, udp: true}
+  - {name: 亚太地区 V2CROSS.COM, server: wangcai.singdns.com, port: 21712, type: ss, cipher: aes-128-gcm, password: 79ad2852-eb76-4c3e-ba4d-3668ee5ece74, udp: true}
+  - {name: 卢森堡 V2CROSS.COM, server: 5.188.108.13, port: 11790, type: trojan, password: .+QAJot50sDi6mvb, sni: runningshoes.purpletornado.click, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 美国 CloudFlare节点
+      - 美国 V2CROSS.COM
       - 香港 电讯盈科有限公司
-      - 美国 CloudFlare节点 2
-      - 日本 东京都Amazon数据中心
-      - 俄罗斯 V2CROSS.COM
-      - 日本 东京樱花网络数据中心
-      - 日本 V2CROSS.COM
+      - 日本东京都东京 oracle.com
+      - 美国 华盛顿Cogent通信公司
+      - 加拿大多伦多 V2CROSS.COM
+      - 美国 CloudFlare节点
+      - 亚太地区 V2CROSS.COM
+      - 卢森堡 V2CROSS.COM
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 美国 CloudFlare节点
+      - 美国 V2CROSS.COM
       - 香港 电讯盈科有限公司
-      - 美国 CloudFlare节点 2
-      - 日本 东京都Amazon数据中心
-      - 俄罗斯 V2CROSS.COM
-      - 日本 东京樱花网络数据中心
-      - 日本 V2CROSS.COM
+      - 日本东京都东京 oracle.com
+      - 美国 华盛顿Cogent通信公司
+      - 加拿大多伦多 V2CROSS.COM
+      - 美国 CloudFlare节点
+      - 亚太地区 V2CROSS.COM
+      - 卢森堡 V2CROSS.COM
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 美国 CloudFlare节点
+      - 美国 V2CROSS.COM
       - 香港 电讯盈科有限公司
-      - 美国 CloudFlare节点 2
-      - 日本 东京都Amazon数据中心
-      - 俄罗斯 V2CROSS.COM
-      - 日本 东京樱花网络数据中心
-      - 日本 V2CROSS.COM
+      - 日本东京都东京 oracle.com
+      - 美国 华盛顿Cogent通信公司
+      - 加拿大多伦多 V2CROSS.COM
+      - 美国 CloudFlare节点
+      - 亚太地区 V2CROSS.COM
+      - 卢森堡 V2CROSS.COM
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -68,13 +72,14 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 美国 CloudFlare节点
+      - 美国 V2CROSS.COM
       - 香港 电讯盈科有限公司
-      - 美国 CloudFlare节点 2
-      - 日本 东京都Amazon数据中心
-      - 俄罗斯 V2CROSS.COM
-      - 日本 东京樱花网络数据中心
-      - 日本 V2CROSS.COM
+      - 日本东京都东京 oracle.com
+      - 美国 华盛顿Cogent通信公司
+      - 加拿大多伦多 V2CROSS.COM
+      - 美国 CloudFlare节点
+      - 亚太地区 V2CROSS.COM
+      - 卢森堡 V2CROSS.COM
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -86,38 +91,41 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 美国 CloudFlare节点
+      - 美国 V2CROSS.COM
       - 香港 电讯盈科有限公司
-      - 美国 CloudFlare节点 2
-      - 日本 东京都Amazon数据中心
-      - 俄罗斯 V2CROSS.COM
-      - 日本 东京樱花网络数据中心
-      - 日本 V2CROSS.COM
+      - 日本东京都东京 oracle.com
+      - 美国 华盛顿Cogent通信公司
+      - 加拿大多伦多 V2CROSS.COM
+      - 美国 CloudFlare节点
+      - 亚太地区 V2CROSS.COM
+      - 卢森堡 V2CROSS.COM
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 美国 CloudFlare节点
+      - 美国 V2CROSS.COM
       - 香港 电讯盈科有限公司
-      - 美国 CloudFlare节点 2
-      - 日本 东京都Amazon数据中心
-      - 俄罗斯 V2CROSS.COM
-      - 日本 东京樱花网络数据中心
-      - 日本 V2CROSS.COM
+      - 日本东京都东京 oracle.com
+      - 美国 华盛顿Cogent通信公司
+      - 加拿大多伦多 V2CROSS.COM
+      - 美国 CloudFlare节点
+      - 亚太地区 V2CROSS.COM
+      - 卢森堡 V2CROSS.COM
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 美国 CloudFlare节点
+      - 美国 V2CROSS.COM
       - 香港 电讯盈科有限公司
-      - 美国 CloudFlare节点 2
-      - 日本 东京都Amazon数据中心
-      - 俄罗斯 V2CROSS.COM
-      - 日本 东京樱花网络数据中心
-      - 日本 V2CROSS.COM
+      - 日本东京都东京 oracle.com
+      - 美国 华盛顿Cogent通信公司
+      - 加拿大多伦多 V2CROSS.COM
+      - 美国 CloudFlare节点
+      - 亚太地区 V2CROSS.COM
+      - 卢森堡 V2CROSS.COM
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -133,13 +141,14 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 美国 CloudFlare节点
+      - 美国 V2CROSS.COM
       - 香港 电讯盈科有限公司
-      - 美国 CloudFlare节点 2
-      - 日本 东京都Amazon数据中心
-      - 俄罗斯 V2CROSS.COM
-      - 日本 东京樱花网络数据中心
-      - 日本 V2CROSS.COM
+      - 日本东京都东京 oracle.com
+      - 美国 华盛顿Cogent通信公司
+      - 加拿大多伦多 V2CROSS.COM
+      - 美国 CloudFlare节点
+      - 亚太地区 V2CROSS.COM
+      - 卢森堡 V2CROSS.COM
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
