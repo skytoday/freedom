@@ -6,10 +6,11 @@ log-level: info
 external-controller: :9090
 proxies:
   - {name: 香港 电讯盈科有限公司, server: 112.120.31.179, port: 443, type: trojan, password: BxceQaOe, sni: t.me%2Fripaojiedian, skip-cert-verify: true, udp: true}
-  - {name: 美国 CloudFlare节点, server: hgtrojan.zabc.net, port: 2083, type: vmess, uuid: e6395c20-4571-4b34-d6b1-55a5d36e49ea, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /e6395c20, headers: {Host: hgtrojan.zabc.net}}, udp: true}
-  - {name: 日本 V2CROSS.COM, server: 43.198.99.56, port: 2173, type: trojan, password: BxceQaOe, sni: t.me%2Fripaojiedian, skip-cert-verify: true, udp: true}
-  - {name: 加拿大多伦多 V2CROSS.COM, server: 198.57.27.27, port: 12990, type: trojan, password: 6pRjKQJ0CWyFtG.9, skip-cert-verify: true, udp: true}
+  - {name: 美国 V2CROSS.COM, server: 45.139.26.173, port: 57456, type: ss, cipher: chacha20-ietf-poly1305, password: d3837224ed465f00, udp: true}
   - {name: 英国 V2CROSS.COM, server: 82.198.246.97, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 日本 V2CROSS.COM, server: 43.199.161.175, port: 1196, type: trojan, password: BxceQaOe, sni: t.me%25252Fripaojiedian, skip-cert-verify: true, udp: true}
+  - {name: 英国 V2CROSS.COM 2, server: 82.198.246.97, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国 华盛顿Cogent通信公司, server: 38.96.254.102, port: 18509, type: trojan, password: .ie4rghJuMkcf0oF, sni: shoppingmall.electricbanana.click, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
@@ -17,20 +18,22 @@ proxy-groups:
       - ♻️ 自动选择
       - 🎯 全球直连
       - 香港 电讯盈科有限公司
-      - 美国 CloudFlare节点
-      - 日本 V2CROSS.COM
-      - 加拿大多伦多 V2CROSS.COM
+      - 美国 V2CROSS.COM
       - 英国 V2CROSS.COM
+      - 日本 V2CROSS.COM
+      - 英国 V2CROSS.COM 2
+      - 美国 华盛顿Cogent通信公司
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
       - 香港 电讯盈科有限公司
-      - 美国 CloudFlare节点
-      - 日本 V2CROSS.COM
-      - 加拿大多伦多 V2CROSS.COM
+      - 美国 V2CROSS.COM
       - 英国 V2CROSS.COM
+      - 日本 V2CROSS.COM
+      - 英国 V2CROSS.COM 2
+      - 美国 华盛顿Cogent通信公司
   - name: 🎥 NETFLIX
     type: select
     proxies:
@@ -38,10 +41,11 @@ proxy-groups:
       - ♻️ 自动选择
       - 🎯 全球直连
       - 香港 电讯盈科有限公司
-      - 美国 CloudFlare节点
-      - 日本 V2CROSS.COM
-      - 加拿大多伦多 V2CROSS.COM
+      - 美国 V2CROSS.COM
       - 英国 V2CROSS.COM
+      - 日本 V2CROSS.COM
+      - 英国 V2CROSS.COM 2
+      - 美国 华盛顿Cogent通信公司
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -61,10 +65,11 @@ proxy-groups:
       - ♻️ 自动选择
       - 🎯 全球直连
       - 香港 电讯盈科有限公司
-      - 美国 CloudFlare节点
-      - 日本 V2CROSS.COM
-      - 加拿大多伦多 V2CROSS.COM
+      - 美国 V2CROSS.COM
       - 英国 V2CROSS.COM
+      - 日本 V2CROSS.COM
+      - 英国 V2CROSS.COM 2
+      - 美国 华盛顿Cogent通信公司
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -77,20 +82,22 @@ proxy-groups:
       - 🎯 全球直连
       - 🔰 节点选择
       - 香港 电讯盈科有限公司
-      - 美国 CloudFlare节点
-      - 日本 V2CROSS.COM
-      - 加拿大多伦多 V2CROSS.COM
+      - 美国 V2CROSS.COM
       - 英国 V2CROSS.COM
+      - 日本 V2CROSS.COM
+      - 英国 V2CROSS.COM 2
+      - 美国 华盛顿Cogent通信公司
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - 香港 电讯盈科有限公司
-      - 美国 CloudFlare节点
-      - 日本 V2CROSS.COM
-      - 加拿大多伦多 V2CROSS.COM
+      - 美国 V2CROSS.COM
       - 英国 V2CROSS.COM
+      - 日本 V2CROSS.COM
+      - 英国 V2CROSS.COM 2
+      - 美国 华盛顿Cogent通信公司
   - name: 🍎 苹果服务
     type: select
     proxies:
@@ -98,10 +105,11 @@ proxy-groups:
       - 🎯 全球直连
       - ♻️ 自动选择
       - 香港 电讯盈科有限公司
-      - 美国 CloudFlare节点
-      - 日本 V2CROSS.COM
-      - 加拿大多伦多 V2CROSS.COM
+      - 美国 V2CROSS.COM
       - 英国 V2CROSS.COM
+      - 日本 V2CROSS.COM
+      - 英国 V2CROSS.COM 2
+      - 美国 华盛顿Cogent通信公司
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -118,10 +126,11 @@ proxy-groups:
       - 🎯 全球直连
       - ♻️ 自动选择
       - 香港 电讯盈科有限公司
-      - 美国 CloudFlare节点
-      - 日本 V2CROSS.COM
-      - 加拿大多伦多 V2CROSS.COM
+      - 美国 V2CROSS.COM
       - 英国 V2CROSS.COM
+      - 日本 V2CROSS.COM
+      - 英国 V2CROSS.COM 2
+      - 美国 华盛顿Cogent通信公司
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
