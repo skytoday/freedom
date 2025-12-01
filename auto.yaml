@@ -5,47 +5,71 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 加拿大多伦多 V2CROSS.COM, server: 198.57.27.27, port: 12990, type: trojan, password: 6pRjKQJ0CWyFtG.9, sni: diningtable.electricbanana.click, skip-cert-verify: true, udp: true}
-  - {name: 香港 电讯盈科有限公司, server: 58.152.30.175, port: 443, type: trojan, password: BxceQaOe, sni: t.me%2Fripaojiedian, skip-cert-verify: true, udp: true}
-  - {name: 美国 CloudFlare节点, server: cg1c04.waimaojd.com, port: 443, type: vmess, uuid: be8e3136-b874-4085-bd23-ec3699300490, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /api/v1/graphql, headers: {Host: cg1c04.waimaojd.com}}, udp: true}
-  - {name: 美国 CloudFlare节点 2, server: t1.620720.xyz, port: 8443, type: vmess, uuid: 516d8a7a-3f0b-41d3-bad0-246116381516, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: t1.620720.xyz}}, udp: true}
-  - {name: 英国 V2CROSS.COM, server: 82.198.246.97, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 俄罗斯 V2CROSS.COM, server: 37.18.14.33, port: 443, type: trojan, password: Qzy7tgpRhu, sni: m.vk.com, skip-cert-verify: true, udp: true}
+  - {name: 香港 阿里云, server: 47.243.12.217, port: 28405, type: vmess, uuid: cac3e30d-fa01-4993-ac1e-d6971263ea90, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/arki?ed=2048"}, udp: true}
+  - {name: 香港 阿里云 2, server: 47.242.162.235, port: 3787, type: vmess, uuid: e748fe05-2678-4c31-84c6-14ed825b92b4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/arki?ed=2048"}, udp: true}
+  - {name: 香港 阿里云 3, server: 47.243.241.93, port: 62195, type: vmess, uuid: 73f10380-0c4d-4ffc-9b0d-0a75020d3636, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/arki?ed=2048"}, udp: true}
+  - {name: 香港 阿里云 4, server: 47.242.20.123, port: 41026, type: vmess, uuid: b48a48a2-5d83-40a7-b5fc-edb71eaa54b1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/arki?ed=2048"}, udp: true}
+  - {name: 香港 阿里云 5, server: 47.242.140.52, port: 34815, type: vmess, uuid: 1a46b66c-6ba9-4e9c-aa0b-0ebac2b69e32, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/arki?ed=2048"}, udp: true}
+  - {name: 香港 阿里云 6, server: 47.242.238.231, port: 16470, type: vmess, uuid: 89240c7e-d221-4042-a726-5dcbcf79c130, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/arki?ed=2048"}, udp: true}
+  - {name: 香港 电讯盈科有限公司, server: 58.152.25.20, port: 443, type: trojan, password: BxceQaOe, sni: t.me%25252Fripaojiedian, skip-cert-verify: true, udp: true}
+  - {name: 香港 阿里云 7, server: 47.243.51.237, port: 52801, type: vmess, uuid: ef93f413-9039-4ddb-aefb-2490287df55a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/arki?ed=2048"}, udp: true}
+  - {name: 北美地区 V2CROSS.COM, server: 107.173.31.37, port: 443, type: vmess, uuid: be8771bd-10b9-4766-ad44-87971ba1fba4, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /video, headers: {Host: proxy.gelindejia.asia}}, udp: true}
+  - {name: 中国 V2CROSS.COM, server: v12.hdacd.com, port: 30812, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 香港 阿里云 8, server: 47.243.212.142, port: 35193, type: vmess, uuid: c76ee219-2274-4768-8953-200fa72d2a60, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/arki?ed=2048"}, udp: true}
+  - {name: 香港 阿里云 9, server: 47.242.162.235, port: 13767, type: vmess, uuid: d77fcaf1-8356-47bc-8883-a80d15e1bd78, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/arki?ed=2048"}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 加拿大多伦多 V2CROSS.COM
+      - 香港 阿里云
+      - 香港 阿里云 2
+      - 香港 阿里云 3
+      - 香港 阿里云 4
+      - 香港 阿里云 5
+      - 香港 阿里云 6
       - 香港 电讯盈科有限公司
-      - 美国 CloudFlare节点
-      - 美国 CloudFlare节点 2
-      - 英国 V2CROSS.COM
-      - 俄罗斯 V2CROSS.COM
+      - 香港 阿里云 7
+      - 北美地区 V2CROSS.COM
+      - 中国 V2CROSS.COM
+      - 香港 阿里云 8
+      - 香港 阿里云 9
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 加拿大多伦多 V2CROSS.COM
+      - 香港 阿里云
+      - 香港 阿里云 2
+      - 香港 阿里云 3
+      - 香港 阿里云 4
+      - 香港 阿里云 5
+      - 香港 阿里云 6
       - 香港 电讯盈科有限公司
-      - 美国 CloudFlare节点
-      - 美国 CloudFlare节点 2
-      - 英国 V2CROSS.COM
-      - 俄罗斯 V2CROSS.COM
+      - 香港 阿里云 7
+      - 北美地区 V2CROSS.COM
+      - 中国 V2CROSS.COM
+      - 香港 阿里云 8
+      - 香港 阿里云 9
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 加拿大多伦多 V2CROSS.COM
+      - 香港 阿里云
+      - 香港 阿里云 2
+      - 香港 阿里云 3
+      - 香港 阿里云 4
+      - 香港 阿里云 5
+      - 香港 阿里云 6
       - 香港 电讯盈科有限公司
-      - 美国 CloudFlare节点
-      - 美国 CloudFlare节点 2
-      - 英国 V2CROSS.COM
-      - 俄罗斯 V2CROSS.COM
+      - 香港 阿里云 7
+      - 北美地区 V2CROSS.COM
+      - 中国 V2CROSS.COM
+      - 香港 阿里云 8
+      - 香港 阿里云 9
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -64,52 +88,85 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 加拿大多伦多 V2CROSS.COM
+      - 香港 阿里云
+      - 香港 阿里云 2
+      - 香港 阿里云 3
+      - 香港 阿里云 4
+      - 香港 阿里云 5
+      - 香港 阿里云 6
       - 香港 电讯盈科有限公司
-      - 美国 CloudFlare节点
-      - 美国 CloudFlare节点 2
-      - 英国 V2CROSS.COM
-      - 俄罗斯 V2CROSS.COM
+      - 香港 阿里云 7
+      - 北美地区 V2CROSS.COM
+      - 中国 V2CROSS.COM
+      - 香港 阿里云 8
+      - 香港 阿里云 9
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
+      - 香港 阿里云
+      - 香港 阿里云 2
+      - 香港 阿里云 3
+      - 香港 阿里云 4
+      - 香港 阿里云 5
+      - 香港 阿里云 6
       - 香港 电讯盈科有限公司
+      - 香港 阿里云 7
+      - 香港 阿里云 8
+      - 香港 阿里云 9
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 加拿大多伦多 V2CROSS.COM
+      - 香港 阿里云
+      - 香港 阿里云 2
+      - 香港 阿里云 3
+      - 香港 阿里云 4
+      - 香港 阿里云 5
+      - 香港 阿里云 6
       - 香港 电讯盈科有限公司
-      - 美国 CloudFlare节点
-      - 美国 CloudFlare节点 2
-      - 英国 V2CROSS.COM
-      - 俄罗斯 V2CROSS.COM
+      - 香港 阿里云 7
+      - 北美地区 V2CROSS.COM
+      - 中国 V2CROSS.COM
+      - 香港 阿里云 8
+      - 香港 阿里云 9
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 加拿大多伦多 V2CROSS.COM
+      - 香港 阿里云
+      - 香港 阿里云 2
+      - 香港 阿里云 3
+      - 香港 阿里云 4
+      - 香港 阿里云 5
+      - 香港 阿里云 6
       - 香港 电讯盈科有限公司
-      - 美国 CloudFlare节点
-      - 美国 CloudFlare节点 2
-      - 英国 V2CROSS.COM
-      - 俄罗斯 V2CROSS.COM
+      - 香港 阿里云 7
+      - 北美地区 V2CROSS.COM
+      - 中国 V2CROSS.COM
+      - 香港 阿里云 8
+      - 香港 阿里云 9
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 加拿大多伦多 V2CROSS.COM
+      - 香港 阿里云
+      - 香港 阿里云 2
+      - 香港 阿里云 3
+      - 香港 阿里云 4
+      - 香港 阿里云 5
+      - 香港 阿里云 6
       - 香港 电讯盈科有限公司
-      - 美国 CloudFlare节点
-      - 美国 CloudFlare节点 2
-      - 英国 V2CROSS.COM
-      - 俄罗斯 V2CROSS.COM
+      - 香港 阿里云 7
+      - 北美地区 V2CROSS.COM
+      - 中国 V2CROSS.COM
+      - 香港 阿里云 8
+      - 香港 阿里云 9
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -125,12 +182,18 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 加拿大多伦多 V2CROSS.COM
+      - 香港 阿里云
+      - 香港 阿里云 2
+      - 香港 阿里云 3
+      - 香港 阿里云 4
+      - 香港 阿里云 5
+      - 香港 阿里云 6
       - 香港 电讯盈科有限公司
-      - 美国 CloudFlare节点
-      - 美国 CloudFlare节点 2
-      - 英国 V2CROSS.COM
-      - 俄罗斯 V2CROSS.COM
+      - 香港 阿里云 7
+      - 北美地区 V2CROSS.COM
+      - 中国 V2CROSS.COM
+      - 香港 阿里云 8
+      - 香港 阿里云 9
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
