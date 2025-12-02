@@ -5,43 +5,43 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 英国 V2CROSS.COM, server: 82.198.246.97, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 香港 阿里云, server: 47.242.162.148, port: 31813, type: vmess, uuid: 00308f3b-747a-4710-b2cb-32c8de9785a1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/arki?ed=2048"}, udp: true}
+  - {name: 俄罗斯 V2CROSS.COM, server: 37.18.14.33, port: 443, type: trojan, password: Qzy7tgpRhu, sni: m.vk.com, skip-cert-verify: true, udp: true}
+  - {name: 美国 V2CROSS.COM, server: 45.139.26.173, port: 57456, type: ss, cipher: chacha20-ietf-poly1305, password: d3837224ed465f00, udp: true}
+  - {name: 香港 电讯盈科有限公司, server: 58.152.30.175, port: 443, type: trojan, password: BxceQaOe, sni: t.me%2Fripaojiedian, skip-cert-verify: true, udp: true}
+  - {name: 美国 华盛顿州西雅图市亚马逊(Amazon)公司数据中心, server: 52.195.176.26, port: 5156, type: trojan, password: BxceQaOe, sni: t.me%252Fripaojiedian, skip-cert-verify: true, udp: true}
   - {name: 卢森堡 V2CROSS.COM, server: 5.188.108.13, port: 11790, type: trojan, password: .+QAJot50sDi6mvb, sni: runningshoes.purpletornado.click, skip-cert-verify: true, udp: true}
-  - {name: 香港 电讯盈科有限公司, server: 58.152.53.8, port: 443, type: trojan, password: BxceQaOe, skip-cert-verify: true, udp: true}
-  - {name: 中国 V2CROSS.COM, server: v12.hdacd.com, port: 30812, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 英国 V2CROSS.COM
-      - 香港 阿里云
-      - 卢森堡 V2CROSS.COM
+      - 俄罗斯 V2CROSS.COM
+      - 美国 V2CROSS.COM
       - 香港 电讯盈科有限公司
-      - 中国 V2CROSS.COM
+      - 美国 华盛顿州西雅图市亚马逊(Amazon)公司数据中心
+      - 卢森堡 V2CROSS.COM
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 英国 V2CROSS.COM
-      - 香港 阿里云
-      - 卢森堡 V2CROSS.COM
+      - 俄罗斯 V2CROSS.COM
+      - 美国 V2CROSS.COM
       - 香港 电讯盈科有限公司
-      - 中国 V2CROSS.COM
+      - 美国 华盛顿州西雅图市亚马逊(Amazon)公司数据中心
+      - 卢森堡 V2CROSS.COM
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 英国 V2CROSS.COM
-      - 香港 阿里云
-      - 卢森堡 V2CROSS.COM
+      - 俄罗斯 V2CROSS.COM
+      - 美国 V2CROSS.COM
       - 香港 电讯盈科有限公司
-      - 中国 V2CROSS.COM
+      - 美国 华盛顿州西雅图市亚马逊(Amazon)公司数据中心
+      - 卢森堡 V2CROSS.COM
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -60,16 +60,15 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 英国 V2CROSS.COM
-      - 香港 阿里云
-      - 卢森堡 V2CROSS.COM
+      - 俄罗斯 V2CROSS.COM
+      - 美国 V2CROSS.COM
       - 香港 电讯盈科有限公司
-      - 中国 V2CROSS.COM
+      - 美国 华盛顿州西雅图市亚马逊(Amazon)公司数据中心
+      - 卢森堡 V2CROSS.COM
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 香港 阿里云
       - 香港 电讯盈科有限公司
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
@@ -77,32 +76,32 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 英国 V2CROSS.COM
-      - 香港 阿里云
-      - 卢森堡 V2CROSS.COM
+      - 俄罗斯 V2CROSS.COM
+      - 美国 V2CROSS.COM
       - 香港 电讯盈科有限公司
-      - 中国 V2CROSS.COM
+      - 美国 华盛顿州西雅图市亚马逊(Amazon)公司数据中心
+      - 卢森堡 V2CROSS.COM
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 英国 V2CROSS.COM
-      - 香港 阿里云
-      - 卢森堡 V2CROSS.COM
+      - 俄罗斯 V2CROSS.COM
+      - 美国 V2CROSS.COM
       - 香港 电讯盈科有限公司
-      - 中国 V2CROSS.COM
+      - 美国 华盛顿州西雅图市亚马逊(Amazon)公司数据中心
+      - 卢森堡 V2CROSS.COM
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 英国 V2CROSS.COM
-      - 香港 阿里云
-      - 卢森堡 V2CROSS.COM
+      - 俄罗斯 V2CROSS.COM
+      - 美国 V2CROSS.COM
       - 香港 电讯盈科有限公司
-      - 中国 V2CROSS.COM
+      - 美国 华盛顿州西雅图市亚马逊(Amazon)公司数据中心
+      - 卢森堡 V2CROSS.COM
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -118,11 +117,11 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 英国 V2CROSS.COM
-      - 香港 阿里云
-      - 卢森堡 V2CROSS.COM
+      - 俄罗斯 V2CROSS.COM
+      - 美国 V2CROSS.COM
       - 香港 电讯盈科有限公司
-      - 中国 V2CROSS.COM
+      - 美国 华盛顿州西雅图市亚马逊(Amazon)公司数据中心
+      - 卢森堡 V2CROSS.COM
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
