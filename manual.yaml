@@ -5,109 +5,101 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 🇬🇧 英国 V2CROSS.COM, server: 82.198.246.97, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 🇺🇸 美国 V2CROSS.COM, server: 74.117.196.232, port: 37934, type: vmess, uuid: e1cc26b3-df0b-477b-afb0-53659a25e978, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /speedtest}, udp: true}
-  - {name: 🇭🇰 香港 电讯盈科有限公司, server: 58.152.53.8, port: 443, type: trojan, password: BxceQaOe, skip-cert-verify: false, udp: true}
-  - {name: 🇺🇸 美国 V2CROSS.COM 2, server: 74.117.196.232, port: 37934, type: vmess, uuid: c6e0562f-7ad1-40fb-a255-26194b2de84a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /speedtest}, udp: true}
+  - {name: 🇨🇦 加拿大多伦多 V2CROSS.COM, server: 198.57.27.27, port: 12990, type: trojan, password: 6pRjKQJ0CWyFtG.9, sni: diningtable.electricbanana.click, skip-cert-verify: false, udp: true}
+  - {name: 🇭🇰 香港 电讯盈科有限公司, server: 58.152.25.242, port: 443, type: trojan, password: BxceQaOe, sni: t.me%25252Fripaojiedian, skip-cert-verify: false, udp: true}
+  - {name: 🇺🇸 美国 华盛顿Cogent通信公司, server: 38.96.254.102, port: 18509, type: trojan, password: .ie4rghJuMkcf0oF, sni: shoppingmall.electricbanana.click, skip-cert-verify: false, udp: true}
+  - {name: 🇭🇰 香港 电讯盈科有限公司 2, server: 58.152.25.20, port: 443, type: trojan, password: BxceQaOe, sni: t.me%2Fripaojiedian, skip-cert-verify: false, udp: true}
   - {name: 🇺🇸 美国 CloudFlare节点, server: cf.fovi.tk, port: 443, type: vmess, uuid: bf67437e-6c90-45ca-abc2-c7240a5ce2aa, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /eisasqa, headers: {Host: foxpol.fovi.tk}}, udp: true}
-  - {name: 🇬🇧 英国 V2CROSS.COM 2, server: 82.198.246.97, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 🇷🇺 俄罗斯 V2CROSS.COM, server: 185.39.204.161, port: 33563, type: ss, cipher: chacha20-ietf-poly1305, password: bSlgCoGhApOb55tIMD0zxY, udp: true}
-  - {name: 🇱🇺 卢森堡 V2CROSS.COM, server: 5.188.108.13, port: 11790, type: trojan, password: .+QAJot50sDi6mvb, sni: runningshoes.purpletornado.click, skip-cert-verify: false, udp: true}
+  - {name: 🇺🇸 美国 V2CROSS.COM, server: 74.117.196.232, port: 37934, type: vmess, uuid: c6e0562f-7ad1-40fb-a255-26194b2de84a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /speedtest}, udp: true}
+  - {name: 🇬🇧 英国 V2CROSS.COM, server: 82.198.246.97, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 🇬🇧 英国 V2CROSS.COM
-      - 🇺🇸 美国 V2CROSS.COM
+      - 🇨🇦 加拿大多伦多 V2CROSS.COM
       - 🇭🇰 香港 电讯盈科有限公司
-      - 🇺🇸 美国 V2CROSS.COM 2
+      - 🇺🇸 美国 华盛顿Cogent通信公司
+      - 🇭🇰 香港 电讯盈科有限公司 2
       - 🇺🇸 美国 CloudFlare节点
-      - 🇬🇧 英国 V2CROSS.COM 2
-      - 🇷🇺 俄罗斯 V2CROSS.COM
-      - 🇱🇺 卢森堡 V2CROSS.COM
+      - 🇺🇸 美国 V2CROSS.COM
+      - 🇬🇧 英国 V2CROSS.COM
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇬🇧 英国 V2CROSS.COM
-      - 🇺🇸 美国 V2CROSS.COM
+      - 🇨🇦 加拿大多伦多 V2CROSS.COM
       - 🇭🇰 香港 电讯盈科有限公司
-      - 🇺🇸 美国 V2CROSS.COM 2
+      - 🇺🇸 美国 华盛顿Cogent通信公司
+      - 🇭🇰 香港 电讯盈科有限公司 2
       - 🇺🇸 美国 CloudFlare节点
-      - 🇬🇧 英国 V2CROSS.COM 2
-      - 🇷🇺 俄罗斯 V2CROSS.COM
-      - 🇱🇺 卢森堡 V2CROSS.COM
+      - 🇺🇸 美国 V2CROSS.COM
+      - 🇬🇧 英国 V2CROSS.COM
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇬🇧 英国 V2CROSS.COM
-      - 🇺🇸 美国 V2CROSS.COM
+      - 🇨🇦 加拿大多伦多 V2CROSS.COM
       - 🇭🇰 香港 电讯盈科有限公司
-      - 🇺🇸 美国 V2CROSS.COM 2
+      - 🇺🇸 美国 华盛顿Cogent通信公司
+      - 🇭🇰 香港 电讯盈科有限公司 2
       - 🇺🇸 美国 CloudFlare节点
-      - 🇬🇧 英国 V2CROSS.COM 2
-      - 🇷🇺 俄罗斯 V2CROSS.COM
-      - 🇱🇺 卢森堡 V2CROSS.COM
+      - 🇺🇸 美国 V2CROSS.COM
+      - 🇬🇧 英国 V2CROSS.COM
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇬🇧 英国 V2CROSS.COM
-      - 🇺🇸 美国 V2CROSS.COM
+      - 🇨🇦 加拿大多伦多 V2CROSS.COM
       - 🇭🇰 香港 电讯盈科有限公司
-      - 🇺🇸 美国 V2CROSS.COM 2
+      - 🇺🇸 美国 华盛顿Cogent通信公司
+      - 🇭🇰 香港 电讯盈科有限公司 2
       - 🇺🇸 美国 CloudFlare节点
-      - 🇬🇧 英国 V2CROSS.COM 2
-      - 🇷🇺 俄罗斯 V2CROSS.COM
-      - 🇱🇺 卢森堡 V2CROSS.COM
+      - 🇺🇸 美国 V2CROSS.COM
+      - 🇬🇧 英国 V2CROSS.COM
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 🇬🇧 英国 V2CROSS.COM
-      - 🇺🇸 美国 V2CROSS.COM
+      - 🇨🇦 加拿大多伦多 V2CROSS.COM
       - 🇭🇰 香港 电讯盈科有限公司
-      - 🇺🇸 美国 V2CROSS.COM 2
+      - 🇺🇸 美国 华盛顿Cogent通信公司
+      - 🇭🇰 香港 电讯盈科有限公司 2
       - 🇺🇸 美国 CloudFlare节点
-      - 🇬🇧 英国 V2CROSS.COM 2
-      - 🇷🇺 俄罗斯 V2CROSS.COM
-      - 🇱🇺 卢森堡 V2CROSS.COM
+      - 🇺🇸 美国 V2CROSS.COM
+      - 🇬🇧 英国 V2CROSS.COM
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇬🇧 英国 V2CROSS.COM
-      - 🇺🇸 美国 V2CROSS.COM
+      - 🇨🇦 加拿大多伦多 V2CROSS.COM
       - 🇭🇰 香港 电讯盈科有限公司
-      - 🇺🇸 美国 V2CROSS.COM 2
+      - 🇺🇸 美国 华盛顿Cogent通信公司
+      - 🇭🇰 香港 电讯盈科有限公司 2
       - 🇺🇸 美国 CloudFlare节点
-      - 🇬🇧 英国 V2CROSS.COM 2
-      - 🇷🇺 俄罗斯 V2CROSS.COM
-      - 🇱🇺 卢森堡 V2CROSS.COM
+      - 🇺🇸 美国 V2CROSS.COM
+      - 🇬🇧 英国 V2CROSS.COM
   - name: 📢 谷歌FCM
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇬🇧 英国 V2CROSS.COM
-      - 🇺🇸 美国 V2CROSS.COM
+      - 🇨🇦 加拿大多伦多 V2CROSS.COM
       - 🇭🇰 香港 电讯盈科有限公司
-      - 🇺🇸 美国 V2CROSS.COM 2
+      - 🇺🇸 美国 华盛顿Cogent通信公司
+      - 🇭🇰 香港 电讯盈科有限公司 2
       - 🇺🇸 美国 CloudFlare节点
-      - 🇬🇧 英国 V2CROSS.COM 2
-      - 🇷🇺 俄罗斯 V2CROSS.COM
-      - 🇱🇺 卢森堡 V2CROSS.COM
+      - 🇺🇸 美国 V2CROSS.COM
+      - 🇬🇧 英国 V2CROSS.COM
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -130,14 +122,13 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇬🇧 英国 V2CROSS.COM
-      - 🇺🇸 美国 V2CROSS.COM
+      - 🇨🇦 加拿大多伦多 V2CROSS.COM
       - 🇭🇰 香港 电讯盈科有限公司
-      - 🇺🇸 美国 V2CROSS.COM 2
+      - 🇺🇸 美国 华盛顿Cogent通信公司
+      - 🇭🇰 香港 电讯盈科有限公司 2
       - 🇺🇸 美国 CloudFlare节点
-      - 🇬🇧 英国 V2CROSS.COM 2
-      - 🇷🇺 俄罗斯 V2CROSS.COM
-      - 🇱🇺 卢森堡 V2CROSS.COM
+      - 🇺🇸 美国 V2CROSS.COM
+      - 🇬🇧 英国 V2CROSS.COM
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
