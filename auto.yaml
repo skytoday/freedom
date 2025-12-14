@@ -5,11 +5,9 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 香港 电讯盈科有限公司, server: 58.152.30.120, port: 443, type: trojan, password: BxceQaOe, sni: t.me%25252Fripaojiedian, skip-cert-verify: true, udp: true}
-  - {name: 美国 惠普HP, server: 16.162.21.116, port: 804, type: trojan, password: BxceQaOe, sni: t.me%252Fripaojiedian, skip-cert-verify: true, udp: true}
-  - {name: 香港 电讯盈科有限公司 2, server: 58.152.25.242, port: 443, type: trojan, password: BxceQaOe, sni: t.me%2Fripaojiedian, skip-cert-verify: true, udp: true}
-  - {name: 香港 电讯盈科有限公司 3, server: 58.152.25.20, port: 443, type: trojan, password: BxceQaOe, sni: t.me%252Fripaojiedian, skip-cert-verify: true, udp: true}
-  - {name: 香港 电讯盈科有限公司 4, server: 219.78.209.224, port: 443, type: trojan, password: BxceQaOe, sni: t.me%2Fripaojiedian, skip-cert-verify: true, udp: true}
+  - {name: 香港 电讯盈科有限公司, server: 58.152.25.20, port: 443, type: trojan, password: BxceQaOe, sni: t.me%25252Fripaojiedian, skip-cert-verify: true, udp: true}
+  - {name: 香港 电讯盈科有限公司 2, server: 58.152.25.242, port: 443, type: trojan, password: BxceQaOe, sni: t.me%252Fripaojiedian, skip-cert-verify: true, udp: true}
+  - {name: 美国 CloudFlare节点, server: hgtrojan.zabc.net, port: 2083, type: vmess, uuid: e6395c20-4571-4b34-d6b1-55a5d36e49ea, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /e6395c20, headers: {Host: hgtrojan.zabc.net}}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
@@ -17,20 +15,16 @@ proxy-groups:
       - ♻️ 自动选择
       - 🎯 全球直连
       - 香港 电讯盈科有限公司
-      - 美国 惠普HP
       - 香港 电讯盈科有限公司 2
-      - 香港 电讯盈科有限公司 3
-      - 香港 电讯盈科有限公司 4
+      - 美国 CloudFlare节点
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
       - 香港 电讯盈科有限公司
-      - 美国 惠普HP
       - 香港 电讯盈科有限公司 2
-      - 香港 电讯盈科有限公司 3
-      - 香港 电讯盈科有限公司 4
+      - 美国 CloudFlare节点
   - name: 🎥 NETFLIX
     type: select
     proxies:
@@ -38,10 +32,8 @@ proxy-groups:
       - ♻️ 自动选择
       - 🎯 全球直连
       - 香港 电讯盈科有限公司
-      - 美国 惠普HP
       - 香港 电讯盈科有限公司 2
-      - 香港 电讯盈科有限公司 3
-      - 香港 电讯盈科有限公司 4
+      - 美国 CloudFlare节点
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -61,18 +53,14 @@ proxy-groups:
       - ♻️ 自动选择
       - 🎯 全球直连
       - 香港 电讯盈科有限公司
-      - 美国 惠普HP
       - 香港 电讯盈科有限公司 2
-      - 香港 电讯盈科有限公司 3
-      - 香港 电讯盈科有限公司 4
+      - 美国 CloudFlare节点
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
       - 香港 电讯盈科有限公司
       - 香港 电讯盈科有限公司 2
-      - 香港 电讯盈科有限公司 3
-      - 香港 电讯盈科有限公司 4
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
@@ -80,20 +68,16 @@ proxy-groups:
       - 🎯 全球直连
       - 🔰 节点选择
       - 香港 电讯盈科有限公司
-      - 美国 惠普HP
       - 香港 电讯盈科有限公司 2
-      - 香港 电讯盈科有限公司 3
-      - 香港 电讯盈科有限公司 4
+      - 美国 CloudFlare节点
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - 香港 电讯盈科有限公司
-      - 美国 惠普HP
       - 香港 电讯盈科有限公司 2
-      - 香港 电讯盈科有限公司 3
-      - 香港 电讯盈科有限公司 4
+      - 美国 CloudFlare节点
   - name: 🍎 苹果服务
     type: select
     proxies:
@@ -101,10 +85,8 @@ proxy-groups:
       - 🎯 全球直连
       - ♻️ 自动选择
       - 香港 电讯盈科有限公司
-      - 美国 惠普HP
       - 香港 电讯盈科有限公司 2
-      - 香港 电讯盈科有限公司 3
-      - 香港 电讯盈科有限公司 4
+      - 美国 CloudFlare节点
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -121,10 +103,8 @@ proxy-groups:
       - 🎯 全球直连
       - ♻️ 自动选择
       - 香港 电讯盈科有限公司
-      - 美国 惠普HP
       - 香港 电讯盈科有限公司 2
-      - 香港 电讯盈科有限公司 3
-      - 香港 电讯盈科有限公司 4
+      - 美国 CloudFlare节点
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
